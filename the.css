@@ -46,6 +46,10 @@ h2 {
 	text-decoration: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 .links img {
 	width: 64px;
 	height: 64px;
@@ -53,4 +57,11 @@ h2 {
 
 .links li {
 	display: inline;
+}
+
+.box {
+	height: 200px;
+	width: 200px;
+	background-color: blue;
+	color: yellow;
 }
