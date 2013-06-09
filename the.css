@@ -48,6 +48,8 @@ h2 {
 
 a {
 	text-decoration: none;
+	/*color: #483269;*/
+	color: purple;
 }
 
 .links img {
