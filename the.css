@@ -42,6 +42,21 @@ h2 {
 	margin-bottom: 1em;
 }
 
+h2 .work {
+	padding: 5px;
+	background-color: #000;
+	color: #fff;
+	border: 1px solid #000;
+}
+
+h2 #fetch {
+	background-color: #b6d6ef;
+}
+
+h2 #back {
+	background-color: #392854;
+}
+
 .links a {
 	text-decoration: none;
 }
