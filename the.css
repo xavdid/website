@@ -57,6 +57,10 @@ h2 #back {
 	background-color: #392854;
 }
 
+.links {
+	clear: both;
+}
+
 .links a {
 	text-decoration: none;
 }
