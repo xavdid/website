@@ -2,13 +2,11 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 
-$blue: #1b1bbe;
-// $blue: #0000aa;
-$maize: #ffbf00;
-// $maize: #FFC600;
+$black: #2B2B2B;
+$white: #F6F6F6;
 $orange: #ff9400;
-$code: #bbbbbb;
-$light-blue: #2a78cc;
+$red: #DE1B1B;
+$links: $red;
 
 html, button, input, select, textarea {
   color: #222;
@@ -20,11 +18,12 @@ body {
   line-height: 1.4;
   font: 16px / 26px Helvetica, Helvetica Neue, Arial;
   // border here means blue line is on top
-  // border-left: 10px solid $blue;
+  // border-left: 10px solid $black;
 }
 
 html, body {
   height: 100%;
+  background-color: $white;
 }
 
 ::-moz-selection, ::selection {
@@ -89,30 +88,36 @@ textarea {
   min-height: 100%;
   position: relative;
   // border here means yellow line interrupted
-  border-left: 10px solid $blue;
+  border-left: 10px solid $black;
 }
 
 .header-container {
-  border-bottom: 20px solid $maize;
+  border-bottom: 20px solid $red;
 }
 
 .footer-container, .main aside {
-  border-top: 20px solid $maize;
+  border-top: 20px solid $red;
 }
 
 .header-container, .footer-container, .main aside {
-  background: $blue;
+  background: $black;
 }
 
 $footer-size: 30px;
 
 .main-container {
   padding-bottom: $footer-size;  
+  a {
+    color: $links;
+  }
+  a:visited {
+    color: $links;
+  }
 }
 
 .mini_header {
   a:visited {
-    color: blue;
+    // color: blue;
   }
   padding-bottom: 3%;
 }
@@ -142,7 +147,7 @@ $footer-size: 30px;
     }
     a:hover {
       text-decoration: underline;
-      color: $maize;
+      color: $white;
     }
   }
 }
@@ -161,7 +166,7 @@ article {
       padding-bottom: 5%;
     }
     a:visited {
-      color: blue;
+      // color: blue;
     }
     .projects {
       list-style-type: circle;
@@ -187,8 +192,8 @@ nav {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    color: $blue;
-    background: $maize;
+    color: $black;
+    background: $white;
     font-weight: 400;
     font-size: 1.3em;
     &:hover {
@@ -214,15 +219,18 @@ nav {
     font-weight: 300;
   }
   aside {
-    color: #fff;
+    color: $white;
     padding: 0px 3% 10px;
 
     a {
-      color: #fff;
+      color: $white;
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
+    }
+    a:visited {
+      color: $white;
     }
     img {
       padding-top: 10px;
@@ -270,13 +278,13 @@ nav {
 
   .tumblr_title {
     font-size: 2em;
-    color: #000;
+    color: $black;
     margin-bottom: 10px;
     // padding-left: 20px;
   }
 
   .tumblr_body {
-    border-left: 3px solid $maize;
+    border-left: 3px solid $red;
     padding-left: 20px;
   }
 
