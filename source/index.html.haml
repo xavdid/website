@@ -1,0 +1,50 @@
+%article
+  %header
+    %h1.heading
+      Hey, How's it Going?
+    %p
+      My name's David. I'm a jack of all trades about to graduate college with a degree in informatics. Apparently they let anyone put websites online these days. 
+  %section
+    %h2.heading
+      Things With People in Places
+    %p
+      I'm a software developer and web-cool-guy, I've created this site as a one stop shop for information pertaining to me in my personal and professional life. I like css, interpreted languages, computer automation, Mac OS X, and dark work enviroments. This site is and shall by my sandbox for all things that I may want to put on the internet at some point. I travel as much as I can and love visitng friends in their respective cities around the world.
+  -# %section
+  -#   %h2.heading
+  -#     People in Places
+  -#   %p
+  -#     I live for adventure and am an expert in not being bored. I travel as much as I can, mainly to see friends around the world.
+
+  %footer
+    %h3.heading
+      Did you know?
+    %p.fact
+      There should be a random fact here.
+
+%aside
+  %h3.heading
+    General Info
+  %p
+    %i.fa.fa-envelope.fa-lg :
+    %a{href: "mailto:brownman@umich.edu"}<
+      brownman (at) umich (dot) edu
+  %p
+    %i.fa.fa-twitter.fa-lg : 
+    %a{href: "http://www.twitter.com/xavdid"}
+      @xavdid
+  %p
+    %i.fa.fa-github-alt.fa-lg :
+    %a{href: "http://www.github.com/xavdidtheshadow"}
+      Xavdidtheshadow
+  %p
+    %i.fa.fa-file-text.fa-lg :
+    %a{href: "files/brownman_resume.pdf"}
+      Resume (PDF)
+
+  :javascript
+    var i = getRandomInt(0,facts.length-1);
+    $(".fact").html(facts[i]);
+    document.getElementById("zero").style.textDecoration="underline";
+
+  -# %p
+  -#   I could have gone for a straight CS major, but I knew I had plenty of chances to teach myself what I would learn in some of the required CS courses. Instead, studied Social Computing Informatics with a focus in computer science, allowing me to take the better part of a CS major's courseload along with classes on usuability analysis, networks, statistical research methods, and writing on the web, and eCommunities.

@@ -68,63 +68,80 @@
     <div class='main-container'>
       <div class='main wrapper clearfix'>
         <article>
-          <header>
-            <h1 class='heading'>
-              Hey, How's it Going?
-            </h1>
-            <p>
-              My name's David. I'm a jack of all trades about to graduate college with a degree in informatics. Apparently they let anyone put websites online these days.
-            </p>
-          </header>
-          <section>
+          <section class='jobs'>
             <h2 class='heading'>
-              Things With People in Places
+              Website Redesign
+              <span class='date'>
+                - (haml, scss, js, middleman)
+                - January, 2014
+              </span>
             </h2>
             <p>
-              I'm a software developer and web-cool-guy, I've created this site as a one stop shop for information pertaining to me in my personal and professional life. I like css, interpreted languages, computer automation, Mac OS X, and dark work enviroments. This site is and shall by my sandbox for all things that I may want to put on the internet at some point. I travel as much as I can and love visitng friends in their respective cities around the world.
+              My old site was great, but a little bare bones. Tired with the tedium of writing straight HTML and CSS, I set up a
+              <a href='http://middlemanapp.com' target='_blank'>middleman</a>
+              server so I could develop in a rails-like enviroment (haml, scss, partials, etc) and then generate a static site out of that. I got a nice responsive template from
+              <a href='http://html5boilerplate.com' target='_blank'>html5boilerplate</a>
+              and gutted it to meet my needs. Additionally, Google's
+              <a href='https://code.google.com/p/google-code-prettify/' target='_blank'>code-prettify</a>
+              syntax highlights any code that shows up on the site. How cool is that?
+            </p>
+            <h2 class='heading'>
+              StackPro
+              <span class='date'>
+                - (ruby, rails, haml, scss, js, mongo)
+                - December, 2013 -
+                <a href='http://stackpro.herokuapp.com' target='_blank'>app</a>
+                -
+                <a href='/stackpro' target='_blank'>
+                  info
+                </a>
+              </span>
+            </h2>
+            <p>
+              A neat little project that was used as part of my application to the
+              <a href='http://www.thehackerati.com' target='_blank'>hackerati</a>
+              that tracks how many questions are asked and answered on stackoverflow each hour.
+            </p>
+            <h2 class='heading'>
+              LoLAPI
+              <span class='date'>
+                - (python, tornado, json, API, regex)
+                - March, 2013 -
+                <a href='http://lolapi.herokuapp.com' target='_blank'>app</a>
+                -
+                <a href='/lolapi'>
+                  info
+                </a>
+              </span>
+            </h2>
+            <p>
+              Originally designed as the end-all resource for League of Legends data, this was a huge project. Pulling data from multiple sources to create json representation of characters and their stats
+            </p>
+            <h2 class='heading'>
+              Tumblr Avanced Search
+              <span class='date'>
+                - (python, Google App Engine, API)
+                - April, 2011 -
+                <a href='http://tumblradv182.appspot.com' target='_blank'>app</a>
+                 -
+                <a href='https://github.com/Xavdidtheshadow/tumblradv' target='_blank'>
+                  info
+                </a>
+              </span>
+            </h2>
+            <p>
+              Despite being able to search the full breadth of tumblr's offerings, there is no convenient way to search the postings of a single user, so I made one. It can search and filter through any tumblr url. Though we were required to use css, it was before I had any interest at all in design. Embarrassingly, this app is down right now because of changes in Google App Engine strcuture and python requirements. I'll go back and update it when I have the time.
             </p>
           </section>
-          <footer>
-            <h3 class='heading'>
-              Did you know?
-            </h3>
-            <p class='fact'>
-              There should be a random fact here.
-            </p>
-          </footer>
         </article>
         <aside>
-          <h3 class='heading'>
-            General Info
-          </h3>
           <p>
-            <i class='fa fa-envelope fa-lg'>:</i>
-            <a href='mailto:brownman@umich.edu'>brownman (at) umich (dot) edu</a>
+            I usually work on whatever strikes my fancy at the time. Sometimes a project is for school; other times part of a job application (or a related proof of concept).
           </p>
-          <p>
-            <i class='fa fa-twitter fa-lg'>:</i>
-            <a href='http://www.twitter.com/xavdid'>
-              @xavdid
-            </a>
-          </p>
-          <p>
-            <i class='fa fa-github-alt fa-lg'>:</i>
-            <a href='http://www.github.com/xavdidtheshadow'>
-              Xavdidtheshadow
-            </a>
-          </p>
-          <p>
-            <i class='fa fa-file-text fa-lg'>:</i>
-            <a href='files/brownman_resume.pdf'>
-              Resume (PDF)
-            </a>
-          </p>
-          <script>
-            var i = getRandomInt(0,facts.length-1);
-            $(".fact").html(facts[i]);
-            document.getElementById("zero").style.textDecoration="underline";
-          </script>
         </aside>
+        <script>
+          document.getElementById("ni").style.textDecoration="underline";
+        </script>
       </div>
     </div>
     <div class='footer-container'>

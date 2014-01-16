@@ -1,0 +1,108 @@
+!!!
+/[if lt IE 7]
+  <html class="no-js lt-ie9 lt-ie8 lt-ie7">
+/[if IE 7]
+  <html class="no-js lt-ie9 lt-ie8">
+/[if IE 8]
+  <html class="no-js lt-ie9 lt-ie8">
+/[if gt IE 8]
+  <!--> <html class="no-js"> <!--
+%head
+  %meta{charset: "utf-8"}
+  /hyphens are dumb
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  /You're looking at my site's source! That's pretty cool. It's pretty straigforward. Template taken from HTML5Boilderplate, css adapted to my liking. 
+  %title
+    David Brownman dot com
+  %meta{name: "description", content: "Personal site for David Brownman"}
+  %meta{name: "viewport", content: "width=device-width"}
+
+  #{stylesheet_link_tag "normalize", "the", "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"}
+  
+
+  #{javascript_include_tag "libraries/modernizr-2.6.2.min.js", "libraries/jquery-1.10.2.min.js", "facts.js", "https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?skin=sunburst"}
+
+
+%body
+  /[if lt IE 7]
+    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+  .page
+    .header-container
+      .wrapper.clearfix
+        %h1.title
+          %a{href: "/index.html"}
+            %i.fa.fa-home
+            %span#zero
+              David Brownman
+          
+        %nav
+          %ul
+            %li
+              %a#ichi{href: "/blog.html"}
+                Blog
+            %li
+              %a#ni{href: "/projects.html"}
+                Projects
+            %li
+              %a#san{href: "/misc.html"}
+                Sundries
+    .main-container
+      .main.wrapper.clearfix
+        
+        #{yield}
+
+    .footer-container
+      %footer.wrapper
+        .feet
+          %ul
+            %li
+              %a{href: "http://blog.davidbrownman.com"}
+                %i.fa.fa-tumblr-square
+                %span.sitename
+                  Blog Archive
+            %li
+              %a{href: "mailto:brownman@umich.edu"}
+                %i.fa.fa-envelope
+                %span.sitename
+                  Email
+            %li
+              %a{href: "http://www.github.com/xavdidtheshadow"}
+                %i.fa.fa-github-alt
+                %span.sitename
+                  GitHub
+            %li
+              %a{href: "http://www.linkedin.com/pub/david-brownman/63/480/180/"}
+                %i.fa.fa-linkedin-square
+                %span.sitename
+                  Linkedin
+            %li
+              %a{href: "http://www.twitter.com/xavdid"}
+                %i.fa.fa-twitter-square
+                %span.sitename
+                  Twitter
+            
+
+
+  %script{src: "http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"}
+  :javascript
+    window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')
+  %script{src: "js/main.js"}
+  :javascript
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-40842533-1', 'davidbrownman.com');
+    ga('send', 'pageview');
+
+
+
+
+
+
+
+
+
+
+
+

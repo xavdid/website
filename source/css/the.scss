@@ -1,0 +1,512 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+$blue: #1b1bbe;
+// $blue: #0000aa;
+$maize: #ffbf00;
+// $maize: #FFC600;
+$orange: #ff9400;
+$code: #bbbbbb;
+$light-blue: #2a78cc;
+
+html, button, input, select, textarea {
+  color: #222;
+  
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.4;
+  font: 16px / 26px Helvetica, Helvetica Neue, Arial;
+  // border here means blue line is on top
+  // border-left: 10px solid $blue;
+}
+
+html, body {
+  height: 100%;
+}
+
+::-moz-selection, ::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+// i:hover {
+//   color: green;
+// }
+
+.date {
+  font-style: italic;
+  font-size: .6em;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   Edited: David Brownman - this is my site
+   ========================================================================== */
+
+.wrapper {
+  width: 90%;
+  margin: 0 5%;
+}
+
+/* ===================
+    ALL: Blue Theme
+   =================== */
+
+.page {
+  min-height: 100%;
+  position: relative;
+  // border here means yellow line interrupted
+  border-left: 10px solid $blue;
+}
+
+.header-container {
+  border-bottom: 20px solid $maize;
+}
+
+.footer-container, .main aside {
+  border-top: 20px solid $maize;
+}
+
+.header-container, .footer-container, .main aside {
+  background: $blue;
+}
+
+$footer-size: 30px;
+
+.main-container {
+  padding-bottom: $footer-size;  
+}
+
+.mini_header {
+  a:visited {
+    color: blue;
+  }
+  padding-bottom: 3%;
+}
+
+.footer-container {
+  height: $footer-size;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  
+  .feet {
+    font-weight: 300;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: inline-block;
+      padding-right: 30px;
+    }
+    position: absolute;
+    left: 0;
+    color: #fff;
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+      color: $maize;
+    }
+  }
+}
+
+.title {
+  color: #fff;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+article {
+  header, section, footer {
+    p {
+      padding-bottom: 5%;
+    }
+    a:visited {
+      color: blue;
+    }
+    .projects {
+      list-style-type: circle;
+      font-weight: 200;
+    }
+  }
+}
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: $blue;
+    background: $maize;
+    font-weight: 400;
+    font-size: 1.3em;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+  padding: 30px 0;
+  article h1 {
+    font-size: 2em;
+    
+  }
+  .heading {
+    font-weight: 400;
+  }
+  p {
+    font-weight: 300;
+  }
+  aside {
+    color: #fff;
+    padding: 0px 3% 10px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    img {
+      padding-top: 10px;
+      width: 99%;
+    }
+  }
+}
+
+.footer-container footer {
+  color: #fff;
+  // padding: 10px 0;
+  .sitename {
+    display: none;
+  }
+}
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title {
+  padding-top: 20px;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.tumblr_posts {
+  list-style-type: none;
+  width: 60%;
+}
+
+.tumblr_post {
+  margin-bottom: 100px;
+  .date {
+    font-size: 1em;
+  }
+  blockquote {
+    background-color: #bbbbbb;
+    padding: 30px;
+    font-family: courier, helvetica;
+    margin-left: -10px;
+  }
+
+  .tumblr_title {
+    font-size: 2em;
+    color: #000;
+    margin-bottom: 10px;
+    // padding-left: 20px;
+  }
+
+  .tumblr_body {
+    border-left: 3px solid $maize;
+    padding-left: 20px;
+  }
+
+  //code block
+  pre, code {
+    // background-color: #fff;
+    // color: #000;
+  }
+
+  .dq {
+    // padding-left: 5%;
+  }
+}
+
+
+
+.tumblr_body img {
+  //possible fixed width
+}
+
+.quote_source {
+  // padding-left: 10%;
+  font-size: 1.5em;
+}
+
+.read_more_container! a {}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+  /* ====================
+      INTERMEDIATE: Menu
+     ==================== */
+  nav {
+    a {
+      float: left;
+      width: 27%;
+      margin: 0 1.7%;
+      padding: 25px 2%;
+      margin-bottom: 0;
+    }
+    li {
+      &:first-child a {
+        margin-left: 0;
+      }
+      &:last-child a {
+        margin-right: 0;
+      }
+    }
+    ul li {
+      display: inline;
+    }
+  }
+
+  .footer-container footer {
+    .sitename {
+      display: inline;
+    }
+  }
+
+  /* ========================
+      INTERMEDIATE: IE Fixes
+     ======================== */
+  .oldie nav a {
+    margin: 0 0.7%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* ============
+      WIDE: Menu
+     ============ */
+  .title {
+    float: left;
+  }
+  nav {
+    float: right;
+    width: 38%;
+  }
+  /* ============
+      WIDE: Main
+     ============ */
+  .main {
+    article {
+      float: left;
+      width: 57%;
+      margin-left: -2%;
+    }
+    aside {
+      float: right;
+      width: 23%;
+      margin-right: 5%;
+      img {
+        width: 99%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  /* ===============
+      Maximal Width
+     =============== */
+  .wrapper {
+    /*width: 1026px;  1140px - 10% for margins */
+    margin: 0 auto;
+  }
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  text-indent: -9999px;
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+  }
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  &.focusable {
+    &:active, &:focus {
+      clip: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      position: static;
+      width: auto;
+    }
+  }
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix {
+  &:before {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a {
+    text-decoration: underline;
+    &:visited {
+      text-decoration: underline;
+    }
+    &[href]:after {
+      content: " (" attr(href) ")";
+    }
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  .ir a:after {
+    content: "";
+  }
+  a {
+    &[href^="javascript:"]:after, &[href^="#"]:after {
+      content: "";
+    }
+  }
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+  tr {
+    page-break-inside: avoid;
+  }
+  img {
+    page-break-inside: avoid;
+    max-width: 100% !important;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
