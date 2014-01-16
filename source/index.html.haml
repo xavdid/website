@@ -15,11 +15,11 @@
   -#   %p
   -#     I live for adventure and am an expert in not being bored. I travel as much as I can, mainly to see friends around the world.
 
-  %footer
-    %h3.heading
-      Did you know?
-    %p.fact
-      There should be a random fact here.
+  -# %footer
+  -#   %h3.heading
+  -#     Did you know?
+  -#   %p.fact
+  -#     There should be a random fact here.
 
 %aside
   %h3.heading
@@ -40,6 +40,15 @@
     %i.fa.fa-file-text.fa-lg :
     %a{href: "files/brownman_resume.pdf", target: "_blank"}<
       Resume (PDF)
+
+%aside.second
+  %h3.heading
+    Did You Know?
+  %p.fact
+    There should be a random fact here.
+    
+
+
 
   :javascript
     var i = getRandomInt(0,facts.length-1);

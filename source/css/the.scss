@@ -23,7 +23,8 @@ body {
 
 html, body {
   height: 100%;
-  background-color: $white;
+  // background-color: $white;
+  background-image: url("/img/light_noise_diagonal.png"); 
 }
 
 ::-moz-selection, ::selection {
@@ -107,12 +108,19 @@ $footer-size: 30px;
 
 .main-container {
   padding-bottom: $footer-size;  
-  background-image: url("/img/light_noise_diagonal.png");  
+   
   a {
     color: $links;
   }
   a:visited {
     color: $links;
+  }
+  a:hover {
+    color: blue;
+    -moz-transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
   }
 }
 
@@ -228,7 +236,9 @@ nav {
       text-decoration: none;
     }
     a:hover {
+      color: $white;
       text-decoration: underline;
+
     }
     a:visited {
       color: $white;
@@ -237,6 +247,9 @@ nav {
       padding-top: 10px;
       width: 99%;
     }
+  }
+  .second {
+    margin-top: 30px;
   }
 }
 

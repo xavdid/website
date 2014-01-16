@@ -4,5 +4,5 @@ cp -r . ..
 cd ..
 rm -rf build
 git add .
-git commit
-git push
+git commit -m "$1"
+# git push
