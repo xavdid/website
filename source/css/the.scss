@@ -18,7 +18,7 @@ html, button, input, select, textarea {
 body {
   font-size: 1em;
   line-height: 1.4;
-  font: 16px / 26px Helvetica, Helvetica Neue, Arial;
+  font: 16px / 26px Minion Pro, Helvetica, Helvetica Neue, Arial;
   // border here means blue line is on top
   // border-left: 10px solid $black;
 }
@@ -118,7 +118,9 @@ textarea {
 }
 
 .header-container {
-  border-bottom: 20px solid $red;
+  // border-bottom: 20px solid $red;
+  font: 20px Myriad Pro, Helvetica, Helvetica Neue, Arial;
+
   // mitch added this shadow, i should give him credit
   // -webkit-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
   // -moz-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
@@ -126,7 +128,7 @@ textarea {
 }
 
 .footer-container, .main aside {
-  border-top: 20px solid $red;
+  // border-top: 20px solid $red;
 }
 
 .header-container, .footer-container, .main aside {
@@ -181,6 +183,7 @@ textarea {
 
 .title {
   color: $white;
+  font-size: 27px;
   a {
     color: $white !important;
     border-bottom: 1px solid $black;
@@ -222,17 +225,18 @@ nav {
   }
   a {
     display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
+    // margin-bottom: 10px;
+    // padding: 15px 0;
     text-align: center;
     font-weight: bold;
     color: $black !important;
     background: $white;
     font-weight: 400;
-    font-size: 1.3em;
-    border-bottom: 1px solid $black !important;
+    font-size: 20px;
+    // border-bottom: 1px solid $black !important;
+    border-bottom: 0px;
     &:hover {
-      text-decoration: underline;
+      // text-decoration: underline;
     }
     &:visited {
       color: $black;
@@ -359,8 +363,8 @@ nav {
   nav {
     a {
       float: left;
-      width: 27%;
-      margin: 0 1.7%;
+      width: 17%;
+      // margin: 0 1.7%;
       padding: 25px 2%;
       margin-bottom: 0;
       // font-size: 1em;
@@ -403,7 +407,7 @@ nav {
   nav {
     float: right;
     width: 38%;
-    font-size: 1.3em;
+    // font-size: 1.3em;
   }
   /* ============
       WIDE: Main
