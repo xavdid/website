@@ -7,6 +7,8 @@ $white: #F6F6F6;
 $orange: #ff9400;
 $red: #DE1B1B;
 $links: $red;
+$footer-size: 30px;
+$transition-speed: 0.5s;
 
 html, button, input, select, textarea {
   color: #222;
@@ -90,10 +92,37 @@ textarea {
   position: relative;
   // border here means yellow line interrupted
   border-left: 10px solid $black;
+  a {
+    color: $links;
+    border-bottom: 1px solid #a5a5a5; //grey color
+    text-decoration: none;
+    -moz-transition: $transition-speed ease-out;
+    -webkit-transition: $transition-speed ease-out;
+    -o-transition: $transition-speed ease-out;
+    transition: $transition-speed ease-out;
+    
+    &:visited {
+      color: $links;
+    }
+
+    &:hover {
+      // color: blue;
+      // text-decoration: underline;
+      border-bottom: 1px solid $red;
+      -moz-transition: $transition-speed ease-out;
+      -webkit-transition: $transition-speed ease-out;
+      -o-transition: $transition-speed ease-out;
+      transition: $transition-speed ease-out;
+    }
+  }
 }
 
 .header-container {
   border-bottom: 20px solid $red;
+  // mitch added this shadow, i should give him credit
+  // -webkit-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
+  // -moz-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
+  // box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
 }
 
 .footer-container, .main aside {
@@ -104,39 +133,14 @@ textarea {
   background: $black;
 }
 
-$footer-size: 30px;
-$transition-speed: 0.5s;
+
 
 .main-container {
   padding-bottom: $footer-size;  
-   
-  a {
-    color: $links;
-    text-decoration: none;
-    -moz-transition: $transition-speed ease-out;
-    -webkit-transition: $transition-speed ease-out;
-    -o-transition: $transition-speed ease-out;
-    transition: $transition-speed ease-out;
-    border-bottom: 1px solid #a5a5a5;
-  }
-  a:visited {
-    color: $links;
-  }
-  a:hover {
-    // color: blue;
-    // text-decoration: underline;
-    border-bottom: 1px solid $red;
-    -moz-transition: $transition-speed ease-out;
-    -webkit-transition: $transition-speed ease-out;
-    -o-transition: $transition-speed ease-out;
-    transition: $transition-speed ease-out;
-  }
 }
 
 .mini_header {
-  a:visited {
-    // color: blue;
-  }
+
   padding-bottom: 3%;
 }
 
@@ -165,30 +169,24 @@ $transition-speed: 0.5s;
     color: $white;
     a {
       color: $white;
-      text-decoration: none;
       border-bottom: 1px solid $black;
-      -moz-transition: 0.5s ease-out;
-      -webkit-transition: 0.5s ease-out;
-      -o-transition: 0.5s ease-out;
-      transition: 0.5s ease-out;
     }
     a:hover {
       // text-decoration: underline;
       border-bottom: 1px solid $white;
       // color: $white;
-      -moz-transition: 0.5s ease-out;
-      -webkit-transition: 0.5s ease-out;
-      -o-transition: 0.5s ease-out;
-      transition: 0.5s ease-out;
     }
   }
 }
 
 .title {
-  color: #fff;
+  color: $white;
   a {
-    text-decoration: none;
-    color: #fff;
+    color: $white !important;
+    border-bottom: 1px solid $black;
+    &:hover {
+      border-bottom: 1px solid $white;
+    }
   }
 }
 
@@ -196,9 +194,6 @@ article {
   header, section, footer {
     p {
       padding-bottom: 5%;
-    }
-    a:visited {
-      // color: blue;
     }
     .projects {
       list-style-type: circle;
@@ -223,21 +218,24 @@ nav {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    color: $black;
   }
   a {
     display: block;
     margin-bottom: 10px;
     padding: 15px 0;
     text-align: center;
-    text-decoration: none;
     font-weight: bold;
-    color: $black;
+    color: $black !important;
     background: $white;
     font-weight: 400;
     font-size: 1.3em;
+    border-bottom: 1px solid $black !important;
     &:hover {
       text-decoration: underline;
-
+    }
+    &:visited {
+      color: $black;
     }
   }
 }
@@ -264,31 +262,30 @@ nav {
 
     a {
       color: $white;
-      // text-decoration: none;
-      border-bottom: 1px solid $black;
-    }
-    a:hover {
-      color: $white;
-      // text-decoration: underline;
       border-bottom: 1px solid $white;
-
+      &:hover {
+        border-bottom: 1px solid $black;
+      }
+      &:visited {
+        color: $white;
+      }
     }
-    a:visited {
-      color: $white;
-    }
+    
     img {
       padding-top: 30px;
       padding-bottom: 30px;
       width: 99%;
     }
   }
+
   .second {
     margin-top: 30px;
   }
+
 }
 
 .footer-container footer {
-  color: #fff;
+  color: $white;
   // padding: 10px 0;
   .sitename {
     display: none;
@@ -336,15 +333,6 @@ nav {
     padding-left: 20px;
   }
 
-  //code block
-  pre, code {
-    // background-color: #fff;
-    // color: #000;
-  }
-
-  .dq {
-    // padding-left: 5%;
-  }
 }
 
 
