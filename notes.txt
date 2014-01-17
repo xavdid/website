@@ -15,3 +15,5 @@ gameplan:
             explination of why not CS
             coursework
             
+
+make links always red, underline on mouseover

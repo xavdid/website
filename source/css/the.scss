@@ -105,22 +105,31 @@ textarea {
 }
 
 $footer-size: 30px;
+$transition-speed: 0.5s;
 
 .main-container {
   padding-bottom: $footer-size;  
    
   a {
     color: $links;
+    text-decoration: none;
+    -moz-transition: $transition-speed ease-out;
+    -webkit-transition: $transition-speed ease-out;
+    -o-transition: $transition-speed ease-out;
+    transition: $transition-speed ease-out;
+    border-bottom: 1px solid #a5a5a5;
   }
   a:visited {
     color: $links;
   }
   a:hover {
-    color: blue;
-    -moz-transition: 0.3s ease-out;
-    -webkit-transition: 0.3s ease-out;
-    -o-transition: 0.3s ease-out;
-    transition: 0.3s ease-out;
+    // color: blue;
+    // text-decoration: underline;
+    border-bottom: 1px solid $red;
+    -moz-transition: $transition-speed ease-out;
+    -webkit-transition: $transition-speed ease-out;
+    -o-transition: $transition-speed ease-out;
+    transition: $transition-speed ease-out;
   }
 }
 
@@ -139,9 +148,13 @@ $footer-size: 30px;
   
   .feet {
     font-weight: 300;
+    i {
+      color: $white;
+    }
     ul {
       margin: 0;
       padding: 0;
+      padding-right: 33px;
     }
     li {
       display: inline-block;
@@ -149,14 +162,24 @@ $footer-size: 30px;
     }
     position: absolute;
     right: 0;
-    color: #fff;
+    color: $white;
     a {
-      color: #fff;
+      color: $red;
       text-decoration: none;
+      border-bottom: 1px solid $black;
+      -moz-transition: 0.5s ease-out;
+      -webkit-transition: 0.5s ease-out;
+      -o-transition: 0.5s ease-out;
+      transition: 0.5s ease-out;
     }
     a:hover {
-      text-decoration: underline;
-      color: $white;
+      // text-decoration: underline;
+      border-bottom: 1px solid $red;
+      // color: $white;
+      -moz-transition: 0.5s ease-out;
+      -webkit-transition: 0.5s ease-out;
+      -o-transition: 0.5s ease-out;
+      transition: 0.5s ease-out;
     }
   }
 }
@@ -239,16 +262,17 @@ nav {
     padding: 0px 3% 10px;
 
     a {
-      color: $white;
-      text-decoration: none;
+      color: $red;
+      // text-decoration: none;
+      border-bottom: 1px solid $black;
     }
     a:hover {
-      color: $white;
-      text-decoration: underline;
+      color: $red;
+      // text-decoration: underline;
 
     }
     a:visited {
-      color: $white;
+      color: $red;
     }
     img {
       padding-top: 30px;
@@ -411,7 +435,7 @@ nav {
   }
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (min-width: 750) {
   /* ===============
       Maximal Width
      =============== */
