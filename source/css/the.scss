@@ -5,11 +5,12 @@
 $black: #003366; //base blue
 $white: #fff;
 $red: #000033; //darker blue; also text color.
-$links: $red; //gonna
+
 $maize: #ffcc00;
 $light-blue: #336699;
 $footer-size: 30px;
 $transition-speed: 0.5s;
+$links: $light-blue; //gonna
 
 html, button, input, select, textarea {
   color: #222;
@@ -96,7 +97,7 @@ textarea {
   
   a {
     color: $links;
-    // border-bottom: 1px solid #a5a5a5; //grey color
+    border-bottom: 1px solid #a5a5a5; //grey color
     text-decoration: none;
     -moz-transition: $transition-speed ease-out;
     -webkit-transition: $transition-speed ease-out;
@@ -110,7 +111,7 @@ textarea {
     &:hover {
       // color: blue;
       // text-decoration: underline;
-      // border-bottom: 1px solid $red;
+      border-bottom: 1px solid $links;
       -moz-transition: $transition-speed ease-out;
       -webkit-transition: $transition-speed ease-out;
       -o-transition: $transition-speed ease-out;
@@ -141,6 +142,9 @@ textarea {
 
 .main-container {
   padding-bottom: $footer-size;  
+  a {
+    font-weight: bold;
+  }
 }
 
 .mini_header {
@@ -239,7 +243,7 @@ nav {
     // background: $white;
     font-weight: 400;
     font-size: 20px;
-    // border-bottom: 1px solid $black !important;
+    border-bottom: 0px !important;
     &:hover {
       // text-decoration: underline;
       background: $light-blue;
@@ -326,6 +330,9 @@ nav {
 .tumblr_posts {
   list-style-type: none;
   width: 60%;
+  // a {
+  //   font-weight: bold;
+  // }
 }
 
 .tumblr_post {
@@ -341,14 +348,16 @@ nav {
   }
 
   .tumblr_title {
-    font-size: 2em;
+    // font-size: 2em;
     color: $black;
     margin-bottom: 10px;
+    font: 30px Myriad Pro, Helvetica, Helvetica Neue, Arial;
+    font-weight: bold !important;
     // padding-left: 20px;
   }
 
   .tumblr_body {
-    border-left: 3px solid $red;
+    border-left: 3px solid $maize;
     padding-left: 20px;
   }
 
@@ -438,6 +447,7 @@ nav {
       h1, h2 {
         font: 20px Myriad Pro, Helvetica, Helvetica Neue, Arial;
         font-weight: bold !important;
+
       }
     }
     aside {
