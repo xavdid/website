@@ -2,11 +2,12 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 
-$black: #2B2B2B;
-$white: #F6F6F6;
-$orange: #ff9400;
-$red: #DE1B1B;
-$links: $red;
+$black: #003366; //base blue
+$white: #fff;
+$red: #000033; //darker blue; also text color.
+$links: $red; //gonna
+$maize: #ffcc00;
+$light-blue: #336699;
 $footer-size: 30px;
 $transition-speed: 0.5s;
 
@@ -26,7 +27,7 @@ body {
 html, body {
   height: 100%;
   // background-color: $white;
-  background-image: url("/img/light_noise_diagonal.png"); 
+  background-image: url("/img/greyzz.png"); 
 }
 
 ::-moz-selection, ::selection {
@@ -91,10 +92,11 @@ textarea {
   min-height: 100%;
   position: relative;
   // border here means yellow line interrupted
-  border-left: 10px solid $black;
+  border-left: 15px solid $black;
+  
   a {
     color: $links;
-    border-bottom: 1px solid #a5a5a5; //grey color
+    // border-bottom: 1px solid #a5a5a5; //grey color
     text-decoration: none;
     -moz-transition: $transition-speed ease-out;
     -webkit-transition: $transition-speed ease-out;
@@ -108,7 +110,7 @@ textarea {
     &:hover {
       // color: blue;
       // text-decoration: underline;
-      border-bottom: 1px solid $red;
+      // border-bottom: 1px solid $red;
       -moz-transition: $transition-speed ease-out;
       -webkit-transition: $transition-speed ease-out;
       -o-transition: $transition-speed ease-out;
@@ -119,8 +121,8 @@ textarea {
 
 .header-container {
   // border-bottom: 20px solid $red;
-  font: 20px Myriad Pro, Helvetica, Helvetica Neue, Arial;
-
+  font: 27px Myriad Pro, Helvetica, Helvetica Neue, Arial !important;
+  height: 48px;
   // mitch added this shadow, i should give him credit
   // -webkit-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
   // -moz-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
@@ -184,6 +186,7 @@ textarea {
 .title {
   color: $white;
   font-size: 27px;
+  margin: 0;
   a {
     color: $white !important;
     border-bottom: 1px solid $black;
@@ -217,6 +220,7 @@ article {
    ============== */
 
 nav {
+
   ul {
     margin: 0;
     padding: 0;
@@ -226,20 +230,31 @@ nav {
   a {
     display: block;
     // margin-bottom: 10px;
-    // padding: 15px 0;
+    padding: 12px 0;
     text-align: center;
     font-weight: bold;
-    color: $black !important;
-    background: $white;
+    vertical-align: middle;
+    // height: 48px;
+    color: #fff !important;
+    // background: $white;
     font-weight: 400;
     font-size: 20px;
     // border-bottom: 1px solid $black !important;
-    border-bottom: 0px;
     &:hover {
       // text-decoration: underline;
+      background: $light-blue;
+      // color: $black !important;
     }
     &:visited {
       color: $black;
+    }
+  }
+  .active {
+    background-image: url("/img/greyzz.png");
+    color: $black !important;
+    &:hover {
+      background-image: url("/img/greyzz.png");
+      color: $black !important;
     }
   }
 }
@@ -365,7 +380,9 @@ nav {
       float: left;
       width: 17%;
       // margin: 0 1.7%;
-      padding: 25px 2%;
+      // padding: 25px 2%;
+      padding-left: 2%;
+      padding-right: 2%;
       margin-bottom: 0;
       // font-size: 1em;
     }
@@ -402,7 +419,8 @@ nav {
      ============ */
   .title {
     float: left;
-    margin-left: -2%;
+    margin-left: -4.5%;
+    margin-top: 0.95%;
   }
   nav {
     float: right;
@@ -417,6 +435,10 @@ nav {
       float: left;
       width: 60%;
       margin-left: -2%;
+      h1, h2 {
+        font: 20px Myriad Pro, Helvetica, Helvetica Neue, Arial;
+        font-weight: bold !important;
+      }
     }
     aside {
       float: right;
