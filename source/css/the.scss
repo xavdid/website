@@ -164,7 +164,7 @@ $transition-speed: 0.5s;
     right: 0;
     color: $white;
     a {
-      color: $red;
+      color: $white;
       text-decoration: none;
       border-bottom: 1px solid $black;
       -moz-transition: 0.5s ease-out;
@@ -174,7 +174,7 @@ $transition-speed: 0.5s;
     }
     a:hover {
       // text-decoration: underline;
-      border-bottom: 1px solid $red;
+      border-bottom: 1px solid $white;
       // color: $white;
       -moz-transition: 0.5s ease-out;
       -webkit-transition: 0.5s ease-out;
@@ -237,6 +237,7 @@ nav {
     font-size: 1.3em;
     &:hover {
       text-decoration: underline;
+
     }
   }
 }
@@ -262,17 +263,18 @@ nav {
     padding: 0px 3% 10px;
 
     a {
-      color: $red;
+      color: $white;
       // text-decoration: none;
       border-bottom: 1px solid $black;
     }
     a:hover {
-      color: $red;
+      color: $white;
       // text-decoration: underline;
+      border-bottom: 1px solid $white;
 
     }
     a:visited {
-      color: $red;
+      color: $white;
     }
     img {
       padding-top: 30px;
