@@ -8,7 +8,7 @@ $red: #000033; //darker blue; also text color.
 
 $maize: #ffcc00;
 $light-blue: #336699;
-$footer-size: 30px;
+$footer-size: 48px;
 $transition-speed: 0.5s;
 $links: $light-blue; //gonna
 
@@ -269,6 +269,15 @@ nav {
 
 .main {
   padding: 30px 0;
+  .topper {
+    border-bottom: 2px solid #fff;
+    background-color: $black;
+    font: 18px Myriad Pro, Helvetica, Helvetica Neue, Arial;
+    .heading {
+      padding-top: 4px;
+      padding-left: 5%;
+    }
+  }
   article h1 {
     font-size: 2em;
     
@@ -279,30 +288,92 @@ nav {
   p {
     font-weight: 300;
   }
+  
   aside {
     color: $white;
-    padding: 0px 3% 10px;
-
+    background-color: $red;
+    // padding: 5px 0.5% 5px;
+    font: 16px Myriad Pro, Helvetica, Helvetica Neue, Arial;
     a {
-      color: $white;
-      border-bottom: 1px solid $white;
+      color: $maize !important;
+      border-bottom: 1px solid $red;
+      font-weight: normal;
       &:hover {
-        border-bottom: 1px solid $black;
+        border-bottom: 1px solid $maize;
       }
       &:visited {
         color: $white;
       }
     }
     
-    img {
-      padding-top: 30px;
-      padding-bottom: 30px;
-      width: 99%;
+    .fact {
+      
     }
+
+    img {
+      // padding-top: 5%;
+      // padding-bottom: 5%;
+      // width: 25%;
+      padding: 5%;
+    }
+
+    p {
+      width: 90%;
+      padding-left: 5%;
+    }
+
+    .top {
+      .cell {
+        margin-bottom: 1px;
+      }
+    }
+    .left {
+      .cell {
+        // margin-left: 1%;
+      }
+    }
+    .row {
+      text-align: center;
+      a {
+        color: #fff !important;
+      }
+      .cell {
+        width: 49.9%;
+        height: 80px;
+        // vertical-align: center;
+        background-color: $red;
+        padding-top: 30px;
+        &:hover {
+          background-color: $light-blue;
+          i {
+            color: #fff;
+          }
+        }
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      i {
+        color: $maize;
+        padding-bottom: 9%;
+      }
+    }
+
+  }
+
+  .first {
+    background-color: $light-blue;
   }
 
   .second {
     margin-top: 30px;
+  }
+
+  .third {
+    // background-color: $red;
   }
 
 }
@@ -442,7 +513,7 @@ nav {
   .main {
     article {
       float: left;
-      width: 60%;
+      width: 70%;
       margin-left: -2%;
       h1, h2 {
         font: 20px Myriad Pro, Helvetica, Helvetica Neue, Arial;
@@ -452,10 +523,9 @@ nav {
     }
     aside {
       float: right;
-      width: 23%;
-      margin-right: 5%;
+      width: 26%;
       img {
-        width: 99%;
+        width: 90%;
       }
     }
   }
