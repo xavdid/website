@@ -308,43 +308,55 @@ nav {
 
     .top {
       .cell {
-        margin-bottom: 1px;
+        // margin-bottom: 1px;
       }
     }
 
     .row {
       text-align: center;
       a {
-        color: $white !important;
+        color: $dark-blue !important;
       }
       .cell {
-        width: 49.9%;
-        background-color: $dark-blue;
-        padding-top: 6%;
-        padding-bottom: 6%;
+        width: 20%;
+        background-color: $white;
+        margin-top: 6%;
+        margin-left: 4%;
+        margin-bottom: 6%;
+
+        padding-top: 5%;
+        padding-bottom: 5%;
+
         &:hover {
           background-color: $light-blue;
           i {
             color: $white;
           }
+          color: $white;
         }
+      }
+      .end {
+        padding-bottom: 9.65%;
       }
       .left {
         float: left;
       }
       .right {
-        float: right;
+        float: left;
       }
       i {
-        color: $maize;
-        padding-bottom: 9%;
+        color: $dark-blue;
+        // padding-bottom: 9%;
       }
     }
 
   }
 
   .second {
-    background-color: $light-blue;
+    background-color: $dark-blue;
+    a {
+      color: $dark-blue;
+    }
   }
 
   .third {
@@ -359,6 +371,7 @@ nav {
     display: none;
   }
   .feet {
+    padding-top: 0.3%;
     padding-right: 2%;
     li {
       // padding-right: 10%;
@@ -531,13 +544,13 @@ nav {
     }
     aside {
       float: right;
-      width: 26%;
+      width: 30%;
       img {
         width: 90%;
       }
       .cell {
       i {
-        padding-bottom: 11% !important;
+        // padding-bottom: 11% !important;
       }
     }
     }
