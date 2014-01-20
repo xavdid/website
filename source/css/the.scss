@@ -3,17 +3,17 @@
    ========================================================================== */
 
 $blue: #003366; //base blue
-$white: #fff;
-$dark-blue: #000033; //darker blue; also text color.
+$white: #fff; //just so I can change all of this in one go.
+$dark-blue: #000033; //also text color.
 
 $maize: #ffcc00;
 $light-blue: #336699;
 $footer-size: 48px;
 $transition-speed: 0.5s;
-$links: $light-blue; //gonna
+$links: $light-blue; 
 
 html, button, input, select, textarea {
-  color: #222;
+  color: $dark-blue;
   
 }
 
@@ -21,13 +21,10 @@ body {
   font-size: 1em;
   line-height: 1.4;
   font: 16px / 26px Minion Pro, Helvetica, Helvetica Neue, Arial;
-  // border here means blue line is on top
-  // border-left: 10px solid $blue;
 }
 
 html, body {
   height: 100%;
-  // background-color: $white;
   background-image: url("../img/greyzz.png"); 
 }
 
@@ -58,10 +55,6 @@ fieldset {
 textarea {
   resize: vertical;
 }
-
-// i:hover {
-//   color: green;
-// }
 
 .date {
   font-style: italic;
@@ -97,7 +90,7 @@ textarea {
   
   a {
     color: $links;
-    border-bottom: 1px solid #a5a5a5; //grey color
+    border-bottom: 1px solid #bbbbbb; //grey color
     text-decoration: none;
     -moz-transition: $transition-speed ease-out;
     -webkit-transition: $transition-speed ease-out;
@@ -129,15 +122,9 @@ textarea {
   // box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
 }
 
-.footer-container, .main aside {
-  // border-top: 20px solid $dark-blue;
-}
-
 .header-container, .footer-container, .main aside {
   background: $blue;
 }
-
-
 
 .main-container {
   padding-bottom: $footer-size;  
@@ -147,7 +134,6 @@ textarea {
 }
 
 .mini_header {
-
   padding-bottom: 3%;
 }
 
@@ -245,9 +231,7 @@ nav {
     font-size: 20px;
     border-bottom: 0px !important;
     &:hover {
-      // text-decoration: underline;
       background: $light-blue;
-      // color: $blue !important;
     }
     &:visited {
       color: $blue;
@@ -325,11 +309,7 @@ nav {
         margin-bottom: 1px;
       }
     }
-    .left {
-      .cell {
-        // margin-left: 1%;
-      }
-    }
+
     .row {
       text-align: center;
       a {
@@ -337,8 +317,6 @@ nav {
       }
       .cell {
         width: 49.9%;
-        // height: 80px;
-        // vertical-align: center;
         background-color: $dark-blue;
         padding-top: 6%;
         padding-bottom: 6%;
@@ -371,15 +349,10 @@ nav {
     margin-top: 3%;
   }
 
-  .fourth {
-    // background-color: $dark-blue;
-  }
-
 }
 
 .footer-container footer {
   color: $white;
-  // padding: 10px 0;
   .sitename {
     display: none;
   }
@@ -401,11 +374,8 @@ nav {
   list-style-type: none;
   width: 95%;
   padding: 0;
-  // a {
-  //   font-weight: bold;
-  // }
   .tumblr_post {
-    margin-bottom: 15%;
+    margin-bottom: 10%;
     .date {
       font-size: 1em;
     }
@@ -446,7 +416,7 @@ nav {
 }
 
 .quote_source {
-  // padding-left: 10%;
+  padding-left: 8%;
   font-size: 1.5em;
 }
 
