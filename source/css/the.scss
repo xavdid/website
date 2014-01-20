@@ -8,7 +8,7 @@ $dark-blue: #000033; //also text color.
 
 $maize: #ffcc00;
 $light-blue: #336699;
-$footer-size: 48px;
+$footer-size: 26px;
 $transition-speed: 0.5s;
 $links: $light-blue; 
 
@@ -151,14 +151,16 @@ textarea {
     ul {
       margin: 0;
       padding: 0;
-      padding-right: 33px;
+      // padding-right: 33px;
     }
     li {
       display: inline-block;
-      padding-right: 30px;
+      padding-right: 4%;
     }
-    position: absolute;
-    right: 0;
+    // position: absolute;
+    // right: 0;
+    // float: right;
+    page-break-inside: avoid;
     color: $white;
     a {
       color: $white;
@@ -356,6 +358,12 @@ nav {
   .sitename {
     display: none;
   }
+  .feet {
+    padding-right: 2%;
+    li {
+      // padding-right: 10%;
+    }
+  }
 }
 
 /* ===============
@@ -455,8 +463,16 @@ nav {
   }
 
   .footer-container footer {
+    .feet {
+      // padding-right: 3%;
+    }
     .sitename {
-      display: inline;
+      // display: inline;
+    }
+  
+    li {
+      display: inline-block;
+      // padding-right: 5%;
     }
   }
 
@@ -467,7 +483,7 @@ nav {
 
   aside {
     i {
-      padding-bottom: 2% !important;
+      padding-bottom: 4% !important;
     }
   }
 
@@ -524,6 +540,21 @@ nav {
         padding-bottom: 11% !important;
       }
     }
+    }
+  }
+
+  .footer-container footer {
+    .feet {
+      // padding-right: 4%;
+      margin-left: -2%;
+    }
+    .sitename {
+      display: inline;
+    }
+  
+    li {
+      // display: inline-block;
+      padding-right: 4% !important;
     }
   }
 
