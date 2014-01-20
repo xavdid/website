@@ -38,7 +38,6 @@
       <div class='wrapper clearfix'>
         <h1 class='title'>
           <a href='/index.html' id='zero'>
-            <i class='fa fa-home'></i>
             <span>
               David Brownman
             </span>
@@ -47,17 +46,22 @@
         <nav>
           <ul>
             <li>
-              <a href='/blog.html' id='ichi'>
+              <a href='/index.html' id='ichi'>
+                Home
+              </a>
+            </li>
+            <li>
+              <a href='/blog.html' id='ni'>
                 Blog
               </a>
             </li>
             <li>
-              <a href='/projects.html' id='ni'>
+              <a href='/projects.html' id='san'>
                 Projects
               </a>
             </li>
             <li>
-              <a href='/misc.html' id='san'>
+              <a href='/misc.html' id='shi'>
                 Sundries
               </a>
             </li>
@@ -68,15 +72,15 @@
     <div class='main-container'>
       <div class='main wrapper clearfix'>
         <p class='mini_header'>
-          The most recent 10 posts on my blog are found here. The full archive is
+          The most recent 10 posts on my blog are found on this page. The full archive is
           <a href='http://blog.davidbrownman.com'>here</a>
           and will be there forever.
         </p>
         <ul class='tumblr_posts'></ul>
-        <script src='http://blog.davidbrownman.com/api/read/json?num=10' type='text/javascript'></script>
+        <script src='http://blog.davidbrownman.com/api/read/json?num=30' type='text/javascript'></script>
         <script>
           // The variable "tumblr_api_read" is now set by the js above
-          document.getElementById("ichi").style.textDecoration="underline";
+          document.getElementById("ni").className="active";
           for (var i = 0; i<tumblr_api_read.posts.length; i++)
           {
             if (tumblr_api_read.posts[i].type == "quote") {
@@ -108,7 +112,6 @@
             }
           
             
-            // e+="<hr>";
             $(".tumblr_posts").append(e);
           }
           

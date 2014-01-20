@@ -1,27 +1,27 @@
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
-/* line 14, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 16, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 html, button, input, select, textarea {
-  color: #222; }
+  color: #000033; }
 
-/* line 19, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 21, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 body {
   font-size: 1em;
   line-height: 1.4;
-  font: 16px / 26px Helvetica, Helvetica Neue, Arial; }
+  font: 16px / 26px Minion Pro, Helvetica, Helvetica Neue, Arial; }
 
 /* line 27, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 html, body {
   height: 100%;
-  background-image: url("/img/light_noise_diagonal.png"); }
+  background-image: url("../img/greyzz.png"); }
 
-/* line 33, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 32, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 ::-moz-selection, ::selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-/* line 38, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 37, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 hr {
   display: block;
   height: 1px;
@@ -30,26 +30,26 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
-/* line 47, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 46, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 img {
   vertical-align: middle; }
 
-/* line 51, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 50, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0; }
 
-/* line 57, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 56, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 textarea {
   resize: vertical; }
 
-/* line 65, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 60, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .date {
   font-style: italic;
   font-size: .6em; }
 
-/* line 70, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 65, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -60,7 +60,7 @@ textarea {
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    Edited: David Brownman - this is my site
    ========================================================================== */
-/* line 82, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 77, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .wrapper {
   width: 90%;
   margin: 0 5%; }
@@ -68,219 +68,288 @@ textarea {
 /* ===================
     ALL: Blue Theme
    =================== */
-/* line 91, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 86, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .page {
   min-height: 100%;
   position: relative;
-  border-left: 10px solid #2b2b2b; }
-  /* line 96, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  border-left: 15px solid #003366; }
+  /* line 92, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .page a {
-    color: #de1b1b;
-    border-bottom: 1px solid #a5a5a5;
+    color: #336699;
+    border-bottom: 1px solid #bbbbbb;
     text-decoration: none;
     -moz-transition: 0.5s ease-out;
     -webkit-transition: 0.5s ease-out;
     -o-transition: 0.5s ease-out;
     transition: 0.5s ease-out; }
-    /* line 105, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    /* line 101, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
     .page a:visited {
-      color: #de1b1b; }
-    /* line 109, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+      color: #336699; }
+    /* line 105, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
     .page a:hover {
-      border-bottom: 1px solid #de1b1b;
+      border-bottom: 1px solid #336699;
       -moz-transition: 0.5s ease-out;
       -webkit-transition: 0.5s ease-out;
       -o-transition: 0.5s ease-out;
       transition: 0.5s ease-out; }
 
-/* line 121, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 117, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .header-container {
-  border-bottom: 20px solid #de1b1b; }
+  font: 27px Myriad Pro, Helvetica, Helvetica Neue, Arial !important; }
 
-/* line 129, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
-.footer-container, .main aside {
-  border-top: 20px solid #de1b1b; }
-
-/* line 133, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 126, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .header-container, .footer-container, .main aside {
-  background: #2b2b2b; }
+  background: #003366; }
 
-/* line 139, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 130, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .main-container {
-  padding-bottom: 30px; }
+  padding-bottom: 48px; }
+  /* line 132, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  .main-container a {
+    font-weight: bold; }
 
-/* line 143, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 137, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .mini_header {
   padding-bottom: 3%; }
 
-/* line 148, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 141, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .footer-container {
-  height: 30px;
+  height: 48px;
   position: absolute;
   width: 100%;
   bottom: 0; }
-  /* line 154, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 147, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .footer-container .feet {
     font-weight: 300;
     position: absolute;
     right: 0;
-    color: #f6f6f6; }
-    /* line 156, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    color: white; }
+    /* line 149, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
     .footer-container .feet i {
-      color: #f6f6f6; }
-    /* line 159, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+      color: white; }
+    /* line 152, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
     .footer-container .feet ul {
       margin: 0;
       padding: 0;
       padding-right: 33px; }
-    /* line 164, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    /* line 157, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
     .footer-container .feet li {
       display: inline-block;
       padding-right: 30px; }
-    /* line 171, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    /* line 164, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
     .footer-container .feet a {
-      color: #f6f6f6;
-      border-bottom: 1px solid #2b2b2b; }
-    /* line 175, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+      color: white;
+      border-bottom: 1px solid #003366; }
+    /* line 168, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
     .footer-container .feet a:hover {
-      border-bottom: 1px solid #f6f6f6; }
+      border-bottom: 1px solid white; }
 
-/* line 183, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 176, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .title {
-  color: #f6f6f6; }
-  /* line 185, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  color: white;
+  font-size: 27px;
+  margin: 0; }
+  /* line 180, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .title a {
-    color: #f6f6f6 !important;
-    border-bottom: 1px solid #2b2b2b; }
-    /* line 188, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    color: white !important;
+    border-bottom: 1px solid #003366; }
+    /* line 183, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
     .title a:hover {
-      border-bottom: 1px solid #f6f6f6; }
+      border-bottom: 1px solid white; }
 
-/* line 196, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 191, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 article header p, article section p, article footer p {
   padding-bottom: 5%; }
-/* line 199, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 194, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 article header .projects, article section .projects, article footer .projects {
   list-style-type: circle;
   font-weight: 200; }
-/* line 205, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 200, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 article .dict {
   background-color: rgba(187, 187, 187, 0.3);
   padding: 20px;
-  width: 60%; }
+  width: 80%;
+  margin-left: 5%; }
 
 /* ==============
     MOBILE: Menu
    ============== */
-/* line 218, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 215, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  color: #2b2b2b; }
-/* line 224, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  color: #003366; }
+/* line 221, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 nav a {
   display: block;
-  margin-bottom: 10px;
-  padding: 15px 0;
+  padding: 12px 0;
   text-align: center;
   font-weight: bold;
-  color: #2b2b2b !important;
-  background: #f6f6f6;
+  vertical-align: middle;
+  color: white !important;
   font-weight: 400;
-  font-size: 1.3em;
-  border-bottom: 1px solid #2b2b2b !important; }
-  /* line 235, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  font-size: 20px;
+  border-bottom: 0px !important; }
+  /* line 234, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   nav a:hover {
-    text-decoration: underline; }
-  /* line 238, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    background: #336699; }
+  /* line 237, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   nav a:visited {
-    color: #2b2b2b; }
+    color: #003366; }
+/* line 241, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+nav .active {
+  background-image: url("../img/greyzz.png");
+  color: #003366 !important; }
+  /* line 244, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  nav .active:hover {
+    background-image: url("../img/greyzz.png");
+    color: #003366 !important; }
 
 /* ==============
     MOBILE: Main
    ============== */
-/* line 248, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 255, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .main {
   padding: 30px 0; }
-  /* line 250, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 257, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  .main .topper {
+    border-bottom: 2px solid white;
+    background-color: #003366;
+    font: 18px Myriad Pro, Helvetica, Helvetica Neue, Arial; }
+    /* line 261, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    .main .topper .heading {
+      padding-top: 4px;
+      padding-left: 5%; }
+  /* line 266, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .main article h1 {
     font-size: 2em; }
-  /* line 254, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 270, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .main .heading {
     font-weight: 400; }
-  /* line 257, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 273, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .main p {
     font-weight: 300; }
-  /* line 260, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 277, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .main aside {
-    color: #f6f6f6;
-    padding: 0px 3% 10px; }
-    /* line 264, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    color: white;
+    background-color: #000033;
+    font: 16px Myriad Pro, Helvetica, Helvetica Neue, Arial;
+    overflow: hidden; }
+    /* line 282, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
     .main aside a {
-      color: #f6f6f6;
-      border-bottom: 1px solid #f6f6f6; }
-      /* line 267, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+      color: #ffcc00 !important;
+      border-bottom: 1px solid #000033;
+      font-weight: normal; }
+      /* line 286, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
       .main aside a:hover {
-        border-bottom: 1px solid #2b2b2b; }
-      /* line 270, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+        border-bottom: 1px solid #ffcc00; }
+      /* line 289, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
       .main aside a:visited {
-        color: #f6f6f6; }
-    /* line 275, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+        color: white; }
+    /* line 295, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
     .main aside img {
-      padding-top: 30px;
-      padding-bottom: 30px;
-      width: 99%; }
-  /* line 282, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+      width: 37%;
+      padding: 5%; }
+    /* line 303, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    .main aside p {
+      width: 90%;
+      padding-left: 5%; }
+    /* line 309, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    .main aside .top .cell {
+      margin-bottom: 1px; }
+    /* line 314, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    .main aside .row {
+      text-align: center; }
+      /* line 316, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+      .main aside .row a {
+        color: white !important; }
+      /* line 319, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+      .main aside .row .cell {
+        width: 49.9%;
+        background-color: #000033;
+        padding-top: 6%;
+        padding-bottom: 6%; }
+        /* line 324, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+        .main aside .row .cell:hover {
+          background-color: #336699; }
+          /* line 326, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+          .main aside .row .cell:hover i {
+            color: white; }
+      /* line 331, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+      .main aside .row .left {
+        float: left; }
+      /* line 334, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+      .main aside .row .right {
+        float: right; }
+      /* line 337, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+      .main aside .row i {
+        color: #ffcc00;
+        padding-bottom: 9%; }
+  /* line 345, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .main .second {
-    margin-top: 30px; }
+    background-color: #336699; }
+  /* line 349, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  .main .third {
+    margin-top: 3%; }
 
-/* line 288, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 355, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .footer-container footer {
-  color: #f6f6f6; }
-  /* line 291, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  color: white; }
+  /* line 357, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .footer-container footer .sitename {
     display: none; }
 
 /* ===============
     ALL: IE Fixes
    =============== */
-/* line 300, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 366, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .ie7 .title {
   padding-top: 20px; }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* line 308, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 374, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .tumblr_posts {
   list-style-type: none;
-  width: 60%; }
+  width: 95%;
+  padding: 0; }
+  /* line 378, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  .tumblr_posts .tumblr_post {
+    margin-bottom: 10%; }
+    /* line 380, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    .tumblr_posts .tumblr_post .date {
+      font-size: 1em; }
+    /* line 383, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    .tumblr_posts .tumblr_post blockquote {
+      background-color: #bbbbbb;
+      padding: 30px;
+      font-family: courier, helvetica;
+      margin-left: -10px; }
+    /* line 390, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    .tumblr_posts .tumblr_post code {
+      background-color: #bbbbbb; }
+    /* line 394, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    .tumblr_posts .tumblr_post pre code {
+      background-color: inherit; }
+    /* line 399, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    .tumblr_posts .tumblr_post .tumblr_title {
+      color: #003366;
+      font: 30px Myriad Pro, Helvetica, Helvetica Neue, Arial;
+      font-weight: bold !important; }
+    /* line 408, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    .tumblr_posts .tumblr_post .tumblr_body {
+      border-left: 3px solid #ffcc00;
+      padding-left: 5%; }
+      /* line 411, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+      .tumblr_posts .tumblr_post .tumblr_body img {
+        width: 95%;
+        height: 95%; }
 
-/* line 313, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
-.tumblr_post {
-  margin-bottom: 100px; }
-  /* line 315, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
-  .tumblr_post .date {
-    font-size: 1em; }
-  /* line 318, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
-  .tumblr_post blockquote {
-    background-color: #bbbbbb;
-    padding: 30px;
-    font-family: courier, helvetica;
-    margin-left: -10px; }
-  /* line 325, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
-  .tumblr_post .tumblr_title {
-    font-size: 2em;
-    color: #2b2b2b;
-    margin-bottom: 10px; }
-  /* line 332, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
-  .tumblr_post .tumblr_body {
-    border-left: 3px solid #de1b1b;
-    padding-left: 20px; }
-
-/* line 345, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 419, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .quote_source {
+  padding-left: 8%;
   font-size: 1.5em; }
 
 /* ==========================================================================
@@ -290,94 +359,119 @@ nav a {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
-  /* line 361, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 435, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   nav a {
     float: left;
-    width: 27%;
-    margin: 0 1.7%;
-    padding: 25px 2%;
+    width: 17%;
+    padding-left: 2%;
+    padding-right: 2%;
     margin-bottom: 0; }
-  /* line 370, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 446, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   nav li:first-child a {
     margin-left: 0; }
-  /* line 373, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 449, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   nav li:last-child a {
     margin-right: 0; }
-  /* line 377, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 453, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   nav ul li {
     display: inline; }
 
-  /* line 383, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 459, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .footer-container footer .sitename {
     display: inline; }
 
   /* ========================
+      INTERMEDIATE: Main
+     ======================== */
+  /* line 470, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  aside i {
+    padding-bottom: 2% !important; }
+
+  /* line 475, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  .dict {
+    width: 60% !important;
+    margin: 0; }
+
+  /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
-  /* line 391, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 484, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .oldie nav a {
     margin: 0 0.7%; } }
 @media only screen and (min-width: 1124px) {
   /* ============
       WIDE: Menu
      ============ */
-  /* line 400, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 494, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .title {
     float: left;
-    margin-left: -2%; }
+    margin-left: -4.5%;
+    margin-top: 0.95%; }
 
-  /* line 404, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 499, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   nav {
     float: right;
-    width: 38%;
-    font-size: 1.3em; }
+    width: 38%; }
 
   /* ============
       WIDE: Main
      ============ */
-  /* line 413, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 508, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .main article {
     float: left;
-    width: 60%;
+    width: 70%;
     margin-left: -2%; }
-  /* line 418, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    /* line 512, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    .main article h1, .main article h2 {
+      font: 20px Myriad Pro, Helvetica, Helvetica Neue, Arial;
+      font-weight: bold !important; }
+  /* line 517, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .main aside {
     float: right;
-    width: 23%;
-    margin-right: 5%; }
-    /* line 422, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    width: 26%; }
+    /* line 520, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
     .main aside img {
-      width: 99%; } }
+      width: 90%; }
+    /* line 524, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    .main aside .cell i {
+      padding-bottom: 11% !important; }
+
+  /* line 531, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  .tumblr_posts {
+    width: 80%; }
+    /* line 535, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    .tumblr_posts .tumblr_post .tumblr_body img {
+      width: 70%; } }
 @media only screen and (min-width: 750) {
   /* ===============
       Maximal Width
      =============== */
-  /* line 433, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 547, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .wrapper {
     /*width: 1026px;  1140px - 10% for margins */
     margin: 0 auto; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 443, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 557, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .ir {
   background-color: transparent;
   border: 0;
   overflow: hidden;
   text-indent: -9999px; }
-  /* line 448, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 562, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .ir:before {
     content: "";
     display: block;
     width: 0;
     height: 150%; }
 
-/* line 456, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 570, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .hidden {
   display: none !important;
   visibility: hidden; }
 
-/* line 461, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 575, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -387,7 +481,7 @@ nav a {
   padding: 0;
   position: absolute;
   width: 1px; }
-  /* line 471, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 585, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
@@ -396,18 +490,18 @@ nav a {
     position: static;
     width: auto; }
 
-/* line 482, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 596, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .invisible {
   visibility: hidden; }
 
-/* line 486, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+/* line 600, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .clearfix {
   zoom: 1; }
-  /* line 487, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 601, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .clearfix:before {
     content: " ";
     display: table; }
-  /* line 491, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 605, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .clearfix:after {
     content: " ";
     display: table;
@@ -417,7 +511,7 @@ nav a {
    Print styles
    ========================================================================== */
 @media print {
-  /* line 504, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 618, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -425,46 +519,46 @@ nav a {
     box-shadow: none !important;
     text-shadow: none !important; }
 
-  /* line 511, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 625, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   a {
     text-decoration: underline; }
-    /* line 513, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    /* line 627, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
     a:visited {
       text-decoration: underline; }
-    /* line 516, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+    /* line 630, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
     a[href]:after {
       content: " (" attr(href) ")"; }
 
-  /* line 520, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 634, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   abbr[title]:after {
     content: " (" attr(title) ")"; }
 
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 526, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 640, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .ir a:after {
     content: ""; }
 
-  /* line 530, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 644, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   a[href^="javascript:"]:after, a[href^="#"]:after {
     content: ""; }
 
-  /* line 534, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 648, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
 
-  /* line 538, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 652, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */ }
 
-  /* line 542, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 656, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   tr {
     page-break-inside: avoid; }
 
-  /* line 545, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 659, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   img {
     page-break-inside: avoid;
     max-width: 100% !important; }
@@ -472,11 +566,11 @@ nav a {
   @page {
     margin: 0.5cm; }
 
-  /* line 553, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 667, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3; }
 
-  /* line 557, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
+  /* line 671, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   h2, h3 {
     page-break-after: avoid; } }
