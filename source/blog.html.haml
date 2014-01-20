@@ -1,5 +1,5 @@
 %p.mini_header
-  The most recent 10 posts on my blog are found here. The full archive is
+  The most recent 10 posts on my blog are found on this page. The full archive is
   %a{href:"http://blog.davidbrownman.com"}<
     here
   and will be there forever.
@@ -7,10 +7,11 @@
 %ul.tumblr_posts
 
 
-%script{type: "text/javascript", src: "http://blog.davidbrownman.com/api/read/json?num=10"}
+%script{type: "text/javascript", src: "http://blog.davidbrownman.com/api/read/json?num=30"}
+
 :javascript
   // The variable "tumblr_api_read" is now set by the js above
-  document.getElementById("ichi").style.textDecoration="underline";
+  document.getElementById("ni").className="active";
   for (var i = 0; i<tumblr_api_read.posts.length; i++)
   {
     if (tumblr_api_read.posts[i].type == "quote") {
@@ -42,7 +43,6 @@
     }
 
     
-    // e+="<hr>";
     $(".tumblr_posts").append(e);
   }
   

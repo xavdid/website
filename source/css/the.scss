@@ -2,31 +2,30 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 
-$black: #2B2B2B;
-$white: #F6F6F6;
-$orange: #ff9400;
-$red: #DE1B1B;
-$links: $red;
-$footer-size: 30px;
+$blue: #003366; //base blue
+$white: #fff; //just so I can change all of this in one go.
+$dark-blue: #000033; //also text color.
+
+$maize: #ffcc00;
+$light-blue: #336699;
+$footer-size: 48px;
 $transition-speed: 0.5s;
+$links: $light-blue; 
 
 html, button, input, select, textarea {
-  color: #222;
+  color: $dark-blue;
   
 }
 
 body {
   font-size: 1em;
   line-height: 1.4;
-  font: 16px / 26px Helvetica, Helvetica Neue, Arial;
-  // border here means blue line is on top
-  // border-left: 10px solid $black;
+  font: 16px / 26px Minion Pro, Helvetica, Helvetica Neue, Arial;
 }
 
 html, body {
   height: 100%;
-  // background-color: $white;
-  background-image: url("/img/light_noise_diagonal.png"); 
+  background-image: url("../img/greyzz.png"); 
 }
 
 ::-moz-selection, ::selection {
@@ -57,10 +56,6 @@ textarea {
   resize: vertical;
 }
 
-// i:hover {
-//   color: green;
-// }
-
 .date {
   font-style: italic;
   font-size: .6em;
@@ -90,11 +85,12 @@ textarea {
 .page {
   min-height: 100%;
   position: relative;
-  // border here means yellow line interrupted
-  border-left: 10px solid $black;
+  // border here means blue line interrupted
+  border-left: 15px solid $blue;
+  
   a {
     color: $links;
-    border-bottom: 1px solid #a5a5a5; //grey color
+    border-bottom: 1px solid #bbbbbb; //grey color
     text-decoration: none;
     -moz-transition: $transition-speed ease-out;
     -webkit-transition: $transition-speed ease-out;
@@ -108,7 +104,7 @@ textarea {
     &:hover {
       // color: blue;
       // text-decoration: underline;
-      border-bottom: 1px solid $red;
+      border-bottom: 1px solid $links;
       -moz-transition: $transition-speed ease-out;
       -webkit-transition: $transition-speed ease-out;
       -o-transition: $transition-speed ease-out;
@@ -118,29 +114,26 @@ textarea {
 }
 
 .header-container {
-  border-bottom: 20px solid $red;
+  // border-bottom: 20px solid $dark-blue;
+  font: 27px Myriad Pro, Helvetica, Helvetica Neue, Arial !important;
   // mitch added this shadow, i should give him credit
   // -webkit-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
   // -moz-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
   // box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
 }
 
-.footer-container, .main aside {
-  border-top: 20px solid $red;
-}
-
 .header-container, .footer-container, .main aside {
-  background: $black;
+  background: $blue;
 }
-
-
 
 .main-container {
   padding-bottom: $footer-size;  
+  a {
+    font-weight: bold;
+  }
 }
 
 .mini_header {
-
   padding-bottom: 3%;
 }
 
@@ -169,7 +162,7 @@ textarea {
     color: $white;
     a {
       color: $white;
-      border-bottom: 1px solid $black;
+      border-bottom: 1px solid $blue;
     }
     a:hover {
       // text-decoration: underline;
@@ -181,9 +174,11 @@ textarea {
 
 .title {
   color: $white;
+  font-size: 27px;
+  margin: 0;
   a {
     color: $white !important;
-    border-bottom: 1px solid $black;
+    border-bottom: 1px solid $blue;
     &:hover {
       border-bottom: 1px solid $white;
     }
@@ -204,8 +199,9 @@ article {
   .dict {
       background-color: rgba(187, 187, 187, 0.3);
       padding: 20px;
-      width: 60%;
-      // border: 1px solid $black;
+      width: 80%;
+      margin-left: 5%;
+      // border: 1px solid $blue;
     }
 }
 
@@ -214,28 +210,39 @@ article {
    ============== */
 
 nav {
+
   ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    color: $black;
+    color: $blue;
   }
   a {
     display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
+    // margin-bottom: 10px;
+    padding: 12px 0;
     text-align: center;
     font-weight: bold;
-    color: $black !important;
-    background: $white;
+    vertical-align: middle;
+    // height: 48px;
+    color: $white !important;
+    // background: $white;
     font-weight: 400;
-    font-size: 1.3em;
-    border-bottom: 1px solid $black !important;
+    font-size: 20px;
+    border-bottom: 0px !important;
     &:hover {
-      text-decoration: underline;
+      background: $light-blue;
     }
     &:visited {
-      color: $black;
+      color: $blue;
+    }
+  }
+  .active {
+    background-image: url("../img/greyzz.png");
+    color: $blue !important;
+    &:hover {
+      background-image: url("../img/greyzz.png");
+      color: $blue !important;
     }
   }
 }
@@ -246,6 +253,15 @@ nav {
 
 .main {
   padding: 30px 0;
+  .topper {
+    border-bottom: 2px solid $white;
+    background-color: $blue;
+    font: 18px Myriad Pro, Helvetica, Helvetica Neue, Arial;
+    .heading {
+      padding-top: 4px;
+      padding-left: 5%;
+    }
+  }
   article h1 {
     font-size: 2em;
     
@@ -256,37 +272,87 @@ nav {
   p {
     font-weight: 300;
   }
+  
   aside {
     color: $white;
-    padding: 0px 3% 10px;
-
+    background-color: $dark-blue;
+    // padding: 5px 0.5% 5px;
+    font: 16px Myriad Pro, Helvetica, Helvetica Neue, Arial;
     a {
-      color: $white;
-      border-bottom: 1px solid $white;
+      color: $maize !important;
+      border-bottom: 1px solid $dark-blue;
+      font-weight: normal;
       &:hover {
-        border-bottom: 1px solid $black;
+        border-bottom: 1px solid $maize;
       }
       &:visited {
         color: $white;
       }
     }
-    
+    overflow: hidden;
+  
     img {
-      padding-top: 30px;
-      padding-bottom: 30px;
-      width: 99%;
+      // padding-top: 5%;
+      // padding-bottom: 5%;
+      width: 37%;
+      padding: 5%;
+      // height: 300px;
     }
+
+    p {
+      width: 90%;
+      padding-left: 5%;
+    }
+
+    .top {
+      .cell {
+        margin-bottom: 1px;
+      }
+    }
+
+    .row {
+      text-align: center;
+      a {
+        color: $white !important;
+      }
+      .cell {
+        width: 49.9%;
+        background-color: $dark-blue;
+        padding-top: 6%;
+        padding-bottom: 6%;
+        &:hover {
+          background-color: $light-blue;
+          i {
+            color: $white;
+          }
+        }
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      i {
+        color: $maize;
+        padding-bottom: 9%;
+      }
+    }
+
   }
 
   .second {
-    margin-top: 30px;
+    background-color: $light-blue;
+  }
+
+  .third {
+    margin-top: 3%;
   }
 
 }
 
 .footer-container footer {
   color: $white;
-  // padding: 10px 0;
   .sitename {
     display: none;
   }
@@ -306,43 +372,51 @@ nav {
 
 .tumblr_posts {
   list-style-type: none;
-  width: 60%;
-}
+  width: 95%;
+  padding: 0;
+  .tumblr_post {
+    margin-bottom: 10%;
+    .date {
+      font-size: 1em;
+    }
+    blockquote {
+      background-color: #bbbbbb;
+      padding: 30px;
+      font-family: courier, helvetica;
+      margin-left: -10px;
+    }
 
-.tumblr_post {
-  margin-bottom: 100px;
-  .date {
-    font-size: 1em;
+    code {
+      background-color: #bbbbbb;
+    }
+    pre {
+      code {
+        background-color: inherit;
+      }
+    }
+
+    .tumblr_title {
+      // font-size: 2em;
+      color: $blue;
+      // margin-bottom: 10px;
+      font: 30px Myriad Pro, Helvetica, Helvetica Neue, Arial;
+      font-weight: bold !important;
+      // padding-left: 20px;
+    }
+
+    .tumblr_body {
+      border-left: 3px solid $maize;
+      padding-left: 5%;
+      img {
+        width: 95%;
+        height: 95%;
+      }
+    }
   }
-  blockquote {
-    background-color: #bbbbbb;
-    padding: 30px;
-    font-family: courier, helvetica;
-    margin-left: -10px;
-  }
-
-  .tumblr_title {
-    font-size: 2em;
-    color: $black;
-    margin-bottom: 10px;
-    // padding-left: 20px;
-  }
-
-  .tumblr_body {
-    border-left: 3px solid $red;
-    padding-left: 20px;
-  }
-
-}
-
-
-
-.tumblr_body img {
-  //possible fixed width
 }
 
 .quote_source {
-  // padding-left: 10%;
+  padding-left: 8%;
   font-size: 1.5em;
 }
 
@@ -359,11 +433,13 @@ nav {
   nav {
     a {
       float: left;
-      width: 27%;
-      margin: 0 1.7%;
-      padding: 25px 2%;
+      width: 17%;
+        // margin: 0 1.7%;
+        // padding: 25px 2%;
+      padding-left: 2%;
+      padding-right: 2%;
       margin-bottom: 0;
-      // font-size: 1em;
+        // font-size: 1em;
     }
     li {
       &:first-child a {
@@ -385,11 +461,29 @@ nav {
   }
 
   /* ========================
+      INTERMEDIATE: Main
+     ======================== */
+
+
+  aside {
+    i {
+      padding-bottom: 2% !important;
+    }
+  }
+
+  .dict {
+    width: 60% !important;
+    margin: 0;
+  }
+
+
+  /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
   .oldie nav a {
     margin: 0 0.7%;
   }
+
 }
 
 @media only screen and (min-width: 1124px) {
@@ -398,12 +492,13 @@ nav {
      ============ */
   .title {
     float: left;
-    margin-left: -2%;
+    margin-left: -4.5%;
+    margin-top: 0.95%;
   }
   nav {
     float: right;
     width: 38%;
-    font-size: 1.3em;
+    // font-size: 1.3em;
   }
   /* ============
       WIDE: Main
@@ -411,15 +506,34 @@ nav {
   .main {
     article {
       float: left;
-      width: 60%;
+      width: 70%;
       margin-left: -2%;
+      h1, h2 {
+        font: 20px Myriad Pro, Helvetica, Helvetica Neue, Arial;
+        font-weight: bold !important;
+      }
     }
     aside {
       float: right;
-      width: 23%;
-      margin-right: 5%;
+      width: 26%;
       img {
-        width: 99%;
+        width: 90%;
+      }
+      .cell {
+      i {
+        padding-bottom: 11% !important;
+      }
+    }
+    }
+  }
+
+  .tumblr_posts {
+    width: 80%;
+    .tumblr_post{
+      .tumblr_body{
+        img {
+          width: 70%;
+        }
       }
     }
   }
