@@ -2,9 +2,9 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 
-$black: #003366; //base blue
+$blue: #003366; //base blue
 $white: #fff;
-$red: #000033; //darker blue; also text color.
+$dark-blue: #000033; //darker blue; also text color.
 
 $maize: #ffcc00;
 $light-blue: #336699;
@@ -22,7 +22,7 @@ body {
   line-height: 1.4;
   font: 16px / 26px Minion Pro, Helvetica, Helvetica Neue, Arial;
   // border here means blue line is on top
-  // border-left: 10px solid $black;
+  // border-left: 10px solid $blue;
 }
 
 html, body {
@@ -92,8 +92,8 @@ textarea {
 .page {
   min-height: 100%;
   position: relative;
-  // border here means yellow line interrupted
-  border-left: 15px solid $black;
+  // border here means blue line interrupted
+  border-left: 15px solid $blue;
   
   a {
     color: $links;
@@ -121,9 +121,8 @@ textarea {
 }
 
 .header-container {
-  // border-bottom: 20px solid $red;
+  // border-bottom: 20px solid $dark-blue;
   font: 27px Myriad Pro, Helvetica, Helvetica Neue, Arial !important;
-  height: 48px;
   // mitch added this shadow, i should give him credit
   // -webkit-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
   // -moz-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
@@ -131,11 +130,11 @@ textarea {
 }
 
 .footer-container, .main aside {
-  // border-top: 20px solid $red;
+  // border-top: 20px solid $dark-blue;
 }
 
 .header-container, .footer-container, .main aside {
-  background: $black;
+  background: $blue;
 }
 
 
@@ -177,7 +176,7 @@ textarea {
     color: $white;
     a {
       color: $white;
-      border-bottom: 1px solid $black;
+      border-bottom: 1px solid $blue;
     }
     a:hover {
       // text-decoration: underline;
@@ -193,7 +192,7 @@ textarea {
   margin: 0;
   a {
     color: $white !important;
-    border-bottom: 1px solid $black;
+    border-bottom: 1px solid $blue;
     &:hover {
       border-bottom: 1px solid $white;
     }
@@ -214,8 +213,9 @@ article {
   .dict {
       background-color: rgba(187, 187, 187, 0.3);
       padding: 20px;
-      width: 60%;
-      // border: 1px solid $black;
+      width: 80%;
+      margin-left: 5%;
+      // border: 1px solid $blue;
     }
 }
 
@@ -229,7 +229,7 @@ nav {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    color: $black;
+    color: $blue;
   }
   a {
     display: block;
@@ -239,7 +239,7 @@ nav {
     font-weight: bold;
     vertical-align: middle;
     // height: 48px;
-    color: #fff !important;
+    color: $white !important;
     // background: $white;
     font-weight: 400;
     font-size: 20px;
@@ -247,18 +247,18 @@ nav {
     &:hover {
       // text-decoration: underline;
       background: $light-blue;
-      // color: $black !important;
+      // color: $blue !important;
     }
     &:visited {
-      color: $black;
+      color: $blue;
     }
   }
   .active {
     background-image: url("../img/greyzz.png");
-    color: $black !important;
+    color: $blue !important;
     &:hover {
       background-image: url("../img/greyzz.png");
-      color: $black !important;
+      color: $blue !important;
     }
   }
 }
@@ -270,8 +270,8 @@ nav {
 .main {
   padding: 30px 0;
   .topper {
-    border-bottom: 2px solid #fff;
-    background-color: $black;
+    border-bottom: 2px solid $white;
+    background-color: $blue;
     font: 18px Myriad Pro, Helvetica, Helvetica Neue, Arial;
     .heading {
       padding-top: 4px;
@@ -291,12 +291,12 @@ nav {
   
   aside {
     color: $white;
-    background-color: $red;
+    background-color: $dark-blue;
     // padding: 5px 0.5% 5px;
     font: 16px Myriad Pro, Helvetica, Helvetica Neue, Arial;
     a {
       color: $maize !important;
-      border-bottom: 1px solid $red;
+      border-bottom: 1px solid $dark-blue;
       font-weight: normal;
       &:hover {
         border-bottom: 1px solid $maize;
@@ -305,16 +305,14 @@ nav {
         color: $white;
       }
     }
-    
-    .fact {
-      
-    }
-
+    overflow: hidden;
+  
     img {
       // padding-top: 5%;
       // padding-bottom: 5%;
-      // width: 25%;
+      width: 37%;
       padding: 5%;
+      // height: 300px;
     }
 
     p {
@@ -335,18 +333,19 @@ nav {
     .row {
       text-align: center;
       a {
-        color: #fff !important;
+        color: $white !important;
       }
       .cell {
         width: 49.9%;
-        height: 80px;
+        // height: 80px;
         // vertical-align: center;
-        background-color: $red;
-        padding-top: 30px;
+        background-color: $dark-blue;
+        padding-top: 6%;
+        padding-bottom: 6%;
         &:hover {
           background-color: $light-blue;
           i {
-            color: #fff;
+            color: $white;
           }
         }
       }
@@ -364,16 +363,16 @@ nav {
 
   }
 
-  .first {
+  .second {
     background-color: $light-blue;
   }
 
-  .second {
-    margin-top: 30px;
+  .third {
+    margin-top: 3%;
   }
 
-  .third {
-    // background-color: $red;
+  .fourth {
+    // background-color: $dark-blue;
   }
 
 }
@@ -400,44 +399,50 @@ nav {
 
 .tumblr_posts {
   list-style-type: none;
-  width: 60%;
+  width: 95%;
+  padding: 0;
   // a {
   //   font-weight: bold;
   // }
-}
+  .tumblr_post {
+    margin-bottom: 15%;
+    .date {
+      font-size: 1em;
+    }
+    blockquote {
+      background-color: #bbbbbb;
+      padding: 30px;
+      font-family: courier, helvetica;
+      margin-left: -10px;
+    }
 
-.tumblr_post {
-  margin-bottom: 100px;
-  .date {
-    font-size: 1em;
+    code {
+      background-color: #bbbbbb;
+    }
+    pre {
+      code {
+        background-color: inherit;
+      }
+    }
+
+    .tumblr_title {
+      // font-size: 2em;
+      color: $blue;
+      // margin-bottom: 10px;
+      font: 30px Myriad Pro, Helvetica, Helvetica Neue, Arial;
+      font-weight: bold !important;
+      // padding-left: 20px;
+    }
+
+    .tumblr_body {
+      border-left: 3px solid $maize;
+      padding-left: 5%;
+      img {
+        width: 95%;
+        height: 95%;
+      }
+    }
   }
-  blockquote {
-    background-color: #bbbbbb;
-    padding: 30px;
-    font-family: courier, helvetica;
-    margin-left: -10px;
-  }
-
-  .tumblr_title {
-    // font-size: 2em;
-    color: $black;
-    margin-bottom: 10px;
-    font: 30px Myriad Pro, Helvetica, Helvetica Neue, Arial;
-    font-weight: bold !important;
-    // padding-left: 20px;
-  }
-
-  .tumblr_body {
-    border-left: 3px solid $maize;
-    padding-left: 20px;
-  }
-
-}
-
-
-
-.tumblr_body img {
-  //possible fixed width
 }
 
 .quote_source {
@@ -459,12 +464,12 @@ nav {
     a {
       float: left;
       width: 17%;
-      // margin: 0 1.7%;
-      // padding: 25px 2%;
+        // margin: 0 1.7%;
+        // padding: 25px 2%;
       padding-left: 2%;
       padding-right: 2%;
       margin-bottom: 0;
-      // font-size: 1em;
+        // font-size: 1em;
     }
     li {
       &:first-child a {
@@ -486,11 +491,29 @@ nav {
   }
 
   /* ========================
+      INTERMEDIATE: Main
+     ======================== */
+
+
+  aside {
+    i {
+      padding-bottom: 2% !important;
+    }
+  }
+
+  .dict {
+    width: 60% !important;
+    margin: 0;
+  }
+
+
+  /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
   .oldie nav a {
     margin: 0 0.7%;
   }
+
 }
 
 @media only screen and (min-width: 1124px) {
@@ -518,7 +541,6 @@ nav {
       h1, h2 {
         font: 20px Myriad Pro, Helvetica, Helvetica Neue, Arial;
         font-weight: bold !important;
-
       }
     }
     aside {
@@ -526,6 +548,22 @@ nav {
       width: 26%;
       img {
         width: 90%;
+      }
+      .cell {
+      i {
+        padding-bottom: 11% !important;
+      }
+    }
+    }
+  }
+
+  .tumblr_posts {
+    width: 80%;
+    .tumblr_post{
+      .tumblr_body{
+        img {
+          width: 70%;
+        }
       }
     }
   }
