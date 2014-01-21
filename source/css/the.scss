@@ -256,10 +256,7 @@ nav {
   // padding-left: 6%;
   // padding-right: 6%;
 }
-.long {
-  padding-left: 4% !important;
-  padding-right: 4% !important;
-}
+
 
 /* ==============
     MOBILE: Main
@@ -503,6 +500,10 @@ nav {
       // display: inline-block;
       // padding-right: 5%;
     }
+  }
+  .long {
+    padding-left: 4%;
+    padding-right: 4%;
   }
 
   /* ========================
