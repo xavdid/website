@@ -142,11 +142,12 @@ textarea {
   position: absolute;
   width: 100%;
   bottom: 0;
-  
+  overflow: hidden;
   .feet {
     font-weight: 300;
     i {
       color: $white;
+
     }
     ul {
       margin: 0;
@@ -156,6 +157,7 @@ textarea {
     li {
       display: inline-block;
       padding-right: 2%;
+      padding-top: 4px;
     }
     // position: absolute;
     // right: 0;
@@ -164,7 +166,8 @@ textarea {
     color: $white;
     a {
       color: $white;
-      border-bottom: 1px solid $blue;
+      // border-bottom: 1px solid $blue;
+      border-bottom: 0px;
     }
     a:hover {
       // border-bottom: 1px solid $white;
@@ -491,6 +494,9 @@ nav {
   .footer-container footer {
     .feet {
       // padding-right: 3%;
+      li {
+        padding-top: 3px;
+      }
     }
     .sitename {
       // display: inline;
@@ -577,6 +583,9 @@ nav {
     .feet {
       // padding-right: 4%;
       margin-left: -2%;
+      li {
+        padding-top: 2px;
+      }
     }
     .sitename {
       // display: inline;
