@@ -15,7 +15,7 @@
   <meta charset='utf-8'>
   <!-- hyphens are dumb -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <!-- You're looking at my site's source! That's pretty cool. It's pretty straigforward. Template taken from HTML5Boilderplate, css adapted to my liking. -->
+  <!-- You're looking at my site's source! That's pretty cool. It's pretty straightforward. Template taken from HTML5Boilderplate, css adapted to my liking. -->
   <title>
     David Brownman dot com
   </title>
@@ -46,22 +46,22 @@
         <nav>
           <ul>
             <li>
-              <a href='/index.html' id='ichi'>
+              <a class='short' href='/index.html' id='ichi'>
                 Home
               </a>
             </li>
             <li>
-              <a href='/blog.html' id='ni'>
+              <a class='short' href='/blog.html' id='ni'>
                 Blog
               </a>
             </li>
             <li>
-              <a href='/projects.html' id='san'>
+              <a class='long' href='/projects.html' id='san'>
                 Projects
               </a>
             </li>
             <li>
-              <a href='/misc.html' id='shi'>
+              <a class='long' href='/misc.html' id='shi'>
                 Sundries
               </a>
             </li>
@@ -77,7 +77,7 @@
               Hey, how's it going?
             </h1>
             <p>
-              My name's David. I'm a jack of all trades about to graduate from the University of Michigan with a Bachelor of Arts in Social Computing Informatics. I'm a software developer, web-cool-guy, and I've created this site as a one-stop shop for information pertaining to my personal and professional lives. Apparently, they let anyone put websites online these days. This site is and shall be my sandbox for all things that I may want to put on the internet.
+              My name's David. I'm a jack of all trades and about to graduate from the University of Michigan with a Bachelor of Arts in Social Computing Informatics. I'm a software developer, web-cool-guy, and I've created this site as a one-stop shop for information pertaining to my personal and professional lives. Apparently, they let anyone put websites online these days. This site is and shall be my sandbox for all things that I may want to put on the internet.
             </p>
           </header>
           <section>
@@ -93,7 +93,9 @@
               My life right now
             </h2>
             <p>
-              I'm currently searching for a job that I can start after I graduate. Ideally, this would be doing software development at a medium size company where I get to live in a cool city and work with cool people. I've been playing the game that whenever I'm on a site with a job listing, I apply. I'm all about that "wide net" approach.
+              I'm currently searching for a job that I can start after I graduate. Ideally, this would be doing software development at a medium size company where I get to live in a cool city and work with cool people. If you think I would be a good fit for your company, you can head
+              <a href='files/brownman_resume.pdf' target='_blank'>here</a>
+              to peruse my full resume.
             </p>
           </section>
         </article>
@@ -106,33 +108,24 @@
           <div class='row top'>
             <a href='mailto:brownman@umich.edu' target='_blank'>
               <div class='cell left'>
-                <i class='fa fa-envelope fa-lg fa-3x'></i>
-                <br>
-                email
+                <i class='fa fa-envelope fa-3x'></i>
               </div>
             </a>
-            <a href='https://twitter.com/xavdid' target='_blank'>
-              <div class='cell right'>
-                <i class='fa fa-twitter fa-lg fa-3x'></i>
-                <br>
-                @xavdid
+            <a href='https://github.com/xavdidtheshadow' target='_blank'>
+              <div class='cell left'>
+                <i class='fa fa-github-alt fa-3x'></i>
               </div>
             </a>
           </div>
-          <br>
           <div class='row bottom'>
-            <a href='https://github.com/xavdidtheshadow' target='_blank'>
-              <div class='cell left'>
-                <i class='fa fa-github-alt fa-lg fa-3x'></i>
-                <br>
-                Xavdidtheshadow
+            <a href='https://twitter.com/xavdid' target='_blank'>
+              <div class='cell right'>
+                <i class='fa fa-twitter fa-3x'></i>
               </div>
             </a>
-            <a href='files/brownman_resume.pdf' target='_blank'>
+            <a href='http://www.linkedin.com/pub/david-brownman/63/480/180/' target='_blank'>
               <div class='cell right'>
-                <i class='fa fa-file-text fa-lg fa-3x'></i>
-                <br>
-                Resume (PDF)
+                <i class='fa fa-linkedin fa-3x'></i>
               </div>
             </a>
           </div>
@@ -149,7 +142,7 @@
           <script>
             var i = getRandomInt(0,facts.length-1);
             $(".fact").html(facts[i]);
-            document.getElementById("ichi").className="active";
+            document.getElementById("ichi").className+=" active";
           </script>
         </aside>
       </div>
@@ -159,8 +152,13 @@
         <div class='feet'>
           <ul>
             <li>
+              <a href='/'>
+                <i class='fa fa-home fa-lg'></i>
+              </a>
+            </li>
+            <li>
               <a href='http://blog.davidbrownman.com' target='_blank'>
-                <i class='fa fa-tumblr-square'></i>
+                <i class='fa fa-tumblr-square fa-lg'></i>
                 <span class='sitename'>
                   Blog Archive
                 </span>
@@ -168,7 +166,7 @@
             </li>
             <li>
               <a href='mailto:brownman@umich.edu' target='_blank'>
-                <i class='fa fa-envelope'></i>
+                <i class='fa fa-envelope fa-lg'></i>
                 <span class='sitename'>
                   Email
                 </span>
@@ -176,7 +174,7 @@
             </li>
             <li>
               <a href='http://www.github.com/xavdidtheshadow' target='_blank'>
-                <i class='fa fa-github-alt'></i>
+                <i class='fa fa-github-alt fa-lg'></i>
                 <span class='sitename'>
                   GitHub
                 </span>
@@ -184,7 +182,7 @@
             </li>
             <li>
               <a href='http://www.linkedin.com/pub/david-brownman/63/480/180/' target='_blank'>
-                <i class='fa fa-linkedin-square'></i>
+                <i class='fa fa-linkedin-square fa-lg'></i>
                 <span class='sitename'>
                   Linkedin
                 </span>
@@ -192,7 +190,7 @@
             </li>
             <li>
               <a href='http://www.twitter.com/xavdid' target='_blank'>
-                <i class='fa fa-twitter-square'></i>
+                <i class='fa fa-twitter-square fa-lg'></i>
                 <span class='sitename'>
                   Twitter
                 </span>

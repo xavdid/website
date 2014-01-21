@@ -15,7 +15,7 @@
   <meta charset='utf-8'>
   <!-- hyphens are dumb -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <!-- You're looking at my site's source! That's pretty cool. It's pretty straigforward. Template taken from HTML5Boilderplate, css adapted to my liking. -->
+  <!-- You're looking at my site's source! That's pretty cool. It's pretty straightforward. Template taken from HTML5Boilderplate, css adapted to my liking. -->
   <title>
     David Brownman dot com
   </title>
@@ -46,22 +46,22 @@
         <nav>
           <ul>
             <li>
-              <a href='/index.html' id='ichi'>
+              <a class='short' href='/index.html' id='ichi'>
                 Home
               </a>
             </li>
             <li>
-              <a href='/blog.html' id='ni'>
+              <a class='short' href='/blog.html' id='ni'>
                 Blog
               </a>
             </li>
             <li>
-              <a href='/projects.html' id='san'>
+              <a class='long' href='/projects.html' id='san'>
                 Projects
               </a>
             </li>
             <li>
-              <a href='/misc.html' id='shi'>
+              <a class='long' href='/misc.html' id='shi'>
                 Sundries
               </a>
             </li>
@@ -123,7 +123,7 @@
               Originally designed as the end-all resource for League of Legends data, this was a huge project. Pulling data from multiple sources to create json representation of characters and their stats.
             </p>
             <h2 class='heading'>
-              Tumblr Avanced Search
+              Tumblr Advanced Search
               <span class='date'>
                 - (python, Google App Engine, API)
                 - April, 2011 -
@@ -139,13 +139,22 @@
             </p>
           </section>
         </article>
+        <aside class='topper'>
+          <div class='heading'>
+            I Work On All Sorts of Stuff!
+          </div>
+        </aside>
         <aside>
           <p>
-            I usually work on whatever strikes my fancy at the time. Sometimes a project is for school; other times it's part of a job application (or a related proof of concept).
+            I usually work on whatever strikes my fancy at the time. Sometimes a project is for school; other times it's part of a job application (or a related proof of concept). You can check out my resume on
+            <a href='files/brownman_resume.pdf' target='_blank'>
+              this
+            </a>
+            page.
           </p>
         </aside>
         <script>
-          document.getElementById("san").className="active";
+          document.getElementById("san").className+=" active";
         </script>
       </div>
     </div>
@@ -154,8 +163,13 @@
         <div class='feet'>
           <ul>
             <li>
+              <a href='/'>
+                <i class='fa fa-home fa-lg'></i>
+              </a>
+            </li>
+            <li>
               <a href='http://blog.davidbrownman.com' target='_blank'>
-                <i class='fa fa-tumblr-square'></i>
+                <i class='fa fa-tumblr-square fa-lg'></i>
                 <span class='sitename'>
                   Blog Archive
                 </span>
@@ -163,7 +177,7 @@
             </li>
             <li>
               <a href='mailto:brownman@umich.edu' target='_blank'>
-                <i class='fa fa-envelope'></i>
+                <i class='fa fa-envelope fa-lg'></i>
                 <span class='sitename'>
                   Email
                 </span>
@@ -171,7 +185,7 @@
             </li>
             <li>
               <a href='http://www.github.com/xavdidtheshadow' target='_blank'>
-                <i class='fa fa-github-alt'></i>
+                <i class='fa fa-github-alt fa-lg'></i>
                 <span class='sitename'>
                   GitHub
                 </span>
@@ -179,7 +193,7 @@
             </li>
             <li>
               <a href='http://www.linkedin.com/pub/david-brownman/63/480/180/' target='_blank'>
-                <i class='fa fa-linkedin-square'></i>
+                <i class='fa fa-linkedin-square fa-lg'></i>
                 <span class='sitename'>
                   Linkedin
                 </span>
@@ -187,7 +201,7 @@
             </li>
             <li>
               <a href='http://www.twitter.com/xavdid' target='_blank'>
-                <i class='fa fa-twitter-square'></i>
+                <i class='fa fa-twitter-square fa-lg'></i>
                 <span class='sitename'>
                   Twitter
                 </span>

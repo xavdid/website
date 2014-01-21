@@ -15,7 +15,7 @@
   <meta charset='utf-8'>
   <!-- hyphens are dumb -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <!-- You're looking at my site's source! That's pretty cool. It's pretty straigforward. Template taken from HTML5Boilderplate, css adapted to my liking. -->
+  <!-- You're looking at my site's source! That's pretty cool. It's pretty straightforward. Template taken from HTML5Boilderplate, css adapted to my liking. -->
   <title>
     David Brownman dot com
   </title>
@@ -46,22 +46,22 @@
         <nav>
           <ul>
             <li>
-              <a href='/index.html' id='ichi'>
+              <a class='short' href='/index.html' id='ichi'>
                 Home
               </a>
             </li>
             <li>
-              <a href='/blog.html' id='ni'>
+              <a class='short' href='/blog.html' id='ni'>
                 Blog
               </a>
             </li>
             <li>
-              <a href='/projects.html' id='san'>
+              <a class='long' href='/projects.html' id='san'>
                 Projects
               </a>
             </li>
             <li>
-              <a href='/misc.html' id='shi'>
+              <a class='long' href='/misc.html' id='shi'>
                 Sundries
               </a>
             </li>
@@ -72,10 +72,6 @@
     <div class='main-container'>
       <div class='main wrapper clearfix'>
         <article>
-          <p class='dict'>
-            as pl.noun (<b>sundries</b>)<br>
-            various items not important enough to be mentioned individually
-          </p>
           <section>
             <h2 class='heading'>
               Technical
@@ -183,8 +179,21 @@
             </ul>
           </section>
         </article>
+        <aside class='topper'>
+          <div class='heading'>
+            as pl. noun (<b>sundries</b>)
+          </div>
+        </aside>
+        <aside>
+          <p>
+            various items not important enough to be mentioned individually.
+          </p>
+          <p>
+            That is, all the other cool stuff I've done.
+          </p>
+        </aside>
         <script>
-          document.getElementById("shi").className="active";
+          document.getElementById("shi").className+=" active";
         </script>
       </div>
     </div>
@@ -193,8 +202,13 @@
         <div class='feet'>
           <ul>
             <li>
+              <a href='/'>
+                <i class='fa fa-home fa-lg'></i>
+              </a>
+            </li>
+            <li>
               <a href='http://blog.davidbrownman.com' target='_blank'>
-                <i class='fa fa-tumblr-square'></i>
+                <i class='fa fa-tumblr-square fa-lg'></i>
                 <span class='sitename'>
                   Blog Archive
                 </span>
@@ -202,7 +216,7 @@
             </li>
             <li>
               <a href='mailto:brownman@umich.edu' target='_blank'>
-                <i class='fa fa-envelope'></i>
+                <i class='fa fa-envelope fa-lg'></i>
                 <span class='sitename'>
                   Email
                 </span>
@@ -210,7 +224,7 @@
             </li>
             <li>
               <a href='http://www.github.com/xavdidtheshadow' target='_blank'>
-                <i class='fa fa-github-alt'></i>
+                <i class='fa fa-github-alt fa-lg'></i>
                 <span class='sitename'>
                   GitHub
                 </span>
@@ -218,7 +232,7 @@
             </li>
             <li>
               <a href='http://www.linkedin.com/pub/david-brownman/63/480/180/' target='_blank'>
-                <i class='fa fa-linkedin-square'></i>
+                <i class='fa fa-linkedin-square fa-lg'></i>
                 <span class='sitename'>
                   Linkedin
                 </span>
@@ -226,7 +240,7 @@
             </li>
             <li>
               <a href='http://www.twitter.com/xavdid' target='_blank'>
-                <i class='fa fa-twitter-square'></i>
+                <i class='fa fa-twitter-square fa-lg'></i>
                 <span class='sitename'>
                   Twitter
                 </span>
