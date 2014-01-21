@@ -103,7 +103,7 @@ textarea {
 
 /* line 130, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .main-container {
-  padding-bottom: 30px; }
+  padding-bottom: 40px; }
   /* line 132, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
   .main-container a {
     font-weight: bold; }
@@ -114,7 +114,7 @@ textarea {
 
 /* line 141, /Users/David/Documents/Docs/CompCreation/Git/website/source/css/the.scss */
 .footer-container {
-  height: 30px;
+  height: 40px;
   position: absolute;
   width: 100%;
   bottom: 0; }
