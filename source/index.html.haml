@@ -3,7 +3,7 @@
     %h1.heading
       Hey, how's it going?
     %p
-      My name's David. I'm a jack of all trades about to graduate from the University of Michigan with a Bachelor of Arts in Social Computing Informatics. I'm a software developer, web-cool-guy, and I've created this site as a one-stop shop for information pertaining to my personal and professional lives. Apparently, they let anyone put websites online these days. This site is and shall be my sandbox for all things that I may want to put on the internet.
+      My name's David. I'm a jack of all trades and about to graduate from the University of Michigan with a Bachelor of Arts in Social Computing Informatics. I'm a software developer, web-cool-guy, and I've created this site as a one-stop shop for information pertaining to my personal and professional lives. Apparently, they let anyone put websites online these days. This site is and shall be my sandbox for all things that I may want to put on the internet.
   %section
     %h2.heading
       Things I'm fond of
@@ -13,7 +13,10 @@
     %h2.heading
       My life right now
     %p
-      I'm currently searching for a job that I can start after I graduate. Ideally, this would be doing software development at a medium size company where I get to live in a cool city and work with cool people. I've been playing the game that whenever I'm on a site with a job listing, I apply. I'm all about that "wide net" approach. 
+      I'm currently searching for a job that I can start after I graduate. Ideally, this would be doing software development at a medium size company where I get to live in a cool city and work with cool people. If you think I would be a good fit for your company, you can head
+      %a{href: "files/brownman_resume.pdf", target: "_blank"}<
+        here
+      to peruse my full resume.
 
 %aside.topper.first
   .heading
@@ -22,26 +25,30 @@
   .row.top
     %a{href: "mailto:brownman@umich.edu", target: "_blank"}
       .cell.left
-        %i.fa.fa-envelope.fa-2x
+        %i.fa.fa-envelope.fa-3x
         -# %br
         -# email
-    %a{href: "https://twitter.com/xavdid", target: "_blank"}
-      .cell.right
-        %i.fa.fa-twitter.fa-2x
-        -# %br
-        -# @xavdid
-  
-  .row.bottom
     %a{href: "https://github.com/xavdidtheshadow", target: "_blank"}
       .cell.left
-        %i.fa.fa-github-alt.fa-2x
+        %i.fa.fa-github-alt.fa-3x
         -# %br
         -# Xavdidtheshadow
-    %a{href: "files/brownman_resume.pdf", target: "_blank"}
+    
+  
+  .row.bottom
+    %a{href: "https://twitter.com/xavdid", target: "_blank"}
       .cell.right
-        %i.fa.fa-file-text.fa-2x
+        %i.fa.fa-twitter.fa-3x
         -# %br
-        -# Resume (PDF)
+        -# @xavdid
+    %a{href: "http://www.linkedin.com/pub/david-brownman/63/480/180/", target: "_blank"}
+      .cell.right
+        %i.fa.fa-linkedin.fa-3x
+    -# %a{href: "files/brownman_resume.pdf", target: "_blank"}
+    -#   .cell.right
+    -#     %i.fa.fa-file-text.fa-2x
+    -#     -# %br
+    -#     -# Resume (PDF)
 
 %aside.third.topper
   .heading
@@ -53,5 +60,5 @@
   :javascript
     var i = getRandomInt(0,facts.length-1);
     $(".fact").html(facts[i]);
-    document.getElementById("ichi").className="active";
+    document.getElementById("ichi").className+=" active";
 

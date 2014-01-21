@@ -77,9 +77,15 @@
     %p
       Despite being able to search the full breadth of tumblr's offerings, there is no convenient way to search the postings of a single user, so I made one. It can search and filter through any tumblr url. Though we were required to use css, it was before I had any interest at all in design. Embarrassingly, this app is down right now because of changes in Google App Engine structure and python requirements. I'll go back and update it when I have the time.
 
+%aside.topper
+  .heading
+    I Work On All Sorts of Stuff!
 %aside
   %p
-    I usually work on whatever strikes my fancy at the time. Sometimes a project is for school; other times it's part of a job application (or a related proof of concept). 
+    I usually work on whatever strikes my fancy at the time. Sometimes a project is for school; other times it's part of a job application (or a related proof of concept). You can check out my resume on 
+    %a{href: "files/brownman_resume.pdf", target: "_blank"}
+      this
+    page. 
 
 :javascript
-  document.getElementById("san").className="active";
+  document.getElementById("san").className+=" active";

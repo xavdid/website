@@ -11,7 +11,7 @@
 
 :javascript
   // The variable "tumblr_api_read" is now set by the js above
-  document.getElementById("ni").className="active";
+  document.getElementById("ni").className+=" active";
   for (var i = 0; i<tumblr_api_read.posts.length; i++)
   {
     if (tumblr_api_read.posts[i].type == "quote") {
