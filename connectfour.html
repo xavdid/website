@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>RelateIQ Web Challenge</title>
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+        <style>
+            body {
+                padding: 20px;
+            }
+
+            .instructions {
+                padding-bottom: 20px;
+            }
+
+            .game {
+                padding-top: 20px;
+            }
+
+            /* Put your css here */
+            ul {
+                list-style-type: none;
+                /*border: 1px solid green;*/
+                margin: 0;
+            }
+
+            li {
+                display: inline-block;
+                /*border: 1px solid black;*/
+                /*border-left: 1px solid black;*/
+            }
+
+            .box {
+                padding: 20px;
+                margin: 20px;
+                border-radius: 50%;
+                background-color: gray;
+            }
+
+            .p0 {
+                background-color: blue;
+            }
+
+            .p1 {
+                background-color: red;
+            }
+
+            .win {
+                border-radius: 0;            }
+
+            .message {
+                padding: 10px;
+                /*border: 1px solid black;*/
+            }
+
+        </style>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="http://code.angularjs.org/snapshot/angular.min.js"></script>
+        <script>
+            /* Put your javascript here */
+            $(document).ready(function(){ 
+
+                // p0 = [  
+                //     [0,0,0,0,0,0,0], 
+                //     [0,0,0,0,0,0,0],
+                //     [0,0,0,0,0,0,0],
+                //     [0,0,0,0,0,0,0],
+                //     [0,0,0,0,0,0,0],
+                //     [0,0,0,0,0,0,0]
+                // ];
+                // p1 = [
+                //     [0,0,0,0,0,0,0],
+                //     [0,0,0,0,0,0,0],
+                //     [0,0,0,0,0,0,0],
+                //     [0,0,0,0,0,0,0],
+                //     [0,0,0,0,0,0,0],
+                //     [0,0,0,0,0,0,0]
+                // ];
+
+                rows = 6;
+                columns = 7;
+                winnings = [];
+                //for loop bounds could be whatever they input
+                for (var i = 0; i < rows; i++) {
+                    s = "<ul>";
+                    for (var j = 0; j < columns; j++) {
+                        s += '<li><div class="box" id=';
+                        s += i; 
+                        s += j;
+                        s+='></div></li>';
+                    }
+                    s+="</ul>";
+                    $(".game").append(s);
+                };
+
+                var p = false;
+                var win = true;
+                $(".box").click(function(){
+                    if (!win){
+                        if (p) {$(".message").text("Player 0's (Blue) turn.");}
+                        else {$(".message").text("Player 1 (Red) turn.");}
+
+                        var id = $(this).attr("id");
+                        var c = id[1]
+                        var r = checkRow(c);
+                        
+                        // console.log("#"+r+c);
+                        if (r > -1) {
+                            $("#"+r+c).toggleClass("p"+Number(p));
+                            eval("p"+Number(p))[r][c] = 1;
+                            win = checkWin(p, Number(r), Number(c));
+                            if (win)
+                                $(".message").text("Player "+Number(p)+" wins!");
+                            else
+                                p = !p;
+                        }
+                        else {
+                            $(".message").text("Invalid move, column full");
+                        }
+                    }
+                });
+
+                $("#start").click(function(){
+                    win = false;
+                    $('.message').text('Welcome to Connect 4! Blue player goes first.');
+                    $(".box").removeClass("p0 p1 win");
+                    p0 = [  
+                        [0,0,0,0,0,0,0], 
+                        [0,0,0,0,0,0,0],
+                        [0,0,0,0,0,0,0],
+                        [0,0,0,0,0,0,0],
+                        [0,0,0,0,0,0,0],
+                        [0,0,0,0,0,0,0]
+                    ];
+                    p1 = [
+                        [0,0,0,0,0,0,0],
+                        [0,0,0,0,0,0,0],
+                        [0,0,0,0,0,0,0],
+                        [0,0,0,0,0,0,0],
+                        [0,0,0,0,0,0,0],
+                        [0,0,0,0,0,0,0]
+                    ];
+                    p = false;
+                    winnings = [];
+                });
+            });
+
+            function checkRow(c) {
+                for (var i=0; i<rows; i++) {
+                    // console.log("checking ["+i+"]["+c+"] == "+p0[i][c])
+                    if (p0[i][c] || p1[i][c]) {
+                        // console.log("found!",i);
+                        return i-1;
+                    }
+                }
+                return rows-1;
+            }
+
+            function checkHoriz(player, r, c) {
+                var d = eval("p"+Number(player));
+                // console.log("checking horiz");
+                var count = 1;
+
+                for (var i = c-1; i > c-4; i--) {
+                    // console.log("back checking "+r+i);
+                    if (d[r][i])
+                    {
+                        // console.log("got "+r+i);
+                        count++;
+                        winnings.push(String(r)+i);
+                    }
+                    else break;
+                }
+                for (var q = c+1; q < c+4; q++){
+                    // console.log("forward checking "+r+" "+q+" c was "+c);
+                    if (d[r][q])
+                    {
+                        // console.log("got "+r+q);
+                        count++;
+                        winnings.push(String(r)+q);
+                    }
+                    else break;
+                }
+                if (count >= 4) {
+                    // console.log("WINNER");
+                    winnings.push(String(r)+c);
+                    return true;
+                }
+                else 
+                {
+                    winnings = [];
+                    return false;
+                }
+            }
+
+            function checkVert(player, r, c) {
+                var d = eval("p"+Number(player));
+                // console.log("checking vert");
+                // vert
+                var count = 1;
+
+                try {
+                    for (var i = r-1; i > r-4; i--) {
+                        // console.log("up checking "+i+c);
+                        if (d[i][c])
+                        {
+                            // console.log("got "+i+c);
+                            count++;
+                            winnings.push(String(i)+c);
+                        }
+                        else break;
+                    }
+                }
+                catch (e) {}
+
+                try {
+                    for (var j = r+1; j < r+4; j++){
+                        // console.log("down checking "+j+" "+c+" r was "+r);
+                        if (d[j][c])
+                        {
+                            // console.log("got "+j+c);
+                            count++;
+                            winnings.push(String(j)+c);
+                        }
+                        else break;
+                    }
+                }
+                catch (e) {}
+                if (count >= 4) {
+                    // console.log("WINNER");
+                    winnings.push(String(r)+c);
+                    return true;
+                }
+                else 
+                {
+                    winnings = [];
+                    return false
+                }
+            }
+
+            function checkDiagDR(player, r, c) {
+                var d = eval("p"+Number(player));
+                // console.log("checking diagDR");
+                var count = 1;
+
+                try {
+                    for (var i = 1; i < 4; i++) {
+                        // console.log("up left checking "+r+" "+c+" "+i);
+                        if (d[r-i][c-i])
+                        {
+                            // console.log("got "+r+" "+c+" "+i);
+                            count++;
+                            winnings.push(String(r-i)+(c-i));
+                        }
+                        else break;
+                    }
+                }
+                catch (e) {}
+                
+                try {
+                    for (var j = 1; j < 4; j++){
+                        // console.log("down right checking "+r+" "+c+" "+i);
+                        if (d[r+j][c+j])
+                        {
+                            // console.log("got "+r+" "+c+" "+i);
+                            count++;
+                            winnings.push(String(r+j)+(c+j));
+                        }
+                        else break;
+                    }
+                }
+                catch (e) {}
+                if (count >= 4) {
+                    // console.log("WINNER");
+                    winnings.push(String(r)+c);
+                    return true;
+                }
+                else
+                {
+                    winnings = [];
+                    return false;
+                }
+            }
+
+            function checkDiagUR(player, r, c) {
+                var d = eval("p"+Number(player));
+                // console.log("checking diagUR");
+                var count = 1;
+
+                try {
+                    for (var i = 1; i < 4; i++) {
+                        // console.log("up right checking "+r+" "+c+" "+i);
+                        if (d[r-i][c+i])
+                        {
+                            // console.log("got "+r+" "+c+" "+i);
+                            count++;
+                            winnings.push(String(r-i)+(c+i));
+                        }
+                        else break;
+                    }
+                }
+                catch (e) {}
+                
+                try {
+                    for (var j = 1; j < 4; j++){
+                        // console.log("down left checking "+r+" "+c+" "+i);
+                        if (d[r+j][c-j])
+                        {
+                            // console.log("got "+r+" "+c+" "+i);
+                            count++;
+                            winnings.push(String(r+j)+(c-j));
+                        }
+                        else break;
+                    }
+                }
+                catch (e) {}
+                if (count >= 4) {
+                    // console.log("WINNER");
+                    winnings.push(String(r)+c);
+                    return true;
+                }
+                else
+                {
+                    winnings = [];
+                    return false;
+                }
+            }
+
+            function checkWin(player, r, c) {
+                // console.log("passed "+player+" "+r+" "+c)
+                if (checkHoriz(player,r,c) || checkVert(player,r,c) || checkDiagDR(player,r,c) || checkDiagUR(player,r,c))
+                {
+                    for (var i=0; i<4; i++) {
+                        $("#"+winnings[i]).addClass("win");
+                    }
+                    return true;
+                }
+                else
+                    return false;
+            }
+
+        </script>
+    </head>
+    <body>
+        <div class="row">
+            <div class="col-md-4 instructions">
+                Welcome to the RelateIQ web challenge.  Today's challenge is to create a game of Connect Four using 
+                javascript, css and html that you will code directly into this webpage.  More information about Connect
+                Four can be found at http://en.wikipedia.org/wiki/Connect_Four.  In general, a board of dimensions 
+                of M x N (M width, N height) is used where players select a column to play within and their piece then 
+                occupies the lowest free space in that column.  Your game should commence when the user clicks
+                the "Play" button.  Draw a 7 x 6 board and devise a 2 player turn based game that is won when the first
+                player reaches a state when they have 4 consecutive pieces anywhere on the board (horizontally, vertically 
+                or diagonally). Time permitting, instead of drawing a 7 x 6 board, first prompt for the board dimensions 
+                before beginning the game.
+
+                Have fun. Feel free to add any 3rd party libraries within reason but please keep all code contained
+                in just this file.  You do not need to use the libraries already included in this file.  They are
+                provided as a convenience.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <button type="button" id="start">Play</button>
+            </div>
+        </div>
+
+        <div class="game">
+            <div class="message">-------------------------</div>
+            <!--Put your html here-->
+        </div>
+
+    </body>
+</html>
