@@ -9,7 +9,7 @@ $dark-blue: #000033; //also text color.
 $maize: #ffcc00;
 $light-blue: #336699;
 $footer-size: 40px;
-$transition-speed: 0.3s;
+$transition-speed: 0.1s;
 $links: $light-blue; 
 
 html, button, input, select, textarea {
@@ -92,10 +92,10 @@ textarea {
     color: $links;
     border-bottom: 1px solid #bbbbbb; //grey color
     text-decoration: none;
-    -moz-transition: $transition-speed ease-out;
-    -webkit-transition: $transition-speed ease-out;
-    -o-transition: $transition-speed ease-out;
-    transition: $transition-speed ease-out;
+    // -moz-transition: $transition-speed ease-out;
+    // -webkit-transition: $transition-speed ease-out;
+    // -o-transition: $transition-speed ease-out;
+    // transition: $transition-speed ease-out;
     
     &:visited {
       color: $links;
@@ -105,10 +105,10 @@ textarea {
       // color: blue;
       // text-decoration: underline;
       border-bottom: 1px solid $links;
-      -moz-transition: $transition-speed ease-out;
-      -webkit-transition: $transition-speed ease-out;
-      -o-transition: $transition-speed ease-out;
-      transition: $transition-speed ease-out;
+      // -moz-transition: $transition-speed ease-out;
+      // -webkit-transition: $transition-speed ease-out;
+      // -o-transition: $transition-speed ease-out;
+      // transition: $transition-speed ease-out;
     }
   }
 }
@@ -192,6 +192,10 @@ textarea {
       border-bottom: 0px;
     }
   }
+}
+
+.my_name {
+  border-bottom: 1px solid white;
 }
 
 article {
