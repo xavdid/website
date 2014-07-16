@@ -1,3 +1,5 @@
+# run from project root
+
 bundle exec middleman build --clean
 cd build
 cp -r . ..
