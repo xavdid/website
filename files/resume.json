@@ -1,0 +1,87 @@
+{
+  "bio": {
+    "firstName": "David",
+    "lastName": "Brownman",
+    "email": {
+      "work": "david@relateiq.com",
+      "personal": "beamneocube@gmail.com"
+    },
+    "phone": {
+      "personal": "(303) 819-0850"
+    },
+    "summary": "Software Engineer and all around tinkerer. I like Mac productivity apps, CSS, Automation/Internal tools, and folk music.",
+    "location": {
+      "city": "Palo Alto",
+      "countryCode": "US",
+      "state": "California"
+    },
+    "websites": {
+      "website": "http://davidbrownman.com",
+      "blog": "http://blog.davidbrownman.com"
+
+    },
+    "profiles": {
+      "github": "xavdidtheshadow",
+      "twitter": "xavdid"
+    }
+  },
+  "work": [
+    {
+      "company": "RelateIQ",
+      "position": "Software Engineer",
+      "website": "http://relateiq.com",
+      "startDate": "May 2014",
+      "endDate": "Present",
+      "summary": "Created internal tools that upped the productivity of other employees, both technical and non-technical."
+    },
+    {
+      "company": "backstitch",
+      "position": "Software Engineer",
+      "website": "http://backstit.ch",
+      "startDate": "May 2013",
+      "endDate": "August 2013",
+      "summary": "Full stack web development, including rails. Creating webpages from mockups, improving data processing for external links, and social media management."
+    },
+    {
+      "company": "Fetchnotes",
+      "position": "Software Engineer",
+      "website": "http://fetchnotes.com",
+      "startDate": "May 2012",
+      "endDate": "August 2012",
+      "summary": "Backend development on a python/tornado stack. Developed on the API and improved object oriented design of storage objects."
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Michigan",
+      "startDate": "2010-09-04",
+      "endDate": "2014-05-02",
+      "area": "Informatics",
+      "studyType": "Bachelor",
+      "courses": [
+        "EECS 492: User Interfaces",
+        "EECS 388: Security"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Development",
+      "level": "Intermediate",
+      "keywords": [
+        "HAML",
+        "SCSS",
+        "AngularJS"
+      ]
+    },
+    {
+      "name": "Software Development",
+      "level": "Awesome",
+      "keywords": [
+        "Ruby",
+        "Python",
+        "C++"
+      ]
+    }
+  ]
+}
