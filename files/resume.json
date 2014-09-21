@@ -1,54 +1,55 @@
 {
-  "bio": {
-    "firstName": "David",
-    "lastName": "Brownman",
-    "email": {
-      "work": "david@relateiq.com",
-      "personal": "beamneocube@gmail.com"
-    },
-    "phone": {
-      "personal": "(303) 819-0850"
-    },
-    "summary": "Software Engineer and all around tinkerer. I like Mac productivity apps, CSS, Automation/Internal tools, and folk music.",
+  "basics": {
+    "name": "David Brownman",
+    "label": "Software Development Engineer",
+    "picture": "",
+    "email": "beamneocube@gmail.com",
+    "phone": "303.819.0850",
+    "website": "http://davidbrownman.com",
+    "summary": "Software Engineer and all around tinkerer. I like Mac productivity apps, CSS, Automation, and folk music.",
     "location": {
+      "address": "",
+      "postalCode": "",
       "city": "Palo Alto",
       "countryCode": "US",
-      "state": "California"
+      "region": "CA"
     },
-    "websites": {
-      "website": "http://davidbrownman.com",
-      "blog": "http://blog.davidbrownman.com"
-
-    },
-    "profiles": {
-      "github": "xavdidtheshadow",
-      "twitter": "xavdid"
-    }
+    "profiles": [
+      {
+        "network": "twitter",
+        "username": "@xavdid",
+        "url": "https://twitter.com/xavdid"
+      }, 
+      {
+        "network": "github",
+        "username": "Xavdidtheshadow",
+        "url": "https://github.com/xavdidtheshadow"
+      }
+    ]
   },
   "work": [
     {
       "company": "RelateIQ",
       "position": "Software Engineer",
       "website": "http://relateiq.com",
-      "startDate": "May 2014",
-      "endDate": "Present",
-      "summary": "Created internal tools that upped the productivity of other employees, both technical and non-technical."
+      "startDate": "2014-05-19",
+      "summary": "Created internal tools that upped the productivity of other employees, both technical and non-technical. Also worked with the CTO to quickly roll out (mostly) pre-alpha and MVP software in odd areas."
     },
     {
       "company": "backstitch",
-      "position": "Software Engineer",
+      "position": "Software Development Intern",
       "website": "http://backstit.ch",
-      "startDate": "May 2013",
-      "endDate": "August 2013",
-      "summary": "Full stack web development, including rails. Creating webpages from mockups, improving data processing for external links, and social media management."
+      "startDate": "2013-05-15",
+      "endDate": "2013-08-15",
+      "summary": "Full stack web development, focusing on Rails. Creating webpages from mockups, improving data processing for external links, and social media management."
     },
     {
       "company": "Fetchnotes",
-      "position": "Software Engineer",
+      "position": "Software Engineer Intern",
       "website": "http://fetchnotes.com",
-      "startDate": "May 2012",
-      "endDate": "August 2012",
-      "summary": "Backend development on a python/tornado stack. Developed on the API and improved object oriented design of storage objects."
+      "startDate": "2012-05-15",
+      "endDate": "2012-08-15",
+      "summary": "Backend development on a Python/Tornado stack. Developed on the API and improved object oriented design of storage objects."
     }
   ],
   "education": [
@@ -56,11 +57,11 @@
       "institution": "University of Michigan",
       "startDate": "2010-09-04",
       "endDate": "2014-05-02",
-      "area": "Informatics",
-      "studyType": "Bachelor",
+      "area": "Social Computing Informatics",
+      "studyType": "Bachelor of Arts",
       "courses": [
-        "EECS 492: User Interfaces",
-        "EECS 388: Security"
+        "[EECS 492] User Interfaces",
+        "[EECS 388] Security"
       ]
     }
   ],
@@ -76,7 +77,7 @@
     },
     {
       "name": "Software Development",
-      "level": "Awesome",
+      "level": "Master",
       "keywords": [
         "Ruby",
         "Python",

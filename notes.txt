@@ -17,3 +17,6 @@ gameplan:
             
 
 make links always red, underline on mouseover
+
+http://registry.jsonresume.org/david
+

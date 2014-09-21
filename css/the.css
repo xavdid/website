@@ -1,27 +1,27 @@
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
-/* line 16, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 16, /Users/david/projects/personal_website/source/css/the.scss */
 html, button, input, select, textarea {
   color: #000033; }
 
-/* line 21, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 21, /Users/david/projects/personal_website/source/css/the.scss */
 body {
   font-size: 1em;
   line-height: 1.4;
   font: 16px / 26px Minion Pro, Helvetica, Helvetica Neue, Arial; }
 
-/* line 27, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 27, /Users/david/projects/personal_website/source/css/the.scss */
 html, body {
   height: 100%;
   background-image: url("../img/greyzz.png"); }
 
-/* line 32, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 32, /Users/david/projects/personal_website/source/css/the.scss */
 ::-moz-selection, ::selection {
   background: #b3d4fc;
   text-shadow: none; }
 
-/* line 37, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 37, /Users/david/projects/personal_website/source/css/the.scss */
 hr {
   display: block;
   height: 1px;
@@ -30,26 +30,26 @@ hr {
   margin: 1em 0;
   padding: 0; }
 
-/* line 46, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 46, /Users/david/projects/personal_website/source/css/the.scss */
 img {
   vertical-align: middle; }
 
-/* line 50, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 50, /Users/david/projects/personal_website/source/css/the.scss */
 fieldset {
   border: 0;
   margin: 0;
   padding: 0; }
 
-/* line 56, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 56, /Users/david/projects/personal_website/source/css/the.scss */
 textarea {
   resize: vertical; }
 
-/* line 60, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 60, /Users/david/projects/personal_website/source/css/the.scss */
 .date {
   font-style: italic;
   font-size: .6em; }
 
-/* line 65, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 65, /Users/david/projects/personal_website/source/css/the.scss */
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -60,7 +60,7 @@ textarea {
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    Edited: David Brownman - this is my site
    ========================================================================== */
-/* line 77, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 77, /Users/david/projects/personal_website/source/css/the.scss */
 .wrapper {
   width: 90%;
   margin: 0 5%; }
@@ -68,102 +68,102 @@ textarea {
 /* ===================
     ALL: Blue Theme
    =================== */
-/* line 86, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 86, /Users/david/projects/personal_website/source/css/the.scss */
 .page {
   min-height: 100%;
   position: relative;
   border-left: 15px solid #003366; }
-  /* line 92, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 92, /Users/david/projects/personal_website/source/css/the.scss */
   .page a {
     color: #336699;
     border-bottom: 1px solid #bbbbbb;
     text-decoration: none; }
-    /* line 101, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 101, /Users/david/projects/personal_website/source/css/the.scss */
     .page a:visited {
       color: #336699; }
-    /* line 105, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 105, /Users/david/projects/personal_website/source/css/the.scss */
     .page a:hover {
       border-bottom: 1px solid #336699; }
 
-/* line 117, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 117, /Users/david/projects/personal_website/source/css/the.scss */
 .header-container {
   font: 27px Myriad Pro, Helvetica, Helvetica Neue, Arial !important; }
 
-/* line 126, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 126, /Users/david/projects/personal_website/source/css/the.scss */
 .header-container, .footer-container, .main aside {
   background: #003366; }
 
-/* line 130, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 130, /Users/david/projects/personal_website/source/css/the.scss */
 .main-container {
   padding-bottom: 40px; }
-  /* line 132, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 132, /Users/david/projects/personal_website/source/css/the.scss */
   .main-container a {
     font-weight: bold; }
 
-/* line 137, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 137, /Users/david/projects/personal_website/source/css/the.scss */
 .mini_header {
   padding-bottom: 3%; }
 
-/* line 141, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 141, /Users/david/projects/personal_website/source/css/the.scss */
 .footer-container {
   height: 40px;
   position: absolute;
   width: 100%;
   bottom: 0;
   overflow: hidden; }
-  /* line 147, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 147, /Users/david/projects/personal_website/source/css/the.scss */
   .footer-container .feet {
     font-weight: 300;
     page-break-inside: avoid;
     color: white; }
-    /* line 149, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 149, /Users/david/projects/personal_website/source/css/the.scss */
     .footer-container .feet i {
       color: white; }
-    /* line 153, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 153, /Users/david/projects/personal_website/source/css/the.scss */
     .footer-container .feet ul {
       margin: 0;
       padding: 0; }
-    /* line 159, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 159, /Users/david/projects/personal_website/source/css/the.scss */
     .footer-container .feet li {
       display: inline-block;
       padding-right: 4%;
       padding-top: 4px; }
-    /* line 169, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 169, /Users/david/projects/personal_website/source/css/the.scss */
     .footer-container .feet a {
       color: white;
       border-bottom: 0px; }
-    /* line 174, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 174, /Users/david/projects/personal_website/source/css/the.scss */
     .footer-container .feet a:hover {
       border-bottom: 0px; }
-    /* line 179, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 179, /Users/david/projects/personal_website/source/css/the.scss */
     .footer-container .feet i:hover {
       color: #ffcc00; }
 
-/* line 185, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 185, /Users/david/projects/personal_website/source/css/the.scss */
 .title {
   color: white;
   font-size: 27px;
   margin: 0; }
-  /* line 189, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 189, /Users/david/projects/personal_website/source/css/the.scss */
   .title a {
     color: white !important;
     border-bottom: 0px; }
-    /* line 192, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 192, /Users/david/projects/personal_website/source/css/the.scss */
     .title a:hover {
       border-bottom: 0px; }
 
-/* line 198, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 198, /Users/david/projects/personal_website/source/css/the.scss */
 .my_name {
   border-bottom: 1px solid white; }
 
-/* line 204, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 204, /Users/david/projects/personal_website/source/css/the.scss */
 article header p, article section p, article footer p {
   padding-bottom: 5%; }
-/* line 207, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 207, /Users/david/projects/personal_website/source/css/the.scss */
 article header .projects, article section .projects, article footer .projects {
   list-style-type: circle;
   font-weight: 200; }
-/* line 213, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 213, /Users/david/projects/personal_website/source/css/the.scss */
 article .dict {
   background-color: rgba(187, 187, 187, 0.3);
   padding: 20px;
@@ -173,13 +173,13 @@ article .dict {
 /* ==============
     MOBILE: Menu
    ============== */
-/* line 228, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 228, /Users/david/projects/personal_website/source/css/the.scss */
 nav ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   color: #003366; }
-/* line 234, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 234, /Users/david/projects/personal_website/source/css/the.scss */
 nav a {
   display: block;
   padding: 12px 0;
@@ -190,17 +190,17 @@ nav a {
   font-weight: 400;
   font-size: 20px;
   border-bottom: 0px !important; }
-  /* line 248, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 248, /Users/david/projects/personal_website/source/css/the.scss */
   nav a:hover {
     background: #336699; }
-  /* line 251, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 251, /Users/david/projects/personal_website/source/css/the.scss */
   nav a:visited {
     color: #003366; }
-/* line 255, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 255, /Users/david/projects/personal_website/source/css/the.scss */
 nav .active {
   background-image: url("../img/greyzz.png");
   color: #003366 !important; }
-  /* line 258, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 258, /Users/david/projects/personal_website/source/css/the.scss */
   nav .active:hover {
     background-image: url("../img/greyzz.png");
     color: #003366 !important; }
@@ -208,60 +208,60 @@ nav .active {
 /* ==============
     MOBILE: Main
    ============== */
-/* line 274, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 274, /Users/david/projects/personal_website/source/css/the.scss */
 .main {
   padding: 30px 0; }
-  /* line 276, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 276, /Users/david/projects/personal_website/source/css/the.scss */
   .main .topper {
     border-bottom: 3px solid white;
     background-color: #003366;
     font: 18px Myriad Pro, Helvetica, Helvetica Neue, Arial; }
-    /* line 280, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 280, /Users/david/projects/personal_website/source/css/the.scss */
     .main .topper .heading {
       padding-top: 8px;
       padding-left: 5%;
       padding-bottom: 4px; }
-  /* line 286, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 286, /Users/david/projects/personal_website/source/css/the.scss */
   .main article h1 {
     font-size: 2em; }
-  /* line 290, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 290, /Users/david/projects/personal_website/source/css/the.scss */
   .main .heading {
     font-weight: 400; }
-  /* line 293, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 293, /Users/david/projects/personal_website/source/css/the.scss */
   .main p {
     font-weight: 300; }
-  /* line 297, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 297, /Users/david/projects/personal_website/source/css/the.scss */
   .main aside {
     color: white;
     background-color: #000033;
     font: 16px Myriad Pro, Helvetica, Helvetica Neue, Arial;
     overflow: hidden; }
-    /* line 302, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 302, /Users/david/projects/personal_website/source/css/the.scss */
     .main aside a {
       color: #ffcc00 !important;
       border-bottom: 1px solid #000033;
       font-weight: normal; }
-      /* line 306, /Users/davidbrownman/projects/website/source/css/the.scss */
+      /* line 306, /Users/david/projects/personal_website/source/css/the.scss */
       .main aside a:hover {
         border-bottom: 1px solid #ffcc00; }
-      /* line 309, /Users/davidbrownman/projects/website/source/css/the.scss */
+      /* line 309, /Users/david/projects/personal_website/source/css/the.scss */
       .main aside a:visited {
         color: white; }
-    /* line 315, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 315, /Users/david/projects/personal_website/source/css/the.scss */
     .main aside img {
       width: 37%;
       padding: 5%; }
-    /* line 323, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 323, /Users/david/projects/personal_website/source/css/the.scss */
     .main aside p {
       width: 90%;
       padding-left: 5%; }
-    /* line 334, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 334, /Users/david/projects/personal_website/source/css/the.scss */
     .main aside .row {
       text-align: center; }
-      /* line 336, /Users/davidbrownman/projects/website/source/css/the.scss */
+      /* line 336, /Users/david/projects/personal_website/source/css/the.scss */
       .main aside .row a {
         color: #000033 !important; }
-      /* line 339, /Users/davidbrownman/projects/website/source/css/the.scss */
+      /* line 339, /Users/david/projects/personal_website/source/css/the.scss */
       .main aside .row .cell {
         width: 20.3%;
         background-color: white;
@@ -270,96 +270,96 @@ nav .active {
         margin-bottom: 6%;
         padding-top: 3%;
         padding-bottom: 3%; }
-        /* line 349, /Users/davidbrownman/projects/website/source/css/the.scss */
+        /* line 349, /Users/david/projects/personal_website/source/css/the.scss */
         .main aside .row .cell:hover {
           background-color: #336699;
           color: white; }
-          /* line 351, /Users/davidbrownman/projects/website/source/css/the.scss */
+          /* line 351, /Users/david/projects/personal_website/source/css/the.scss */
           .main aside .row .cell:hover i {
             color: white; }
-      /* line 357, /Users/davidbrownman/projects/website/source/css/the.scss */
+      /* line 357, /Users/david/projects/personal_website/source/css/the.scss */
       .main aside .row .end {
         padding-bottom: 9.65%; }
-      /* line 360, /Users/davidbrownman/projects/website/source/css/the.scss */
+      /* line 360, /Users/david/projects/personal_website/source/css/the.scss */
       .main aside .row .left {
         float: left; }
-      /* line 363, /Users/davidbrownman/projects/website/source/css/the.scss */
+      /* line 363, /Users/david/projects/personal_website/source/css/the.scss */
       .main aside .row .right {
         float: left; }
-      /* line 366, /Users/davidbrownman/projects/website/source/css/the.scss */
+      /* line 366, /Users/david/projects/personal_website/source/css/the.scss */
       .main aside .row i {
         color: #000033; }
-  /* line 374, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 374, /Users/david/projects/personal_website/source/css/the.scss */
   .main .second {
     background-color: #000033; }
-    /* line 376, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 376, /Users/david/projects/personal_website/source/css/the.scss */
     .main .second a {
       color: #000033; }
-  /* line 381, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 381, /Users/david/projects/personal_website/source/css/the.scss */
   .main .third {
     margin-top: 3%; }
 
-/* line 387, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 387, /Users/david/projects/personal_website/source/css/the.scss */
 .footer-container footer {
   color: white; }
-  /* line 389, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 389, /Users/david/projects/personal_website/source/css/the.scss */
   .footer-container footer .sitename {
     display: none; }
-  /* line 392, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 392, /Users/david/projects/personal_website/source/css/the.scss */
   .footer-container footer .feet {
     padding-top: 0.3%; }
-    /* line 395, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 395, /Users/david/projects/personal_website/source/css/the.scss */
     .footer-container footer .feet a:hover {
       text-decoration: none; }
 
 /* ===============
     ALL: IE Fixes
    =============== */
-/* line 408, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 408, /Users/david/projects/personal_website/source/css/the.scss */
 .ie7 .title {
   padding-top: 20px; }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* line 416, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 416, /Users/david/projects/personal_website/source/css/the.scss */
 .tumblr_posts {
   list-style-type: none;
   width: 95%;
   padding: 0; }
-  /* line 420, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 420, /Users/david/projects/personal_website/source/css/the.scss */
   .tumblr_posts .tumblr_post {
     margin-bottom: 10%; }
-    /* line 422, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 422, /Users/david/projects/personal_website/source/css/the.scss */
     .tumblr_posts .tumblr_post .date {
       font-size: 1em; }
-    /* line 425, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 425, /Users/david/projects/personal_website/source/css/the.scss */
     .tumblr_posts .tumblr_post blockquote {
       background-color: #bbbbbb;
       padding: 30px;
       font-family: courier, helvetica;
       margin-left: -10px; }
-    /* line 432, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 432, /Users/david/projects/personal_website/source/css/the.scss */
     .tumblr_posts .tumblr_post code {
       background-color: #bbbbbb; }
-    /* line 436, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 436, /Users/david/projects/personal_website/source/css/the.scss */
     .tumblr_posts .tumblr_post pre code {
       background-color: inherit; }
-    /* line 441, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 441, /Users/david/projects/personal_website/source/css/the.scss */
     .tumblr_posts .tumblr_post .tumblr_title {
       color: #003366;
       font: 30px Myriad Pro, Helvetica, Helvetica Neue, Arial;
       font-weight: bold !important; }
-    /* line 450, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 450, /Users/david/projects/personal_website/source/css/the.scss */
     .tumblr_posts .tumblr_post .tumblr_body {
       border-left: 3px solid #ffcc00;
       padding-left: 5%; }
-      /* line 453, /Users/davidbrownman/projects/website/source/css/the.scss */
+      /* line 453, /Users/david/projects/personal_website/source/css/the.scss */
       .tumblr_posts .tumblr_post .tumblr_body img {
         width: 95%;
         height: 95%; }
 
-/* line 461, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 461, /Users/david/projects/personal_website/source/css/the.scss */
 .quote_source {
   padding-left: 8%;
   font-size: 1.5em; }
@@ -371,28 +371,28 @@ nav .active {
   /* ====================
       INTERMEDIATE: Menu
      ==================== */
-  /* line 477, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 477, /Users/david/projects/personal_website/source/css/the.scss */
   nav a {
     float: left;
     width: 17%;
     padding-left: 2%;
     padding-right: 2%;
     margin-bottom: 0; }
-  /* line 488, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 488, /Users/david/projects/personal_website/source/css/the.scss */
   nav li:first-child a {
     margin-left: 0; }
-  /* line 491, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 491, /Users/david/projects/personal_website/source/css/the.scss */
   nav li:last-child a {
     margin-right: 0; }
-  /* line 495, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 495, /Users/david/projects/personal_website/source/css/the.scss */
   nav ul li {
     display: inline; }
 
-  /* line 503, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 503, /Users/david/projects/personal_website/source/css/the.scss */
   .footer-container footer .feet li {
     padding-top: 3px; }
 
-  /* line 516, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 516, /Users/david/projects/personal_website/source/css/the.scss */
   .long {
     padding-left: 4%;
     padding-right: 4%; }
@@ -400,11 +400,11 @@ nav .active {
   /* ========================
       INTERMEDIATE: Main
      ======================== */
-  /* line 527, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 527, /Users/david/projects/personal_website/source/css/the.scss */
   aside i {
     padding-bottom: 2% !important; }
 
-  /* line 532, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 532, /Users/david/projects/personal_website/source/css/the.scss */
   .dict {
     width: 60% !important;
     margin: 0; }
@@ -412,20 +412,20 @@ nav .active {
   /* ========================
       INTERMEDIATE: IE Fixes
      ======================== */
-  /* line 541, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 541, /Users/david/projects/personal_website/source/css/the.scss */
   .oldie nav a {
     margin: 0 0.7%; } }
 @media only screen and (min-width: 1124px) {
   /* ============
       WIDE: Menu
      ============ */
-  /* line 551, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 551, /Users/david/projects/personal_website/source/css/the.scss */
   .title {
     float: left;
     margin-left: -4.5%;
     margin-top: 0.95%; }
 
-  /* line 556, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 556, /Users/david/projects/personal_website/source/css/the.scss */
   nav {
     float: right;
     width: 40%; }
@@ -433,69 +433,69 @@ nav .active {
   /* ============
       WIDE: Main
      ============ */
-  /* line 565, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 565, /Users/david/projects/personal_website/source/css/the.scss */
   .main article {
     float: left;
     width: 70%;
     margin-left: -2%; }
-    /* line 569, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 569, /Users/david/projects/personal_website/source/css/the.scss */
     .main article h1, .main article h2 {
       font: 20px Myriad Pro, Helvetica, Helvetica Neue, Arial;
       font-weight: bold !important; }
-  /* line 574, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 574, /Users/david/projects/personal_website/source/css/the.scss */
   .main aside {
     float: right;
     width: 30%; }
-    /* line 577, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 577, /Users/david/projects/personal_website/source/css/the.scss */
     .main aside img {
       width: 90%; }
 
-  /* line 589, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 589, /Users/david/projects/personal_website/source/css/the.scss */
   .footer-container footer .feet {
     margin-left: -2%; }
-    /* line 592, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 592, /Users/david/projects/personal_website/source/css/the.scss */
     .footer-container footer .feet li {
       padding-top: 2px; }
-  /* line 600, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 600, /Users/david/projects/personal_website/source/css/the.scss */
   .footer-container footer li {
     padding-right: 2% !important; }
 
-  /* line 606, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 606, /Users/david/projects/personal_website/source/css/the.scss */
   .tumblr_posts {
     width: 80%; }
-    /* line 610, /Users/davidbrownman/projects/website/source/css/the.scss */
+    /* line 610, /Users/david/projects/personal_website/source/css/the.scss */
     .tumblr_posts .tumblr_post .tumblr_body img {
       width: 70%; } }
 @media only screen and (min-width: 750) {
   /* ===============
       Maximal Width
      =============== */
-  /* line 622, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 622, /Users/david/projects/personal_website/source/css/the.scss */
   .wrapper {
     /*width: 1026px;  1140px - 10% for margins */
     margin: 0 auto; } }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-/* line 632, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 632, /Users/david/projects/personal_website/source/css/the.scss */
 .ir {
   background-color: transparent;
   border: 0;
   overflow: hidden;
   text-indent: -9999px; }
-  /* line 637, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 637, /Users/david/projects/personal_website/source/css/the.scss */
   .ir:before {
     content: "";
     display: block;
     width: 0;
     height: 150%; }
 
-/* line 645, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 645, /Users/david/projects/personal_website/source/css/the.scss */
 .hidden {
   display: none !important;
   visibility: hidden; }
 
-/* line 650, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 650, /Users/david/projects/personal_website/source/css/the.scss */
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -505,7 +505,7 @@ nav .active {
   padding: 0;
   position: absolute;
   width: 1px; }
-  /* line 660, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 660, /Users/david/projects/personal_website/source/css/the.scss */
   .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
     clip: auto;
     height: auto;
@@ -514,18 +514,18 @@ nav .active {
     position: static;
     width: auto; }
 
-/* line 671, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 671, /Users/david/projects/personal_website/source/css/the.scss */
 .invisible {
   visibility: hidden; }
 
-/* line 675, /Users/davidbrownman/projects/website/source/css/the.scss */
+/* line 675, /Users/david/projects/personal_website/source/css/the.scss */
 .clearfix {
   zoom: 1; }
-  /* line 676, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 676, /Users/david/projects/personal_website/source/css/the.scss */
   .clearfix:before {
     content: " ";
     display: table; }
-  /* line 680, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 680, /Users/david/projects/personal_website/source/css/the.scss */
   .clearfix:after {
     content: " ";
     display: table;
@@ -535,7 +535,7 @@ nav .active {
    Print styles
    ========================================================================== */
 @media print {
-  /* line 693, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 693, /Users/david/projects/personal_website/source/css/the.scss */
   * {
     background: transparent !important;
     color: #000 !important;
@@ -543,40 +543,40 @@ nav .active {
     box-shadow: none !important;
     text-shadow: none !important; }
 
-  /* line 705, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 705, /Users/david/projects/personal_website/source/css/the.scss */
   a[href]:after {
     content: " (" attr(href) ")"; }
 
-  /* line 709, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 709, /Users/david/projects/personal_website/source/css/the.scss */
   abbr[title]:after {
     content: " (" attr(title) ")"; }
 
   /*
    * Don't show links for images, or javascript/internal links
    */
-  /* line 715, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 715, /Users/david/projects/personal_website/source/css/the.scss */
   .ir a:after {
     content: ""; }
 
-  /* line 719, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 719, /Users/david/projects/personal_website/source/css/the.scss */
   a[href^="javascript:"]:after, a[href^="#"]:after {
     content: ""; }
 
-  /* line 723, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 723, /Users/david/projects/personal_website/source/css/the.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
 
-  /* line 727, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 727, /Users/david/projects/personal_website/source/css/the.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */ }
 
-  /* line 731, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 731, /Users/david/projects/personal_website/source/css/the.scss */
   tr {
     page-break-inside: avoid; }
 
-  /* line 734, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 734, /Users/david/projects/personal_website/source/css/the.scss */
   img {
     page-break-inside: avoid;
     max-width: 100% !important; }
@@ -584,11 +584,11 @@ nav .active {
   @page {
     margin: 0.5cm; }
 
-  /* line 742, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 742, /Users/david/projects/personal_website/source/css/the.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3; }
 
-  /* line 746, /Users/davidbrownman/projects/website/source/css/the.scss */
+  /* line 746, /Users/david/projects/personal_website/source/css/the.scss */
   h2, h3 {
     page-break-after: avoid; } }
