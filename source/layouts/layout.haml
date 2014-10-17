@@ -8,10 +8,11 @@
 /[if gt IE 8]
   <!--> <html class="no-js"> <!--
 %head
+  /You're looking at my site's source! That's pretty cool. It's pretty straightforward. Template taken from HTML5Boilderplate, css adapted to my liking. 
+  /This site was laregely designed by Jennifer Herzberg, who rules. 
   %meta{charset: "utf-8"}
   /hyphens are dumb
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  /You're looking at my site's source! That's pretty cool. It's pretty straightforward. Template taken from HTML5Boilderplate, css adapted to my liking. 
   %title
     David Brownman dot com
     
@@ -77,21 +78,20 @@
                 %span.sitename
                   GitHub
             %li
-              %a{href: "http://www.linkedin.com/pub/david-brownman/63/480/180/", target: "_blank"}
-                %i.fa.fa-linkedin-square.fa-2x
-                %span.sitename
-                  Linkedin
-            %li
               %a{href: "http://www.twitter.com/xavdid", target: "_blank"}
                 %i.fa.fa-twitter-square.fa-2x
                 %span.sitename
                   Twitter
+            %li
+              %a{href: "http://www.linkedin.com/pub/david-brownman/63/480/180/", target: "_blank"}
+                %i.fa.fa-linkedin-square.fa-2x
+                %span.sitename
+                  Linkedin
+            
             
 
 
   %script{src: "http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"}
-  :javascript
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')
   %script{src: "js/main.js"}
   :javascript
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

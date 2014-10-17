@@ -17,7 +17,7 @@ var facts = [
     '<a href="http://www.spacechemthegame.com"> Space Chem</a> may be the most challenging, rewarding, and well designed game (puzzle or otherwise) that I\'ve ever played. Whenever you feel too smart, it\'s there to take you down a peg or two, but in a good way.',
     'There are shockingly few other David Brownmans in the world. One of them is an expert on <a href="http://books.google.com/books?id=X8waCmzjiD4C&pg=PA996&lpg=PA996&dq=%22david+brownman%22&source=bl&ots=hG7slZ52O3&sig=AF6Yt-ri3v8wORJMl6UvMberDwY&hl=en&sa=X&ei=eY_XUtCRDtWksQT74ICgCw&ved=0CE8Q6AEwBTgU#v=onepage&q=%22david%20brownman%22&f=false" target="_blank">shamanism</a>.',
     'My favorite subreddit is probably <a href="http://www.reddit.com/r/nottheonion">r/nottheonion</a>.', 
-    'My car is a 2002 Honda Accord and it\'s got manual everything- locks, windows, etc. My grandfather got it that way because he firmly believed that anything electric was unreliable, so he sprung for the crank windows.'
+    'My car is a 2002 Honda Accord and it\'s got manual everything (besides transmission)- locks, windows, etc. My grandfather got it that way because he firmly believed that anything electric was unreliable, so he sprung for the crank windows.'
 ];
 
 function getRandomInt (min, max) {

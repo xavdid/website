@@ -6,6 +6,7 @@ cp -r . ..
 cd ..
 rm -rf build
 cd files
-resume publish -t elegant
+# This can probably be done manually because it won't change often. 
+# resume publish -t elegant
 
 echo "Ready to push!"
