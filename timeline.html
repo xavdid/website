@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <style>
+      #timeline {width: 95%; height: 100%;}
+    </style>
+  </head>
+  <body>
+    <div id="timeline"></div>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["timeline"]});
+      google.setOnLoadCallback(drawChart);
+
+      var options = {
+        // enableInteractivity: false
+      };
+
+      function drawChart() {
+        var container = document.getElementById('timeline');
+        var chart = new google.visualization.Timeline(container);
+        var dataTable = new google.visualization.DataTable();
+
+        // MONTHS ARE 0 INDEXED BECAUSE FUCK YOU
+        var now = new Date();
+        var start = new Date(2014, 2, 22);
+
+        dataTable.addColumn({type: 'string', id: 'Person'});
+        dataTable.addColumn({type: 'date', id: 'Start'});
+        dataTable.addColumn({type: 'date', id: 'End'});
+        dataTable.addRows([
+          ['Chad', start, now],
+          ['David G', start, now],
+          ['DJ', start, now],
+          ['Fred', start, now],
+          ['Mike', new Date(2014, 2, 27), now],
+          ['Aaron', new Date(2014, 2, 31), new Date(2014, 6, 1)],
+          ['Michael', new Date(2014, 7, 24), now],
+          ['Tanner', new Date(2014, 4, 30), now],
+          ['William', new Date(2014, 10, 1), now],
+          ['Barron', new Date(2014, 2, 30), new Date(2014, 7, 3)],
+          ['John', start, new Date(2014, 7, 1)],
+          ['Tobi', new Date(2014, 7, 1), new Date(2014, 9, 1)],
+          ['Emile', new Date(2014, 7, 14), new Date(2014, 11, 31)],
+          ['Adam', start, new Date(2014, 7, 1)],
+          ['David B', new Date(2014, 4, 14), now],
+          ['Kevin', new Date(2014, 7, 22), now],
+          ['Ines', new Date(2014, 7, 27), new Date(2015, 2, 12)],
+          ['Marcin', new Date(2015, 0, 3), now],
+          ['Taylor', new Date(2014, 10, 8), now],
+          ['Mark', new Date(2015, 1, 3), now]
+          // gaspar
+          // brandon?
+          // yves
+        ].sort(function(a, b){
+          // sorted by start date
+          return a[1] > b[1] ? 1 : -1;
+        }));
+
+        chart.draw(dataTable, options);
+      }
+    </script>
+  </body>
+</html>
