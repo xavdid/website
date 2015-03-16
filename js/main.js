@@ -18,7 +18,7 @@ var facts = [
     'My favorite subreddit is probably <a href="http://www.reddit.com/r/nottheonion">r/nottheonion</a>.', 
     'My car is a 2002 Honda Accord and it\'s got manual everything (besides transmission)- locks, windows, etc. My grandfather got it that way because he firmly believed that anything electric was unreliable, so he sprung for the crank windows.',
     'I live in the Silicon Valley Tech House, complete with computers on tables, bunk beds, and weeky GoT watching.',
-    
+    'I\'ve been involved in the global <a href="https://en.wikipedia.org/wiki/Muggle_quidditch">quidditch</a> scene since 2010.'    
 ];
 
 function getRandomInt (min, max) {
