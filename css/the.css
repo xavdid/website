@@ -72,7 +72,7 @@ textarea {
 .page {
   min-height: 100%;
   position: relative;
-  border-left: 15px solid #003366; }
+  border-left: 7px solid #003366; }
   /* line 92, /Users/dbrownman/projects/personal-site/source/css/the.scss */
   .page a {
     color: #336699;
