@@ -15,19 +15,14 @@ var facts = [
     'Every Friday during senior year of high school, my friends and I dressed up in fancy suits. We called it "Fancy Friday" and got in the yearbook because of it. I still really enjoy dressing up in thrift store gear (which we did before it was cool).',
     '<a href="http://www.spacechemthegame.com"> Space Chem</a> may be the most challenging, rewarding, and well designed game (puzzle or otherwise) that I\'ve ever played. Whenever you feel too smart, it\'s there to take you down a peg or two, but in a good way.',
     'There are shockingly few other David Brownmans in the world. One of them is an expert on <a href="http://books.google.com/books?id=X8waCmzjiD4C&pg=PA996&lpg=PA996&dq=%22david+brownman%22&source=bl&ots=hG7slZ52O3&sig=AF6Yt-ri3v8wORJMl6UvMberDwY&hl=en&sa=X&ei=eY_XUtCRDtWksQT74ICgCw&ved=0CE8Q6AEwBTgU#v=onepage&q=%22david%20brownman%22&f=false" target="_blank">shamanism</a>.',
-<<<<<<< HEAD
-    'My favorite subreddit is probably <a href="http://www.reddit.com/r/nottheonion">r/nottheonion</a>.', 
     'My car is a 2002 Honda Accord and it\'s got manual everything (besides transmission)- locks, windows, etc. My grandfather got it that way because he firmly believed that anything electric was unreliable, so he sprung for the crank windows.',
-    'I live in the Silicon Valley Tech House, complete with computers on tables, bunk beds, and weeky GoT watching.',
-    'I\'ve been involved in the global <a href="https://en.wikipedia.org/wiki/Muggle_quidditch">quidditch</a> scene since 2010.'    
-=======
+    'I\'ve been involved in the global <a href="https://en.wikipedia.org/wiki/Muggle_quidditch">quidditch</a> scene since 2010.',
     'My favorite subreddit is <a href="http://www.reddit.com/r/subredditsimulator">r/subredditsimulator</a>.', 
     'My car is a 2002 Honda Accord and it\'s got manual everything (besides transmission)- locks, windows, etc. My grandfather got it that way because he firmly believed that anything electric was unreliable, so he sprung for the crank windows.',
     'I sold a bunch of magic cards to a card shop in exchange for a gratuitous amount of store credit. So, we\'ve got a sweet collection of comics and board games going, basically for free.',
     'Our apartment is basically an ikea showroom.',
     'When I first moved to California, I lived in the "Silicon Valley Tech House" in full sized bunk beds with 11 other people. HBO\'s Silicon Valley was basically a documentary about our lives.',
     'I\'ve gotten very good at taking 6am flights to locations on the east coast because that\'s best way to travel.'
->>>>>>> added some facts and updated projects
 ];
 
 function getRandomInt (min, max) {
