@@ -115,10 +115,10 @@ textarea {
   .footer-container .feet {
     font-weight: 300;
     page-break-inside: avoid;
-    color: white; }
+    color: #fff; }
     /* line 149, /Users/david/projects/personal_website/source/css/the.scss */
     .footer-container .feet i {
-      color: white; }
+      color: #fff; }
     /* line 153, /Users/david/projects/personal_website/source/css/the.scss */
     .footer-container .feet ul {
       margin: 0;
@@ -130,7 +130,7 @@ textarea {
       padding-top: 4px; }
     /* line 169, /Users/david/projects/personal_website/source/css/the.scss */
     .footer-container .feet a {
-      color: white;
+      color: #fff;
       border-bottom: 0px; }
     /* line 174, /Users/david/projects/personal_website/source/css/the.scss */
     .footer-container .feet a:hover {
@@ -141,12 +141,12 @@ textarea {
 
 /* line 185, /Users/david/projects/personal_website/source/css/the.scss */
 .title {
-  color: white;
+  color: #fff;
   font-size: 27px;
   margin: 0; }
   /* line 189, /Users/david/projects/personal_website/source/css/the.scss */
   .title a {
-    color: white !important;
+    color: #fff !important;
     border-bottom: 0px; }
     /* line 192, /Users/david/projects/personal_website/source/css/the.scss */
     .title a:hover {
@@ -186,7 +186,7 @@ nav a {
   text-align: center;
   font-weight: bold;
   vertical-align: middle;
-  color: white !important;
+  color: #fff !important;
   font-weight: 400;
   font-size: 20px;
   border-bottom: 0px !important; }
@@ -213,7 +213,7 @@ nav .active {
   padding: 30px 0; }
   /* line 276, /Users/david/projects/personal_website/source/css/the.scss */
   .main .topper {
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid #fff;
     background-color: #003366;
     font: 18px Myriad Pro, Helvetica, Helvetica Neue, Arial; }
     /* line 280, /Users/david/projects/personal_website/source/css/the.scss */
@@ -232,7 +232,7 @@ nav .active {
     font-weight: 300; }
   /* line 297, /Users/david/projects/personal_website/source/css/the.scss */
   .main aside {
-    color: white;
+    color: #fff;
     background-color: #000033;
     font: 16px Myriad Pro, Helvetica, Helvetica Neue, Arial;
     overflow: hidden; }
@@ -246,7 +246,7 @@ nav .active {
         border-bottom: 1px solid #ffcc00; }
       /* line 309, /Users/david/projects/personal_website/source/css/the.scss */
       .main aside a:visited {
-        color: white; }
+        color: #fff; }
     /* line 315, /Users/david/projects/personal_website/source/css/the.scss */
     .main aside img {
       width: 37%;
@@ -264,7 +264,7 @@ nav .active {
       /* line 339, /Users/david/projects/personal_website/source/css/the.scss */
       .main aside .row .cell {
         width: 20.3%;
-        background-color: white;
+        background-color: #fff;
         margin-top: 6%;
         margin-left: 4%;
         margin-bottom: 6%;
@@ -273,10 +273,10 @@ nav .active {
         /* line 349, /Users/david/projects/personal_website/source/css/the.scss */
         .main aside .row .cell:hover {
           background-color: #336699;
-          color: white; }
+          color: #fff; }
           /* line 351, /Users/david/projects/personal_website/source/css/the.scss */
           .main aside .row .cell:hover i {
-            color: white; }
+            color: #fff; }
       /* line 357, /Users/david/projects/personal_website/source/css/the.scss */
       .main aside .row .end {
         padding-bottom: 9.65%; }
@@ -301,7 +301,7 @@ nav .active {
 
 /* line 387, /Users/david/projects/personal_website/source/css/the.scss */
 .footer-container footer {
-  color: white; }
+  color: #fff; }
   /* line 389, /Users/david/projects/personal_website/source/css/the.scss */
   .footer-container footer .sitename {
     display: none; }
@@ -583,7 +583,6 @@ nav .active {
 
   @page {
     margin: 0.5cm; }
-
   /* line 742, /Users/david/projects/personal_website/source/css/the.scss */
   p, h2, h3 {
     orphans: 3;
