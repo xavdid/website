@@ -1,3 +1,5 @@
+#!/bin/bash -ex
+
 # run from project root (where it is)
 
 bundle exec middleman build --clean
