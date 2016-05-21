@@ -7,7 +7,7 @@ cd build
 cp -r . ..
 cd ..
 rm -rf build
-cd files
+
 # This can probably be done manually because it won't change often. 
 # resume publish -t kendall
 

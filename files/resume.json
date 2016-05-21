@@ -2,16 +2,13 @@
   "basics": {
     "name": "David Brownman",
     "label": "Software Development Engineer",
-    "picture": "",
     "email": "beamneocube@gmail.com",
     "phone": "303.819.0850",
     "website": "http://davidbrownman.com",
-    "summary": "Software Engineer and all around tinkerer. I like Mac productivity apps, CSS, Automation, and folk music.",
+    "summary": "Software Engineer and all around tinkerer. I like productivity apps, CSS, automation, and folk music.",
     "location": {
-      "address": "",
-      "postalCode": "",
       "city": "Palo Alto",
-      "countryCode": "US",
+      "countryCode": "USA",
       "region": "CA"
     },
     "profiles": [
@@ -19,24 +16,37 @@
         "network": "Twitter",
         "username": "@xavdid",
         "url": "https://twitter.com/xavdid"
-      }, 
-      {
+      }, {
         "network": "GitHub",
         "username": "Xavdidtheshadow",
         "url": "https://github.com/xavdidtheshadow"
+      }, {
+        "network": "Linkedin",
+        "username": "dbrownman",
+        "url": "www.linkedin.com/in/dbrownman"
       }
     ]
   },
+  "awards": [{
+    "title": "GTM Hero",
+    "date": "2016-05-09",
+    "awarder": "SalesforceIQ",
+    "summary": "Awarded for \"Acts of cross-fucntional heroism\" and enabling the sales team to excel as a result of extraordinary work"
+  }],
   "work": [
     {
-      "company": "RelateIQ",
-      "position": "Software Engineer",
-      "website": "http://relateiq.com",
+      "company": "SalesforceIQ",
+      "position": "Software Engineer - Internal Tools",
+      "website": "https://salesforceiq.com",
       "startDate": "2014-05-19",
-      "summary": "Created internal tools that upped the productivity of other employees, both technical and non-technical. Also worked with the CTO to quickly roll out (mostly) pre-alpha and MVP software in odd areas.",
+      "endDate": "2016-05-18",
+      "summary": "Created internal tools that upped the productivity of other employees, both technical and non-technical. Also worked directly with the CTO to quickly roll out (mostly) pre-alpha and MVPs of new projects.",
       "highlights": [
         "Acquired by Salesforce 3 months after joining",
-        "Re-wrote internal information site in the interest of stability and user experience"
+        "Re-wrote internal information site in the interest of stability and user experience",
+        "Created a full-featured ruby sdk to access our API",
+        "Architected a testing framework from scratch to provide unit tests for our Zapier app",
+        "Maintained a set of ruby and javascript scripts and plugins that drove business operations"
       ]
     },
     {
@@ -46,15 +56,15 @@
       "startDate": "2014-03-20",
       "summary": "Technical lead responsible for the creation and maintenance of the IRDP website.",
       "highlights": [
-        "So far, the only engineer on the project",
-        "All pages are available in 3 languages",
+        "Worked closely with the International Quidditch Association to power worldwide referee certification tools",
+        "Internationalized most of the site into 3 languages",
         "Used Parse to implement backend and authentication and expanded Parse Ruby Gem to fit site needs"
       ]
     },
     {
       "company": "backstitch",
       "position": "Software Development Intern",
-      "website": "http://backstit.ch",
+      "website": "https://backstit.ch",
       "startDate": "2013-05-15",
       "endDate": "2013-08-15",
       "summary": "Full stack web development, focusing on Rails. Creating webpages from mockups, improving data processing for external links, and social media management.",
@@ -66,7 +76,7 @@
     {
       "company": "Fetchnotes",
       "position": "Software Engineer Intern",
-      "website": "http://fetchnotes.com",
+      "website": "https://fetchnotes.com",
       "startDate": "2012-05-15",
       "endDate": "2012-08-15",
       "summary": "Backend development on a Python/Tornado stack. Developed on the API and improved object oriented design of storage objects.",
@@ -96,7 +106,7 @@
     {
       "organization": "Michigan Quidditch",
       "position": "Co-Founder, Webmaster, Director of External Relations",
-      "website": "http://www.michiganquidditch.com/",
+      "website": "https://www.michiganquidditch.com/",
       "startDate": "2010-10-01",
       "endDate": "2014-05-01",
       "summary": "Along with two others, founded and nurtured the team into greatness",
@@ -109,7 +119,6 @@
     {
       "organization": "Kol HaKavod A Cappella",
       "position": "Member",
-      "website": "http://umich.edu/~khkmusic/index.shtml",
       "startDate": "2010-09-01",
       "endDate": "2014-05-01",
       "summary": "Participated in twice-weekly rehearsals, frequent gigs, and twice-yearly concerts.",
@@ -121,7 +130,7 @@
     {
       "organization": "Life Support Development Ministry",
       "position": "Counselor",
-      "website": "http://www.lsdmo.com/",
+      "website": "https://www.lsdmo.com/",
       "startDate": "2010-06-01",
       "endDate": "2010-09-01",
       "summary": "Coordinated day care activities for under-privileged youth in inner-city Houston.",
@@ -134,20 +143,21 @@
   "skills": [
     {
       "name": "Software Development",
-      "level": "Master",
       "keywords": [
         "Ruby",
+        "Javascript",
         "Python",
-        "C++"
+        "Java"
       ]
     },
     {
       "name": "Web Development",
-      "level": "Intermediate",
       "keywords": [
         "HAML",
         "SCSS",
-        "AngularJS"
+        "AngularJS",
+        "Sinatra",
+        "Express"
       ]
     }
   ],
@@ -158,7 +168,7 @@
     },
     {
       "language": "Japanese",
-      "fluency": "Competent"
+      "fluency": "Rusty"
     }
   ]
 }

@@ -8,15 +8,18 @@
     %h2.heading
       Things I'm fond of
     %p
-      I like interpreted languages, computer automation, CSS, Mac OS X, productivity apps, afternoon naps, and dark work environments. I travel as much as I can and love visiting friends around the world.
+      I like interpreted languages, computer automation, CSS, productivity apps, afternoon naps, build tools, and dark work environments. I travel as much as I can and love visiting friends around the world.
   %section
     %h2.heading
       My life right now
     %p
-      I'm currently a software developer at
+      I recently quit my job at 
       %a{href: "https://salesforceiq.com", target: "_blank"}<
         SalesforceIQ
-      in Palo Alto, CA. I'll be out here for the foreseeable future making the world a more awesome place for relationship management. Past that, all I know is that someday, I'll own a blue Tesla. 
+      in Palo Alto, CA. Currently enjoying #funemployment, but I'll be looking for a new job by the end of the summer (my resume is 
+      %a{href: "https://registry.jsonresume.org/david", target: "_blank"}<
+        here
+      if that fact interests you). Past that, all I know is that someday, I'll own a blue Tesla. 
 
 %aside.topper.first
   .heading
@@ -26,29 +29,18 @@
     %a{href: "mailto:beamneocube@gmail.com", target: "_blank"}
       .cell.left
         %i.fa.fa-envelope.fa-3x
-        -# %br
-        -# email
     %a{href: "https://github.com/xavdidtheshadow", target: "_blank"}
       .cell.left
         %i.fa.fa-github-alt.fa-3x
-        -# %br
-        -# Xavdidtheshadow
     
   
   .row.bottom
     %a{href: "https://twitter.com/xavdid", target: "_blank"}
       .cell.right
         %i.fa.fa-twitter.fa-3x
-        -# %br
-        -# @xavdid
     %a{href: "https://www.linkedin.com/in/dbrownman", target: "_blank"}
       .cell.right
         %i.fa.fa-linkedin.fa-3x
-    -# %a{href: "files/brownman_resume.pdf", target: "_blank"}
-    -#   .cell.right
-    -#     %i.fa.fa-file-text.fa-2x
-    -#     -# %br
-    -#     -# Resume (PDF)
 
 %aside.third.topper
   .heading
@@ -58,7 +50,6 @@
     There should be a random fact here. What do you have against javascript?
     
   :javascript
-    var i = getRandomInt(0,facts.length-1);
-    $(".fact").html(facts[i]);
-    document.getElementById("ichi").className+=" active";
-
+    var i = getRandomIndex(facts.length - 1);
+    $('.fact').html(facts[i]);
+    document.getElementById('ichi').className += ' active';

@@ -19,9 +19,10 @@
   %meta{name: "description", content: "Personal site for David Brownman"}
   %meta{name: "viewport", content: "width=device-width"}
 
-  #{stylesheet_link_tag "normalize", "the", "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"}
+  #{stylesheet_link_tag "the", "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"}
+
   -# pulls compiled js
-  %script{src: "/js/main.js"}
+  #{javascript_include_tag "/js/main.js", "https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=false&skin=sunburst"}
 
 %body
   /[if lt IE 7]

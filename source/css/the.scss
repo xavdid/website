@@ -2,9 +2,13 @@
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
 
+@import 'normalize.min.css';
+
 $blue: #003366; //base blue
 $white: #fff; //just so I can change all of this in one go.
 $dark-blue: #000033; //also text color.
+$code: $dark-blue; // code color
+$grey: #bbbbbb;
 
 $maize: #ffcc00;
 $light-blue: #336699;
@@ -14,7 +18,6 @@ $links: $light-blue;
 
 html, button, input, select, textarea {
   color: $dark-blue;
-  
 }
 
 body {
@@ -28,10 +31,10 @@ html, body {
   background-image: url("../img/greyzz.png"); 
 }
 
-::-moz-selection, ::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
+// ::-moz-selection, ::selection {
+//   background: #b3d4fc;
+//   text-shadow: none;
+// }
 
 hr {
   display: block;
@@ -90,7 +93,7 @@ textarea {
   
   a {
     color: $links;
-    border-bottom: 1px solid #bbbbbb; //grey color
+    border-bottom: 1px solid $grey;
     text-decoration: none;
     // -moz-transition: $transition-speed ease-out;
     // -webkit-transition: $transition-speed ease-out;
@@ -422,16 +425,29 @@ nav {
       font-size: 1em;
     }
     blockquote {
-      background-color: #bbbbbb;
+      background-color: $code;
+      color: $white;
       padding: 30px;
       font-family: courier, helvetica;
       margin-left: -10px;
+      // a {
+      //   color: $white;
+      //   &:visited {
+      //     color: $white;
+      //   }
+      // }
     }
 
     code {
-      background-color: #bbbbbb;
+      // inline code
+      background-color: $code;
+      color: $white;
+      padding: 2px;
     }
     pre {
+      // code blocks
+      padding: 15px;
+      background-color: $code;
       code {
         background-color: inherit;
       }
@@ -450,8 +466,10 @@ nav {
       border-left: 3px solid $maize;
       padding-left: 5%;
       img {
-        width: 95%;
-        height: 95%;
+        max-width: 100%;
+        // height: auto;
+        // width: 95%;
+        // height: 95%;
       }
     }
   }
@@ -604,10 +622,15 @@ nav {
 
   .tumblr_posts {
     width: 80%;
-    .tumblr_post{
-      .tumblr_body{
+    .tumblr_post {
+      .tumblr_body {
         img {
-          width: 70%;
+          // width: 70%;
+          // height: auto;
+          // max-width: 100%;
+
+          // max-height: 400px;
+          // height: 400px !important;
         }
       }
     }
