@@ -8,7 +8,10 @@ cp -r . ..
 cd ..
 rm -rf build
 
-# This can probably be done manually because it won't change often. 
-# resume publish -t kendall
+# run with the -r flag to push resume as well!
+if [[ $* == *-r* ]]; then
+    cd files
+    resume publish -t kendall
+fi
 
 echo "Ready to push!"
