@@ -30,4 +30,3 @@ var facts = [
 function getRandomIndex (max) {
   return Math.floor(Math.random() * (max - 0 + 1))
 }
-;
