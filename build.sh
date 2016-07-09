@@ -3,9 +3,7 @@
 # run from project root (where it is)
 
 bundle exec middleman build --clean
-cd build
-cp -r . ..
-cd ..
+cp -r build/* .
 rm -rf build
 
 # run with the -r flag to push resume as well!
