@@ -1,10 +1,14 @@
 source 'https://rubygems.org'
 
-gem "middleman"
+gem 'middleman'
 
 # Live-reloading plugin
-gem "middleman-livereload"
+gem 'middleman-livereload'
 
-gem "haml"
+gem 'haml'
 
-gem "middleman-blog"
+gem 'middleman-blog'
+gem 'nokogiri'
+gem 'builder'
+gem 'middleman-syntax'
+gem 'redcarpet'
