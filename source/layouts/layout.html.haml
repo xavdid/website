@@ -14,7 +14,11 @@
   /hyphens are dumb
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   %title
-    David Brownman dot com
+    - if current_page.data.title
+      = "#{current_page.data.title} - David Brownman dot com"
+    - else
+      David Brownman dot com
+
 
   %meta{name: "description", content: "Personal site for David Brownman"}
   %meta{name: "viewport", content: "width=device-width"}
@@ -38,16 +42,16 @@
         %nav
           %ul
             %li
-              %a.short#ichi{href: "/index.html"}
+              %a.short#ichi{href: "/index.html", class: ('active' if current_page.data.header == 'index')}
                 Home
             %li
-              %a.short#ni{href: "/blog.html"}
+              %a.short#ni{href: "/blog.html", class: ('active' if current_page.data.header == 'blog')}
                 Blog
             %li
-              %a.long#san{href: "/projects.html"}
+              %a.long#san{href: "/projects.html", class: ('active' if current_page.data.header == 'projects')}
                 Projects
             %li
-              %a.long#shi{href: "/misc.html"}
+              %a.long#shi{href: "/misc.html", class: ('active' if current_page.data.header == 'misc')}
                 Sundries
     .main-container
       .main.wrapper.clearfix

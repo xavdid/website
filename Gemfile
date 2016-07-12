@@ -6,3 +6,5 @@ gem "middleman"
 gem "middleman-livereload"
 
 gem "haml"
+
+gem "middleman-blog"

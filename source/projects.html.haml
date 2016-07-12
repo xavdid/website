@@ -1,5 +1,11 @@
+---
+title: Projects
+header: projects
+---
+
 %article
   %section.jobs
+    -# i could stick all these in a json and to this dynamically
     %h2.heading
       heroku-config
       %span.date
@@ -166,5 +172,4 @@
       this
     page.
 
-:javascript
-  document.getElementById("san").className+=" active";
+  - puts current_page.data.to_h
