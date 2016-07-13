@@ -22,8 +22,8 @@
   </title>
   <meta content='Personal site for David Brownman' name='description'>
   <meta content='width=device-width' name='viewport'>
-  <link href="css/the.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="js/facts.js"></script><script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=false&amp;skin=sunburst"></script>
+  <link href="css/the.css" rel="stylesheet" /><link href="css/code.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="js/facts.js"></script>
 </head>
 <body>
   <!--[if lt IE 7]>
@@ -80,8 +80,65 @@
           </h1>
           <p>We as developers are working in a golden age of programming where pushing code has never been easier. My personal favorite place to deploy things is <a href="https://heroku.com">Heroku</a> because of its customizability, clear (and cheap) pricing structure, and powerful tools.</p>
           
-          <p>The...</p>
+          <p>The most powerful place developers interact with the Heroku platform is on the command line. The recent release of a new version of their <a href="https://github.com/heroku/cli">CLI</a> gave me a great excuse to rewrite an abandoned plugin that I relied on. Unfortunately, save a pair of very helpful doc pages, there were relatively few resources on some of the corner cases you hit while developing a plugin. Here, I'll aim to guide you through some of them.</p>
+          
+          <p>If you want to follow along, I'd recommend installing the cli <a href="https://toolbelt.heroku.com/">here</a>.</p>
+          
+          <h2>So You Want to...</h2>
           <a href='/blog/2016/07/08/heroku-plugins.html'>Read more</a>
+        </article>
+        <article>
+          <h1>
+            <a href='/blog/2015/09/15/whats-in-a-name.html'>What's in a Name?</a>
+            <time>Sep 15 2015</time>
+          </h1>
+          <p>Last May, I finished college and promptly moved out to Palo Alto to join RelateIQ, a "<a href="https://www.youtube.com/watch?v=-ChppfnazzE&amp;feature=youtu.be&amp;t=1m57s">but we're not a CRM</a>" startup aimed at eventually toppling the giant that is Salesforce. It's worth noting that I didn't know what CRM was nor was I aware what exactly Salesforce's product was, but I was totally sold on the people and the team at RIQ. I felt confident that whatever we went on to do, it would be great. </p>
+          
+          <h2>Then</h2>
+          
+          <p>Two months after I started, the CEO took all the engineers (probably 35 of us at the time) at announced that we had been acquired by Salesforce.com, our sworn adversary. I was shocked. When I had talked to Adam (our CTO) months before, they assured me that they were a startup through and through and no plans of selling out. They touted...</p>
+          <a href='/blog/2015/09/15/whats-in-a-name.html'>Read more</a>
+        </article>
+        <article>
+          <h1>
+            <a href='/blog/2014/12/21/pythonista-power-pack.html'></a>
+            <time>Dec 21 2014</time>
+          </h1>
+          <p><a href="http://omz-software.com/pythonista/">Pythonista</a> is an amazing iOS app that brings the power of a python IDE to your iPhone, complete with an interpreter and a set of custom-made modules for interacting with the phone's ecosystem (contacts, clipboard, <a href="http://omz-software.com/pythonista/docs/ios/">etc</a>). It's powerful out of the box, but there are some easy improvements that you can make so that development really is a breeze, namely the ability to download public gists and Dropbox syncing. Both are pretty straightforward and require minimal coding expertise (but of course, that doesn't bother you. You're still reading this, after all). </p>
+          
+          <h2>Downloading Gists <a name="workflow"></a>
+          </h2>
+          
+          <p>Github <a href="https://gist.github.com/">gists</a> are a great way to share bits of code into the Github ecosystem without creating an entire repo. The neatest thing is- they still exist as a repo and can...</p>
+          <a href='/blog/2014/12/21/pythonista-power-pack.html'>Read more</a>
+        </article>
+        <article>
+          <h1>
+            <a href='/blog/2014/12/16/augmenting-automation-on-ios.html'>Augmenting Automation on iOS With the Power of Python and Workflow</a>
+            <time>Dec 16 2014</time>
+          </h1>
+          <blockquote>
+          <p>AppShoppper. Launch Center Pro. IFTTT. Pythonista.</p>
+          
+          <p>Long ago, the four apps lived apart in harmony. Then, everything changed when iOS 8 was released. Only Workflow, master of all four apps, could help them.</p>
+          </blockquote>
+          
+          <p><a href="https://workflow.is/">Workflow</a> is a new iOS app that brings automater-like execution flows to your mobile device. You can take output from any action and chain it as input for another. Additionally, you can create iOS8 share sheets, allowing input to come from all over your phone.[^1] Previously, each of the aforementioned apps could do great thing (though only one thing at a time). Together, they're worth far more than the sum of their parts as Workflow brings all of their strengths together into one sleek automation machine.</p>
+          
+          <p>For instance, we can get a...</p>
+          <a href='/blog/2014/12/16/augmenting-automation-on-ios.html'>Read more</a>
+        </article>
+        <article>
+          <h1>
+            <a href='/blog/2014/08/13/errors-are-usually-bad.html'>Errors Are Usually Bad! A Cautionary Tale</a>
+            <time>Aug 13 2014</time>
+          </h1>
+          <p>The worst part about programming is that the computer does exactly what you tell it to. <em>Exactly</em>. </p>
+          
+          <p>Here at <a href="https://www.relateiq.com/">RelateIQ</a> I work in <strong>Internal Tools</strong>, or building products for other employees. My most recent project has involved a pythong script moving data out of a database and into the product itself so a bunch of users could be slung through our new Marketo integration and contacted. </p>
+          
+          <p>These jobs usually take a couple of hours to run, so we stick them in <a href="https://www.docker.com/">Docker</a> containers and let <a href="https://github.com/airbnb/chronos">Cronos</a> take care of the rest. Because I wanted to make sure that the initial population run actually finished, I put an unusually aggressive <code>try-except</code> block in the code in the hope that it would gloss over any weird corner cases and legacy data. It looked something like...</p>
+          <a href='/blog/2014/08/13/errors-are-usually-bad.html'>Read more</a>
         </article>
       </div>
     </div>

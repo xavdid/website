@@ -22,8 +22,8 @@
   </title>
   <meta content='Personal site for David Brownman' name='description'>
   <meta content='width=device-width' name='viewport'>
-  <link href="../../../../css/the.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../../../../js/facts.js"></script><script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?autoload=false&amp;skin=sunburst"></script>
+  <link href="../../../../css/the.css" rel="stylesheet" /><link href="../../../../css/code.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../../../../js/facts.js"></script>
 </head>
 <body>
   <!--[if lt IE 7]>
@@ -69,252 +69,137 @@
       <div class='main wrapper clearfix'>
         <p>We as developers are working in a golden age of programming where pushing code has never been easier. My personal favorite place to deploy things is <a href="https://heroku.com">Heroku</a> because of its customizability, clear (and cheap) pricing structure, and powerful tools.</p>
         
-        <p>The most powerful place developers interact with the Heroku platform is on the command line. The recent release of a new version of their <a href="https://github.com/heroku/cli">CLI</a> gave me a great excuse to rewrite an abandoned plugin that I relied on. Unfortunately, save a pair of very helpful doc pages, there were relatively few resources on some of the corner cases you hit while developing a plugin. Here, I'll aim to guide you through some of them.</p>
+        <p>The most powerful place developers interact with the Heroku platform is on the command line. The recent release of a new version of their <a href="https://github.com/heroku/cli">CLI</a> gave me a great excuse to rewrite an abandoned plugin that I relied on. Unfortunately, save a pair of very helpful doc pages, there were relatively few resources on some of the corner cases you hit while developing a plugin. Here, I&#39;ll aim to guide you through some of them.</p>
         
-        <p>If you want to follow along, I'd recommend installing the cli <a href="https://toolbelt.heroku.com/">here</a>.</p>
+        <p>If you want to follow along, I&#39;d recommend installing the cli <a href="https://toolbelt.heroku.com/">here</a>.</p>
         
-        <h2 id="so-you-want-to-write-a-plugin">So You Want to Write a Plugin</h2>
+        <h2>So You Want to Write a Plugin</h2>
         
         <p>The point of developing a plugin is to add functionality to the Heroku CLI. Plugins usually hit the Heroku API and have the advantage of taking the burden of auth off of your shoulders.</p>
         
-        <p>As a starting point, I'd recommend going through their article <a href="https://devcenter.heroku.com/articles/developing-cli-plug-ins">Developing CLI Plugins</a>. It's got a great tutorial which spins you up on the general structure of a plugin. I'm aiming to provide detail to parts of that, but I won't just retype what they've already said. So, if you feel like you've missed stuff, bounce over there once in a while.</p>
+        <p>As a starting point, I&#39;d recommend going through their article <a href="https://devcenter.heroku.com/articles/developing-cli-plug-ins">Developing CLI Plugins</a>. It&#39;s got a great tutorial which spins you up on the general structure of a plugin. I&#39;m aiming to provide detail to parts of that, but I won&#39;t just retype what they&#39;ve already said. So, if you feel like you&#39;ve missed stuff, bounce over there once in a while.</p>
         
-        <h3 id="cli-command-structure">CLI Command Structure</h3>
+        <h3>CLI Command Structure</h3>
         
-        <p>Heroku commands are run with the prefix <code>heroku</code> paired with a <strong>topic</strong> and optionally, a <strong>command</strong>. Your plugin will add new commands to topics (existing or your own). Interestingly, you can overwrite default commands (such as <code>config:add</code>), though I'd <strong>strongly</strong> recommend against it. Running <code>heroku help</code> gives you a brief overview of all the available topics:</p>
+        <p>Heroku commands are run with the prefix <code>heroku</code> paired with a <strong>topic</strong> and optionally, a <strong>command</strong>. Your plugin will add new commands to topics (existing or your own). Interestingly, you can overwrite default commands (such as <code>config:add</code>), though I&#39;d <strong>strongly</strong> recommend against it. Running <code>heroku help</code> gives you a brief overview of all the available topics:</p>
+        <pre class="highlight plaintext"><code>% heroku help&#x000A;Usage: heroku COMMAND [--app APP] [command-specific-options]&#x000A;&#x000A;Primary help topics, type "heroku help TOPIC" for more details:&#x000A;&#x000A;  addons    #  manage add-on resources&#x000A;  apps      #  manage apps (create, destroy)&#x000A;  auth      #  authentication (login, logout)&#x000A;  config    #  manage app config vars&#x000A;  ...&#x000A;</code></pre>
         
-        <p>```
-        % heroku help
-        Usage: heroku COMMAND [–app APP] [command-specific-options]</p>
+        <p>If you&#39;re going to create a new topic, your module will need to export a <code>topic</code> object in addition to the command(s). [^1] </p>
         
-        <p>Primary help topics, type "heroku help TOPIC" for more details:</p>
+        <h3>Plugin Layout</h3>
         
-        <p>addons    #  manage add-on resources
-          apps      #  manage apps (create, destroy)
-          auth      #  authentication (login, logout)
-          config    #  manage app config vars
-          …
-        ```</p>
+        <p>At the end of the day, your plugin&#39;s <code>main</code> file will need to export a <code>Command</code> object (or an array of them). The full set of keys you can use is <a href="https://devcenter.heroku.com/articles/developing-cli-plug-ins#all-command-options">here</a>, but there are a few you&#39;ll most likely need:</p>
         
-        <p>If you're going to create a new topic, your module will need to export a <code>topic</code> object in addition to the command(s). <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+        <table><thead>
+        <tr>
+        <th>Key</th>
+        <th>Type</th>
+        <th>Usage</th>
+        </tr>
+        </thead><tbody>
+        <tr>
+        <td>topic</td>
+        <td>string</td>
+        <td>CLI category your command(s) fall under (eg. <strong>config</strong>:pull)</td>
+        </tr>
+        <tr>
+        <td>command</td>
+        <td>string</td>
+        <td>the command name (eg. config:<strong>pull</strong>)</td>
+        </tr>
+        <tr>
+        <td>description[^2]</td>
+        <td>string</td>
+        <td>help that pops up when <code>heroku help &lt;topic&gt;</code> is run</td>
+        </tr>
+        <tr>
+        <td>needsApp</td>
+        <td>bool</td>
+        <td>whether or not the command will act upon a specific app (either inferred or specified). Defaults to false</td>
+        </tr>
+        <tr>
+        <td>needsAuth</td>
+        <td>bool</td>
+        <td>whether or not the command needs write access to the app. Defaults to false</td>
+        </tr>
+        <tr>
+        <td>flags</td>
+        <td>object</td>
+        <td>defines the settings your command can be run with</td>
+        </tr>
+        <tr>
+        <td>run</td>
+        <td>function</td>
+        <td>the main function for your command)</td>
+        </tr>
+        </tbody></table>
         
-        <h3 id="plugin-layout">Plugin Layout</h3>
-        
-        <p>At the end of the day, your plugin's <code>main</code> file will need to export a <code>Command</code> object (or an array of them). The full set of keys you can use is <a href="https://devcenter.heroku.com/articles/developing-cli-plug-ins#all-command-options">here</a>, but there are a few you'll most likely need:</p>
-        
-        <table>
-          <thead>
-            <tr>
-              <th>Key</th>
-              <th>Type</th>
-              <th>Usage</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>topic</td>
-              <td>string</td>
-              <td>CLI category your command(s) fall under (eg. <strong>config</strong>:pull)</td>
-            </tr>
-            <tr>
-              <td>command</td>
-              <td>string</td>
-              <td>the command name (eg. config:<strong>pull</strong>)</td>
-            </tr>
-            <tr>
-              <td>description<sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></td>
-              <td>string</td>
-              <td>help that pops up when <code>heroku help &lt;topic&gt;</code> is run</td>
-            </tr>
-            <tr>
-              <td>needsApp</td>
-              <td>bool</td>
-              <td>whether or not the command will act upon a specific app (either inferred or specified). Defaults to false</td>
-            </tr>
-            <tr>
-              <td>needsAuth</td>
-              <td>bool</td>
-              <td>whether or not the command needs write access to the app. Defaults to false</td>
-            </tr>
-            <tr>
-              <td>flags</td>
-              <td>object</td>
-              <td>defines the settings your command can be run with</td>
-            </tr>
-            <tr>
-              <td>run</td>
-              <td>function</td>
-              <td>the main function for your command)</td>
-            </tr>
-          </tbody>
-        </table>
-        
-        <h3 id="the-function-itself">The Function Itself</h3>
+        <h3>The Function Itself</h3>
         
         <p>You pass <code>Command.run</code> a function which is the actual functionality of your command. This function is passed just one argument, <code>context</code>.</p>
-        
-        <p><code>javascript
-        module.exports = {
-          topic: 'do',
-          command: 'things',
-          description: 'does things',
-          needsApp: false,
-          flags: [{
-            name: 'file',
-            char: 'f',
-            hasValue: true,
-            description: 'specify target filename'
-          }],
-          run: function(context) {
-            console.log(context)
-          }
-        }
-        </code></p>
+        <pre class="highlight javascript"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>&#x000A;  <span class="na">topic</span><span class="p">:</span> <span class="s1">'do'</span><span class="p">,</span>&#x000A;  <span class="na">command</span><span class="p">:</span> <span class="s1">'things'</span><span class="p">,</span>&#x000A;  <span class="na">description</span><span class="p">:</span> <span class="s1">'does things'</span><span class="p">,</span>&#x000A;  <span class="na">needsApp</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>&#x000A;  <span class="na">flags</span><span class="p">:</span> <span class="p">[{</span>&#x000A;    <span class="na">name</span><span class="p">:</span> <span class="s1">'file'</span><span class="p">,</span>&#x000A;    <span class="na">char</span><span class="p">:</span> <span class="s1">'f'</span><span class="p">,</span>&#x000A;    <span class="na">hasValue</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>&#x000A;    <span class="na">description</span><span class="p">:</span> <span class="s1">'specify target filename'</span>&#x000A;  <span class="p">}],</span>&#x000A;  <span class="na">run</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">context</span><span class="p">)</span> <span class="p">{</span>&#x000A;    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">context</span><span class="p">)</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">}</span>&#x000A;</code></pre>
         
         <p>That object contains info about the command, the app (if provided), and environment in which the command is run. It looks like this when run from a plugin in development:</p>
+        <pre class="highlight javascript"><code><span class="c1">// command: heroku do:things -f cool_file.txt</span>&#x000A;&#x000A;<span class="p">{</span> <span class="nl">topic</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>&#x000A;  <span class="nx">command</span><span class="err">:</span> <span class="o">&lt;</span><span class="nx">COMMAND_OBJECT</span><span class="o">&gt;</span><span class="p">,</span>&#x000A;  <span class="nx">app</span><span class="err">:</span> <span class="s1">'&lt;SPECIFIED_APP_NAME&gt;'</span><span class="p">,</span>&#x000A;  <span class="nx">args</span><span class="err">:</span> <span class="p">[],</span>&#x000A;  <span class="nx">flags</span><span class="err">:</span> <span class="p">{</span> <span class="nl">file</span><span class="p">:</span> <span class="s1">'cool_file.txt'</span> <span class="p">},</span>&#x000A;  <span class="nx">cwd</span><span class="err">:</span> <span class="s1">'/Users/&lt;USERNAME&gt;/path/to/directory'</span><span class="p">,</span>&#x000A;  <span class="nx">herokuDir</span><span class="err">:</span> <span class="s1">'/Users/&lt;USERNAME&gt;/.cache/heroku'</span><span class="p">,</span>&#x000A;  <span class="nx">debug</span><span class="err">:</span> <span class="kc">false</span><span class="p">,</span>&#x000A;  <span class="nx">debugHeaders</span><span class="err">:</span> <span class="kc">false</span><span class="p">,</span>&#x000A;  <span class="nx">dev</span><span class="err">:</span> <span class="kc">true</span><span class="p">,</span>&#x000A;  <span class="nx">supportsColor</span><span class="err">:</span> <span class="kc">true</span><span class="p">,</span>&#x000A;  <span class="nx">version</span><span class="err">:</span> <span class="s1">'heroku-cli/5.2.24-4b7e305 (darwin-amd64) go1.6.2 heroku-config/1.0.2 node-v6.2.1'</span><span class="p">,</span>&#x000A;  <span class="nx">apiToken</span><span class="err">:</span> <span class="s1">'&lt;API_TOKEN&gt;'</span><span class="p">,</span>&#x000A;  <span class="nx">apiHost</span><span class="err">:</span> <span class="s1">'api.heroku.com'</span><span class="p">,</span>&#x000A;  <span class="nx">apiUrl</span><span class="err">:</span> <span class="s1">'https://api.heroku.com'</span><span class="p">,</span>&#x000A;  <span class="nx">gitHost</span><span class="err">:</span> <span class="s1">'heroku.com'</span><span class="p">,</span>&#x000A;  <span class="nx">httpGitHost</span><span class="err">:</span> <span class="s1">'git.heroku.com'</span><span class="p">,</span>&#x000A;  <span class="nx">auth</span><span class="err">:</span> <span class="p">{</span> <span class="nl">password</span><span class="p">:</span> <span class="s1">'&lt;API_TOKEN&gt;'</span> <span class="p">}</span> <span class="p">}</span>&#x000A;</code></pre>
         
-        <p>```javascript
-        // command: heroku do:things -f cool_file.txt</p>
+        <p>The keys you&#39;ll use most often are <code>args</code> and <code>flags</code>, but there&#39;s other helpful things there as well (such as whether or not the command is run in development mode).</p>
         
-        <p>{ topic: null,
-          command: <COMMAND_OBJECT>,
-          app: '<SPECIFIED_APP_NAME>',
-          args: [],
-          flags: { file: 'cool_file.txt' },
-          cwd: '/Users/<USERNAME>/path/to/directory',
-          herokuDir: '/Users/<USERNAME>/.cache/heroku',
-          debug: false,
-          debugHeaders: false,
-          dev: true,
-          supportsColor: true,
-          version: 'heroku-cli/5.2.24-4b7e305 (darwin-amd64) go1.6.2 heroku-config/1.0.2 node-v6.2.1',
-          apiToken: '<API_TOKEN>',
-          apiHost: 'api.heroku.com',
-          apiUrl: 'https://api.heroku.com',
-          gitHost: 'heroku.com',
-          httpGitHost: 'git.heroku.com',
-          auth: { password: '<API_TOKEN>' } }
-        ```</API_TOKEN></API_TOKEN></USERNAME></USERNAME></SPECIFIED_APP_NAME></COMMAND_OBJECT></p>
-        
-        <p>The keys you'll use most often are <code>args</code> and <code>flags</code>, but there's other helpful things there as well (such as whether or not the command is run in development mode).</p>
-        
-        <p>Chances are you'll want to interact with the Heroku API in your plugin. You'll note that <code>context</code> has auth information for the user, but rather than learn the entire Heroku API and auth methods yourself, they've conveniently provided an authenticated API wrapper. To access this, include the <code>heroku-cli-util</code> module and wrap your function in the <code>.command()</code> method  like so:</p>
-        
-        <p>```javascript
-        const cli = require('heroku-cli-util')</p>
-        
-        <p>module.exports = {
-          topic: 'do',
-          command: 'things',
-          description: 'does things',
-          needsApp: true,
-          needsAuth: true,
-          flags: [{
-            name: 'file',
-            char: 'f',
-            hasValue: true,
-            description: 'specify target filename'
-          }],
-          run: cli.command((context, heroku) =&gt; {
-            return heroku.get('/<AUTH_REQUIRED_ROUTE>').then((data) =&gt; {
-              cli.debug(data)
-            })
-          })
-        }
-        ```</AUTH_REQUIRED_ROUTE></p>
+        <p>Chances are you&#39;ll want to interact with the Heroku API in your plugin. You&#39;ll note that <code>context</code> has auth information for the user, but rather than learn the entire Heroku API and auth methods yourself, they&#39;ve conveniently provided an authenticated API wrapper. To access this, include the <code>heroku-cli-util</code> module and wrap your function in the <code>.command()</code> method  like so:</p>
+        <pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">cli</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'heroku-cli-util'</span><span class="p">)</span>&#x000A;&#x000A;<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>&#x000A;  <span class="na">topic</span><span class="p">:</span> <span class="s1">'do'</span><span class="p">,</span>&#x000A;  <span class="na">command</span><span class="p">:</span> <span class="s1">'things'</span><span class="p">,</span>&#x000A;  <span class="na">description</span><span class="p">:</span> <span class="s1">'does things'</span><span class="p">,</span>&#x000A;  <span class="na">needsApp</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>&#x000A;  <span class="na">needsAuth</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>&#x000A;  <span class="na">flags</span><span class="p">:</span> <span class="p">[{</span>&#x000A;    <span class="na">name</span><span class="p">:</span> <span class="s1">'file'</span><span class="p">,</span>&#x000A;    <span class="na">char</span><span class="p">:</span> <span class="s1">'f'</span><span class="p">,</span>&#x000A;    <span class="na">hasValue</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>&#x000A;    <span class="na">description</span><span class="p">:</span> <span class="s1">'specify target filename'</span>&#x000A;  <span class="p">}],</span>&#x000A;  <span class="na">run</span><span class="p">:</span> <span class="nx">cli</span><span class="p">.</span><span class="nx">command</span><span class="p">((</span><span class="nx">context</span><span class="p">,</span> <span class="nx">heroku</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>&#x000A;    <span class="k">return</span> <span class="nx">heroku</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'/&lt;AUTH_REQUIRED_ROUTE&gt;'</span><span class="p">).</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>&#x000A;      <span class="nx">cli</span><span class="p">.</span><span class="nx">debug</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>&#x000A;    <span class="p">})</span>&#x000A;  <span class="p">})</span>&#x000A;<span class="p">}</span>&#x000A;</code></pre>
         
         <p><code>heroku</code> is an authenticated instance of their <a href="https://github.com/heroku/node-heroku-client#usage">api client</a>. HTTP calls created this way will return a promise. Make sure to return your promise chain at the end of your function so whatever is running the command (either the CLI or tests) handles it correctly.</p>
         
-        <h3 id="should-you-use-generators">Should You Use Generators?</h3>
+        <h3>Should You Use Generators?</h3>
         
-        <p>That's a good question! The docs <a href="https://devcenter.heroku.com/articles/developing-cli-plug-ins#using-the-heroku-api">recommend</a> doing so for code clarity, and I tend to agree.  Instead of having a chain of promises your asynchronous code looks remarkably synchronous.</p>
+        <p>That&#39;s a good question! The docs <a href="https://devcenter.heroku.com/articles/developing-cli-plug-ins#using-the-heroku-api">recommend</a> doing so for code clarity, and I tend to agree.  Instead of having a chain of promises your asynchronous code looks remarkably synchronous.</p>
         
         <p>There are a <a href="https://davidwalsh.name/es6-generators">lot</a> of <a href="https://alexperry.io/javascript/2015/09/17/es6-generators-and-asynchronous-javascript.html">great</a> resources available for learning the in-depth details of how generators work, but you can definitely get by without them. The quick and dirty of it is this:</p>
         
         <ul>
-          <li>You declare a generator function by preceding the name with an asterisk</li>
-          <li>Inside that function, you can <code>yield</code> certain structures (a function, promise, generator, array, or object), which will pause the function until they're fulfilled. Arrays and objects will process all their requests in parallel and are a great way to perform multiple requests.</li>
+        <li>You declare a generator function by preceding the name with an asterisk</li>
+        <li>Inside that function, you can <code>yield</code> certain structures (a function, promise, generator, array, or object), which will pause the function until they&#39;re fulfilled. Arrays and objects will process all their requests in parallel and are a great way to perform multiple requests.</li>
         </ul>
         
         <p>Generators work really well with the <code>co</code> module because it provides a lot of syntactic sugar and control-flow options, making everything place nicely together. You can read more about it <a href="https://github.com/tj/co">here</a>.</p>
         
-        <p>That's really it! Using generators, we can rewrite the code from before more cleanly:</p>
+        <p>That&#39;s really it! Using generators, we can rewrite the code from before more cleanly:</p>
+        <pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">cli</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'heroku-cli-util'</span><span class="p">)</span>&#x000A;<span class="kr">const</span> <span class="nx">co</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'co'</span><span class="p">)</span>&#x000A;&#x000A;<span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>&#x000A;  <span class="na">topic</span><span class="p">:</span> <span class="s1">'do'</span><span class="p">,</span>&#x000A;  <span class="na">command</span><span class="p">:</span> <span class="s1">'things'</span><span class="p">,</span>&#x000A;  <span class="na">description</span><span class="p">:</span> <span class="s1">'does things'</span><span class="p">,</span>&#x000A;  <span class="na">needsApp</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>&#x000A;  <span class="na">needsAuth</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>&#x000A;  <span class="na">flags</span><span class="p">:</span> <span class="p">[{</span>&#x000A;    <span class="na">name</span><span class="p">:</span> <span class="s1">'file'</span><span class="p">,</span>&#x000A;    <span class="na">char</span><span class="p">:</span> <span class="s1">'f'</span><span class="p">,</span>&#x000A;    <span class="na">hasValue</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>&#x000A;    <span class="na">description</span><span class="p">:</span> <span class="s1">'specify target filename'</span>&#x000A;  <span class="p">}],</span>&#x000A;  <span class="na">run</span><span class="p">:</span> <span class="nx">cli</span><span class="p">.</span><span class="nx">command</span><span class="p">(</span><span class="nx">co</span><span class="p">.</span><span class="nx">wrap</span><span class="p">(</span><span class="kd">function</span><span class="o">*</span> <span class="p">(</span><span class="nx">context</span><span class="p">,</span> <span class="nx">heroku</span><span class="p">)</span> <span class="p">{</span>&#x000A;    <span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="k">yield</span> <span class="nx">heroku</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'/&lt;AUTH_REQUIRED_ROUTE&gt;'</span><span class="p">)</span>&#x000A;    <span class="nx">cli</span><span class="p">.</span><span class="nx">debug</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>&#x000A;  <span class="p">}))</span>&#x000A;<span class="p">}</span>&#x000A;</code></pre>
         
-        <p>```javascript
-        const cli = require('heroku-cli-util')
-        const co = require('co')</p>
+        <p>The <code>co.wrap()</code> function takes a generator and turns it into a regular function that returns a promise, perfect for our previous code that expects a regular promise-returning function anyway. </p>
         
-        <p>module.exports = {
-          topic: 'do',
-          command: 'things',
-          description: 'does things',
-          needsApp: true,
-          needsAuth: true,
-          flags: [{
-            name: 'file',
-            char: 'f',
-            hasValue: true,
-            description: 'specify target filename'
-          }],
-          run: cli.command(co.wrap(function* (context, heroku) {
-            let data = yield heroku.get('/<AUTH_REQUIRED_ROUTE>')
-            cli.debug(data)
-          }))
-        }
-        ```</AUTH_REQUIRED_ROUTE></p>
+        <h3>Surfacing Errors</h3>
         
-        <p>The <code>co.wrap()</code> function takes a generator and turns it into a regular function that returns a promise, perfect for our previous code that expects a regular promise-returning function anyway.</p>
+        <p>One of the big gotchas for using <code>co</code> is that errors get eaten silently. Luckily, <code>yield</code> statements work great with your standard javascript <code>try/catch</code> block!</p>
+        <pre class="highlight javascript"><code><span class="nx">cli</span><span class="p">.</span><span class="nx">command</span><span class="p">(</span><span class="nx">co</span><span class="p">.</span><span class="nx">wrap</span><span class="p">(</span><span class="kd">function</span><span class="o">*</span> <span class="p">(</span><span class="nx">context</span><span class="p">,</span> <span class="nx">heroku</span><span class="p">)</span> <span class="p">{</span>&#x000A;  <span class="k">try</span> <span class="p">{</span>&#x000A;    <span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="k">yield</span> <span class="nx">heroku</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'/&lt;AUTH_REQUIRED_ROUTE&gt;'</span><span class="p">)</span>&#x000A;    <span class="nx">cli</span><span class="p">.</span><span class="nx">debug</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>&#x000A;  <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>&#x000A;    <span class="nx">cli</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">}))</span>&#x000A;</code></pre>
         
-        <h3 id="surfacing-errors">Surfacing Errors</h3>
+        <p>Did you catch that last bit? The <code>cli</code> package provides a helpful <code>exit()</code> method for when things go sour. It takes an error code[^3] and a description of the issue. This approach to errors has the clear advantage of quitting any execution in addition to printing an error message to the user.</p>
         
-        <p>One of the big gotchas for using <code>co</code> is that errors get eaten <a href="">silently</a>. Luckily, <code>yield</code> statements work great with your standard javascript <code>try/catch</code> block!</p>
+        <h3>Shipping Your Plugin</h3>
         
-        <p><code>javascript
-        cli.command(co.wrap(function* (context, heroku) {
-          try {
-            let data = yield heroku.get('/&lt;AUTH_REQUIRED_ROUTE&gt;')
-            cli.debug(data)
-          } catch (err) =&gt; {
-            cli.exit(1, err)
-          }
-        }))
-        </code></p>
+        <p>They&#39;ve got pretty concise instructions for that <a href="https://devcenter.heroku.com/articles/developing-cli-plug-ins#releasing-plugins">here</a>.</p>
         
-        <p>Did you catch that last bit? The <code>cli</code> package provides a helpful <code>exit()</code> method for when things go sour. It takes an error code<sup id="fnref:3"><a href="#fn:3" class="footnote">3</a></sup> and a description of the issue. This approach to errors has the clear advantage of quitting any execution in addition to printing an error message to the user.</p>
+        <p>Your plugin doesn&#39;t have to be named <code>heroku-NAME</code>, but it will help people find it! In either case, any npm package can be installed with <code>heroku plugins:install NAME</code> (though that command will fail if the installed plugin isn&#39;t exporting a well-formatted Heroku plugin). </p>
         
-        <h3 id="shipping-your-plugin">Shipping Your Plugin</h3>
-        
-        <p>They've got pretty concise instructions for that <a href="https://devcenter.heroku.com/articles/developing-cli-plug-ins#releasing-plugins">here</a>.</p>
-        
-        <p>Your plugin doesn't have to be named <code>heroku-NAME</code>, but it will help people find it! In either case, any npm package can be installed with <code>heroku plugins:install NAME</code> (though that command will fail if the installed plugin isn't exporting a well-formatted Heroku plugin).</p>
-        
-        <h2 id="tldr">tl;dr</h2>
+        <h2>tl;dr</h2>
         
         <ul>
-          <li><a href="https://devcenter.heroku.com/articles/developing-cli-plug-ins">This article</a> is wildly helpful</li>
-          <li>Export a <a href="https://devcenter.heroku.com/articles/developing-cli-plug-ins#all-command-options">command</a></li>
-          <li>Return a promise from your main function (if doing any async work) or use ES6 generators (with <code>co</code>)</li>
-          <li>Wrap yield statements in a <code>try/catch</code> block and use <code>cli.exit()</code> to surface errors</li>
+        <li><a href="https://devcenter.heroku.com/articles/developing-cli-plug-ins">This article</a> is wildly helpful</li>
+        <li>Export a <a href="https://devcenter.heroku.com/articles/developing-cli-plug-ins#all-command-options">command</a></li>
+        <li>Return a promise from your main function (if doing any async work) or use ES6 generators (with <code>co</code>)</li>
+        <li>Wrap yield statements in a <code>try/catch</code> block and use <code>cli.exit()</code> to surface errors</li>
         </ul>
         
-        <p>That's all I've got. Hope you've enjoyed wetting your whiskers with the Heroku CLI. Definitely reach out to me on Twitter (<a href="https://www.twitter.com/xavdid">@xavdid</a>) with questions or feedback. Happy hacking!</p>
+        <p>That&#39;s all I&#39;ve got. Hope you&#39;ve enjoyed wetting your whiskers with the Heroku CLI. Definitely reach out to me on Twitter (<a href="https://www.twitter.com/xavdid">@xavdid</a>) with questions or feedback. Happy hacking!</p>
         
-        <hr />
+        <hr>
+        
         <p><em>Full disclosure: Heroku is owned by the same company (Salesforce) that I was formerly employed by. That being said, I used and enjoyed their services long before I was a SFDC employee and the time I put into this was my own.</em></p>
         
-        <div class="footnotes">
-          <ol>
-            <li id="fn:1">
-              <p>Near as I can tell, a <code>topic</code> object has only the <code>name</code> and <code>description</code> keys, the latter of which is what pops up in the index when <code>heroku help</code> is run. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-            </li>
-            <li id="fn:2">
-              <p>the <code>help</code> flag is similar, but provides a longer description. It shows up when you run <code>heroku help &lt;TOPIC&gt;:&lt;COMMAND&gt;</code> <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
-            </li>
-            <li id="fn:3">
-              <p>You can provide any integer as the error code. Conventionally, <code>0</code> means success and anything else (most commonly <code>1</code>) means there was an error. If you want your command to play nicely in a scripting environment, <code>1</code> is a great choice regardless of the content of the error <a href="#fnref:3" class="reversefootnote">&#8617;</a></p>
-            </li>
-          </ol>
-        </div>
+        <p>[^1]: Near as I can tell, a <code>topic</code> object has only the <code>name</code> and <code>description</code> keys, the latter of which is what pops up in the index when <code>heroku help</code> is run.</p>
+        
+        <p>[^2]: the <code>help</code> flag is similar, but provides a longer description. It shows up when you run <code>heroku help &lt;TOPIC&gt;:&lt;COMMAND&gt;</code></p>
+        
+        <p>[^3]: You can provide any integer as the error code. Conventionally, <code>0</code> means success and anything else (most commonly <code>1</code>) means there was an error. If you want your command to play nicely in a scripting environment, <code>1</code> is a great choice regardless of the content of the error</p>
       </div>
     </div>
     <div class='footer-container'>

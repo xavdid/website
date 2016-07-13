@@ -1,14 +1,17 @@
 source 'https://rubygems.org'
 
-gem 'middleman'
+gem 'middleman', '~> 4.1'
+gem 'middleman-blog', '~> 4.0'
+gem 'middleman-livereload', '~> 3.4'
+gem 'middleman-syntax', '~> 2.1'
 
-# Live-reloading plugin
-gem 'middleman-livereload'
+gem 'haml', '~> 4.0'
 
-gem 'haml'
+# markdown processor
+gem 'redcarpet', '~> 3.3'
+# for blog summaries
+gem 'nokogiri', '~> 1.6'
 
-gem 'middleman-blog'
-gem 'nokogiri'
-gem 'builder'
-gem 'middleman-syntax'
-gem 'redcarpet'
+group :test do
+  gem 'html-proofer', '~> 3.0'
+end

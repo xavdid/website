@@ -164,7 +164,7 @@ The `co.wrap()` function takes a generator and turns it into a regular function 
 
 ### Surfacing Errors
 
-One of the big gotchas for using `co` is that errors get eaten [silently](). Luckily, `yield` statements work great with your standard javascript `try/catch` block!
+One of the big gotchas for using `co` is that errors get eaten silently. Luckily, `yield` statements work great with your standard javascript `try/catch` block!
 
 ```javascript
 cli.command(co.wrap(function* (context, heroku) {

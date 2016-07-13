@@ -18,12 +18,12 @@
   <!-- hyphens are dumb -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>
-    Home - David Brownman dot com
+    Errors Are Usually Bad! A Cautionary Tale - David Brownman dot com
   </title>
   <meta content='Personal site for David Brownman' name='description'>
   <meta content='width=device-width' name='viewport'>
-  <link href="css/the.css" rel="stylesheet" /><link href="css/code.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="js/facts.js"></script>
+  <link href="../../../../css/the.css" rel="stylesheet" /><link href="../../../../css/code.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../../../../js/facts.js"></script>
 </head>
 <body>
   <!--[if lt IE 7]>
@@ -42,7 +42,7 @@
         <nav>
           <ul>
             <li>
-              <a class='active short' href='/index.html' id='ichi'>
+              <a class='short' href='/index.html' id='ichi'>
                 Home
               </a>
             </li>
@@ -67,81 +67,28 @@
     </div>
     <div class='main-container'>
       <div class='main wrapper clearfix'>
-        <article>
-          <header>
-            <h1 class='heading'>
-              Hey, how's it going?
-            </h1>
-            <p>
-              My name's David. I graduated from the University of Michigan with a Bachelor of Arts in Social Computing Informatics not that long ago. I'm a software developer by trade and I've created this site as a one-stop shop for information pertaining to my personal and professional lives. Apparently they let anyone put websites online these days, so welcome to mine.
-            </p>
-          </header>
-          <section>
-            <h2 class='heading'>
-              Things I'm fond of
-            </h2>
-            <p>
-              I like interpreted languages, computer automation, CSS, productivity apps, afternoon naps, build tools, and dark work environments. I travel as much as I can and love visiting friends around the world.
-            </p>
-          </section>
-          <section>
-            <h2 class='heading'>
-              My life right now
-            </h2>
-            <p>
-              I recently quit my job at
-              <a href='https://salesforceiq.com' target='_blank'>SalesforceIQ</a>
-              in Palo Alto, CA. Currently enjoying #funemployment, but I'll be looking for a new job by the end of the summer (my resume is
-              <a href='https://registry.jsonresume.org/david' target='_blank'>here</a>
-              if that fact interests you). Past that, all I know is that someday, I'll own a blue Tesla.
-            </p>
-          </section>
-        </article>
-        <aside class='topper first'>
-          <div class='heading'>
-            But wait... there's more!
-          </div>
-        </aside>
-        <aside class='second'>
-          <div class='row top'>
-            <a href='mailto:beamneocube@gmail.com' target='_blank'>
-              <div class='cell left'>
-                <i class='fa fa-envelope fa-3x'></i>
-              </div>
-            </a>
-            <a href='https://github.com/xavdid' target='_blank'>
-              <div class='cell left'>
-                <i class='fa fa-github-alt fa-3x'></i>
-              </div>
-            </a>
-          </div>
-          <div class='row bottom'>
-            <a href='https://twitter.com/xavdid' target='_blank'>
-              <div class='cell right'>
-                <i class='fa fa-twitter fa-3x'></i>
-              </div>
-            </a>
-            <a href='https://www.linkedin.com/in/xavdid' target='_blank'>
-              <div class='cell right'>
-                <i class='fa fa-linkedin fa-3x'></i>
-              </div>
-            </a>
-          </div>
-        </aside>
-        <aside class='third topper'>
-          <div class='heading'>
-            Did You Know?
-          </div>
-        </aside>
-        <aside class='fourth'>
-          <p class='fact'>
-            There should be a random fact here. What do you have against javascript?
-          </p>
-          <script>
-            var i = getRandomIndex(facts.length - 1);
-            $('.fact').html(facts[i]);
-          </script>
-        </aside>
+        <p>The worst part about programming is that the computer does exactly what you tell it to. <em>Exactly</em>. </p>
+        
+        <p>Here at <a href="https://www.relateiq.com/">RelateIQ</a> I work in <strong>Internal Tools</strong>, or building products for other employees. My most recent project has involved a pythong script moving data out of a database and into the product itself so a bunch of users could be slung through our new Marketo integration and contacted. </p>
+        
+        <p>These jobs usually take a couple of hours to run, so we stick them in <a href="https://www.docker.com/">Docker</a> containers and let <a href="https://github.com/airbnb/chronos">Cronos</a> take care of the rest. Because I wanted to make sure that the initial population run actually finished, I put an unusually aggressive <code>try-except</code> block in the code in the hope that it would gloss over any weird corner cases and legacy data. It looked something like this: </p>
+        <pre class="highlight plaintext"><code>for user in users: &#x000A;    try:&#x000A;        uid = str(user['_id'])&#x000A;        if uid in user_hash:&#x000A;            # process and save the user object&#x000A;&#x000A;        print "finished %s" % uid&#x000A;&#x000A;    except:&#x000A;        print "error %s" % uid&#x000A;</code></pre>
+        
+        <p>And this looked great. It was nigh unstoppable! </p>
+        
+        <p>Before I put it in the container and pushed, I wanted to run it just to make sure everything was smooth. I fired it up and after some promising logging messages, I saw lots of successes. </p>
+        <pre class="highlight plaintext"><code>=================&#x000A;Begin IUL.py&#x000A;=================&#x000A;finished 0&#x000A;finished 1&#x000A;finished 2&#x000A;finished 3&#x000A;finished 4&#x000A;finished 5&#x000A;finished 5&#x000A;...&#x000A;</code></pre>
+        
+        <p>And so forth. Great! Now I just need to kill the execution and run my build script and I&#39;ll be on my way. I hit Control+C and watched the interrupt get registered and ignored. </p>
+        <pre class="highlight plaintext"><code>^C error 8&#x000A;^C error 9&#x000A;^C error 10&#x000A;^C error 11    &#x000A;^C error 12&#x000A;finished 13&#x000A;finished 14&#x000A;...&#x000A;</code></pre>
+        
+        <p>&quot;That&#39;s interesting!&quot;, I thought with increasing trepidation. Ctrl+C was supposed to be my magic bullet, my ace in the hole for rescuing me from any terminal process that I had tricked myself into. Speaking to the <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">rubber duck</a> on my desk I explained how &quot;It&#39;s weird, because python is clearly <em>seeing</em> the error happen because the message is changing accordingly, so the erro... oh.&quot;</p>
+        
+        <p>Python was seeing the error, and it was doing exactly what I told it to. When a python script is ordered to stop, it registers a <a href="https://docs.python.org/2/library/exceptions.html#exceptions.KeyboardInterrupt">KeyboardInterrupt</a> and acts accordingly. Unfortunately, that KeyboardInterrupt was being eaten up with anything else that could go wrong and was being ignored. </p>
+        
+        <p>A process kill and a quick addendum fixed my dumb problem and the script ran as normal after that. It just goes to show-</p>
+        
+        <p><em>Be careful what you wish for, because you just might get it!</em></p>
       </div>
     </div>
     <div class='footer-container'>
