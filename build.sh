@@ -15,7 +15,7 @@ bundle exec middleman build --clean
 # script will quit here if tests dont pass
 # linkedin returns a 999 for a valid profile /shrug
 if ! [[ $* == *--no-test* ]]; then
-    bundle exec htmlproofer ./build --empty-alt-ignore --check-html --url-ignore "/lolapi,/stackpro,/refbook" --http-status-ignore 999
+    bundle exec htmlproofer ./build --empty-alt-ignore --check-html --url-ignore "/lolapi,/stackpro,/refbook" --http-status-ignore 999 --file-ignore "./build/blog.html"
 fi
 
 cp -r build/* .
