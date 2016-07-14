@@ -6,6 +6,8 @@ The worst part about programming is that the computer does exactly what you tell
 
 Here at [RelateIQ](https://www.relateiq.com/) I work in __Internal Tools__, or building products for other employees. My most recent project has involved a pythong script moving data out of a database and into the product itself so a bunch of users could be slung through our new Marketo integration and contacted. 
 
+READMORE
+
 These jobs usually take a couple of hours to run, so we stick them in [Docker](https://www.docker.com/) containers and let [Cronos](https://github.com/airbnb/chronos) take care of the rest. Because I wanted to make sure that the initial population run actually finished, I put an unusually aggressive `try-except` block in the code in the hope that it would gloss over any weird corner cases and legacy data. It looked something like this: 
 
 

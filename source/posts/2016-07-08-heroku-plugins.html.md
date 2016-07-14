@@ -7,6 +7,8 @@ We as developers are working in a golden age of programming where pushing code h
 
 The most powerful place developers interact with the Heroku platform is on the command line. The recent release of a new version of their [CLI](https://github.com/heroku/cli) gave me a great excuse to rewrite an abandoned plugin that I relied on. Unfortunately, save a pair of very helpful doc pages, there were relatively few resources on some of the corner cases you hit while developing a plugin. Here, I'll aim to guide you through some of them.
 
+READMORE
+
 If you want to follow along, I'd recommend installing the cli [here](https://toolbelt.heroku.com/).
 
 ## So You Want to Write a Plugin

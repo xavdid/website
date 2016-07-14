@@ -3,17 +3,21 @@ title: Blog
 header: blog
 ---
 
-%p.mini_header
-  My 10 most recent blog posts can be found (with custom styles) here. There's also a full
-  %a{href:"http://blog.davidbrownman.com"}<
-    archive
-  if you're really that bored.
+-# %p.mini_header
+-#   My 10 most recent blog posts can be found (with custom styles) here. There's also a full
+-#   %a{href:"http://blog.davidbrownman.com"}<
+-#     archive
+-#   if you're really that bored.
 
-%ul.tumblr_posts
-- blog.articles[0...5].each do |article|
-  %article
-    %h1
-      %a{:href => article.url}= article.title
-      %time= article.date.strftime('%b %e %Y')
-    = article.summary
-    %a{:href => article.url} Read more
+%ul.blog_posts
+  - blog.articles[0...5].each do |article|
+    %li
+      .meta
+        %time
+          = article.date.strftime('%b %e %Y')
+      .post
+        %h1
+          = article.title
+        .post-body
+          = article.summary
+          %a{:href => article.url} Read more

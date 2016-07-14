@@ -8,6 +8,8 @@ title: Augmenting Automation on iOS With the Power of Python and Workflow
 
 [Workflow](https://workflow.is/) is a new iOS app that brings automater-like execution flows to your mobile device. You can take output from any action and chain it as input for another. Additionally, you can create iOS8 share sheets, allowing input to come from all over your phone.[^1] Previously, each of the aforementioned apps could do great thing (though only one thing at a time). Together, they're worth far more than the sum of their parts as Workflow brings all of their strengths together into one sleek automation machine.
 
+READMORE
+
 For instance, we can get a push notification from [AppShopper.com](http://appshopper.com/) when an app we're watching goes on sale. Clicking the notification will trigger some python that tells us the regular and current prices, and on confirmation, send us over to that app in the store.
 
 I'll go through each of the apps' setup here, or if you're cool enough that you're hip to them all already, just skip to the [instructions](#instructions) and you'll be on your way!

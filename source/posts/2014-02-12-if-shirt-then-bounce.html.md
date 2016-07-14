@@ -4,6 +4,8 @@ title: IF Shirt THEN Bounce That Email
 
 As you may or may not know, I'm one of the presidents of the highly ranked [Michigan Quidditch Team](http://michiganquidditch.com/). I've been with the team since the beginning and because I lived closest to the post office at the time, I've been in charge of shipping T-shirts to our fans all over the country. Until now, money has gone into my personal PayPal and I've just kept notes (usually of the [fetch](http://www.fetchnotes.com) variety) about which shirts I'd shipped and paid the team for. However, as my tenure with the team nears its end, we needed a more sustainable version of this system.
 
+READMORE
+
 A few weeks ago I got _really_ into automating stuff with [IFTTT](https://ifttt.com). If you're not familiar, it's a services that connects accounts together and lets you automate actions between services. For example, you can sat set up recipes like IF I'm tagged in a photo on Facebook THEN download a copy of that photo to my Dropbox. Wouldn't it be cool if I could capture PapPal emails, parse them, and store that data in a database or spreadsheet?
 
 Using the Email channel it's easy enough to capture purchase emails from PayPal, Unfortunately, there was no easy way to pull the content out of that email for use somewhere else. That's where this [middleware](https://github.com/captn3m0/ifttt-webhook) comes in. It functions as a fake Wordpress blog that IFTTT can send POST requests to, vastly opening up the realm of possibilities when it comes to where we can send our data. Now I could send a POST request with the plaintext (an IFTTT restriction) anywhere on the web. 

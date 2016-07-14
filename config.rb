@@ -71,14 +71,23 @@ configure :build do
 end
 
 activate :syntax
-set :markdown, fenced_code_blocks: true, footnotes: true, disable_indented_code_blocks: true, autolink: true, strikethrough: true, tables: true
+set :markdown,  fenced_code_blocks:           true,
+                footnotes:                    true,
+                disable_indented_code_blocks: true,
+                autolink:                     true,
+                strikethrough:                true,
+                tables:                       true
 # kramdown didn't work
 set :markdown_engine, :redcarpet
+
+set :haml, ugly:                 true,
+           format:               :html5,
+           remove_whitespace:    false,
+           hyphenate_data_attrs: false
 
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
-page '/blog/*', locals: {header: 'blog'}
 
 # page '/blog/*' do |a|
 #   @article = current_article
@@ -94,7 +103,7 @@ activate :blog do |blog|
   # blog.taglink = 'tags/{tag}.html'
   blog.layout = 'blogpost'
   # blog.summary_separator = /(READMORE)/
-  blog.summary_length = 750
+  # blog.summary_length = 750
   # blog.year_link = '{year}.html'
   # blog.month_link = '{year}/{month}.html'
   # blog.day_link = '{year}/{month}/{day}.html'
