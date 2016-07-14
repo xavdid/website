@@ -4,9 +4,9 @@
 
 @import 'normalize.min.css';
 
-$blue: #003366; //base blue
-$white: #fff; //just so I can change all of this in one go.
-$dark-blue: #000033; //also text color.
+$blue: #003366; // base blue
+$white: #fff; // just so I can change all of this in one go.
+$dark-blue: #000033; // also text color.
 $code: $dark-blue; // code color
 $grey: #bbbbbb;
 
@@ -14,7 +14,7 @@ $maize: #ffcc00;
 $light-blue: #336699;
 $footer-size: 40px;
 $transition-speed: 0.1s;
-$links: $light-blue; 
+$links: $light-blue;
 
 html, button, input, select, textarea {
   color: $dark-blue;
@@ -28,7 +28,7 @@ body {
 
 html, body {
   height: 100%;
-  background-image: url("../img/greyzz.png"); 
+  background-image: url("../img/greyzz.png");
 }
 
 // ::-moz-selection, ::selection {
@@ -90,7 +90,7 @@ textarea {
   position: relative;
   // border here means blue line interrupted
   border-left: 7px solid $blue;
-  
+
   a {
     color: $links;
     border-bottom: 1px solid $grey;
@@ -99,7 +99,7 @@ textarea {
     // -webkit-transition: $transition-speed ease-out;
     // -o-transition: $transition-speed ease-out;
     // transition: $transition-speed ease-out;
-    
+
     &:visited {
       color: $links;
     }
@@ -130,7 +130,7 @@ textarea {
 }
 
 .main-container {
-  padding-bottom: $footer-size;  
+  padding-bottom: $footer-size;
   a {
     font-weight: bold;
   }
@@ -210,7 +210,7 @@ article {
       list-style-type: circle;
       font-weight: 200;
     }
-    
+
   }
   .dict {
       background-color: rgba(187, 187, 187, 0.3);
@@ -287,7 +287,7 @@ nav {
   }
   article h1 {
     font-size: 2em;
-    
+
   }
   .heading {
     font-weight: 400;
@@ -295,7 +295,7 @@ nav {
   p {
     font-weight: 300;
   }
-  
+
   aside {
     color: $white;
     background-color: $dark-blue;
@@ -313,7 +313,7 @@ nav {
       }
     }
     overflow: hidden;
-  
+
     img {
       // padding-top: 5%;
       // padding-bottom: 5%;
@@ -442,12 +442,14 @@ nav {
       // inline code
       background-color: $code;
       color: $white;
-      padding: 2px;
+      padding: 3px;
+      border-radius: 5px;
     }
     pre {
       // code blocks
       padding: 15px;
       background-color: $code;
+      border-radius: 5px;
       code {
         background-color: inherit;
       }
@@ -467,10 +469,50 @@ nav {
       padding-left: 5%;
       img {
         max-width: 100%;
-        // height: auto;
+        height: auto;
         // width: 95%;
         // height: 95%;
       }
+
+      // converted from https://gist.github.com/andyferra/2554919
+      table {
+        padding: 0;
+        tr {
+          border-top: 1px solid #cccccc;
+          background-color: white;
+          margin: 0;
+          padding: 0;
+          &:nth-child(2n) {
+            background-color: #f8f8f8;
+          }
+          th {
+            font-weight: bold;
+            border: 1px solid #cccccc;
+            text-align: left;
+            margin: 0;
+            padding: 6px 13px;
+            &:first-child {
+              margin-top: 0;
+            }
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+          td {
+            border: 1px solid #cccccc;
+            text-align: left;
+            margin: 0;
+            padding: 6px 13px;
+            &:first-child {
+              margin-top: 0;
+            }
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+
     }
   }
 }
@@ -479,8 +521,6 @@ nav {
   padding-left: 8%;
   font-size: 1.5em;
 }
-
-.read_more_container! a {}
 
 /* ==========================================================================
    Media Queries
@@ -524,7 +564,7 @@ nav {
     .sitename {
       // display: inline;
     }
-  
+
     li {
       // display: inline-block;
       // padding-right: 5%;
@@ -613,7 +653,7 @@ nav {
     .sitename {
       // display: inline;
     }
-  
+
     li {
       // display: inline-block;
       padding-right: 2% !important;

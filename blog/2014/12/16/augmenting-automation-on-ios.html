@@ -47,7 +47,7 @@
               </a>
             </li>
             <li>
-              <a class='short' href='/blog.html' id='ni'>
+              <a class='active short' href='/blog.html' id='ni'>
                 Blog
               </a>
             </li>
@@ -67,67 +67,89 @@
     </div>
     <div class='main-container'>
       <div class='main wrapper clearfix'>
-        <blockquote>
-        <p>AppShoppper. Launch Center Pro. IFTTT. Pythonista.</p>
-        
-        <p>Long ago, the four apps lived apart in harmony. Then, everything changed when iOS 8 was released. Only Workflow, master of all four apps, could help them.</p>
-        </blockquote>
-        
-        <p><a href="https://workflow.is/">Workflow</a> is a new iOS app that brings automater-like execution flows to your mobile device. You can take output from any action and chain it as input for another. Additionally, you can create iOS8 share sheets, allowing input to come from all over your phone.[^1] Previously, each of the aforementioned apps could do great thing (though only one thing at a time). Together, they&#39;re worth far more than the sum of their parts as Workflow brings all of their strengths together into one sleek automation machine.</p>
-        
-        <p>For instance, we can get a push notification from <a href="http://appshopper.com/">AppShopper.com</a> when an app we&#39;re watching goes on sale. Clicking the notification will trigger some python that tells us the regular and current prices, and on confirmation, send us over to that app in the store.</p>
-        
-        <p>I&#39;ll go through each of the apps&#39; setup here, or if you&#39;re cool enough that you&#39;re hip to them all already, just skip to the <a href="#instructions">instructions</a> and you&#39;ll be on your way!</p>
-        
-        <h2>The Nations</h2>
-        
-        <p>This workflow involves a chain of services, so I&#39;ll break them down in order of how you&#39;ll set them up.</p>
-        
-        <h3>AppShopper.com (website; free account)</h3>
-        
-        <p><a href="http://appshopper.com/">AppShopper.com</a> scrapes the app store and keeps records for updates and sales. They offer emails when an app on your wishlist goes on sale, but we can do better than that.</p>
-        
-        <p>Make an account and add a couple of wishlist items.</p>
-        
-        <h3>Launch Center Pro ($5) [^2]</h3>
-        
-        <p><a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> (<a href="https://itunes.apple.com/us/app/launch-center-pro/id532016360?mt=8">App Store</a>) is a handy app launcher that lets you trigger lots of other apps. Its real power comes from its ability to execute workflows, which really opens up the jobs you can kick off.</p>
-        
-        <p>Go ahead and create a Launch Center Connect account so that you can plug into IFTTT.</p>
-        
-        <h3>IFTTT (free)</h3>
-        
-        <p><a href="https://ifttt.com">IFTTT</a> (<a href="https://itunes.apple.com/us/app/ifttt/id660944635?mt=8">App Store</a>) is an awesome service that chains together simple sets of instructions from different apps. You do this by activating channels (via OAuth). The one you&#39;ll want to start with is the <a href="https://ifttt.com/launch_center">LCP</a> channel (and your <em>Connect</em> account).</p>
-        
-        <h3>Pythonista ($7)</h3>
-        
-        <p>I&#39;ve written about Pythonista <a href="http://blog.davidbrownman.com/post/105811452344/pythonista-power-pack">before</a> and still have nothing but good things to say about it. $7 seems steep for an app, but when you remember that it&#39;s a full python IDE with custom modules for interacting with your iOS device, that doesn&#39;t seem so steep anymore.</p>
-        
-        <p>In terms of setup, you&#39;ll want to download <a href="https://gist.github.com/xavdid/aad5332bfbfdf857d256">this</a> script into Pythonista. It pulls your AppShopper feed, grabs the most recent &quot;price drop&quot; post, and parses the sale info out of it.</p>
-        
-        <h2>Operation Dealfinder <a name="instructions"></a></h2>
-        
-        <p>Now that we&#39;re set to go, let&#39;s get to the awesome(r) stuff. Let&#39;s start from the top.</p>
-        
-        <ol>
-        <li>The lynchpin, of course, is Workflow. You&#39;ll want to download <a href="https://workflow.is/workflows/80d6f7808169407487abc646303be398">this workflow</a> onto any device(s) that you&#39;ll want to be triggered. [^3]</li>
-        <li>IFTTT can hit Launch Center Pro to execute arbitrary URLs on your device. Conveniently, it can trigger workflows via iOS&#39;s url-scheme. So, use the following IFTTT recipe to run that workflow you just downloaded. Make sure to change the feed url to your personal wishlist! <a href="https://ifttt.com/view_embed_recipe/232743-check-your-appshopper-feed-for-a-deal-and-send-you-there" target="_blank" class="embed_recipe embed_recipe-l_57" id="embed_recipe-232743"><img src="https://ifttt.com/recipe_embed_img/232743" alt="IFTTT Recipe: Check your AppShopper feed for a deal and send you there! connects feed to launch-center" width="370px" style="max-width:100%"></a><script async type="text/javascript" src="//ifttt.com/assets/embed_recipe.js"></script></li>
-        <li>When this recipe runs, you&#39;ll be treated to a notification like this: <br><a href="http://imgur.com/F7Rp11U"><img src="http://i.imgur.com/F7Rp11U.png" title="source: imgur.com" height="400" alt="notification"></a></li>
-        <li>Upon clicking it, you&#39;ll see the workflow run, like so (click to pause, etc): <br><img src="http://fat.gfycat.com/ConcreteSarcasticAnglerfish.gif" width="480" height="360" alt="workflow in motion"></li>
-        <li>That&#39;s it! Support app developers by buying their stuff (even on discount)!</li>
-        </ol>
-        
-        <h2>The Takeaway</h2>
-        
-        <p>Workflow can chain together a surprising (and growing!) number of tasks that makes your life more awesome. With Pythonista, you&#39;re mostly only limited by your creativity (and a couple of system-level quirks that&#39;ll probably get worked out soonish).</p>
-        
-        <p>So, go forth and make awesome things (and let me know how it goes <a href="https://twitter.com/xavdid">@xavdid</a>)!</p>
-        
-        <p>[^1]: For more information on how amazing Workflow is, check out Macstories&#39; superb <a href="http://www.macstories.net/reviews/workflow-review-integrated-automation-for-ios-8/">article</a> outlining some of the detailed features</p>
-        
-        <p>[^2]: Frustratingly, there are separate launch center apps for iPhone and iPad. But, especially for $1 (on sale, as they are now), it&#39;s totally worth it.</p>
-        
-        <p>[^3]: The reason I specifically pass <code>Nothing</code> into the pythonista script is that there&#39;s currently a bug where if anything is passed in, the script doesn&#39;t run. In theory, the workflow could be edited to pass in the url of the feed</p>
+        <div class='tumblr_posts'>
+          <article class='tumblr_post'>
+            <h1 class='tumblr_title'>
+              Augmenting Automation on iOS With the Power of Python and Workflow
+            </h1>
+            <div class='tumblr_body'>
+              <blockquote>
+              <p>AppShoppper. Launch Center Pro. IFTTT. Pythonista.</p>
+              
+              <p>Long ago, the four apps lived apart in harmony. Then, everything changed when iOS 8 was released. Only Workflow, master of all four apps, could help them.</p>
+              </blockquote>
+              
+              <p><a href="https://workflow.is/">Workflow</a> is a new iOS app that brings automater-like execution flows to your mobile device. You can take output from any action and chain it as input for another. Additionally, you can create iOS8 share sheets, allowing input to come from all over your phone.<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup> Previously, each of the aforementioned apps could do great thing (though only one thing at a time). Together, they&#39;re worth far more than the sum of their parts as Workflow brings all of their strengths together into one sleek automation machine.</p>
+              
+              <p>For instance, we can get a push notification from <a href="http://appshopper.com/">AppShopper.com</a> when an app we&#39;re watching goes on sale. Clicking the notification will trigger some python that tells us the regular and current prices, and on confirmation, send us over to that app in the store.</p>
+              
+              <p>I&#39;ll go through each of the apps&#39; setup here, or if you&#39;re cool enough that you&#39;re hip to them all already, just skip to the <a href="#instructions">instructions</a> and you&#39;ll be on your way!</p>
+              
+              <h2>The Nations</h2>
+              
+              <p>This workflow involves a chain of services, so I&#39;ll break them down in order of how you&#39;ll set them up.</p>
+              
+              <h3>AppShopper.com (website; free account)</h3>
+              
+              <p><a href="http://appshopper.com/">AppShopper.com</a> scrapes the app store and keeps records for updates and sales. They offer emails when an app on your wishlist goes on sale, but we can do better than that.</p>
+              
+              <p>Make an account and add a couple of wishlist items.</p>
+              
+              <h3>Launch Center Pro ($5) <sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup></h3>
+              
+              <p><a href="http://contrast.co/launch-center-pro/">Launch Center Pro</a> (<a href="https://itunes.apple.com/us/app/launch-center-pro/id532016360?mt=8">App Store</a>) is a handy app launcher that lets you trigger lots of other apps. Its real power comes from its ability to execute workflows, which really opens up the jobs you can kick off.</p>
+              
+              <p>Go ahead and create a Launch Center Connect account so that you can plug into IFTTT.</p>
+              
+              <h3>IFTTT (free)</h3>
+              
+              <p><a href="https://ifttt.com">IFTTT</a> (<a href="https://itunes.apple.com/us/app/ifttt/id660944635?mt=8">App Store</a>) is an awesome service that chains together simple sets of instructions from different apps. You do this by activating channels (via OAuth). The one you&#39;ll want to start with is the <a href="https://ifttt.com/launch_center">LCP</a> channel (and your <em>Connect</em> account).</p>
+              
+              <h3>Pythonista ($7)</h3>
+              
+              <p>I&#39;ve written about Pythonista <a href="http://blog.davidbrownman.com/post/105811452344/pythonista-power-pack">before</a> and still have nothing but good things to say about it. $7 seems steep for an app, but when you remember that it&#39;s a full python IDE with custom modules for interacting with your iOS device, that doesn&#39;t seem so steep anymore.</p>
+              
+              <p>In terms of setup, you&#39;ll want to download <a href="https://gist.github.com/xavdid/aad5332bfbfdf857d256">this</a> script into Pythonista. It pulls your AppShopper feed, grabs the most recent &quot;price drop&quot; post, and parses the sale info out of it.</p>
+              
+              <h2>Operation Dealfinder <a name="instructions"></a></h2>
+              
+              <p>Now that we&#39;re set to go, let&#39;s get to the awesome(r) stuff. Let&#39;s start from the top.</p>
+              
+              <ol>
+              <li>The lynchpin, of course, is Workflow. You&#39;ll want to download <a href="https://workflow.is/workflows/80d6f7808169407487abc646303be398">this workflow</a> onto any device(s) that you&#39;ll want to be triggered. <sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup></li>
+              <li>IFTTT can hit Launch Center Pro to execute arbitrary URLs on your device. Conveniently, it can trigger workflows via iOS&#39;s url-scheme. So, use the following IFTTT recipe to run that workflow you just downloaded. Make sure to change the feed url to your personal wishlist! <a href="https://ifttt.com/view_embed_recipe/232743-check-your-appshopper-feed-for-a-deal-and-send-you-there" target="_blank" class="embed_recipe embed_recipe-l_57" id="embed_recipe-232743"><img src="https://ifttt.com/recipe_embed_img/232743" alt="IFTTT Recipe: Check your AppShopper feed for a deal and send you there! connects feed to launch-center" width="370px" style="max-width:100%"></a><script async type="text/javascript" src="//ifttt.com/assets/embed_recipe.js"></script></li>
+              <li>When this recipe runs, you&#39;ll be treated to a notification like this: <br><a href="http://imgur.com/F7Rp11U"><img src="http://i.imgur.com/F7Rp11U.png" title="source: imgur.com" height="400" alt="notification"></a></li>
+              <li>Upon clicking it, you&#39;ll see the workflow run, like so (click to pause, etc): <br><img src="http://fat.gfycat.com/ConcreteSarcasticAnglerfish.gif" width="480" height="360" alt="workflow in motion"></li>
+              <li>That&#39;s it! Support app developers by buying their stuff (even on discount)!</li>
+              </ol>
+              
+              <h2>The Takeaway</h2>
+              
+              <p>Workflow can chain together a surprising (and growing!) number of tasks that makes your life more awesome. With Pythonista, you&#39;re mostly only limited by your creativity (and a couple of system-level quirks that&#39;ll probably get worked out soonish).</p>
+              
+              <p>So, go forth and make awesome things (and let me know how it goes <a href="https://twitter.com/xavdid">@xavdid</a>)!</p>
+              
+              <div class="footnotes">
+              <hr>
+              <ol>
+              
+              <li id="fn1">
+              <p>For more information on how amazing Workflow is, check out Macstories&#39; superb <a href="http://www.macstories.net/reviews/workflow-review-integrated-automation-for-ios-8/">article</a> outlining some of the detailed features&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+              </li>
+              
+              <li id="fn2">
+              <p>Frustratingly, there are separate launch center apps for iPhone and iPad. But, especially for $1 (on sale, as they are now), it&#39;s totally worth it.&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+              </li>
+              
+              <li id="fn3">
+              <p>The reason I specifically pass <code>Nothing</code> into the pythonista script is that there&#39;s currently a bug where if anything is passed in, the script doesn&#39;t run. In theory, the workflow could be edited to pass in the url of the feed&nbsp;<a href="#fnref3" rev="footnote">&#8617;</a></p>
+              </li>
+              
+              </ol>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
     <div class='footer-container'>

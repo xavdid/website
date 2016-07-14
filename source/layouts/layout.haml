@@ -45,7 +45,7 @@
               %a.short#ichi{href: "/index.html", class: ('active' if current_page.data.header == 'index')}
                 Home
             %li
-              %a.short#ni{href: "/blog.html", class: ('active' if current_page.data.header == 'blog')}
+              %a.short#ni{href: "/blog.html", class: ('active' if (current_page.data.header == 'blog' || current_page.url.include?('/blog/')))}
                 Blog
             %li
               %a.long#san{href: "/projects.html", class: ('active' if current_page.data.header == 'projects')}

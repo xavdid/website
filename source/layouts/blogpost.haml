@@ -1,0 +1,10 @@
+
+= wrap_layout :layout do
+  - if is_blog_article?
+    .tumblr_posts
+      %article.tumblr_post
+        %h1.tumblr_title
+          = current_article.title
+
+        .tumblr_body
+          ~ current_article.body

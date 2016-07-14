@@ -71,13 +71,18 @@ configure :build do
 end
 
 activate :syntax
-set :markdown, :tables => true, :gh_blockcode => true, :fenced_code_blocks => true
+set :markdown, fenced_code_blocks: true, footnotes: true, disable_indented_code_blocks: true, autolink: true, strikethrough: true, tables: true
 # kramdown didn't work
 set :markdown_engine, :redcarpet
 
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page '/blog/*', locals: {header: 'blog'}
+
+# page '/blog/*' do |a|
+#   @article = current_article
+# end
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
@@ -87,7 +92,7 @@ activate :blog do |blog|
   # Matcher for blog source files
   blog.sources = '/posts/{year}-{month}-{day}-{title}.html'
   # blog.taglink = 'tags/{tag}.html'
-  # blog.layout = 'layout'
+  blog.layout = 'blogpost'
   # blog.summary_separator = /(READMORE)/
   blog.summary_length = 750
   # blog.year_link = '{year}.html'
