@@ -1,5 +1,7 @@
 ---
 title: Nothing, what’s Infor-mata With You?
+fact: The British Museum opens.
+fact_year: 1759
 ---
 
 Entering college, I knew I wanted to be in computers (and computer accessories), but I wasn't sure how quite to go about it. CS engineering looked like a good pick, but it was incredibly focused (at the risk of missing out on other subjects). It was good if you wanted to do all CS, all day, no sun, but I wasn't sure that was my dish. I love CS as a subject, but I also have a habit of delving into other subjects and wanting to expand the breadth of my studies. 

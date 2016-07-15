@@ -8,16 +8,25 @@ header: blog
 -#   %a{href:"http://blog.davidbrownman.com"}<
 -#     archive
 -#   if you're really that bored.
+%article
+  %ul.blog_posts
+    - blog.articles[0...5].each do |article|
+      %li.summary
+        .meta
+          %time
+            %a{:href => article.url}
+              = article.date.strftime('%b %e %Y')
+        .post
+          %h1.tumblr_title
+            = article.title
+          .post-body
+            = article.summary
+            %a{:href => article.url} Read more
 
-%ul.blog_posts
-  - blog.articles[0...5].each do |article|
-    %li
-      .meta
-        %time
-          = article.date.strftime('%b %e %Y')
-      .post
-        %h1
-          = article.title
-        .post-body
-          = article.summary
-          %a{:href => article.url} Read more
+%aside.topper
+  .heading
+    The Write Stuff
+%aside
+  %p
+    Here's my collection of blog posts (both technical and otherwise) presented chronicled in reverse.
+

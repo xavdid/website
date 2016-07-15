@@ -1,5 +1,7 @@
 ---
 title: What's in a Name?
+fact: The HMS Beagle, with Charles Darwin aboard, reaches the Galápagos Islands. The ship lands at Chatham or San Cristobal, the easternmost of the archipelago.
+fact_year: 1835
 ---
 
 Last May, I finished college and promptly moved out to Palo Alto to join RelateIQ, a "[but we're not a CRM](https://www.youtube.com/watch?v=-ChppfnazzE&feature=youtu.be&t=1m57s)" startup aimed at eventually toppling the giant that is Salesforce. It's worth noting that I didn't know what CRM was nor was I aware what exactly Salesforce's product was, but I was totally sold on the people and the team at RIQ. I felt confident that whatever we went on to do, it would be great. 

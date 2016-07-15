@@ -226,12 +226,12 @@ article {
 
   }
   .dict {
-      background-color: rgba(187, 187, 187, 0.3);
-      padding: 20px;
-      width: 80%;
-      margin-left: 5%;
-      // border: 1px solid $blue;
-    }
+    background-color: rgba(187, 187, 187, 0.3);
+    padding: 20px;
+    width: 80%;
+    margin-left: 5%;
+    // border: 1px solid $blue;
+  }
 }
 
 /* ==============
@@ -434,9 +434,12 @@ nav {
   width: 95%;
   padding: 0;
 
-  li {
+  .summary {
     border-top: 1px solid $grey;
     padding-bottom: 3em;
+  }
+
+  li {
     .meta {
       float: right;
       clear: right;
@@ -499,16 +502,17 @@ nav {
 
     .tumblr_title {
       // font-size: 2em;
-      color: $blue;
+      // color: $blue;
       // margin-bottom: 10px;
-      font: 30px Myriad Pro, Helvetica, Helvetica Neue, Arial;
-      font-weight: bold !important;
+      // font: 30px Myriad Pro, Helvetica, Helvetica Neue, Arial;
+      // font-weight: bold !important;
       // padding-left: 20px;
     }
 
     .tumblr_body {
-      border-left: 3px solid $maize;
-      padding-left: 5%;
+      // border-left: 3px solid $maize;
+      // padding-left: 5%;
+      text-align: justify;
       img {
         max-width: 100%;
         height: auto;
@@ -520,7 +524,7 @@ nav {
       table {
         padding: 0;
         tr {
-          border-top: 1px solid #cccccc;
+          border-top: 1px solid $grey;
           background-color: white;
           margin: 0;
           padding: 0;
@@ -529,7 +533,7 @@ nav {
           }
           th {
             font-weight: bold;
-            border: 1px solid #cccccc;
+            border: 1px solid $grey;
             text-align: left;
             margin: 0;
             padding: 6px 13px;
@@ -541,7 +545,7 @@ nav {
             }
           }
           td {
-            border: 1px solid #cccccc;
+            border: 1px solid $grey;
             text-align: left;
             margin: 0;
             padding: 6px 13px;
@@ -665,7 +669,7 @@ nav {
       float: left;
       width: 70%;
       margin-left: -2%;
-      h1, h2 {
+      h1:not(.tumblr_title), h2 {
         font: 20px Myriad Pro, Helvetica, Helvetica Neue, Arial;
         font-weight: bold !important;
       }
