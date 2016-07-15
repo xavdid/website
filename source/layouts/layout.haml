@@ -34,25 +34,25 @@
   .border
   .page
     .header-container
-      .wrapper.clearfix
+      %header.wrapper.clearfix
         %h1.title
-          %a#zero{href: "/index.html"}
+          %a{href: "/index.html"}
             %span.my_name
               David Brownman
 
         %nav
           %ul
             %li
-              %a.short#ichi{href: "/index.html", class: ('active' if current_page.data.header == 'index')}
+              %a.short{href: "/index.html", class: ('active' if current_page.data.header == 'index')}
                 Home
             %li
-              %a.short#ni{href: "/blog.html", class: ('active' if (current_page.data.header == 'blog' || current_page.url.include?('/blog/')))}
+              %a.short{href: "/blog.html", class: ('active' if (current_page.data.header == 'blog' || current_page.url.include?('/blog/')))}
                 Blog
             %li
-              %a.long#san{href: "/projects.html", class: ('active' if current_page.data.header == 'projects')}
+              %a.long{href: "/projects.html", class: ('active' if current_page.data.header == 'projects')}
                 Projects
             %li
-              %a.long#shi{href: "/misc.html", class: ('active' if current_page.data.header == 'misc')}
+              %a.long{href: "/misc.html", class: ('active' if current_page.data.header == 'misc')}
                 Sundries
     .main-container
       .main.wrapper.clearfix

@@ -1,8 +1,8 @@
-/* ==========================================================================
-   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
-   ========================================================================== */
+// let's clean this up
 
-@import 'normalize.min.css';
+// VARIABLES
+$tablet-width: 768px;
+$desktop-width: 1024px;
 
 $blue: #003366; // base blue
 $white: #fff; // just so I can change all of this in one go.
@@ -16,74 +16,19 @@ $footer-size: 40px;
 $transition-speed: 0.1s;
 $links: $light-blue;
 
-html, button, input, select, textarea {
-  color: $dark-blue;
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
 }
 
-body {
-  font-size: 1em;
-  line-height: 1.4;
-  font: 16px / 26px Minion Pro, Helvetica, Helvetica Neue, Arial;
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
 }
 
-html, body {
-  height: 100%;
-  background-image: url("../img/greyzz.png");
-}
-
-// ::-moz-selection, ::selection {
-//   background: #b3d4fc;
-//   text-shadow: none;
-// }
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-img {
-  vertical-align: middle;
-}
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-textarea {
-  resize: vertical;
-}
-
-.date {
-  font-style: italic;
-  font-size: .6em;
-}
-
-.chromeframe {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
-}
-
-/* ===== Initializr Styles ==================================================
-   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
-   Edited: David Brownman - this is my site
-   ========================================================================== */
-
-.wrapper {
-  width: 90%;
-  margin: 0 5%;
-}
-
-/* ===================
-    ALL: Blue Theme
-   =================== */
+// EVERYWHERE STUFF
 .border {
   background: $blue;
   position: fixed;
@@ -97,761 +42,85 @@ textarea {
 .page {
   min-height: 100%;
   position: relative;
-  // border here means blue line interrupted
-  // border-left: 7px solid $blue;
 
   a {
-    color: $links;
-    border-bottom: 1px solid $grey;
     text-decoration: none;
-    // -moz-transition: $transition-speed ease-out;
-    // -webkit-transition: $transition-speed ease-out;
-    // -o-transition: $transition-speed ease-out;
-    // transition: $transition-speed ease-out;
-
-    &:visited {
-      color: $links;
-    }
-
-    &:hover {
-      // color: blue;
-      // text-decoration: underline;
-      border-bottom: 1px solid $links;
-      // -moz-transition: $transition-speed ease-out;
-      // -webkit-transition: $transition-speed ease-out;
-      // -o-transition: $transition-speed ease-out;
-      // transition: $transition-speed ease-out;
-    }
-  }
-}
-
-.header-container {
-  // border-bottom: 20px solid $dark-blue;
-  font: 27px Myriad Pro, Helvetica, Helvetica Neue, Arial !important;
-  // mitch added this shadow, i should give him credit
-  // -webkit-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
-  // -moz-box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
-  // box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.75);
-  h1 {
-    text-align: center;
-    // padding-bottom: 5px;
-  }
-}
-
-.header-container, .footer-container, .main aside {
-  background: $blue;
-}
-
-.main-container {
-  padding-bottom: $footer-size;
-  a {
-    font-weight: bold;
-  }
-}
-
-.mini_header {
-  padding-bottom: 3%;
-}
-
-.footer-container {
-  height: $footer-size;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  overflow: hidden;
-  .feet {
-    font-weight: 300;
-    i {
-      color: $white;
-
-    }
-    ul {
-      margin: 0;
-      padding: 0;
-      // padding-right: 33px;
-      // width: 430%;
-    }
-    li {
-      display: inline-block;
-      padding-right: 4%;
-      padding-top: 4px;
-    }
-    // position: absolute;
-    // right: 0;
-    // float: right;
-    page-break-inside: avoid;
-    color: $white;
-    a {
-      color: $white;
-      // border-bottom: 1px solid $blue;
-      border-bottom: 0px;
-    }
-    a:hover {
-      // border-bottom: 1px solid $white;
-      border-bottom: 0px;
-      // color: $white;
-    }
-    i:hover {
-      color: $maize;
-    }
-  }
-}
-
-.title {
-  color: $white;
-  font-size: 27px;
-  margin: 0;
-  a {
-    color: $white !important;
-    border-bottom: 0px;
-    &:hover {
-      border-bottom: 0px;
-    }
-  }
-}
-
-.my_name {
-  border-bottom: 1px solid white;
-}
-
-article {
-  header, section, footer {
-    p {
-      padding-bottom: 5%;
-    }
-    .projects {
-      list-style-type: circle;
-      font-weight: 200;
-    }
-
-  }
-  .dict {
-    background-color: rgba(187, 187, 187, 0.3);
-    padding: 20px;
-    width: 80%;
-    margin-left: 5%;
-    // border: 1px solid $blue;
-  }
-}
-
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-nav {
-
-  ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    color: $blue;
-  }
-  a {
-    display: block;
-    // margin-bottom: 10px;
-    padding: 12px 0;
-    // padding-left: 10%;
-    text-align: center;
-    font-weight: bold;
-    vertical-align: middle;
-    // height: 48px;
-    color: $white !important;
-    // background: $white;
-    font-weight: 400;
-    font-size: 20px;
-    border-bottom: 0px !important;
-    &:hover {
-      background: $light-blue;
-    }
-    &:visited {
-      color: $blue;
-    }
-  }
-  .active {
-    background-image: url("../img/greyzz.png");
-    color: $blue !important;
-    &:hover {
-      background-image: url("../img/greyzz.png");
-      color: $blue !important;
-    }
-  }
-}
-.short {
-  // padding-left: 6%;
-  // padding-right: 6%;
-}
-
-
-/* ==============
-    MOBILE: Main
-   ============== */
-
-.main {
-  padding: 30px 0;
-  .topper {
-    border-bottom: 3px solid $white;
-    background-color: $blue;
-    font: 18px Myriad Pro, Helvetica, Helvetica Neue, Arial;
-    .heading {
-      padding-top: 8px;
-      padding-left: 5%;
-      padding-bottom: 4px;
-    }
   }
 
-  article h1 {
-    font-size: 2em;
-
+  .clearfix {
+    &:before {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      content: " ";
+      display: table;
+      clear: both;
+    }
+    zoom: 1;
   }
-  .heading {
-    font-weight: 400;
-  }
-  p {
-    font-weight: 300;
-  }
 
-  aside {
-    color: $white;
-    background-color: $dark-blue;
-    // padding: 5px 0.5% 5px;
-    font: 16px Myriad Pro, Helvetica, Helvetica Neue, Arial;
-    a {
-      color: $maize !important;
-      border-bottom: 1px solid $dark-blue;
-      font-weight: normal;
-      &:hover {
-        border-bottom: 1px solid $maize;
-      }
-      &:visited {
-        color: $white;
-      }
-    }
-    overflow: hidden;
-
-    img {
-      // padding-top: 5%;
-      // padding-bottom: 5%;
-      width: 37%;
-      padding: 5%;
-      // height: 300px;
-    }
-
-    p {
-      width: 90%;
-      padding-left: 5%;
-    }
-
-    .top {
-      .cell {
-        // margin-bottom: 1px;
-      }
-    }
-
-    .row {
+  // SECTIONS
+  .header-container {
+    background: $blue;
+    font-family: Myriad Pro, Helvetica, Helvetica Neue, Arial;
+    h1 {
       text-align: center;
-      a {
-        color: $dark-blue !important;
-      }
-      .cell {
-        width: 20.3%;
-        background-color: $white;
-        margin-top: 6%;
-        margin-left: 4%;
-        margin-bottom: 6%;
-
-        padding-top: 3%;
-        padding-bottom: 3%;
-
-        &:hover {
-          background-color: $light-blue;
-          i {
-            color: $white;
-          }
-          color: $white;
-        }
-      }
-      .end {
-        padding-bottom: 9.65%;
-      }
-      .left {
-        float: left;
-      }
-      .right {
-        float: left;
-      }
-      i {
-        color: $dark-blue;
-        // padding-bottom: 9%;
-      }
     }
 
-  }
-
-  .second {
-    background-color: $dark-blue;
-    a {
-      color: $dark-blue;
-    }
-  }
-
-  .third {
-    margin-top: 3%;
-  }
-
-}
-
-.footer-container footer {
-  color: $white;
-  .sitename {
-    display: none;
-  }
-  .feet {
-    padding-top: 0.3%;
-    // padding-right: 1%;
-    a:hover {
-      text-decoration: none;
-    }
-    li {
-      // padding-right: 10%;
-    }
-  }
-}
-
-/* ===============
-    ALL: IE Fixes
-   =============== */
-
-.ie7 .title {
-  padding-top: 20px;
-}
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-.blog_posts {
-  list-style-type: none;
-  width: 95%;
-  padding: 0;
-
-  .summary {
-    border-top: 1px solid $grey;
-    padding-bottom: 3em;
-  }
-
-  li {
-    .meta {
-      float: right;
-      clear: right;
-      width: 7em;
-    }
-    .post {
-      width: 75%;
-      text-align: justify;
-      padding-top: 7px;
-
-      h1 {
-        font-weight: 300;
-        margin: 0;
-        padding-bottom: 15px;
-        line-height: normal;
-      }
-
-      .post-body {
-        border-left: 1px solid $maize;
-        padding-left: 15px;
-      }
-    }
-  }
-
-  .tumblr_post {
-    margin-bottom: 10%;
-    .date {
-      font-size: 1em;
-    }
-    blockquote {
-      background-color: $code;
+    .title {
       color: $white;
-      padding: 30px;
-      font-family: courier, helvetica;
-      margin-left: -10px;
-      // a {
-      //   color: $white;
-      //   &:visited {
-      //     color: $white;
-      //   }
-      // }
-    }
-
-    code {
-      // inline code
-      background-color: $code;
-      color: $white;
-      padding: 3px;
-      border-radius: 5px;
-    }
-    pre {
-      // code blocks
-      padding: 15px;
-      background-color: $code;
-      border-radius: 5px;
-      code {
-        background-color: inherit;
-      }
-    }
-
-    .tumblr_title {
-      // font-size: 2em;
-      // color: $blue;
-      // margin-bottom: 10px;
-      // font: 30px Myriad Pro, Helvetica, Helvetica Neue, Arial;
-      // font-weight: bold !important;
-      // padding-left: 20px;
-    }
-
-    .tumblr_body {
-      // border-left: 3px solid $maize;
-      // padding-left: 5%;
-      text-align: justify;
-      img {
-        max-width: 100%;
-        height: auto;
-        // width: 95%;
-        // height: 95%;
-      }
-
-      // converted from https://gist.github.com/andyferra/2554919
-      table {
-        padding: 0;
-        tr {
-          border-top: 1px solid $grey;
-          background-color: white;
-          margin: 0;
-          padding: 0;
-          &:nth-child(2n) {
-            background-color: #f8f8f8;
-          }
-          th {
-            font-weight: bold;
-            border: 1px solid $grey;
-            text-align: left;
-            margin: 0;
-            padding: 6px 13px;
-            &:first-child {
-              margin-top: 0;
-            }
-            &:last-child {
-              margin-bottom: 0;
-            }
-          }
-          td {
-            border: 1px solid $grey;
-            text-align: left;
-            margin: 0;
-            padding: 6px 13px;
-            &:first-child {
-              margin-top: 0;
-            }
-            &:last-child {
-              margin-bottom: 0;
-            }
-          }
-        }
-      }
-
-    }
-  }
-}
-
-.quote_source {
-  padding-left: 8%;
-  font-size: 1.5em;
-}
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-@media only screen and (min-width: 480px) {
-  /* ====================
-      INTERMEDIATE: Menu
-     ==================== */
-  nav {
-    a {
-      float: left;
-      width: 17%;
-        // margin: 0 1.7%;
-        // padding: 25px 2%;
-      padding-left: 2%;
-      padding-right: 2%;
-      margin-bottom: 0;
-        // font-size: 1em;
-    }
-    li {
-      &:first-child a {
-        margin-left: 0;
-      }
-      &:last-child a {
-        margin-right: 0;
-      }
-    }
-    ul li {
-      display: inline;
-    }
-  }
-
-  .footer-container footer {
-    .feet {
-      // padding-right: 3%;
-      li {
-        padding-top: 3px;
-      }
-    }
-    .sitename {
-      // display: inline;
-    }
-
-    li {
-      // display: inline-block;
-      // padding-right: 5%;
-    }
-  }
-  .long {
-    padding-left: 4%;
-    padding-right: 4%;
-  }
-
-  /* ========================
-      INTERMEDIATE: Main
-     ======================== */
-
-
-  aside {
-    i {
-      padding-bottom: 2% !important;
-    }
-  }
-
-  .dict {
-    width: 60% !important;
-    margin: 0;
-  }
-
-
-  /* ========================
-      INTERMEDIATE: IE Fixes
-     ======================== */
-  .oldie nav a {
-    margin: 0 0.7%;
-  }
-
-}
-
-@media only screen and (min-width: 1124px) {
-  /* ============
-      WIDE: Menu
-     ============ */
-  .title {
-    float: left;
-    margin-left: -4.5%;
-    margin-top: 0.95%;
-  }
-  nav {
-    float: right;
-    width: 40%;
-    // font-size: 1.3em;
-  }
-  /* ============
-      WIDE: Main
-     ============ */
-  .main {
-    article {
-      float: left;
-      width: 70%;
-      margin-left: -2%;
-      h1:not(.tumblr_title), h2 {
-        font: 20px Myriad Pro, Helvetica, Helvetica Neue, Arial;
-        font-weight: bold !important;
-      }
-    }
-    aside {
-      float: right;
-      width: 30%;
-      img {
-        width: 90%;
-      }
-      .cell {
-      i {
-        // padding-bottom: 11% !important;
-      }
-    }
-    }
-  }
-
-  .footer-container footer {
-    .feet {
-      // padding-right: 4%;
-      margin-left: -2%;
-      li {
-        padding-top: 2px;
-      }
-    }
-    .sitename {
-      // display: inline;
-    }
-
-    li {
-      // display: inline-block;
-      padding-right: 2% !important;
-    }
-  }
-
-  .tumblr_posts {
-    width: 80%;
-    .tumblr_post {
-      .tumblr_body {
-        img {
-          // width: 70%;
-          // height: auto;
-          // max-width: 100%;
-
-          // max-height: 400px;
-          // height: 400px !important;
-        }
-      }
-    }
-  }
-}
-
-@media only screen and (min-width: 750) {
-  /* ===============
-      Maximal Width
-     =============== */
-  .wrapper {
-    /*width: 1026px;  1140px - 10% for margins */
-    margin: 0 auto;
-  }
-}
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-.ir {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  text-indent: -9999px;
-  &:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-  }
-}
-
-.hidden {
-  display: none !important;
-  visibility: hidden;
-}
-
-.visuallyhidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-  &.focusable {
-    &:active, &:focus {
-      clip: auto;
-      height: auto;
+      font-size: 27px;
       margin: 0;
-      overflow: visible;
-      position: static;
-      width: auto;
+      a {
+        color: $white;
+        border-bottom: 0px;
+        &:hover {
+          border-bottom: 0px;
+        }
+      }
+    }
+
+    nav {
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        color: $blue;
+      }
+      a {
+        display: block;
+        padding: 12px 0;
+        text-align: center;
+        vertical-align: middle;
+        color: $white;
+        font-weight: 400;
+        font-size: 20px;
+        &:hover:not(.active) {
+          background: $light-blue;
+        }
+      }
+      .active {
+        background-image: url("../img/greyzz.png");
+        color: $blue;
+      }
     }
   }
-}
 
-.invisible {
-  visibility: hidden;
-}
+  .main-container {
+    a {
+      color: $links;
+      border-bottom: 1px solid $grey;
+      font-weight: bold;
 
-.clearfix {
-  &:before {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    content: " ";
-    display: table;
-    clear: both;
-  }
-  zoom: 1;
-}
+      &:visited {
+        color: $links;
+      }
 
-/* ==========================================================================
-   Print styles
-   ========================================================================== */
-
-@media print {
-  * {
-    background: transparent !important;
-    color: #000 !important;
-    /* Black prints faster: h5bp.com/s */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-  a {
-    // text-decoration: underline;
-    &:visited {
-      // text-decoration: underline;
-    }
-    &[href]:after {
-      content: " (" attr(href) ")";
+      &:hover {
+        border-bottom: 1px solid $links;
+      }
     }
   }
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-  /*
-   * Don't show links for images, or javascript/internal links
-   */
-  .ir a:after {
-    content: "";
-  }
-  a {
-    &[href^="javascript:"]:after, &[href^="#"]:after {
-      content: "";
-    }
-  }
-  pre, blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-  thead {
-    display: table-header-group;
-    /* h5bp.com/t */
-  }
-  tr {
-    page-break-inside: avoid;
-  }
-  img {
-    page-break-inside: avoid;
-    max-width: 100% !important;
-  }
-  @page {
-    margin: 0.5cm;
-  }
-
-  p, h2, h3 {
-    orphans: 3;
-    widows: 3;
-  }
-  h2, h3 {
-    page-break-after: avoid;
-  }
+  .footer-container {}
 }
