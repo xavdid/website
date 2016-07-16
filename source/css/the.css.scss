@@ -28,6 +28,13 @@ $links: $light-blue;
   }
 }
 
+@import 'normalize.min.css';
+
+html, body {
+  height: 100%;
+  background-image: url("../img/greyzz.png");
+}
+
 // EVERYWHERE STUFF
 .border {
   background: $blue;
@@ -58,6 +65,12 @@ $links: $light-blue;
       clear: both;
     }
     zoom: 1;
+  }
+
+  // makes page fit reasonably
+  .wrapper {
+    width: 90%;
+    margin: 0 5%;
   }
 
   // SECTIONS
@@ -104,6 +117,19 @@ $links: $light-blue;
         background-image: url("../img/greyzz.png");
         color: $blue;
       }
+
+      @include tablet {
+        a {
+          float: left;
+          width: 17%;
+          padding-left: 2%;
+          padding-right: 2%;
+        }
+      }
+    }
+
+    .my_name {
+      border-bottom: 1px solid white;
     }
   }
 
