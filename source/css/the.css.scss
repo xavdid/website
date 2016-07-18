@@ -2,7 +2,7 @@
 
 // VARIABLES
 $tablet-width: 768px;
-$desktop-width: 1024px;
+$desktop-width: 1124px;
 
 $blue: #003366; // base blue
 $white: #fff; // just so I can change all of this in one go.
@@ -170,6 +170,10 @@ html, body {
       }
     }
 
+    ul {
+      padding-left: 0px;
+    }
+
     .main {
       // container styles
       @include tablet {
@@ -185,16 +189,9 @@ html, body {
       }
 
       article {
-        margin-left: -9%;
-
-        @include tablet {
-          margin-left: -7%;
-        }
-
         @include desktop {
           float: left;
-          width: 70%;
-          margin-left: -5%;
+          width: 65%;
         }
 
         section {
@@ -210,7 +207,7 @@ html, body {
         }
 
         // projects page
-        .jobs {
+        .projects {
           list-style-type: none;
           li {
             margin-bottom: 35px;
@@ -220,12 +217,91 @@ html, body {
               .date {
                 font-style: italic;
                 font-size: .6em;
+                &, a {
+                  vertical-align: top;
+                }
               }
             }
 
             p {
               margin-top: 0;
             }
+          }
+        }
+
+        .misc {
+          ul {
+            padding-left: 40px;
+            list-style-type: circle;
+            font-weight: 300;
+          }
+        }
+
+        // could share style better between blog and blog post
+        .blog {
+          list-style-type: none;
+          width: 95%;
+          li {
+            border-top: 1px solid $grey;
+            padding-bottom: 3em;
+            .meta {
+              float: right;
+              clear: right;
+              width: 7em;
+            }
+            .post {
+              width: 75%;
+              text-align: justify;
+              padding-top: 7px;
+
+              h1 {
+                font-weight: 300;
+                margin: 0;
+                padding-bottom: 15px;
+                line-height: normal;
+              }
+
+              .post-body {
+                border-left: 1px solid $maize;
+                padding-left: 15px;
+              }
+            }
+          }
+        }
+
+        .blog_post {
+          h1 {
+            font-weight: 300;
+            line-height: normal;
+          }
+          // blockquote {
+          //   background-color: $code;
+          //   color: $white;
+          //   padding: 30px;
+          //   font-family: courier, helvetica;
+          //   margin-left: -10px;
+          // }
+
+          .tumblr_body {
+            text-align: justify;
+
+            code, pre {
+              background-color: $code;
+              border-radius: 5px;
+              // color is overwritten by syntax anyway
+              color: $white;
+            }
+
+            code {
+              // inline code
+              padding: 3px;
+            }
+            pre {
+              // code blocks
+              padding: 15px;
+            }
+
+            @import 'table.css.scss'
           }
         }
       }
@@ -336,3 +412,6 @@ html, body {
     }
   }
 }
+
+// I don't think I need these, but who knows
+@import 'print.css.scss'

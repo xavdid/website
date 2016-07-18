@@ -1,21 +1,21 @@
 
 = wrap_layout :layout do
   - if is_blog_article?
-    .blog_posts
-      %article.tumblr_post
-        %h1.tumblr_title
+    %article
+      .blog_post
+        %h1
           = current_article.title
 
         .tumblr_body
           ~ current_article.body
 
-    %aside.topper
-      .heading
-        %span
-          Published
-        %time
-          = current_article.date.strftime('%B %e, %Y')
     %aside
-      %p
-        On this day
-        = "(in #{current_article.data.fact_year}): #{current_article.data.fact}"
+      .top
+        .heading
+          Published
+          %time
+            = current_article.date.strftime('%B %e, %Y')
+      .bottom
+        %p
+          On this day
+          = "(in #{current_article.data.fact_year}): #{current_article.data.fact}"
