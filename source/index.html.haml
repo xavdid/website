@@ -4,7 +4,7 @@ header: index
 ---
 
 %article
-  %header
+  %section
     %h2.heading
       Hey, how's it going?
     %p
@@ -26,34 +26,38 @@ header: index
         here
       if that fact interests you). Past that, all I know is that someday, I'll own a blue Tesla.
 
-%aside.topper.first
-  .heading
-    But wait... there's more!
-%aside.second
-  .row.top
-    %a{href: "mailto:beamneocube@gmail.com", target: "_blank"}
-      .cell.left
-        %i.fa.fa-envelope.fa-3x
-    %a{href: "https://github.com/xavdid", target: "_blank"}
-      .cell.left
-        %i.fa.fa-github-alt.fa-3x
+%aside
+  .top
+    .heading
+      But wait... there's more!
 
+  .bottom
+    .row
+      %a{href: "mailto:beamneocube@gmail.com", target: "_blank"}
+        .cell.left
+          %i.fa.fa-envelope.fa-3x
+      %a{href: "https://github.com/xavdid", target: "_blank"}
+        .cell.left
+          %i.fa.fa-github-alt.fa-3x
 
-  .row.bottom
-    %a{href: "https://twitter.com/xavdid", target: "_blank"}
-      .cell.right
-        %i.fa.fa-twitter.fa-3x
-    %a{href: "https://www.linkedin.com/in/xavdid", target: "_blank"}
-      .cell.right
-        %i.fa.fa-linkedin.fa-3x
+    .row
+      %a{href: "https://twitter.com/xavdid", target: "_blank"}
+        .cell.right
+          %i.fa.fa-twitter.fa-3x
+      %a{href: "https://www.linkedin.com/in/xavdid", target: "_blank"}
+        .cell.right
+          %i.fa.fa-linkedin.fa-3x
 
-%aside.third.topper
-  .heading
-    Did You Know?
-%aside.fourth
-  %p.fact
-    There should be a random fact here. What do you have against javascript?
+-# %aside.topper.third
+-#   .heading
+-#     Did You Know?
+-# %aside
+-#   %p.fact
+-#     There should be a random fact here. What do you have against javascript?
+-#     %a{href: 'https://google.com'}
+-#       google
+-#     is so cool.
 
-  :javascript
-    var i = getRandomIndex(facts.length - 1);
-    $('.fact').html(facts[i]);
+  -# :javascript
+    -# var i = getRandomIndex(facts.length - 1);
+    -# $('.fact').html(facts[i]);
