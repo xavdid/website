@@ -186,6 +186,7 @@ html, body {
 
       p {
         font-weight: 300;
+        text-align: justify;
       }
 
       article {
@@ -203,6 +204,15 @@ html, body {
 
           @include desktop {
             padding-bottom: 1%;
+          }
+        }
+
+        .page_nav {
+          text-align: center;
+
+          @include desktop {
+            text-align: left;
+
           }
         }
 
@@ -245,12 +255,16 @@ html, body {
             border-top: 1px solid $grey;
             padding-bottom: 3em;
             .meta {
-              float: right;
+              @include tablet {
+                float: right;
+              }
               clear: right;
               width: 7em;
             }
             .post {
-              width: 75%;
+              @include tablet {
+                width: 75%;
+              }
               text-align: justify;
               padding-top: 7px;
 
@@ -274,18 +288,21 @@ html, body {
             font-weight: 300;
             line-height: normal;
           }
-          // blockquote {
-          //   background-color: $code;
-          //   color: $white;
-          //   padding: 30px;
-          //   font-family: courier, helvetica;
-          //   margin-left: -10px;
-          // }
 
-          .tumblr_body {
+          .blog_body {
             text-align: justify;
 
-            code, pre {
+            img {
+              max-width: 100%;
+              max-height: 400px;
+              height: auto;
+
+              @include tablet {
+                height: initial;
+              }
+            }
+
+            code, pre, blockquote {
               background-color: $code;
               border-radius: 5px;
               // color is overwritten by syntax anyway
@@ -299,6 +316,12 @@ html, body {
             pre {
               // code blocks
               padding: 15px;
+            }
+
+            blockquote {
+              padding: 30px;
+              font-family: courier, helvetica;
+              // margin-left: -10px;
             }
 
             @import 'table.css.scss'

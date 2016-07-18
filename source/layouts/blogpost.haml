@@ -6,8 +6,11 @@
         %h1
           = current_article.title
 
-        .tumblr_body
+        .blog_body
           ~ current_article.body
+
+      %p
+        = link_to('Back to the Blog Index', '/blog.html')
 
     %aside
       .top
