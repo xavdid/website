@@ -34,30 +34,26 @@ header: index
   .bottom
     .row
       %a{href: "mailto:beamneocube@gmail.com", target: "_blank"}
-        .cell.left
+        .cell.floater
           %i.fa.fa-envelope.fa-3x
       %a{href: "https://github.com/xavdid", target: "_blank"}
-        .cell.left
+        .cell.floater
           %i.fa.fa-github-alt.fa-3x
-
-    .row
       %a{href: "https://twitter.com/xavdid", target: "_blank"}
-        .cell.right
+        .cell.floater
           %i.fa.fa-twitter.fa-3x
       %a{href: "https://www.linkedin.com/in/xavdid", target: "_blank"}
-        .cell.right
+        .cell.floater
           %i.fa.fa-linkedin.fa-3x
 
--# %aside.topper.third
--#   .heading
--#     Did You Know?
--# %aside
--#   %p.fact
--#     There should be a random fact here. What do you have against javascript?
--#     %a{href: 'https://google.com'}
--#       google
--#     is so cool.
+%aside
+  .top
+    .heading
+      Did You Know?
+  .bottom
+    %p.fact
+      There should be a random fact here. What do you have against javascript?
 
-  -# :javascript
-    -# var i = getRandomIndex(facts.length - 1);
-    -# $('.fact').html(facts[i]);
+  :javascript
+    var i = getRandomIndex(facts.length - 1);
+    $('.fact').html(facts[i]);

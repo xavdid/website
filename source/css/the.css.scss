@@ -103,6 +103,14 @@ html, body {
         padding: 0;
         list-style-type: none;
         color: $blue;
+        li {
+          @include desktop {
+            .long {
+              padding-left: 4%;
+              padding-right: 4%;
+            }
+          }
+        }
       }
       a {
         display: block;
@@ -129,14 +137,25 @@ html, body {
           padding-right: 2%;
         }
       }
+
+      @include desktop {
+        float: right;
+        width: 40%;
+      }
     }
 
     .my_name {
       border-bottom: 1px solid white;
+      @include desktop {
+        float: left;
+        margin-left: -4.5%;
+        margin-top: 0.95%;
+      }
     }
   }
 
   .main-container {
+    padding-bottom: $footer-size;
     a {
       color: $links;
       border-bottom: 1px solid $grey;
@@ -161,16 +180,64 @@ html, body {
         font-weight: 400;
       }
 
-      section {
-        padding-bottom: 5%;
+      p {
+        font-weight: 300;
+      }
 
-        p {
-          font-weight: 300;
+      article {
+        margin-left: -9%;
+
+        @include tablet {
+          margin-left: -7%;
+        }
+
+        @include desktop {
+          float: left;
+          width: 70%;
+          margin-left: -5%;
+        }
+
+        section {
+          padding-bottom: 5%;
+
+          @include tablet {
+            padding-bottom: 3%;
+          }
+
+          @include desktop {
+            padding-bottom: 1%;
+          }
+        }
+
+        // projects page
+        .jobs {
+          list-style-type: none;
+          li {
+            margin-bottom: 35px;
+
+            .heading {
+              margin-bottom: 10px;
+              .date {
+                font-style: italic;
+                font-size: .6em;
+              }
+            }
+
+            p {
+              margin-top: 0;
+            }
+          }
         }
       }
 
       aside {
         color: $white;
+        padding-bottom: 3%;
+
+        @include desktop {
+          float: right;
+          width: 30%;
+        }
 
         .top {
           background-color: $blue;
@@ -187,6 +254,7 @@ html, body {
           background-color: $dark-blue;
           // this is the most important line because it gives the box size
           overflow: hidden;
+          font: 16px Myriad Pro, Helvetica, Helvetica Neue, Arial;
 
           .row {
             text-align: center;
@@ -211,19 +279,12 @@ html, body {
                 }
               }
             }
-            .end {
-              padding-bottom: 9.65%;
-            }
-            .left {
-              float: left;
-            }
-            .right {
+            .floater {
               float: left;
             }
           }
         }
 
-        font: 16px Myriad Pro, Helvetica, Helvetica Neue, Arial;
         a {
           color: $maize;
           border-bottom: none;
@@ -237,12 +298,41 @@ html, body {
           width: 90%;
           padding-left: 5%;
         }
+      }
+    }
+  }
 
-        .third {
-          margin-top: 33%;
+  .footer-container {
+    height: $footer-size;
+    background-color: $blue;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    // overflow: hidden;
+
+    footer {
+      color: $white;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        li {
+          display: inline-block;
+          padding-right: 4%;
+          padding-top: 4px;
+
+          a {
+            color: $white;
+            &:hover {
+              color: $maize;
+            }
+            .sitename {
+              // the sites could hover names - not doing it rn
+              display: none;
+            }
+          }
         }
       }
     }
   }
-  .footer-container {}
 }
