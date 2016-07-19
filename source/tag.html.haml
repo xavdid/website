@@ -1,0 +1,17 @@
+---
+title: Blog by Tag
+header: blog
+---
+
+%article
+  %h1
+    Posts by Tag
+  %ul
+    - blog.tags.each do |tag, articles|
+      %li
+        %h3
+          = tag
+        %ul.indent
+          - articles.each do |article|
+            %li
+              %a{:href => article.url}= article.title

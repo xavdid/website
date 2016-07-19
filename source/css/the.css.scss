@@ -327,6 +327,16 @@ html, body {
             @import 'table.css.scss'
           }
         }
+
+        ul {
+          list-style-type: none;
+          li {
+            ul {
+              list-style-type: circle;
+              padding-left: 20px;
+            }
+          }
+        }
       }
 
       aside {

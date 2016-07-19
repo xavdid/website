@@ -1,0 +1,17 @@
+---
+title: Blog by Year
+header: blog
+---
+
+%article
+  %h1
+    Posts by Year
+  %ul
+    - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+      %li
+        %h3
+          = year
+        %ul.indent
+          - articles.each do |article|
+            %li
+              %a{:href => article.url}= article.title
