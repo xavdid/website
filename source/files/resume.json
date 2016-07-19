@@ -1,0 +1,174 @@
+{
+  "basics": {
+    "name": "David Brownman",
+    "label": "Software Development Engineer",
+    "email": "beamneocube@gmail.com",
+    "phone": "303.819.0850",
+    "website": "http://davidbrownman.com",
+    "summary": "Software Engineer and all around tinkerer. I like productivity apps, CSS, automation, and folk music.",
+    "location": {
+      "city": "Palo Alto",
+      "countryCode": "USA",
+      "region": "CA"
+    },
+    "profiles": [
+      {
+        "network": "Twitter",
+        "username": "@xavdid",
+        "url": "https://twitter.com/xavdid"
+      }, {
+        "network": "GitHub",
+        "username": "xavdid",
+        "url": "https://github.com/xavdid"
+      }, {
+        "network": "Linkedin",
+        "username": "xavdid",
+        "url": "www.linkedin.com/in/xavdid"
+      }
+    ]
+  },
+  "awards": [{
+    "title": "GTM Hero",
+    "date": "2016-05-09",
+    "awarder": "SalesforceIQ",
+    "summary": "Awarded for \"Acts of cross-fucntional heroism\" and enabling the sales team to excel as a result of extraordinary work"
+  }],
+  "work": [
+    {
+      "company": "SalesforceIQ",
+      "position": "Software Engineer - Internal Tools",
+      "website": "https://salesforceiq.com",
+      "startDate": "2014-05-19",
+      "endDate": "2016-05-18",
+      "summary": "Created internal tools that upped the productivity of other employees, both technical and non-technical. Also worked directly with the CTO to quickly roll out (mostly) pre-alpha and MVPs of new projects.",
+      "highlights": [
+        "Acquired by Salesforce 3 months after joining",
+        "Re-wrote internal information site in the interest of stability and user experience",
+        "Created a full-featured ruby sdk to access our API",
+        "Architected a testing framework from scratch to provide unit tests for our Zapier app",
+        "Maintained a set of ruby and javascript scripts and plugins that drove business operations"
+      ]
+    },
+    {
+      "company": "International Referee Development Program",
+      "position": "Technical Director",
+      "website": "http://refdevelopment.com",
+      "startDate": "2014-03-20",
+      "summary": "Technical lead responsible for the creation and maintenance of the IRDP website.",
+      "highlights": [
+        "Worked closely with the International Quidditch Association to power worldwide referee certification tools",
+        "Internationalized most of the site into 3 languages",
+        "Used Parse to implement backend and authentication and expanded Parse Ruby Gem to fit site needs"
+      ]
+    },
+    {
+      "company": "backstitch",
+      "position": "Software Development Intern",
+      "website": "https://backstit.ch",
+      "startDate": "2013-05-15",
+      "endDate": "2013-08-15",
+      "summary": "Full stack web development, focusing on Rails. Creating webpages from mockups, improving data processing for external links, and social media management.",
+      "highlights": [
+        "Learned Ruby/Rails, Javascript, and HAML on the fly to be able to be a productive member of the team",
+        "Aided marketing intern int he production of Google ADWords campaigns, demographic targeting, and UX design"
+      ]
+    },
+    {
+      "company": "Fetchnotes",
+      "position": "Software Engineer Intern",
+      "website": "https://fetchnotes.com",
+      "startDate": "2012-05-15",
+      "endDate": "2012-08-15",
+      "summary": "Backend development on a Python/Tornado stack. Developed on the API and improved object oriented design of storage objects.",
+      "highlights": [
+        "Expanded upon a flexible API to afford access to Mongo objects both internally and (eventually) other developers"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Michigan",
+      "startDate": "2010-09-04",
+      "endDate": "2014-05-02",
+      "area": "Social Computing Informatics",
+      "studyType": "Bachelor of Arts",
+      "courses": [
+        "[EECS 492] User Interface Development",
+        "[SI 422] Usability Evaluation",
+        "[SI 401] Ethics and Information Technology",
+        "[EECS 388] Computer Security",
+        "[SI 301] Models of Social Information Processing",
+        "[EECS 281] Data Structures and Algorithms"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Michigan Quidditch",
+      "position": "Co-Founder, Webmaster, Director of External Relations",
+      "website": "https://www.michiganquidditch.com/",
+      "startDate": "2010-10-01",
+      "endDate": "2014-05-01",
+      "summary": "Along with two others, founded and nurtured the team into greatness",
+      "highlights": [
+        "The team won multiple tournaments, was the only team to ever beat Middlebury (World Cup V), and was at one point ranked #3 in the world",
+        "Planned two incredibly successful Yule Balls (2013, 2014) which both sold out (raising generous capital)",
+        "Coordinated a successful Indiegogo campaign that raised $2600"
+      ]
+    },
+    {
+      "organization": "Kol HaKavod A Cappella",
+      "position": "Member",
+      "startDate": "2010-09-01",
+      "endDate": "2014-05-01",
+      "summary": "Participated in twice-weekly rehearsals, frequent gigs, and twice-yearly concerts.",
+      "highlights": [
+        "Competed twice in Kol HaOlam (National Jewish A Cappella competition) in Washington DC, winning 3rd place on our second outing",
+        "Recorded an awesome CD!"
+      ]
+    },
+    {
+      "organization": "Life Support Development Ministry",
+      "position": "Counselor",
+      "website": "https://www.lsdmo.com/",
+      "startDate": "2010-06-01",
+      "endDate": "2010-09-01",
+      "summary": "Coordinated day care activities for under-privileged youth in inner-city Houston.",
+      "highlights": [
+        "Coordinated outings, such as a group trip to the Houston Zoo",
+        "Acted both as a role model and a source of stability for kids generally lacking in these areas"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Software Development",
+      "keywords": [
+        "Ruby",
+        "Javascript",
+        "Python",
+        "Java"
+      ]
+    },
+    {
+      "name": "Web Development",
+      "keywords": [
+        "HAML",
+        "SCSS",
+        "AngularJS",
+        "Sinatra",
+        "Express"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    },
+    {
+      "language": "Japanese",
+      "fluency": "Rusty"
+    }
+  ]
+}
