@@ -10,7 +10,7 @@
           ~ current_article.body
 
       %p
-        = link_to('Back to the Blog Index', '/blog.html')
+        = link_to('back to the blog index', '/blog.html')
 
     %aside
       .top
@@ -18,7 +18,15 @@
           Published
           %time
             = current_article.date.strftime('%B %e, %Y')
+
       .bottom
+        %p
+          -# needs to be an array so the join works right
+          tags:
+          - a = []
+          - current_article.tags.each do |tag|
+            - a << link_to(tag, '/tag.html', {fragment: tag})
+          = a.join(', ')
         %p
           On this day
           = "(in #{current_article.data.fact_year}): #{current_article.data.fact}"
