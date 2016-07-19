@@ -2,6 +2,7 @@
 title: Errors Are Usually Bad! A Cautionary Tale
 fact: The first episode of the American animated series South Park premiered on Comedy Central.
 fact_year: 1997
+tags: python, RelateIQ
 ---
 
 The worst part about programming is that the computer does exactly what you tell it to. _Exactly_. 

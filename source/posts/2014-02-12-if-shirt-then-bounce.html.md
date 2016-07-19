@@ -2,6 +2,7 @@
 title: IF Shirt THEN Bounce That Email
 fact: George Gershwin's Rhapsody in Blue received its premiere in a concert titled "An Experiment in Modern Music," in New York, with Gershwin playing the piano.
 fact_year: 1924
+tags: automation, quidditch, ruby
 ---
 
 As you may or may not know, I'm one of the presidents of the highly ranked [Michigan Quidditch Team](http://michiganquidditch.com/). I've been with the team since the beginning and because I lived closest to the post office at the time, I've been in charge of shipping T-shirts to our fans all over the country. Until now, money has gone into my personal PayPal and I've just kept notes (usually of the [fetch](http://www.fetchnotes.com) variety) about which shirts I'd shipped and paid the team for. However, as my tenure with the team nears its end, we needed a more sustainable version of this system.

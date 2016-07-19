@@ -58,13 +58,15 @@ configure :build do
 
   # Minify Javascript on build
   # Don't need to, using minified stuff already.
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
 
   # Use relative URLs
   activate :relative_assets
+
+  activate :gzip
 
   # Or use a different image path
   # set :http_prefix, '/Content/images/'
@@ -104,13 +106,18 @@ activate :blog do |blog|
   blog.layout = 'blogpost'
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 750
-  blog.year_link = '{year}.html'
+  # blog.year_link = '{year}.html'
   # blog.month_link = '{year}/{month}.html'
   # blog.day_link = '{year}/{month}/{day}.html'
   blog.default_extension = '.md'
 
   # blog.tag_template = 'tag.html'
+
+  # use any of these for day/month/year pages to be generated
   # blog.calendar_template = 'calendar.html'
+  # blog.year_template = 'calendar.html'
+  # blog.generate_month_pages = false
+  # blog.generate_day_pages = false
 
   # Enable pagination
   blog.paginate = true

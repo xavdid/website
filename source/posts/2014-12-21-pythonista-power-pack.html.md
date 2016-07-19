@@ -2,6 +2,7 @@
 title: Pythonista Power Pack
 fact: Arthur Wynne's "word-cross", the first crossword puzzle, is published in the New York World.
 fact_year: 1913
+tags: ios, python, dropbox
 ---
 
 [Pythonista](http://omz-software.com/pythonista/) is an amazing iOS app that brings the power of a python IDE to your iPhone, complete with an interpreter and a set of custom-made modules for interacting with the phone's ecosystem (contacts, clipboard, [etc](http://omz-software.com/pythonista/docs/ios/)). It's powerful out of the box, but there are some easy improvements that you can make so that development really is a breeze, namely the ability to download public gists and Dropbox syncing. Both are pretty straightforward and require minimal coding expertise (but of course, that doesn't bother you. You're still reading this, after all). 

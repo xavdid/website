@@ -15,3 +15,5 @@ header: blog
           - articles.each do |article|
             %li
               %a{:href => article.url}= article.title
+
+= partial 'blog_agg'

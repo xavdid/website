@@ -251,16 +251,24 @@ html, body {
         .blog {
           list-style-type: none;
           width: 95%;
-          li {
+          .summary {
             border-top: 1px solid $grey;
-            padding-bottom: 3em;
+            &:not(:last-child) {
+              padding-bottom: 3em;
+            }
+
             .meta {
               @include tablet {
                 float: right;
               }
               clear: right;
               width: 7em;
+              ul {
+                margin-top: 0;
+                padding-left: 20px;
+              }
             }
+
             .post {
               @include tablet {
                 width: 75%;
@@ -333,7 +341,7 @@ html, body {
           li {
             ul {
               list-style-type: circle;
-              padding-left: 20px;
+              padding-left: 40px;
             }
           }
         }

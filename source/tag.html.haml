@@ -7,11 +7,14 @@ header: blog
   %h1
     Posts by Tag
   %ul
-    - blog.tags.each do |tag, articles|
-      %li
-        %h3
-          = tag
-        %ul.indent
-          - articles.each do |article|
+    -# keys are output alphabetically, case insensitive
+    - blog.tags.keys.sort_by{|x| x.downcase}.each do |tag|
+      %li.spaced
+        %h3{id: tag}
+          = "##{tag}"
+        %ul
+          - blog.tags[tag].each do |article|
             %li
               %a{:href => article.url}= article.title
+
+= partial 'blog_agg'
