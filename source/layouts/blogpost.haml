@@ -1,22 +1,32 @@
 
 = wrap_layout :layout do
   - if is_blog_article?
-    .blog_posts
-      %article.tumblr_post
-        %h1.tumblr_title
+    %article
+      .blog_post
+        %h1
           = current_article.title
 
-        .tumblr_body
+        .blog_body
           ~ current_article.body
 
-    %aside.topper
-      .heading
-        %span
-          Published
-        %time
-          = current_article.date.strftime('%B %e, %Y')
-    %aside
       %p
-        On this day
-        = "(in #{current_article.data.fact_year}): #{current_article.data.fact}"
+        = link_to('back to the blog index', '/blog.html')
 
+    %aside
+      .top
+        .heading
+          Published
+          %time
+            = current_article.date.strftime('%B %e, %Y')
+
+      .bottom
+        %p
+          -# needs to be an array so the join works right
+          tags:
+          - a = []
+          - current_article.tags.each do |tag|
+            - a << link_to(tag, '/tag.html', {fragment: tag})
+          = a.join(', ')
+        %p
+          On this day
+          = "(in #{current_article.data.fact_year}): #{current_article.data.fact}"

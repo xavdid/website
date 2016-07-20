@@ -1,0 +1,20 @@
+---
+title: Blog by Tag
+header: blog
+---
+
+%article
+  %h1
+    Posts by Tag
+  %ul
+    -# keys are output alphabetically, case insensitive
+    - blog.tags.keys.sort_by{|x| x.downcase}.each do |tag|
+      %li.spaced
+        %h3{id: tag}
+          = "##{tag}"
+        %ul
+          - blog.tags[tag].each do |article|
+            %li
+              %a{:href => article.url}= article.title
+
+= partial 'blog_agg'
