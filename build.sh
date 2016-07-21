@@ -11,7 +11,7 @@ function err()
 }
 
 if [[ "$@*" == *-h* ]]; then
-    echo -e "Build Script\nOptions:\n\t-h\t\tshow this help text\n\t-t\t\tpublish resume\n\t--no-tests\tbuild without tests\n"
+    echo -e "Build Script\nOptions:\n\t-h\t\tshow this help text\n\t-t\t\tpublish resume\n\t--no-tests\tbuild without tests\n\t-d\t\tdeploy to github"
     exit 0
 fi
 
@@ -50,7 +50,7 @@ if [[ "$@*" == *-r* ]]; then
 fi
 
 logger "Ready to push"
-if [[ "$@*" == *-b* ]]; then
+if [[ "$@*" == *-d* ]]; then
     logger "Pushing"
     middleman-deploy
 fi

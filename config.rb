@@ -2,14 +2,13 @@
 
 # Reload the browser automatically whenever files change
 activate :livereload
+activate :directory_indexes
 
 set :css_dir, 'css'
-
 set :js_dir, 'js'
-
 set :images_dir, 'img'
 
-activate :directory_indexes
+# ignore 'README.md'
 
 # Build-specific configuration
 configure :build do
@@ -53,8 +52,8 @@ set :haml, ugly:                 true,
            remove_whitespace:    false,
            hyphenate_data_attrs: false
 
-page '/*.xml', layout: false
-page '/*.json', layout: false
+# page '/*.xml', layout: false
+# page '/*.json', layout: false
 page '/*.txt', layout: false
 
 activate :blog do |blog|
