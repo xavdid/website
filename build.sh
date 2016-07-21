@@ -16,8 +16,8 @@ if [[ "$@*" == *-h* ]]; then
 fi
 
 # clean up last build
-logger "Cleaning"
-./clean.sh
+# logger "Cleaning"
+# ./clean.sh
 
 # run from project root (where it is)
 bundle exec middleman build # --clean
@@ -38,9 +38,9 @@ if ! [[ "$@*" == *--no-test* ]]; then
     logger "Tests Passed"
 fi
 
-logger "Copying"
-cp -r build/* .
-rm -rf build
+# logger "Copying"
+# cp -r build/* .
+# rm -rf build
 
 # run with the -r flag to push resume as well!
 if [[ "$@*" == *-r* ]]; then
@@ -50,3 +50,7 @@ if [[ "$@*" == *-r* ]]; then
 fi
 
 logger "Ready to push"
+if [[ "$@*" == *-b* ]]; then
+    logger "Pushing"
+    middleman-deploy
+fi

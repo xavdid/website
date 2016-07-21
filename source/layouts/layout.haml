@@ -38,23 +38,23 @@
     .header-container
       %header.wrapper.clearfix
         %h1.title
-          %a{href: "/index.html"}
+          %a{href: "/"}
             %span.my_name
               David Brownman
 
         %nav
           %ul
             %li
-              %a.short{href: "/index.html", class: ('active' if current_page.data.header == 'index')}
+              %a.short{href: "/", class: ('active' if current_page.data.header == 'index')}
                 Home
             %li
-              %a.short{href: "/blog.html", class: ('active' if (current_page.data.header == 'blog' || current_page.url.include?('/blog/')))}
+              %a.short{href: "/blog", class: ('active' if (current_page.data.header == 'blog' || current_page.url.include?('/blog/')))}
                 Blog
             %li
-              %a.long{href: "/projects.html", class: ('active' if current_page.data.header == 'projects')}
+              %a.long{href: "/projects", class: ('active' if current_page.data.header == 'projects')}
                 Projects
             %li
-              %a.long{href: "/misc.html", class: ('active' if current_page.data.header == 'misc')}
+              %a.long{href: "/misc", class: ('active' if current_page.data.header == 'misc')}
                 Sundries
     .main-container
       -# removed .wrapper.clearfix from main
