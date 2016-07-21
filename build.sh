@@ -49,8 +49,9 @@ if [[ "$@*" == *-r* ]]; then
     logger "Publishing Resume"
 fi
 
-logger "Ready to push"
 if [[ "$@*" == *-d* ]]; then
     logger "Pushing"
-    middleman-deploy
+    middleman deploy
+else
+    logger "Ready to push"
 fi
