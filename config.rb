@@ -72,6 +72,11 @@ configure :build do
   # set :http_prefix, '/Content/images/'
 end
 
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.branch   = 'master'
+end
+
 activate :syntax
 set :markdown,  fenced_code_blocks:           true,
                 footnotes:                    true,
@@ -92,33 +97,12 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-# page '/blog/*' do |a|
-#   @article = current_article
-# end
-
 activate :blog do |blog|
-  # This will add a prefix to all links, template references and source paths
-  # blog.prefix = 'blog'
-
   blog.permalink = '/blog/{year}/{month}/{day}/{title}.html'
-  # Matcher for blog source files
   blog.sources = '/posts/{year}-{month}-{day}-{title}.html'
-  # blog.taglink = 'tags/{tag}.html'
+
   blog.layout = 'blogpost'
-  # blog.summary_separator = /(READMORE)/
-  # blog.summary_length = 750
-  # blog.year_link = '{year}.html'
-  # blog.month_link = '{year}/{month}.html'
-  # blog.day_link = '{year}/{month}/{day}.html'
   blog.default_extension = '.md'
-
-  # blog.tag_template = 'tag.html'
-
-  # use any of these for day/month/year pages to be generated
-  # blog.calendar_template = 'calendar.html'
-  # blog.year_template = 'calendar.html'
-  # blog.generate_month_pages = false
-  # blog.generate_day_pages = false
 
   # Enable pagination
   blog.paginate = true
