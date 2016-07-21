@@ -75,10 +75,11 @@ end
 activate :syntax
 set :markdown,  fenced_code_blocks:           true,
                 footnotes:                    true,
-                disable_indented_code_blocks: true,
+                disable_indented_code_blocks: false,
                 autolink:                     true,
                 strikethrough:                true,
-                tables:                       true
+                tables:                       true,
+                with_toc_data:                true
 # kramdown didn't work
 set :markdown_engine, :redcarpet
 

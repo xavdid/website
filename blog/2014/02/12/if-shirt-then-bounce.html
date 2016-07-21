@@ -23,7 +23,7 @@ IF Shirt THEN Bounce That Email - David Brownman dot com
 <meta content='Personal site for David Brownman' name='description'>
 <meta content='width=device-width' name='viewport'>
 <link href="../../../../css/the-09ccbcf9.css" rel="stylesheet" /><link href="../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../../../../js/facts-97694eaa.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../../../../js/facts-dfa7c003.js"></script>
 <link href="../../../../img/favicon.ico" rel="icon" type="image/ico" />
 </head>
 <body>
@@ -81,7 +81,7 @@ IF Shirt THEN Bounce That Email
 
 <p>A few weeks ago I got <em>really</em> into automating stuff with <a href="https://ifttt.com">IFTTT</a>. If you&#39;re not familiar, it&#39;s a services that connects accounts together and lets you automate actions between services. For example, you can sat set up recipes like IF I&#39;m tagged in a photo on Facebook THEN download a copy of that photo to my Dropbox. Wouldn&#39;t it be cool if I could capture PapPal emails, parse them, and store that data in a database or spreadsheet?</p>
 
-<p>Using the Email channel it&#39;s easy enough to capture purchase emails from PayPal, Unfortunately, there was no easy way to pull the content out of that email for use somewhere else. That&#39;s where this <a href="https://github.com/captn3m0/ifttt-webhook">middleware</a> comes in. It functions as a fake Wordpress blog that IFTTT can send POST requests to, vastly opening up the realm of possibilities when it comes to where we can send our data. Now I could send a POST request with the plaintext (an IFTTT restriction) anywhere on the web. </p>
+<p>Using the Email channel it&#39;s easy enough to capture purchase emails from PayPal, Unfortunately, there was no easy way to pull the content out of that email for use somewhere else. That&#39;s where this <a href="https://github.com/captn3m0/ifttt-webhook">middleware</a> comes in. It functions as a fake Wordpress blog that IFTTT can send POST requests to, vastly opening up the realm of possibilities when it comes to where we can send our data. Now I could send a POST request with the plaintext (an IFTTT restriction) anywhere on the web.</p>
 
 <p>Wanting to fiddle with <a href="http://sinatrarb.com">Sinatra</a>, the new toy I just learned about, I whipped together a quick <a href="https://gist.github.com/xavdid/8930419">endpoint</a> that could accept a nice POST request and throw some regex parsing at it.<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup> From there, it uses my newly provisioned <a href="http://www.sendgrid.com">Sendgrid</a> account to email IFTTT with a nicely formatted string that includes all of the relevant shirt info.</p>
 
@@ -91,13 +91,13 @@ IF Shirt THEN Bounce That Email
 <li>Email arrives after someone purchases a shirt.</li>
 <li>IFTTT uses <a href="https://ifttt.com/recipes/145811-forward-paypal-emails-to-webapp">this</a> recipe to send the plaintext version of the email to the web app.<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup></li>
 <li>The app gets the data as a post request, parses out the address, email, name, and sizes.</li>
-<li>It sticks that information into an email and sends it back to IFTTT with the subject being the spreadsheet row (<code>email ||| name ||| address ||| etc</code>) and the tag &quot;#quid&quot;, triggering <a href="https://ifttt.com/recipes/145812-put-quid-emails-into-a-spreadsheet">this</a> recipe. </li>
+<li>It sticks that information into an email and sends it back to IFTTT with the subject being the spreadsheet row (<code>email ||| name ||| address ||| etc</code>) and the tag &quot;#quid&quot;, triggering <a href="https://ifttt.com/recipes/145812-put-quid-emails-into-a-spreadsheet">this</a> recipe.</li>
 <li>You end up with a nice spreadsheet and it&#39;s easy to keep tabs on the whole process!</li>
 </ol>
 
-<p>The nice thing is that even though I&#39;ll be leaving, this system is easy to replicate because of the portability of the IFTTT recipes. Plus, the app can keep filling a spreadsheet regardless of who&#39;s PayPal has been accepting the payments. This will hopefully help Michigan Quidditch continue on their path to greatness. </p>
+<p>The nice thing is that even though I&#39;ll be leaving, this system is easy to replicate because of the portability of the IFTTT recipes. Plus, the app can keep filling a spreadsheet regardless of who&#39;s PayPal has been accepting the payments. This will hopefully help Michigan Quidditch continue on their path to greatness.</p>
 
-<p>Oh, and you can see it in action at <a href="http://shirtbounce.herokuapp.com">shirtbounce.herokuapp.com</a>. </p>
+<p>Oh, and you can see it in action at <a href="https://shirtbounce.herokuapp.com">shirtbounce.herokuapp.com</a>.</p>
 
 <div class="footnotes">
 <hr>
@@ -117,7 +117,11 @@ IF Shirt THEN Bounce That Email
 </div>
 </div>
 <p>
-<a href="/blog.html">back to the blog index</a>
+<i class='fa fa-arrow-left'></i>
+<a href="/blog.html">Blog Index</a>
+|
+<a href="/blog/2013/10/02/simulations-simulated.html">Random Post</a>
+<i class='fa fa-random'></i>
 </p>
 </article>
 <aside>
@@ -132,7 +136,7 @@ February 12, 2014
 <div class='bottom'>
 <p>
 tags:
-<a href="/tag.html#automation">automation</a>, <a href="/tag.html#quidditch">quidditch</a>, <a href="/tag.html#ruby">ruby</a>
+<a href="/tags.html#automation">automation</a>, <a href="/tags.html#quidditch">quidditch</a>, <a href="/tags.html#ruby">ruby</a>
 </p>
 <p>
 On this day

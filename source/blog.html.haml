@@ -4,11 +4,6 @@ header: blog
 pageable: true
 ---
 
--# %p.mini_header
--#   My 10 most recent blog posts can be found (with custom styles) here. There's also a full
--#   %a{href:"http://blog.davidbrownman.com"}<
--#     archive
--#   if you're really that bored.
 %article
   %ul.blog
     - page_articles.each do |article|
@@ -45,7 +40,7 @@ pageable: true
     See also
     = link_to('by year', 'calendar.html')
     or
-    = link_to('by tag', 'tag.html')
+    = link_to('by tag', 'tags.html')
 
 %aside
   .top
@@ -54,7 +49,7 @@ pageable: true
   .bottom
     %p
       Here's my collection of blog posts (both technical and otherwise) presented chronicled in reverse. You can also see all posts sorted by
-      = link_to('tag', 'tag.html')
+      = link_to('tag', 'tags.html')
       or
       = link_to('year', 'calendar.html')
       to best find what you're looking for.

@@ -24,7 +24,9 @@ var facts = [
   'When I first moved to California, I lived in the "Silicon Valley Tech House" in adult-size bunk beds with 11 other people. HBO\'s Silicon Valley was basically a documentary about our lives.',
   "I've gotten very good at taking 6am flights to locations on the east coast because that's best way to travel eastward without losing your entire day.",
   "I prefer Marvel to DC, though I've got a soft spot for Batman",
-  'I won an award at work once that came with a huge lego rocket ship!'
+  'I won an award at work once that came with a huge lego rocket ship!',
+  "Each blog post comes with a matching historical event that happened the same day. As a rule, I use the earliest semi-interesting fact I can find. The facts favor things Wikipedia decides are notable, since that's where I get my facts.",
+  'While funemployed, I\'ve been working through a <a href="https://publists.herokuapp.com/user/6452502/lists/250731358" target="_blank">list</a> of tasks I haven\'t previously had time for.'
 ]
 
 function getRandomIndex (max) {

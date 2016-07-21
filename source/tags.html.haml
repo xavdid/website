@@ -11,10 +11,10 @@ header: blog
     - blog.tags.keys.sort_by{|x| x.downcase}.each do |tag|
       %li.spaced
         %h3{id: tag}
-          = "##{tag}"
+          = "# #{tag}"
         %ul
-          - blog.tags[tag].each do |article|
+          - blog.tags[tag].sort_by{|x| x.title}.each do |article|
             %li
               %a{:href => article.url}= article.title
 
-= partial 'blog_agg'
+= partial 'partials/blog_agg'

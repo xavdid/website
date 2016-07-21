@@ -1,9 +1,8 @@
 ---
 title: Heroku CLI Plugins and You
-<!-- tags: javascript heroku tutorial -->
 fact: Reports are broadcast that a UFO crash landed in Roswell, New Mexico in what became known as the Roswell UFO incident.
 fact_year: 1947
-tags: heroku, javascript, tutorial
+tags: heroku, javascript, tutorial, programming
 ---
 
 We as developers are working in a golden age of programming where pushing code has never been easier. My personal favorite place to deploy things is [Heroku](https://heroku.com) because of its customizability, clear (and cheap) pricing structure, and powerful tools.
@@ -37,7 +36,7 @@ Primary help topics, type "heroku help TOPIC" for more details:
   ...
 ```
 
-If you're going to create a new topic, your module will need to export a `topic` object in addition to the command(s). [^1] 
+If you're going to create a new topic, your module will need to export a `topic` object in addition to the command(s). [^1]
 
 ### Plugin Layout
 
@@ -51,7 +50,7 @@ At the end of the day, your plugin's `main` file will need to export a `Command`
 | needsApp | bool | whether or not the command will act upon a specific app (either inferred or specified). Defaults to false |
 | needsAuth | bool | whether or not the command needs write access to the app. Defaults to false |
 | flags | object | defines the settings your command can be run with |
-| run | function | the main function for your command) |
+| run | function | the main function for your command |
 
 ### The Function Itself
 
@@ -165,7 +164,7 @@ module.exports = {
 }
 ```
 
-The `co.wrap()` function takes a generator and turns it into a regular function that returns a promise, perfect for our previous code that expects a regular promise-returning function anyway. 
+The `co.wrap()` function takes a generator and turns it into a regular function that returns a promise, perfect for our previous code that expects a regular promise-returning function anyway.
 
 ### Surfacing Errors
 
@@ -188,7 +187,7 @@ Did you catch that last bit? The `cli` package provides a helpful `exit()` metho
 
 They've got pretty concise instructions for that [here](https://devcenter.heroku.com/articles/developing-cli-plug-ins#releasing-plugins).
 
-Your plugin doesn't have to be named `heroku-NAME`, but it will help people find it! In either case, any npm package can be installed with `heroku plugins:install NAME` (though that command will fail if the installed plugin isn't exporting a well-formatted Heroku plugin). 
+Your plugin doesn't have to be named `heroku-NAME`, but it will help people find it! In either case, any npm package can be installed with `heroku plugins:install NAME` (though that command will fail if the installed plugin isn't exporting a well-formatted Heroku plugin).
 
 ## tl;dr
 

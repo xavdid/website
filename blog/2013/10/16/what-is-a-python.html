@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if gt IE 8]>
+<!--> <html class="no-js"> <!--
+<![endif]-->
+<head>
+<!-- You're looking at my site's source! That's pretty cool. It's pretty straightforward. Template taken from HTML5Boilderplate, css adapted to my liking. -->
+<!-- This site was laregely designed by Jennifer Herzberg, who rules. -->
+<meta charset='utf-8'>
+<!-- hyphens are dumb -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>
+What the Hell is a Python? - David Brownman dot com
+</title>
+<meta content='Personal site for David Brownman' name='description'>
+<meta content='width=device-width' name='viewport'>
+<link href="../../../../css/the-09ccbcf9.css" rel="stylesheet" /><link href="../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../../../../js/facts-dfa7c003.js"></script>
+<link href="../../../../img/favicon.ico" rel="icon" type="image/ico" />
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en/">upgrade your browser</a>.
+<![endif]-->
+<div class='border'></div>
+<div class='page'>
+<div class='header-container'>
+<header class='wrapper clearfix'>
+<h1 class='title'>
+<a href='/index.html'>
+<span class='my_name'>
+David Brownman
+</span>
+</a>
+</h1>
+<nav>
+<ul>
+<li>
+<a class='short' href='/index.html'>
+Home
+</a>
+</li>
+<li>
+<a class='active short' href='/blog.html'>
+Blog
+</a>
+</li>
+<li>
+<a class='long' href='/projects.html'>
+Projects
+</a>
+</li>
+<li>
+<a class='long' href='/misc.html'>
+Sundries
+</a>
+</li>
+</ul>
+</nav>
+</header>
+</div>
+<div class='main-container'>
+<div class='main clearfix wrapper'>
+<article>
+<div class='blog_post'>
+<h1>
+What the Hell is a Python?
+</h1>
+<div class='blog_body'>
+<p>It&#39;s a large genus of snake found mostly in Africa and the sub-continent of Asia. Wait, that&#39;s not important right now.</p>
+
+<p>Really though, Python a programming language. It&#39;s good for lots of simple tasks and I think everyone should know a bit about it. It also has the added bonus of being popular for data manipulation. It doesn&#39;t matter what field you&#39;re in, there&#39;s going to be some task that can be improved or eased by a computer doing more of the lifting for you. This guide is aimed at people with no technological experience and should be easy to pick up and help you be computer-awesome in no time.</p>
+
+<p><strong>Remember:</strong> <em>Learning to code is a lot like riding a bike: you&#39;re still a fine person if you can&#39;t, but learning to do so will save you a lot of time.</em></p>
+
+<p></p>
+
+<h2 id="what-exactly-is-programming">What exactly is programming?</h2>
+
+<p>It&#39;s simple! Programs are sets of instructions that manipulate <em>variables</em> that are followed explicitly (in order!) by a computer (and without ambiguity). There&#39;s a fun exercise you can do with kids where you have someone try to verbally explain how to make a PB&amp;J to someone who purposefully misunderstands instructions. You end up with an exchange something like this:</p>
+
+<p>&quot;Put the peanut butter on the bread.&quot; <em>He sets the jar on a loaf of bread</em>
+&quot;I meant open the jar first&quot; <em>opens jar, sets it on loaf of bread</em>
+&quot;Wait, get two pieces of bread out and put the knife in the peanut butter&quot; <em>stacks bread, PB, and knife jammed in jar</em></p>
+
+<p>As you can see, English is ambiguous, which is why computers are so nitpicky about syntax. They&#39;re going to execute the program and they want to make sure they do exactly what you say.</p>
+
+<h2 id="let-39-s-get-our-hands-dirty">Let&#39;s get our hands dirty</h2>
+
+<p>All you need to follow along is access to a Python interpreter. One can be found pre-installed on Mac computers (by typing <code>python</code> into the <code>Terminal</code> application) or online <a href="https://repl.it/languages/python">here</a>.</p>
+
+<p>In Python, there are a few different <strong>data types</strong>: integer and string are the most common ones. <em>Integers</em> are any whole number, and <em>strings</em> are words. Now let&#39;s apply it.</p>
+
+<p>Hit Command+Space to bring up the spotlight search bar. Search for &quot;Terminal&quot; (the icon is a black box). Click that, and when it pops up, type the word &#39;python&#39; (without the quotes). You should now see a couple of lines about text followed by <code>&gt;&gt;&gt;</code>. That&#39;s the computer telling you that it expects some input, so let&#39;s give it something. Hit enter to submit a line.</p>
+<pre class="highlight plaintext"><code>&gt;&gt;&gt; 1&#x000A;1&#x000A;&gt;&gt;&gt; 'name'&#x000A;'name'&#x000A;&gt;&gt;&gt; '1'&#x000A;'1'&#x000A;</code></pre>
+
+<p>Numbers that aren&#39;t in quotes are integers. Anything in quotes is a string (like the last 1, which isn&#39;t considered a number because it&#39;s in quotes). Make sense?</p>
+
+<p>You can perform basic math on numbers just like you&#39;d expect.</p>
+<pre class="highlight plaintext"><code>&gt;&gt;&gt; 1+1&#x000A;2&#x000A;&gt;&gt;&gt; 2+2&#x000A;4&#x000A;&gt;&gt;&gt; 3*3&#x000A;9&#x000A;</code></pre>
+
+<p>So that&#39;s neat. You can add strings, too! This is called <em>concatenation</em> and literally means tacking one thing onto the next.</p>
+<pre class="highlight plaintext"><code>&gt;&gt;&gt; 'hello'&#x000A;'hello'&#x000A;&gt;&gt;&gt; 'hello'+'david'&#x000A;'hellodavid'&#x000A;&gt;&gt;&gt; 'hello '+'david'&#x000A;'hello david'&#x000A;&gt;&gt;&gt; '1'+'1'&#x000A;'11'&#x000A;</code></pre>
+
+<p>Did you catch that at the end? Python added the two strings together, just like we told it to. The fact that they&#39;re numbers and we might have been expecting 2 as output doesn&#39;t matter to it- we gave it instructions and it followed.</p>
+
+<h2 id="boxes-on-boxes-on-boxes">Boxes on boxes on boxes</h2>
+
+<p>Programming would be a boring field if all we could do was stick strings of letters together. Luckily, we can store values in <em>things</em>. These can be <strong>variables</strong>, lists, or other things.</p>
+<pre class="highlight plaintext"><code>&gt;&gt;&gt; x&#x000A;Traceback (most recent call last):&#x000A;File "&lt;string&gt;", line 1, in &lt;module&gt;&#x000A;NameError: name 'x' is not defined&#x000A;&gt;&gt;&gt; x = 3&#x000A;&gt;&gt;&gt; x&#x000A;3&#x000A;&gt;&gt;&gt; x+1&#x000A;4&#x000A;&gt;&gt;&gt; x+x&#x000A;6&#x000A;</code></pre>
+
+<p>Before you set <code>x</code> to something, it&#39;s nothing (and using it gives an error, like so). Now, any time we use <code>x</code>, it&#39;s going to evaluate to 3. That is, the computer doesn&#39;t even see the fact that it&#39;s <code>x</code>, it just mentally replaces it with 3 every time. You can scroll up and do any of the previous examples with variables replacing the strings or <code>int</code>s we use.</p>
+
+<p>We can also use lists, which are just what you&#39;d think they&#39;d be. Collections of items in a certain order that happens to be very useful. You can access certain <em>elements</em> in a list as shown below. Note that everything in computer science is &quot;0-indexed&quot;, which means lists start at 0, not at 1.</p>
+<pre class="highlight plaintext"><code>&gt;&gt;&gt; list = [1,2,3,4,5]&#x000A;&gt;&gt;&gt; list&#x000A;[1,2,3,4,5]&#x000A;&gt;&gt;&gt; list[0]&#x000A;1&#x000A;&gt;&gt;&gt; list[2]&#x000A;3&#x000A;&gt;&gt;&gt; list[3]+list[1]&#x000A;6&#x000A;</code></pre>
+
+<p>Now, storing variables is cool, but if we&#39;re not making the computer do most of the work, we&#39;re doing it wrong. We want to get all of the elements from the list, but we don&#39;t want to type <code>list[0], list[1], list[2]</code>, especially for long lists. That&#39;s where <code>for</code> loops come in!</p>
+
+<p><code>For</code> loops perform a specific set of instructions a set amount of times. They&#39;re convenient for doing something with every item in a list or an operation exactly 8 times. <code>For</code> loops have an internal <em>iterator</em>, a variable that is set to every element in the list before the instructions are run. This iterator can be named just like any other variable and usually has something to do with the contents of the list. <sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup></p>
+<pre class="highlight plaintext"><code>&gt;&gt;&gt; list = ['David','Karen','Chuck','Shawn','Jenny']&#x000A;&gt;&gt;&gt; for name in list:&#x000A;...   print name&#x000A;...&#x000A;'David'&#x000A;'Karen'&#x000A;'Chuck'&#x000A;'Shawn'&#x000A;'Jenny'&#x000A;&gt;&gt;&gt; list = [1,2,3,4,5]&#x000A;&gt;&gt;&gt; for number in list:&#x000A;...   print number+1&#x000A;...&#x000A;2&#x000A;3&#x000A;4&#x000A;5&#x000A;6&#x000A;</code></pre>
+
+<p>Above,  the variables <code>number</code> and <code>name</code> are set to each list item, then the code inside the block is run. Note that the <em>iterator</em> takes the type of whatever the list item was. Our strings set <code>name</code> to a string while <code>number</code> knows that it&#39;s an integer and reacts accordingly.</p>
+
+<p>The <code>...</code> that follows lines ending in a <code>:</code> is there because indentation matters in Python. You&#39;re making a loop, so Python needs to know exactly which instructions to run in that loop. The <code>...</code> lets you know that Python is still taking loop instructions. Additionally, you need to add a space (or two, as long as you&#39;re consistent) before each loop instruction to create the indentation. The command line doesn&#39;t do this for you. To end the loop, just input an empty line. Loops are super helpful, so make sure you understand them!</p>
+
+<h2 id="let-39-s-put-it-all-together">Let&#39;s put it all together!</h2>
+
+<p>Big, complicated programs are actually just collections of little programs. So, let&#39;s put some simple things that you know how to do together and make something neat!</p>
+
+<p>Let&#39;s start with two lists, <code>names = [&#39;David&#39;, &#39;Karen&#39;, &#39;Chuck&#39;, &#39;Shawn&#39;, &#39;Jenny&#39;]</code> and <code>favorites = [1, 3, 4]</code>. Write a short program that greets each of the favorites. The output should look like this:</p>
+<pre class="highlight plaintext"><code>Hi, Karen!&#x000A;Hi, Shawn!&#x000A;Hi, Jenny!&#x000A;</code></pre>
+
+<p>Remember, you&#39;ll need to declare the lists yourself. You&#39;ll also need to use <code>for</code> loops of some sort.</p>
+
+<p>Once you&#39;ve written a solution, click <a href="http://d.pr/f/fyUT">here</a> to see if you&#39;re right <sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup>.</p>
+
+<p>That&#39;s all for this installment. There will probably be more to come! If you&#39;ve got any feedback or questions, let me know on Twitter <a href="https://twitter.com/xavdid">@xavdid</a>. If you&#39;re hungry for more, you can check out LearnXinYMinutes&#39; <a href="https://learnxinyminutes.com/docs/python/">python article</a>. Thanks for reading!</p>
+
+<div class="footnotes">
+<hr>
+<ol>
+
+<li id="fn1">
+<p>Naming variables in a certain way is a <em>naming convention</em>. There&#39;s no rule that says all of your variables can&#39;t be named after food always, but it&#39;s bad form and makes your code confusing. In the interest of readability, give variables descriptive names!&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn2">
+<p>My solution may look different from yours, which is good! As long as our output is the same, you&#39;re good to go.&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+</div>
+</div>
+<p>
+<i class='fa fa-arrow-left'></i>
+<a href="/blog.html">Blog Index</a>
+|
+<a href="/blog/2014/08/13/errors-are-usually-bad.html">Random Post</a>
+<i class='fa fa-random'></i>
+</p>
+</article>
+<aside>
+<div class='top'>
+<div class='heading'>
+Published
+<time>
+October 16, 2013
+</time>
+</div>
+</div>
+<div class='bottom'>
+<p>
+tags:
+<a href="/tags.html#programming">programming</a>, <a href="/tags.html#python">python</a>, <a href="/tags.html#tutorial">tutorial</a>
+</p>
+<p>
+On this day
+(in 1923): The Walt Disney Company is founded by Walt Disney and his brother, Roy Disney.
+</p>
+</div>
+</aside>
+
+</div>
+</div>
+<div class='footer-container'>
+<footer class='wrapper'>
+<ul>
+<li>
+<a href='/'>
+<i class='fa fa-home fa-2x'></i>
+</a>
+</li>
+<li>
+<a href='mailto:beamneocube@gmail.com' target='_blank'>
+<i class='fa fa-envelope fa-2x'></i>
+<span class='sitename'>
+Email
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.github.com/xavdid' target='_blank'>
+<i class='fa fa-github-alt fa-2x'></i>
+<span class='sitename'>
+GitHub
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.twitter.com/xavdid' target='_blank'>
+<i class='fa fa-twitter-square fa-2x'></i>
+<span class='sitename'>
+Twitter
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.linkedin.com/in/xavdid' target='_blank'>
+<i class='fa fa-linkedin-square fa-2x'></i>
+<span class='sitename'>
+Linkedin
+</span>
+</a>
+</li>
+</ul>
+</footer>
+</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-40842533-1', 'davidbrownman.com');
+  ga('send', 'pageview');
+</script>
+</body>

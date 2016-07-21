@@ -23,7 +23,7 @@ Pythonista Power Pack - David Brownman dot com
 <meta content='Personal site for David Brownman' name='description'>
 <meta content='width=device-width' name='viewport'>
 <link href="../../../../css/the-09ccbcf9.css" rel="stylesheet" /><link href="../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../../../../js/facts-97694eaa.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../../../../js/facts-dfa7c003.js"></script>
 <link href="../../../../img/favicon.ico" rel="icon" type="image/ico" />
 </head>
 <body>
@@ -75,54 +75,58 @@ Sundries
 Pythonista Power Pack
 </h1>
 <div class='blog_body'>
-<p><a href="http://omz-software.com/pythonista/">Pythonista</a> is an amazing iOS app that brings the power of a python IDE to your iPhone, complete with an interpreter and a set of custom-made modules for interacting with the phone&#39;s ecosystem (contacts, clipboard, <a href="http://omz-software.com/pythonista/docs/ios/">etc</a>). It&#39;s powerful out of the box, but there are some easy improvements that you can make so that development really is a breeze, namely the ability to download public gists and Dropbox syncing. Both are pretty straightforward and require minimal coding expertise (but of course, that doesn&#39;t bother you. You&#39;re still reading this, after all). </p>
+<p><a href="http://omz-software.com/pythonista/">Pythonista</a> is an amazing iOS app that brings the power of a python IDE to your iPhone, complete with an interpreter and a set of custom-made modules for interacting with the phone&#39;s ecosystem (contacts, clipboard, <a href="http://omz-software.com/pythonista/docs/ios/">etc</a>). It&#39;s powerful out of the box, but there are some easy improvements that you can make so that development really is a breeze, namely the ability to download public gists and Dropbox syncing. Both are pretty straightforward and require minimal coding expertise (but of course, that doesn&#39;t bother you. You&#39;re still reading this, after all).</p>
 
 <p></p>
 
-<h2>Downloading Gists <a name="workflow"></a></h2>
+<h2 id="downloading-gists">Downloading Gists <a name="workflow"></a></h2>
 
 <p>Github <a href="https://gist.github.com/">gists</a> are a great way to share bits of code into the Github ecosystem without creating an entire repo. The neatest thing is- they still exist as a repo and can handle revisions, forking, and comments. When you&#39;re working with Pythonista, it&#39;s great to have the ability to quickly copy those snippets into the app. Luckily, the app&#39;s creator has created such a <a href="https://gist.github.com/omz/b0644f5ed1d94bd32805">gist</a>.</p>
 
 <p>To further streamline gist downloads, you can use the new <a href="https://workflow.is/">workflow</a> app and download <a href="https://workflow.is/workflows/59bb35df6c074edea6e9e92abd7e1444">this</a> workflow. Then, you can just your new share tab in your mobile browser of choice to send the url into that gist and boom!</p>
 
-<p>Here&#39;s the workflow in action: </p>
+<p>Here&#39;s the workflow in action:</p>
 
 <p><img src="https://giant.gfycat.com/UnluckyMisguidedHalcyon.gif" alt="workflow" /></p>
 
 <p><a href="https://gfycat.com/UnluckyMisguidedHalcyon">Gfycat link</a>(for slow/pause/reverse)</p>
 
-<h2>Dropbox Sync</h2>
+<h2 id="dropbox-sync">Dropbox Sync</h2>
 
-<p>For what is probably an apple-imposed restriction, Pythonista doesn&#39;t share <a href="http://blog.davidbrownman.com/post/61232924313/getting-jiggy-with-editorial-for-ipad">Editorial&#39;s</a> built in Dropbox sync. Fortunately, it&#39;s easy enough to fix this with the power of Python. There are a couple of easy steps to follow first. </p>
+<p>For what is probably an apple-imposed restriction, Pythonista doesn&#39;t share Editorial&#39;s built in Dropbox sync. Fortunately, it&#39;s easy enough to fix this with the power of Python. There are a couple of easy steps to follow first.</p>
 
-<h3>Create an App</h3>
+<h3 id="create-an-app">Create an App</h3>
 
-<p>Go to <a href="https://www.dropbox.com/developers/apps">dropbox.com/developers/apps</a> and create a new app. </p>
+<p>Go to <a href="https://www.dropbox.com/developers/apps">dropbox.com/developers/apps</a> and create a new app.</p>
 
-<p><img src="https://i.imgur.com/vzP82jB.png" height="500" alt="dropbox app"></p>
+<p><img src="https://i.imgur.com/vzP82jB.png" alt="dropbox app" /></p>
 
 <p>Make sure your settings match mine (Dropbox API app, files+datastores, Yes), give your app a name (this is the default name for your sync folder, but you can change it client-side later), and hit create!</p>
 
 <p>This will bring you to a settings page for your app, on which you <strong>don&#39;t</strong> need to change anything. Leave it open for now and we&#39;ll revisit it in a sec.</p>
 
-<h3>Download the Dropbox Sync Script</h3>
+<h3 id="download-the-dropbox-sync-script">Download the Dropbox Sync Script</h3>
 
 <p>David Hutchison has written an awesome <a href="https://gist.github.com/dhutchison/b527e2a9e855437539c9">gist</a> that syncs all the files in the Pythonista directory via an approved app. So, download this gist (if only there was an <a href="#workflow">easy way to do that</a>) and edit lines 14 &amp; 15 to use your app&#39;s key and secret (found on your settings page from before).</p>
 
-<h3>Initial Sync!</h3>
+<h3 id="initial-sync">Initial Sync!</h3>
 
 <p>Running for the first time, you&#39;ll authenticate, and the script will create a folder in your dropbox and put anything that&#39;s in your Pythonista root into it. It also creates a sync folder (the aptly named <code>dropbox_sync</code>) with your access token and a text file that acts as a record of what versions it should prioritize. That way, it doesn&#39;t rewrite when it shouldn&#39;t and knows which version is more current. You won&#39;t need to touch this folder.</p>
 
-<h2>Blast off!</h2>
+<h2 id="blast-off">Blast off!</h2>
 
-<p>That&#39;s all! Now, you can just run that script (or create an action in the app that does it for you) and your app will have updated versions of everything. In case things go sour, the script lets you choose what to keep or overwrite and does it well. </p>
+<p>That&#39;s all! Now, you can just run that script (or create an action in the app that does it for you) and your app will have updated versions of everything. In case things go sour, the script lets you choose what to keep or overwrite and does it well.</p>
 
 <p>Now that you&#39;ve got a better dev environment set up in Pythonista, you&#39;re ready to browse the world of code and take on more adventurous projects. Happy hacking!</p>
 
 </div>
 </div>
 <p>
-<a href="/blog.html">back to the blog index</a>
+<i class='fa fa-arrow-left'></i>
+<a href="/blog.html">Blog Index</a>
+|
+<a href="/blog/2014/12/16/augmenting-automation-on-ios.html">Random Post</a>
+<i class='fa fa-random'></i>
 </p>
 </article>
 <aside>
@@ -137,7 +141,7 @@ December 21, 2014
 <div class='bottom'>
 <p>
 tags:
-<a href="/tag.html#ios">ios</a>, <a href="/tag.html#python">python</a>, <a href="/tag.html#dropbox">dropbox</a>
+<a href="/tags.html#dropbox">dropbox</a>, <a href="/tags.html#ios">ios</a>, <a href="/tags.html#python">python</a>
 </p>
 <p>
 On this day

@@ -14,6 +14,8 @@ header: blog
         %ul.indent
           - articles.each do |article|
             %li
-              %a{:href => article.url}= article.title
+              = article.date.strftime('%b %d - ')
+              %a{:href => article.url}
+                = article.title
 
-= partial 'blog_agg'
+= partial 'partials/blog_agg'

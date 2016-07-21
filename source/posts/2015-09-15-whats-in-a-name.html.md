@@ -2,10 +2,10 @@
 title: What's in a Name?
 fact: The HMS Beagle, with Charles Darwin aboard, reaches the Galápagos Islands. The ship lands at Chatham or San Cristobal, the easternmost of the archipelago.
 fact_year: 1835
-tags: personal, RelateIQ
+tags: personal, relateiq
 ---
 
-Last May, I finished college and promptly moved out to Palo Alto to join RelateIQ, a "[but we're not a CRM](https://www.youtube.com/watch?v=-ChppfnazzE&feature=youtu.be&t=1m57s)" startup aimed at eventually toppling the giant that is Salesforce. It's worth noting that I didn't know what CRM was nor was I aware what exactly Salesforce's product was, but I was totally sold on the people and the team at RIQ. I felt confident that whatever we went on to do, it would be great. 
+Last May, I finished college and promptly moved out to Palo Alto to join RelateIQ, a "[but we're not a CRM](https://www.youtube.com/watch?v=-ChppfnazzE&feature=youtu.be&t=1m57s)" startup aimed at eventually toppling the giant that is Salesforce. It's worth noting that I didn't know what CRM was nor was I aware what exactly Salesforce's product was, but I was totally sold on the people and the team at RIQ. I felt confident that whatever we went on to do, it would be great.
 
 READMORE
 
@@ -19,8 +19,8 @@ People always ask about how the acquisition changed the company and I'm always h
 
 Here we are, a year later and what a year it has been.
 
-Today, RelateIQ has officially rebranded as SalesforceIQ. I'll be the first to admit that it's a drastic mentality shift and I'm still not totally sold on it, but that's how it is. 
+Today, RelateIQ has officially rebranded as SalesforceIQ. I'll be the first to admit that it's a drastic mentality shift and I'm still not totally sold on it, but that's how it is.
 
-Luckily, the product is still built by the same world-class team and still has all the amazing features our users have come to love. We're still just as dedicated about powering the world's professional relationships with products people love, and that's not changing. We offer what is head and shoulders the best product on the market, and that's not changing either. 
+Luckily, the product is still built by the same world-class team and still has all the amazing features our users have come to love. We're still just as dedicated about powering the world's professional relationships with products people love, and that's not changing. We offer what is head and shoulders the best product on the market, and that's not changing either.
 
 At the end of the day, I'm excited. This is just the next step towards the top of the mountain and I just can't wait to be king.

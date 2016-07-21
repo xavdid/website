@@ -7,10 +7,17 @@
           = current_article.title
 
         .blog_body
+          - if current_article.tags.include?('play')
+            = partial 'partials/play'
+
           ~ current_article.body
 
       %p
-        = link_to('back to the blog index', '/blog.html')
+        %i.fa.fa-arrow-left
+        = link_to('Blog Index', '/blog.html')
+        |
+        = link_to('Random Post', blog.articles.sample.url)
+        %i.fa.fa-random
 
     %aside
       .top
@@ -24,8 +31,8 @@
           -# needs to be an array so the join works right
           tags:
           - a = []
-          - current_article.tags.each do |tag|
-            - a << link_to(tag, '/tag.html', {fragment: tag})
+          - current_article.tags.sort.each do |tag|
+            - a << link_to(tag, 'tags.html', {fragment: tag})
           = a.join(', ')
         %p
           On this day
