@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if gt IE 8]>
+<!--> <html class="no-js"> <!--
+<![endif]-->
+<head>
+<!-- You're looking at my site's source! That's pretty cool. It's pretty straightforward. Template taken from HTML5Boilderplate, css adapted to my liking. -->
+<!-- This site was laregely designed by Jennifer Herzberg, who rules. -->
+<meta charset='utf-8'>
+<!-- hyphens are dumb -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>
+The Week of Code is Here! - David Brownman dot com
+</title>
+<meta content='Personal site for David Brownman' name='description'>
+<meta content='width=device-width' name='viewport'>
+<link href="../../../../../css/the-09ccbcf9.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../../../../../js/facts-dfa7c003.js"></script>
+<link href="../../../../../img/favicon.ico" rel="icon" type="image/ico" />
+<script>
+  if (window.location.protocol != "https:") {
+    var url = "https:" + window.location.href.substring(window.location.protocol.length);
+    window.location.href = url;
+  }
+</script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en/">upgrade your browser</a>.
+<![endif]-->
+<div class='border'></div>
+<div class='page'>
+<div class='header-container'>
+<header class='wrapper clearfix'>
+<h1 class='title'>
+<a href='/'>
+<span class='my_name'>
+David Brownman
+</span>
+</a>
+</h1>
+<nav>
+<ul>
+<li>
+<a class='short' href='/'>
+Home
+</a>
+</li>
+<li>
+<a class='active short' href='/blog'>
+Blog
+</a>
+</li>
+<li>
+<a class='long' href='/projects'>
+Projects
+</a>
+</li>
+<li>
+<a class='long' href='/misc'>
+Sundries
+</a>
+</li>
+</ul>
+</nav>
+</header>
+</div>
+<div class='main-container'>
+<div class='main clearfix wrapper'>
+<article>
+<div class='blog_post'>
+<h1>
+The Week of Code is Here!
+</h1>
+<div class='blog_body'>
+<p>As you may or may not be aware, <a href="https://code.org/learn">Code.org</a> is a non-profit that aims to bring computer science education to people of all ages. They put out some great videos like <a href="https://www.youtube.com/watch?v=FC5FbmsH4fw">this</a> one illustrating how cool computer science is. Their message is one about the future and I think it&#39;s something really worth pursuing because at its core, it&#39;s a message about how you can change the world.</p>
+
+<p></p>
+
+<p>Despite what a lot of people think, Computer Science isn&#39;t actually about code. That&#39;s like saying painting is all about paint; knowing where to put what color is important, but not nearly as important as knowing which brush to use and the fact that your paint needs to dry first. Code is much the same thing- you need to know your tools, but the real art comes from using those tools in a patterned way. The best thing about it is that anyone can learn to program because it&#39;s just setting up some steps in a text editor that the computer follows exactly. In fact, everyone does it in their regular lives on a daily basis.</p>
+
+<p>At its core, CS is all about a systematic approach to solving problems. So, let&#39;s do a little exercise. Say you&#39;re designing code to run the line at a Starbucks. You make orders while there&#39;s a line and you fill them when the line is empty (another big part of CS is simplifying problems). Code for that might look something like this:</p>
+<pre class="highlight python"><code><span class="c"># lines that start with a # are comments and aren't read</span>&#x000A;<span class="c"># by the computer</span>&#x000A;&#x000A;<span class="c"># starbucks.py</span>&#x000A;&#x000A;<span class="k">while</span> <span class="err">!</span><span class="n">the_line</span><span class="o">.</span><span class="n">empty</span><span class="p">():</span> <span class="c"># 1</span>&#x000A;   <span class="n">all_orders</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">order</span><span class="p">)</span> <span class="c"># 2</span>&#x000A;<span class="k">for</span> <span class="n">order</span> <span class="ow">in</span> <span class="n">all_orders</span><span class="p">:</span> <span class="c"># 3</span>&#x000A;   <span class="n">make_drink</span><span class="p">(</span><span class="n">order</span><span class="p">)</span> <span class="c"># 4</span>&#x000A;   <span class="k">print</span> <span class="s">"Drink for "</span> <span class="o">+</span> <span class="n">order</span><span class="o">.</span><span class="n">name</span> <span class="c"># 5</span>&#x000A;   <span class="k">if</span> <span class="n">collected</span><span class="p">:</span> <span class="c"># 6</span>&#x000A;       <span class="n">order</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span> <span class="c"># 7</span>&#x000A;  <span class="k">else</span><span class="p">:</span> <span class="c"># 8</span>&#x000A;     <span class="k">continue</span> <span class="c"># 9</span>&#x000A;     <span class="c"># this continues on to making other drinks</span>&#x000A;     <span class="c"># as not to hold up the line</span>&#x000A;</code></pre>
+
+<p>At first that might look wordy or scary (what&#39;s with all that extra punctuation?!), but it&#39;s surprisingly straightforward. Let&#39;s decode it.</p>
+
+<p>In programming, <code>!</code> means not, so the first line says &quot;while the line is not empty, do the following code&quot;. There&#39;s a list called <code>all_orders</code> that you add order objects (an object is just a chunk that stores data. In this case, probably customer name, drink ordered, and a timestamp for when they ordered it) to. When there are no more orders, you go through the whole list and make the drink (<code>make_drink</code> is a separate mini-program defined elsewhere. Just assume it makes the drink). Line 6 calls out that the drink is ready. If they collect it, you can safely delete their order. If they don&#39;t, you leave it on the counter and continue making other drinks.</p>
+
+<p>This code doesn&#39;t account for every single thing that happens in line, but still gives a basic representation of how you could automate the process. Thinking cap time! Do you see a problem with this implementation of the line? We can assume that all of the code runs and returns what we expect, but there&#39;s still a design issue that will keep our store from running as expected.</p>
+
+<p>Have you guessed? It&#39;s the first line! Because we don&#39;t start making drinks until there are no people waiting to order, if people keep coming in the door, no one&#39;s drinks ever get made! A better choice would be something like <code>while !the_line.empty() or len(all_orders) &lt; 5:</code>, which would stop taking orders after the 5th. In this case we&#39;d need some way to jump back and take more orders later, but that&#39;s a problem for another day.</p>
+
+<p>If you found this little puzzle interesting (or even if you didn&#39;t), I encourage you to take at least an into programming course either online or at your local college. If nothing else, a very basic understanding of how computers work and how to approach problems is a great life skill to acquire. It&#39;ll also look great for future employers because it shows you&#39;re willing to take the initiative and learn a super helpful new skill. To that end, I&#39;ve started writing a guide to Python (a very friendly programming language) aimed at non-technical people. People like my mom, my music-major friend, and friends who are English majors. If that&#39;s something that you may be interested in, head over <a href="/blog/2013/10/16/what-is-a-python">here</a> to look at part one (part two is written, just needs to be edited and possibly split into separate parts).</p>
+
+<p>Additionally, <a href="https://code.org/learn">Code.org</a> has some resources and exercises on their site that you can sit down for half an hour and work through. If you&#39;re looking for something more involved, <a href="https://www.codeacademy.com">Code Acadamy</a> is an amazing resource for beginners, as are some of the CS classes on <a href="https://www.udacity.com/course/cs101">Udacity</a> and <a href="http://www.khanacademy.org/hour-of-code/hour-of-code-tutorial/v/welcome-hour-of-code">Khan Academy</a>.</p>
+
+<p>I hope you&#39;ve learned a little something here today. Feel free to get in touch in the comments or on twitter (<a href="http://www.twitter.com/xavdid">@xavdid</a>) if you&#39;ve got questions or feedback!</p>
+
+</div>
+</div>
+<p>
+<i class='fa fa-arrow-left'></i>
+<a href="/blog">Blog Index</a>
+|
+<a href="/blog/2013/10/30/take-you-to-the-candy">Random Post</a>
+<i class='fa fa-random'></i>
+</p>
+</article>
+<aside>
+<div class='top'>
+<div class='heading'>
+Published
+<time>
+December 12, 2013
+</time>
+</div>
+</div>
+<div class='bottom'>
+<p>
+tags:
+<a href="/tags#programming">programming</a>, <a href="/tags#python">python</a>, <a href="/tags#tutorial">tutorial</a>
+</p>
+<p>
+On this day
+(in 1901): Guglielmo Marconi receives the first transatlantic radio signal (the letter "S" [***] in Morse Code), at Signal Hill in St John's, Newfoundland
+</p>
+</div>
+</aside>
+
+</div>
+</div>
+<div class='footer-container'>
+<footer class='wrapper'>
+<ul>
+<li>
+<a href='/'>
+<i class='fa fa-home fa-2x'></i>
+</a>
+</li>
+<li>
+<a href='mailto:beamneocube@gmail.com' target='_blank'>
+<i class='fa fa-envelope fa-2x'></i>
+<span class='sitename'>
+Email
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.github.com/xavdid' target='_blank'>
+<i class='fa fa-github-alt fa-2x'></i>
+<span class='sitename'>
+GitHub
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.twitter.com/xavdid' target='_blank'>
+<i class='fa fa-twitter-square fa-2x'></i>
+<span class='sitename'>
+Twitter
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.linkedin.com/in/xavdid' target='_blank'>
+<i class='fa fa-linkedin-square fa-2x'></i>
+<span class='sitename'>
+Linkedin
+</span>
+</a>
+</li>
+</ul>
+</footer>
+</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-40842533-1', 'davidbrownman.com');
+  ga('send', 'pageview');
+</script>
+</body>

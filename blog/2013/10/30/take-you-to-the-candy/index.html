@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if gt IE 8]>
+<!--> <html class="no-js"> <!--
+<![endif]-->
+<head>
+<!-- You're looking at my site's source! That's pretty cool. It's pretty straightforward. Template taken from HTML5Boilderplate, css adapted to my liking. -->
+<!-- This site was laregely designed by Jennifer Herzberg, who rules. -->
+<meta charset='utf-8'>
+<!-- hyphens are dumb -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>
+Take You To the Candy Box - David Brownman dot com
+</title>
+<meta content='Personal site for David Brownman' name='description'>
+<meta content='width=device-width' name='viewport'>
+<link href="../../../../../css/the-09ccbcf9.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../../../../../js/facts-dfa7c003.js"></script>
+<link href="../../../../../img/favicon.ico" rel="icon" type="image/ico" />
+<script>
+  if (window.location.protocol != "https:") {
+    var url = "https:" + window.location.href.substring(window.location.protocol.length);
+    window.location.href = url;
+  }
+</script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en/">upgrade your browser</a>.
+<![endif]-->
+<div class='border'></div>
+<div class='page'>
+<div class='header-container'>
+<header class='wrapper clearfix'>
+<h1 class='title'>
+<a href='/'>
+<span class='my_name'>
+David Brownman
+</span>
+</a>
+</h1>
+<nav>
+<ul>
+<li>
+<a class='short' href='/'>
+Home
+</a>
+</li>
+<li>
+<a class='active short' href='/blog'>
+Blog
+</a>
+</li>
+<li>
+<a class='long' href='/projects'>
+Projects
+</a>
+</li>
+<li>
+<a class='long' href='/misc'>
+Sundries
+</a>
+</li>
+</ul>
+</nav>
+</header>
+</div>
+<div class='main-container'>
+<div class='main clearfix wrapper'>
+<article>
+<div class='blog_post'>
+<h1>
+Take You To the Candy Box
+</h1>
+<div class='blog_body'>
+<i>
+This is part of a series of posts I wrote for a class entitled
+<a href="http://www-personal.umich.edu/~csandvig/469W16/">Technology & Play</a>
+at the University of Michigan. Though they reference page numbers from class readings, they're all meant to be understood on their own.
+</i>
+
+<p>There&#39;s been a recent surge in popularity of a relatively unknown genre of game called the <a href="https://www.reddit.com/r/inrementalgames">incremental game</a>. These games start small and gradually increase some value to incredibly large numbers. The prime example of this is called <a href="http://orteil.dashnet.org/cookieclicker"><em>Cookie Clicker</em></a>. In it, you (unsurprisingly) click the cookie. This affords you currency with which you can buy items that click the cookie for you, increasing your cookies per second. Eventually, you end up with multiple trillions of cookies which help you buy absurdly large items. That&#39;s the whole game; start little, get big. New cookie clickers typically have one of two responses: &quot;you just click? This is the dumbest game ever&quot; or &quot;holy crap, I hope I&#39;m not susceptible to carpal tunnel because I&#39;m going to be clicking <em>a lot</em>. It&#39;s uncommon for a game&#39;s core mechanic to be that polarizing, so we&#39;re going to take a gander at a precursor of the genre using Church&#39;s <a href="http://www.gamasutra.com/view/feature/131764/formal_abstract_design_tools.php">Formal Abstract Design Tools</a>.</p>
+
+<p></p>
+
+<p>Before CC was popular, there was a similar game called <a href="http://candies.aniwey.net/index.php"><em>Candy Box</em></a> which incorporated a similar system of growth and reward but mixed in some RPG elements (such as quests and equipment). CB approaches the FATD of a <strong>story</strong> by having different locations in which you can act: quests through forests and caves, a shop, a frog in the swamp, etc. Unfortunately, there isn&#39;t an actual story that connects locations that would usually combine into a story- it&#39;s more of &quot;hey, here are some places with distinct connotation, too bad you know know why you&#39;re going there&quot;. <sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup> In fact, before you hit the initial threshold of candies for the shopkeeper to show up, there&#39;s not even a semblance of a story, just a counter and some buttons.</p>
+
+<p><img src="https://i.imgur.com/fxwsLtv.jpg" alt="basic UI" /></p>
+
+<p>You&#39;re initially allowed to eat the candy or throw it on the ground, but there aren&#39;t <strong>perceivable consequences</strong> for these actions. You get some text up on the board, but nothing changes for gameplay. When you throw enough candy on the ground, there&#39;s an evolving smiley face (<code>:|</code> -&gt; <code>:(</code> -&gt; <code>:&#39;(</code> -&gt; etc) that tells you <em>something</em> is changing, though it&#39;s unclear what. <sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup> This makes for a very slow and frustrating start of the game because the only controls the player has (pressing the buttons) doesn&#39;t seem to do anything. Later, when you have equipment and can go on quests, you&#39;re forced to take a break after every quest. There&#39;s a flavor reason (&quot;You&#39;re tired after your adventure, you should rest!&quot;), but mechanically, it just slows the game down.</p>
+
+<p><em>Candy Box</em> shares a lot of similarities with CC save one large difference: there&#39;s nothing to speed <em>Candy Box</em> up. Where in CC you can click frantically to spend time between buying upgrades (as mundane as this may be), CB forces you to sit and stare at the count before you can act again. So after your quest, you spend 10 seconds reading any new items you got (which are few and far between), then you wait for 90+ seconds before you can go on another quest. This generates cognitive dissonance because the goal is to go on quests to get candies, but the consequence of completing the goal (independent of if the quest is successful) is that the player has to take a frustratingly long break of the game. This is absurdly counter intuitive.</p>
+
+<p>The game&#39;s <strong>intention</strong> in letting players buy items is for them to get stronger and be able to plan their next quest. But, the random nature of the scrolls (powerups) means that the player usually spends more money than they wanted to get the scroll they were looking for (which isn&#39;t satisfying at all).</p>
+
+<p><img src="https://i.imgur.com/96TmMm9.jpg" alt="full character" /></p>
+
+<p>Despite an inherently addicting setup, gameplay in <em>Candy Box</em> is largely flawed an unrewarding. Its violation of all 3 of Church&#39;s fundamental abstract design tools in addition to creating cognitive dissonance for the player leave a decidedly un-sweet taste in my mouth. <sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup></p>
+
+<div class="footnotes">
+<hr>
+<ol>
+
+<li id="fn1">
+<p>For instance, the sorceress&#39;s has tropes associated with it: magic, voodoo, unknown, scary, etc. Instead of incorporating any of these, it&#39;s presented as another box with another talking head (but not the scary kind) which wants you to buy something.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn2">
+<p>Ironically, the only thing that gives feedback at the start of the game is the one action that ends up hurting you in the end; throwing candy on the ground has no upside, you just lose candy.&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn3">
+<p>It should be noted that the creator has since released <a href="http://candybox2.net">Candy Box 2</a> which, while updated, seems to suffer from a lot of the same core issues. <em>note</em>: I haven&#39;t really spent much time with it and don&#39;t plan to.&nbsp;<a href="#fnref3" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+</div>
+</div>
+<p>
+<i class='fa fa-arrow-left'></i>
+<a href="/blog">Blog Index</a>
+|
+<a href="/blog/2013/07/02/the-story-of-davids-dark">Random Post</a>
+<i class='fa fa-random'></i>
+</p>
+</article>
+<aside>
+<div class='top'>
+<div class='heading'>
+Published
+<time>
+October 30, 2013
+</time>
+</div>
+</div>
+<div class='bottom'>
+<p>
+tags:
+<a href="/tags#play">play</a>, <a href="/tags#videogames">videogames</a>
+</p>
+<p>
+On this day
+(in 1938): Orson Welles broadcasts his radio play of H. G. Wells's The War of the Worlds, causing anxiety in some of the audience in the United States.
+</p>
+</div>
+</aside>
+
+</div>
+</div>
+<div class='footer-container'>
+<footer class='wrapper'>
+<ul>
+<li>
+<a href='/'>
+<i class='fa fa-home fa-2x'></i>
+</a>
+</li>
+<li>
+<a href='mailto:beamneocube@gmail.com' target='_blank'>
+<i class='fa fa-envelope fa-2x'></i>
+<span class='sitename'>
+Email
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.github.com/xavdid' target='_blank'>
+<i class='fa fa-github-alt fa-2x'></i>
+<span class='sitename'>
+GitHub
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.twitter.com/xavdid' target='_blank'>
+<i class='fa fa-twitter-square fa-2x'></i>
+<span class='sitename'>
+Twitter
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.linkedin.com/in/xavdid' target='_blank'>
+<i class='fa fa-linkedin-square fa-2x'></i>
+<span class='sitename'>
+Linkedin
+</span>
+</a>
+</li>
+</ul>
+</footer>
+</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-40842533-1', 'davidbrownman.com');
+  ga('send', 'pageview');
+</script>
+</body>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if gt IE 8]>
+<!--> <html class="no-js"> <!--
+<![endif]-->
+<head>
+<!-- You're looking at my site's source! That's pretty cool. It's pretty straightforward. Template taken from HTML5Boilderplate, css adapted to my liking. -->
+<!-- This site was laregely designed by Jennifer Herzberg, who rules. -->
+<meta charset='utf-8'>
+<!-- hyphens are dumb -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>
+IF Shirt THEN Bounce That Email - David Brownman dot com
+</title>
+<meta content='Personal site for David Brownman' name='description'>
+<meta content='width=device-width' name='viewport'>
+<link href="../../../../../css/the-09ccbcf9.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../../../../../js/facts-dfa7c003.js"></script>
+<link href="../../../../../img/favicon.ico" rel="icon" type="image/ico" />
+<script>
+  if (window.location.protocol != "https:") {
+    var url = "https:" + window.location.href.substring(window.location.protocol.length);
+    window.location.href = url;
+  }
+</script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en/">upgrade your browser</a>.
+<![endif]-->
+<div class='border'></div>
+<div class='page'>
+<div class='header-container'>
+<header class='wrapper clearfix'>
+<h1 class='title'>
+<a href='/'>
+<span class='my_name'>
+David Brownman
+</span>
+</a>
+</h1>
+<nav>
+<ul>
+<li>
+<a class='short' href='/'>
+Home
+</a>
+</li>
+<li>
+<a class='active short' href='/blog'>
+Blog
+</a>
+</li>
+<li>
+<a class='long' href='/projects'>
+Projects
+</a>
+</li>
+<li>
+<a class='long' href='/misc'>
+Sundries
+</a>
+</li>
+</ul>
+</nav>
+</header>
+</div>
+<div class='main-container'>
+<div class='main clearfix wrapper'>
+<article>
+<div class='blog_post'>
+<h1>
+IF Shirt THEN Bounce That Email
+</h1>
+<div class='blog_body'>
+<p>As you may or may not know, I&#39;m one of the presidents of the highly ranked <a href="http://michiganquidditch.com/">Michigan Quidditch Team</a>. I&#39;ve been with the team since the beginning and because I lived closest to the post office at the time, I&#39;ve been in charge of shipping T-shirts to our fans all over the country. Until now, money has gone into my personal PayPal and I&#39;ve just kept notes (usually of the <a href="http://www.fetchnotes.com">fetch</a> variety) about which shirts I&#39;d shipped and paid the team for. However, as my tenure with the team nears its end, we needed a more sustainable version of this system.</p>
+
+<p></p>
+
+<p>A few weeks ago I got <em>really</em> into automating stuff with <a href="https://ifttt.com">IFTTT</a>. If you&#39;re not familiar, it&#39;s a services that connects accounts together and lets you automate actions between services. For example, you can sat set up recipes like IF I&#39;m tagged in a photo on Facebook THEN download a copy of that photo to my Dropbox. Wouldn&#39;t it be cool if I could capture PapPal emails, parse them, and store that data in a database or spreadsheet?</p>
+
+<p>Using the Email channel it&#39;s easy enough to capture purchase emails from PayPal, Unfortunately, there was no easy way to pull the content out of that email for use somewhere else. That&#39;s where this <a href="https://github.com/captn3m0/ifttt-webhook">middleware</a> comes in. It functions as a fake Wordpress blog that IFTTT can send POST requests to, vastly opening up the realm of possibilities when it comes to where we can send our data. Now I could send a POST request with the plaintext (an IFTTT restriction) anywhere on the web.</p>
+
+<p>Wanting to fiddle with <a href="http://sinatrarb.com">Sinatra</a>, the new toy I just learned about, I whipped together a quick <a href="https://gist.github.com/xavdid/8930419">endpoint</a> that could accept a nice POST request and throw some regex parsing at it.<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup> From there, it uses my newly provisioned <a href="http://www.sendgrid.com">Sendgrid</a> account to email IFTTT with a nicely formatted string that includes all of the relevant shirt info.</p>
+
+<p>So to reiterate, here&#39;s the flow (and included IFTTT recipes):</p>
+
+<ol>
+<li>Email arrives after someone purchases a shirt.</li>
+<li>IFTTT uses <a href="https://ifttt.com/recipes/145811-forward-paypal-emails-to-webapp">this</a> recipe to send the plaintext version of the email to the web app.<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup></li>
+<li>The app gets the data as a post request, parses out the address, email, name, and sizes.</li>
+<li>It sticks that information into an email and sends it back to IFTTT with the subject being the spreadsheet row (<code>email ||| name ||| address ||| etc</code>) and the tag &quot;#quid&quot;, triggering <a href="https://ifttt.com/recipes/145812-put-quid-emails-into-a-spreadsheet">this</a> recipe.</li>
+<li>You end up with a nice spreadsheet and it&#39;s easy to keep tabs on the whole process!</li>
+</ol>
+
+<p>The nice thing is that even though I&#39;ll be leaving, this system is easy to replicate because of the portability of the IFTTT recipes. Plus, the app can keep filling a spreadsheet regardless of who&#39;s PayPal has been accepting the payments. This will hopefully help Michigan Quidditch continue on their path to greatness.</p>
+
+<p>Oh, and you can see it in action at <a href="https://shirtbounce.herokuapp.com">shirtbounce.herokuapp.com</a>.</p>
+
+<div class="footnotes">
+<hr>
+<ol>
+
+<li id="fn1">
+<p>This became harder than intended because the stripped HTML doesn&#39;t have any deliminators (it was written with the intent to use bolds or line breaks to separate content).&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn2">
+<p>It sends plaintext because the Wordpress hack sends your data as a post title (which can&#39;t have newlines). Stripped HTML doesn&#39;t have any newlines, so we get everything (albeit in a very jumbled state).&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+</div>
+</div>
+<p>
+<i class='fa fa-arrow-left'></i>
+<a href="/blog">Blog Index</a>
+|
+<a href="/blog/2014/12/21/pythonista-power-pack">Random Post</a>
+<i class='fa fa-random'></i>
+</p>
+</article>
+<aside>
+<div class='top'>
+<div class='heading'>
+Published
+<time>
+February 12, 2014
+</time>
+</div>
+</div>
+<div class='bottom'>
+<p>
+tags:
+<a href="/tags#automation">automation</a>, <a href="/tags#quidditch">quidditch</a>, <a href="/tags#ruby">ruby</a>
+</p>
+<p>
+On this day
+(in 1924): George Gershwin's Rhapsody in Blue received its premiere in a concert titled "An Experiment in Modern Music," in New York, with Gershwin playing the piano.
+</p>
+</div>
+</aside>
+
+</div>
+</div>
+<div class='footer-container'>
+<footer class='wrapper'>
+<ul>
+<li>
+<a href='/'>
+<i class='fa fa-home fa-2x'></i>
+</a>
+</li>
+<li>
+<a href='mailto:beamneocube@gmail.com' target='_blank'>
+<i class='fa fa-envelope fa-2x'></i>
+<span class='sitename'>
+Email
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.github.com/xavdid' target='_blank'>
+<i class='fa fa-github-alt fa-2x'></i>
+<span class='sitename'>
+GitHub
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.twitter.com/xavdid' target='_blank'>
+<i class='fa fa-twitter-square fa-2x'></i>
+<span class='sitename'>
+Twitter
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.linkedin.com/in/xavdid' target='_blank'>
+<i class='fa fa-linkedin-square fa-2x'></i>
+<span class='sitename'>
+Linkedin
+</span>
+</a>
+</li>
+</ul>
+</footer>
+</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-40842533-1', 'davidbrownman.com');
+  ga('send', 'pageview');
+</script>
+</body>
