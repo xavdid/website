@@ -24,7 +24,7 @@ As you can see, English is ambiguous, which is why computers are so nitpicky abo
 
 ## Let's get our hands dirty
 
-All you need to follow along is access to a Python interpreter. One can be found pre-installed on Mac computers (by typing `python` into the `Terminal` application) or online [here](https://repl.it/languages/python).
+All you need to follow along is access to a Python interpreter. One can be found pre-installed on Mac computers (by typing `python` into the `Terminal` application) or online [here](https://repl.it/languages/python). This guide is written for Python 2, which will eventually phase out of usage. You can check your computer's version by typing `python --version` (mine currently says 2.7.10).
 
 In Python, there are a few different __data types__: integer and string are the most common ones. _Integers_ are any whole number, and _strings_ are words. Now let's apply it.
 
@@ -142,7 +142,7 @@ Hi, Jenny!
 
 Remember, you'll need to declare the lists yourself. You'll also need to use `for` loops of some sort.
 
-Once you've written a solution, click [here](http://d.pr/f/fyUT) to see if you're right [^2].
+Once you've written a solution, click [here](https://gist.github.com/xavdid/c606cca34aa996b4f20f3ad097ace8f1) to see if you're right [^2].
 
 That's all for this installment. There will probably be more to come! If you've got any feedback or questions, let me know on Twitter [@xavdid](https://twitter.com/xavdid). If you're hungry for more, you can check out LearnXinYMinutes' [python article](https://learnxinyminutes.com/docs/python/). Thanks for reading!
 

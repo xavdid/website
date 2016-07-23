@@ -24,10 +24,10 @@ bundle exec middleman build # --clean
 
 # test the build
 # script will quit here if tests dont pass
-# linkedin returns a 999 for a valid profile /shrug
 if ! [[ "$@*" == *--no-test* ]]; then
     logger "Testing"
-    bundle exec htmlproofer ./build --empty-alt-ignore --check-html --url-ignore "/lolapi,/stackpro,/refbook" --http-status-ignore 999 --file-ignore "./build/blog.html" --timeframe 24h --disable-external
+    # linkedin returns a 999 for a valid profile /shrug
+    htmlproofer ./build --empty-alt-ignore --check-html --url-ignore "/lolapi,/stackpro,/refbook" --http-status-ignore 999 --file-ignore "./build/blog.html" --timeframe 24h
 
     for f in source/posts/*; do
         if [[ $(cat "$f") !=  *"READMORE"* ]]; then

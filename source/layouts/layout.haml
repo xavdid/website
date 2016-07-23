@@ -30,6 +30,13 @@
 
   = favicon_tag 'img/favicon.ico'
 
+  - if config[:https_redirect]
+    :javascript
+      if (window.location.protocol != "https:") {
+        var url = "https:" + window.location.href.substring(window.location.protocol.length);
+        window.location.href = url;
+      }
+
 %body
   /[if lt IE 7]
     <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en/">upgrade your browser</a>.

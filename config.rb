@@ -8,6 +8,8 @@ set :css_dir, 'css'
 set :js_dir, 'js'
 set :images_dir, 'img'
 
+page '/*.txt', layout: false
+
 # ignore 'README.md'
 
 # Build-specific configuration
@@ -25,8 +27,7 @@ configure :build do
   # Use relative URLs
   activate :relative_assets
 
-  activate :gzip
-
+  config[:https_redirect] = true
   # Or use a different image path
   # set :http_prefix, '/Content/images/'
 end
@@ -51,10 +52,6 @@ set :haml, ugly:                 true,
            format:               :html5,
            remove_whitespace:    false,
            hyphenate_data_attrs: false
-
-# page '/*.xml', layout: false
-# page '/*.json', layout: false
-page '/*.txt', layout: false
 
 activate :blog do |blog|
   blog.permalink = '/blog/{year}/{month}/{day}/{title}.html'
