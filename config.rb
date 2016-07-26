@@ -10,6 +10,8 @@ set :images_dir, 'img'
 
 page '/*.txt', layout: false
 
+Time.zone = 'America/Los_Angeles'
+
 # ignore 'README.md'
 
 # Build-specific configuration
@@ -59,6 +61,8 @@ activate :blog do |blog|
 
   blog.layout = 'blogpost'
   blog.default_extension = '.md'
+
+  blog.new_article_template = File.expand_path('source/layouts/blank_post.erb', File.dirname(__FILE__))
 
   # Enable pagination
   blog.paginate = true
