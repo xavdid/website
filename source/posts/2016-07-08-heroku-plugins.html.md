@@ -196,11 +196,10 @@ Your plugin doesn't have to be named `heroku-NAME`, but it will help people find
 * Return a promise from your main function (if doing any async work) or use ES6 generators (with `co`)
 * Wrap yield statements in a `try/catch` block and use `cli.exit()` to surface errors
 
-That's all I've got. Hope you've enjoyed wetting your whiskers with the Heroku CLI. Definitely reach out to me on Twitter ([@xavdid](https://www.twitter.com/xavdid)) with questions or feedback. Happy hacking!
+That's should get you on your way. Hope you've enjoyed wetting your whiskers with the Heroku CLI. Definitely reach out to me on Twitter ([@xavdid](https://www.twitter.com/xavdid)) with questions or feedback. Happy hacking!
 
 ----
 _Full disclosure: Heroku is owned by the same company (Salesforce) that I was formerly employed by. That being said, I used and enjoyed their services long before I was a SFDC employee and the time I put into this was my own._
-
 
 [^1]: Near as I can tell, a `topic` object has only the `name` and `description` keys, the latter of which is what pops up in the index when `heroku help` is run.
 

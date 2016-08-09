@@ -21,7 +21,7 @@ configure :build do
 
   # Minify Javascript on build
   # Don't need to, using minified stuff already.
-  activate :minify_javascript
+  # activate :minify_javascript
 
   # Enable cache buster
   activate :asset_hash
@@ -30,8 +30,6 @@ configure :build do
   activate :relative_assets
 
   config[:https_redirect] = true
-  # Or use a different image path
-  # set :http_prefix, '/Content/images/'
 end
 
 activate :deploy do |deploy|
@@ -47,7 +45,7 @@ set :markdown,  fenced_code_blocks:           true,
                 strikethrough:                true,
                 tables:                       true,
                 with_toc_data:                true
-# kramdown didn't work
+
 set :markdown_engine, :redcarpet
 
 set :haml, ugly:                 true,
@@ -67,5 +65,4 @@ activate :blog do |blog|
   # Enable pagination
   blog.paginate = true
   blog.per_page = 5
-  # blog.page_link = 'page/{num}'
 end
