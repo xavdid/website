@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if gt IE 8]>
+<!--> <html class="no-js"> <!--
+<![endif]-->
+<head>
+<!-- You're looking at my site's source! That's pretty cool. It's pretty straightforward. Template taken from HTML5Boilderplate, css adapted to my liking. -->
+<!-- This site was laregely designed by Jennifer Herzberg, who rules. -->
+<meta charset='utf-8'>
+<!-- hyphens are dumb -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>
+Quidditch by the Numbers - David Brownman dot com
+</title>
+<meta content='Personal site for David Brownman' name='description'>
+<meta content='width=device-width' name='viewport'>
+<link href="../../../../../css/the-919e2fa6.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../../../../../js/facts-dfa7c003.js"></script>
+<link href="../../../../../img/favicon.ico" rel="icon" type="image/ico" />
+<script>
+  if (window.location.protocol != "https:") {
+    var url = "https:" + window.location.href.substring(window.location.protocol.length);
+    window.location.href = url;
+  }
+</script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en/">upgrade your browser</a>.
+<![endif]-->
+<div class='border'></div>
+<div class='page'>
+<div class='header-container'>
+<header class='wrapper clearfix'>
+<h1 class='title'>
+<a href='/'>
+<span class='my_name'>
+David Brownman
+</span>
+</a>
+</h1>
+<nav>
+<ul>
+<li>
+<a class='short' href='/'>
+Home
+</a>
+</li>
+<li>
+<a class='active short' href='/blog'>
+Blog
+</a>
+</li>
+<li>
+<a class='long' href='/projects'>
+Projects
+</a>
+</li>
+<li>
+<a class='long' href='/misc'>
+Sundries
+</a>
+</li>
+</ul>
+</nav>
+</header>
+</div>
+<div class='main-container'>
+<div class='main clearfix wrapper'>
+<article>
+<div class='blog_post'>
+<h1>
+Quidditch by the Numbers
+</h1>
+<div class='blog_body'>
+<p>Now that the dust has settled from World Cup, my Anonymous Associate and I thought it would be worthwhile to look through the numbers on game length and scoring data from throughout the season and see how impactful the snitch was.</p>
+
+<p>Our initial <a href="https://youtu.be/zNdkrtfZP8I?t=4m13s">feeling</a> was that the snitch was too impactful relative total quaffle points scored. We recently scraped a complete set of games played last season, so we thought we&#39;d put our idea the test.</p>
+
+<p></p>
+
+<h2 id="the-source">The Source</h2>
+
+<p>Our dataset originally consisted of all official games played in the 2015-16 USQ season (Nationals included). Right off the bat, we threw out games that were invalid (too short, lacking data, forfeits, and obviously mistyped <sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup>). Since we were mainly concerned with how the snitch affected gameplay, we decided to further reduce our dataset by removing games that exceeded the standard quaffle point differential (&gt; 120 points) because the snitch has basically no impact in those games. Lastly, we wanted to focus on regulation, so we ignored the overtime and double-overtime portions of games. Multiple catches in a single game skewed the data we were really concentrating on: <em>the impact of the snitch on regulation play</em>.</p>
+<pre class="highlight plaintext"><code>1618 total games&#x000A;- 22 bad data (clearly incorrect data, forfeits)&#x000A;- 233 blowouts (&gt; 120 point differential)&#x000A;- 4 double overtime games&#x000A;= 1359 games in our sample size&#x000A;</code></pre>
+
+<p>You can see our full source spreadsheet <a href="https://docs.google.com/spreadsheets/d/1adk0NZj3G7Xk6dZaAkZw4IGoKsRTQjKYkENMRfqQuB8/edit?usp=sharing">here</a>.</p>
+
+<h2 id="the-problem">The Problem</h2>
+
+<p>There&#39;s a sense that the better team doesn&#39;t always win in quidditch. That&#39;s fine (and <a href="http://www.cbsnews.com/news/march-madness-2016-ncaa-tournament-michigan-state-middle-tennessee-state-iowa-temple-oklahoma-cal/">exciting</a>), but an ideal game should allow for the better team to use their skill to win. If the snitch was worth 150 points and the game only lasted <a href="https://www.youtube.com/watch?v=YOVS9yn2R7c">2 minutes</a>, it would be the only important mechanic. On the other extreme, you have a 5 point snitch in conjunction with a 50 minute seeker floor, where it wouldn&#39;t matter at all. The current iteration of quidditch is somewhere in the middle, but definitely on the &quot;too valuable&quot; side.</p>
+
+<h3 id="the-data-amp-reasoning">The Data &amp; Reasoning</h3>
+
+<p>Let&#39;s look at some averages: <sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup></p>
+
+<ul>
+<li>average game length: 00:22:01</li>
+<li>average quaffle points pre-catch (catching team): 93.1</li>
+<li>% increase in points for a catch: (30 / 93.1): 32.2% increase</li>
+<li>% of catching team&#39;s points generated by snitch (30 / 93.1 + 30): 24.4% of final points</li>
+<li>average quaffle points / minute: 7.2 points (a team scores a goal ~every 82.2 seconds)</li>
+<li>average change in differential / minute: 2.6 points <sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup></li>
+</ul>
+
+<p>The first two are straight averages of final regulation game time and final quaffle points for the catching team, simple. The next two stats are the crux of our issue. When a team catches, they have an average of 93.1 points. A snitch catch then instantly increases their score by a staggering 32.2%, which means the catch is worth 24.4% of the average team&#39;s final score. Furthermore, that huge points swing comes instantly.</p>
+
+<p>In modern quidditch, our data shows there&#39;s a goal scored every 82 seconds. Theoretically, a team would need to play just over 4 minutes to score the 30 points awarded by the snitch. There&#39;s a caveat though- the other team gets the ball after each goal. Even for a dominant team, recovering the quaffle after your goal takes the time to either mount a successful defense or a strip the ball away. In fact, our data shows that quaffle differential changes slowly, at an average of 2.6 points / minute. Given that, most teams need just over 15 minutes to be out of snitch range (if it was going to be anyway). The current 18 minute seeker floor allows the worse team to slowball with a good chance of staying in range.<sup id="fnref4"><a href="#fn4" rel="footnote">4</a></sup> While this is (and should be!) a valid strategy, the fact that there&#39;s such a small margin of error for the leading team makes this too effective a strategy. Teams should be rewarded for masterful execution, not for their ability to play as little quidditch as possible.</p>
+
+<p>There&#39;s also a contribution problem. To get the uninterrupted 30 point swing that the snitch grants would take nearly 14 minutes and all 6 members of the team. This falls in stark contrast to the snitch, which is usually caught in about 4 minutes (~18% of gametime), only involves the seeker and beaters, and offers no chance for rebuttal. There&#39;s an immediate 30 point swing that happen no matter how close your match was.</p>
+
+<h2 id="the-proposed-solution">The Proposed Solution</h2>
+
+<p>The snitch is an exciting and unique part of our sport and we don&#39;t want to change that; a snitch is a hell of a lot more exciting than basketball&#39;s &quot;who has the ball last&quot;. Our main goal is to lessen the impact the snitch has on the game relative to the quaffle (without removing it as an important factor in close games). A good solution should demonstrably <em>decrease the value of the snitch</em>, while also (and more importantly) keeping <em>close games decided by the snitch</em>.</p>
+
+<p>We&#39;ve got just the right thing.</p>
+
+<h3 id="longer-seeker-floor">Longer Seeker Floor</h3>
+
+<p>By having more minutes in a game, there&#39;s more opportunity for quaffle points to be scored, which lowers the impact of the snitch&#39;s 30 points by comparison. With an extra <strong>10 minutes</strong> of pure quaffle play, there would be ~7 buckets dropped. If 40 of those 70 points were scored by the catching team (so the average quaffle score of the catching team is now ~120), it would lead to their catch being a <strong>25%</strong> increase in points (down from 32.2%) and comprise <strong>20%</strong> of their final score (down from 24.4%).</p>
+
+<p>On paper, our solution works great. We know by measuring the &quot;Net Quaffle Points Gained per Minute&quot; (or Net QP / Minute, nqppm). The Net QP / Minute is the amount of points the superior team gains in relation to their opponent, per minute.<sup id="fnref5"><a href="#fn5" rel="footnote">5</a></sup> Currently, the Net QP / Minute across our entire data set is 2.6nqppm. With an extra 10 minutes of seeker floor, the average game will have its point differential increased by 26 points, or two goals, in favor of the superior team. That may seem like it knocks pretty much every game but the absolute closest out of range, but it doesn’t.</p>
+
+<p>2.6nqppm comes from a dataset including games with differentials up to 120 points, so it includes games that were never in range in the first place; this number doesn’t doesn&#39;t represent close games. During a close match, the rate of change for quaffle differential will approach 0 as the teams evenly trade blows. If we narrow our view to games that were in range to begin with (436 games), the Net QP / Minute is 0.8nqppm. Extending the game 10 minutes will only increase the point differential in these close games by 8 points, not even a full goal. Thus, games that were in snitch range will stay in snitch range.</p>
+
+<h2 id="debunking-counter-arguments">Debunking Counter Arguments</h2>
+
+<h3 id="negative-affect-on-tournament-length">Negative Affect on Tournament Length</h3>
+
+<p>This is a logistics issue, not a rules one.</p>
+
+<p>However, it is worth mentioning that once brooms are up, the game keeps a fairly consistent length (seeker floor + ~4 minutes). The largest factor with tournaments getting behind schedule is starting the games late (teams not ready, refs nowhere to be found, etc). By adding 10 minutes to each game and dropping the number of games from 5 to 4, you play more quidditch with less transition time. By having fewer time slots, tournaments may run more on time. Nevertheless, that&#39;s not our focus.</p>
+
+<h3 id="exacerbating-blowouts">Exacerbating Blowouts</h3>
+
+<p>While this does have the unfortunate side effect of extending games that are clearly blowouts, that&#39;s also not really a rules problem. It&#39;s a symptom of poor tournament structures that pit top 20 teams against pot 5 opponents. If there are closer matches scheduled, an extra 10 minutes of game time leads to more minutes of good quidditch. In any case, resisting better game design because there are large skill disparities between teams is a bad approach to game design.</p>
+
+<h3 id="fewer-upsets-amp-reduced-variance">Fewer Upsets &amp; Reduced Variance</h3>
+
+<p>Like we said, upsets are fun. If March Madness always went chalk, you&#39;d have a final four with all of the #1 seeds and a bunch of viewers just then tuning in. If a weaker team wants to win, they should do that by playing just as well as the better team, not by slowballing until they can make a play at the single most important part of the game. The extra minutes of game time will encourage team depth and ensure that if the game is in range when the seekers are released, both teams have earned it. Our solution doesn&#39;t affect close games; they&#39;ll remain close and be decided by the snitch.</p>
+
+<h3 id="reduced-impact-of-seekers">Reduced Impact of Seekers</h3>
+
+<p>That&#39;s the idea.</p>
+
+<h2 id="tl-dr">tl;dr</h2>
+
+<p>In its current iteration, the snitch is too powerful of a mechanic based on the number of points its worth and the relatively short length of snitch-less gameplay. The best way to balance the two parts of the game is by increasing the length of the seeker floor by <strong>10 minutes</strong>. Based on our data, this brings the value of a snitch catch down significantly, while also keeping the close games close. Good, close quidditch matches will be decided by the snitch, but the snitch will be more in balance with the rest of the game.</p>
+
+<div class="footnotes">
+<hr>
+<ol>
+
+<li id="fn1">
+<p>For example, one game had a game time of 15 minutes while another had a both teams with a final score &lt; 30.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn2">
+<p>We realize that averages are more sensitive to outliers than medians. But, with a sample size &gt; 1300 and a low standard deviation, the results were fairly resistant to shifting.&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn3">
+<p>We calculated this by taking the average point differential at the end of game and average game length. So, on average, for every 4.5 minutes played, the team who ends up winning will have scored one more goal than their opponent.&nbsp;<a href="#fnref3" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn4">
+<p>There are &quot;delay of game&quot; rules, but with some coordination it&#39;s still possible to cripple the total number of possessions in a game.&nbsp;<a href="#fnref4" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn5">
+<p>A quick example, if Team A scores 30 points and Team B scores 10 points over the course of 5 minutes, the Net QP / Minute is 4 (30 - 10 / 5 minutes).&nbsp;<a href="#fnref5" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+</div>
+</div>
+<hr>
+<p>
+<i class='fa fa-arrow-left'></i>
+<a href="/blog">Blog Index</a>
+|
+<a href="/blog/2014/08/13/errors-are-usually-bad">Random Post</a>
+<i class='fa fa-random'></i>
+</p>
+</article>
+<aside>
+<div class='top'>
+<div class='heading'>
+Published
+<time>
+August 19, 2016
+</time>
+</div>
+</div>
+<div class='bottom'>
+<p>
+tags:
+<a href="/tags#quidditch">quidditch</a>, <a href="/tags#statistics">statistics</a>
+</p>
+<p>
+On this day
+(in 1868): Jules Janssen discovered Helium during a solar eclipse.
+</p>
+</div>
+</aside>
+
+</div>
+</div>
+<div class='footer-container'>
+<footer class='wrapper'>
+<ul>
+<li>
+<a href='/'>
+<i class='fa fa-home fa-2x'></i>
+</a>
+</li>
+<li>
+<a href='mailto:beamneocube@gmail.com' target='_blank'>
+<i class='fa fa-envelope fa-2x'></i>
+<span class='sitename'>
+Email
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.github.com/xavdid' target='_blank'>
+<i class='fa fa-github-alt fa-2x'></i>
+<span class='sitename'>
+GitHub
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.twitter.com/xavdid' target='_blank'>
+<i class='fa fa-twitter-square fa-2x'></i>
+<span class='sitename'>
+Twitter
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.linkedin.com/in/xavdid' target='_blank'>
+<i class='fa fa-linkedin-square fa-2x'></i>
+<span class='sitename'>
+Linkedin
+</span>
+</a>
+</li>
+</ul>
+</footer>
+</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-40842533-1', 'davidbrownman.com');
+  ga('send', 'pageview');
+</script>
+</body>
