@@ -281,6 +281,13 @@ html, body {
                 margin: 0;
                 padding-bottom: 15px;
                 line-height: normal;
+
+                a {
+                  border-bottom: none;
+                  &:hover {
+                    border-bottom: 1px solid $blue;
+                  }
+                }
               }
 
               .post-body {
@@ -308,6 +315,12 @@ html, body {
               @include tablet {
                 height: initial;
               }
+            }
+
+            ul {
+              list-style-type: circle;
+              // normal ul styles
+              padding-left: 40px;
             }
 
             code, pre, blockquote {
