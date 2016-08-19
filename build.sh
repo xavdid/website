@@ -44,9 +44,10 @@ fi
 
 # run with the -r flag to push resume as well!
 if [[ "$@*" == *-r* ]]; then
-    cd files
+    cd source/files
     resume publish -t kendall
     logger "Publishing Resume"
+    cd ../..
 fi
 
 if [[ "$@*" == *-d* ]]; then
