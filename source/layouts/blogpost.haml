@@ -33,7 +33,7 @@
           tags:
           - a = []
           - current_article.tags.sort.each do |tag|
-            - a << link_to(tag, '/tags', {fragment: tag})
+            - a << link_to(tag, tag_path(tag))
           = a.join(', ')
         %p
           On this day

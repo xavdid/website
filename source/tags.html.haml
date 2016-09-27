@@ -1,6 +1,7 @@
 ---
 title: Blog by Tag
 header: blog
+pageable: true
 ---
 
 %article
@@ -10,8 +11,8 @@ header: blog
     -# keys are output alphabetically, case insensitive
     - blog.tags.keys.sort_by{|x| x.downcase}.each do |tag|
       %li.spaced
-        %h3{id: tag}
-          = "# #{tag}"
+        %h3
+          = link_to("#{tag}", tag_path(tag))
         %ul
           - blog.tags[tag].sort_by{|x| x.title}.each do |article|
             %li

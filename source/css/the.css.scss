@@ -293,6 +293,7 @@ html, body {
               .post-body {
                 border-left: 1px solid $maize;
                 padding-left: 15px;
+                @import 'table.css.scss'
               }
             }
           }
@@ -351,6 +352,16 @@ html, body {
 
         ul {
           list-style-type: none;
+
+          .spaced {
+            h3 {
+              a {
+                // so the tag page is more varied
+                color: $dark-blue;
+              }
+            }
+          }
+
           li {
             ul {
               list-style-type: circle;
