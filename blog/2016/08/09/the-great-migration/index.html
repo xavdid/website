@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if gt IE 8]>
+<!--> <html class="no-js"> <!--
+<![endif]-->
+<head>
+<!-- You're looking at my site's source! That's pretty cool. It's pretty straightforward. Template taken from HTML5Boilderplate, css adapted to my liking. -->
+<!-- This site was laregely designed by Jennifer Herzberg, who rules. -->
+<meta charset='utf-8'>
+<!-- hyphens are dumb -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>
+The Great Migration - David Brownman dot com
+</title>
+<meta content='Personal site for David Brownman' name='description'>
+<meta content='width=device-width' name='viewport'>
+<link href="../../../../../css/the-bcbdd6b0.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../../../../../js/facts-dfa7c003.js"></script>
+<link href="../../../../../img/favicon.ico" rel="icon" type="image/ico" />
+<script>
+  if (window.location.protocol != "https:") {
+    var url = "https:" + window.location.href.substring(window.location.protocol.length);
+    window.location.href = url;
+  }
+</script>
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en/">upgrade your browser</a>.
+<![endif]-->
+<div class='border'></div>
+<div class='page'>
+<div class='header-container'>
+<header class='wrapper clearfix'>
+<h1 class='title'>
+<a href='/'>
+<span class='my_name'>
+David Brownman
+</span>
+</a>
+</h1>
+<nav>
+<ul>
+<li>
+<a class='short' href='/'>
+Home
+</a>
+</li>
+<li>
+<a class='active short' href='/blog'>
+Blog
+</a>
+</li>
+<li>
+<a class='long' href='/projects'>
+Projects
+</a>
+</li>
+<li>
+<a class='long' href='/misc'>
+Sundries
+</a>
+</li>
+</ul>
+</nav>
+</header>
+</div>
+<div class='main-container'>
+<div class='main clearfix wrapper'>
+<article>
+<div class='blog_post'>
+<h1>
+The Great Migration
+</h1>
+<div class='blog_body'>
+<p>As I&#39;m back in the job market, I figured it was time to clean up some of my site internals. I&#39;ve learned a lot about a lot since I first built it and my scss in particular was really showing its age. While I was in the trenches, I realized there was another big pain point I could fix: my blog.</p>
+
+<p>For a long time, I had my blog in two places. It actually lived on tumblr, but I mirrored it on the blog section of my site using tumblr&#39;s APIv1. This was accomplished with some jQuery that would trigger on load and populate a <code>&lt;ul&gt;</code> element.</p>
+
+<p>This was <em>fine</em>, but it meant I was maintaining two sets of css and user experience was inconsistent depending on which platform they were reading on. I was already leveraging <a href="https://middlemanapp.com">middleman</a> to generate my static site and found that they have a <a href="https://middlemanapp.com/basics/blogging">blogging</a> extension. Moving all my posts would allow me to check my posts into git and use triple ` notation for code blocks. The only hiccup was that tumblr has no way to export all of your posts, so it was time to dive back into their API. The game was afoot.</p>
+
+<p></p>
+
+<h2 id="extracting-from-tumblr">Extracting from Tumblr</h2>
+
+<p>Tumblr&#39;s APIv1 is all but depreciated at this point, so I went with v2 for my task. Luckily, it&#39;s simple and well documented. I&#39;ll describe here how to use tumblr&#39;s API to extract all of your content from their platform, should you choose to leave. To get all of our files in the right place, we&#39;ll go through a few steps:</p>
+
+<ol>
+<li>Get an API key</li>
+<li>Download all the posts we want</li>
+<li>(optional) format our json nicely</li>
+<li>Convert json to markdown.</li>
+</ol>
+
+<h3 id="make-an-app">Make an App</h3>
+
+<p>While anybody could hit a public blog before, v2 requires an API key. To get one, head <a href="https://www.tumblr.com/oauth/apps">here</a> and click <strong>+ Register application</strong>, naming it whatever. Below, you should now see your &quot;OAuth Consumer Key&quot;, known now as your <code>&lt;API_KEY&gt;</code>. You&#39;ll need this in just a sec.</p>
+
+<h3 id="grab-some-posts">Grab Some Posts</h3>
+
+<p>You&#39;ll need to hit a url with your new key. I used <code>curl</code> so I could pipe the output into another step or two, but <a href="https://www.getpostman.com/">Postman</a> is a viable alternative. Running the following command in your terminal gives you a json file with info on your 20 most recent posts.</p>
+<pre class="highlight shell"><code>curl <span class="s1">'https://api.tumblr.com/v2/blog/&lt;BLOG_NAME&gt;.tumblr.com/posts?api_key=&lt;API_KEY&gt;&amp;filter=raw'</span> &gt; some_posts.json&#x000A;</code></pre>
+
+<p>The output is a json document with a ton of info, truncated here like so:</p>
+<pre class="highlight json"><code><span class="p">{</span><span class="w">&#x000A;  </span><span class="nt">"meta"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">&#x000A;    </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w">&#x000A;    </span><span class="nt">"msg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OK"</span><span class="w">&#x000A;  </span><span class="p">},</span><span class="w">&#x000A;  </span><span class="nt">"response"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">&#x000A;    </span><span class="nt">"blog"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">&#x000A;      </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Blog (dot) DavidBrownman (dot) com"</span><span class="p">,</span><span class="w">&#x000A;      </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"xavdid"</span><span class="p">,</span><span class="w">&#x000A;      </span><span class="nt">"total_posts"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">&#x000A;      </span><span class="nt">"posts"</span><span class="p">:</span><span class="w"> </span><span class="mi">29</span><span class="p">,</span><span class="w">&#x000A;      </span><span class="nt">"url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://xavdid.tumblr.com/"</span><span class="p">,</span><span class="w">&#x000A;      </span><span class="nt">"updated"</span><span class="p">:</span><span class="w"> </span><span class="mi">1442361862</span><span class="p">,</span><span class="w">&#x000A;      </span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">&#x000A;    </span><span class="err">}</span><span class="p">,</span><span class="w">&#x000A;    </span><span class="nt">"posts"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">&#x000A;      </span><span class="p">{</span><span class="w">&#x000A;        </span><span class="nt">"blog_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"xavdid"</span><span class="p">,</span><span class="w">&#x000A;        </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">54609944775</span><span class="p">,</span><span class="w">&#x000A;        </span><span class="nt">"post_url"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://xavdid.tumblr.com/post/54609944775/freedom-day"</span><span class="p">,</span><span class="w">&#x000A;        </span><span class="nt">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"freedom-day"</span><span class="p">,</span><span class="w">&#x000A;        </span><span class="nt">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"text"</span><span class="p">,</span><span class="w">&#x000A;        </span><span class="nt">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2013-07-04 18:02:22 GMT"</span><span class="p">,</span><span class="w">&#x000A;        </span><span class="nt">"timestamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1372960942</span><span class="p">,</span><span class="w">&#x000A;        </span><span class="nt">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"published"</span><span class="p">,</span><span class="w">&#x000A;        </span><span class="nt">"format"</span><span class="p">:</span><span class="w"> </span><span class="s2">"markdown"</span><span class="p">,</span><span class="w">&#x000A;        </span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">&#x000A;        </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FREEDOM DAY"</span><span class="p">,</span><span class="w">&#x000A;        </span><span class="nt">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"In the interest of eating as much grilled meat and pie as possible today, there's no new post. \n\nBut, get excited for the next couple of weeks, I have some great stuff written!"</span><span class="p">,</span><span class="w">&#x000A;        </span><span class="nt">"reblog"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">&#x000A;          </span><span class="nt">"tree_html"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">&#x000A;          </span><span class="nt">"comment"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;p&gt;In the interest of eating as much grilled meat and pie as possible today, there's no new post. \n\nBut, get excited for the next couple of weeks, I have some great stuff written!&lt;/p&gt;"</span><span class="w">&#x000A;        </span><span class="p">},</span><span class="w">&#x000A;        </span><span class="nt">"trail"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">&#x000A;          </span><span class="p">{</span><span class="w">&#x000A;            </span><span class="nt">"blog"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">&#x000A;              </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"xavdid"</span><span class="p">,</span><span class="w">&#x000A;              </span><span class="nt">"active"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">&#x000A;              </span><span class="nt">"theme"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">&#x000A;                </span><span class="nt">"avatar_shape"</span><span class="p">:</span><span class="w"> </span><span class="s2">"square"</span><span class="p">,</span><span class="w">&#x000A;                </span><span class="nt">"background_color"</span><span class="p">:</span><span class="w"> </span><span class="s2">"#FAFAFA"</span><span class="p">,</span><span class="w">&#x000A;                </span><span class="nt">"body_font"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Helvetica Neue"</span><span class="p">,</span><span class="w">&#x000A;                </span><span class="nt">"header_bounds"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">&#x000A;                </span><span class="nt">"header_image"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://assets.tumblr.com/images/default_header/optica_pattern_06.png?_v=c5e9c9bdca5f67be80d91514a36509cc"</span><span class="p">,</span><span class="w">&#x000A;                </span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">&#x000A;              </span><span class="err">}</span><span class="p">,</span><span class="w">&#x000A;              </span><span class="nt">"share_likes"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">&#x000A;              </span><span class="nt">"share_following"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="w">&#x000A;              </span><span class="nt">"can_be_followed"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">&#x000A;            </span><span class="p">},</span><span class="w">&#x000A;            </span><span class="nt">"post"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">&#x000A;              </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"54609944775"</span><span class="w">&#x000A;            </span><span class="p">},</span><span class="w">&#x000A;            </span><span class="nt">"content_raw"</span><span class="p">:</span><span class="w"> </span><span class="s2">"&lt;p&gt;In the interest of eating as much grilled meat and pie as possible today, there's no new post. \n\nBut, get excited for the next couple of weeks, I have some great stuff written!&lt;/p&gt;"</span><span class="p">,</span><span class="w">&#x000A;            </span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">&#x000A;          </span><span class="err">}</span><span class="w">&#x000A;        </span><span class="p">],</span><span class="w">&#x000A;        </span><span class="nt">"can_send_in_message"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">&#x000A;        </span><span class="nt">"can_like"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">&#x000A;        </span><span class="nt">"can_reblog"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">&#x000A;        </span><span class="nt">"display_avatar"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">&#x000A;      </span><span class="p">},</span><span class="w">&#x000A;      </span><span class="err">//</span><span class="w"> </span><span class="err">...</span><span class="w">&#x000A;    </span><span class="p">]</span><span class="w">&#x000A;  </span><span class="p">}</span><span class="w">&#x000A;</span><span class="p">}</span><span class="w">&#x000A;</span></code></pre>
+
+<p>There&#39;s a lot of extra data there, so it&#39;s worth cleaning it it up a bit.</p>
+
+<h3 id="optional-cleaning-our-data">(optional) Cleaning our Data</h3>
+
+<p>The tool for the job is <a href="https://stedolan.github.io/jq/">jq</a> and it parses json into a specified format. We&#39;re going to tack the following line onto our <code>curl</code> command from before:</p>
+<pre class="highlight shell"><code>jq <span class="s1">'[.response.posts[] | {body: .body, date: .date, title: .title, slug: .slug}]'</span>&#x000A;</code></pre>
+
+<p>Let&#39;s unpack that command because it&#39;s rather dense.</p>
+
+<ul>
+<li><code>.response.posts</code> grabs the value of the response and posts keys (that is, our array of posts). The <code>[]</code> at the end tell jq to iterate over the array (as opposed to using <code>.response.posts[0]</code> if we were only concerned with the most recent post).</li>
+<li><code>|</code> works just like the unix pipe, sending the output of the last command into the next one.</li>
+<li><code>{body: .body, date: .date, title: .title, slug: .slug}</code> instructs jq to iterate over the array and turn it into an object with the <em>body</em>, <em>date</em>, <em>title</em>, and <em>slug</em> keys, which are really all we&#39;re concerned with. the <code>[]</code> that wrap the entire command specify that the output should be an array as well.</li>
+</ul>
+
+<p>Put it all together and we&#39;ve got concise json to convert.</p>
+<pre class="highlight shell"><code>curl <span class="s1">'https://api.tumblr.com/v2/blog/&lt;BLOG_NAME&gt;.tumblr.com/posts?api_key=&lt;API_KEY&gt;&amp;filter=raw'</span> | jq <span class="s1">'[.response.posts[] | {body: .body, date: .date, title: .title, slug: .slug}]'</span> &gt; some_posts.json&#x000A;</code></pre>
+
+<p>This is much nicer:</p>
+<pre class="highlight json"><code><span class="p">[</span><span class="w">&#x000A;  </span><span class="p">{</span><span class="w">&#x000A;    </span><span class="nt">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"i-am-a-post"</span><span class="p">,</span><span class="w">&#x000A;    </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"I am a post"</span><span class="p">,</span><span class="w">&#x000A;    </span><span class="nt">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-09-16 00:04:22 GMT"</span><span class="p">,</span><span class="w">&#x000A;    </span><span class="nt">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"This is the body of the [post](https://google.com) and so many people will eventually read it"</span><span class="w">&#x000A;  </span><span class="p">},</span><span class="w">&#x000A;  </span><span class="p">{</span><span class="w">&#x000A;    </span><span class="nt">"slug"</span><span class="p">:</span><span class="w"> </span><span class="s2">"i-am-an-older-post"</span><span class="p">,</span><span class="w">&#x000A;    </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"I am an older post"</span><span class="p">,</span><span class="w">&#x000A;    </span><span class="nt">"date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-07-03 00:14:22 GMT"</span><span class="p">,</span><span class="w">&#x000A;    </span><span class="nt">"body"</span><span class="p">:</span><span class="w"> </span><span class="s2">"I have some very important opinions I must share with you."</span><span class="w">&#x000A;  </span><span class="p">}</span><span class="w">&#x000A;</span><span class="p">]</span><span class="w">&#x000A;</span></code></pre>
+
+<p>Two quick notes on the options you can pass to tumblr:</p>
+
+<ul>
+<li><code>filter</code> tells the API how to return your posts. I originally wrote in markdown, so I wanted to specify that I should get it out as well. You can see the full set of filters <a href="https://www.tumblr.com/docs/en/api/v2#posts">here</a>.</li>
+<li>the API only returns 20 posts at a time. To get more, add <code>&amp;offset=&lt;NUMBER (probably a multiple of 20)&gt;</code> to your url. Luckily I had around 30, so I only needed to call it twice. Your experience may differ.</li>
+</ul>
+
+<h3 id="converting-to-markdown">Converting to Markdown</h3>
+
+<p>We&#39;ve got this well formatted json, this is the easy part. This ruby script iterates through the posts, adds our <a href="https://middlemanapp.com/basics/frontmatter/">frontmatter</a>, and supplies the filename middleman expects(<code>2016-12-06-this-is-a-post.md</code>).</p>
+<pre class="highlight ruby"><code><span class="c1"># If you skipped the cleaning step, your keys will be different</span>&#x000A;<span class="nb">require</span> <span class="s1">'json'</span>&#x000A;<span class="nb">require</span> <span class="s1">'time'</span>&#x000A;&#x000A;<span class="k">def</span> <span class="nf">frontmatter</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>&#x000A;  <span class="s2">"---</span><span class="se">\n</span><span class="s2">title: </span><span class="si">#{</span><span class="n">title</span><span class="si">}</span><span class="se">\n</span><span class="s2">tags:</span><span class="se">\n</span><span class="s2">---</span><span class="se">\n\n</span><span class="s2">)"</span>&#x000A;<span class="k">end</span>&#x000A;&#x000A;<span class="n">posts</span> <span class="o">=</span> <span class="kp">nil</span>&#x000A;&#x000A;<span class="no">File</span><span class="p">.</span><span class="nf">open</span><span class="p">(</span><span class="s1">'some_posts.json'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span>&#x000A;  <span class="n">posts</span> <span class="o">=</span> <span class="no">JSON</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="n">f</span><span class="p">.</span><span class="nf">read</span><span class="p">,</span> <span class="ss">symbolize_names: </span><span class="kp">true</span><span class="p">)</span>&#x000A;<span class="k">end</span>&#x000A;&#x000A;<span class="n">posts</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">post</span><span class="o">|</span>&#x000A;  <span class="c1"># make sure it's the local date</span>&#x000A;  <span class="n">date</span> <span class="o">=</span> <span class="no">Time</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="n">post</span><span class="p">[</span><span class="ss">:date</span><span class="p">]).</span><span class="nf">getlocal</span><span class="p">.</span><span class="nf">strftime</span><span class="p">(</span><span class="s1">'%Y-%m-%d'</span><span class="p">).</span><span class="nf">to_s</span>&#x000A;  <span class="n">slug</span> <span class="o">=</span> <span class="n">post</span><span class="p">[</span><span class="ss">:slug</span><span class="p">].</span><span class="nf">split</span><span class="p">(</span><span class="s1">'-'</span><span class="p">).</span><span class="nf">first</span><span class="p">(</span><span class="mi">5</span><span class="p">).</span><span class="nf">join</span><span class="p">(</span><span class="s1">'-'</span><span class="p">)</span> <span class="c1"># shorten those tumblr slugs</span>&#x000A;  <span class="no">File</span><span class="p">.</span><span class="nf">open</span><span class="p">(</span><span class="s2">"</span><span class="si">#{</span><span class="n">date</span><span class="si">}</span><span class="s2">-</span><span class="si">#{</span><span class="n">slug</span><span class="si">}</span><span class="s2">.html.md"</span><span class="p">,</span> <span class="s1">'wb+'</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span>&#x000A;    <span class="n">f</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="n">frontmatter</span><span class="p">(</span><span class="n">post</span><span class="p">[</span><span class="ss">:title</span><span class="p">]))</span>&#x000A;    <span class="c1"># turn smart quotes into regular ones</span>&#x000A;    <span class="n">f</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="n">post</span><span class="p">[</span><span class="ss">:body</span><span class="p">].</span><span class="nf">gsub</span><span class="p">(</span><span class="sr">/[\u201c\u201d]/</span><span class="p">,</span> <span class="s1">'"'</span><span class="p">))</span>&#x000A;  <span class="k">end</span> <span class="k">if</span> <span class="n">post</span><span class="p">[</span><span class="ss">:body</span><span class="p">]</span> <span class="c1"># ignore posts without bodies</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre>
+<pre class="highlight markdown"><code><span class="nn">---</span>&#x000A;<span class="s">title</span><span class="pi">:</span> <span class="s">I am a Post</span>&#x000A;<span class="s">tags</span><span class="pi">:</span>&#x000A;<span class="nn">---</span>&#x000A;&#x000A;This is the body of the <span class="p">[</span><span class="nv">post</span><span class="p">](</span><span class="sx">https://google.com</span><span class="p">)</span> and so many people will eventually read it&#x000A;...&#x000A;</code></pre>
+
+<h2 id="that-39-s-all">That&#39;s All!</h2>
+
+<p>Boom! The result is a bunch of markdown posts that look a whole lot like <a href="https://github.com/xavdid/xavdid.github.io">this</a>. I checked my new files into git and deployed and now you&#39;re reading this.</p>
+
+<p>Hopefully this has made the experience of exporting your tumblr archive fairly painless. There&#39;s a lot of options if your tumblr was more varied than my stack of text-only posts, but I bet you can handle it. If you&#39;ve got questions, I&#39;m available on Twitter (<a href="https://www.twitter.com/xavdid">@xavdid</a>). Until next time!</p>
+
+</div>
+</div>
+<hr>
+<p>
+<i class='fa fa-arrow-left'></i>
+<a href="/blog">Blog Index</a>
+|
+<a href="/blog/2013/06/20/the-quilt-of-our-lives">Random Post</a>
+<i class='fa fa-random'></i>
+</p>
+</article>
+<aside>
+<div class='top'>
+<div class='heading'>
+Published
+<time>
+August  9, 2016
+</time>
+</div>
+</div>
+<div class='bottom'>
+<p>
+tags:
+<a href="/tags/jq/">jq</a>, <a href="/tags/programming/">programming</a>, <a href="/tags/ruby/">ruby</a>, <a href="/tags/tumblr/">tumblr</a>, <a href="/tags/tutorial/">tutorial</a>
+</p>
+<p>
+On this day
+(in 1843): Tivoli Gardens, one of the oldest still intact amusement parks in the world, opens in Copenhagen, Denmark.
+</p>
+</div>
+</aside>
+
+</div>
+</div>
+<div class='footer-container'>
+<footer class='wrapper'>
+<ul>
+<li>
+<a href='/'>
+<i class='fa fa-home fa-2x'></i>
+</a>
+</li>
+<li>
+<a href='mailto:beamneocube@gmail.com' target='_blank'>
+<i class='fa fa-envelope fa-2x'></i>
+<span class='sitename'>
+Email
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.github.com/xavdid' target='_blank'>
+<i class='fa fa-github-alt fa-2x'></i>
+<span class='sitename'>
+GitHub
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.twitter.com/xavdid' target='_blank'>
+<i class='fa fa-twitter-square fa-2x'></i>
+<span class='sitename'>
+Twitter
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.linkedin.com/in/xavdid' target='_blank'>
+<i class='fa fa-linkedin-square fa-2x'></i>
+<span class='sitename'>
+Linkedin
+</span>
+</a>
+</li>
+</ul>
+</footer>
+</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-40842533-1', 'davidbrownman.com');
+  ga('send', 'pageview');
+</script>
+</body>

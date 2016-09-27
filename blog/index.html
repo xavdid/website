@@ -22,7 +22,7 @@ Blog - David Brownman dot com
 </title>
 <meta content='Personal site for David Brownman' name='description'>
 <meta content='width=device-width' name='viewport'>
-<link href="../css/the-919e2fa6.css" rel="stylesheet" /><link href="../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+<link href="../css/the-bcbdd6b0.css" rel="stylesheet" /><link href="../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../js/facts-dfa7c003.js"></script>
 <link href="../img/favicon.ico" rel="icon" type="image/ico" />
 <script>
@@ -105,6 +105,36 @@ Aug 19 2016
 <li class='summary'>
 <div class='meta'>
 <time>
+<a href='/blog/2016/08/09/the-great-migration/'>
+Aug  9 2016
+</a>
+</time>
+<ul>
+<li>tumblr</li>
+<li>programming</li>
+<li>ruby</li>
+<li>tutorial</li>
+<li>jq</li>
+</ul>
+</div>
+<div class='post'>
+<h1 class='tumblr_title'>
+<a href="/blog/2016/08/09/the-great-migration/">The Great Migration</a>
+</h1>
+<div class='post-body'>
+<p>As I'm back in the job market, I figured it was time to clean up some of my site internals. I've learned a lot about a lot since I first built it and my scss in particular was really showing its age. While I was in the trenches, I realized there was another big pain point I could fix: my blog.</p>
+
+<p>For a long time, I had my blog in two places. It actually lived on tumblr, but I mirrored it on the blog section of my site using tumblr's APIv1. This was accomplished with some jQuery that would trigger on load and populate a <code>&lt;ul&gt;</code> element.</p>
+
+<p>This was <em>fine</em>, but it meant I was maintaining two sets of css and user experience was inconsistent depending on which platform they were reading on. I was already leveraging <a href="https://middlemanapp.com">middleman</a> to generate my static site and found that they have a <a href="https://middlemanapp.com/basics/blogging">blogging</a> extension. Moving all my posts would allow me to check my posts into git and use triple ` notation for code blocks. The only hiccup was that tumblr has no way to export all of your posts, so it was time to dive back into their API. The game was afoot.</p>
+
+<a href='/blog/2016/08/09/the-great-migration/'>Read more</a>
+</div>
+</div>
+</li>
+<li class='summary'>
+<div class='meta'>
+<time>
 <a href='/blog/2016/07/08/heroku-plugins/'>
 Jul  8 2016
 </a>
@@ -178,46 +208,12 @@ Dec 21 2014
 </div>
 </div>
 </li>
-<li class='summary'>
-<div class='meta'>
-<time>
-<a href='/blog/2014/12/16/augmenting-automation-on-ios/'>
-Dec 16 2014
-</a>
-</time>
-<ul>
-<li>automation</li>
-<li>ios</li>
-<li>workflow</li>
-<li>python</li>
-<li>launch_center_pro</li>
-</ul>
-</div>
-<div class='post'>
-<h1 class='tumblr_title'>
-<a href="/blog/2014/12/16/augmenting-automation-on-ios/">Augmenting Automation on iOS With the Power of Python and Workflow</a>
-</h1>
-<div class='post-body'>
-<blockquote>
-<p>AppShoppper. Launch Center Pro. IFTTT. Pythonista.</p>
-
-<p>Long ago, the four apps lived apart in harmony. Then, everything changed when iOS 8 was released. Only Workflow, master of all four apps, could help them.</p>
-</blockquote>
-
-<p><a href="https://workflow.is/">Workflow</a> is a new iOS app that brings automater-like execution flows to your mobile device. You can take output from any action and chain it as input for another. Additionally, you can create iOS8 share sheets, allowing input to come from all over your phone. Previously, each of the aforementioned apps could do great thing (though only one thing at a time). Together, they're worth far more than the sum of their parts as Workflow brings all of their strengths together into one sleek automation machine.</p>
-
-<p>For instance, we can get a push notification from <a href="http://appshopper.com/">AppShopper.com</a> when an app we're watching goes on sale. Clicking the notification will trigger some python that tells us the regular and current prices, and on confirmation, send us over to that app in the store.</p>
-
-<a href='/blog/2014/12/16/augmenting-automation-on-ios/'>Read more</a>
-</div>
-</div>
-</li>
 </ul>
 <p class='page_nav'>
 Page
 1
 of
-4
+5
 |
 <a href="/blog/page/2/">Next Page</a>
 </p>

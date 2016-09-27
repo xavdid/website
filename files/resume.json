@@ -7,7 +7,7 @@
     "website": "https://davidbrownman.com",
     "summary": "Software Engineer and all around tinkerer. I like productivity apps, CSS, automation, and folk music.",
     "location": {
-      "city": "Palo Alto",
+      "city": "Menlo Park",
       "countryCode": "USA",
       "region": "CA"
     },
@@ -31,9 +31,18 @@
     "title": "GTM Hero",
     "date": "2016-05-09",
     "awarder": "SalesforceIQ",
-    "summary": "Awarded for \"Acts of cross-fucntional heroism\" and enabling the sales team to excel as a result of extraordinary work"
+    "summary": "Awarded for \"Acts of cross-functional heroism\" and enabling the sales team to excel as a result of extraordinary work"
   }],
   "work": [
+    {
+      "company": "Zapier",
+      "position": "Partner API Engineer",
+      "website": "https://zapier.com",
+      "startDate": "2016-09-19",
+      "summary": "Divided my time between adding new features to existing integrations, writing new ones, and working on the developer platform.",
+      "highlights": [
+      ]
+    },
     {
       "company": "SalesforceIQ",
       "position": "Software Engineer - Internal Tools",
