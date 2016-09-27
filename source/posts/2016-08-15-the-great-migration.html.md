@@ -1,8 +1,9 @@
 ---
 title: The Great Migration
-fact: Tivoli Gardens, one of the oldest still intact amusement parks in the world, opens in Copenhagen, Denmark.
-fact_year: 1843
+fact:
+fact_year:
 tags: tumblr, programming, ruby, tutorial, jq
+published: false
 ---
 
 As I'm back in the job market, I figured it was time to clean up some of my site internals. I've learned a lot about a lot since I first built it and my scss in particular was really showing its age. While I was in the trenches, I realized there was another big pain point I could fix: my blog.
