@@ -1,6 +1,6 @@
 ---
 title: Two Sides of the Same Coin
-fact: \"The Long and Winding Road\" becomes The Beatles' last U.S. number one song.
+fact: "\"The Long and Winding Road\" becomes The Beatles' last U.S. number one song."
 fact_year: 1970
 tags: personal, essay
 ---
