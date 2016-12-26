@@ -24,19 +24,19 @@ bundle exec middleman build # --clean
 
 # test the build
 # script will quit here if tests dont pass
-if ! [[ "$@*" == *--no-test* ]]; then
-    logger "Testing"
-    # linkedin returns a 999 for a valid profile /shrug
-    htmlproofer ./build --empty-alt-ignore --check-html --url-ignore "/lolapi,/stackpro,/refbook" --http-status-ignore 999 --file-ignore "./build/blog.html" --timeframe 24h
+# if ! [[ "$@*" == *--no-test* ]]; then
+#     logger "Testing"
+#     # linkedin returns a 999 for a valid profile /shrug
+#     htmlproofer ./build --empty-alt-ignore --check-html --url-ignore "/lolapi,/stackpro,/refbook" --http-status-ignore 999 --file-ignore "./build/blog.html" --timeframe 24h
 
-    for f in source/posts/*; do
-        if [[ $(cat "$f") !=  *"READMORE"* ]]; then
-            err "\"$f\" doesn't have a READMORE"
-            exit 1
-        fi
-    done
-    logger "Tests Passed"
-fi
+#     for f in source/posts/*; do
+#         if [[ $(cat "$f") !=  *"READMORE"* ]]; then
+#             err "\"$f\" doesn't have a READMORE"
+#             exit 1
+#         fi
+#     done
+#     logger "Tests Passed"
+# fi
 
 # logger "Copying"
 # cp -r build/* .
