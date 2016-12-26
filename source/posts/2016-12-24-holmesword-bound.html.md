@@ -2,7 +2,7 @@
 title: Holmesword Bound
 fact: 'The first performance of "Silent Night" takes place in the church of St. Nikolaus in Oberndorf, Austria.'
 fact_year: 1818
-tags: televesion, Sherlock Holmes
+tags: television, Sherlock Holmes
 ---
 
 *If you're just interested in the episode list, you can jump to it [here](#list)*.
