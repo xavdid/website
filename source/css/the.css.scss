@@ -312,11 +312,8 @@ html, body {
               max-width: 100%;
               max-height: 400px;
               height: auto;
-
-              &.center {
-                display: block;
-                margin: 0 auto;
-              }
+              display: block;
+              margin: 0 auto;
 
               @include tablet {
                 height: initial;
@@ -353,7 +350,8 @@ html, body {
               // margin-left: -10px;
             }
 
-            @import 'table.css.scss'
+            @import 'table.css.scss';
+            @import 'anchor.css.scss';
           }
         }
 
