@@ -1,5 +1,5 @@
 ---
-title: A Few of My Favorite Things
+title: A Few of My Favorite Things (2016 Lookback)
 fact: Arthur Guinness signs a 9,000 year lease at £45 per annum and starts brewing Guinness.
 fact_year: 1759
 tags: videogames, boardgames, lookback, movies, television
@@ -26,9 +26,7 @@ This became especially relevant after I left my job in May. It became a lot less
 
 Winner: **Machi Koro**
 
-I think what really cements Machi Koro as one of my favorite games from this year is that as soon as I finish playing it with a group for the first time, everyone immediately wants a second go. There's not always that level of enthusiasm with new games but the pleasant design and wealth of choices make this a great game to jump into. This is a lighter game that mechanically finds itself between Settlers of Catan and Dominion. You get resources based on everyone's dice rolls, but you have a bit more agency with your luck as you can choose which rolls benefit you based on which cards you buy. There's an expansion that changes which cards are available in the middle (it makes the piles random instead of static) if you find the game isn't varied enough. It also adds some nautical features which can help pad game length. There's a lot of simple tweaks to adjust the game to your group's preference and playstyle, and the game feels fun no matter which you choose. Again, it's light, but undeniably fun.
-
----
+I think what cements Machi Koro as one of my favorite games from this year is that as soon as I finish playing it with a group for the first time, everyone immediately wants a second go. There's not always that level of enthusiasm with new games but the pleasant design and wealth of choices make this a great game to jump into. This is a lighter game that mechanically finds itself between Settlers of Catan and Dominion. You get resources based on everyone's dice rolls, but you have a bit more agency with your luck as you can choose which rolls benefit you based on which cards you buy. There's an expansion that changes which cards are available in the middle (it makes the piles random instead of static) if you find the game isn't varied enough. It also adds some nautical features which can help pad game length. There's a lot of simple tweaks to adjust the game to your group's preference and playstyle, and the game feels fun no matter which you choose. Again, it's light, but undeniably fun.
 
 Runner-up: **Tokaido**
 
@@ -45,31 +43,55 @@ This has been a weird year for me as far as videogames are concerned. When picki
 
 Winner: **Factorio**
 
-![](https://i.imgur.com/6WvZjm5.jpg)
-
 I've always had a thing for [automation](/blog/2014/12/16/augmenting-automation-on-ios/) and when I saw there was a mining game that held it as a core focus, I couldn't stay away. I bought *Factorio* for my birthday and proceeded to play 35 hours in a week (placing it squarely in one of my [most-played](https://steamcommunity.com/id/xavdidtheshadow/games/?tab=all) steam games of all time). After destroying my sleep schedule and finally launching the rocket, I had only scratched the surface of the game. [^3]
 
-In *Factorio*, you play the role of a space traveler stranded on a hostile planet. Your ultimate goal is to build a rocket and escape. You start from scratch-  To do so, you build a factory that What impressed me most about this game was the polish and number of ways the player has to automate actions. There's a number of chests that can offer or request supplies, a full [turing complete](https://www.reddit.com/r/factorio/comments/43giwy/i_made_a_programmable_turingcomplete_computer_in/) system of wires and number-counters, and a programmable train system. Together, these mean the player has an amazing amount of control when it comes to how their factory runs. Multiplayer mode and headless servers mean that you can collaborate with friends (synchronously or otherwise). Add that with the joy of designing an well-thought-out base and extensive mod support and you've got a masterpiece that you can play basically forever.
+![](https://i.imgur.com/6WvZjm5.jpg)
 
-The devs have taken a unique [no sale](https://www.factorio.com/FAQ) stance on their pricing. Though I was initially annoyed, their continued support and clear love of the game and its community reassure me that this game is indeed worth the Jackson ($20, or local equivalent) it'll run you.
+In *Factorio*, you play the role of a space traveler stranded on a hostile planet. Your ultimate goal is to build a rocket and escape. You start from scratch-  To do so, you build a factory that What impressed me most about this game was the polish and number of ways the player has to automate actions. There's a number of chests that can offer or request supplies, a full [turing complete](https://www.reddit.com/r/factorio/comments/43giwy/i_made_a_programmable_turingcomplete_computer_in/) system of wires and number-counters, and a programmable train system. Together, these mean the player has an amazing amount of control when it comes to how their factory runs.
+
+Much like programming, there are many paths to success, but they're not created equal. The road to perfection is paved by "just 5 more minutes, I want to fix this one thing". There's an addictive quality to perfection and this game is the dealer. It taunts you with small improvements that will prevent bottlenecks and improve supply distribution and asks only your entire day in return.
+
+Multiplayer mode and headless servers mean that you can collaborate with friends (synchronously or otherwise). Add that with the joy of designing an well-thought-out base and extensive mod support and you've got a masterpiece that you can play basically forever.
+
+The developers have taken a unique [no sale](https://www.factorio.com/FAQ) stance on their pricing. Though I was initially annoyed, their continued support and clear love of the game and its community reassure me that this game is indeed worth the Jackson ($20, or local equivalent) it'll run you.
 
 ---
 
 Runner-up: **The Witness**
 
+At it's surface, *the Witness* is a game about increasingly complex line puzzles. There's no combat, no story to speak of, and no music. You walk around and draw lines through grids to satisfy unexplained constraints. What makes the game so great?
+
 ![](https://i.imgur.com/r61H5qm.jpg)
 
-At it's surface, *the Witness* is a [metroidvania](https://en.wikipedia.org/wiki/Metroidvania) game about line puzzles.
+Let's start with the most obvious: the game is drop-dead gorgeous. Color is used well and the island feels equal parts alive and abandoned. The developers clearly took great care in the design of every aspect of the island. Everything from the foliage to the architecture serves a purpose, usually to build and inform the theme of nearby puzzles. Atmosphere plays a large role in puzzle design and vice versa. There's a wonderful moment about 30 minutes into the game as you're solving a series of paired panels. Drawing one is mirrored on the both and solutions must satisfy both panels simultaneously. As you walk down a path from the first section towards the second, you're flanked by strangely shaped pairs of vases. On first pass they're fairly unremarkable, but nothing in the game is placed on accident. On the way out, you may notice that the vases are inverses of each other, strengthening the theme of the mirrored panels.
+
+In addition to its meticulous environment design, the pedagogy of the puzzles shines. There's no dialog or formal tutorial, but the game teaches you the rules to 7(ish) symbols and how they affect a solution. A reddit user summarizes it better than I can:
+
+> Probably the best thing I've played in around three years. The Witness is the only game I've ever played that bottled that sense of discovery, that made me feel it over and over again. More than anything, it's a game about language. ... [I]nstead of finding items that let you solve puzzles, you find knowledge that does the same. He took the inventory away from a screen in the game and put it in the player's head, and he does it all without using any English. He creates a new language and teaches it to you.
+>
+- /u/Teuthex ([source](https://www.reddit.com/r/Games/comments/5jxpek/the_witness_end_of_2016_discussions/dbjqjx2/))
+
+*The Witness* is unique in the [metroidvania](https://en.wikipedia.org/wiki/Metroidvania) genre. There's no enforced order to solving the puzzles in the 10(ish) areas of the island. Your travel is limited only by the sorts of puzzles you're able to solve. This results in very rewarding exploratory opportunities as the results of your gained knowledge are immediate and obvious. This tight feedback loop is similarly rewarding when solving puzzles as the unfulfilled elements flash red and you're immediately given a chance to try again.
 
 ![](https://i.imgur.com/MYIFqeQ.jpg)
 
-If you're interested in reading a some well thought out views, [/r/games](https://www,reddit.com/r/games) had a great [discussion thread](https://www.reddit.com/r/Games/comments/5jxpek/the_witness_end_of_2016_discussions/) which I recommend going through (though caution, there are some spoilers).
+That being said, the game isn't perfect. For me, the biggest letdown was the lack of narrative payoff. Throughout the game the locations and mysterious statuses paint a story that begs to be explained, but nothing is offered. Also, while most of the puzzles are situated deliberately, there are a few puzzle rooms that are just panels on a wall without any deeper theme.
 
-Honorable mention: *Ratchet & Clank: Into the Nexus*
+For your time and money, *The Witness* does a lot of things right. I'm glad I got it and look forward to circling back around to completed the areas I skipped before too long.
+
+---
+
+Honorable mention: **Ratchet & Clank: Into the Nexus**
+
 As a longtime fan of the Ratchet & Clank series, I was excited to play the last installment released for PS3. Nervous it could surpass the complete experience that was *Crack in Time*, I was hesitant at first. I shouldn't have been worried; Insomniac Games once again proved that they can do a lot with a little. Despite its fairly short campaign, there's a lot of rewarding exploration do be done to do and I found coming back to *Nexus* long after I needed to.
 
 ### Mobile
-Blackbox, The Guides,
+Truth be told I don't play a lot of mobile games- none on my phone and a few on my iPad. Mostly puzzle games, or action ones with a puzzle component.
+
+
+Winner: **Blackbox**
+
+Runner-up: **Does Not Commute**
 
 ## Movies
 

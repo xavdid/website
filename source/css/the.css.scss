@@ -310,7 +310,7 @@ html, body {
 
             img {
               max-width: 100%;
-              max-height: 400px;
+              max-height: 450px;
               height: auto;
               display: block;
               margin: 0 auto;
@@ -333,6 +333,13 @@ html, body {
               border-radius: 5px;
               // color is overwritten by syntax anyway
               color: $white;
+              a {
+                color: $white;
+                border-bottom: 1px solid $grey;
+                &:hover {
+                  border-bottom: 1px solid $white;
+                }
+              }
             }
 
             code {
@@ -347,6 +354,10 @@ html, body {
             blockquote {
               padding: 30px;
               font-family: courier, helvetica;
+              margin: 10px auto;
+              @include tablet {
+                margin: 20px 40px;
+              }
               // margin-left: -10px;
             }
 
