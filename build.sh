@@ -19,7 +19,12 @@ fi
 # logger "Cleaning"
 # ./clean.sh
 
-# run from project root (where it is)
+# run this file from project root (where it is)
+
+# update any files that need a TOC
+# if this fails, npm i -g doctoc
+grep -rl 'TOC' 'source/posts' | xargs doctoc --notitle
+
 bundle exec middleman build # --clean
 
 # test the build
