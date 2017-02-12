@@ -22,8 +22,8 @@ If I Were a Recycling Manager, What a Difference I Would Make - David Brownman d
 </title>
 <meta content='Personal site for David Brownman' name='description'>
 <meta content='width=device-width' name='viewport'>
-<link href="../../../../../css/the-edb15e8e.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../../../../../js/facts-dfa7c003.js"></script>
+<link href="../../../../../css/the-8284b6e8.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../../../../../js/facts-59fedb60.js"></script>
 <link href="../../../../../img/favicon.ico" rel="icon" type="image/ico" />
 <script>
   if (window.location.protocol != "https:") {
@@ -102,7 +102,7 @@ If I Were a Recycling Manager, What a Difference I Would Make
 <i class='fa fa-arrow-left'></i>
 <a href="/blog">Blog Index</a>
 |
-<a href="/blog/2014/08/13/errors-are-usually-bad">Random Post</a>
+<a href="/blog/2013/07/02/the-story-of-davids-dark">Random Post</a>
 <i class='fa fa-random'></i>
 </p>
 </article>
@@ -126,6 +126,40 @@ On this day
 </p>
 </div>
 </aside>
+<script>
+  var anchorForId = function (id) {
+    var anchor = document.createElement("a");
+    anchor.className = "header-link";
+    anchor.href      = "#" + id;
+    anchor.innerHTML = "<i class=\"fa fa-link\"></i>";
+    anchor.title = "Permalink";
+    return anchor;
+  };
+  
+  var linkifyAnchors = function (level, containingElement) {
+    var headers = containingElement.getElementsByTagName("h" + level);
+    for (var h = 0; h < headers.length; h++) {
+      var header = headers[h];
+  
+      if (typeof header.id !== "undefined" && header.id !== "") {
+        header.appendChild(anchorForId(header.id));
+      }
+    }
+  };
+  
+  document.onreadystatechange = function () {
+    if (this.readyState === "complete") {
+      var contentBlock = document.getElementsByClassName("blog_body")[0];
+      if (!contentBlock) {
+        return;
+      }
+      for (var level = 1; level <= 6; level++) {
+        linkifyAnchors(level, contentBlock);
+      }
+    }
+  };
+</script>
+
 
 </div>
 </div>
