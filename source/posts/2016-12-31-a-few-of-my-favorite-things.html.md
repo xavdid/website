@@ -26,7 +26,7 @@ READMORE
 - [Movies](#movies)
 - [Television](#television)
   - [Newly Aired](#newly-aired)
-  - [Old Show](#old-show)
+  - [Ended](#ended)
 - [Books](#books)
 - [tl;dr](#tldr)
 
