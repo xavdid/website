@@ -30,7 +30,7 @@ READMORE
   - [Newly Aired](#newly-aired)
   - [Ended](#ended)
 - [Books](#books)
-- [tl; dr](#tl-dr)
+- [tl;dr](#tldr)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -214,7 +214,10 @@ Honorable Mention: Joel McHale's *Thanks for the Money*. I listened to this as a
 <br>
 Dishonorable mention: *The Adjacent*, for being an un-engaging knock off of *Cloud Atlas* where we bounce between characters, but they're all so dull that it's not worth discovering why or how they're connected.
 
-## tl; dr
+<!-- extra anchor, see https://github.com/vmg/redcarpet/issues/602 -->
+<a name="tldr"></a>
+
+## tl;dr
 
 The word count on this one sort of got away from me, so here's just my best-ofs without any explanation: (in order of preference):
 

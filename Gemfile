@@ -9,7 +9,7 @@ gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 gem 'haml', '~> 4.0'
 
 # markdown processor
-gem 'redcarpet', '~> 3.3'
+gem 'redcarpet', '~> 3.4'
 # for blog summaries
 gem 'nokogiri', '~> 1.6'
 
