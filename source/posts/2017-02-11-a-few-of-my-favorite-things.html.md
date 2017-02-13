@@ -1,11 +1,11 @@
 ---
 title: A Few of My Favorite Things
-fact: Arthur Guinness signs a 9,000 year lease at £45 per annum and starts brewing Guinness.
-fact_year: 1759
+fact: BBC Television produces the world's first ever science fiction television program, an adaptation of a section of the Karel Čapek play R.U.R., that coined the term "robot".
+fact_year: 1938
 tags: boardgames, books, lookback, movies, television, videogames
 ---
 
-<!-- this was actually posted on Feb 12, 2017 -->
+*Editors Note: This was originally written to go out on Dec 31 but it was delayed. Nevertheless, it's written as if it was posted then.*
 
 As 2016 draws to a close, it's a convenient time to look back on the last 12 months to some of the media I've enjoyed the most this past year. It might have been a tire fire as far as politics and celebrity deaths go, but there are a lot of metrics [trending](https://www.youtube.com/watch?v=wei8M9IuqPc) in the right [direction](https://www.youtube.com/watch?v=aThmAZ9yXqE).
 
@@ -14,6 +14,8 @@ On a personal level, I started getting into tracking what I read, watched, and p
 Let's get to it!
 
 READMORE
+
+<a name="toc"></a>
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -28,7 +30,7 @@ READMORE
   - [Newly Aired](#newly-aired)
   - [Ended](#ended)
 - [Books](#books)
-- [tl;dr](#tldr)
+- [tl; dr](#tl-dr)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -41,12 +43,12 @@ Since I took a remote job at [Zapier](https://zapier.com) my group's game sessio
 <br>
 Winner: **Machi Koro**
 
-I think what cements Machi Koro as one of my favorite games from this year is that as soon as I finish playing it with a group for the first time, everyone immediately wants a second go. There's not always that level of enthusiasm with new games but the pleasant design and wealth of choices make this a great game to jump into. This is a lighter game that mechanically finds itself between Settlers of Catan and Dominion. You get resources based on everyone's dice rolls, but you have a bit more agency with your luck as you can choose which rolls benefit you based on which cards you buy. There's an expansion that changes which cards are available in the middle (it makes the piles random instead of static) if you find the game isn't varied enough. It also adds some nautical features which can help pad game length. There's a lot of simple tweaks to adjust the game to your group's preference and play style, and the game feels fun no matter which you choose. Again, it's light, but undeniably fun.
+I think what cements *[Machi Koro](https://boardgamegeek.com/boardgame/143884/machi-koro)* as one of my favorite games from this year is that as soon as I finish playing it with a group for the first time, everyone immediately wants a second go. There's not always that level of enthusiasm with new games but the pleasant design and wealth of choices make this a great game to jump into. This is a lighter game that mechanically finds itself between Settlers of Catan and Dominion. You get resources based on everyone's dice rolls, but you have a bit more agency with your luck as you can choose which rolls benefit you based on which cards you buy. There's an expansion that changes which cards are available in the middle (it makes the piles random instead of static) if you find the game isn't varied enough. It also adds some nautical features which can help pad game length. There's a lot of simple tweaks to adjust the game to your group's preference and play style, and the game feels fun no matter which you choose. Again, it's light, but undeniably fun.
 
 <br>
 Runner-up: **7 Wonders: Duel**
 
-Living in an 8 person house in college, *7 Wonders* was a great way to include everyone in a single game. Strictly speaking it's got a 2 player variant but it's shoehorned in and not well-implemented; *7 Wonders Duel* is designer [Antoine Bauza's](https://boardgamegeek.com/boardgamedesigner/9714/antoine-bauza) rectification of this problem. It's a 2 player standalone game that borrows heavily from the mechanics of the original, but does so with 2 players in mind. Victory comes one of three ways- military or scientific supremacy, or points if all 3 rounds complete. Instead of drafting from a deck, the cards are shuffled and laid out on the table where each player takes turns drawing from the display. Once the cards are dealt, there's very little luck (as both players have access to the same information and cards) which is vital for a 2 player game to be competitive. There's enough control over your actions (and how they affect your opponent) that victories are satisfying and losses are avoidable. There's enough variation in the Wonders and the way the cards are laid out that the game has a ton of replay value. The game is well balanced and has a lot of depth. If you find yourself in a position to play a lot of 2 player games, make sure *7 Wonders: Duel* is in your collection.
+Living in an 8 person house in college, *7 Wonders* was a great way to include everyone in a single game. Strictly speaking it's got a 2 player variant but it's shoehorned in and not well-implemented; *[7 Wonders Duel](https://boardgamegeek.com/boardgame/173346/7-wonders-duel)* is designer Antoine Bauza's rectification of this problem. It's a 2 player standalone game that borrows heavily from the mechanics of the original, but does so with 2 players in mind. Victory comes one of three ways- military or scientific supremacy, or points if all 3 rounds complete. Instead of drafting from a deck, the cards are shuffled and laid out on the table where each player takes turns drawing from the display. Once the cards are dealt, there's very little luck (as both players have access to the same information and cards) which is vital for a 2 player game to be competitive. There's enough control over your actions (and how they affect your opponent) that victories are satisfying and losses are avoidable. There's enough variation in the Wonders and the way the cards are laid out that the game has a ton of replay value. The game is well balanced and has a lot of depth. If you find yourself in a position to play a lot of 2 player games, make sure *7 Wonders: Duel* is in your collection.
 
 <br>
 Honorable Mention: **Tokaido**, for a beautifully spiteful game about a leisurely journey up the Japan's [Eastern Sea Road](https://en.wikipedia.org/wiki/T%C5%8Dkaid%C5%8D_(road)). The components are beautiful and the iconography is clear. Also **Codenames** for being fun as heck and a great party game.
@@ -63,7 +65,7 @@ This has been a weird year for me as far as PC games are concerned. When picking
 <br>
 Winner: **Factorio**
 
-I've always had a thing for [automation](/blog/2014/12/16/augmenting-automation-on-ios/) and when I saw there was a mining game designed around that very concept, I couldn't stay away. I bought *Factorio* for my birthday and proceeded to play 35 hours that week (placing it squarely in one of my [most-played](https://steamcommunity.com/id/xavdidtheshadow/games/?tab=all) steam games of all time). After destroying my sleep schedule and finally launching the rocket, I had only scratched the surface of the game. [^3]
+I've always had a thing for [automation](/blog/2014/12/16/augmenting-automation-on-ios/) and when I saw there was a mining game designed around that very concept, I couldn't stay away. I bought *[Factorio](https://www.factorio.com/)* for my birthday and proceeded to play 35 hours that week (placing it squarely in one of my [most-played](https://steamcommunity.com/id/xavdidtheshadow/games/?tab=all) steam games of all time). After destroying my sleep schedule and finally launching the rocket, I had only scratched the surface of the game. [^3]
 
 ![](https://i.imgur.com/6WvZjm5.jpg)
 
@@ -116,7 +118,7 @@ Truth be told I don't play a lot of mobile games- none on my phone and a few on 
 <br>
 Winner: **Blackbox**
 
-Puzzle games need a premise, whether it's line puzzles or a 9 by 9 grid with digits int it. *Blackbox* is unique in that its premise takes advantage of the thing you think about least of all: your iPhone itself. The game consists of a series of puzzles requiring you to light up a little square. There aren't instructions, strictly speaking, and the answer isn't always clear. The game's design does a great job and instructing you tutorial shows you how the puzzles are explicitly device related.
+Puzzle games need a premise, whether it's line puzzles or a 9 by 9 grid with digits int it. *[Blackbox](http://blackboxpuzzles.com/)* is unique in that its premise takes advantage of the thing you think about least of all: your iPhone itself. The game consists of a series of puzzles requiring you to light up a little square. There aren't instructions, strictly speaking, and the answer isn't always clear. The game's design does a great job and instructing you tutorial shows you how the puzzles are explicitly device related.
 
 ![](https://i.imgur.com/tivxcN1.png)
 
@@ -136,15 +138,13 @@ Planted squarely between very relaxing and very stressful, *[Mini Metro](http://
 The game's graphics provide an undeniable charm and its pleasant music goes a long way toward making you feel relaxed. Though the people and stations are fictional, all of the maps are based on real cities and the layout of rivers/bridges/tunnels is at least semi-realistic. If I were to make one improvement, it would be about the information you have on the system. Being able to see which lines had which shapes would go a long way towards identifying problems before it's too late. Nevertheless, a quick *Mini Metro* session goes a long way to putting me in a good mood.
 
 <br>
-Honorable mention: **The Guides**
-
-*[The Guides](https://theguidesapp.com/)* plays like a [CTF](https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security) game that requires almost no specific technical knowledge. Each level requires a code word (found by correctly decoding written or visual clues) to progress. It provides you with an interface for encoding & decoding various writing systems (such as binary, or a [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher)). There seems to be some sort of cryptic story related to aliens, but even without it the game feels satisfying.
+Honorable mention: *[The Guides](https://theguidesapp.com/)*, which plays like a [CTF](https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security) game that requires almost no specific technical knowledge. Each level requires a code word (found by correctly decoding written or visual clues) to progress. There seems to be some sort of cryptic story related to aliens, but even without it the game feels satisfying.
 
 ## Movies
 
 It wasn't until I started looking back through the movies that came out in the past year that I realized how many awesome releases there were. I tend to see a lot of movies in the theater and this year was no exception. Until then, here's the best (and worst) of what I saw in theaters this year.
 
-Winner(s)[^6]: **Arrival**, **Captain America: Civil War**
+Winner(s)[^6]: **Captain America: Civil War**, **Arrival**
 
 ![](https://i.imgur.com/CjHIgKA.jpg)
 
@@ -199,14 +199,14 @@ This was the year I really started to get into audio-books (thanks to a few leng
 <br>
 Winner: **Gone Girl**, by Gillian Flynn
 
-I always make a point to read the book before a movie comes out, and that was my primary motivation for picking up *Gone Girl*. In hindsight, I chose correctly. It's a thriller about the murder of a man's wife. It adheres to a great frame where chapters alternate between their points of view: him in present day (dealing with her murder) and her in her diary, staring from when they met and running forward until her untimely demise.
+I always make a point to read the book before a movie comes out, and that was my primary motivation for picking up *[Gone Girl](http://gillian-flynn.com/gone-girl/)*. In hindsight, I chose correctly. It's a thriller about the murder of a man's wife. It adheres to a great frame where chapters alternate between their points of view: him in present day (dealing with her murder) and her in her diary, staring from when they met and running forward until her untimely demise.
 
 This book is equal parts thrilling and chilling as we get an insightful dive into the minds of a pair of realistic and engaging characters. Flynn's writing is frank, addressing how people change over time and how they inflict misery on others. It's gripping all the way through and I wholeheartedly recommend it.
 
 <br>
 Runner-up: **The Mirage**, by Matt Ruff
 
-Alternate history is a genre I don't read nearly enough of, so I jumped at the chance to read *The Mirage*. Written by the author of one of my favorite books of all time (Bad Monkeys, for you trivia buffs), Ruff paints an engaging picture of how the world could have looked given a big "what if". In his version of events, the UAE and the USA switch roles, and Christian fundamentalists bomb the twin Tigris and Euphrates towers. This story follows the aftermath and the political climate therein. The lives of the (FBI equivalent) agents we follow take a turn for the bizarre as artifacts from a "time that wasn't" begin popping up- Bush-era political propaganda and unknown technology. Especially in the current day, *The Mirage* is well worth your time.
+Alternate history is a genre I don't read nearly enough of, so I jumped at the chance to read *[The Mirage](http://www.bymattruff.com/my-novels/the-mirage/)*. Written by the author of one of my favorite books of all time (Bad Monkeys, for you trivia buffs), Ruff paints an engaging picture of how the world could have looked given a big "what if". In his version of events, the UAE and the USA switch roles, and Christian fundamentalists bomb the twin Tigris and Euphrates towers. This story follows the aftermath and the political climate therein. The lives of the (FBI equivalent) agents we follow take a turn for the bizarre as artifacts from a "time that wasn't" begin popping up- Bush-era political propaganda and unknown technology. Especially in the current day, *The Mirage* is well worth your time.
 
 <br>
 Honorable Mention: Joel McHale's *Thanks for the Money*. I listened to this as an audiobook and besides being funny, there were some audiobook specific jokes that made it feel special. Also, he calls friends and cast mates and has them introduce chapters over the phone, which was cute. It also becomes surprisingly touching for a largely parodic work.
@@ -214,7 +214,7 @@ Honorable Mention: Joel McHale's *Thanks for the Money*. I listened to this as a
 <br>
 Dishonorable mention: *The Adjacent*, for being an un-engaging knock off of *Cloud Atlas* where we bounce between characters, but they're all so dull that it's not worth discovering why or how they're connected.
 
-## tl;dr
+## tl; dr
 
 The word count on this one sort of got away from me, so here's just my best-ofs without any explanation: (in order of preference):
 
@@ -223,6 +223,8 @@ The word count on this one sort of got away from me, so here's just my best-ofs 
 * *Movies*: Captain America: Civil War, Arrival, Deadpool
 * *Television*: The Good Place, Stranger Things; Better off Ted
 * *Books*: Gone Girl, The Mirage
+
+Back to the [table of contents](#toc)
 
 ---
 
