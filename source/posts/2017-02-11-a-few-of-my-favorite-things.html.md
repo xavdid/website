@@ -135,7 +135,7 @@ Runner-up: **Mini Metro**
 
 Planted squarely between very relaxing and very stressful, *[Mini Metro](http://dinopoloclub.com/minimetro/)* is a subway map simulator. The goal is simple- to not leave anyone waiting at a station too long. Throughout a game (which lasts up to ~15 minutes), shapes (aka stations) pop up around your map. It starts off easy- there are only circle, square, and triangle stations/riders. You place subway lines between stations in order to best aid your geometrically shaped citizens in getting to their destination. As the game progresses, the shapes get more diverse, forcing your system to become more inter-connected and efficient. The difficulty curve is gentle yet firm, leading to satisfying gameplay as you hustle to keep folks moving.
 
-![](http://i.imgur.com/C8npRiX.jpg)
+![](https://i.imgur.com/C8npRiX.jpg)
 
 The game's graphics provide an undeniable charm and its pleasant music goes a long way toward making you feel relaxed. Though the people and stations are fictional, all of the maps are based on real cities and the layout of rivers/bridges/tunnels is at least semi-realistic. If I were to make one improvement, it would be about the information you have on the system. Being able to see which lines had which shapes would go a long way towards identifying problems before it's too late. Nevertheless, a quick *Mini Metro* session goes a long way to putting me in a good mood.
 
