@@ -19,13 +19,20 @@
     - else
       David Brownman dot com
 
+  -# og info
+  %meta{property: 'og:title', content: current_page.data.title || 'David Brownman dot com'}
+  %meta{property: 'og:type', content: 'article'}
+  %meta{property: 'og:url', content: 'https://davidbrownman.com/' + current_page.url}
+  %meta{property: 'og:image', content: current_page.data.og_image || 'https://i.imgur.com/zhqbTVt.png'}
+  - if current_page.url.include?('/blog/')
+    %meta{property: 'og:description', content: current_page.data.og_desc || 'A blog post by David Brownman'}
+  - else
+    %meta{property: 'og:description', content: 'Personal site for David Brownman'}
 
-  %meta{name: "description", content: "Personal site for David Brownman"}
   %meta{name: "viewport", content: "width=device-width"}
 
   #{stylesheet_link_tag "the", "code", "https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"}
 
-  -# pulls compiled js
   #{javascript_include_tag "https://code.jquery.com/jquery-2.2.4.min.js", "/js/facts.js"}
 
   = favicon_tag 'img/favicon.ico'

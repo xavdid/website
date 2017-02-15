@@ -3,6 +3,8 @@ title: A Few of My Favorite Things
 fact: BBC Television produces the world's first ever science fiction television program, an adaptation of a section of the Karel Čapek play R.U.R., that coined the term "robot".
 fact_year: 1938
 tags: boardgames, books, lookback, movies, television, videogames
+og_image: 'https://i.ytimg.com/vi/8lspg7nMpdc/maxresdefault.jpg'
+og_desc: A lookback at the best (and worst) of media in 2016
 ---
 
 *Editors Note: This was originally written to go out on Dec 31 but it was delayed. Nevertheless, it's written as if it was posted then.*
