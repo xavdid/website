@@ -1,12 +1,4 @@
 !!!
-/[if lt IE 7]
-  <html class="no-js lt-ie9 lt-ie8 lt-ie7">
-/[if IE 7]
-  <html class="no-js lt-ie9 lt-ie8">
-/[if IE 8]
-  <html class="no-js lt-ie9 lt-ie8">
-/[if gt IE 8]
-  <!--> <html class="no-js"> <!--
 %head
   /You're looking at my site's source! That's pretty cool. It's pretty straightforward. Template taken from HTML5Boilderplate, css adapted to my liking.
   /This site was laregely designed by Jennifer Herzberg, who rules.
@@ -22,7 +14,7 @@
   %meta{property: 'og:title', content: current_page.data.title || 'David Brownman dot com'}
   %meta{property: 'og:type', content: 'article'}
   %meta{property: 'og:url', content: 'https://davidbrownman.com/' + current_page.url}
-  %meta{property: 'og:image', content: current_page.data.og_image || 'https://i.imgur.com/zhqbTVt.png'}
+  %meta{property: 'og:image', content: current_page.data.og_img || 'https://i.imgur.com/zhqbTVt.png'}
   - if current_page.url.include?('/blog/')
     %meta{property: 'og:description', content: current_page.data.og_desc || 'A blog post by David Brownman'}
   - else
@@ -34,7 +26,7 @@
 
   #{javascript_include_tag "https://code.jquery.com/jquery-2.2.4.min.js", "/js/facts.js"}
 
-  = favicon_tag 'img/favicon.ico'
+  = favicon_tag '/favicon.ico'
 
   - if config[:https_redirect]
     :javascript
@@ -44,8 +36,6 @@
       }
 
 %body
-  /[if lt IE 7]
-    <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/?locale=en/">upgrade your browser</a>.
   .border
   .page
     .header-container
