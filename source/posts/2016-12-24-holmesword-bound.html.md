@@ -37,5 +37,5 @@ Lucky for you, Elementary is widely available for purchase online, including on 
 * Episode 23: **The Woman**
 * Episode 24: **Heroine**
 
-And there you have it. These 13 hours solidify Elementary's case as one of the finest Holmes adaptations and are well worth your time. Regardless of what you watch this holiday season, I hope it brings you joy!
+Each episode was selected for a combination of its writing, relevance to the season's arc, and overall originality. Rather than go through synopses of each episodes, I'll let them speak for themselves. These 13 hours solidify Elementary's case as one of the finest Holmes adaptations and are well worth your time. Regardless of what you watch this holiday season, I hope it brings you joy!
 
