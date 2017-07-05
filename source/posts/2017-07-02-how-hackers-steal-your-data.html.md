@@ -32,11 +32,11 @@ A service can store a hashed version of your password (such as `5f4dcc3b5aa765d6
 
 It turns out most users are not very inventive when creating passwords. A recent [security report](https://blog.keepersecurity.com/2017/01/13/most-common-passwords-of-2016-research-study/) showed that of a sample of 10 million passwords leaked in 2016, a full 50% of them were among the 25 most commonly used passwords. Most of that list are keyboard patterns (like `123456` or `zxcvbnm`) or words straight out of the dictionary (like `password` or `google`). Given that so many people use such a small subset of passwords, it's well worth my time to build a [rainbow table](https://en.wikipedia.org/wiki/Rainbow_table), or a pre-computed list of hashes for the most common passwords (and their variants; `password1` isn't fooling anyone). So, if you use a common password you might as well just [email me](mailto:beamneocube@gmail.com?subject=My%20Bank%20Account%20Info) your bank account info now. In an effort to defeat my rainbow tables, any service worth it's (*ahem*) salt will store your password with a bit of extra text at the front called a **salt**. For example, `salt+password1` hashes totally differently than `password1`. If the same salt is used for each password, I have to recreate my rainbow table. If a random salt is used with each password, I have to do them each separately, which definitely slows me down.
 
-I've hit my worst case scenario: each password is salted separately and I have to crack them one at a time. Instead of guessing randomly (which will never work), I'll test each hash against a list of likely options. This will consist of the most common passwords, the ten thousand most common english words, and the most common variants of each. If I think your password is `ilovedogs`, you can bet your butt I'm going to have [a program](https://en.wikipedia.org/wiki/John_the_Ripper) that tries things like `ilovedogs95` and `1l0v3d0gs`. This is **password fuzzing**, and is the basis for a well-known [xkcd comic](https://xkcd.com/936/). If you start with a bad password, performing common transformations on it (like `o -> 0`) doesn't get you a more secure password. If your password is in (or based on a word in) the list that I start with, you're hosed.
+If that's the case, I've hit my worst case scenario. Each password is salted separately and I have to crack them one at a time. There are two ways to approach this. I could brute force them, trying every single possible password until I get it. This is akin to playing hangman by guessing each letter in order. It might work, but I'd be better off trying the common letters first (`e`, `r`, etc). The same principle applies here. Rather than exhausting every possibility, my time is much better spent running through a huge set of the most likely passwords. This list will consist of the thousand most common passwords (a few of which were mentioned above), all the words from the dictionary, and common variants on each. From there, I can use [a program](https://en.wikipedia.org/wiki/John_the_Ripper) to automatically detect which hashing function to use. It will run through my list for each hash, noting the ones it successfully cracks. If I can't crack a hash at this point, I'll probably skip it; it's not worth my time. It should be your goal to have functionally uncrackable passwords. What that entails is the focus of a well-known xkcd comic.
 
-![https://xkcd.com/936/](https://imgs.xkcd.com/comics/password_strength.png)
+[![https://xkcd.com/936/](https://imgs.xkcd.com/comics/password_strength.png)](https://xkcd.com/936/)
 
-The comic also touches on another key factor in password security: **length** (it matters). Password strength is a common theme on Jeff Atwood's [Coding Horror](https://blog.codinghorror.com) and he's got a great piece on [passwords being too short](https://blog.codinghorror.com/your-password-is-too-damn-short/). If your passwords is 8 characters or less, it takes at *max* 1 minute to guess (and that's only if you've got letters, numbers, etc.
+It highlights two important things: common substitutions (like `o -> 0`) add negligable security and that the single most important factor in a strong password is **length**. Password strength is a common theme on Jeff Atwood's [Coding Horror](https://blog.codinghorror.com) and he's got a great piece on [passwords being too short](https://blog.codinghorror.com/your-password-is-too-damn-short/). If your passwords is 8 characters or less, it takes at *max* 1 minute to guess (and that's only if you've got letters, numbers, etc.
 
 To ensure I can't crack yours, make sure any password you use:
 
@@ -46,7 +46,7 @@ To ensure I can't crack yours, make sure any password you use:
 
 Passwords with all of those qualities are basically impossible to remember though. That's where our first tip comes in:
 
-### 1. Use a password manager
+### 1. Use a password manager (to store complex passwords)
 
 If you want to keep me out, you need to have complex, unique passwords for every site. There's no reasonable way to expect you to remember these without some help, but help is here. Password managers are a class of software that perform two main functions for passwords: storage and generation.
 
@@ -98,8 +98,6 @@ The short answer is *probably*. The longer answer is that nothing is guaranteed,
 
 The hack described here (a large-scale brute forcing of hashed passwords) is a common attack vector, but it's not the only one. The single best way to keep yourself safe is **constant vigilance**. Be overly cautious in all things. To that end, I've got two last bonus tips to send you off with.
 
-![CONSTANT VIGILANCE](https://i.imgur.com/FKEOCQD.png)
-
 ### 4. Use HTTPS, Everywhere
 
 Accessing the internet without using `https` is like shouting everything you type as you do so. If you're uncomfortable with anyone hearing your passwords, payment info, and any other sensitive information, make sure you only access sites that include `https://` at the start of their name. The "s" stands for "secure", which means any data you send to the site is encrypted, safe from any prying eyes. Some sites redirect you by default. A lot more support it, but don't enforce it. The Electronic Frontier Foundation has a great [browser extension](https://www.eff.org/https-everywhere) appropriately called **HTTPS Everywhere** that will redirect you to a secure version of a page if it's available. It's easy to install and forget about, and I recommend you do exactly that.
@@ -122,7 +120,7 @@ Past that, I appreciate you reading this far. I've done my best to make a fairly
 
 ---
 
-*Many thanks to [Andrew](http://www.andrewaxtell.com/), [Vicky](https://www.instagram.com/agentredsquirrel/), and [Evan]() for use of their editing prowess.*
+*Many thanks to [Andrew](http://www.andrewaxtell.com/), [Vicky](https://www.instagram.com/agentredsquirrel/), and [Evan](http://www.plantsciences.ucdavis.edu/plantsciences_faculty/eviner/main/people.htm) for use of their editing prowess.*
 
 [^1]: Hacks happen all the time, and companies are not always prompt about announcing that it's happened. Just because you haven't heard about a breach doesn't automatically mean your data is safe.
 [^2]: If you're unlucky, I've got phone numbers, birthdays, and/or and location information. If you're extra unlucky, there could be SSN data there as well.
