@@ -13,7 +13,7 @@ Blog - David Brownman dot com
 <meta content='https://i.imgur.com/zhqbTVt.png' property='og:image'>
 <meta content='A blog post by David Brownman' property='og:description'>
 <meta content='width=device-width' name='viewport'>
-<link href="../../../css/the-8284b6e8.css" rel="stylesheet" /><link href="../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+<link href="../../../css/the-7e26b1a7.css" rel="stylesheet" /><link href="../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../../../js/facts-59fedb60.js"></script>
 <link href="../../../favicon.ico" rel="icon" type="image/ico" />
 <script>
@@ -65,6 +65,37 @@ Sundries
 <div class='main clearfix wrapper'>
 <article>
 <ul class='blog'>
+<li class='summary'>
+<div class='meta'>
+<time>
+<a href='/blog/2016/08/09/the-great-migration/'>
+Aug  9 2016
+</a>
+</time>
+<ul>
+<li>tumblr</li>
+<li>programming</li>
+<li>ruby</li>
+<li>tutorial</li>
+<li>jq</li>
+</ul>
+</div>
+<div class='post'>
+<h1 class='tumblr_title'>
+<a href="/blog/2016/08/09/the-great-migration/">The Great Migration</a>
+</h1>
+<div class='post-body'>
+<p>As I'm back in the job market, I figured it was time to clean up some of my site internals. I've learned a lot about a lot since I first built it and my scss in particular was really showing its age. While I was in the trenches, I realized there was another big pain point I could fix: my blog.</p>
+
+<p>For a long time, I had my blog in two places. It actually lived on tumblr, but I mirrored it on the blog section of my site using tumblr's APIv1. This was accomplished with some jQuery that would trigger on load and populate a <code>&lt;ul&gt;</code> element.</p>
+
+<p>This was <em>fine</em>, but it meant I was maintaining two sets of css and user experience was inconsistent depending on which platform they were reading on. I was already leveraging <a href="https://middlemanapp.com">middleman</a> to generate my static site and found that they have a <a href="https://middlemanapp.com/basics/blogging">blogging</a> extension. Moving all my posts would allow me to check my posts into git and use triple ` notation for code blocks. The only hiccup was that tumblr has no way to export all of your posts, so it was time to dive back into their API. The game was afoot.</p>
+
+<p></p>
+<a href='/blog/2016/08/09/the-great-migration/'>Read more</a>
+</div>
+</div>
+</li>
 <li class='summary'>
 <div class='meta'>
 <time>
@@ -176,33 +207,6 @@ Dec 16 2014
 
 <p></p>
 <a href='/blog/2014/12/16/augmenting-automation-on-ios/'>Read more</a>
-</div>
-</div>
-</li>
-<li class='summary'>
-<div class='meta'>
-<time>
-<a href='/blog/2014/08/13/errors-are-usually-bad/'>
-Aug 13 2014
-</a>
-</time>
-<ul>
-<li>python</li>
-<li>RelateIQ</li>
-<li>programming</li>
-</ul>
-</div>
-<div class='post'>
-<h1 class='tumblr_title'>
-<a href="/blog/2014/08/13/errors-are-usually-bad/">Errors Are Usually Bad! A Cautionary Tale</a>
-</h1>
-<div class='post-body'>
-<p>The worst part about programming is that the computer does exactly what you tell it to. <em>Exactly</em>.</p>
-
-<p>Here at <a href="https://www.relateiq.com/">RelateIQ</a> I work in <strong>Internal Tools</strong>, or building products for other employees. My most recent project has involved a pythong script moving data out of a database and into the product itself so a bunch of users could be slung through our new Marketo integration and contacted.</p>
-
-<p></p>
-<a href='/blog/2014/08/13/errors-are-usually-bad/'>Read more</a>
 </div>
 </div>
 </li>

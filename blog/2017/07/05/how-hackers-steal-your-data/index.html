@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<head>
+<!-- You're looking at my site's source! That's pretty cool. It's pretty straightforward. Template taken from HTML5Boilderplate, css adapted to my liking. -->
+<!-- This site was laregely designed by Jennifer Herzberg, who rules. -->
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>
+How Hackers Steal Your Data (and How to Make it Harder for Them) - David Brownman dot com
+</title>
+<meta content='How Hackers Steal Your Data (and How to Make it Harder for Them)' property='og:title'>
+<meta content='article' property='og:type'>
+<meta content='https://davidbrownman.com//blog/2017/07/05/how-hackers-steal-your-data/' property='og:url'>
+<meta content='https://i.imgur.com/FLGJEW0.png' property='og:image'>
+<meta content='The ins and outs of password security' property='og:description'>
+<meta content='width=device-width' name='viewport'>
+<link href="../../../../../css/the-7e26b1a7.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script><script src="../../../../../js/facts-59fedb60.js"></script>
+<link href="../../../../../favicon.ico" rel="icon" type="image/ico" />
+<script>
+  if (window.location.protocol != "https:") {
+    var url = "https:" + window.location.href.substring(window.location.protocol.length);
+    window.location.href = url;
+  }
+</script>
+</head>
+<body>
+<div class='border'></div>
+<div class='page'>
+<div class='header-container'>
+<header class='wrapper clearfix'>
+<h1 class='title'>
+<a href='/'>
+<span class='my_name'>
+David Brownman
+</span>
+</a>
+</h1>
+<nav>
+<ul>
+<li>
+<a class='short' href='/'>
+Home
+</a>
+</li>
+<li>
+<a class='active short' href='/blog'>
+Blog
+</a>
+</li>
+<li>
+<a class='long' href='/projects'>
+Projects
+</a>
+</li>
+<li>
+<a class='long' href='/misc'>
+Sundries
+</a>
+</li>
+</ul>
+</nav>
+</header>
+</div>
+<div class='main-container'>
+<div class='main clearfix wrapper'>
+<article>
+<div class='blog_post'>
+<h1>
+How Hackers Steal Your Data (and How to Make it Harder for Them)
+</h1>
+<div class='blog_body'>
+<p>Your data is in constant danger.</p>
+
+<p>Your address, credit card number, and anything else you have available online is ripe for the taking should an attacker gain access to your accounts. If you use the internet at all (and you&#39;re reading this, I know you do), there are people out there that would happily sell access to your account to the highest bidder, forever compromising that password and any data associated with it.</p>
+
+<p>When you think of a hacker, you might think about <a href="https://www.reddit.com/r/itsaunixsystem/top/?sort=top&amp;t=all">ridiculous scenes</a> from movies. A shadowy figure&#39;s fingers fly over a keyboard in a poorly lit room as green text cascades down their four monitors. The reality of the situation is much more banal; programs run over the course of hours, breaking protected versions of passwords into their plaintext form. Once that&#39;s done, a hacker has unfettered access to any accounts they unlocked directly, plus anything else that reused that password. While nothing can keep you <em>completely</em> safe from a dedicated hacker, you can make yourself as tough of a target as possible. To best understand this, let&#39;s take a journey through the steps of a typical hack, what makes it dangerous, and steps you can take to mitigate your risk.</p>
+
+<h2 id="the-anatomy-of-a-hack">The Anatomy of a Hack</h2>
+
+<p>So here I am, a hacker. I&#39;m looking to make a quick buck, so I&#39;m going to spend my afternoon breaking into your account(s) and putting them up for <a href="https://www.theatlantic.com/technology/archive/2016/02/the-black-market-for-netflix-accounts/462321/">sale</a>. Don&#39;t take it personally. Unless you&#39;re rich and/or famous, I&#39;m probably not targeting you. In fact, I hardly know you exist; you&#39;re a line in a file. Rather than focus on specific people, I&#39;m going to target accounts in bulk. I just bought a dump of 400,000 hashes leaked from a (hypothetical) forum hack a few years ago.<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup></p>
+
+<p>When I buy user data like this, at minimum, each entry will have an email and a password.<sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup> The password can be stored in a number of ways. If the company is stupid, the password will be stored in plaintext, exactly how the user wrote it. In that case, I don&#39;t have to do any cracking at all - I just know your password. Let&#39;s hope for your sake, this isn&#39;t the case.</p>
+
+<p>The more likely scenario is that the site will store your password <strong>hashed</strong> and <strong>salted</strong>. These are techniques for making stored passwords more secure (and by extension, leaked passwords harder to crack).</p>
+
+<p>A website needs to save your password in some form (to validate subsequent logins). Instead of storing the plaintext, most sites record your password with the help of a program called a <strong>cryptographic hashing function</strong>. There&#39;s a great writeup about how they work <a href="http://www.unixwiz.net/techtips/iguide-crypto-hashes.html#howused">here</a>, but the gist is that given your password as input, the function produces a <strong>hash</strong> with some special properties. Namely, the output is:</p>
+
+<ol>
+<li><strong>deterministic</strong>; the same input always gives the same output</li>
+<li><strong>unique</strong>; no two inputs should produce the same output</li>
+<li><strong>irreversible</strong>; there&#39;s no way to recover the input from the output</li>
+</ol>
+
+<p>A service can store a hashed version of your password (such as <code>5f4dcc3b5aa765d61d8327deb882cf99</code>) and compare later login attempts against that string. On the surface, this is a great approach for securing data. I bought all these hashes, but because of rule 3 above, I have no <em>direct</em> way to turn them back into usable passwords. Unfortunately for you, I do have an <em>indirect</em> way.</p>
+
+<p>It turns out most users are not very inventive when creating passwords. A recent <a href="https://blog.keepersecurity.com/2017/01/13/most-common-passwords-of-2016-research-study/">security report</a> showed that of a sample of 10 million passwords leaked in 2016, a full 50% of them were among the 25 most commonly used passwords. Most of that list are keyboard patterns (like <code>123456</code> or <code>zxcvbnm</code>) or words straight out of the dictionary (like <code>password</code> or <code>google</code>). Given that so many people use such a small subset of passwords, it&#39;s well worth my time to build a <a href="https://en.wikipedia.org/wiki/Rainbow_table">rainbow table</a>, or a pre-computed list of hashes for the most common passwords (and their variants; <code>password1</code> isn&#39;t fooling anyone). So, if you use a common password you might as well just <a href="mailto:beamneocube@gmail.com?subject=My%20Bank%20Account%20Info">email me</a> your bank account info now. In an effort to defeat my rainbow tables, any service worth it&#39;s (<em>ahem</em>) salt will store your password with a bit of extra text at the front called a <strong>salt</strong>. For example, <code>salt+password1</code> hashes totally differently than <code>password1</code>. If the same salt is used for each password, I have to recreate my rainbow table. If a random salt is used with each password, I have to do them each separately, which definitely slows me down.</p>
+
+<p>If that&#39;s the case, I&#39;ve hit my worst case scenario. Each password is salted separately and I have to crack them one at a time. There are two ways to approach this. I could brute force them, trying every single possible password until I get it. This is akin to playing hangman by guessing each letter in order. It might work, but I&#39;d be better off trying the common letters first (<code>e</code>, <code>t</code>, etc). The same principle applies here. Rather than exhausting every possibility, my time is much better spent running through a huge set of the most likely passwords. This list will consist of the thousand most common passwords (a few of which were mentioned above), all the words from the dictionary, and common variants on each. From there, I can use <a href="https://en.wikipedia.org/wiki/John_the_Ripper">a program</a> to automatically detect which hashing function to use. It will run through my list for each hash, noting the ones it successfully cracks. If I can&#39;t crack a hash at this point, I&#39;ll probably skip it; it&#39;s not worth my time. It should be your goal to have functionally uncrackable passwords. What that entails is the focus of a well-known xkcd comic.</p>
+
+<p><a href="https://xkcd.com/936/"><img src="https://imgs.xkcd.com/comics/password_strength.png" alt="https://xkcd.com/936/" /></a></p>
+
+<p>It highlights two important things: common substitutions (like <code>e -&gt; 3</code>) add negligable security and that the single most important factor in a strong password is <strong>length</strong>. Password strength is a common theme on Jeff Atwood&#39;s <a href="https://blog.codinghorror.com">Coding Horror</a> and he&#39;s got a great piece on <a href="https://blog.codinghorror.com/your-password-is-too-damn-short/">passwords being too short</a>. If your passwords is 8 characters or less, it takes at <em>max</em> 1 minute to guess (and that&#39;s only if you&#39;ve got letters, numbers, etc.</p>
+
+<p>To ensure I can&#39;t crack yours, make sure any password you use:</p>
+
+<ul>
+<li>has at least one of each type of character (upper, lower, number, symbol)</li>
+<li>is 12 characters, <em>minimum</em> (and more is strictly better)</li>
+<li>is unique across all sites you use</li>
+</ul>
+
+<p>Passwords with all of those qualities are basically impossible to remember though. That&#39;s where our first tip comes in:</p>
+
+<h3 id="1-use-a-password-manager-to-store-complex-passwords">1. Use a password manager (to store complex passwords)</h3>
+
+<p>If you want to keep me out, you need to have complex, unique passwords for every site. There&#39;s no reasonable way to expect you to remember these without some help, but help is here. Password managers are a class of software that perform two main functions for passwords: storage and generation.</p>
+
+<p>Password managers act as a secure vault. They typically store usernames, passwords, and matching urls for login pages. Each time you try to log in, they&#39;ll see if they have a matching entry. If so, they&#39;ll auto-fill your password and you never have to think about the jumble of characters you&#39;re subjecting the site to. If not, you&#39;ll log into the site as normal. It&#39;ll then ask you if you want to save that login for later use. That&#39;s all there is to it! The great thing about this approach is that you don&#39;t have to move everything at once. Most people install the app and go about their business, moving sites as they get used. This provides a seamless transition into password security.</p>
+
+<p><img src="https://i.imgur.com/FR5ArUX.png" alt="password generation" /></p>
+
+<p>This same flow integrates with the &quot;update password&quot; forms if you realize your existing passwords aren&#39;t up to snuff. Should that be the case, password managers can generate a password to your specification at the press of a button (pictured above). It also automatically stores your new password for later use, so you never even have to worry about remembering it or writing it down. Some managers even have a feature that will flag bad or repeated passwords to help you know where to focus your energy during the transition.</p>
+
+<p>In my personal life, all of my passwords are random 20+ character strings with a few of each character type. Much like my friends&#39; phone numbers, I don&#39;t know any of my passwords, I just know how to find them. Better yet, according to the <a href="https://www.grc.com/haystack.htm">GRC calculator</a> that Atwood linked to in his post, any one of my passwords would take <em>9.38 hundred billion trillion centuries</em> to crack (which I&#39;m not even totally sure is a real number). I personally use <a href="https://1password.com/">1Password</a> and have found it to have the best balance of security, price, and features.<sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup> App recommendation site <em>The Sweet Setup</em> <a href="http://thesweetsetup.com/apps/best-password-manager-and-why-you-need-one/">agrees</a> with my assessment and recommends a few others in case you don&#39;t.</p>
+
+<p>As I&#39;m going through the passwords in this hypothetical hack scenario, I&#39;m going to check each hash against the million items in my starting list above. More than likely, that approach will crack half of the passwords with minimal effort. I won&#39;t even bother moving onto the harder half. You see, I&#39;ve got a bunch of plaintext emails and passwords now. There&#39;s an unfortunate correlation with people who have bad passwords: they have bad passwords everywhere. I&#39;m going to use a program that tests the credentials I cracked with other services. If your <a href="https://www.theguardian.com/technology/2013/nov/07/adobe-password-leak-can-check">Adobe</a> password is used for your Twitter account, I now own both of them. I can check accounts quickly, testing hundreds per second. So here&#39;s your second tip:</p>
+
+<h3 id="2-dont-reuse-passwords">2. Don&#39;t reuse passwords</h3>
+
+<p>A lot can go wrong in information security. Given the worst, you want to ensure the damage is localized to the offending site. With unique passwords, even if one account is compromised, I don&#39;t gain any ground for other accounts. You want to make it your mission to make every action I take slow and painful. Any shortcuts you provide me can and will be used to ruin your day.  Of course, you&#39;re reading this article; this isn&#39;t news to you. You&#39;ve heard that it&#39;s bad to re-use passwords (just like you&#39;ve heard you&#39;re supposed to floss regularly). Now you&#39;ll make a pledge to yourself to do better (seriously, flossing is good for you).</p>
+
+<p>You&#39;re also using a password manager (correctly, with hilariously complex passwords). Good for you! Much like a zombie attack, you don&#39;t need to be the fastest person, you just want to avoid being the slowest. By taking 30 minutes to start using good passwords, you&#39;ve put yourself head and shoulders above other internet users. If you want to double down for you most sensitive accounts (like your main email), there&#39;s one more trick up our sleeves.</p>
+
+<p>What if the worst happens and your password is leaked in plaintext (or otherwise leaked to the world)? Then it doesn&#39;t matter how strong your passwords are; you&#39;re vulnerable from the time it&#39;s out in the open until the site resets your password. In the meantime, you can protect yourself by requiring a second factor be present to log into your account. The last big tip is:</p>
+
+<h3 id="3-use-2-factor-authentication">3. Use 2 Factor Authentication</h3>
+
+<p>While authenticating online normally only requires something you <em>know</em> (your password), <strong>2 Factor Authentication</strong> adds the requirement of something you <em>have</em>. A real-world example of this is unlocking your house. To open the door, an attacker needs both something you <em>know</em> (your address) and something you <em>have</em> (your key). Even if I know your address, I can&#39;t get into your house without having your key. 2FA adds a similar level of protection to your online accounts. In addition to your password, someone hoping to log in as you needs an extra piece of information, typically tied to a physical device.</p>
+
+<p><img src="https://i.imgur.com/kfH3X5r.png" alt="authy" /></p>
+
+<p>The most common form of 2FA is a 6 digit code that rotates every 30 seconds, known as a <a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm">Time-based One-time Password</a> (pictured). Your phone and the server agree on a shared secret during setup, so only a device that knows this secret will be able to generate the correct code. This is a great approach, as I need physical access to a device with your codes on it to break into that account.<sup id="fnref4"><a href="#fn4" rel="footnote">4</a></sup> This method is also great when paired with Touch ID on Apple devices. Unless you&#39;ve got my phone in your hand and my thumb on that hand, my password isn&#39;t enough to get you into my account. There are a lot of good options for 2FA apps, namely <a href="https://support.google.com/accounts/answer/1066447?hl=en&amp;co=GENIE.Platform%3DiOS&amp;oco=0">Google Authenticator</a> (more secure) and <a href="https://authy.com/">Authy</a> (more convenient, but still pretty secure).</p>
+
+<p>If you want to go the extra step (say, for your central gmail account that secures all others), you might invest in a <a href="https://smile.amazon.com/Yubico-Y-123-FIDO-U2F-Security/dp/B00NLKA0D8?sa-no-redirect=1">UTF security key</a> for ~$18. Once attached to an account it acts as a second factor, verifying that the person logging in is the one holding the physical key. Right now it has the major downside of being desktop-only (unless you have a certain Android phone), but justifies that being the absolute most secure option on the market. If you&#39;re interested in adding it to Google, there&#39;s a great walkthrough <a href="https://techsolidarity.org/resources/security_key_gmail.htm">here</a>.</p>
+
+<p>As you&#39;re looking for the 2FA solution that fits you best, remember to <strong>avoid SMS</strong>. This <a href="https://techsolidarity.org/resources/security_key_faq.htm">FAQ</a> goes into detail about the vulnerability of text-message based 2FA:</p>
+
+<blockquote>
+<p>Many sites encourage you to add your phone number to secure your account. But there are at least three reasons why you should avoid using text messages for two-factor authentication.</p>
+
+<ol>
+<li>Your phone number can be easily hijacked by someone who calls the phone company and pretends to be you. <sup id="fnref5"><a href="#fn5" rel="footnote">5</a></sup></li>
+<li>The text message can be viewed or redirected while en route to your phone.</li>
+<li>Many phones are configured to display text messages on the lock screen.</li>
+</ol>
+
+<p>If text messages are the only way to add two-factor authentication to your account, they are better than nothing. But if you can use an alternative method, like an authenticator app or a security key, use that instead.</p>
+</blockquote>
+
+<p>Whichever method(s) you use, it will make you basically impervious to the attack described in this article.</p>
+
+<p>&quot;So... is that it?&quot;, you might be thinking. &quot;If I have good, unique passwords and use 2FA wherever I can, my accounts will be safe?&quot;</p>
+
+<p>The short answer is <em>probably</em>. The longer answer is that nothing is guaranteed, but these tips will keep your accounts as safe as you can reasonably make them. That being said, there are a couple of easy tasks you can complete to cover non-password vectors. You&#39;ve made it this far, might as well take 3 minutes to go the distance.</p>
+
+<h2 id="extra-credit">Extra Credit</h2>
+
+<p>The hack described here (a large-scale brute forcing of hashed passwords) is a common attack vector, but it&#39;s not the only one. The single best way to keep yourself safe is <strong>constant vigilance</strong>. Be overly cautious in all things. To that end, I&#39;ve got two last bonus tips to send you off with.</p>
+
+<h3 id="4-use-https-everywhere">4. Use HTTPS, Everywhere</h3>
+
+<p>Accessing the internet without using <code>https</code> is like shouting everything you type as you do so. If you&#39;re uncomfortable with anyone hearing your passwords, payment info, and any other sensitive information, make sure you only access sites that include <code>https://</code> at the start of their name. The &quot;s&quot; stands for &quot;secure&quot;, which means any data you send to the site is encrypted, safe from any prying eyes. Some sites redirect you by default. A lot more support it, but don&#39;t enforce it. The Electronic Frontier Foundation has a great <a href="https://www.eff.org/https-everywhere">browser extension</a> appropriately called <strong>HTTPS Everywhere</strong> that will redirect you to a secure version of a page if it&#39;s available. It&#39;s easy to install and forget about, and I recommend you do exactly that.</p>
+
+<h3 id="5-update-your-computer">5. Update Your Computer</h3>
+
+<p>Annoying though they may be, operating system updates are <em>vital</em> to keeping your hardware secure. The most recent example is the <a href="https://en.wikipedia.org/wiki/WannaCry_ransomware_attack">WannaCry ransomware</a>, which used known vulnerabilities in Windows 7 to forcibly encrypt over 230,000 computers in 150 countries. These types of attacks are totally preventable, but only if you&#39;ve installed the security patch that fixed it. Apple products aren&#39;t totally safe either; they recently <a href="https://support.apple.com/en-us/HT207797">fixed</a> set a set of vulnerabilities across their operating systems (though they weren&#39;t widely exploited, if at all). Once issues are fixed, attackers have a much narrower range of what vulnerabilities exist in un-updated systems and the race begins. As long as you&#39;re up-to-date every 24 hours you <em>should</em> be safe enough. Then again, it&#39;s never too soon to download a security update.</p>
+
+<p>Listen, I get it. Your computer always prompts you when you&#39;re in the middle of something and you don&#39;t want to break the flow. Wait until the end of the day, or set your computer to apply the update overnight. Just please, <em>please</em> don&#39;t leave them for months or years. The only person you hurt is yourself.</p>
+
+<h2 id="you-can-see-clearly-now">You Can See Clearly Now</h2>
+
+<p>This whole attack might sound far-fetched. Well it turns out, large-scale password breaches happen all the time. There&#39;s a great site called <a href="https://haveibeenpwned.com/">HaveIBeenPwned</a> that maintains a list of all the services that have announced that they&#39;ve been hacked. You can check whether or not your data has ever known to have been compromised by inputting your email.<sup id="fnref6"><a href="#fn6" rel="footnote">6</a></sup> Scary, huh? Even if you&#39;ve gotten lucky and you&#39;ve never been pwned, their extensive <a href="https://haveibeenpwned.com/PwnedWebsites">list of sites</a> is concerning (to say the least).</p>
+
+<p>Anyway, while nothing is 100% in internet security, you owe it to yourself to become as aggravating a target as possible. If you&#39;re interested in reading more, I recommend <a href="https://decentsecurity.com/#/introduction/">decentsecurity.com</a>, this great <a href="https://www.reddit.com/user/Kalabaster/m/supasec/">security muiltireddit</a>, and generally lurking on <a href="https://news.ycombinator.com/">Hacker News</a>.</p>
+
+<p>If you&#39;ve implemented all these tips (an impressive feat!), feel free to <a href="https://twitter.com/intent/tweet?hashtags=security&amp;text=I%27ve%20taken%20steps%20to%20make%20my%20online%20life%20more%20secure%20thanks%20to%20@xavdid!%20Learn%20more%20here:%20&amp;url=https://davidbrownman.com/blog/2017/07/05/how-hackers-steal-your-data/">tweet</a> your accomplishment. No cheating!</p>
+
+<p>Past that, I appreciate you reading this far. I&#39;ve done my best to make a fairly technical subject approachable. Definitely reach out with questions, suggestions, or thoughts. Until then, good luck!</p>
+
+<hr>
+
+<p><em>Many thanks to <a href="http://www.andrewaxtell.com/">Andrew</a>, <a href="https://www.instagram.com/agentredsquirrel/">Vicky</a>, and <a href="http://www.plantsciences.ucdavis.edu/plantsciences_faculty/eviner/main/people.htm">Evan</a> for use of their editing prowess.</em></p>
+
+<div class="footnotes">
+<hr>
+<ol>
+
+<li id="fn1">
+<p>Hacks happen all the time, and companies are not always prompt about announcing that it&#39;s happened. Just because you haven&#39;t heard about a breach doesn&#39;t automatically mean your data is safe.&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn2">
+<p>If you&#39;re unlucky, I&#39;ve got phone numbers, birthdays, and/or and location information. If you&#39;re extra unlucky, there could be SSN data there as well.&nbsp;<a href="#fnref2" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn3">
+<p>I used to use LastPass, but the repeated <a href="https://blog.lastpass.com/2017/03/important-security-updates-for-our-users.html/">security issues</a> drove me away. The LP team did a great job fixing these quickly, but I didn&#39;t want the inevitable next vulnerability to be exploited before they responded to it.&nbsp;<a href="#fnref3" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn4">
+<p>There&#39;s a narrow exception where you can still get phished while using a TOTP. If an attacker can capture your password and token, they have the full 30 second window to use them to compromise this account. This attack is explored in the <a href="https://gimletmedia.com/episode/97-what-kind-of-idiot-gets-phished/">Reply All podcast</a>. For the purposes of prevent a brute force attack as described here, TOTP is more than sufficient. It also talks about how anyone can be phished (even you!). Don&#39;t be overconfident in your abilities.&nbsp;<a href="#fnref4" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn5">
+<p>While a targeted vector like <a href="https://motherboard.vice.com/en_us/article/mg7bd4/how-a-hacker-can-take-over-your-life-by-hijacking-your-phone-number">sim hijacking</a> is separate from the bulk-based attack we&#39;ve been stepping through, it&#39;s definitely something to be aware of.&nbsp;<a href="#fnref5" rev="footnote">&#8617;</a></p>
+</li>
+
+<li id="fn6">
+<p>Normally putting your email into a site that talks about hacking isn&#39;t a great idea. On the surface, it feels like supplying your full credit card to see if anyone else has it. In this case, HIBP? is a reputable site run by a <a href="https://www.troyhunt.com/about/">security researcher</a> and you can act without fear.&nbsp;<a href="#fnref6" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>
+
+</div>
+</div>
+<hr>
+<p>
+<i class='fa fa-arrow-left'></i>
+<a href="/blog">Blog Index</a>
+|
+<a href="/blog/2013/06/20/the-quilt-of-our-lives">Random Post</a>
+<i class='fa fa-random'></i>
+</p>
+</article>
+<aside>
+<div class='top'>
+<div class='heading'>
+Published
+<time>
+July  5, 2017
+</time>
+</div>
+</div>
+<div class='bottom'>
+<p>
+tags:
+<a href="/tags/security/">security</a>
+</p>
+<p>
+On this day
+(in 1954): The BBC broadcasts its first television news bulletin
+</p>
+</div>
+</aside>
+<script>
+  var anchorForId = function (id) {
+    var anchor = document.createElement("a");
+    anchor.className = "header-link";
+    anchor.href      = "#" + id;
+    anchor.innerHTML = "<i class=\"fa fa-link\"></i>";
+    anchor.title = "Permalink";
+    return anchor;
+  };
+  
+  var linkifyAnchors = function (level, containingElement) {
+    var headers = containingElement.getElementsByTagName("h" + level);
+    for (var h = 0; h < headers.length; h++) {
+      var header = headers[h];
+  
+      if (typeof header.id !== "undefined" && header.id !== "") {
+        header.appendChild(anchorForId(header.id));
+      }
+    }
+  };
+  
+  document.onreadystatechange = function () {
+    if (this.readyState === "complete") {
+      var contentBlock = document.getElementsByClassName("blog_body")[0];
+      if (!contentBlock) {
+        return;
+      }
+      for (var level = 1; level <= 6; level++) {
+        linkifyAnchors(level, contentBlock);
+      }
+    }
+  };
+</script>
+
+
+</div>
+</div>
+<div class='footer-container'>
+<footer class='wrapper'>
+<ul>
+<li>
+<a href='/'>
+<i class='fa fa-home fa-2x'></i>
+</a>
+</li>
+<li>
+<a href='mailto:beamneocube@gmail.com' target='_blank'>
+<i class='fa fa-envelope fa-2x'></i>
+<span class='sitename'>
+Email
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.github.com/xavdid' target='_blank'>
+<i class='fa fa-github-alt fa-2x'></i>
+<span class='sitename'>
+GitHub
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.twitter.com/xavdid' target='_blank'>
+<i class='fa fa-twitter-square fa-2x'></i>
+<span class='sitename'>
+Twitter
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.linkedin.com/in/xavdid' target='_blank'>
+<i class='fa fa-linkedin-square fa-2x'></i>
+<span class='sitename'>
+Linkedin
+</span>
+</a>
+</li>
+</ul>
+</footer>
+</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-40842533-1', 'davidbrownman.com');
+  ga('send', 'pageview');
+</script>
+</body>
