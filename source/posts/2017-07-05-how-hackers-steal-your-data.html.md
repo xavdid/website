@@ -1,9 +1,8 @@
 ---
 title: How Hackers Steal Your Data (and How to Make it Harder for Them)
-fact:
-fact_year:
+fact: The BBC broadcasts its first television news bulletin
+fact_year: 1954
 tags: security
-published: false
 og_img: https://i.imgur.com/FLGJEW0.png
 og_desc: The ins and outs of password security
 ---
@@ -32,11 +31,11 @@ A service can store a hashed version of your password (such as `5f4dcc3b5aa765d6
 
 It turns out most users are not very inventive when creating passwords. A recent [security report](https://blog.keepersecurity.com/2017/01/13/most-common-passwords-of-2016-research-study/) showed that of a sample of 10 million passwords leaked in 2016, a full 50% of them were among the 25 most commonly used passwords. Most of that list are keyboard patterns (like `123456` or `zxcvbnm`) or words straight out of the dictionary (like `password` or `google`). Given that so many people use such a small subset of passwords, it's well worth my time to build a [rainbow table](https://en.wikipedia.org/wiki/Rainbow_table), or a pre-computed list of hashes for the most common passwords (and their variants; `password1` isn't fooling anyone). So, if you use a common password you might as well just [email me](mailto:beamneocube@gmail.com?subject=My%20Bank%20Account%20Info) your bank account info now. In an effort to defeat my rainbow tables, any service worth it's (*ahem*) salt will store your password with a bit of extra text at the front called a **salt**. For example, `salt+password1` hashes totally differently than `password1`. If the same salt is used for each password, I have to recreate my rainbow table. If a random salt is used with each password, I have to do them each separately, which definitely slows me down.
 
-If that's the case, I've hit my worst case scenario. Each password is salted separately and I have to crack them one at a time. There are two ways to approach this. I could brute force them, trying every single possible password until I get it. This is akin to playing hangman by guessing each letter in order. It might work, but I'd be better off trying the common letters first (`e`, `r`, etc). The same principle applies here. Rather than exhausting every possibility, my time is much better spent running through a huge set of the most likely passwords. This list will consist of the thousand most common passwords (a few of which were mentioned above), all the words from the dictionary, and common variants on each. From there, I can use [a program](https://en.wikipedia.org/wiki/John_the_Ripper) to automatically detect which hashing function to use. It will run through my list for each hash, noting the ones it successfully cracks. If I can't crack a hash at this point, I'll probably skip it; it's not worth my time. It should be your goal to have functionally uncrackable passwords. What that entails is the focus of a well-known xkcd comic.
+If that's the case, I've hit my worst case scenario. Each password is salted separately and I have to crack them one at a time. There are two ways to approach this. I could brute force them, trying every single possible password until I get it. This is akin to playing hangman by guessing each letter in order. It might work, but I'd be better off trying the common letters first (`e`, `t`, etc). The same principle applies here. Rather than exhausting every possibility, my time is much better spent running through a huge set of the most likely passwords. This list will consist of the thousand most common passwords (a few of which were mentioned above), all the words from the dictionary, and common variants on each. From there, I can use [a program](https://en.wikipedia.org/wiki/John_the_Ripper) to automatically detect which hashing function to use. It will run through my list for each hash, noting the ones it successfully cracks. If I can't crack a hash at this point, I'll probably skip it; it's not worth my time. It should be your goal to have functionally uncrackable passwords. What that entails is the focus of a well-known xkcd comic.
 
 [![https://xkcd.com/936/](https://imgs.xkcd.com/comics/password_strength.png)](https://xkcd.com/936/)
 
-It highlights two important things: common substitutions (like `o -> 0`) add negligable security and that the single most important factor in a strong password is **length**. Password strength is a common theme on Jeff Atwood's [Coding Horror](https://blog.codinghorror.com) and he's got a great piece on [passwords being too short](https://blog.codinghorror.com/your-password-is-too-damn-short/). If your passwords is 8 characters or less, it takes at *max* 1 minute to guess (and that's only if you've got letters, numbers, etc.
+It highlights two important things: common substitutions (like `e -> 3`) add negligable security and that the single most important factor in a strong password is **length**. Password strength is a common theme on Jeff Atwood's [Coding Horror](https://blog.codinghorror.com) and he's got a great piece on [passwords being too short](https://blog.codinghorror.com/your-password-is-too-damn-short/). If your passwords is 8 characters or less, it takes at *max* 1 minute to guess (and that's only if you've got letters, numbers, etc.
 
 To ensure I can't crack yours, make sure any password you use:
 
@@ -82,7 +81,7 @@ As you're looking for the 2FA solution that fits you best, remember to **avoid S
 
 > Many sites encourage you to add your phone number to secure your account. But there are at least three reasons why you should avoid using text messages for two-factor authentication.
 >
-> 1. Your phone number can be easily hijacked by someone who calls the phone company and pretends to be you.[^5]
+> 1. Your phone number can be easily hijacked by someone who calls the phone company and pretends to be you. [^5]
 > 2. The text message can be viewed or redirected while en route to your phone.
 > 3. Many phones are configured to display text messages on the lock screen.
 >
@@ -114,7 +113,7 @@ This whole attack might sound far-fetched. Well it turns out, large-scale passwo
 
 Anyway, while nothing is 100% in internet security, you owe it to yourself to become as aggravating a target as possible. If you're interested in reading more, I recommend [decentsecurity.com](https://decentsecurity.com/#/introduction/), this great [security muiltireddit](https://www.reddit.com/user/Kalabaster/m/supasec/), and generally lurking on [Hacker News](https://news.ycombinator.com/).
 
-If you've implemented all these tips (an impressive feat!), feel free to [tweet](https://twitter.com/intent/tweet?hashtags=security&text=I%27ve%20taken%20steps%20to%20make%20my%20online%20life%20more%20secure%20thanks%20to%20@xavdid!%20Learn%20more%20here:%20&url=https://davidbrownman.com/blog/2017/03/19/a-few-good-x-men/) your accomplishment. No cheating!
+If you've implemented all these tips (an impressive feat!), feel free to [tweet](https://twitter.com/intent/tweet?hashtags=security&text=I%27ve%20taken%20steps%20to%20make%20my%20online%20life%20more%20secure%20thanks%20to%20@xavdid!%20Learn%20more%20here:%20&url=https://davidbrownman.com/blog/2017/07/05/how-hackers-steal-your-data/) your accomplishment. No cheating!
 
 Past that, I appreciate you reading this far. I've done my best to make a fairly technical subject approachable. Definitely reach out with questions, suggestions, or thoughts. Until then, good luck!
 
