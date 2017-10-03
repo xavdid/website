@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<head>
+<!-- You're looking at my site's source! That's pretty cool. It's pretty straightforward. Template taken from HTML5Boilderplate, css adapted to my liking. -->
+<!-- This site was laregely designed by Jennifer Herzberg, who rules. -->
+<meta charset='utf-8'>
+<meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
+<title>
+Bogosort in Practice - David Brownman dot com
+</title>
+<meta content='Bogosort in Practice' property='og:title'>
+<meta content='article' property='og:type'>
+<meta content='https://davidbrownman.com//blog/2017/09/05/bogosort-in-practice/' property='og:url'>
+<meta content='https://i.imgur.com/zhqbTVt.png' property='og:image'>
+<meta content='If you actually implemented Bogosort, how bad could it be?' property='og:description'>
+<meta content='width=device-width' name='viewport'>
+<link href="../../../../../css/the-7e26b1a7.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" defer="defer"></script><script src="../../../../../js/facts-92a5d5a8.js" defer="defer"></script>
+<link href="../../../../../favicon.ico" rel="icon" type="image/ico" />
+<script>
+  if (window.location.protocol != "https:") {
+    var url = "https:" + window.location.href.substring(window.location.protocol.length);
+    window.location.href = url;
+  }
+</script>
+</head>
+<body>
+<div class='border'></div>
+<div class='page'>
+<div class='header-container'>
+<header class='wrapper clearfix'>
+<h1 class='title'>
+<a href='/'>
+<span class='my_name'>
+David Brownman
+</span>
+</a>
+</h1>
+<nav>
+<ul>
+<li>
+<a class='short' href='/'>
+Home
+</a>
+</li>
+<li>
+<a class='active short' href='/blog'>
+Blog
+</a>
+</li>
+<li>
+<a class='long' href='/projects'>
+Projects
+</a>
+</li>
+<li>
+<a class='long' href='/misc'>
+Sundries
+</a>
+</li>
+</ul>
+</nav>
+</header>
+</div>
+<div class='main-container'>
+<div class='main clearfix wrapper'>
+<article>
+<div class='blog_post'>
+<h1>
+Bogosort in Practice
+</h1>
+<div class='blog_body'>
+<p>For whatever reason, there&#39;s a lot of humor in programming. From bogus HTTP <a href="https://en.wikipedia.org/wiki/Hyper_Text_Coffee_Pot_Control_Protocol">responses</a> to <a href="https://blog.codinghorror.com/new-programming-jargon/">fun jargon</a>, we&#39;re a funny bunch. In practice, the only thing funnier than an idea is an idea that actually runs, so I decided to see how awful Bad Code could really be.</p>
+
+<p>The searching and sorting of arrays is a popular (and central) topic in computer science. There&#39;s been a lot of time and effort spent ensuring we can sort array as efficiently as possible. Typically, efficiency in sorting methods is <a href="https://en.wikipedia.org/wiki/Big_O_notation">measured</a> as a function of input length vs number of loops. A great sort won&#39;t appreciably increase ruznning time as the input gets longer. A bad sort, on the other hand...</p>
+
+<p>When the topic of bad searches come up (at parties or whatever, as it does), a crowd favorite is always the infamous <a href="https://en.wikipedia.org/wiki/Bogosort">bogosort</a>. The idea is simple: take an array, randomize it, and check if it&#39;s sorted. If not, repeat! In the best case, you got really lucky and this sort is <em>very fast</em>. Most of the time, you&#39;re less lucky and this is actively awful. Let&#39;s see how this would shake out in practice.</p>
+
+<p></p>
+
+<p>The following is a simple implementation of bogosort using Ruby&#39;s <a href="https://ruby-doc.org/core-2.4.0/Array.html#method-i-shuffle-21">#shuffle!</a> method (plus some extra code to track how many shuffles it took before the array was sorted). It also adds the <code>sorted?</code> method to arrays, to help us know when we&#39;ve (eventually) sorted the array.</p>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Array</span>&#x000A;  <span class="k">def</span> <span class="nf">sorted?</span>&#x000A;    <span class="mi">1</span><span class="p">.</span><span class="nf">upto</span><span class="p">(</span><span class="n">size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>&#x000A;      <span class="c1"># if i &gt; i-1, we good</span>&#x000A;      <span class="k">return</span> <span class="kp">false</span> <span class="k">if</span> <span class="nb">self</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nb">self</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>&#x000A;    <span class="k">end</span>&#x000A;    <span class="kp">true</span>&#x000A;  <span class="k">end</span>&#x000A;<span class="k">end</span>&#x000A;&#x000A;<span class="c1"># Performs the bogosort, lets us know how many tries it took</span>&#x000A;<span class="k">def</span> <span class="nf">num_shuffles</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>&#x000A;  <span class="n">c</span> <span class="o">=</span> <span class="mi">0</span>&#x000A;  <span class="c1"># the sort itself</span>&#x000A;  <span class="k">until</span> <span class="n">arr</span><span class="p">.</span><span class="nf">sorted?</span>&#x000A;    <span class="n">arr</span><span class="p">.</span><span class="nf">shuffle!</span>&#x000A;    <span class="n">c</span> <span class="o">+=</span> <span class="mi">1</span>&#x000A;  <span class="k">end</span>&#x000A;  <span class="n">c</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre>
+
+<p>Since the randomness of the sort begets such a high variance in results, we&#39;ll want to do a fair number of trails and take the average.</p>
+<pre class="highlight ruby"><code><span class="k">def</span> <span class="nf">bogosort_counter</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>&#x000A;  <span class="n">arr</span> <span class="o">=</span> <span class="mi">1</span><span class="p">.</span><span class="nf">upto</span><span class="p">(</span><span class="n">n</span><span class="p">).</span><span class="nf">to_a</span>&#x000A;  <span class="n">res</span> <span class="o">=</span> <span class="p">[]</span>&#x000A;&#x000A;  <span class="mi">5000</span><span class="p">.</span><span class="nf">times</span> <span class="k">do</span>&#x000A;    <span class="c1"># start in a random order</span>&#x000A;    <span class="n">res</span> <span class="o">&lt;&lt;</span> <span class="n">num_shuffles</span><span class="p">(</span><span class="n">arr</span><span class="p">.</span><span class="nf">shuffle</span><span class="p">)</span>&#x000A;  <span class="k">end</span>&#x000A;&#x000A;  <span class="nb">puts</span> <span class="s2">"It took an average of </span><span class="si">#{</span><span class="n">res</span><span class="p">.</span><span class="nf">average</span><span class="p">.</span><span class="nf">round</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="si">}</span><span class="s2"> shuffles to sort an array of length </span><span class="si">#{</span><span class="n">n</span><span class="si">}</span><span class="s2">"</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre>
+
+<p>With our measurement tools in hand, I ran the trials with increasingly long arrays. It&#39;s tough to graph numbers that have such a large range (2 element array sorted fairly quickly, large ones... did not), so we used a logarithmic scale. The lines on either side of the dots show the middle 50% of the number of shuffles. As you can see, the number of shuffles scales pretty aggressively with the length of the input.</p>
+
+<p><img src="https://i.imgur.com/Tz1cT87.png" alt="Tz1ct87" /></p>
+
+<table><thead>
+<tr>
+<th>Array Length</th>
+<th>Average Number of Shuffles (5k Trials)</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>2</td>
+<td>0.97</td>
+</tr>
+<tr>
+<td>3</td>
+<td>5.07</td>
+</tr>
+<tr>
+<td>4</td>
+<td>22.8282</td>
+</tr>
+<tr>
+<td>5</td>
+<td>121.59</td>
+</tr>
+<tr>
+<td>6</td>
+<td>715.84</td>
+</tr>
+<tr>
+<td>7</td>
+<td>5019.65</td>
+</tr>
+<tr>
+<td>8</td>
+<td>40985.28</td>
+</tr>
+<tr>
+<td>9</td>
+<td>369657.95</td>
+</tr>
+</tbody></table>
+
+<p>Each array length follows a remarkably similar pattern, known as a <a href="https://en.wikipedia.org/wiki/Negative_binomial_distribution">negative binomial distribution</a> (I am told), meaning the number of shuffles is quite variable. For array length 5, it takes 10^5 shuffles. but it&#39;s just as likely for it to take many more tries. This causes the (incredibly) long tail you see out to the right.</p>
+
+<p><img src="https://i.imgur.com/QPR1IQ4.png" alt="Qpr1iq4" /></p>
+
+<p>If you think those numbers are big, it&#39;s because they are. Big numbers don&#39;t mean anything without context though. To help provide that context, I modified the script to measure the actual clock-on-the-wall time you would spend sorting an array length <code>n</code>. Note that the table skips the first few values of <code>n</code>, as they were sorted too fast for Ruby to capture (which is a good thing, I guess).</p>
+
+<table><thead>
+<tr>
+<th>Array Length</th>
+<th>Average time to be sorted (5 trials, seconds)</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>8</td>
+<td>0.02</td>
+</tr>
+<tr>
+<td>9</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>10</td>
+<td>1.19</td>
+</tr>
+<tr>
+<td>11</td>
+<td>10.28</td>
+</tr>
+<tr>
+<td>12</td>
+<td>304.68</td>
+</tr>
+<tr>
+<td>13</td>
+<td>2029.58</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Ran computer all night, didn&#39;t complete 5 trials</td>
+</tr>
+</tbody></table>
+
+<p>These results are... not inspiring. Each element added to the array adds roughly a factor of 10 to how long the script takes to run. [^1 ] And again, the precious seconds you spend sorting doesn&#39;t actually guarantee your array will end up sorted anyway. Unless you&#39;re feeling incredibly lucky, I&#39;d stick to something faster and more reliable. Maybe a nice bubble sort.</p>
+
+<p><em>Huge thanks to Evan Batzer for his time and expertise with chart creation. You can find out more about him and his work <a href="https://ebatzer.github.io/">here</a>.</em></p>
+
+</div>
+</div>
+<hr>
+<p>
+<i class='fa fa-arrow-left'></i>
+<a href="/blog">Blog Index</a>
+|
+<a href="/blog/2016/12/24/holmesword-bound">Random Post</a>
+<i class='fa fa-random'></i>
+</p>
+</article>
+<aside>
+<div class='top'>
+<div class='heading'>
+Published
+<time>
+September  5, 2017
+</time>
+</div>
+</div>
+<div class='bottom'>
+<p>
+tags:
+<a href="/tags/programming/">programming</a>, <a href="/tags/ruby/">ruby</a>, <a href="/tags/statistics/">statistics</a>
+</p>
+<p>
+On this day
+(in 1661): Louis XIV's Superintendent of Finances is arrested in Nantes by D'Artagnan, captain of the king's musketeers.
+</p>
+</div>
+</aside>
+<script>
+  var anchorForId = function (id) {
+    var anchor = document.createElement("a");
+    anchor.className = "header-link";
+    anchor.href      = "#" + id;
+    anchor.innerHTML = "<i class=\"fa fa-link\"></i>";
+    anchor.title = "Permalink";
+    return anchor;
+  };
+  
+  var linkifyAnchors = function (level, containingElement) {
+    var headers = containingElement.getElementsByTagName("h" + level);
+    for (var h = 0; h < headers.length; h++) {
+      var header = headers[h];
+  
+      if (typeof header.id !== "undefined" && header.id !== "") {
+        header.appendChild(anchorForId(header.id));
+      }
+    }
+  };
+  
+  document.onreadystatechange = function () {
+    if (this.readyState === "complete") {
+      var contentBlock = document.getElementsByClassName("blog_body")[0];
+      if (!contentBlock) {
+        return;
+      }
+      for (var level = 1; level <= 6; level++) {
+        linkifyAnchors(level, contentBlock);
+      }
+    }
+  };
+</script>
+
+
+</div>
+</div>
+<div class='footer-container'>
+<footer class='wrapper'>
+<ul>
+<li>
+<a href='/'>
+<i class='fa fa-home fa-2x'></i>
+</a>
+</li>
+<li>
+<a href='mailto:beamneocube@gmail.com' rel='noopener' target='_blank'>
+<i class='fa fa-envelope fa-2x'></i>
+<span class='sitename'>
+Email
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.github.com/xavdid' rel='noopener' target='_blank'>
+<i class='fa fa-github-alt fa-2x'></i>
+<span class='sitename'>
+GitHub
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.twitter.com/xavdid' rel='noopener' target='_blank'>
+<i class='fa fa-twitter-square fa-2x'></i>
+<span class='sitename'>
+Twitter
+</span>
+</a>
+</li>
+<li>
+<a href='https://www.linkedin.com/in/xavdid' rel='noopener' target='_blank'>
+<i class='fa fa-linkedin-square fa-2x'></i>
+<span class='sitename'>
+Linkedin
+</span>
+</a>
+</li>
+</ul>
+</footer>
+</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-40842533-1', 'davidbrownman.com');
+  ga('send', 'pageview');
+</script>
+</body>
