@@ -86,7 +86,7 @@ If you think those numbers are big, it's because they are. Big numbers don't mea
 | 13           | 2029.58                                  |
 | 14           | Ran computer all night, didn't complete 5 trials |
 
-These results are... not inspiring. Each element added to the array adds roughly a factor of 10 to how long the script takes to run. [^1 ] And again, the precious seconds you spend sorting doesn't actually guarantee your array will end up sorted anyway. Unless you're feeling incredibly lucky, I'd stick to something faster and more reliable. Maybe a nice bubble sort.
+These results are... not inspiring. Each element added to the array adds roughly a factor of 10 to how long the script takes to run.[^1] And again, the precious seconds you spend sorting doesn't actually guarantee your array will end up sorted anyway. Unless you're feeling incredibly lucky, I'd stick to something faster and more reliable. Maybe a nice bubble sort.
 
 *Huge thanks to Evan Batzer for his time and expertise with chart creation. You can find out more about him and his work [here](https://ebatzer.github.io/).*
 
