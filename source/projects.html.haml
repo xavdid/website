@@ -8,6 +8,58 @@ header: projects
     -# i could stick all these in a json and to this dynamically
     %li
       %h2.heading
+        Kerfuffle v3
+        %span.date
+          \- (typescript, react, airtable, heroku)
+          \- December, 2017 -
+          %a{href: "https://kerfuffle.herokuapp.com", target: "_blank", rel: 'noopener'}<
+            app
+          \-
+          %a{href: "https://github.com/xavdid/kerfuffle#readme", target:"_blank", rel: 'noopener'}
+            info
+      %p
+        Now that Wunderlist is on the way out, this now pulls data from Airtable. Goal is still the same: pick a random piece media from my to watch/read sources and surface info about it. The front-end has also been re-written in React. See below for the history of the app.
+    %li
+      %h2.heading
+        Seymour
+        %span.date
+          \- (typescript, slack, heroku)
+          \- October, 2017 -
+          %a{href: "https://seymourapp.herokuapp.com/", target: "_blank", rel: 'noopener'}<
+            app
+          \-
+          %a{href: "https://github.com/xavdid/seymour#readme", target:"_blank", rel: 'noopener'}
+            info
+      %p
+        A feed processor for Slack which specializes in very nice unfurls. Pairs well with Zapier.
+    %li
+      %h2.heading
+        Monopoly
+        %span.date
+          \- (typescript, angular, pug)
+          \- February, 2017 -
+          %a{href: "https://davidbrownman.com/monopoly/", target: "_blank", rel: 'noopener'}<
+            app
+          \-
+          %a{href: "https://github.com/xavdid/monopoly#readme", target:"_blank", rel: 'noopener'}
+            info
+      %p
+        Rather than track our Safeway monopoly tickets by hand, I made a quick site to see if we'd won any prizes.
+    %li
+      %h2.heading
+        word-count
+        %span.date
+          \- (typescript, npm, cli)
+          \- September, 2016 -
+          %a{href: "https://www.npmjs.com/package/epub-wordcount", target: "_blank", rel: 'noopener'}<
+            app
+          \-
+          %a{href: "https://github.com/xavdid/word_count#readme", target:"_blank", rel: 'noopener'}
+            info
+      %p
+        As part of an ongoing project to track everything I read and watch, this is a cli app to get a rough count of the number of words in a novel.
+    %li
+      %h2.heading
         Publists
         %span.date
           \- (typescript, angular, pug, oauth, heroku)
@@ -39,7 +91,7 @@ header: projects
         Dead Simple
         %span.date
           \- (angularjs, node, socket.io)
-          \- Feb, 2016 -
+          \- February, 2016 -
           %a{href: "https://deadsimple.herokuapp.com/", target: "_blank", rel: 'noopener'}<
             app
           \-
@@ -50,17 +102,15 @@ header: projects
 
     %li
       %h2.heading
-        Kerfuffle
+        Kerfuffle v2
         %span.date
           \- (angularjs, node, express, jade)
-          \- Dec, 2015 -
-          %a{href: "https://kerfuffle.herokuapp.com", target: "_blank", rel: 'noopener'}<
-            app
-          \-
-          %a{href: "https://github.com/xavdid/kerfuffle#readme", target:"_blank", rel: 'noopener'}
-            info
+          \- December, 2015 -
+          %a{href: "https://github.com/xavdid/kerfuffle/tree/9b104c706474482f5f6fdd03bbce3fecdd4f1c2d", target: "_blank", rel: 'noopener'}<
+            code
+
       %p
-        The second incarnation of my front-end learning project, it picks a random item from my to watch|read list and gives some extra info about it. Fairly extensible as far as new lists and datasources are concerned.
+        The second incarnation of my front-end learning project, it picks a random item from my to watch|read wunerlists and gives some extra info about it. Fairly extensible as far as new lists and datasources are concerned.
 
     %li
       %h2.heading
@@ -106,6 +156,17 @@ header: projects
 
     %li
       %h2.heading
+        Kerfuffle
+        %span.date
+          \- (ruby, sinatra, angular, haml, heroku)
+          \- July, 2014 -
+          %a{href: "https://github.com/xavdid/kerfuffle/tree/2b4d212c13802f4d3dc3fe6d785fbcc7fb3ace7d#readme", target:"_blank", rel: 'noopener'}
+            code
+      %p
+        A web form that would search a tv show by name and give you a random episode (with deatils) to watch from it. Great for shuffling through Netflix shows.
+
+    %li
+      %h2.heading
         Website Redesign
         %span.date
           \- (haml, scss, js, middleman)
@@ -139,24 +200,24 @@ header: projects
         A neat little project that was used as part of my application to the
         %a{href: "http://www.thehackerati.com", target: "_blank", rel: 'noopener'}<
           hackerati
-        that tracks how many questions are asked and answered on stackoverflow each hour.
+        that tracks how many questions are asked and answered on stackoverflow each hour. One of my earliest solo projects that had any useful functionality.
 
-    -# %li
-    -#   %h2.heading
-      -#   Kinect481 UI
-      -#   %span.date
-      -#     \- (ruby/sinatra, haml, scss, js, mongodb)
-      -#     \- October, 2013 -
-      -#     %a{href: "http://kinect481.herokuapp.com", target: "_blank", rel: 'noopener'}<
-      -#       app
-      -#     \-
-      -#     %a{href: "http://kinect481.herokuapp.com/admin", target:"_blank", rel: 'noopener'}
-      -#       info
-      -# %p
-      -#   This was designed as a UI possiblity for children with cerebral palsy who lack the fine motor control needed for a keyboard and mouse. A MS kinect would register input in a cardinal direction and my UI would do the database maniupulation to store that value and communicate it back to the tower. Project with
-      -#   %a{href: "http://www-personal.umich.edu/~cgordini/", target:"_blank", rel: 'noopener'}<
-      -#     Cory
-      -#   and his group.
+    %li
+      %h2.heading
+        Kinect481 UI
+        %span.date
+          \- (ruby, sinatra, haml, scss, js, mongodb)
+          \- October, 2013 -
+          -# %a{href: "http://kinect481.herokuapp.com", target: "_blank", rel: 'noopener'}<
+          -#   app
+          -# \-
+          -# %a{href: "http://kinect481.herokuapp.com/admin", target:"_blank", rel: 'noopener'}
+          -#   info
+      %p
+        This was designed as a UI for children with cerebral palsy who lack the fine motor control needed for a keyboard and mouse. A MS kinect would register input in a cardinal direction and my UI would do the database maniupulation to store that value and communicate it back to the tower. Project with
+        %a{href: "http://www-personal.umich.edu/~cgordini/", target:"_blank", rel: 'noopener'}<
+          Cory
+        and his group. Currently offline.
 
     %li
       %h2.heading
