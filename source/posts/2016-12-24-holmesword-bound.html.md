@@ -9,7 +9,7 @@ _If you're just interested in the episode list, you can jump to it [here](#list)
 
 Every year on Christmas Eve, my family found ourselves without any plans. Being Jewish, we had no particular family events to attend so we usually spent the day on or around the couch. My dad's proclivity for black & white films and/or murder mysteries lead to the yearly exploration of the many adaptations of Sherlock Holmes.
 
-There have been a few versions released recently, mostly notably Guy Ritchie's _Sherlock Holmes_, BBC's _Sherlock_, and CBS's _Elementary_. Each have their merits and "the best" has been [widely](http://www.telegraph.co.uk/culture/tvandradio/10535503/Sherlock-the-20-greatest-Sherlock-Holmes.html) [discussed](https://nypost.com/2014/01/16/elementary-vs-sherlock-whos-the-better-holmes/), but I wanted to take some time this holiday season to shed some light on what may be my favorite adaptation: \_season one of \_Elementary\_\_.
+There have been a few versions released recently, mostly notably Guy Ritchie's _Sherlock Holmes_, BBC's _Sherlock_, and CBS's _Elementary_. Each have their merits and "the best" has been [widely](http://www.telegraph.co.uk/culture/tvandradio/10535503/Sherlock-the-20-greatest-Sherlock-Holmes.html) [discussed](https://nypost.com/2014/01/16/elementary-vs-sherlock-whos-the-better-holmes/), but I wanted to take some time this holiday season to shed some light on what may be my favorite adaptation: season one of _Elementary_.
 
 READMORE
 
