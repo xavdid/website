@@ -7,7 +7,7 @@ og_img: https://i.imgur.com/wPU9lMu.jpg
 og_desc: A lookback at the best (and worst) of media in 2016
 ---
 
-*Editors Note: This was originally written to go out on Dec 31 but it was delayed. Nevertheless, it's written as if it was posted then.*
+*Editor's Note: This was originally written to go out on Dec 31 but it was delayed. Nevertheless, it's written as if it was posted then.*
 
 As 2016 draws to a close, it's a convenient time to look back on the last 12 months to some of the media I've enjoyed the most this past year. It might have been a tire fire as far as politics and celebrity deaths go, but there are a lot of metrics [trending](https://www.youtube.com/watch?v=wei8M9IuqPc) in the right [direction](https://www.youtube.com/watch?v=aThmAZ9yXqE).
 
