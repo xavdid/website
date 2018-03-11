@@ -26,7 +26,7 @@ var facts = [
   "I prefer Marvel to DC, though I've got a soft spot for Batman",
   'I won an award at work once that came with a huge lego rocket ship!',
   "Each blog post comes with a matching historical event that happened the same day. As a rule, I use the earliest semi-interesting fact I can find. The facts favor things Wikipedia decides are notable, since that's where I get my facts.",
-  'While funemployed, I worked through a <a href="https://publists.herokuapp.com/user/6452502/lists/250731358" target="_blank" rel="noopener">list</a> of tasks I hadn\'t previously had time for. I\'ve got a job now, but it\'s still a nice list of things to do when you\'ve got a lot of free time',
+  // 'While funemployed, I worked through a <a href="https://publists.herokuapp.com/user/6452502/lists/250731358" target="_blank" rel="noopener">list</a> of tasks I hadn\'t previously had time for. I\'ve got a job now, but it\'s still a nice list of things to do when you\'ve got a lot of free time',
   'My favorite food in the world is Mac & Cheese',
   'I made a $20 bet to not purchase any new videogames in 2017 (and work on my Steam backlog instead)'
 ]
