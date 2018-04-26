@@ -3,7 +3,6 @@ title: David's Definitive Marvel Movies Ranking
 fact: Playwright William Shakespeare is baptized in Stratford-upon-Avon, Warwickshire, England (date of actual birth is unknown).
 fact_year: 1564
 tags: movies, marvel, airtable
-published: false
 og_img: https://i.redd.it/2s36uj50l1r01.png
 og_desc: Read my personal ranking of all currently-released MCU Movies. You won't believe how many there are! Seriously, they just keep making these things.
 spoilers: All Marvel movies before Infinity War
@@ -138,7 +137,7 @@ If you want to play with some of this data, look no farther than [this airtable]
 
 Anyway, that's all I've got today. Thanks for reading and go enjoy the movie!
 
-*Big thanks to [/u/Ragerodracir](https://www.reddit.com/r/marvelstudios/comments/8b639o/all_18_title_cards_as_they_appear_in_the_movies/) for collecting all of the title card images*
+*Big thanks to [/u/Ragerodracir](https://www.reddit.com/r/marvelstudios/comments/8b639o/all_18_title_cards_as_they_appear_in_the_movies/) for collecting all of the title card images and the inimitable [Vicky](https://vickystein.media/) for editing this post, wathing all these movies with me, and generally putting up with me.*
 
 [^1]: AKA insertion sort
 [^2]: just acting, no action
