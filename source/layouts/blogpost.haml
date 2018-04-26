@@ -10,6 +10,9 @@
           - if current_article.tags.include?('play')
             = partial 'partials/play'
 
+          - if current_article.data.spoilers
+            = partial 'partials/_spoilers', locals: {media: current_article.data.spoilers, level: current_article.data.spoilers_level || 'Medium'}
+
           ~ current_article.body
 
       %hr

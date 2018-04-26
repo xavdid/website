@@ -12,6 +12,7 @@ $grey: #bbbbbb;
 
 $maize: #ffcc00;
 $light-blue: #336699;
+$red: red;
 $footer-size: 40px;
 $transition-speed: 0.1s;
 $links: $light-blue;
@@ -28,13 +29,22 @@ $links: $light-blue;
   }
 }
 
-@import 'normalize.min.css';
+@import "normalize.min.css";
 
-html, body {
+html,
+body {
   height: 100%;
   background-image: url("../img/greyzz.png");
   // 26px is the initial line-height
   font: 16px / 26px Minion Pro, Helvetica, Helvetica Neue, Arial;
+}
+
+.danger {
+  color: $red;
+}
+
+.info {
+  color: $light-blue;
 }
 
 // EVERYWHERE STUFF
@@ -218,7 +228,6 @@ html, body {
 
           @include desktop {
             text-align: left;
-
           }
         }
 
@@ -232,8 +241,9 @@ html, body {
               margin-bottom: 10px;
               .date {
                 font-style: italic;
-                font-size: .6em;
-                &, a {
+                font-size: 0.6em;
+                &,
+                a {
                   vertical-align: top;
                 }
               }
@@ -299,7 +309,7 @@ html, body {
               .post-body {
                 border-left: 1px solid $maize;
                 padding-left: 15px;
-                @import 'table.css.scss'
+                @import "table.css.scss";
               }
             }
           }
@@ -314,12 +324,15 @@ html, body {
           .blog_body {
             text-align: justify;
 
-            h1, h2 {
+            h1,
+            h2 {
               border-bottom: 1px solid $grey;
               padding-bottom: 0.3em;
             }
 
-            h1, h2, h3 {
+            h1,
+            h2,
+            h3 {
               margin-top: 2em;
             }
 
@@ -344,7 +357,9 @@ html, body {
               padding-left: 40px;
             }
 
-            code, pre, blockquote {
+            code,
+            pre,
+            blockquote {
               background-color: $code;
               border-radius: 5px;
               // color is overwritten by syntax anyway
@@ -377,8 +392,8 @@ html, body {
               // margin-left: -10px;
             }
 
-            @import 'table.css.scss';
-            @import 'anchor.css.scss';
+            @import "table.css.scss";
+            @import "anchor.css.scss";
           }
         }
 
@@ -511,4 +526,4 @@ html, body {
 }
 
 // I don't think I need these, but who knows
-@import 'print.css.scss'
+@import "print.css.scss";

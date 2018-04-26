@@ -24,11 +24,10 @@ READMORE
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-**Table of Contents**
 
 - [Board Games](#board-games)
 - [Videogames](#videogames)
-  - [PC + Console](#pc--console)
+  - [Home](#home)
   - [Mobile](#mobile)
 - [Movies](#movies)
 - [Television](#television)
