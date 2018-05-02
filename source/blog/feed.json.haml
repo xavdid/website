@@ -1,0 +1,24 @@
+:ruby
+  site_url = "https://davidbrownman.com/blog"
+  posts = blog.articles[0..5].map do |article|
+    {
+      title: article.title,
+      id: URI.join(site_url, article.url),
+      url: URI.join(site_url, article.url),
+      date_published: article.date.to_time.iso8601,
+      # date_modified: File.mtime(article.source_file).iso8601,
+      tags: article.tags,
+      content_html: article.body,
+      banner_image: article.data.og_img || config[:default_og_img],
+      summary: article.data.og_desc
+    }
+  end
+
+= { version: "https://jsonfeed.org/version/1",
+    title: "David Brownman's Blog",
+    description: 'A little bit of everything',
+    home_page_url: site_url,
+    feed_url: "#{site_url}/feed.json",
+    author: {name: "David Brownman", url: "https://davidbrownman.com"},
+    items: posts,
+  }.to_json

@@ -12,6 +12,8 @@ gem 'haml', '~> 4.0'
 gem 'redcarpet', '~> 3.4'
 # for blog summaries
 gem 'nokogiri', '~> 1.6'
+# For feed.xml.builder
+gem "builder", "~> 3.0"
 
 group :test do
   gem 'html-proofer', '~> 3.0'

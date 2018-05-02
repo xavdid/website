@@ -7,6 +7,7 @@ activate :directory_indexes
 set :css_dir, 'css'
 set :js_dir, 'js'
 set :images_dir, 'img'
+set :default_og_img, 'https://i.imgur.com/zhqbTVt.png'
 
 page '/*.txt', layout: false
 

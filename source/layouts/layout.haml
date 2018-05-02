@@ -14,7 +14,7 @@
   %meta{property: 'og:title', content: current_page.data.title || 'David Brownman dot com'}
   %meta{property: 'og:type', content: 'article'}
   %meta{property: 'og:url', content: 'https://davidbrownman.com/' + current_page.url}
-  %meta{property: 'og:image', content: current_page.data.og_img || 'https://i.imgur.com/zhqbTVt.png'}
+  %meta{property: 'og:image', content: current_page.data.og_img || config[:default_og_img]}
   - if current_page.url.include?('/blog/')
     %meta{property: 'og:description', content: current_page.data.og_desc || 'A blog post by David Brownman'}
   - else
