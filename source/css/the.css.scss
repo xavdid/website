@@ -47,6 +47,14 @@ body {
   color: $light-blue;
 }
 
+.light {
+  color: $white;
+}
+
+.rss {
+  color: #f26522;
+}
+
 // EVERYWHERE STUFF
 .border {
   background: $blue;
@@ -155,7 +163,7 @@ body {
     }
 
     .my_name {
-      border-bottom: 1px solid white;
+      // border-bottom: 1px solid white;
       @include desktop {
         float: left;
         margin-left: -4.5%;

@@ -59,6 +59,7 @@ activate :blog do |blog|
   blog.sources = '/posts/{year}-{month}-{day}-{title}.html'
 
   blog.tag_template = 'tag.html'
+  blog.taglink = "/blog/tag/{tag}.html"
 
   blog.layout = 'blogpost'
   blog.default_extension = '.md'

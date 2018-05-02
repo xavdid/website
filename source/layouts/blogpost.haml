@@ -20,6 +20,9 @@
         %i.fa.fa-arrow-left
         = link_to('Blog Index', '/blog')
         |
+        %a{href: '/blog/feeds'}<
+          %i.fa.fa-rss-square.rss
+        |
         = link_to('Random Post', blog.articles.reject{|x| x == current_article}.sample.url.chomp('/'))
         %i.fa.fa-random
 
