@@ -29,8 +29,6 @@ configure :build do
 
   # Use relative URLs
   activate :relative_assets
-
-  config[:https_redirect] = true
 end
 
 activate :deploy do |deploy|
