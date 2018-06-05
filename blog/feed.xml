@@ -5,16 +5,47 @@
   <id>https://davidbrownman.com/blog</id>
   <link href="https://davidbrownman.com/blog"/>
   <link href="https://davidbrownman.com/blog/feed.xml" rel="self"/>
-  <updated>2018-04-26T00:00:00-07:00</updated>
+  <updated>2018-06-04T00:00:00-07:00</updated>
   <author>
     <name>David Brownman</name>
   </author>
+  <entry>
+    <title>On the Rating of Media</title>
+    <link rel="alternate" href="https://davidbrownman.com/blog/2018/06/04/on-the-rating-of-media/"/>
+    <id>https://davidbrownman.com/blog/2018/06/04/on-the-rating-of-media/</id>
+    <published>2018-06-04T00:00:00-07:00</published>
+    <updated>2018-06-05T12:55:30-07:00</updated>
+    <author>
+      <name>David Brownman</name>
+    </author>
+    <content type="html">&lt;p&gt;Once I started tracking media in earnest, I found myself in need of a consistent way to rate what I had watched and played. There&amp;#39;s a lot of different ways to rate something, such a 10 star scale, a score out out of five, or a simple thumbs up/down.&lt;/p&gt;
+
+&lt;p&gt;My biggest gripe is that none of the scores &lt;em&gt;really&lt;/em&gt; mean anything; they&amp;#39;re good for comparing everything someone has scored, but they each have their problems. A 10 star scale is too wide; what sets a 6 star movie apart from a 7 star? The yes/no is informative but has the opposite problem: it doesn&amp;#39;t allow for any striation between good and great. A score out of 5 is closer, but it begets my worst enemy: &lt;em&gt;apathy&lt;/em&gt;. I&amp;#39;m ultimately making these lists to help steer the reader towards the good stuff. If I&amp;#39;m neutral on something, it doesn&amp;#39;t provide a definitive signal. Ultimately, none of these scales provided what I needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;I took inspiration from a system we used to rate applicants at an old job. After an interview, we provided feedback about how well the applicant would do and how much we wanted to work with them. Taking inspiration from &lt;a href="https://www.joelonsoftware.com/2006/10/25/the-guerrilla-guide-to-interviewing-version-30/"&gt;Joel Spolsky&lt;/a&gt;, a &amp;quot;I think they&amp;#39;d do well, but I don&amp;#39;t want them on my team&amp;quot; was a &amp;quot;no&amp;quot;. That approach helped guide me: no signal was bad signal.&lt;/p&gt;
+
+&lt;p&gt;With this in mind, I arrived a my definitive &lt;strong&gt;4 Point Rating System&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A &lt;strong&gt;4&lt;/strong&gt; is the highest rating. It&amp;#39;s given to media that excels in multiple areas and has no huge flaws. It&amp;#39;s probably not perfect, but it&amp;#39;s something I recommend emphatically. Examples include &lt;em&gt;Get Out&lt;/em&gt; and &lt;em&gt;Spirited Away&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Next is &lt;strong&gt;3&lt;/strong&gt;. These are still on the top half of the scale, but they have problems. Maybe a good plot with lackluster characters or serious plot holes saved by good characters. Still enjoyable and recommended overall, but doesn&amp;#39;t live up to its full potential. Examples include &lt;em&gt;Doctor Strange&lt;/em&gt; and &lt;em&gt;National Treasure&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;2&lt;/strong&gt; is the beginning of the bottom half. Media with this score have more misses than hits, but have their redeeming qualities. Especially if you&amp;#39;re a fan of the genre, you might enjoy watching if you can get it for cheap later. Examples include &lt;em&gt;Now You See Me 2&lt;/em&gt; and &lt;em&gt;Thor: The Dark World&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Lastly, &lt;strong&gt;1&lt;/strong&gt; is an example of something that fails to execute on any level. What good there might be is drowned in a sea of something truly enjoyable. This is a surprisingly tough score to earn because you &lt;em&gt;really&lt;/em&gt; have to drop the ball. Examples include &lt;em&gt;Transformers 4&lt;/em&gt; and &lt;em&gt;The Hangover Part 2&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There you have it! Now whenever you see something I&amp;#39;ve rated, you&amp;#39;ll know at a glance how much I enjoyed it and whether I would recommend it to you. Though all my example here were movies, I use the same system for &lt;a href="https://airtable.com/shr4iBau1Ewwu5kxB"&gt;books&lt;/a&gt;, &lt;a href="https://airtable.com/shruXSPix7J4EqtWD"&gt;TV&lt;/a&gt;, and &lt;a href="https://airtable.com/shrmtcuqU0Y2hSX3G"&gt;games&lt;/a&gt; as well. All the scores are subjective, but hopefully we agree enough that you find them helpful as well.&lt;/p&gt;
+
+&lt;p&gt;Happy watching!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>David's Definitive Marvel Movies Ranking</title>
     <link rel="alternate" href="https://davidbrownman.com/blog/2018/04/26/marvel-movies-ranked/"/>
     <id>https://davidbrownman.com/blog/2018/04/26/marvel-movies-ranked/</id>
     <published>2018-04-26T00:00:00-07:00</published>
-    <updated>2018-04-26T14:45:09-07:00</updated>
+    <updated>2018-06-05T12:55:28-07:00</updated>
     <author>
       <name>David Brownman</name>
     </author>
@@ -189,7 +220,7 @@
     <link rel="alternate" href="https://davidbrownman.com/blog/2018/02/21/a-few-more-favorites/"/>
     <id>https://davidbrownman.com/blog/2018/02/21/a-few-more-favorites/</id>
     <published>2018-02-21T00:00:00-08:00</published>
-    <updated>2018-05-04T12:37:26-07:00</updated>
+    <updated>2018-06-05T12:59:07-07:00</updated>
     <author>
       <name>David Brownman</name>
     </author>
@@ -735,7 +766,7 @@ Runner-up: &lt;strong&gt;Artemis&lt;/strong&gt;&lt;/p&gt;
     <link rel="alternate" href="https://davidbrownman.com/blog/2017/03/19/a-few-good-x-men/"/>
     <id>https://davidbrownman.com/blog/2017/03/19/a-few-good-x-men/</id>
     <published>2017-03-19T00:00:00-07:00</published>
-    <updated>2017-03-20T11:41:34-07:00</updated>
+    <updated>2018-06-05T12:55:56-07:00</updated>
     <author>
       <name>David Brownman</name>
     </author>
@@ -842,291 +873,6 @@ Runner-up: &lt;strong&gt;Artemis&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;There you have it: a definitive order to watch the X-Men movies to see the entire Wolverine Saga. It&amp;#39;s got its ups and downs, but as a package it&amp;#39;s wide-reaching, imaginative, and fulfilling.&lt;/p&gt;
 
 &lt;p&gt;It&amp;#39;s been a pretty awesome ride.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>A Few of My Favorite Things</title>
-    <link rel="alternate" href="https://davidbrownman.com/blog/2017/02/11/a-few-of-my-favorite-things/"/>
-    <id>https://davidbrownman.com/blog/2017/02/11/a-few-of-my-favorite-things/</id>
-    <published>2017-02-11T00:00:00-08:00</published>
-    <updated>2018-05-04T12:37:26-07:00</updated>
-    <author>
-      <name>David Brownman</name>
-    </author>
-    <content type="html">&lt;p&gt;&lt;em&gt;Editor&amp;#39;s Note: This was originally written to go out on Dec 31 but it was delayed. Nevertheless, it&amp;#39;s written as if it was posted then.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;As 2016 draws to a close, it&amp;#39;s a convenient time to look back on the last 12 months to some of the media I&amp;#39;ve enjoyed the most this past year. It might have been a tire fire as far as politics and celebrity deaths go, but there are a lot of metrics &lt;a href="https://www.youtube.com/watch?v=wei8M9IuqPc"&gt;trending&lt;/a&gt; in the right &lt;a href="https://www.youtube.com/watch?v=aThmAZ9yXqE"&gt;direction&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;On a personal level, I started getting into tracking what I read, watched, and played in earnest this year. In an effort to share the fruits of that labor, I thought I&amp;#39;d make a year-end list of some of my favorites. This endeavor is inspired in no small part by &lt;a href="https://www.macstories.net/roundups/my-must-have-ios-apps-web-services-2016-edition/"&gt;Viticci&amp;#39;s list&lt;/a&gt; of a similar nature. Though my picks weren&amp;#39;t necessarily released in 2016, this calendar year is the first time I experienced (or finished) them. It&amp;#39;s highly subjective, but hopefully there&amp;#39;s interests we have that overlap.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;#39;s get to it!&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a name="toc"&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;!-- START doctoc generated TOC please keep comment here to allow auto update --&gt;
-
-&lt;!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE --&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#board-games"&gt;Board Games&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#videogames"&gt;Videogames&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#pcconsole"&gt;PC/Console&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#mobile"&gt;Mobile&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#movies"&gt;Movies&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#television"&gt;Television&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="#newly-aired"&gt;Newly Aired&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#ended"&gt;Ended&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#books"&gt;Books&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="#tldr"&gt;tl;dr&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;!-- END doctoc generated TOC please keep comment here to allow auto update --&gt;
-
-&lt;h2 id="board-games"&gt;Board Games&lt;/h2&gt;
-
-&lt;p&gt;There&amp;#39;s never been a better time to have a board game habit.&lt;sup id="fnref1"&gt;&lt;a href="#fn1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; Sitting around a table with friends is totally back in &lt;a href="http://www.hollywoodreporter.com/features/behind-hollywoods-closed-doors-a-912169"&gt;vogue&lt;/a&gt;. This increased demand has lead to an &lt;a href="http://www.military.com/off-duty/games/2016/09/06/physical-board-games-are-experiencing-golden-age.html"&gt;golden age&lt;/a&gt; of game production. Kickstarter&amp;#39;s continued popularity has helped; across the site&amp;#39;s history, games are still the &lt;a href="https://www.kickstarter.com/help/stats"&gt;most backed&lt;/a&gt; category.&lt;/p&gt;
-
-&lt;p&gt;Since I took a remote job at &lt;a href="https://zapier.com"&gt;Zapier&lt;/a&gt; my group&amp;#39;s game sessions aren&amp;#39;t as frequent (compared to when we all worked in the same office), but we make sure they still happen. I played a lot of new games this year and a few new ones stuck out from among the crowd.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Winner: &lt;strong&gt;Machi Koro&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I think what cements &lt;em&gt;&lt;a href="https://boardgamegeek.com/boardgame/143884/machi-koro"&gt;Machi Koro&lt;/a&gt;&lt;/em&gt; as one of my favorite games from this year is that as soon as I finish playing it with a group for the first time, everyone immediately wants a second go. There&amp;#39;s not always that level of enthusiasm with new games but the pleasant design and wealth of choices make this a great game to jump into. This is a lighter game that mechanically finds itself between Settlers of Catan and Dominion. You get resources based on everyone&amp;#39;s dice rolls, but you have a bit more agency with your luck as you can choose which rolls benefit you based on which cards you buy. There&amp;#39;s an expansion that changes which cards are available in the middle (it makes the piles random instead of static) if you find the game isn&amp;#39;t varied enough. It also adds some nautical features which can help pad game length. There&amp;#39;s a lot of simple tweaks to adjust the game to your group&amp;#39;s preference and play style, and the game feels fun no matter which you choose. Again, it&amp;#39;s light, but undeniably fun.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Runner-up: &lt;strong&gt;7 Wonders: Duel&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Living in an 8 person house in college, &lt;em&gt;7 Wonders&lt;/em&gt; was a great way to include everyone in a single game. Strictly speaking it&amp;#39;s got a 2 player variant but it&amp;#39;s shoehorned in and not well-implemented; &lt;em&gt;&lt;a href="https://boardgamegeek.com/boardgame/173346/7-wonders-duel"&gt;7 Wonders Duel&lt;/a&gt;&lt;/em&gt; is designer Antoine Bauza&amp;#39;s rectification of this problem. It&amp;#39;s a 2 player standalone game that borrows heavily from the mechanics of the original, but does so with 2 players in mind. Victory comes one of three ways- military or scientific supremacy, or points if all 3 rounds complete. Instead of drafting from a deck, the cards are shuffled and laid out on the table where each player takes turns drawing from the display. Once the cards are dealt, there&amp;#39;s very little luck (as both players have access to the same information and cards) which is vital for a 2 player game to be competitive. There&amp;#39;s enough control over your actions (and how they affect your opponent) that victories are satisfying and losses are avoidable. There&amp;#39;s enough variation in the Wonders and the way the cards are laid out that the game has a ton of replay value. The game is well balanced and has a lot of depth. If you find yourself in a position to play a lot of 2 player games, make sure &lt;em&gt;7 Wonders: Duel&lt;/em&gt; is in your collection.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Honorable Mention: &lt;strong&gt;Tokaido&lt;/strong&gt;, for a beautifully spiteful game about a leisurely journey up the Japan&amp;#39;s &lt;a href="https://en.wikipedia.org/wiki/T%C5%8Dkaid%C5%8D_(road)"&gt;Eastern Sea Road&lt;/a&gt;. The components are beautiful and the iconography is clear. Also &lt;strong&gt;Codenames&lt;/strong&gt; for being fun as heck and a great party game.&lt;/p&gt;
-
-&lt;h2 id="videogames"&gt;Videogames&lt;/h2&gt;
-
-&lt;p&gt;These days most of my gaming happens on my home-built PC, but I&amp;#39;ve also been making an effort to play through my PS3 backlog in anticipation eventual of Kingdom Hearts 3 and a PS4. When I&amp;#39;m on the go, I stick mostly to my iPad and more recently, my new 3DS. Each year more games come out then ever before, but there&amp;#39;s a few diamonds in the rough.&lt;/p&gt;
-
-&lt;h3 id="pc-console"&gt;PC/Console&lt;/h3&gt;
-
-&lt;p&gt;This has been a weird year for me as far as PC games are concerned. When picking games I tend to prioritize story above most other factors; neither of my picks have much of a story. I&amp;#39;ve been making a concerted effort to not buy any new games (despite sales) and to instead work on my backlog; both of my picks this year were newly purchased for full price.&lt;sup id="fnref2"&gt;&lt;a href="#fn2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt; Exceptions must be made for excellence, and that&amp;#39;s what these games are.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Winner: &lt;strong&gt;Factorio&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;#39;ve always had a thing for &lt;a href="/blog/2014/12/16/augmenting-automation-on-ios/"&gt;automation&lt;/a&gt; and when I saw there was a mining game designed around that very concept, I couldn&amp;#39;t stay away. I bought &lt;em&gt;&lt;a href="https://www.factorio.com/"&gt;Factorio&lt;/a&gt;&lt;/em&gt; for my birthday and proceeded to play 35 hours that week (placing it squarely in one of my &lt;a href="https://steamcommunity.com/id/xavdidtheshadow/games/?tab=all"&gt;most-played&lt;/a&gt; steam games of all time). After destroying my sleep schedule and finally launching the rocket, I had only scratched the surface of the game. &lt;sup id="fnref3"&gt;&lt;a href="#fn3" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://i.imgur.com/6WvZjm5.jpg" alt="6wvzjm5" /&gt;&lt;/p&gt;
-
-&lt;p&gt;In &lt;em&gt;Factorio&lt;/em&gt;, you play the role of a space traveler stranded on a hostile planet. Your ultimate goal is to build a rocket and escape. You start from scratch, mining coal by hand to power your single drill. Manual labor sucks though, so you build some belts and an inserter to make your coal self-sustaining. Before you know it, you&amp;#39;ve constructed a complex automated system that ensures resources will continue to flow through your factory. Along the way you&amp;#39;ll produce science packs that fuel your research. As you progress down the tech tree, you&amp;#39;ll unlock military armaments, automation tools, and the technology necessary to build a rocket.&lt;/p&gt;
-
-&lt;p&gt;What impressed me most about this game was the number of ways the player has to automate their factory. There are chests that can offer or request supplies, a full &lt;a href="https://www.reddit.com/r/factorio/comments/43giwy/i_made_a_programmable_turingcomplete_computer_in/"&gt;Turing complete&lt;/a&gt; system of wires and number-counters, and a programmable train system. The &lt;a href="http://guide.factorio.com/07-automation.html"&gt;guide&lt;/a&gt; goes into more detail if you&amp;#39;re interested, but suffice it to say that the sky really is the limit.&lt;/p&gt;
-
-&lt;p&gt;Much like programming, there are many paths to success when building a factory, some better than others. During play, most of your time is spent iterating and improving your existing designs. The road to perfection is paved by &amp;quot;just 5 more minutes, I want to fix one thing&amp;quot;. There&amp;#39;s an addictive quality to perfection and this game is the dealer. It entices you with a series of small improvements and asks only for your entire day in return.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://i.redd.it/zlx1pgqmlkcy.jpg" alt="Zlx1pgqmlkcy" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Multi-player mode and headless servers mean that you can collaborate with friends (synchronously or otherwise). Add that with the joy of designing a well-thought-out base and extensive &lt;a href="http://mods.factorio.com"&gt;mod&lt;/a&gt; support and you&amp;#39;ve got a masterpiece that you can play basically forever.&lt;/p&gt;
-
-&lt;p&gt;The developers have taken a unique &lt;a href="https://www.factorio.com/FAQ"&gt;no sale&lt;/a&gt; stance on their pricing. Though I was initially annoyed, their choice to give both a Steam key and a DRM download is generous. Continuous active development (nuclear power coming soon!) and support illustrate a clear love of the game and its community. Let me reassure you that this game is indeed worth the Jackson ($20, or local equivalent) it&amp;#39;ll cost you. My only complaint is the game&amp;#39;s sparse soundtrack. To combat it, I&amp;#39;ve been working on a &lt;a href="https://open.spotify.com/user/1286017453/playlist/51csweJzekf7uSFkWgeb5b"&gt;playlist&lt;/a&gt; that fits the game nicely. Past that, any gripes I&amp;#39;ve got can be solved through mods.&lt;/p&gt;
-
-&lt;p&gt;I&amp;#39;d say more, but the enthusiasm on the &lt;a href="https://www.reddit.com/r/factorio/"&gt;subreddit&lt;/a&gt; speaks for itself. Plus, I&amp;#39;ve got a factory to build.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Runner-up: &lt;strong&gt;The Witness&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;At it&amp;#39;s surface, &lt;em&gt;the Witness&lt;/em&gt; is a game about increasingly complex line puzzles. There&amp;#39;s no combat, no story to speak of, and no music. You walk around and draw lines through grids to satisfy unexplained constraints. What makes the game so great?&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://i.imgur.com/r61H5qm.jpg" alt="R61h5qm" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Let&amp;#39;s start with the most obvious: the game is drop-dead gorgeous. Color is used well and the island feels equal parts alive and abandoned. The developers clearly took great care in the design of every aspect of the island. Everything from the foliage to the architecture serves a purpose, usually to build and inform the theme of nearby puzzles. Atmosphere plays a large role in puzzle design and vice versa. There&amp;#39;s a wonderful moment about 30 minutes into the game as you&amp;#39;re solving a series of paired panels. Your drawing on one is mirrored on the other and solutions must satisfy both panels simultaneously. As you walk down a path from the first section towards the second, you&amp;#39;re flanked by strangely shaped pairs of vases. On first pass they&amp;#39;re fairly unremarkable, but nothing in the game is placed on accident. The vases are inverses of each other, strengthening the theme of the mirrored panels.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://i.imgur.com/JXT5w5d.jpg" alt="Jxt5w5d" /&gt;&lt;/p&gt;
-
-&lt;p&gt;In addition to its meticulous environment design, the pedagogy of the puzzles shines. There&amp;#39;s no dialog or formal tutorial, but the game teaches you the rules to 7(ish) symbols and how they affect a solution. A reddit user summarizes it better than I can:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The Witness is the only game I&amp;#39;ve ever played that bottled that sense of discovery, that made me feel it over and over again. More than anything, it&amp;#39;s a game about language. ... [I]nstead of finding items that let you solve puzzles, you find knowledge that does the same. He took the inventory away from a screen in the game and put it in the player&amp;#39;s head, and he does it all without using any English. He creates a new language and teaches it to you.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;/u/Teuthex (&lt;a href="https://www.reddit.com/r/Games/comments/5jxpek/the_witness_end_of_2016_discussions/dbjqjx2/"&gt;source&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;em&gt;The Witness&lt;/em&gt; is unique in the &lt;a href="https://en.wikipedia.org/wiki/Metroidvania"&gt;metroidvania&lt;/a&gt; genre. There&amp;#39;s no enforced order to solving the puzzles in the 10(ish) areas of the island. Your travel is limited only by the sorts of puzzles you&amp;#39;re able to solve. This mechanic results in very rewarding exploratory opportunities as the benefits of your gained knowledge are immediate and obvious. This tight feedback loop is similarly rewarding when solving puzzles as the unfulfilled elements flash red and you&amp;#39;re immediately given a chance to try again.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://i.imgur.com/MYIFqeQ.jpg" alt="Myifqeq" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Despite this praise, the game isn&amp;#39;t perfect. For me, the biggest letdown was the lack of narrative payoff. Throughout the game the locations and mysterious statuses paint a story that begs to be explained, but nothing is offered. Also, while most of the puzzles are situated deliberately, there are a few puzzle rooms that are just a pile of panels on a wall without any deeper theme.&lt;/p&gt;
-
-&lt;p&gt;For your time and money, &lt;em&gt;The Witness&lt;/em&gt; does a lot of things right. I&amp;#39;m glad I got it and look forward to circling back around to completed the areas I skipped in the coming months. Until then, I&amp;#39;ll keep seeing circles and paths everywhere I look.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Honorable mention: &lt;strong&gt;Ratchet &amp;amp; Clank: Into the Nexus&lt;/strong&gt;, for doing a lot with a little. Despite its fairly short campaign, there&amp;#39;s a lot of rewarding exploration do be done to do and I found coming back to &lt;em&gt;Into the Nexus&lt;/em&gt; long after I needed to.&lt;/p&gt;
-
-&lt;h3 id="mobile"&gt;Mobile&lt;/h3&gt;
-
-&lt;p&gt;Truth be told I don&amp;#39;t play a lot of mobile games- none on my phone and a few on my iPad. When I do, I mostly puzzle games or action ones with a &amp;quot;solving&amp;#39; component. I got a 3DS on Black Friday and have been making an effort to play it instead of the iPad.&lt;sup id="fnref4"&gt;&lt;a href="#fn4" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt; It&amp;#39;s been great so far and I&amp;#39;m looking forward to shifting my focus away from an app store plagued with scummy in-app-purchases. Until then, there are a couple of great games that you can play in short bursts on the go.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Winner: &lt;strong&gt;Blackbox&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Puzzle games need a premise, whether it&amp;#39;s line puzzles or a 9 by 9 grid with digits int it. &lt;em&gt;&lt;a href="http://blackboxpuzzles.com/"&gt;Blackbox&lt;/a&gt;&lt;/em&gt; is unique in that its premise takes advantage of the thing you think about least of all: your iPhone itself. The game consists of a series of puzzles requiring you to light up a little square. There aren&amp;#39;t instructions, strictly speaking, and the answer isn&amp;#39;t always clear. The game&amp;#39;s design does a great job and instructing you tutorial shows you how the puzzles are explicitly device related.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://i.imgur.com/tivxcN1.png" alt="Tivxcn1" /&gt;&lt;/p&gt;
-
-&lt;p&gt;One of the intro puzzles is solved with the device&amp;#39;s physical buttons. In others, the graphics mimic part of the iOS interface and are solved by interacting with the real version. Some puzzles are location based. They once led me to drive 20 miles in the wrong direction because I was just close enough to a solution to make the time worth it. There&amp;#39;s also a set of puzzles that are time related and require you to be patient (or a dirty cheater). The wide spectrum of puzzles is continually impressive.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://i.imgur.com/HImz3LG.png" alt="Himz3lg" /&gt;&lt;/p&gt;
-
-&lt;p&gt;One of the most unique features is being able to chat with the developer once you&amp;#39;ve completed enough levels. &lt;a href="https://twitter.com/warpling"&gt;Ryan&lt;/a&gt; is a really friendly guy and it&amp;#39;s been fun picking his brain about the game. He also has a great &lt;a href="https://medium.com/mobile-growth/how-i-got-10-000-five-star-reviews-in-4-weeks-5246cc4c55c7#.gdrgzid31"&gt;writeup&lt;/a&gt; about asking for device permissions in a non-invasive way. His app asks for most of the available permissions and it could be really annoying if not done tactfully. Once you complete all of the puzzles, there&amp;#39;s not a lot to do until he releases more puzzles. Otherwise, &lt;em&gt;Blackbox&lt;/em&gt; has a lot of good going for it.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Runner-up: &lt;strong&gt;Mini Metro&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Planted squarely between very relaxing and very stressful, &lt;em&gt;&lt;a href="http://dinopoloclub.com/minimetro/"&gt;Mini Metro&lt;/a&gt;&lt;/em&gt; is a subway map simulator. The goal is simple- to not leave anyone waiting at a station too long. Throughout a game (which lasts up to ~15 minutes), shapes (aka stations) pop up around your map. It starts off easy- there are only circle, square, and triangle stations/riders. You place subway lines between stations in order to best aid your geometrically shaped citizens in getting to their destination. As the game progresses, the shapes get more diverse, forcing your system to become more inter-connected and efficient. The difficulty curve is gentle yet firm, leading to satisfying gameplay as you hustle to keep folks moving.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://i.imgur.com/C8npRiX.jpg" alt="C8nprix" /&gt;&lt;/p&gt;
-
-&lt;p&gt;The game&amp;#39;s graphics provide an undeniable charm and its pleasant music goes a long way toward making you feel relaxed. Though the people and stations are fictional, all of the maps are based on real cities and the layout of rivers/bridges/tunnels is at least semi-realistic. If I were to make one improvement, it would be about the information you have on the system. Being able to see which lines had which shapes would go a long way towards identifying problems before it&amp;#39;s too late. Nevertheless, a quick &lt;em&gt;Mini Metro&lt;/em&gt; session goes a long way to putting me in a good mood.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Honorable mention: &lt;em&gt;&lt;a href="https://theguidesapp.com/"&gt;The Guides&lt;/a&gt;&lt;/em&gt;, which plays like a &lt;a href="https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security"&gt;CTF&lt;/a&gt; game that requires almost no specific technical knowledge. Each level requires a code word (found by correctly decoding written or visual clues) to progress. There seems to be some sort of cryptic story related to aliens, but even without it the game feels satisfying.&lt;/p&gt;
-
-&lt;h2 id="movies"&gt;Movies&lt;/h2&gt;
-
-&lt;p&gt;It wasn&amp;#39;t until I started looking back through the movies that came out in the past year that I realized how many awesome releases there were. I tend to see a lot of movies in the theater and this year was no exception. Until then, here&amp;#39;s the best (and worst) of what I saw in theaters this year.&lt;/p&gt;
-
-&lt;p&gt;Winner(s)&lt;sup id="fnref5"&gt;&lt;a href="#fn5" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt;: &lt;strong&gt;Captain America: Civil War&lt;/strong&gt;, &lt;strong&gt;Arrival&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://i.imgur.com/CjHIgKA.jpg" alt="Cjhigka" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Captain America: Civil War&lt;/em&gt; was basically everything I might want from a &lt;a href="https://en.wikipedia.org/wiki/Marvel_Cinematic_Universe"&gt;MCU&lt;/a&gt; movie. I might be biased a huge fan of comic book movies, but that doesn&amp;#39;t stop me from seeing this for what it is: probably the best superhero movie to date.&lt;sup id="fnref6"&gt;&lt;a href="#fn6" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt; An ensemble cast that was a good mix of funny and serious, quality fight scenes in interesting locations, and character development through a lot of dialog give the audience the feeling of a complete movie. Directors &lt;a href="https://en.wikipedia.org/wiki/Russo_brothers"&gt;Joe &amp;amp; Anthony Russo&lt;/a&gt; paced it surprisingly well, which is tough to do in a (nearly) 3 hour movie. They&amp;#39;re set to direct the upcoming &lt;em&gt;Infinity War&lt;/em&gt; and its sequel, which with any luck will be more of a great thing. Here&amp;#39;s to the continued health and longevity of the MCU (and the hope that they know when to quit).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://i.imgur.com/kJAhVx4.jpg" alt="Kjahvx4" /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Arrival&lt;/em&gt; was a breath of fresh air in what can be a stale genre. I&amp;#39;m a sucker for badass lady-scientists (see also: &lt;a href="https://en.wikipedia.org/wiki/Contact_(1997_American_film)"&gt;Contact&lt;/a&gt;), so this was an easy sell. There was a big focus on linguistics and how words affect our perception. In a modern day where words and speech have become increasingly meaningful and scrutinized, this was especially engaging. It also deals with fear on a national (and international) level, which made it feel especially relevant. There was a good setup, a purposeful build, and a satisfying payoff. I left this movie feeling engaged and satisfied and look forward to watching it again soon.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Runner-up: &lt;strong&gt;Deadpool&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;I almost didn&amp;#39;t see this. I was nervous about the character, because I was nearly certain that however he was portrayed he would be annoying and overbearing. I was never more happy to be wrong. In an (arguably over-saturated) field of superhero movies, &lt;em&gt;Deadpool&lt;/em&gt; was self aware and managed to balance an emotional story against some absolutely hysterical moments. I was pleased to see them testing including some X-Men in the MCU proper and hope for more. The film&amp;#39;s underdog success makes me a little concerned about more studio interference in the sequel, but who says lightning can&amp;#39;t strike twice?&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Honorable mention(s):  &lt;em&gt;Storks&lt;/em&gt; and &lt;em&gt;Zootopia&lt;/em&gt;, for proving that there&amp;#39;s space for a serious (and often meaningful) story while providing jokes that cater to all ages. Lastly &lt;em&gt;Rogue One&lt;/em&gt;, for a pleasant surprise.&lt;/p&gt;
-
-&lt;p&gt;Dishonorable mention: &lt;em&gt;Kung-Fu Panda 3&lt;/em&gt;, for completing the series&amp;#39; decline from the pinnacle of cinema to a fairly generic children&amp;#39;s movie. The per-character in-fight catchphrases were a letdown.&lt;/p&gt;
-
-&lt;h2 id="television"&gt;Television&lt;/h2&gt;
-
-&lt;p&gt;It&amp;#39;s no secret that I watch a lot of TV. I enjoy the long-form stories that are told over the course of a season. I aim to balance a collection of running shows with a backlog from Netflix and elsewhere. This is something I&amp;#39;ve tracked in a couple of different places, but never well. New years resolutions, I guess!&lt;/p&gt;
-
-&lt;h3 id="newly-aired"&gt;Newly Aired&lt;/h3&gt;
-
-&lt;p&gt;As the shows I watch end, I&amp;#39;m always on the lookout for new things to supplement my weekly rotation. My running count had dipped low this season, so I made an effort to pick up something new.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Winner: &lt;strong&gt;The Good Place&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;On the whole, I really like NBC comedies (see: Community, 30 Rock, Scrubs, etc) and they&amp;#39;ve hit it out of the park again with &lt;em&gt;The Good Place&lt;/em&gt;. It&amp;#39;s been a really fun season slowly growing our knowledge about the characters. Normally I only put things on here I&amp;#39;ve finished, but having seen everything but the finale so far in 2016, I&amp;#39;m confident I&amp;#39;ll still feel this way when the season concludes (&lt;em&gt;2017 edit: the finale exceeded expectations&lt;/em&gt;). The show is quirky without being overbearing and weaves its characters together well. I like how it approaches the afterlife in a factual, straightforward manner and ruminates on what makes people good (a topic I&amp;#39;ve thought &lt;a href="#"&gt;a lot&lt;/a&gt; about). None of the characters are quite as they seems and it&amp;#39;s been a delight untangle the lives of the people in &lt;em&gt;The Good Place&lt;/em&gt;. The show has been a breath of fresh air in am otherwise fairly stale fall lineup.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Runner-up: &lt;strong&gt;Stranger Things&lt;/strong&gt;
-Hopefully by now, you&amp;#39;ve heard how good this show is. Some of it is hype, but a lot of it is engaging characters, great theme music, and a mysterious organization. The child actors are great and there&amp;#39;s a surprising amount of depth in their relationships with their friends and their drive to do what&amp;#39;s right. It also feels a bit like &lt;em&gt;The Goonies&lt;/em&gt; in that it captures the spirit of 1980&amp;#39;s America well (so I&amp;#39;ve heard, I wasn&amp;#39;t around for them). Though in some cases it can be dangerous to buy into hype, in this case it&amp;#39;s well deserved. Set aside 8 hours and enjoy what &lt;em&gt;Stranger Things&lt;/em&gt; has to offer.&lt;/p&gt;
-
-&lt;h3 id="ended"&gt;Ended&lt;/h3&gt;
-
-&lt;p&gt;Thanks to Netflix and other online providers, it&amp;#39;s easier than ever to watch old shows that are recommended to me. Hopefully when you&amp;#39;re reading this these are all still readily available, as they shouldn&amp;#39;t be missed.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Winner: &lt;strong&gt;Better off Ted&lt;/strong&gt;
-This show blew me out of the water. It follows Ted, a well-meaning exec at a fairly evil corporation. The writing is tight and the jokes come fast. They do a great job fleshing out supporting characters and Portia de Rossi nails it as Ted&amp;#39;s tone deaf boss. Like many great shows it was taken top soon, but not before it left a lasting impact on comedy. It&amp;#39;s 2 short seasons, why don&amp;#39;t you give it a go?&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Honorable Mention: &lt;em&gt;The West Wing&lt;/em&gt; for being equal parts prophetic and wonderful throughout its run. It seems silly to give an award to a 10 year old (and highly decorated) show, so I didn&amp;#39;t. Its writing, acting, and political relevance are truly astounding though, so if you haven&amp;#39;t watched it yet, do yourself a favor and rectify that.&lt;/p&gt;
-
-&lt;h2 id="books"&gt;Books&lt;/h2&gt;
-
-&lt;p&gt;This was the year I really started to get into audio-books (thanks to a few lengthy road trips). Working from home, I don&amp;#39;t have a lot of time to listen to them anymore but they really helped transform some long drives. I had a pretty good &lt;a href="https://airtable.com/shr4iBau1Ewwu5kxB"&gt;reading list&lt;/a&gt; this year. I&amp;#39;ve talked about them each briefly at that link, but I wanted to highlight a couple that were really special.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Winner: &lt;strong&gt;Gone Girl&lt;/strong&gt;, by Gillian Flynn&lt;/p&gt;
-
-&lt;p&gt;I always make a point to read the book before a movie comes out, and that was my primary motivation for picking up &lt;em&gt;&lt;a href="http://gillian-flynn.com/gone-girl/"&gt;Gone Girl&lt;/a&gt;&lt;/em&gt;. In hindsight, I chose correctly. It&amp;#39;s a thriller about the murder of a man&amp;#39;s wife. It adheres to a great frame where chapters alternate between their points of view: him in present day (dealing with her murder) and her in her diary, staring from when they met and running forward until her untimely demise.&lt;/p&gt;
-
-&lt;p&gt;This book is equal parts thrilling and chilling as we get an insightful dive into the minds of a pair of realistic and engaging characters. Flynn&amp;#39;s writing is frank, addressing how people change over time and how they inflict misery on others. It&amp;#39;s gripping all the way through and I wholeheartedly recommend it.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Runner-up: &lt;strong&gt;The Mirage&lt;/strong&gt;, by Matt Ruff&lt;/p&gt;
-
-&lt;p&gt;Alternate history is a genre I don&amp;#39;t read nearly enough of, so I jumped at the chance to read &lt;em&gt;&lt;a href="http://www.bymattruff.com/my-novels/the-mirage/"&gt;The Mirage&lt;/a&gt;&lt;/em&gt;. Written by the author of one of my favorite books of all time (Bad Monkeys, for you trivia buffs), Ruff paints an engaging picture of how the world could have looked given a big &amp;quot;what if&amp;quot;. In his version of events, the UAE and the USA switch roles, and Christian fundamentalists bomb the twin Tigris and Euphrates towers. This story follows the aftermath and the political climate therein. The lives of the (FBI equivalent) agents we follow take a turn for the bizarre as artifacts from a &amp;quot;time that wasn&amp;#39;t&amp;quot; begin popping up- Bush-era political propaganda and unknown technology. Especially in the current day, &lt;em&gt;The Mirage&lt;/em&gt; is well worth your time.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Honorable Mention: Joel McHale&amp;#39;s &lt;em&gt;Thanks for the Money&lt;/em&gt;. I listened to this as an audiobook and besides being funny, there were some audiobook specific jokes that made it feel special. Also, he calls friends and cast mates and has them introduce chapters over the phone, which was cute. It also becomes surprisingly touching for a largely parodic work.&lt;/p&gt;
-
-&lt;p&gt;&lt;br&gt;
-Dishonorable mention: &lt;em&gt;The Adjacent&lt;/em&gt;, for being an un-engaging knock off of &lt;em&gt;Cloud Atlas&lt;/em&gt; where we bounce between characters, but they&amp;#39;re all so dull that it&amp;#39;s not worth discovering why or how they&amp;#39;re connected.&lt;/p&gt;
-
-&lt;!-- extra anchor, see https://github.com/vmg/redcarpet/issues/602 --&gt;
-
-&lt;p&gt;&lt;a name="tldr"&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id="tl-dr"&gt;tl;dr&lt;/h2&gt;
-
-&lt;p&gt;The word count on this one sort of got away from me, so here&amp;#39;s just my best-ofs without any explanation: (in order of preference):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Board Games&lt;/em&gt;: Machi Koro, 7 Wonders: Duel&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Videogames&lt;/em&gt;: Factorio, The Witness; Blackbox, Mini Metro&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Movies&lt;/em&gt;: Captain America: Civil War, Arrival, Deadpool&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Television&lt;/em&gt;: The Good Place, Stranger Things; Better off Ted&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Books&lt;/em&gt;: Gone Girl, The Mirage&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Back to the &lt;a href="#toc"&gt;table of contents&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;And there you have it! If you took the time to read all the way down here, I&amp;#39;d like to thank you. Time is precious and I&amp;#39;m flattered that you decided to spend some on me.&lt;/p&gt;
-
-&lt;p&gt;If you feel so inclined, I&amp;#39;d love to hear what you thought of my picks or what some of your own were. Past that, let me know if you&amp;#39;ve got a recent favorite and I&amp;#39;ll see you in 2017!&lt;/p&gt;
-
-&lt;div class="footnotes"&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-
-&lt;li id="fn1"&gt;
-&lt;p&gt;Or the worst time, as far as my wallet is concerned. Maybe I should try cocaine instead, save a few bucks&amp;nbsp;&lt;a href="#fnref1" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li id="fn2"&gt;
-&lt;p&gt;This is especially rare because of the prevalence of sales for PC games. I&amp;#39;m a very &lt;a href="https://www.reddit.com/r/patientgamers"&gt;patient gamer&lt;/a&gt; and am reticent to buy games at full price&amp;nbsp;&lt;a href="#fnref2" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li id="fn3"&gt;
-&lt;p&gt;Talking to other engineering friends who have played this game, everyone had a remarkably identical experience. At the end of the week they either beat the game or were forcibly cut off by their SO&amp;nbsp;&lt;a href="#fnref3" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li id="fn4"&gt;
-&lt;p&gt;&lt;em&gt;Pokémon Sun&lt;/em&gt; has been awesome, but it won&amp;#39;t be eligible until next year&amp;#39;s list at the earliest.&amp;nbsp;&lt;a href="#fnref4" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li id="fn5"&gt;
-&lt;p&gt;Two winners? Yeah whatever, this is my list and there were a lot of good movies this year&amp;nbsp;&lt;a href="#fnref5" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li id="fn6"&gt;
-&lt;p&gt;At the top, it faces stiff competition from &lt;em&gt;The Avengers&lt;/em&gt;, &lt;em&gt;The Dark Knight&lt;/em&gt;, &lt;em&gt;Iron Man&lt;/em&gt;, and &lt;em&gt;Deadpool&lt;/em&gt;, but at this point I&amp;#39;m pretty sure it takes the cake.&amp;nbsp;&lt;a href="#fnref6" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;/ol&gt;
-&lt;/div&gt;
 </content>
   </entry>
 </feed>
