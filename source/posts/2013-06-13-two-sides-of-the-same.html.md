@@ -29,4 +29,4 @@ It's funny the way our society works. Each action is subject to the perspective 
 
 The perspective on Good vs Evil is one that's always fascinated me.  It's something that I've written about before and is the inspiration for the title of this blog. [^1] Hopefully I've given you a bit to think about and welcome any comments (which you should be able to leave without any signups or anything below) or discussion.
 
-[^1]: 2016 Note: The blog used to be called "The Light and the Shadow" but has since been rebranded to the much more boring name of "David's blog". Also there's no comment section anymore, so that next statement won't make sense. It's fine.
+[^1]: 2016 Note: The blog this was originally posted on was called "The Light and the Shadow" but has since been rebranded to the much more boring name of "David's blog". Also there's no comment section anymore, so that next statement won't make sense. It's fine.

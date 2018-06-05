@@ -2,7 +2,7 @@
 title: The Quilt of our Lives
 fact: The Wikimedia Foundation is founded in St. Petersburg, Florida.
 fact_year: 2003
-tags: Facebook, social
+tags: Facebook
 ---
 
 We as humans thrive through being social.

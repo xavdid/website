@@ -2,8 +2,8 @@
 title: On the Rating of Media
 fact: Houston is incorporated by the Republic of Texas.
 fact_year: 1837
-tags: movies
-published: false
+tags: movies, Airtable
+og_desc: Learn more about how I rank all of the media I track in a consistent manner
 ---
 
 Once I started tracking media in earnest, I found myself in need of a consistent way to rate what I had watched and played. There's a lot of different ways to rate something, such a 10 star scale, a score out out of five, or a simple thumbs up/down.
@@ -12,7 +12,7 @@ My biggest gripe is that none of the scores *really* mean anything; they're good
 
 READMORE
 
-I took inspiration from a system we used to rate applicants at an old job. After an interview, we provided feedback about how well the applicant would do and how much we wanted to work with them. Taking inspiration from [Joel Sposkey](https://www.joelonsoftware.com/2006/10/25/the-guerrilla-guide-to-interviewing-version-30/), a "I think they'd do well, but I don't want them on my team" was a "no". That approach helped guide me: no signal was bad signal. 
+I took inspiration from a system we used to rate applicants at an old job. After an interview, we provided feedback about how well the applicant would do and how much we wanted to work with them. Taking inspiration from [Joel Spolsky](https://www.joelonsoftware.com/2006/10/25/the-guerrilla-guide-to-interviewing-version-30/), a "I think they'd do well, but I don't want them on my team" was a "no". That approach helped guide me: no signal was bad signal.
 
 With this in mind, I arrived a my definitive **4 Point Rating System**:
 
@@ -21,6 +21,6 @@ With this in mind, I arrived a my definitive **4 Point Rating System**:
 * **2** is the beginning of the bottom half. Media with this score have more misses than hits, but have their redeeming qualities. Especially if you're a fan of the genre, you might enjoy watching if you can get it for cheap later. Examples include *Now You See Me 2* and *Thor: The Dark World*
 * Lastly, **1** is an example of something that fails to execute on any level. What good there might be is drowned in a sea of something truly enjoyable. This is a surprisingly tough score to earn because you *really* have to drop the ball. Examples include *Transformers 4* and *The Hangover Part 2*
 
-There you have it! Now whenever you see something I've rated, you'll know at a glance how much I enjoyed it and whether I would recommend it to you. Though all my example here were movies, I use the same system for [books](), [TV](), and [games]() as well. All the scores are subjective, but hopefully we agree enough that you find them helpful as well.
+There you have it! Now whenever you see something I've rated, you'll know at a glance how much I enjoyed it and whether I would recommend it to you. Though all my example here were movies, I use the same system for [books](https://airtable.com/shr4iBau1Ewwu5kxB), [TV](https://airtable.com/shruXSPix7J4EqtWD), and [games](https://airtable.com/shrmtcuqU0Y2hSX3G) as well. All the scores are subjective, but hopefully we agree enough that you find them helpful as well.
 
 Happy watching!
