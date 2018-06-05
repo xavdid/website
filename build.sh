@@ -23,7 +23,7 @@ fi
 
 # update any files that need a TOC
 # if this fails, npm i -g doctoc
-grep -rl 'TOC' 'source/posts' | xargs doctoc --notitle
+grep -rl 'TOC' 'source/posts' | xargs npx doctoc --notitle
 
 bundle exec middleman build # --clean
 
