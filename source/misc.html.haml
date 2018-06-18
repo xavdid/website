@@ -3,6 +3,11 @@ title: Sundries
 header: misc
 ---
 
+:ruby
+  require 'json'
+  referrals_file = File.read(File.join(File.dirname(__FILE__), 'files/referrals.json'))
+  referrals = JSON.parse(referrals_file, symbolize_names: true)
+
 %article
   .misc
     %h2.heading
@@ -12,7 +17,7 @@ header: misc
         I was a maintainer for the
         %a{href: "https://github.com/adelevie/parse-ruby-client", target: "_blank"}<
           Parse Ruby Client
-        while Parse was still free.
+        while Parse was still big.
       -# %li
       -#   I'm a huge proponent of startups. They're fun, I was able jump between productivity in all aspects of the company (back-end, front-end, UX, and growth hacking), and the food/beer/adventures tend to be top notch. During my time in college I had the opportunity to work at two,
       -#   %a{href: "http://www.fetchnotes.com", target:"_blank"}<
@@ -122,19 +127,17 @@ header: misc
       I'm very list oriented. Here are a few of the ways I track my life. I've done projects to help manage these, but I mostly stick to Airtable these days.
     %ul
       %li
-        =link_to('Books', 'https://airtable.com/shr4iBau1Ewwu5kxB')
-        I've read
+        =link_to('Finished Books', 'https://airtable.com/shr4iBau1Ewwu5kxB')
       %li
-        =link_to('Books', 'https://airtable.com/shrzRTbsZiBhVeugG')
-        I want to read
+        =link_to('To-Read Books', 'https://airtable.com/shrzRTbsZiBhVeugG')
       %li
         %a{href: "https://airtable.com/shrhRIQEmJ8Q4diwu", target: "_blank"}<
           Concerts
         I've attended
-      -# %li
-      -#   %a{href: "https://publists.herokuapp.com/user/6452502/lists", target: "_blank"}<
-      -#     Various Public Lists
-      -#   (Pending TV/Movies, etc)
+      %li
+        %a{href: "https://airtable.com/shrvzcS9igOXIJwPb", target: "_blank"}<
+          Movies
+        I've watched
 
     %h2.heading
       Around the Web
@@ -146,11 +149,6 @@ header: misc
         account, which has any javascript packages I've uploaded.
       %li
         My
-        %a{href: "https://rubygems.org/profiles/xavdid", target: "_blank"}<
-          RubyGems
-        profile, where you can see the public ruby code I maintain.
-      %li
-        My
         %a{href: "https://stackoverflow.com/users/1825390/xavdid", target: "_blank"}<
           Stackoverflow
         profile, where I sometimes appear less clueless than I am.
@@ -158,12 +156,17 @@ header: misc
         My
         %a{href: "https://keybase.io/xavdid", target: "_blank"}<
           Keybase
-        profile, which verifies my identity and lists my public key. Feel free to send me snarky messages meant for my eyes only.
+        profile, which verifies my identity and lists my public key. Feel free to send me messages meant for my eyes only.
       %li
         My
         %a{href: "https://www.kickstarter.com/profile/brownman", target: "_blank"}<
           Kickstarter
         profile. I'd try to kick the habit if there weren't so many great projects!
+      %li
+        My
+        %a{href: "https://rubygems.org/profiles/xavdid", target: "_blank"}<
+          RubyGems
+        profile, where you can see the public ruby code I maintain.
       %li
         My
         %a{href: "https://vine.co/u/923740547368235008", target: "_blank"}<
@@ -189,6 +192,26 @@ header: misc
         %a{href: "https://www.imdb.com/name/nm5598028/", target:"_blank"}<
           IMDB
         page (that I never thought I'd actually have).
+
+    %h2.heading
+      Referral Codes
+    %p
+      If you're interested in getting sign-up credit on any of the following services (and want me to get some credit too), check out the following links:
+    %table
+      %thead
+        %td Product
+        %td Description
+        %td What You Get
+      %tbody
+        - referrals.each do |i|
+          %tr
+            %td
+              %a{href: i[:url], target: '_blank'}<
+                = i[:name]
+            %td
+              = i[:desc]
+            %td
+              = i[:reward]
 
     %h2.heading
       Miscellaneous
