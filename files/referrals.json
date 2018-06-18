@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Airtable",
+    "url": "https://airtable.com/invite/r/7A1YRa26",
+    "desc": "A great way to organize all your data",
+    "reward": "$10 of credit"
+  },
+  {
+    "name": "Wealthfront",
+    "url": "https://wlth.fr/2cINLEh",
+    "desc": "Robo-based investment accounts",
+    "reward": "$5000 managed for free (on top of the $10k all users get)"
+  },
+  {
+    "name": "Robinhood",
+    "url": "https://share.robinhood.com/davidb134",
+    "desc": "Free stock trading",
+    "reward": "A free stock!"
+  },
+  {
+    "name": "Airbnb",
+    "url": "https://www.airbnb.com/c/davidb1455",
+    "desc": "Hotel-like rentals",
+    "reward": "$40 off your first rental"
+  },
+  {
+    "name": "Simple",
+    "url": "https://simple.com/friends/GQFYSKR",
+    "desc": "A simple, fee-free online bank",
+    "reward": "$20! Free money"
+  },
+  {
+    "name": "Coinbase",
+    "url": "https://www.coinbase.com/join/53d94de36fca248beb000001",
+    "desc": "An easy way to buy and sell cryptocurrencies",
+    "reward": "$10 worth of Bitcoin"
+  },
+  {
+    "name": "Uber",
+    "url": "https://www.uber.com/invite/f1p49",
+    "desc": "Ridehsaring Service",
+    "reward": "$5 off first ride"
+  },
+  {
+    "name": "Trello",
+    "url": "https://trello.com/xavdid/recommend",
+    "desc": "Project management and a great card-based UI",
+    "reward": "1 month of Trello Gold"
+  },
+  {
+    "name": "Doordash",
+    "url": "https://drd.sh/CDAyUi/",
+    "desc": "Food delivery from many different restaurants",
+    "reward": "$7 off your first order"
+  },
+  {
+    "name": "Dropbox",
+    "url": "https://db.tt/SC8pdSbl",
+    "desc": "Store all your files and sync them seamlessly",
+    "reward": "500MB free storage"
+  }
+]
