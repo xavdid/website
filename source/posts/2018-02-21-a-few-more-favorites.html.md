@@ -7,8 +7,6 @@ og_img: https://i.imgur.com/NwGZMyR.png
 og_desc: A look back at some of my favorite media in 2017
 ---
 
-*Editor's note: this list is a non-exhaustive list of my favorite media from the past year. There are things I like that aren't on the list (especially my girlfriend).*
-
 In my advanced age, I've found myself with the time and inclination to consume a lot of media. As part of that, I feel like I have am obligation to share the best things I experienced in the past year with you, the loyal reader. I wrote a similar article [last year](/blog/2017/02/11/a-few-of-my-favorite-things/), but in case this is your first time (welcome!), I'll run through the rules for how media qualifies for the coveted "Davy" award:
 
 * media qualifies for the list for the calendar year during which I finish it for the first time
