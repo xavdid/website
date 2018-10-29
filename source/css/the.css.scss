@@ -308,7 +308,7 @@ body {
           }
         }
 
-        // could share style better between blog and blog post
+        // could share style better between blog and blog_post
         .blog {
           list-style-type: none;
           width: 95%;
@@ -434,7 +434,10 @@ body {
               @include tablet {
                 margin: 20px 40px;
               }
-              // margin-left: -10px;
+            }
+
+            .embeded-iframe {
+              text-align: center;
             }
 
             @import "table.css.scss";
@@ -497,7 +500,6 @@ body {
               }
               background-color: $white;
               width: 20.3%;
-              // margin: 4% 6% auto 6%;
               margin-top: 6%;
               margin-left: 4%;
               margin-bottom: 6%;
@@ -541,7 +543,6 @@ body {
     position: absolute;
     width: 100%;
     bottom: 0;
-    // overflow: hidden;
 
     footer {
       color: $white;

@@ -9,7 +9,7 @@ og_desc: "The GOP claims to be the party of Lincoln  Let's examine that claim."
 
 <!-- I wrote this because of this comment: https://www.facebook.com/RepAnnaEshoo/posts/10156535267089228?comment_id=10156535333009228 -->
 
-Back when I was in middle school, I was struck by the story of Jackie Robinson. He was the first black major league player when he was signed by the Brooklyn Dodgers in 1947 (a _very_ controversial move at the time). Years later, they moved to Los Angeles. They left seasons behind and came to year-round sun. They could no longer take the train to games; LA is a city of cars. Though the teams share a name, the Dodgers of today share little else with the team that broke the major league color barrier in 1947.
+When I was in middle school, I was struck by the story of Jackie Robinson. He was the first black major league baseball player when he was signed by the Brooklyn Dodgers in 1947 (a _very_ controversial move at the time). Years later, they moved to Los Angeles. They left seasons behind and came to year-round sun. They could no longer take the train to games; LA is a city of cars. Though the teams share a name, the Dodgers of today share little else with the team that broke the major league color barrier in 1947.
 
 READMORE
 
@@ -17,7 +17,9 @@ Here in the present day, I was watching the Cruz // O’Rourke debate the other 
 
 Listen to the quote here:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/efTm9eZ1qvM?rel=0&amp;showinfo=0&amp;start=848" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div class="embeded-iframe">
+  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/efTm9eZ1qvM?rel=0&amp;showinfo=0&amp;start=848" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 
 It struck me as odd that President Lincoln, a man most famous for _literally abolishing slavery_, would have been a part of a party that today prides itself in being "tough on crime" and incarcerating people of color at the highest rate in the world. Time for a fact check. To start, I looked up the [voting records](https://en.wikipedia.org/wiki/Civil_Rights_Act_of_1964#Vote_totals) from 1964.
 

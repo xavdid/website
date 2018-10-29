@@ -174,7 +174,9 @@ The second season does a great job expanding on the plot set out by the first. E
 
 Even after months, I still listen to the [soundtrack](https://open.spotify.com/user/1286017453/playlist/4TPdCE51zxM4QA8pzuf1SQ) weekly. There's something about a self-aware musical that just does it for me, and hopefully it'll do it for you too.
 
-<iframe src="https://open.spotify.com/embed/user/1286017453/playlist/4TPdCE51zxM4QA8pzuf1SQ" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+<div class="embeded-iframe">
+  <iframe src="https://open.spotify.com/embed/user/1286017453/playlist/4TPdCE51zxM4QA8pzuf1SQ" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+</div>
 
 <br />
 Runner-up: **Scooby-Doo Mystery Inc**
