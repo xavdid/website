@@ -5,10 +5,111 @@
   <id>https://davidbrownman.com/blog</id>
   <link href="https://davidbrownman.com/blog"/>
   <link href="https://davidbrownman.com/blog/feed.xml" rel="self"/>
-  <updated>2018-10-28T03:00:00-04:00</updated>
+  <updated>2018-11-05T03:00:00-05:00</updated>
   <author>
     <name>David Brownman</name>
   </author>
+  <entry>
+    <title>Thunderbolts and Lightning</title>
+    <link rel="alternate" href="https://davidbrownman.com/blog/2018/11/05/thunderbolts-and-lightning/"/>
+    <id>https://davidbrownman.com/blog/2018/11/05/thunderbolts-and-lightning/</id>
+    <published>2018-11-05T03:00:00-05:00</published>
+    <updated>2018-11-04T23:39:17-05:00</updated>
+    <author>
+      <name>David Brownman</name>
+    </author>
+    <content type="html">&lt;p&gt;When moving into my new apartment, the outlets and the cable were arranged in such a way that it wasn’t convenient to plug the modem into a power strip. &amp;quot;So what,&amp;quot; I thought. &amp;quot;If lightning does strike, worst case I lose my modem and I’ve got an excuse for an upgrade! Plus, how often are there thunderstorms anyway?&amp;quot; I mused, foolishly forgetting that I had lived in weather-less California for years. I didn’t have a great handle on the dangers of lightning, but I was about to.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;I had a fair amount of hardware wired together. There was the modem and router, plus Ethernet cables going to my gaming PC and an old laptop I used for streaming media.&lt;sup id="fnref1"&gt;&lt;a href="#fn1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; Here&amp;#39;s how everything was connected:&lt;/p&gt;
+
+&lt;!--
+remove the \ in the comment enders below
+graph TB
+wall[Wall Outlet]
+modem(Modem)
+surge[Surge Protector]
+router(Router)
+laptop(Media Laptop)
+gaming(Gaming Computer)
+wall --\&gt; modem
+surge --\&gt; router
+wall --\&gt; surge
+gaming -- Ethernet --- router
+laptop -- Ethernet --- router
+router  -- Ethernet --- modem
+--&gt;
+
+&lt;p&gt;&lt;img class="svg" src="https://gist.githubusercontent.com/xavdid/9691c907a61ee538f39d3a33c1f4bd3c/raw/c726af6a29f60e647bee16e33ec49ec5ea695440/start.svg?sanitize=true" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Everything was peachy until our first big lightning storm. At first we were excited about the novelty, but as strikes started landing closer and closer to our apartment, the charm quickly wore off. I was on the PS4 at the time and got nervous about losing power while playing. I took the precautionary step of shutting it down. Before long, the lights flickered and I was glad I was prepared. Little did I know.&lt;/p&gt;
+
+&lt;p&gt;Before heading to bed, I noticed I a couple of oddities. Firstly, the power was out in half of the apartment. Given that it was only half, I (correctly) assumed it was a thrown breaker. I hadn&amp;#39;t yet found the breaker box in our new apartment, so that was a problem best left for the next day. Secondly, the little lights on the front of router were off. Given that the power was partially out, this didn’t jump out to me a the time and I (incorrectly) assumed it would resolve itself in the morning.&lt;/p&gt;
+
+&lt;p&gt;Morning arrived, and I found the breaker box. Power was restored, but the internet was still down. I did some manual testing- some other items in that power strip still worked, others were totally unresponsive. I wasn’t sure quite how, but something was busted.&lt;/p&gt;
+
+&lt;p&gt;I set out to the electronics store for a universal AC adapter and a backup router. A quick test confirmed that the router itself was dead and the problem wasn&amp;#39;t isolated in the power adapter. Frustrating and mysterious, but not the end of the world. It wasn’t until I started unplugging Ethernet cables that the root cause became clear:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://i.imgur.com/NbdRbtg.png" alt="Scorched Ethernet" /&gt;&lt;/p&gt;
+
+&lt;p&gt;It turns out Ethernet cables, when properly motivated, can carry a fair amount of charge. The lightning not only fries whatever box it&amp;#39;s in, but it can travel the path of least resistance to everything else. In my case, that path was a series of Ethernet cables and the entrance point was the unprotected modem:&lt;/p&gt;
+
+&lt;!--
+graph TB
+wall[Wall Outlet]
+modem(Modem)
+surge[Surge Protector]
+router(Router)
+laptop(Media Laptop)
+gaming(Gaming Computer)
+lightning(Lightning)
+wall -.- modem
+surge --\&gt; router
+wall --\&gt; surge
+gaming -. Ethernet .- router
+laptop -. Ethernet .- router
+router  -. Ethernet .- modem
+lightning -.- wall
+
+classDef lightning fill:#ffae42,stroke:red,stroke-width:3px;
+classDef fried stroke:red,stroke-width:3px;
+class lightning lightning
+class wall,modem,router,laptop,gaming fried
+--&gt;
+
+&lt;p&gt;&lt;img class="svg" src="https://gist.githubusercontent.com/xavdid/9691c907a61ee538f39d3a33c1f4bd3c/raw/e212c6403cdc577fcc380ad7062f5b524f266e62/end.svg?sanitize=true" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Despite the surge protector doing its job, a single unprotected entry point left the whole system vulnerable.&lt;sup id="fnref2"&gt;&lt;a href="#fn2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt; Off the bat, I could confirm that the modem and router were hosed. My media laptop wasn’t charging, but I was hoping that was an issue with anything besides the laptop itself (there was a lot of wishful thinking that day). Most troubling of all, my gaming desktop wasn’t turning on.&lt;/p&gt;
+
+&lt;p&gt;When there’s something low-level wrong with a Mac laptop (such as not charging at all), the easiest resolution is an &lt;a href="https://support.apple.com/en-us/HT201295"&gt;SMC reset&lt;/a&gt;. This resets the thing that controls low-level hardware function (such as charging and USB ports). Given that my laptop was still non-responsive, I needed to isolate whether the problem was the battery not taking a charge or the SMC no longer able to route power to the battery. The folks at the Apple store made it clear that the laptop was older than what they would work on, so I was on my own. I used my iFixit tool set (and their handy &lt;a href="https://www.ifixit.com/Guide/MacBook+Pro+15-Inch+Unibody+Mid+2010+Battery+Replacement/3024"&gt;guide&lt;/a&gt;) to &lt;a href="https://i.imgur.com/KnJgIA0.png"&gt;open the case up&lt;/a&gt;. Once I did, it was obvious what the issue was.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="https://i.imgur.com/MbZmEZ6.png" alt="Scorched Case" /&gt;&lt;/p&gt;
+
+&lt;p&gt;See that big black mark in the center? That&amp;#39;s a scorch mark on the interior of the case, right under where the Ethernet port is. There’s also some slight discoloration on that corner of the logic board, but it’s hard to tell if it’s always been like that. Either way, the laptop was the third victim. Luckily, I was able to salvage the RAM and (one SATA adapter later) the SSD as well.&lt;/p&gt;
+
+&lt;p&gt;On a happier note note, my gaming rig somehow escaped without serious damage. The onboard Ethernet port no longer seems to be recognized, but I&amp;#39;ll count that as a win. Plus, my question about how to protect home electronics from lightning was answered on &lt;em&gt;ATP&lt;/em&gt;, one of my favorite podcasts! You can &lt;a href="https://overcast.fm/+CdTbsx2Q/1:15:20"&gt;listen to the clip here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The big takeaway from all this is that lightning damage isn&amp;#39;t limited to what&amp;#39;s plugged directly in the wall. Plug &lt;em&gt;everything&lt;/em&gt; into a surge protector if it&amp;#39;s at all sensitive to electricity. Furthermore, as noted in the &lt;em&gt;Accidental Tech Podcast&lt;/em&gt; clip above, surge protectors don&amp;#39;t last forever. The &lt;a href="https://thewirecutter.com/reviews/best-surge-protector/"&gt;Wirecutter recommendation&lt;/a&gt; stops providing power once it&amp;#39;s no longer protected, making it very clear that it&amp;#39;s time for a replacement.&lt;/p&gt;
+
+&lt;p&gt;Lightning. Who knew?&lt;/p&gt;
+
+&lt;div class="footnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+
+&lt;li id="fn1"&gt;
+&lt;p&gt;Netflix, Amazon Prime Video, etc&amp;nbsp;&lt;a href="#fnref1" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id="fn2"&gt;
+&lt;p&gt;Remeber, the TV and everything else on the surge protector were totally fine&amp;nbsp;&lt;a href="#fnref2" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+  </entry>
   <entry>
     <title>The Party of Lincoln</title>
     <link rel="alternate" href="https://davidbrownman.com/blog/2018/10/28/the-party-of-lincoln/"/>
@@ -329,7 +430,7 @@
     <link rel="alternate" href="https://davidbrownman.com/blog/2018/02/21/a-few-more-favorites/"/>
     <id>https://davidbrownman.com/blog/2018/02/21/a-few-more-favorites/</id>
     <published>2018-02-21T03:00:00-05:00</published>
-    <updated>2018-11-05T00:01:52-05:00</updated>
+    <updated>2018-11-05T00:08:37-05:00</updated>
     <author>
       <name>David Brownman</name>
     </author>
@@ -699,171 +800,6 @@ Runner-up: &lt;strong&gt;Artemis&lt;/strong&gt;&lt;/p&gt;
 
 &lt;li id="fn1"&gt;
 &lt;p&gt;These results were gathered using Ruby &lt;code&gt;2.4.1&lt;/code&gt; running on an &lt;code&gt;i7-7820HQ CPU @ 2.90GHz&lt;/code&gt;&amp;nbsp;&lt;a href="#fnref1" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;/ol&gt;
-&lt;/div&gt;
-</content>
-  </entry>
-  <entry>
-    <title>How Hackers Steal Your Data (and How to Make it Harder for Them)</title>
-    <link rel="alternate" href="https://davidbrownman.com/blog/2017/07/05/how-hackers-steal-your-data/"/>
-    <id>https://davidbrownman.com/blog/2017/07/05/how-hackers-steal-your-data/</id>
-    <published>2017-07-05T03:00:00-04:00</published>
-    <updated>2018-06-18T02:12:39-04:00</updated>
-    <author>
-      <name>David Brownman</name>
-    </author>
-    <content type="html">&lt;p&gt;Your data is in constant danger.&lt;/p&gt;
-
-&lt;p&gt;Your address, credit card number, and anything else you have available online is ripe for the taking should an attacker gain access to your accounts. If you use the internet at all (and you&amp;#39;re reading this, I know you do), there are people out there that would happily sell access to your account to the highest bidder, forever compromising that password and any data associated with it.&lt;/p&gt;
-
-&lt;p&gt;When you think of a hacker, you might think about &lt;a href="https://www.reddit.com/r/itsaunixsystem/top/?sort=top&amp;amp;t=all"&gt;ridiculous scenes&lt;/a&gt; from movies. A shadowy figure&amp;#39;s fingers fly over a keyboard in a poorly lit room as green text cascades down their four monitors. The reality of the situation is much more banal; programs run over the course of hours, breaking protected versions of passwords into their plaintext form. Once that&amp;#39;s done, a hacker has unfettered access to any accounts they unlocked directly, plus anything else that reused that password. While nothing can keep you &lt;em&gt;completely&lt;/em&gt; safe from a dedicated hacker, you can make yourself as tough of a target as possible. To best understand this, let&amp;#39;s take a journey through the steps of a typical hack, what makes it dangerous, and steps you can take to mitigate your risk.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id="the-anatomy-of-a-hack"&gt;The Anatomy of a Hack&lt;/h2&gt;
-
-&lt;p&gt;So here I am, a hacker. I&amp;#39;m looking to make a quick buck, so I&amp;#39;m going to spend my afternoon breaking into your account(s) and putting them up for &lt;a href="https://www.theatlantic.com/technology/archive/2016/02/the-black-market-for-netflix-accounts/462321/"&gt;sale&lt;/a&gt;. Don&amp;#39;t take it personally. Unless you&amp;#39;re rich and/or famous, I&amp;#39;m probably not targeting you. In fact, I hardly know you exist; you&amp;#39;re a line in a file. Rather than focus on specific people, I&amp;#39;m going to target accounts in bulk. I just bought a dump of 400,000 hashes leaked from a (hypothetical) forum hack a few years ago.&lt;sup id="fnref1"&gt;&lt;a href="#fn1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;When I buy user data like this, at minimum, each entry will have an email and a password.&lt;sup id="fnref2"&gt;&lt;a href="#fn2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt; The password can be stored in a number of ways. If the company is stupid, the password will be stored in plaintext, exactly how the user wrote it. In that case, I don&amp;#39;t have to do any cracking at all - I just know your password. Let&amp;#39;s hope for your sake, this isn&amp;#39;t the case.&lt;/p&gt;
-
-&lt;p&gt;The more likely scenario is that the site will store your password &lt;strong&gt;hashed&lt;/strong&gt; and &lt;strong&gt;salted&lt;/strong&gt;. These are techniques for making stored passwords more secure (and by extension, leaked passwords harder to crack).&lt;/p&gt;
-
-&lt;p&gt;A website needs to save your password in some form (to validate subsequent logins). Instead of storing the plaintext, most sites record your password with the help of a program called a &lt;strong&gt;cryptographic hashing function&lt;/strong&gt;. There&amp;#39;s a great writeup about how they work &lt;a href="http://www.unixwiz.net/techtips/iguide-crypto-hashes.html#howused"&gt;here&lt;/a&gt;, but the gist is that given your password as input, the function produces a &lt;strong&gt;hash&lt;/strong&gt; with some special properties. Namely, the output is:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;deterministic&lt;/strong&gt;; the same input always gives the same output&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;unique&lt;/strong&gt;; no two inputs should produce the same output&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;irreversible&lt;/strong&gt;; there&amp;#39;s no way to recover the input from the output&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;A service can store a hashed version of your password (such as &lt;code&gt;5f4dcc3b5aa765d61d8327deb882cf99&lt;/code&gt;) and compare later login attempts against that string. On the surface, this is a great approach for securing data. I bought all these hashes, but because of rule 3 above, I have no &lt;em&gt;direct&lt;/em&gt; way to turn them back into usable passwords. Unfortunately for you, I do have an &lt;em&gt;indirect&lt;/em&gt; way.&lt;/p&gt;
-
-&lt;p&gt;It turns out most users are not very inventive when creating passwords. A recent &lt;a href="https://blog.keepersecurity.com/2017/01/13/most-common-passwords-of-2016-research-study/"&gt;security report&lt;/a&gt; showed that of a sample of 10 million passwords leaked in 2016, a full 50% of them were among the 25 most commonly used passwords. Most of that list are keyboard patterns (like &lt;code&gt;123456&lt;/code&gt; or &lt;code&gt;zxcvbnm&lt;/code&gt;) or words straight out of the dictionary (like &lt;code&gt;password&lt;/code&gt; or &lt;code&gt;google&lt;/code&gt;). Given that so many people use such a small subset of passwords, it&amp;#39;s well worth my time to build a &lt;a href="https://en.wikipedia.org/wiki/Rainbow_table"&gt;rainbow table&lt;/a&gt;, or a pre-computed list of hashes for the most common passwords (and their variants; &lt;code&gt;password1&lt;/code&gt; isn&amp;#39;t fooling anyone). So, if you use a common password you might as well just &lt;a href="mailto:beamneocube@gmail.com?subject=My%20Bank%20Account%20Info"&gt;email me&lt;/a&gt; your bank account info now. In an effort to defeat my rainbow tables, any service worth it&amp;#39;s (&lt;em&gt;ahem&lt;/em&gt;) salt will store your password with a bit of extra text at the front called a &lt;strong&gt;salt&lt;/strong&gt;. For example, &lt;code&gt;salt+password1&lt;/code&gt; hashes totally differently than &lt;code&gt;password1&lt;/code&gt;. If the same salt is used for each password, I have to recreate my rainbow table. If a random salt is used with each password, I have to do them each separately, which definitely slows me down.&lt;/p&gt;
-
-&lt;p&gt;If that&amp;#39;s the case, I&amp;#39;ve hit my worst case scenario. Each password is salted separately and I have to crack them one at a time. There are two ways to approach this. I could brute force them, trying every single possible password until I get it. This is akin to playing hangman by guessing each letter in order. It might work, but I&amp;#39;d be better off trying the common letters first (&lt;code&gt;e&lt;/code&gt;, &lt;code&gt;t&lt;/code&gt;, etc). The same principle applies here. Rather than exhausting every possibility, my time is much better spent running through a huge set of the most likely passwords. This list will consist of the thousand most common passwords (a few of which were mentioned above), all the words from the dictionary, and common variants on each. From there, I can use &lt;a href="https://en.wikipedia.org/wiki/John_the_Ripper"&gt;a program&lt;/a&gt; to automatically detect which hashing function to use. It will run through my list for each hash, noting the ones it successfully cracks. If I can&amp;#39;t crack a hash at this point, I&amp;#39;ll probably skip it; it&amp;#39;s not worth my time. It should be your goal to have functionally uncrackable passwords. What that entails is the focus of a well-known xkcd comic.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href="https://xkcd.com/936/"&gt;&lt;img src="https://imgs.xkcd.com/comics/password_strength.png" alt="https://xkcd.com/936/" /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;It highlights two important things: common substitutions (like &lt;code&gt;e -&amp;gt; 3&lt;/code&gt;) add negligable security and that the single most important factor in a strong password is &lt;strong&gt;length&lt;/strong&gt;. Password strength is a common theme on Jeff Atwood&amp;#39;s &lt;a href="https://blog.codinghorror.com"&gt;Coding Horror&lt;/a&gt; and he&amp;#39;s got a great piece on &lt;a href="https://blog.codinghorror.com/your-password-is-too-damn-short/"&gt;passwords being too short&lt;/a&gt;. If your passwords is 8 characters or less, it takes at &lt;em&gt;max&lt;/em&gt; 1 minute to guess (and that&amp;#39;s only if you&amp;#39;ve got letters, numbers, etc.&lt;/p&gt;
-
-&lt;p&gt;To ensure I can&amp;#39;t crack yours, make sure any password you use:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;has at least one of each type of character (upper, lower, number, symbol)&lt;/li&gt;
-&lt;li&gt;is 12 characters, &lt;em&gt;minimum&lt;/em&gt; (and more is strictly better)&lt;/li&gt;
-&lt;li&gt;is unique across all sites you use&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Passwords with all of those qualities are basically impossible to remember though. That&amp;#39;s where our first tip comes in:&lt;/p&gt;
-
-&lt;h3 id="1-use-a-password-manager-to-store-complex-passwords"&gt;1. Use a password manager (to store complex passwords)&lt;/h3&gt;
-
-&lt;p&gt;If you want to keep me out, you need to have complex, unique passwords for every site. There&amp;#39;s no reasonable way to expect you to remember these without some help, but help is here. Password managers are a class of software that perform two main functions for passwords: storage and generation.&lt;/p&gt;
-
-&lt;p&gt;Password managers act as a secure vault. They typically store usernames, passwords, and matching urls for login pages. Each time you try to log in, they&amp;#39;ll see if they have a matching entry. If so, they&amp;#39;ll auto-fill your password and you never have to think about the jumble of characters you&amp;#39;re subjecting the site to. If not, you&amp;#39;ll log into the site as normal. It&amp;#39;ll then ask you if you want to save that login for later use. That&amp;#39;s all there is to it! The great thing about this approach is that you don&amp;#39;t have to move everything at once. Most people install the app and go about their business, moving sites as they get used. This provides a seamless transition into password security.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://i.imgur.com/FR5ArUX.png" alt="password generation" /&gt;&lt;/p&gt;
-
-&lt;p&gt;This same flow integrates with the &amp;quot;update password&amp;quot; forms if you realize your existing passwords aren&amp;#39;t up to snuff. Should that be the case, password managers can generate a password to your specification at the press of a button (pictured above). It also automatically stores your new password for later use, so you never even have to worry about remembering it or writing it down. Some managers even have a feature that will flag bad or repeated passwords to help you know where to focus your energy during the transition.&lt;/p&gt;
-
-&lt;p&gt;In my personal life, all of my passwords are random 20+ character strings with a few of each character type. Much like my friends&amp;#39; phone numbers, I don&amp;#39;t know any of my passwords, I just know how to find them. Better yet, according to the &lt;a href="https://www.grc.com/haystack.htm"&gt;GRC calculator&lt;/a&gt; that Atwood linked to in his post, any one of my passwords would take &lt;em&gt;9.38 hundred billion trillion centuries&lt;/em&gt; to crack (which I&amp;#39;m not even totally sure is a real number). I personally use &lt;a href="https://1password.com/"&gt;1Password&lt;/a&gt; and have found it to have the best balance of security, price, and features.&lt;sup id="fnref3"&gt;&lt;a href="#fn3" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt; App recommendation site &lt;em&gt;The Sweet Setup&lt;/em&gt; &lt;a href="http://thesweetsetup.com/apps/best-password-manager-and-why-you-need-one/"&gt;agrees&lt;/a&gt; with my assessment and recommends a few others in case you don&amp;#39;t.&lt;/p&gt;
-
-&lt;p&gt;As I&amp;#39;m going through the passwords in this hypothetical hack scenario, I&amp;#39;m going to check each hash against the million items in my starting list above. More than likely, that approach will crack half of the passwords with minimal effort. I won&amp;#39;t even bother moving onto the harder half. You see, I&amp;#39;ve got a bunch of plaintext emails and passwords now. There&amp;#39;s an unfortunate correlation with people who have bad passwords: they have bad passwords everywhere. I&amp;#39;m going to use a program that tests the credentials I cracked with other services. If your &lt;a href="https://www.theguardian.com/technology/2013/nov/07/adobe-password-leak-can-check"&gt;Adobe&lt;/a&gt; password is used for your Twitter account, I now own both of them. I can check accounts quickly, testing hundreds per second. So here&amp;#39;s your second tip:&lt;/p&gt;
-
-&lt;h3 id="2-dont-reuse-passwords"&gt;2. Don&amp;#39;t reuse passwords&lt;/h3&gt;
-
-&lt;p&gt;A lot can go wrong in information security. Given the worst, you want to ensure the damage is localized to the offending site. With unique passwords, even if one account is compromised, I don&amp;#39;t gain any ground for other accounts. You want to make it your mission to make every action I take slow and painful. Any shortcuts you provide me can and will be used to ruin your day.  Of course, you&amp;#39;re reading this article; this isn&amp;#39;t news to you. You&amp;#39;ve heard that it&amp;#39;s bad to re-use passwords (just like you&amp;#39;ve heard you&amp;#39;re supposed to floss regularly). Now you&amp;#39;ll make a pledge to yourself to do better (seriously, flossing is good for you).&lt;/p&gt;
-
-&lt;p&gt;You&amp;#39;re also using a password manager (correctly, with hilariously complex passwords). Good for you! Much like a zombie attack, you don&amp;#39;t need to be the fastest person, you just want to avoid being the slowest. By taking 30 minutes to start using good passwords, you&amp;#39;ve put yourself head and shoulders above other internet users. If you want to double down for you most sensitive accounts (like your main email), there&amp;#39;s one more trick up our sleeves.&lt;/p&gt;
-
-&lt;p&gt;What if the worst happens and your password is leaked in plaintext (or otherwise leaked to the world)? Then it doesn&amp;#39;t matter how strong your passwords are; you&amp;#39;re vulnerable from the time it&amp;#39;s out in the open until the site resets your password. In the meantime, you can protect yourself by requiring a second factor be present to log into your account. The last big tip is:&lt;/p&gt;
-
-&lt;h3 id="3-use-2-factor-authentication"&gt;3. Use 2 Factor Authentication&lt;/h3&gt;
-
-&lt;p&gt;While authenticating online normally only requires something you &lt;em&gt;know&lt;/em&gt; (your password), &lt;strong&gt;2 Factor Authentication&lt;/strong&gt; adds the requirement of something you &lt;em&gt;have&lt;/em&gt;. A real-world example of this is unlocking your house. To open the door, an attacker needs both something you &lt;em&gt;know&lt;/em&gt; (your address) and something you &lt;em&gt;have&lt;/em&gt; (your key). Even if I know your address, I can&amp;#39;t get into your house without having your key. 2FA adds a similar level of protection to your online accounts. In addition to your password, someone hoping to log in as you needs an extra piece of information, typically tied to a physical device.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="https://i.imgur.com/kfH3X5r.png" alt="authy" /&gt;&lt;/p&gt;
-
-&lt;p&gt;The most common form of 2FA is a 6 digit code that rotates every 30 seconds, known as a &lt;a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm"&gt;Time-based One-time Password&lt;/a&gt; (pictured). Your phone and the server agree on a shared secret during setup, so only a device that knows this secret will be able to generate the correct code. This is a great approach, as I need physical access to a device with your codes on it to break into that account.&lt;sup id="fnref4"&gt;&lt;a href="#fn4" rel="footnote"&gt;4&lt;/a&gt;&lt;/sup&gt; This method is also great when paired with Touch ID on Apple devices. Unless you&amp;#39;ve got my phone in your hand and my thumb on that hand, my password isn&amp;#39;t enough to get you into my account. There are a lot of good options for 2FA apps, namely &lt;a href="https://support.google.com/accounts/answer/1066447?hl=en&amp;amp;co=GENIE.Platform%3DiOS&amp;amp;oco=0"&gt;Google Authenticator&lt;/a&gt; (more secure) and &lt;a href="https://authy.com/"&gt;Authy&lt;/a&gt; (more convenient, but still pretty secure).&lt;/p&gt;
-
-&lt;p&gt;If you want to go the extra step (say, for your central gmail account that secures all others), you might invest in a &lt;a href="https://smile.amazon.com/Yubico-Y-123-FIDO-U2F-Security/dp/B00NLKA0D8?sa-no-redirect=1"&gt;UTF security key&lt;/a&gt; for ~$18. Once attached to an account it acts as a second factor, verifying that the person logging in is the one holding the physical key. Right now it has the major downside of being desktop-only (unless you have a certain Android phone), but justifies that being the absolute most secure option on the market. If you&amp;#39;re interested in adding it to Google, there&amp;#39;s a great walkthrough &lt;a href="https://techsolidarity.org/resources/security_key_gmail.htm"&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;As you&amp;#39;re looking for the 2FA solution that fits you best, remember to &lt;strong&gt;avoid SMS&lt;/strong&gt;. This &lt;a href="https://techsolidarity.org/resources/security_key_faq.htm"&gt;FAQ&lt;/a&gt; goes into detail about the vulnerability of text-message based 2FA:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Many sites encourage you to add your phone number to secure your account. But there are at least three reasons why you should avoid using text messages for two-factor authentication.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Your phone number can be easily hijacked by someone who calls the phone company and pretends to be you. &lt;sup id="fnref5"&gt;&lt;a href="#fn5" rel="footnote"&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
-&lt;li&gt;The text message can be viewed or redirected while en route to your phone.&lt;/li&gt;
-&lt;li&gt;Many phones are configured to display text messages on the lock screen.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;If text messages are the only way to add two-factor authentication to your account, they are better than nothing. But if you can use an alternative method, like an authenticator app or a security key, use that instead.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Whichever method(s) you use, it will make you basically impervious to the attack described in this article.&lt;/p&gt;
-
-&lt;p&gt;&amp;quot;So... is that it?&amp;quot;, you might be thinking. &amp;quot;If I have good, unique passwords and use 2FA wherever I can, my accounts will be safe?&amp;quot;&lt;/p&gt;
-
-&lt;p&gt;The short answer is &lt;em&gt;probably&lt;/em&gt;. The longer answer is that nothing is guaranteed, but these tips will keep your accounts as safe as you can reasonably make them. That being said, there are a couple of easy tasks you can complete to cover non-password vectors. You&amp;#39;ve made it this far, might as well take 3 minutes to go the distance.&lt;/p&gt;
-
-&lt;h2 id="extra-credit"&gt;Extra Credit&lt;/h2&gt;
-
-&lt;p&gt;The hack described here (a large-scale brute forcing of hashed passwords) is a common attack vector, but it&amp;#39;s not the only one. The single best way to keep yourself safe is &lt;strong&gt;constant vigilance&lt;/strong&gt;. Be overly cautious in all things. To that end, I&amp;#39;ve got two last bonus tips to send you off with.&lt;/p&gt;
-
-&lt;h3 id="4-use-https-everywhere"&gt;4. Use HTTPS, Everywhere&lt;/h3&gt;
-
-&lt;p&gt;Accessing the internet without using &lt;code&gt;https&lt;/code&gt; is like shouting everything you type as you do so. If you&amp;#39;re uncomfortable with anyone hearing your passwords, payment info, and any other sensitive information, make sure you only access sites that include &lt;code&gt;https://&lt;/code&gt; at the start of their name. The &amp;quot;s&amp;quot; stands for &amp;quot;secure&amp;quot;, which means any data you send to the site is encrypted, safe from any prying eyes. Some sites redirect you by default. A lot more support it, but don&amp;#39;t enforce it. The Electronic Frontier Foundation has a great &lt;a href="https://www.eff.org/https-everywhere"&gt;browser extension&lt;/a&gt; appropriately called &lt;strong&gt;HTTPS Everywhere&lt;/strong&gt; that will redirect you to a secure version of a page if it&amp;#39;s available. It&amp;#39;s easy to install and forget about, and I recommend you do exactly that.&lt;/p&gt;
-
-&lt;h3 id="5-update-your-computer"&gt;5. Update Your Computer&lt;/h3&gt;
-
-&lt;p&gt;Annoying though they may be, operating system updates are &lt;em&gt;vital&lt;/em&gt; to keeping your hardware secure. The most recent example is the &lt;a href="https://en.wikipedia.org/wiki/WannaCry_ransomware_attack"&gt;WannaCry ransomware&lt;/a&gt;, which used known vulnerabilities in Windows 7 to forcibly encrypt over 230,000 computers in 150 countries. These types of attacks are totally preventable, but only if you&amp;#39;ve installed the security patch that fixed it. Apple products aren&amp;#39;t totally safe either; they recently &lt;a href="https://support.apple.com/en-us/HT207797"&gt;fixed&lt;/a&gt; set a set of vulnerabilities across their operating systems (though they weren&amp;#39;t widely exploited, if at all). Once issues are fixed, attackers have a much narrower range of what vulnerabilities exist in un-updated systems and the race begins. As long as you&amp;#39;re up-to-date every 24 hours you &lt;em&gt;should&lt;/em&gt; be safe enough. Then again, it&amp;#39;s never too soon to download a security update.&lt;/p&gt;
-
-&lt;p&gt;Listen, I get it. Your computer always prompts you when you&amp;#39;re in the middle of something and you don&amp;#39;t want to break the flow. Wait until the end of the day, or set your computer to apply the update overnight. Just please, &lt;em&gt;please&lt;/em&gt; don&amp;#39;t leave them for months or years. The only person you hurt is yourself.&lt;/p&gt;
-
-&lt;h2 id="you-can-see-clearly-now"&gt;You Can See Clearly Now&lt;/h2&gt;
-
-&lt;p&gt;This whole attack might sound far-fetched. Well it turns out, large-scale password breaches happen all the time. There&amp;#39;s a great site called &lt;a href="https://haveibeenpwned.com/"&gt;HaveIBeenPwned&lt;/a&gt; that maintains a list of all the services that have announced that they&amp;#39;ve been hacked. You can check whether or not your data has ever known to have been compromised by inputting your email.&lt;sup id="fnref6"&gt;&lt;a href="#fn6" rel="footnote"&gt;6&lt;/a&gt;&lt;/sup&gt; Scary, huh? Even if you&amp;#39;ve gotten lucky and you&amp;#39;ve never been pwned, their extensive &lt;a href="https://haveibeenpwned.com/PwnedWebsites"&gt;list of sites&lt;/a&gt; is concerning (to say the least).&lt;/p&gt;
-
-&lt;p&gt;Anyway, while nothing is 100% in internet security, you owe it to yourself to become as aggravating a target as possible. If you&amp;#39;re interested in reading more, I recommend &lt;a href="https://decentsecurity.com/#/introduction/"&gt;decentsecurity.com&lt;/a&gt;, this great &lt;a href="https://www.reddit.com/user/Kalabaster/m/supasec/"&gt;security muiltireddit&lt;/a&gt;, and generally lurking on &lt;a href="https://news.ycombinator.com/"&gt;Hacker News&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;#39;ve implemented all these tips (an impressive feat!), feel free to &lt;a href="https://twitter.com/intent/tweet?hashtags=security&amp;amp;text=I%27ve%20taken%20steps%20to%20make%20my%20online%20life%20more%20secure%20thanks%20to%20@xavdid!%20Learn%20more%20here:%20&amp;amp;url=https://davidbrownman.com/blog/2017/07/05/how-hackers-steal-your-data/"&gt;tweet&lt;/a&gt; your accomplishment. No cheating!&lt;/p&gt;
-
-&lt;p&gt;Past that, I appreciate you reading this far. I&amp;#39;ve done my best to make a fairly technical subject approachable. Definitely reach out with questions, suggestions, or thoughts. Until then, good luck!&lt;/p&gt;
-
-&lt;hr&gt;
-
-&lt;p&gt;&lt;em&gt;Many thanks to &lt;a href="http://www.andrewaxtell.com/"&gt;Andrew&lt;/a&gt;, &lt;a href="https://www.instagram.com/agentredsquirrel/"&gt;Vicky&lt;/a&gt;, and &lt;a href="http://www.plantsciences.ucdavis.edu/plantsciences_faculty/eviner/main/people.htm"&gt;Evan&lt;/a&gt; for use of their editing prowess.&lt;/em&gt;&lt;/p&gt;
-
-&lt;div class="footnotes"&gt;
-&lt;hr&gt;
-&lt;ol&gt;
-
-&lt;li id="fn1"&gt;
-&lt;p&gt;Hacks happen all the time, and companies are not always prompt about announcing that it&amp;#39;s happened. Just because you haven&amp;#39;t heard about a breach doesn&amp;#39;t automatically mean your data is safe.&amp;nbsp;&lt;a href="#fnref1" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li id="fn2"&gt;
-&lt;p&gt;If you&amp;#39;re unlucky, I&amp;#39;ve got phone numbers, birthdays, and/or and location information. If you&amp;#39;re extra unlucky, there could be SSN data there as well.&amp;nbsp;&lt;a href="#fnref2" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li id="fn3"&gt;
-&lt;p&gt;I used to use LastPass, but the repeated &lt;a href="https://blog.lastpass.com/2017/03/important-security-updates-for-our-users.html/"&gt;security issues&lt;/a&gt; drove me away. The LP team did a great job fixing these quickly, but I didn&amp;#39;t want the inevitable next vulnerability to be exploited before they responded to it.&amp;nbsp;&lt;a href="#fnref3" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li id="fn4"&gt;
-&lt;p&gt;There&amp;#39;s a narrow exception where you can still get phished while using a TOTP. If an attacker can capture your password and token, they have the full 30 second window to use them to compromise this account. This attack is explored in the &lt;a href="https://gimletmedia.com/episode/97-what-kind-of-idiot-gets-phished/"&gt;Reply All podcast&lt;/a&gt;. For the purposes of prevent a brute force attack as described here, TOTP is more than sufficient. It also talks about how anyone can be phished (even you!). Don&amp;#39;t be overconfident in your abilities.&amp;nbsp;&lt;a href="#fnref4" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li id="fn5"&gt;
-&lt;p&gt;While a targeted vector like &lt;a href="https://motherboard.vice.com/en_us/article/mg7bd4/how-a-hacker-can-take-over-your-life-by-hijacking-your-phone-number"&gt;sim hijacking&lt;/a&gt; is separate from the bulk-based attack we&amp;#39;ve been stepping through, it&amp;#39;s definitely something to be aware of.&amp;nbsp;&lt;a href="#fnref5" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;li id="fn6"&gt;
-&lt;p&gt;Normally putting your email into a site that talks about hacking isn&amp;#39;t a great idea. On the surface, it feels like supplying your full credit card to see if anyone else has it. In this case, HIBP? is a reputable site run by a &lt;a href="https://www.troyhunt.com/about/"&gt;security researcher&lt;/a&gt; and you can act without fear.&amp;nbsp;&lt;a href="#fnref6" rev="footnote"&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 
 &lt;/ol&gt;
