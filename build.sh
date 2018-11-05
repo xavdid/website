@@ -50,8 +50,8 @@ bundle exec middleman build # --clean
 # run with the -r flag to push resume as well!
 if [[ "$@*" == *-r* ]]; then
     cd source/files
-    resume publish -t kendall
-    logger "Publishing Resume"
+    npx resume export resume.html
+    logger "Building Resume"
     cd ../..
 fi
 

@@ -394,6 +394,11 @@ body {
               @include tablet {
                 height: initial;
               }
+
+              &.svg {
+                border: 1px solid $dark-blue;
+                background-color: $white;
+              }
             }
 
             ul {

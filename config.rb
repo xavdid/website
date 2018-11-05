@@ -67,4 +67,6 @@ activate :blog do |blog|
   # Enable pagination
   blog.paginate = true
   blog.per_page = 5
+  # for publishing same day? or maybe DST is messing with the hour
+  # blog.publish_future_dated = true
 end

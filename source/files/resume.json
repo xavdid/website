@@ -5,7 +5,7 @@
     "email": "beamneocube@gmail.com",
     "phone": "303.819.0850",
     "website": "https://davidbrownman.com",
-    "summary": "Software Engineer and all around tinkerer. I like productivity apps, CSS, automation, and folk music.",
+    "summary": "Software Engineer and all around tinkerer. I like productivity apps, automation, and folk music.",
     "location": {
       "city": "Menlo Park",
       "countryCode": "USA",
@@ -16,23 +16,27 @@
         "network": "Twitter",
         "username": "@xavdid",
         "url": "https://twitter.com/xavdid"
-      }, {
+      },
+      {
         "network": "GitHub",
         "username": "xavdid",
         "url": "https://github.com/xavdid"
-      }, {
+      },
+      {
         "network": "Linkedin",
         "username": "xavdid",
         "url": "https://www.linkedin.com/in/xavdid"
       }
     ]
   },
-  "awards": [{
-    "title": "GTM Hero",
-    "date": "2016-05-09",
-    "awarder": "SalesforceIQ",
-    "summary": "Awarded for \"Acts of cross-functional heroism\" and enabling the sales team to excel as a result of extraordinary work"
-  }],
+  "awards": [
+    {
+      "title": "GTM Hero",
+      "date": "2016-05-09",
+      "awarder": "SalesforceIQ",
+      "summary": "Awarded for \"Acts of cross-functional heroism\" and enabling the sales team to excel as a result of extraordinary work"
+    }
+  ],
   "work": [
     {
       "company": "Zapier",
@@ -40,8 +44,7 @@
       "website": "https://zapier.com",
       "startDate": "2016-09-19",
       "summary": "Dividing my time between adding new features to existing integrations, writing new ones, and working on the developer platform.",
-      "highlights": [
-      ]
+      "highlights": []
     },
     {
       "company": "SalesforceIQ",
@@ -151,23 +154,12 @@
   ],
   "skills": [
     {
-      "name": "Software Development",
-      "keywords": [
-        "Ruby",
-        "Javascript",
-        "Python",
-        "Java"
-      ]
+      "name": "Programming Languages",
+      "keywords": ["Typescript", "Javascript", "Python", "Ruby", "Swift"]
     },
     {
-      "name": "Web Development",
-      "keywords": [
-        "HAML",
-        "SCSS",
-        "AngularJS",
-        "Sinatra",
-        "Express"
-      ]
+      "name": "Frameworks and More",
+      "keywords": ["ReactJS", "Redux", "Django", "MongoDB"]
     }
   ],
   "languages": [
