@@ -1,73 +1,68 @@
-
-://keybase.io/xavdid
+==================================================================
+https://keybase.io/xavdid
 --------------------------------------------------------------------
 
 I hereby claim:
 
-  * I am an admin of http://davidbrownman.com
-    * I am xavdid (https://keybase.io/xavdid) on keybase.
-      * I have a public key with fingerprint 0FF0 25F2 9820 1D4F 3E9D  FBBE C291 498D 768E 39EE
+  * I am an admin of https://davidbrownman.com
+  * I am xavdid (https://keybase.io/xavdid) on keybase.
+  * I have a public key with fingerprint BA72 F26F 7A12 08FD EA39  C3CE 8E6C 0A2E 2B26 98E9
 
-      To claim this, I am signing this object:
+To do so, I am signing this object:
 
-      {
-              "body": {
-                          "key": {
-                                          "fingerprint": "0ff025f298201d4f3e9dfbbec291498d768e39ee",
-                                                      "host": "keybase.io",
-                                                                  "key_id": "c291498d768e39ee",
-                                                                              "kid": "0101e7fb5d86cbea0e2295a22fb69a780cb2330032fe8dde96601d429fd13d49bb870a",
-                                                                                          "uid": "5c0889571fe985bfa195ddd4a4cac119",
-                                                                                                      "username": "xavdid"
-                                                                                                              },
-                                                                                                                      "revoke": {
-                                                                                                                                      "sig_ids": [
-                                                                                                                                                      "9eac8c0ea9f17b03050dad2a5603b8719fd27f5999917f4aae78a0bc452f8cfb0f"
-                                                                                                                                                                  ]
-                                                                                                                                                                          },
-                                                                                                                                                                                  "service": {
-                                                                                                                                                                                                  "hostname": "davidbrownman.com",
-                                                                                                                                                                                                              "protocol": "http:"
-                                                                                                                                                                                                                      },
-                                                                                                                                                                                                                              "type": "web_service_binding",
-                                                                                                                                                                                                                                      "version": 1
-                                                                                                                                                                                                                                          },
-                                                                                                                                                                                                                                              "ctime": 1423881145,
-                                                                                                                                                                                                                                                  "expire_in": 157680000,
-                                                                                                                                                                                                                                                      "prev": "e39fec2c62ae55ceed316b03bb99fbbb6c4b4dc770aa96e0ccecf20ace456d5d",
-                                                                                                                                                                                                                                                          "seqno": 4,
-                                                                                                                                                                                                                                                              "tag": "signature"
-      }
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101981175814a5dc3142a13e6159a14cefd0c08c0520d84dbd04fe43b34c6af553e0a",
+      "fingerprint": "ba72f26f7a1208fdea39c3ce8e6c0a2e2b2698e9",
+      "host": "keybase.io",
+      "key_id": "8e6c0a2e2b2698e9",
+      "kid": "0101981175814a5dc3142a13e6159a14cefd0c08c0520d84dbd04fe43b34c6af553e0a",
+      "uid": "5c0889571fe985bfa195ddd4a4cac119",
+      "username": "xavdid"
+    },
+    "service": {
+      "hostname": "davidbrownman.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1542400081,
+  "expire_in": 157680000,
+  "prev": "4b8a109c603a0899908854ef7d02758db78923bd471768dafb9afa15eb644c9a",
+  "seqno": 51,
+  "tag": "signature"
+}
 
-      which yields the PGP signature:
+which yields the signature:
 
-      -----BEGIN PGP MESSAGE-----
-      Version: Keybase OpenPGP v2.0.4
-      Comment: https://keybase.io/crypto
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.80
+Comment: https://keybase.io/crypto
 
-      yMJpAnicbZJdaFxFFMc3pn50oTRIsci20o5QCqbpzNw7984sKNKq9MWP0Ghtqy7z
-      cSa5bnPv9u5muyVUQ6NBpYIKCtoHa0GxmKpYVFRqYwk0qTUYZE0hmAa0tragRSEi
-      jdG5ob45L8PM/M/v/M85M7qsNZdvOdzZWDEW7U9bvv7qzb5c18yxz/qRSsxeVOxH
-      ZVjcbBR3Q1pJo7iGighbiymzVHCKifGtB8JYpUBTQXzBTRhw8AQAakc9STWLcBgl
-      q9ARJe7OHUqRcbf/oy8vPmCCCYRWMcMDrUBioFQwSalVgZAhx1pRz8PYoxa4MSCC
-      IDNChTXEM75QiodYOlzfIo5pzLlgIbEgOFNWEsGMMb70tdSEiExYhTSWveDUDVk3
-      LmxfO0qhnpQhq78adTvLVVTciQRIzTUGKSwJFfYww0YaKlmAPZeWOA80tEy4RULr
-      Swkhl1hpn1HLtVXYoscd2+WrR3oRnvXoWm4j65FRabIn7pVxh056nbVKmtQSnexy
-      zz21WqWYOavtrWTyPaBK10AlFcXGTckF1CGtRkmMisQpdS3KyMSnHueE+KwdQaMS
-      pVCKMgVzvcduZWmg7pBuENYNUgdUAmMawHgkcGUqJYSbsQq0r3yjQ9dfKQLAWoO2
-      FEsNPgsMMygrbXecoKLvbMpuh3TNi2WtLwW07+TIY0tyLfncDddfl/2zXH5p23+/
-      b7R54z8Nu34N12t/nj21YXjiww35uf5DB/96ZPX0J9ubB3dO7h+745s/j5Bft+6e
-      7ClsnToWdy1snBq6Z/tDEwuDD051nznxcvnFMagfr4yUqs2Oozd/t3H9TW3zC/OH
-      C1eXv3Sg9Vax8r6Hb3mqFQ0PHmcDs5svb17He9+eef3Cjgcul1nz985Dt3/w/Yo1
-      +K4fdq3qPJo/vXru0ZV3Pjl6cemr5y5V8d0nnx8euPjTW8+8y0nXlk3PnlcfD35Z
-      mBm6//QX4+3vP3Hp1Mj0uk+L376z7b2+wviB35rbtgxNvPHc3wMvLDtzYXK6sfZq
-      vm3ko1XnZ/+YO7vJ//zps1d+LLy2XJw7cqV/Zsn4jtvu/WX+xCvwL3J3Uhg=
-      =JQjh
-      -----END PGP MESSAGE-----
+yMIqAnicrVJZbA1RGL63VdGGFBWUp46IJb2cM3NmuyUe8CCVWJImlnJzzpwzNdo7
+czsz995KWw0VUkKiYgliCyERD2KJfU+uUFJ7oqH0hYSqlghKOdPw5tHTyfn/b/n/
+L/+tIdmhvLBQ0v3C7fjaG757fU8ytLRr4oJagTh0lRCtFSpZ/8OqKPP8WKVFhagA
+IIC6BqEqaxBhmRoSRCKGElOgrGOIDGZSYADNALIIqIYooQCZDElEQoaCTVmWGMBC
+sWBadgVzE65l+1yWYFU0RcVUMRSBZlKGJd2QDKYxxQBYZCIRFV1jOieucLyAwYcj
+2GNTLIfX+CfWP94/8P957mS/nMyhmi6r0GS6JhMTQ12mlCKMDGxAGPgmPebaOM44
+uganKKfVFwu8lrIMFsQa7PGnT3HKosR10nYc21MMJ87pCdfxHcOp4u0Vvp/wogHd
+X5UI8GlGYn+UYsSyKY+SM1LM9SzHFqKQIw3fCqShjEQEANBgscBqEpbLYlaAkFVF
+42UQ+LAUl0REwxDohgIkDDRd1/l+MmKmSoHIM6NE1XRRIhSpkFMpNomO+dYyIwpC
+hh4k47Fq2xGiMrfycQXX9KwKG/tJlwn1N66VDwiF80IDc7KCGwvl5Q79e3mPtw8K
+HX159dui8N7DGzIbq3c277/wqG9SQ+G5acNzn48c1VFdeFVlkQcdp7Xc+poJ6c6C
+gtruwQ3ryj6sP7/4YVbyPp68On/N/F3p7Y/vjTqVrpyerTn5mXhr++5390duPvg+
+6/ah0rMrGxsXXriSeT33rTsAtX/6MLxcfzdibnl2T2adteXkDq+MZWb1zq4dPf9O
+28Hd3yJPjrQVnO+9Oa5rZrhLubwvJf76mXNp24GSPKl57bJyr2XqRPkV/Lx1zqaa
+1UWdLZ1LTiws/XF5/Ju6A/Me9S1/c6a9fcyXp0XkNCxdQ3pufRfG1uWGbfC9bP+r
+1qaZStOwB1Nvf4y0FM74cTxyrJVcfHbuN1JoSp8=
+=Suys
+-----END PGP MESSAGE-----
 
-      And finally, I am proving ownership of this host by posting or
-      appending to this document.
+And finally, I am proving ownership of this host by posting or
+appending to this document.
 
-      View my publicly-auditable identity here: https://keybase.io/xavdid
+View my publicly-auditable identity here: https://keybase.io/xavdid
 
-      ==================================================================
+==================================================================
