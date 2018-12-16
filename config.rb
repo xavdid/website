@@ -37,15 +37,17 @@ activate :deploy do |deploy|
 end
 
 activate :syntax
+set :markdown_engine, :redcarpet
+
+require 'markdown_helper'
 set :markdown,  fenced_code_blocks:           true,
                 footnotes:                    true,
                 disable_indented_code_blocks: false,
                 autolink:                     true,
                 strikethrough:                true,
                 tables:                       true,
-                with_toc_data:                true
-
-set :markdown_engine, :redcarpet
+                with_toc_data:                true,
+                renderer:                     MarkdownHelper::JRenderer
 
 set :haml, ugly:                 true,
            format:               :html5,

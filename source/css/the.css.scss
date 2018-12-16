@@ -29,12 +29,12 @@ $links: $light-blue;
   }
 }
 
-@import "normalize.min.css";
+@import 'normalize.min.css';
 
 html,
 body {
   height: 100%;
-  background-image: url("../img/greyzz.png");
+  background-image: url('../img/greyzz.png');
   // 26px is the initial line-height
   font: 16px / 26px Minion Pro, Helvetica, Helvetica Neue, Arial;
 }
@@ -114,11 +114,11 @@ body {
 
   .clearfix {
     &:before {
-      content: " ";
+      content: ' ';
       display: table;
     }
     &:after {
-      content: " ";
+      content: ' ';
       display: table;
       clear: both;
     }
@@ -180,7 +180,7 @@ body {
         }
       }
       .active {
-        background-image: url("../img/greyzz.png");
+        background-image: url('../img/greyzz.png');
         color: $blue;
       }
 
@@ -247,7 +247,6 @@ body {
 
       p {
         font-weight: 300;
-        text-align: justify;
       }
 
       article {
@@ -334,7 +333,6 @@ body {
               @include tablet {
                 width: 75%;
               }
-              text-align: justify;
               padding-top: 7px;
 
               h1 {
@@ -354,7 +352,7 @@ body {
               .post-body {
                 border-left: 1px solid $maize;
                 padding-left: 15px;
-                @import "table.css.scss";
+                @import 'table.css.scss';
               }
             }
           }
@@ -367,7 +365,7 @@ body {
           }
 
           .blog_body {
-            text-align: justify;
+            padding: 0 0.5em;
 
             h1,
             h2 {
@@ -441,12 +439,29 @@ body {
               }
             }
 
-            .embeded-iframe {
-              text-align: center;
+            .table-container {
+              overflow-x: scroll;
             }
 
-            @import "table.css.scss";
-            @import "anchor.css.scss";
+            .embeded-iframe {
+              text-align: center;
+
+              .video-desktop {
+                display: none;
+                @include tablet {
+                  display: initial;
+                }
+              }
+              .video-mobile {
+                display: initial;
+                @include tablet {
+                  display: none;
+                }
+              }
+            }
+
+            @import 'table.css.scss';
+            @import 'anchor.css.scss';
           }
         }
 
@@ -577,4 +592,4 @@ body {
 }
 
 // I don't think I need these, but who knows
-@import "print.css.scss";
+@import 'print.css.scss';
