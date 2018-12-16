@@ -26,7 +26,7 @@
         = link_to('Random Post', blog.articles.reject{|x| x == current_article}.sample.url.chomp('/'))
         %i.fa.fa-random
 
-    %aside
+    %aside.sidebar
       .top
         .heading
           Published
@@ -44,5 +44,10 @@
         %p
           On this day
           = "(in #{current_article.data.fact_year}): #{current_article.data.fact}"
+
+    :javascript
+      window.onload = function() {
+        $.bigfoot();
+      };
 
   = partial 'partials/anchor_links'

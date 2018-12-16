@@ -403,6 +403,10 @@ body {
               list-style-type: circle;
               // normal ul styles
               padding-left: 40px;
+              font-weight: 300;
+            }
+            ol {
+              font-weight: 300;
             }
 
             code,
@@ -460,6 +464,17 @@ body {
               }
             }
 
+            .bigfoot-footnote {
+              &__button {
+                border: 1px solid $blue;
+                font-size: 1.3em;
+              }
+
+              &__wrapper {
+                color: $dark-blue;
+              }
+            }
+
             @import 'table.css.scss';
             @import 'anchor.css.scss';
           }
@@ -486,7 +501,7 @@ body {
         }
       }
 
-      aside {
+      .sidebar {
         color: $white;
         padding-bottom: 3%;
 
