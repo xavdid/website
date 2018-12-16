@@ -115,7 +115,7 @@ class wall,modem,router,laptop,gaming fried
     <link rel="alternate" href="https://davidbrownman.com/blog/2018/10/28/the-party-of-lincoln/"/>
     <id>https://davidbrownman.com/blog/2018/10/28/the-party-of-lincoln/</id>
     <published>2018-10-28T03:00:00-04:00</published>
-    <updated>2018-10-28T21:59:58-04:00</updated>
+    <updated>2018-12-16T11:30:24-05:00</updated>
     <author>
       <name>David Brownman</name>
     </author>
@@ -130,21 +130,23 @@ class wall,modem,router,laptop,gaming fried
 &lt;p&gt;Listen to the quote here:&lt;/p&gt;
 
 &lt;div class="embeded-iframe"&gt;
-  &lt;iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/efTm9eZ1qvM?rel=0&amp;amp;showinfo=0&amp;amp;start=848" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+  &lt;iframe  width="560" height="315" src="https://www.youtube-nocookie.com/embed/efTm9eZ1qvM?rel=0&amp;amp;showinfo=0&amp;amp;start=848" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="video-desktop"&gt;&lt;/iframe&gt;
+  &lt;iframe  width="325" height="315" src="https://www.youtube-nocookie.com/embed/efTm9eZ1qvM?rel=0&amp;amp;showinfo=0&amp;amp;start=848" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="video-mobile"&gt;&lt;/iframe&gt;
 &lt;/div&gt;
 
 &lt;p&gt;It struck me as odd that President Lincoln, a man most famous for &lt;em&gt;literally abolishing slavery&lt;/em&gt;, would have been a part of a party that today prides itself in being &amp;quot;tough on crime&amp;quot; and incarcerating people of color at the highest rate in the world. Time for a fact check. To start, I looked up the &lt;a href="https://en.wikipedia.org/wiki/Civil_Rights_Act_of_1964#Vote_totals"&gt;voting records&lt;/a&gt; from 1964.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Percentage &amp;quot;Yes&amp;quot; Votes on the final version of the Civil Rights bill&lt;/em&gt;&lt;/p&gt;
 
-&lt;table&gt;&lt;thead&gt;
-&lt;tr&gt;
+        &lt;div class="table-container"&gt;
+          &lt;table&gt;
+            &lt;thead&gt;&lt;tr&gt;
 &lt;th&gt;&lt;/th&gt;
 &lt;th&gt;Democrats&lt;/th&gt;
 &lt;th&gt;Republicans&lt;/th&gt;
 &lt;/tr&gt;
-&lt;/thead&gt;&lt;tbody&gt;
-&lt;tr&gt;
+&lt;/thead&gt;
+            &lt;tbody&gt;&lt;tr&gt;
 &lt;td&gt;Senate&lt;/td&gt;
 &lt;td&gt;69%&lt;/td&gt;
 &lt;td&gt;82%&lt;/td&gt;
@@ -154,8 +156,10 @@ class wall,modem,router,laptop,gaming fried
 &lt;td&gt;63%&lt;/td&gt;
 &lt;td&gt;80%&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-
+&lt;/tbody&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+      
 &lt;p&gt;Senator Cruz is technically correct; a higher percentage of people with &lt;code&gt;(R)&lt;/code&gt; next to their name voted for the bill than did those with &lt;code&gt;(D)&lt;/code&gt;. Here is the &amp;quot;party of Lincoln&amp;quot; coming through for civil rights yet again. This begs the question - how did we get from the Republicans of the 60s to those we&amp;#39;re stuck with today? To answer, we have to go back to when the Republican party was founded.&lt;/p&gt;
 
 &lt;p&gt;When Lincoln was elected the first Republican president in 1860, the party was neither grand nor old. In 1854, the &lt;code&gt;Kansas–Nebraska Act&lt;/code&gt; was drafted. If passed, it would create the aforementioned territories. More importantly, it would allow local voters (exclusively white men) to decide whether slavery should be legal in the newly created territories. A group of northerners concerned about the potential spread of slavery decided to band together and form a political party. True to their name, they favored a strong federal government that could force each state to abolish slavery. They also valued high taxes, powerful business, and lenient immigration policies.&lt;/p&gt;
@@ -164,16 +168,17 @@ class wall,modem,router,laptop,gaming fried
 
 &lt;p&gt;&lt;em&gt;Percentage &amp;quot;Yes&amp;quot; Votes on the final version of the Civil Rights bill&lt;/em&gt;&lt;/p&gt;
 
-&lt;table&gt;&lt;thead&gt;
-&lt;tr&gt;
+        &lt;div class="table-container"&gt;
+          &lt;table&gt;
+            &lt;thead&gt;&lt;tr&gt;
 &lt;th&gt;&lt;/th&gt;
 &lt;th&gt;&lt;code&gt;(D)&lt;/code&gt; &amp;amp; Union&lt;/th&gt;
 &lt;th&gt;&lt;code&gt;(R)&lt;/code&gt; &amp;amp; Union&lt;/th&gt;
 &lt;th&gt;&lt;code&gt;(D)&lt;/code&gt; &amp;amp; Confederacy&lt;/th&gt;
 &lt;th&gt;&lt;code&gt;(R)&lt;/code&gt; &amp;amp; Confederacy&lt;/th&gt;
 &lt;/tr&gt;
-&lt;/thead&gt;&lt;tbody&gt;
-&lt;tr&gt;
+&lt;/thead&gt;
+            &lt;tbody&gt;&lt;tr&gt;
 &lt;td&gt;Senate&lt;/td&gt;
 &lt;td&gt;98%&lt;/td&gt;
 &lt;td&gt;84%&lt;/td&gt;
@@ -187,8 +192,10 @@ class wall,modem,router,laptop,gaming fried
 &lt;td&gt;9%&lt;/td&gt;
 &lt;td&gt;0%&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-
+&lt;/tbody&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+      
 &lt;p&gt;Northerners, regardless of party affiliation, supported civil rights; southerners were the opposite.&lt;/p&gt;
 
 &lt;p&gt;This stark regional split represents the tipping point in a conflict that had been bubbling in American politics for decades. While the Republican Party had originally been comprised entirely of northerners, over time, business-friendly southerners had joined as well. Though they agreed on economic policy, you can see that they were still widely split on social issues. This vote proved to be the beginning of the end of the party as Lincoln knew it.&lt;/p&gt;
@@ -201,7 +208,7 @@ class wall,modem,router,laptop,gaming fried
 
 &lt;hr&gt;
 
-&lt;h3 id="sources"&gt;Sources&lt;/h3&gt;
+&lt;h3&gt;Sources&lt;/h3&gt;
 
 &lt;p&gt;While accurate, this post is a vast over-simplification of great swaths of American history. If you&amp;#39;re interested in reading more, here are most of the links I used as sources:&lt;/p&gt;
 
@@ -271,117 +278,117 @@ class wall,modem,router,laptop,gaming fried
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/9YMqqIg.png" alt="9ymqqig" /&gt;&lt;/p&gt;
 
-&lt;h2 id="the-bad"&gt;The Bad&lt;/h2&gt;
+&lt;h2&gt;The Bad&lt;/h2&gt;
 
 &lt;p&gt;With 18 films, there are bound to be some stinkers. For whatever reason, the following movies just don&amp;#39;t stand up to the rest (or even as films as a whole).&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/0V8EMCt.png" alt="0v8emct" /&gt;&lt;/p&gt;
 
-&lt;h3 id="18-the-incredible-hulk"&gt;18. The Incredible Hulk&lt;/h3&gt;
+&lt;h3&gt;18. The Incredible Hulk&lt;/h3&gt;
 
 &lt;p&gt;Every series has its worst one, and I&amp;#39;m glad we got the MCU&amp;#39;s out of the way early. Watching it now, I can see what they&amp;#39;re going for. They&amp;#39;ve got Ed Norton, a great actor. They do the &amp;quot;monster movie&amp;quot; right by not really showing him until the end. There are some cute cameos and they reference Iron Man on a TV crawl. On the other hand, despite having a great leading actor, they do a lot of the storytelling via chat logs and the whole thing starts with a 3 minute flashback zooming (at high speed) how the Hulk was created. Plus, the animation hasn&amp;#39;t aged well and it&amp;#39;s hard to care about him or his lady-friend. A well deserved spot at the bottom of the list.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/4Z0xqT4.png" alt="4z0xqt4" /&gt;&lt;/p&gt;
 
-&lt;h3 id="17-ant-man"&gt;17. Ant-Man&lt;/h3&gt;
+&lt;h3&gt;17. Ant-Man&lt;/h3&gt;
 
 &lt;p&gt;Let me start by saying - I like Paul Rudd. He&amp;#39;s a good actor and seems like a chill dude. That&amp;#39;s why it pains me to see him flounder so spectacularly here. The tone is inconsistent (some of the family drama is &lt;em&gt;very&lt;/em&gt; dramatic while everything else is pretty light). Michael Peña is hilarious, but we didn&amp;#39;t get enough of him. There&amp;#39;s an incompetent sub-villain in the ex-wife&amp;#39;s husband and the character who is presumably the female lead feels like an afterthought. There&amp;#39;s really only one good fight scene (the climax in the kid&amp;#39;s bedroom is a neat backdrop!) while the rest are him running around while small. Definitely a cool perspective, but garner nothing more than a &amp;quot;huh, that&amp;#39;s kind of cool&amp;quot;. Not to mention, there&amp;#39;s gross bugs running around the whole time. NEXT.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/lqM3J93.png" alt="Lqm3j93" /&gt;&lt;/p&gt;
 
-&lt;h3 id="16-thor-the-dark-world"&gt;16. Thor: The Dark World&lt;/h3&gt;
+&lt;h3&gt;16. Thor: The Dark World&lt;/h3&gt;
 
 &lt;p&gt;Let&amp;#39;s start with the good: the sets are pretty cool and Hiddleston&amp;#39;s Loki is a blast. Past that, this movie is thin. They took all of the worst parts of &lt;em&gt;Thor&lt;/em&gt; (the stodginess and seriousness) and just made &lt;em&gt;more&lt;/em&gt; of it. Gone is the humor where the God of Thunder is learning his way around Earth customs. Instead, we&amp;#39;ve got his prop-of-a-girlfriend Jane (played by the tragically wasted Natalie Portman) who gets powerful for a bit and honestly, that&amp;#39;s all I can remember about it. I know they kill Thor&amp;#39;s mom, but she also only had a line or two previous, so there&amp;#39;s not much in terms of emotional investment. It&amp;#39;s salvaged above the other contenders by virtue of having some half-decent fight scenes, but the villain and everything else about it is so forgettable that it&amp;#39;s hard to be sure.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/LWIAOvb.png" alt="Lwiaovb" /&gt;&lt;/p&gt;
 
-&lt;h3 id="15-thor"&gt;15. Thor&lt;/h3&gt;
+&lt;h3&gt;15. Thor&lt;/h3&gt;
 
 &lt;p&gt;As one of the earliest movies (it was the fourth one made), it really shows its age. There&amp;#39;s some cool worldbuilding about Asgard and the sets are more elaborate than other movies. Unfortunately for him, Hemsworth&amp;#39;s first outing as Thor doesn&amp;#39;t create a terribly likable character. His acclimation to earth is cute, but brief. There are multiple fights that feel like the climactic one, but none are satisfying enough (the destroyer, then Loki on Asgard). They spend a lot of time on this boring relationship between him and Jane, but the whole thing is unrealistic. I realize that&amp;#39;s a weird complaint in a comic book movie, but suspension of belief only goes so far.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/Q5cxMoo.png" alt="Q5cxmoo" /&gt;&lt;/p&gt;
 
-&lt;h3 id="14-guardians-of-the-galaxy-vol-2"&gt;14. Guardians of the Galaxy Vol. 2&lt;/h3&gt;
+&lt;h3&gt;14. Guardians of the Galaxy Vol. 2&lt;/h3&gt;
 
 &lt;p&gt;If you&amp;#39;ve ever wondered how many competing storylines can fit in a movie, look no further. This 2 hours is &lt;em&gt;busy&lt;/em&gt;. Some of the arcs (the Ravagers, Drax // Mantis) are awesome and/or emotional while others (Star Lord &amp;amp; his daddy issues, Gold People) feel necessary, but unfulfilling. Nebula doesn&amp;#39;t do a lot despite being an important character. Character development is surprisingly good amid a barrage of jokes (2/3 of which land). There&amp;#39;s some cool tech, but ultimately this movie is fine.&lt;/p&gt;
 
-&lt;h2 id="the-good"&gt;The Good&lt;/h2&gt;
+&lt;h2&gt;The Good&lt;/h2&gt;
 
 &lt;p&gt;These are the films that start to put the pieces together and start cooking with gas. They&amp;#39;re made up of good scenes with only a few flaws holding them back.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/4IIffc1.png" alt="4iiffc1" /&gt;&lt;/p&gt;
 
-&lt;h3 id="13-iron-man"&gt;13. Iron Man&lt;/h3&gt;
+&lt;h3&gt;13. Iron Man&lt;/h3&gt;
 
 &lt;p&gt;We&amp;#39;re getting there! Now, why is a movie typically so well-regarded so far down on the list? Simply, it&amp;#39;s &lt;em&gt;good&lt;/em&gt;. There&amp;#39;s nothing awful about it, but RDJ is so good in all of the other movies he&amp;#39;s in that this one fails to shine. It also feels surprisingly dated. This was apparently before Marvel put a ton of time designing Stark&amp;#39;s fantasy computers. Instead, he&amp;#39;s rocking an &lt;a href="https://i.imgur.com/IzQPQpR.png"&gt;LG VX9400&lt;/a&gt; which is there to feel futuristic and expensive but now comes off antiquated. He&amp;#39;s got a landline phone and makes jokes about MySpace. For all that, Bridges is an awesome villain and there&amp;#39;s some good humor as he&amp;#39;s building the first suits. Marvel has done worse, but they&amp;#39;ve certainly done better since.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/JDTGlf4.png" alt="Jdtglf4" /&gt;&lt;/p&gt;
 
-&lt;h3 id="12-avengers-age-of-ultron"&gt;12. Avengers: Age of Ultron&lt;/h3&gt;
+&lt;h3&gt;12. Avengers: Age of Ultron&lt;/h3&gt;
 
 &lt;p&gt;This movie had the impossible task of being the sequel to &lt;em&gt;The Avengers&lt;/em&gt; (which you haven&amp;#39;t seen on this list yet because it&amp;#39;s very good). It opens on a high note, with the already-together Avengers kicking ass. It&amp;#39;s fun seeing them work together and there&amp;#39;s some great freeze frames. There&amp;#39;s good character work in each of the movie&amp;#39;s vital &amp;quot;small&amp;quot; scenes &lt;sup id="fnref2"&gt;&lt;a href="#fn2" rel="footnote"&gt;2&lt;/a&gt;&lt;/sup&gt; trying to pick up the hammer and the downtime at the farmhouse. Ultron (helped by an &lt;em&gt;exceedingly creepy&lt;/em&gt; performance by Spader) is even an interesting adversary. Unfortunately, they spend a lot of screen time here setting up other MCU movies. Sometimes it&amp;#39;s relevant (starting to emphasize personal accountability) but mostly, it&amp;#39;s scenes that feel shoehorned in (Klaue in Wakanda, Infinity Stones in Thor&amp;#39;s dream). Together, they make this movie feel unfocused. It definitely has its high points, but it&amp;#39;s far from a complete package.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/1Y7ZqrE.png" alt="1y7zqre" /&gt;&lt;/p&gt;
 
-&lt;h3 id="11-doctor-strange"&gt;11. Doctor Strange&lt;/h3&gt;
+&lt;h3&gt;11. Doctor Strange&lt;/h3&gt;
 
 &lt;p&gt;The hands down biggest thing this movie has going for it the visual effects. They really went above and beyond with the Inception-esque rotation, folding, and flattening of the world around the characters. I was pleasantly surprised at how utterly unlikable Strange is at the start and how, after seeing him get the snot kicked out of him a few times, we start to sympathize. The humor is great and his supporting cast (Wong, Ejiofor, Mikkelsen, and Swinton) really bring the whole thing together. The fight scenes are mostly hand-to-hand and choreographed well. There&amp;#39;s definitely a lot of hand-wavy science, but given the supernatural nature of the movie, it doesn&amp;#39;t bother me much. When it was all said and done, I was impressed by how well everything came together.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/2wCC98b.png" alt="2wcc98b" /&gt;&lt;/p&gt;
 
-&lt;h3 id="10-iron-man-3"&gt;10. Iron Man 3&lt;/h3&gt;
+&lt;h3&gt;10. Iron Man 3&lt;/h3&gt;
 
 &lt;p&gt;IM3 does a really interesting thing when it focuses on Tony&amp;#39;s problems with PTSD and anxiety, an unusual trait for the lead of a huge franchise. This marks a turning point in the MCU where besides being quality action movies, the films start to explore some emotional complexity that is unusual for the genre. This is one of the few Marvel movies with an actual twist (the identity of the Mandarin, who was awesome). I felt the actual villain (the smarmy dude behind it all) was less compelling. Tony interacting with the kid was great. Unfortunately, despite getting explosion powers, Pepper doesn&amp;#39;t feel like much more than a damsel to be rescued, which is disappointing. The action is par for the Iron Man course and as you&amp;#39;ve read, there are worse movies.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/QxwrnC4.png" alt="Qxwrnc4" /&gt;&lt;/p&gt;
 
-&lt;h3 id="9-guardians-of-the-galaxy"&gt;9. Guardians of the Galaxy&lt;/h3&gt;
+&lt;h3&gt;9. Guardians of the Galaxy&lt;/h3&gt;
 
 &lt;p&gt;&lt;em&gt;Guardians&lt;/em&gt;, like the other movies in this bracket, doesn&amp;#39;t have any glaring faults but doesn&amp;#39;t excel at anything. The characters are actually pretty charming and grow together well. The energy of the soundtrack is infectious and the less traditional take on the humor in a sci-fi universe grew on me. More than anything, I think this willingness to try something out of the box helped them down the line when they were looking for options to salvage the &lt;em&gt;Thor&lt;/em&gt; franchise. This also marks the first time Thanos has real dialogue during a movie. John C. Reilly has a great role and watching everyone else in the universe play the &lt;a href="https://en.wikipedia.org/wiki/Straight_man"&gt;straight man&lt;/a&gt; to this gang of misfits is pretty fun.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/BQcz3wX.png" alt="Bqcz3wx" /&gt;&lt;/p&gt;
 
-&lt;h3 id="8-captain-america-the-first-avenger"&gt;8. Captain America: The First Avenger&lt;/h3&gt;
+&lt;h3&gt;8. Captain America: The First Avenger&lt;/h3&gt;
 
 &lt;p&gt;Each time I watch this, it&amp;#39;s better than I remember. The 40&amp;#39;s aesthetic is well done and they spend a lot of non-action scenes showing the war effort. I think my biggest gripe here is how long the setup was - between him trying to get into the army, the training, and the showboating, our first big action scene (besides a fairly satisfying chase through the streets of New York) doesn&amp;#39;t come until much later. When we get to him, Hugo Weaving plays a great villain. A lot of good pieces and a great setup of the Cap movies to come.&lt;/p&gt;
 
-&lt;h2 id="the-great"&gt;The Great&lt;/h2&gt;
+&lt;h2&gt;The Great&lt;/h2&gt;
 
 &lt;p&gt;Here we have them, the cream of the crop. The following films exemplify what a Marvel movie should be.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/uPyKg4W.png" alt="Upykg4w" /&gt;&lt;/p&gt;
 
-&lt;h3 id="7-iron-man-2"&gt;7. Iron Man 2&lt;/h3&gt;
+&lt;h3&gt;7. Iron Man 2&lt;/h3&gt;
 
 &lt;p&gt;Of the three Iron Men, I think the second outing is the one where the pieces really come together. That may come as a surprise since this is widely considered the worst of the three. When I re-watched it, everything clicked. On one hand, you have a Tony who is finally a human. He&amp;#39;s imperfect and dealing with that through the film. You&amp;#39;ve got a great pair of villains in Rourke and Rockwell (who are great on their own but excel together).  This is also the intro of Senator Stern (the Ted Cruz of the MCU), a character I love to hate. It introduces Nick Fury and the Black Widow (the latter of whom spends the first half pretending to be Stark&amp;#39;s assistant, which leads into a great reveal). Later, she helps Pepper (who is an actual character finally). Furthermore, they delve into the theme of accountability, which is important throughout the rest of the MCU. The action continues to be good, but we don&amp;#39;t spend any time in a cave. Instead, we get functional suits, big set pieces, the Roadie we deserve (Don Cheadle), and a satisfying package.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/GbOcvEj.png" alt="Gbocvej" /&gt;&lt;/p&gt;
 
-&lt;h3 id="6-captain-america-the-winter-soldier"&gt;6. Captain America: The Winter Soldier&lt;/h3&gt;
+&lt;h3&gt;6. Captain America: The Winter Soldier&lt;/h3&gt;
 
 &lt;p&gt;There&amp;#39;s a lot going for &lt;em&gt;Winter Soldier&lt;/em&gt;. There&amp;#39;s no need to build Cap from scratch, so we get an opening scene of him running (literal) circles around mere mortals. We get Fury being an actual character and Widow with a lot of screen time. She and Cap have good chemistry, so it&amp;#39;s refreshing to see them get to do some actual sleuthing. The Winter Soldier is frightening and capable. Robert Redford and his surveillance state is a surprisingly relevant message, even 4 years after the movie was originally released. Despite being buildup to &lt;em&gt;Civil War&lt;/em&gt; (though we didn&amp;#39;t know it at the time), this movie stands on its own legs as an engaging thriller that effectively sets up some of the moral quandaries that show up later.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/Q9pSpDc.png" alt="Q9pspdc" /&gt;&lt;/p&gt;
 
-&lt;h3 id="5-thor-ragnarok"&gt;5. Thor: Ragnarok&lt;/h3&gt;
+&lt;h3&gt;5. Thor: Ragnarok&lt;/h3&gt;
 
 &lt;p&gt;It&amp;#39;s hard to say what went so &lt;em&gt;right&lt;/em&gt; here. My only guess is that Marvel looked at the trash heap that was Thor 2 and &amp;quot;let&amp;#39;s do something completely different&amp;quot;. And different they did! Harnessing the comedy genius of Taika Waititi, to throw all of the seriousness out the window and lean into the humor from the first movie. As it is said, &amp;quot;To be born again, first you have to die&amp;quot;. They take his cape, his hair, and his hammer. What&amp;#39;s left is the funniest Marvel movie there&amp;#39;s ever been. The humor is light and moves quickly; it drags remarkably little for a 2 hour movie. Goldblum is a great addition to the tone of the characters. The Asgard/Hela part of the plot is fine, but does give some cool actions. Cinematograhpically, this movie knocks it out of the park. I think it&amp;#39;s second only to &lt;em&gt;Black Panther&lt;/em&gt; for art design and sets. My biggest disappointment was that they didn&amp;#39;t use AC/DC&amp;#39;s &lt;em&gt;Thunderstruck&lt;/em&gt; during the climax, but it&amp;#39;s hard to go wrong with &lt;em&gt;The Immigrant Song&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/RQaop8D.png" alt="Rqaop8d" /&gt;&lt;/p&gt;
 
-&lt;h3 id="4-the-avengers"&gt;4. The Avengers&lt;/h3&gt;
+&lt;h3&gt;4. The Avengers&lt;/h3&gt;
 
 &lt;p&gt;&lt;em&gt;Avengers&lt;/em&gt; is greater than the sum of its parts and was for a long time, the best Marvel had to offer. Like a lot of the other intro-heavy movies, there&amp;#39;s a lot of setup before we get to the meat of the movie. It&amp;#39;s done well, with each character intro feeling distinct. The play between each team member feels fun. This is also the first time we get Ruffalo&amp;#39;s Hulk, who is a breath of fresh air on an otherwise tough character. He doesn&amp;#39;t transform until 1:15, so there&amp;#39;s a lot of anticipation. His CGI is much more expressive, which helps him be a character both in and out of green mode. Loki is a great enemy who is equal parts cunning and powerful. The climactic fight through Manhattan is a string of compelling vignettes that tie together well. Also, Coulson&amp;#39;s death (while partially expected &lt;sup id="fnref3"&gt;&lt;a href="#fn3" rel="footnote"&gt;3&lt;/a&gt;&lt;/sup&gt;), never stops hurting.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/6qTpNl5.png" alt="6qtpnl5" /&gt;&lt;/p&gt;
 
-&lt;h3 id="3-black-panther"&gt;3. Black Panther&lt;/h3&gt;
+&lt;h3&gt;3. Black Panther&lt;/h3&gt;
 
 &lt;p&gt;On the surface, &lt;em&gt;Black Panther&lt;/em&gt; shares a lot in common with &lt;em&gt;Thor&lt;/em&gt;. It&amp;#39;s a self-contained story about a ruler who has to come into his rule and there&amp;#39;s a lot of world-building. The biggest difference is that this one is &lt;em&gt;phenomenal&lt;/em&gt;. The supporting cast (Nyong&amp;#39;o, Gurira, Freeman, and Wright) have a great balance between humor and action. They play off each other exceedingly well and feel realistic and human. Michael B Jordan&amp;#39;s Killmonger is the most menacing, driven, sympathetic, and threatening villain in the entire MCU. The art direction is unparalleled; every piece of this movie from the costumes to the environments is gorgeous. The biggest knocks against it are some of the hokier scenes (Lion King-esque conversation and when the sister does her Q impression from the &lt;em&gt;007&lt;/em&gt; series) and basically all details involving vibranium, but that can&amp;#39;t do much to stop this mag-lev train from rolling toward the top of my list.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/oy2BKRU.png" alt="Oy2bkru" /&gt;&lt;/p&gt;
 
-&lt;h3 id="2-spider-man-homecoming"&gt;2. Spider-Man: Homecoming&lt;/h3&gt;
+&lt;h3&gt;2. Spider-Man: Homecoming&lt;/h3&gt;
 
 &lt;p&gt;The third time really is the charm. We finally got a Spiderman movie that didn&amp;#39;t spend time killing Uncle Ben, instead replacing it with a great sequence about &lt;em&gt;Civil War&lt;/em&gt; from Peter&amp;#39;s point of view. The action is good, the villain is menacing, and the jokes are there. In fact, I think what impressed me most is how funny the supporting cast of high schoolers is without being annoying or overpowering. They all feel like actual high school students, which adds a lot to the environment. I still think Vulture being his lady friend&amp;#39;s dad is a phenomenal reveal and the car ride he takes them on is stress I haven&amp;#39;t felt since &lt;em&gt;Get Out&lt;/em&gt;. &lt;em&gt;Spider-Man&lt;/em&gt; is everything a Marvel movie should be and I look forward to what they do with him next.&lt;/p&gt;
 
@@ -389,13 +396,13 @@ class wall,modem,router,laptop,gaming fried
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/xDwjluE.png" alt="Xdwjlue" /&gt;&lt;/p&gt;
 
-&lt;h3 id="1-captain-america-civil-war"&gt;1. Captain America: Civil War&lt;/h3&gt;
+&lt;h3&gt;1. Captain America: Civil War&lt;/h3&gt;
 
 &lt;p&gt;Captain America is the poster boy for a series getting better over time. It&amp;#39;s no small feat to construct a movie that&amp;#39;s both so action packed and so emotionally impactful. Though Zemo is clearly the villain, the writers do an exceptional job painting basically everyone as antagonists at some point. The viewpoints of each side of the Accords are well-presented and justified. The anxiety over seeing &amp;quot;parents&amp;quot; fight and neither side being purely right is tough, but rewarding. The airport fight brings a lot of characters together and is satisfying. Spidey and Ant Man have a chance to be funny without getting in the way, and each sequence feels important. The beats in the last half hour of the movie (Roadie getting injured, Stark putting his friends in jail, the reveal about who killed the Starks) are up there with &lt;em&gt;Logan&lt;/em&gt;, redefining drama&amp;#39;s place in the superhero genre. The climax with Bucky, Cap, and Stark beating the pulp out of each other feels so raw and driven that it&amp;#39;s impossible to root for either too heavily. Everything about this movie excels, and that makes it, in my opinion, the single best Marvel movie.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;I also wrote about &lt;strong&gt;Civil War&lt;/strong&gt; in my 2016 lookback &lt;a href="/blog/2017/02/11/a-few-of-my-favorite-things/#movies"&gt;here&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h2 id="onward"&gt;Onward&lt;/h2&gt;
+&lt;h2&gt;Onward&lt;/h2&gt;
 
 &lt;p&gt;Watching all these movies has been a blast and a half and I&amp;#39;m really excited about &lt;em&gt;Infinity War&lt;/em&gt;. These movies are the most ambitious cinematic undertaking in history and the fact that they&amp;#39;ve grown this universe over the past 10 years is really astounding.&lt;/p&gt;
 
@@ -430,7 +437,7 @@ class wall,modem,router,laptop,gaming fried
     <link rel="alternate" href="https://davidbrownman.com/blog/2018/02/21/a-few-more-favorites/"/>
     <id>https://davidbrownman.com/blog/2018/02/21/a-few-more-favorites/</id>
     <published>2018-02-21T03:00:00-05:00</published>
-    <updated>2018-11-16T15:29:20-05:00</updated>
+    <updated>2018-12-16T14:54:29-05:00</updated>
     <author>
       <name>David Brownman</name>
     </author>
@@ -474,7 +481,7 @@ class wall,modem,router,laptop,gaming fried
 
 &lt;!-- END doctoc generated TOC please keep comment here to allow auto update --&gt;
 
-&lt;h2 id="board-games"&gt;Board Games&lt;/h2&gt;
+&lt;h2&gt;Board Games&lt;/h2&gt;
 
 &lt;p&gt;Though I love my remote job dearly, without a doubt the biggest downside is the inability to play games in the office. I&amp;#39;ve got some local friends I meet up with infrequently, but nothing beats a regularly-scheduled Tuesday evening at the office. That said, I&amp;#39;ve still had time to squeeze in some games and try out some new ones.&lt;/p&gt;
 
@@ -496,11 +503,11 @@ Runner-up: &lt;strong&gt;Fugitive&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;If you&amp;#39;re looking for something with a bit of bluffing, great art, compact size and very few &amp;quot;bits&amp;quot;, I can&amp;#39;t recommend this enough.&lt;/p&gt;
 
-&lt;h2 id="videogames"&gt;Videogames&lt;/h2&gt;
+&lt;h2&gt;Videogames&lt;/h2&gt;
 
 &lt;p&gt;This was an interesting year for me as far as videogames were concerned. I made a bet last December (2016) that I would be able to resist the siren call of the Steam sale and forgo all game purchases in the 2017 year. Not one to lose a bet, I stuck with it.&lt;/p&gt;
 
-&lt;h3 id="home"&gt;Home&lt;/h3&gt;
+&lt;h3&gt;Home&lt;/h3&gt;
 
 &lt;p&gt;In the absence of a stream of new games I wasn&amp;#39;t going to play, I turned my eyes towards my oft-neglected Steam backlog. There&amp;#39;s a great set of games I had never touched (thanks, Humble Bundle), and I&amp;#39;m glad I had the opportunity to get into them this year.&lt;/p&gt;
 
@@ -525,7 +532,7 @@ Runner-up: &lt;strong&gt;Else Heart.break()&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
 Honorable mention: &lt;strong&gt;Recettear, an Item Shop&amp;#39;s Tale&lt;/strong&gt; for cute writing and an original concept and &lt;strong&gt;Little Big Planet&lt;/strong&gt; for some truly stylized levels and a &amp;quot;whoa dude&amp;quot; moment on the &lt;a href="https://youtu.be/aNRPH3-h6yQ?t=4m24s"&gt;large rotating wheel&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id="mobile"&gt;Mobile&lt;/h3&gt;
+&lt;h3&gt;Mobile&lt;/h3&gt;
 
 &lt;p&gt;This section is different from the others in two important ways: it&amp;#39;s harder to track playtime on mobile games and as far as I can tell, I didn&amp;#39;t play a lot of mobile games this year. When I&amp;#39;m on the go and have time to kill I&amp;#39;m usually reading. I play some tablet board games, but not much like my gaming experience home. That isn&amp;#39;t to say I don&amp;#39;t have anything to recommend, but take it with a grain of salt. I think these are the only two mobile games I played through this year.&lt;/p&gt;
 
@@ -548,7 +555,7 @@ Runner-up: &lt;strong&gt;Klocki&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
 Honorable Mention to &lt;em&gt;&lt;a href="http://altosadventure.com/"&gt;Alto&amp;#39;s Adventure&lt;/a&gt;&lt;/em&gt;, which has beautiful graphics and music. Gameplay is pretty good and generally non-frustrating for an endless runner. The snowboarding theme is delivered well and its a pleasure to zoom down a mountain in search of llamas.&lt;/p&gt;
 
-&lt;h2 id="movies"&gt;Movies&lt;/h2&gt;
+&lt;h2&gt;Movies&lt;/h2&gt;
 
 &lt;p&gt;What a year for movies. Of all the sections, I had the most trouble picking the winners for this one.&lt;/p&gt;
 
@@ -576,11 +583,11 @@ Runner-up: &lt;strong&gt;Hidden Figures&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
 Honorable mention for &lt;strong&gt;Logan&lt;/strong&gt;, for showing that superhero movies can be so much more that just that; this was a standout drama.&lt;/p&gt;
 
-&lt;h2 id="television"&gt;Television&lt;/h2&gt;
+&lt;h2&gt;Television&lt;/h2&gt;
 
 &lt;p&gt;This was the toughest section to write purely because it&amp;#39;s unclear what exactly belongs in it. TV is changing and while some shoes air through the school year, others run over the summer or are released in a batch online. In the effort of simplicity, here&amp;#39;s some shows that are online or completed an entire season in 2017. If you want new network shows, check out AV CLUB.&lt;/p&gt;
 
-&lt;h3 id="newly-aired"&gt;Newly Aired&lt;/h3&gt;
+&lt;h3&gt;Newly Aired&lt;/h3&gt;
 
 &lt;p&gt;&lt;br /&gt;
 Winner: &lt;strong&gt;The Guest Book S1&lt;/strong&gt;&lt;/p&gt;
@@ -595,7 +602,7 @@ Runner-up: &lt;strong&gt;The Orville S1&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;br /&gt;
 Honorable mention to &lt;strong&gt;Powerless&lt;/strong&gt;, for being a breath of fresh air in the superhero genre. Great to see the world from &amp;quot;our&amp;quot; side. Like many loved shows, it was canceled.&lt;/p&gt;
 
-&lt;h3 id="ended"&gt;Ended&lt;/h3&gt;
+&lt;h3&gt;Ended&lt;/h3&gt;
 
 &lt;p&gt;&lt;br /&gt;
 Winner: &lt;strong&gt;Galavant&lt;/strong&gt;&lt;/p&gt;
@@ -621,7 +628,7 @@ Runner-up: &lt;strong&gt;Scooby-Doo Mystery Inc&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Let me start with this preface: &lt;em&gt;Mystery Inc&lt;/em&gt; is super weird. They&amp;#39;ve made some interesting character choices, namely Fred&amp;#39;s near-sexual level of attraction to traps and how Shaggy and Velma start out dating. The show follows a monster-a-week blueprint, but also has an overreaching ark that ties the whole show together. It rises to a significant scale, especially for something that, on the surface, is a kid&amp;#39;s show. There&amp;#39;s a lot of jokes aimed at adults that keeps audiences of all ages on their toes. Consider me pleasantly surprised.&lt;/p&gt;
 
-&lt;h2 id="books"&gt;Books&lt;/h2&gt;
+&lt;h2&gt;Books&lt;/h2&gt;
 
 &lt;p&gt;&lt;br /&gt;
 Winner: &lt;strong&gt;Mistborn 1: The Final Empire&lt;/strong&gt;&lt;/p&gt;
@@ -635,7 +642,7 @@ Runner-up: &lt;strong&gt;Artemis&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Honorable mention to &lt;em&gt;Shadow of the Wind&lt;/em&gt; because it was both good and very different from what I&amp;#39;ve read before. A change of pace, but an enjoyable one!&lt;/p&gt;
 
-&lt;h2 id="a-look-back"&gt;A Look Back&lt;/h2&gt;
+&lt;h2&gt;A Look Back&lt;/h2&gt;
 
 &lt;p&gt;A year (ish) out from &lt;a href="/blog/2017/02/11/a-few-of-my-favorite-things/"&gt;last year&amp;#39;s post&lt;/a&gt;, here&amp;#39;s a quick look back to much I&amp;#39;m enjoying some of the media that was awarded a coveted &amp;quot;Davy&amp;quot; award last year.&lt;/p&gt;
 
@@ -643,7 +650,7 @@ Runner-up: &lt;strong&gt;Artemis&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;I got the expansion for &lt;em&gt;7 Wonders: Duel&lt;/em&gt; which, impossibly, improves on a really fun game. It incentivizes some of the tiles that were previously less desirable and opens up new avenues for points if you&amp;#39;re crafty with your card selection. If you enjoyed the base game, this complements it well. Lastly, &lt;em&gt;The Good Place&lt;/em&gt; is halfway through its second season (and has been &lt;a href="https://www.avclub.com/shrimp-for-everyone-the-good-place-is-forking-renewed-1820650663"&gt;renewed&lt;/a&gt; for a third). It&amp;#39;s still forkin&amp;#39; great and I&amp;#39;m excited to see what&amp;#39;s coming next.&lt;/p&gt;
 
-&lt;h2 id="thats-all"&gt;That&amp;#39;s all!&lt;/h2&gt;
+&lt;h2&gt;That&amp;#39;s all!&lt;/h2&gt;
 
 &lt;p&gt;Putting together this article every year has encouraged me to track everything I read/watch/play more dutifully, a hobby I&amp;#39;ve put an embarrassing amount of time into. &lt;a href="https://airtable.com/invite/r/7A1YRa26"&gt;Airtable&lt;/a&gt; is key for this, and I&amp;#39;ll be detailing my use of in an upcoming post.&lt;/p&gt;
 
@@ -708,13 +715,14 @@ Runner-up: &lt;strong&gt;Artemis&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/Tz1cT87.png" alt="Tz1ct87" /&gt;&lt;/p&gt;
 
-&lt;table&gt;&lt;thead&gt;
-&lt;tr&gt;
+        &lt;div class="table-container"&gt;
+          &lt;table&gt;
+            &lt;thead&gt;&lt;tr&gt;
 &lt;th&gt;Array Length&lt;/th&gt;
 &lt;th&gt;Average Number of Shuffles (5k Trials)&lt;/th&gt;
 &lt;/tr&gt;
-&lt;/thead&gt;&lt;tbody&gt;
-&lt;tr&gt;
+&lt;/thead&gt;
+            &lt;tbody&gt;&lt;tr&gt;
 &lt;td&gt;2&lt;/td&gt;
 &lt;td&gt;0.97&lt;/td&gt;
 &lt;/tr&gt;
@@ -746,21 +754,24 @@ Runner-up: &lt;strong&gt;Artemis&lt;/strong&gt;&lt;/p&gt;
 &lt;td&gt;9&lt;/td&gt;
 &lt;td&gt;369657.95&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-
+&lt;/tbody&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+      
 &lt;p&gt;Each array length follows a remarkably similar pattern, known as a &lt;a href="https://en.wikipedia.org/wiki/Negative_binomial_distribution"&gt;negative binomial distribution&lt;/a&gt; (I am told), meaning the number of shuffles is quite variable. For array length 5, it takes 10^5 shuffles. but it&amp;#39;s just as likely for it to take many more tries. This causes the (incredibly) long tail you see out to the right.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="https://i.imgur.com/QPR1IQ4.png" alt="Qpr1iq4" /&gt;&lt;/p&gt;
 
 &lt;p&gt;If you think those numbers are big, it&amp;#39;s because they are. Big numbers don&amp;#39;t mean anything without context though. To help provide that context, I modified the script to measure the actual clock-on-the-wall time you would spend sorting an array length &lt;code&gt;n&lt;/code&gt;. Note that the table skips the first few values of &lt;code&gt;n&lt;/code&gt;, as they were sorted too fast for Ruby to capture (which is a good thing, I guess).&lt;/p&gt;
 
-&lt;table&gt;&lt;thead&gt;
-&lt;tr&gt;
+        &lt;div class="table-container"&gt;
+          &lt;table&gt;
+            &lt;thead&gt;&lt;tr&gt;
 &lt;th&gt;Array Length&lt;/th&gt;
 &lt;th&gt;Average time to be sorted (5 trials, seconds)&lt;/th&gt;
 &lt;/tr&gt;
-&lt;/thead&gt;&lt;tbody&gt;
-&lt;tr&gt;
+&lt;/thead&gt;
+            &lt;tbody&gt;&lt;tr&gt;
 &lt;td&gt;8&lt;/td&gt;
 &lt;td&gt;0.02&lt;/td&gt;
 &lt;/tr&gt;
@@ -788,8 +799,10 @@ Runner-up: &lt;strong&gt;Artemis&lt;/strong&gt;&lt;/p&gt;
 &lt;td&gt;14&lt;/td&gt;
 &lt;td&gt;Ran computer all night, didn&amp;#39;t complete 5 trials&lt;/td&gt;
 &lt;/tr&gt;
-&lt;/tbody&gt;&lt;/table&gt;
-
+&lt;/tbody&gt;
+          &lt;/table&gt;
+        &lt;/div&gt;
+      
 &lt;p&gt;These results are... not inspiring. Each element added to the array adds roughly a factor of 10 to how long the script takes to run.&lt;sup id="fnref1"&gt;&lt;a href="#fn1" rel="footnote"&gt;1&lt;/a&gt;&lt;/sup&gt; And again, the precious seconds you spend sorting doesn&amp;#39;t actually guarantee your array will end up sorted anyway. Unless you&amp;#39;re feeling incredibly lucky, I&amp;#39;d stick to something faster and more reliable. Maybe a nice bubble sort.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Huge thanks to Evan Batzer for his time and expertise with chart creation. You can find out more about him and his work &lt;a href="https://ebatzer.github.io/"&gt;here&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;

@@ -13,8 +13,8 @@ What the Hell is a Python? - David Brownman dot com
 <meta content='https://i.imgur.com/zhqbTVt.png' property='og:image'>
 <meta content='A blog post by David Brownman' property='og:description'>
 <meta content='width=device-width' name='viewport'>
-<link href="../../../../../css/the-854813e9.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" defer="defer"></script><script src="../../../../../js/facts-f34b87aa.js" defer="defer"></script>
+<link href="../../../../../css/the-199d4a72.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot-number.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" defer="defer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot.min.js" defer="defer"></script><script src="../../../../../js/facts-f34b87aa.js" defer="defer"></script>
 <link href="../../../../../favicon.ico" rel="icon" type="image/ico" />
 </head>
 <body>
@@ -71,7 +71,7 @@ What the Hell is a Python?
 
 <p></p>
 
-<h2 id="what-exactly-is-programming">What exactly is programming?</h2>
+<h2>What exactly is programming?</h2>
 
 <p>It&#39;s simple! Programs are sets of instructions that manipulate <em>variables</em> that are followed explicitly (in order!) by a computer (and without ambiguity). There&#39;s a fun exercise you can do with kids where you have someone try to verbally explain how to make a PB&amp;J to someone who purposefully misunderstands instructions. You end up with an exchange something like this:</p>
 
@@ -81,7 +81,7 @@ What the Hell is a Python?
 
 <p>As you can see, English is ambiguous, which is why computers are so nitpicky about syntax. They&#39;re going to execute the program and they want to make sure they do exactly what you say.</p>
 
-<h2 id="lets-get-our-hands-dirty">Let&#39;s get our hands dirty</h2>
+<h2>Let&#39;s get our hands dirty</h2>
 
 <p>All you need to follow along is access to a Python interpreter. One can be found pre-installed on Mac computers (by typing <code>python</code> into the <code>Terminal</code> application) or online <a href="https://repl.it/languages/python">here</a>. This guide is written for Python 2, which will eventually phase out of usage. You can check your computer&#39;s version by typing <code>python --version</code> (mine currently says 2.7.10).</p>
 
@@ -100,7 +100,7 @@ What the Hell is a Python?
 
 <p>Did you catch that at the end? Python added the two strings together, just like we told it to. The fact that they&#39;re numbers and we might have been expecting 2 as output doesn&#39;t matter to it- we gave it instructions and it followed.</p>
 
-<h2 id="boxes-on-boxes-on-boxes">Boxes on boxes on boxes</h2>
+<h2>Boxes on boxes on boxes</h2>
 
 <p>Programming would be a boring field if all we could do was stick strings of letters together. Luckily, we can store values in <em>things</em>. These can be <strong>variables</strong>, lists, or other things.</p>
 <pre class="highlight plaintext"><code>&gt;&gt;&gt; x&#x000A;Traceback (most recent call last):&#x000A;File "&lt;string&gt;", line 1, in &lt;module&gt;&#x000A;NameError: name 'x' is not defined&#x000A;&gt;&gt;&gt; x = 3&#x000A;&gt;&gt;&gt; x&#x000A;3&#x000A;&gt;&gt;&gt; x+1&#x000A;4&#x000A;&gt;&gt;&gt; x+x&#x000A;6&#x000A;</code></pre>
@@ -119,7 +119,7 @@ What the Hell is a Python?
 
 <p>The <code>...</code> that follows lines ending in a <code>:</code> is there because indentation matters in Python. You&#39;re making a loop, so Python needs to know exactly which instructions to run in that loop. The <code>...</code> lets you know that Python is still taking loop instructions. Additionally, you need to add a space (or two, as long as you&#39;re consistent) before each loop instruction to create the indentation. The command line doesn&#39;t do this for you. To end the loop, just input an empty line. Loops are super helpful, so make sure you understand them!</p>
 
-<h2 id="lets-put-it-all-together">Let&#39;s put it all together!</h2>
+<h2>Let&#39;s put it all together!</h2>
 
 <p>Big, complicated programs are actually just collections of little programs. So, let&#39;s put some simple things that you know how to do together and make something neat!</p>
 
@@ -156,11 +156,11 @@ What the Hell is a Python?
 |
 <a href='/blog/feeds'><i class='fa fa-rss-square rss'></i></a>
 |
-<a href="/blog/2013/07/09/if-i-were-a-recycling">Random Post</a>
+<a href="/blog/2013/12/12/the-week-of-code-is">Random Post</a>
 <i class='fa fa-random'></i>
 </p>
 </article>
-<aside>
+<aside class='sidebar'>
 <div class='top'>
 <div class='heading'>
 Published
@@ -180,6 +180,11 @@ On this day
 </p>
 </div>
 </aside>
+<script>
+  window.onload = function() {
+    $.bigfoot();
+  };
+</script>
 <script>
   var anchorForId = function (id) {
     var anchor = document.createElement("a");

@@ -13,8 +13,8 @@ How Hackers Steal Your Data (and How to Make it Harder for Them) - David Brownma
 <meta content='https://i.imgur.com/FLGJEW0.png' property='og:image'>
 <meta content='The ins and outs of password security' property='og:description'>
 <meta content='width=device-width' name='viewport'>
-<link href="../../../../../css/the-854813e9.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" defer="defer"></script><script src="../../../../../js/facts-f34b87aa.js" defer="defer"></script>
+<link href="../../../../../css/the-199d4a72.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot-number.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" defer="defer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot.min.js" defer="defer"></script><script src="../../../../../js/facts-f34b87aa.js" defer="defer"></script>
 <link href="../../../../../favicon.ico" rel="icon" type="image/ico" />
 </head>
 <body>
@@ -71,7 +71,7 @@ How Hackers Steal Your Data (and How to Make it Harder for Them)
 
 <p></p>
 
-<h2 id="the-anatomy-of-a-hack">The Anatomy of a Hack</h2>
+<h2>The Anatomy of a Hack</h2>
 
 <p>So here I am, a hacker. I&#39;m looking to make a quick buck, so I&#39;m going to spend my afternoon breaking into your account(s) and putting them up for <a href="https://www.theatlantic.com/technology/archive/2016/02/the-black-market-for-netflix-accounts/462321/">sale</a>. Don&#39;t take it personally. Unless you&#39;re rich and/or famous, I&#39;m probably not targeting you. In fact, I hardly know you exist; you&#39;re a line in a file. Rather than focus on specific people, I&#39;m going to target accounts in bulk. I just bought a dump of 400,000 hashes leaked from a (hypothetical) forum hack a few years ago.<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup></p>
 
@@ -107,7 +107,7 @@ How Hackers Steal Your Data (and How to Make it Harder for Them)
 
 <p>Passwords with all of those qualities are basically impossible to remember though. That&#39;s where our first tip comes in:</p>
 
-<h3 id="1-use-a-password-manager-to-store-complex-passwords">1. Use a password manager (to store complex passwords)</h3>
+<h3>1. Use a password manager (to store complex passwords)</h3>
 
 <p>If you want to keep me out, you need to have complex, unique passwords for every site. There&#39;s no reasonable way to expect you to remember these without some help, but help is here. Password managers are a class of software that perform two main functions for passwords: storage and generation.</p>
 
@@ -121,7 +121,7 @@ How Hackers Steal Your Data (and How to Make it Harder for Them)
 
 <p>As I&#39;m going through the passwords in this hypothetical hack scenario, I&#39;m going to check each hash against the million items in my starting list above. More than likely, that approach will crack half of the passwords with minimal effort. I won&#39;t even bother moving onto the harder half. You see, I&#39;ve got a bunch of plaintext emails and passwords now. There&#39;s an unfortunate correlation with people who have bad passwords: they have bad passwords everywhere. I&#39;m going to use a program that tests the credentials I cracked with other services. If your <a href="https://www.theguardian.com/technology/2013/nov/07/adobe-password-leak-can-check">Adobe</a> password is used for your Twitter account, I now own both of them. I can check accounts quickly, testing hundreds per second. So here&#39;s your second tip:</p>
 
-<h3 id="2-dont-reuse-passwords">2. Don&#39;t reuse passwords</h3>
+<h3>2. Don&#39;t reuse passwords</h3>
 
 <p>A lot can go wrong in information security. Given the worst, you want to ensure the damage is localized to the offending site. With unique passwords, even if one account is compromised, I don&#39;t gain any ground for other accounts. You want to make it your mission to make every action I take slow and painful. Any shortcuts you provide me can and will be used to ruin your day.  Of course, you&#39;re reading this article; this isn&#39;t news to you. You&#39;ve heard that it&#39;s bad to re-use passwords (just like you&#39;ve heard you&#39;re supposed to floss regularly). Now you&#39;ll make a pledge to yourself to do better (seriously, flossing is good for you).</p>
 
@@ -129,7 +129,7 @@ How Hackers Steal Your Data (and How to Make it Harder for Them)
 
 <p>What if the worst happens and your password is leaked in plaintext (or otherwise leaked to the world)? Then it doesn&#39;t matter how strong your passwords are; you&#39;re vulnerable from the time it&#39;s out in the open until the site resets your password. In the meantime, you can protect yourself by requiring a second factor be present to log into your account. The last big tip is:</p>
 
-<h3 id="3-use-2-factor-authentication">3. Use 2 Factor Authentication</h3>
+<h3>3. Use 2 Factor Authentication</h3>
 
 <p>While authenticating online normally only requires something you <em>know</em> (your password), <strong>2 Factor Authentication</strong> adds the requirement of something you <em>have</em>. A real-world example of this is unlocking your house. To open the door, an attacker needs both something you <em>know</em> (your address) and something you <em>have</em> (your key). Even if I know your address, I can&#39;t get into your house without having your key. 2FA adds a similar level of protection to your online accounts. In addition to your password, someone hoping to log in as you needs an extra piece of information, typically tied to a physical device.</p>
 
@@ -137,7 +137,7 @@ How Hackers Steal Your Data (and How to Make it Harder for Them)
 
 <p>The most common form of 2FA is a 6 digit code that rotates every 30 seconds, known as a <a href="https://en.wikipedia.org/wiki/Time-based_One-time_Password_Algorithm">Time-based One-time Password</a> (pictured). Your phone and the server agree on a shared secret during setup, so only a device that knows this secret will be able to generate the correct code. This is a great approach, as I need physical access to a device with your codes on it to break into that account.<sup id="fnref4"><a href="#fn4" rel="footnote">4</a></sup> This method is also great when paired with Touch ID on Apple devices. Unless you&#39;ve got my phone in your hand and my thumb on that hand, my password isn&#39;t enough to get you into my account. There are a lot of good options for 2FA apps, namely <a href="https://support.google.com/accounts/answer/1066447?hl=en&amp;co=GENIE.Platform%3DiOS&amp;oco=0">Google Authenticator</a> (more secure) and <a href="https://authy.com/">Authy</a> (more convenient, but still pretty secure).</p>
 
-<p>If you want to go the extra step (say, for your central gmail account that secures all others), you might invest in a <a href="https://smile.amazon.com/Yubico-Y-123-FIDO-U2F-Security/dp/B00NLKA0D8?sa-no-redirect=1">UTF security key</a> for ~$18. Once attached to an account it acts as a second factor, verifying that the person logging in is the one holding the physical key. Right now it has the major downside of being desktop-only (unless you have a certain Android phone), but justifies that being the absolute most secure option on the market. If you&#39;re interested in adding it to Google, there&#39;s a great walkthrough <a href="https://techsolidarity.org/resources/security_key_gmail.htm">here</a>.</p>
+<p>If you want to go the extra step (say, for your central gmail account that secures all others), you might invest in a <a href="https://smile.amazon.com/Yubico-Y-123-FIDO-U2F-Security/dp/B00NLKA0D8?sa-no-redirect=1">U2F security key</a> for ~$18. Once attached to an account it acts as a second factor, verifying that the person logging in is the one holding the physical key. Right now it has the major downside of being desktop-only (unless you have a certain Android phone), but justifies that being the absolute most secure option on the market. If you&#39;re interested in adding it to Google, there&#39;s a great walkthrough <a href="https://techsolidarity.org/resources/security_key_gmail.htm">here</a>.</p>
 
 <p>As you&#39;re looking for the 2FA solution that fits you best, remember to <strong>avoid SMS</strong>. This <a href="https://techsolidarity.org/resources/security_key_faq.htm">FAQ</a> goes into detail about the vulnerability of text-message based 2FA:</p>
 
@@ -159,21 +159,21 @@ How Hackers Steal Your Data (and How to Make it Harder for Them)
 
 <p>The short answer is <em>probably</em>. The longer answer is that nothing is guaranteed, but these tips will keep your accounts as safe as you can reasonably make them. That being said, there are a couple of easy tasks you can complete to cover non-password vectors. You&#39;ve made it this far, might as well take 3 minutes to go the distance.</p>
 
-<h2 id="extra-credit">Extra Credit</h2>
+<h2>Extra Credit</h2>
 
 <p>The hack described here (a large-scale brute forcing of hashed passwords) is a common attack vector, but it&#39;s not the only one. The single best way to keep yourself safe is <strong>constant vigilance</strong>. Be overly cautious in all things. To that end, I&#39;ve got two last bonus tips to send you off with.</p>
 
-<h3 id="4-use-https-everywhere">4. Use HTTPS, Everywhere</h3>
+<h3>4. Use HTTPS, Everywhere</h3>
 
 <p>Accessing the internet without using <code>https</code> is like shouting everything you type as you do so. If you&#39;re uncomfortable with anyone hearing your passwords, payment info, and any other sensitive information, make sure you only access sites that include <code>https://</code> at the start of their name. The &quot;s&quot; stands for &quot;secure&quot;, which means any data you send to the site is encrypted, safe from any prying eyes. Some sites redirect you by default. A lot more support it, but don&#39;t enforce it. The Electronic Frontier Foundation has a great <a href="https://www.eff.org/https-everywhere">browser extension</a> appropriately called <strong>HTTPS Everywhere</strong> that will redirect you to a secure version of a page if it&#39;s available. It&#39;s easy to install and forget about, and I recommend you do exactly that.</p>
 
-<h3 id="5-update-your-computer">5. Update Your Computer</h3>
+<h3>5. Update Your Computer</h3>
 
 <p>Annoying though they may be, operating system updates are <em>vital</em> to keeping your hardware secure. The most recent example is the <a href="https://en.wikipedia.org/wiki/WannaCry_ransomware_attack">WannaCry ransomware</a>, which used known vulnerabilities in Windows 7 to forcibly encrypt over 230,000 computers in 150 countries. These types of attacks are totally preventable, but only if you&#39;ve installed the security patch that fixed it. Apple products aren&#39;t totally safe either; they recently <a href="https://support.apple.com/en-us/HT207797">fixed</a> set a set of vulnerabilities across their operating systems (though they weren&#39;t widely exploited, if at all). Once issues are fixed, attackers have a much narrower range of what vulnerabilities exist in un-updated systems and the race begins. As long as you&#39;re up-to-date every 24 hours you <em>should</em> be safe enough. Then again, it&#39;s never too soon to download a security update.</p>
 
 <p>Listen, I get it. Your computer always prompts you when you&#39;re in the middle of something and you don&#39;t want to break the flow. Wait until the end of the day, or set your computer to apply the update overnight. Just please, <em>please</em> don&#39;t leave them for months or years. The only person you hurt is yourself.</p>
 
-<h2 id="you-can-see-clearly-now">You Can See Clearly Now</h2>
+<h2>You Can See Clearly Now</h2>
 
 <p>This whole attack might sound far-fetched. Well it turns out, large-scale password breaches happen all the time. There&#39;s a great site called <a href="https://haveibeenpwned.com/">HaveIBeenPwned</a> that maintains a list of all the services that have announced that they&#39;ve been hacked. You can check whether or not your data has ever known to have been compromised by inputting your email.<sup id="fnref6"><a href="#fn6" rel="footnote">6</a></sup> Scary, huh? Even if you&#39;ve gotten lucky and you&#39;ve never been pwned, their extensive <a href="https://haveibeenpwned.com/PwnedWebsites">list of sites</a> is concerning (to say the least).</p>
 
@@ -227,11 +227,11 @@ How Hackers Steal Your Data (and How to Make it Harder for Them)
 |
 <a href='/blog/feeds'><i class='fa fa-rss-square rss'></i></a>
 |
-<a href="/blog/2018/02/21/a-few-more-favorites">Random Post</a>
+<a href="/blog/2013/09/25/get-into-the-flow">Random Post</a>
 <i class='fa fa-random'></i>
 </p>
 </article>
-<aside>
+<aside class='sidebar'>
 <div class='top'>
 <div class='heading'>
 Published
@@ -251,6 +251,11 @@ On this day
 </p>
 </div>
 </aside>
+<script>
+  window.onload = function() {
+    $.bigfoot();
+  };
+</script>
 <script>
   var anchorForId = function (id) {
     var anchor = document.createElement("a");

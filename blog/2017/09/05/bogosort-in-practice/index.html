@@ -13,8 +13,8 @@ Bogosort in Practice - David Brownman dot com
 <meta content='https://i.imgur.com/zhqbTVt.png' property='og:image'>
 <meta content='If you actually implemented Bogosort, how bad could it be?' property='og:description'>
 <meta content='width=device-width' name='viewport'>
-<link href="../../../../../css/the-854813e9.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" defer="defer"></script><script src="../../../../../js/facts-f34b87aa.js" defer="defer"></script>
+<link href="../../../../../css/the-199d4a72.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot-number.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" defer="defer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot.min.js" defer="defer"></script><script src="../../../../../js/facts-f34b87aa.js" defer="defer"></script>
 <link href="../../../../../favicon.ico" rel="icon" type="image/ico" />
 </head>
 <body>
@@ -81,13 +81,14 @@ Bogosort in Practice
 
 <p><img src="https://i.imgur.com/Tz1cT87.png" alt="Tz1ct87" /></p>
 
-<table><thead>
-<tr>
+        <div class="table-container">
+          <table>
+            <thead><tr>
 <th>Array Length</th>
 <th>Average Number of Shuffles (5k Trials)</th>
 </tr>
-</thead><tbody>
-<tr>
+</thead>
+            <tbody><tr>
 <td>2</td>
 <td>0.97</td>
 </tr>
@@ -119,21 +120,24 @@ Bogosort in Practice
 <td>9</td>
 <td>369657.95</td>
 </tr>
-</tbody></table>
-
+</tbody>
+          </table>
+        </div>
+      
 <p>Each array length follows a remarkably similar pattern, known as a <a href="https://en.wikipedia.org/wiki/Negative_binomial_distribution">negative binomial distribution</a> (I am told), meaning the number of shuffles is quite variable. For array length 5, it takes 10^5 shuffles. but it&#39;s just as likely for it to take many more tries. This causes the (incredibly) long tail you see out to the right.</p>
 
 <p><img src="https://i.imgur.com/QPR1IQ4.png" alt="Qpr1iq4" /></p>
 
 <p>If you think those numbers are big, it&#39;s because they are. Big numbers don&#39;t mean anything without context though. To help provide that context, I modified the script to measure the actual clock-on-the-wall time you would spend sorting an array length <code>n</code>. Note that the table skips the first few values of <code>n</code>, as they were sorted too fast for Ruby to capture (which is a good thing, I guess).</p>
 
-<table><thead>
-<tr>
+        <div class="table-container">
+          <table>
+            <thead><tr>
 <th>Array Length</th>
 <th>Average time to be sorted (5 trials, seconds)</th>
 </tr>
-</thead><tbody>
-<tr>
+</thead>
+            <tbody><tr>
 <td>8</td>
 <td>0.02</td>
 </tr>
@@ -161,8 +165,10 @@ Bogosort in Practice
 <td>14</td>
 <td>Ran computer all night, didn&#39;t complete 5 trials</td>
 </tr>
-</tbody></table>
-
+</tbody>
+          </table>
+        </div>
+      
 <p>These results are... not inspiring. Each element added to the array adds roughly a factor of 10 to how long the script takes to run.<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup> And again, the precious seconds you spend sorting doesn&#39;t actually guarantee your array will end up sorted anyway. Unless you&#39;re feeling incredibly lucky, I&#39;d stick to something faster and more reliable. Maybe a nice bubble sort.</p>
 
 <p><em>Huge thanks to Evan Batzer for his time and expertise with chart creation. You can find out more about him and his work <a href="https://ebatzer.github.io/">here</a>.</em></p>
@@ -187,11 +193,11 @@ Bogosort in Practice
 |
 <a href='/blog/feeds'><i class='fa fa-rss-square rss'></i></a>
 |
-<a href="/blog/2013/07/02/the-story-of-davids-dark">Random Post</a>
+<a href="/blog/2013/07/09/if-i-were-a-recycling">Random Post</a>
 <i class='fa fa-random'></i>
 </p>
 </article>
-<aside>
+<aside class='sidebar'>
 <div class='top'>
 <div class='heading'>
 Published
@@ -211,6 +217,11 @@ On this day
 </p>
 </div>
 </aside>
+<script>
+  window.onload = function() {
+    $.bigfoot();
+  };
+</script>
 <script>
   var anchorForId = function (id) {
     var anchor = document.createElement("a");

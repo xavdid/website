@@ -13,8 +13,8 @@ Heroku CLI Plugins and You - David Brownman dot com
 <meta content='https://i.imgur.com/zhqbTVt.png' property='og:image'>
 <meta content='A blog post by David Brownman' property='og:description'>
 <meta content='width=device-width' name='viewport'>
-<link href="../../../../../css/the-854813e9.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" />
-<script src="https://code.jquery.com/jquery-2.2.4.min.js" defer="defer"></script><script src="../../../../../js/facts-f34b87aa.js" defer="defer"></script>
+<link href="../../../../../css/the-199d4a72.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot-number.min.css" rel="stylesheet" />
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" defer="defer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot.min.js" defer="defer"></script><script src="../../../../../js/facts-f34b87aa.js" defer="defer"></script>
 <link href="../../../../../favicon.ico" rel="icon" type="image/ico" />
 </head>
 <body>
@@ -71,31 +71,32 @@ Heroku CLI Plugins and You
 
 <p>If you want to follow along, I&#39;d recommend installing the cli <a href="https://toolbelt.heroku.com/">here</a>.</p>
 
-<h2 id="so-you-want-to-write-a-plugin">So You Want to Write a Plugin</h2>
+<h2>So You Want to Write a Plugin</h2>
 
 <p>The point of developing a plugin is to add functionality to the Heroku CLI. Plugins usually hit the Heroku API and have the advantage of taking the burden of auth off of your shoulders.</p>
 
 <p>As a starting point, I&#39;d recommend going through their article <a href="https://devcenter.heroku.com/articles/developing-cli-plug-ins">Developing CLI Plugins</a>. It&#39;s got a great tutorial which spins you up on the general structure of a plugin. I&#39;m aiming to provide detail to parts of that, but I won&#39;t just retype what they&#39;ve already said. So, if you feel like you&#39;ve missed stuff, bounce over there once in a while.</p>
 
-<h3 id="cli-command-structure">CLI Command Structure</h3>
+<h3>CLI Command Structure</h3>
 
 <p>Heroku commands are run with the prefix <code>heroku</code> paired with a <strong>topic</strong> and optionally, a <strong>command</strong>. Your plugin will add new commands to topics (existing or your own). Interestingly, you can overwrite default commands (such as <code>config:add</code>), though I&#39;d <strong>strongly</strong> recommend against it. Running <code>heroku help</code> gives you a brief overview of all the available topics:</p>
 <pre class="highlight plaintext"><code>% heroku help&#x000A;Usage: heroku COMMAND [--app APP] [command-specific-options]&#x000A;&#x000A;Primary help topics, type "heroku help TOPIC" for more details:&#x000A;&#x000A;  addons    #  manage add-on resources&#x000A;  apps      #  manage apps (create, destroy)&#x000A;  auth      #  authentication (login, logout)&#x000A;  config    #  manage app config vars&#x000A;  ...&#x000A;</code></pre>
 
 <p>If you&#39;re going to create a new topic, your module will need to export a <code>topic</code> object in addition to the command(s). <sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup></p>
 
-<h3 id="plugin-layout">Plugin Layout</h3>
+<h3>Plugin Layout</h3>
 
 <p>At the end of the day, your plugin&#39;s <code>main</code> file will need to export a <code>Command</code> object (or an array of them). The full set of keys you can use is <a href="https://devcenter.heroku.com/articles/developing-cli-plug-ins#all-command-options">here</a>, but there are a few you&#39;ll most likely need:</p>
 
-<table><thead>
-<tr>
+        <div class="table-container">
+          <table>
+            <thead><tr>
 <th>Key</th>
 <th>Type</th>
 <th>Usage</th>
 </tr>
-</thead><tbody>
-<tr>
+</thead>
+            <tbody><tr>
 <td>topic</td>
 <td>string</td>
 <td>CLI category your command(s) fall under (eg. <strong>config</strong>:pull)</td>
@@ -130,9 +131,11 @@ Heroku CLI Plugins and You
 <td>function</td>
 <td>the main function for your command</td>
 </tr>
-</tbody></table>
-
-<h3 id="the-function-itself">The Function Itself</h3>
+</tbody>
+          </table>
+        </div>
+      
+<h3>The Function Itself</h3>
 
 <p>You pass <code>Command.run</code> a function which is the actual functionality of your command. This function is passed just one argument, <code>context</code>.</p>
 <pre class="highlight javascript"><code><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>&#x000A;  <span class="na">topic</span><span class="p">:</span> <span class="s1">'do'</span><span class="p">,</span>&#x000A;  <span class="na">command</span><span class="p">:</span> <span class="s1">'things'</span><span class="p">,</span>&#x000A;  <span class="na">description</span><span class="p">:</span> <span class="s1">'does things'</span><span class="p">,</span>&#x000A;  <span class="na">needsApp</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>&#x000A;  <span class="na">flags</span><span class="p">:</span> <span class="p">[{</span>&#x000A;    <span class="na">name</span><span class="p">:</span> <span class="s1">'file'</span><span class="p">,</span>&#x000A;    <span class="na">char</span><span class="p">:</span> <span class="s1">'f'</span><span class="p">,</span>&#x000A;    <span class="na">hasValue</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>&#x000A;    <span class="na">description</span><span class="p">:</span> <span class="s1">'specify target filename'</span>&#x000A;  <span class="p">}],</span>&#x000A;  <span class="na">run</span><span class="p">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">context</span><span class="p">)</span> <span class="p">{</span>&#x000A;    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">context</span><span class="p">)</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">}</span>&#x000A;</code></pre>
@@ -147,7 +150,7 @@ Heroku CLI Plugins and You
 
 <p><code>heroku</code> is an authenticated instance of their <a href="https://github.com/heroku/node-heroku-client#usage">api client</a>. HTTP calls created this way will return a promise. Make sure to return your promise chain at the end of your function so whatever is running the command (either the CLI or tests) handles it correctly.</p>
 
-<h3 id="should-you-use-generators">Should You Use Generators?</h3>
+<h3>Should You Use Generators?</h3>
 
 <p>That&#39;s a good question! The docs <a href="https://devcenter.heroku.com/articles/developing-cli-plug-ins#using-the-heroku-api">recommend</a> doing so for code clarity, and I tend to agree.  Instead of having a chain of promises your asynchronous code looks remarkably synchronous.</p>
 
@@ -165,20 +168,20 @@ Heroku CLI Plugins and You
 
 <p>The <code>co.wrap()</code> function takes a generator and turns it into a regular function that returns a promise, perfect for our previous code that expects a regular promise-returning function anyway.</p>
 
-<h3 id="surfacing-errors">Surfacing Errors</h3>
+<h3>Surfacing Errors</h3>
 
 <p>One of the big gotchas for using <code>co</code> is that errors get eaten silently. Luckily, <code>yield</code> statements work great with your standard javascript <code>try/catch</code> block!</p>
 <pre class="highlight javascript"><code><span class="nx">cli</span><span class="p">.</span><span class="nx">command</span><span class="p">(</span><span class="nx">co</span><span class="p">.</span><span class="nx">wrap</span><span class="p">(</span><span class="kd">function</span><span class="o">*</span> <span class="p">(</span><span class="nx">context</span><span class="p">,</span> <span class="nx">heroku</span><span class="p">)</span> <span class="p">{</span>&#x000A;  <span class="k">try</span> <span class="p">{</span>&#x000A;    <span class="kd">let</span> <span class="nx">data</span> <span class="o">=</span> <span class="k">yield</span> <span class="nx">heroku</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'/&lt;AUTH_REQUIRED_ROUTE&gt;'</span><span class="p">)</span>&#x000A;    <span class="nx">cli</span><span class="p">.</span><span class="nx">debug</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span>&#x000A;  <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>&#x000A;    <span class="nx">cli</span><span class="p">.</span><span class="nx">exit</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nx">err</span><span class="p">)</span>&#x000A;  <span class="p">}</span>&#x000A;<span class="p">}))</span>&#x000A;</code></pre>
 
 <p>Did you catch that last bit? The <code>cli</code> package provides a helpful <code>exit()</code> method for when things go sour. It takes an error code<sup id="fnref3"><a href="#fn3" rel="footnote">3</a></sup> and a description of the issue. This approach to errors has the clear advantage of quitting any execution in addition to printing an error message to the user.</p>
 
-<h3 id="shipping-your-plugin">Shipping Your Plugin</h3>
+<h3>Shipping Your Plugin</h3>
 
 <p>They&#39;ve got pretty concise instructions for that <a href="https://devcenter.heroku.com/articles/developing-cli-plug-ins#releasing-plugins">here</a>.</p>
 
 <p>Your plugin doesn&#39;t have to be named <code>heroku-NAME</code>, but it will help people find it! In either case, any npm package can be installed with <code>heroku plugins:install NAME</code> (though that command will fail if the installed plugin isn&#39;t exporting a well-formatted Heroku plugin).</p>
 
-<h2 id="tl-dr">tl;dr</h2>
+<h2>tl;dr</h2>
 
 <ul>
 <li><a href="https://devcenter.heroku.com/articles/developing-cli-plug-ins">This article</a> is wildly helpful</li>
@@ -221,11 +224,11 @@ Heroku CLI Plugins and You
 |
 <a href='/blog/feeds'><i class='fa fa-rss-square rss'></i></a>
 |
-<a href="/blog/2016/08/19/quidditch-by-the-numbers">Random Post</a>
+<a href="/blog/2013/07/02/the-story-of-davids-dark">Random Post</a>
 <i class='fa fa-random'></i>
 </p>
 </article>
-<aside>
+<aside class='sidebar'>
 <div class='top'>
 <div class='heading'>
 Published
@@ -245,6 +248,11 @@ On this day
 </p>
 </div>
 </aside>
+<script>
+  window.onload = function() {
+    $.bigfoot();
+  };
+</script>
 <script>
   var anchorForId = function (id) {
     var anchor = document.createElement("a");
