@@ -44,7 +44,7 @@ Though I love my remote job dearly, without a doubt the biggest downside is the 
 <br />
 Winner: **Secret Hitler**
 
-In college, I lived in an amazing [house](https://www.google.com/search?ei=KXZYWoj4Ls_OjwOxw4LoAQ&q=the%20burrow%20ann%20arbor&npsic=0&rflfq=1&rlha=0&rllag=42292958,-83707167,3202&tbm=lcl&rldimm=9798493477036629649) with 7 other friends. Our social nature lead to us playing a lot of [The Resistance](https://en.wikipedia.org/wiki/The_Resistance_(game)), a simple game that leans heavily on being able to deceive your close friends. For years I considered it my favorite game- it was fast to play, high tension, and lead to really memorable endings. It was my favorite right up until I had the change to play *Secret Hitler*.
+In college, I lived in an amazing [house](https://www.google.com/search?ei=KXZYWoj4Ls_OjwOxw4LoAQ&q=the%20burrow%20ann%20arbor&npsic=0&rflfq=1&rlha=0&rllag=42292958,-83707167,3202&tbm=lcl&rldimm=9798493477036629649) with 7 other friends. Our social nature lead to us playing a lot of [The Resistance](https://en.wikipedia.org/wiki/The_Resistance_(game)), a simple game that leans heavily on being able to deceive your close friends. For years I considered it my favorite game- it was fast to play, high tension, and lead to really memorable endings. It was my favorite right up until I had the chance to play *Secret Hitler*.
 
 The game pits two teams against each other: the liberals and the fascists (the latter of whom have all of the info). They take turns nominating a government, which in turn lays a tile on the board that grants a point to one of the two teams. There's a little luck involved with which tiles are drawn (the deck is heavily stacked for the fascists), but members of both teams can pass legislation (tiles) belonging to each side of government. This uncertainty paired with a good bit of bluffing makes for a very compelling 45 minutes of gameplay.
 
@@ -83,7 +83,7 @@ Runner-up: **Else Heart.break()**
 
 *Else Heart.break()* takes some time to get rolling, but once it does it's a pretty cool experience. The story is largely forgettable, but the standout feature is that there's an entire programming language embedded in the game and every object is "hackable". While a door's default behavior is to take you to what's on the other side, they can be modified to take you anywhere if you know the memory address.
 
-The biggest thing holding this back is the lack of a compelling story (it gets neat towards the end, but it takes ages r get there) and the unused potential. For such a cool idea, the practical uses of the hacking is fairly limited. Maybe that's for accessibility sake (non-programmers can still play this), but it limits what this game could have achieved.
+The biggest thing holding this back is the lack of a compelling story (it gets neat towards the end, but it takes ages to get there) and the unused potential. For such a cool idea, the practical uses of the hacking is fairly limited. Maybe that's for accessibility sake (non-programmers can still play this), but it limits what this game could have achieved.
 
 <br />
 Honorable mention: **Recettear, an Item Shop's Tale** for cute writing and an original concept and **Little Big Planet** for some truly stylized levels and a "whoa dude" moment on the [large rotating wheel](https://youtu.be/aNRPH3-h6yQ?t=4m24s).
@@ -95,7 +95,7 @@ This section is different from the others in two important ways: it's harder to 
 <br />
 Winner: **Pokémon: Sun**
 
-I've been catching _most of 'em_ since elementary school. I haven't played every single [generation](https://en.wikipedia.org/wiki/Pok%C3%A9mon_(video_game_series)#Generations) (I missed the past few), but I'm glad I got back into the series in time for *[Pokémon: Sun](https://www.pokemon-sunmoon.com/en-us/)*. It was the first game I played on my new 3DS (I'm very [patient](https://www.reddit.com/r/patientgamers/)) and it made a statement right away that it was *different*. Most notably, it removed HMs, the unforgettable moves your Pokémon had to know to explore new areas. No longer do I have to base my team on where I'm going to explore. That's right, I get 6 Pokémon all ready for battle. They also tweaked battle experience distribution it so everyone in your party gets some, meaning no one Pokémon falls too far behind; a welcome boon. The graphics took a big step up and the world felt dynamic and explorable. Not being locked onto a grid helped with that, as did the multitude of biomes and Pokémon available to find.
+I've been catching _most of 'em_ since elementary school. I haven't played every single [generation](https://en.wikipedia.org/wiki/Pok%C3%A9mon_(video_game_series)#Generations) (I missed the past few), but I'm glad I got back into the series in time for *[Pokémon: Sun](https://www.pokemon-sunmoon.com/en-us/)*. It was the first game I played on my new 3DS (I'm very [patient](https://www.reddit.com/r/patientgamers/)) and it made a statement right away that it was *different*. Most notably, it removed HMs, the unforgettable moves your Pokémon had to know to explore new areas. No longer do I have to base my team on where I'm going to explore. That's right, I get 6 Pokémon, all ready for battle. They also tweaked battle experience distribution it so everyone in your party gets some, meaning no one Pokémon falls too far behind; a welcome boon. The graphics took a big step up and the world felt dynamic and explorable. Not being locked onto a grid helped with that, as did the multitude of biomes and Pokémon available to find.
 
 Improvements aside, the game wasn't perfect. For a story-focused outing, the story is on the weaker side. It's a little hokey and the talking Pokédex gets old quickly. The cities are fairly forgettable. The inconsistent nature of the island trials (the replacement for the gym system) was frustrating. The battle trials were cool, but the "wander around and pick up item" trials were not.
 
@@ -157,7 +157,7 @@ Runner-up: **The Orville S1**
 If you had told me the network sci-fi series I would be most excited about when the fall rolled around wasn't the triumphant return of Star Trek (to be honest, I haven't started it yet), but the Seth MacFarlane semi-parody? I don't even like him that much. Well, spoiler, past-me. *The Orville* hits a really good balance between seriousness and fun. It's got a lot of the same campy humor as TNG (unsurprising, given MacFarlane's history), but with some great plot lines. It took a couple of episodes to get rolling and not every episode was the best, but there were absolutely some standouts. I enjoyed the serial format, where each episode was mostly standalone. I'm excited to see where they take the show when it returns in the fall!
 
 <br />
-Honorable mention to **Powerless**, for being a breath of fresh air in the superhero genre. Great to see the world from "our" side. Like many loved shows, it was canceled.
+Honorable mention to **Powerless**, for being a breath of fresh air in the superhero genre. Great to see the world from "our" side. Like many beloved shows, it was canceled.
 
 ### Ended
 
@@ -207,7 +207,7 @@ I got the expansion for *7 Wonders: Duel* which, impossibly, improves on a reall
 
 ## That's all!
 
-Putting together this article every year has encouraged me to track everything I read/watch/play more dutifully, a hobby I've put an embarrassing amount of time into. [Airtable](https://airtable.com/invite/r/7A1YRa26) is key for this, and I'll be detailing my use of in an upcoming post.
+Putting together this article every year has encouraged me to track everything I read/watch/play more dutifully, a hobby I've put an embarrassing amount of time into. [Airtable](https://airtable.com/invite/r/7A1YRa26) is key for this, and I'll be detailing my use of it in an upcoming post.
 
 Until then, enjoy what you watch and let me know if you've got any recommendations!
 
