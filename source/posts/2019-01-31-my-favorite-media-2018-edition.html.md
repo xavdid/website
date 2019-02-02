@@ -10,13 +10,17 @@ og_desc: A look back at the best and brightest media of 2018
 
 Hello my friends! Here we are again for my [third](/blog/2017/02/11/a-few-of-my-favorite-things/) [annual](/blog/2018/02/21/a-few-more-favorites/) celebration of my favorite media.
 
-Like most years, 2018 was a year of change. I moved twice (one of which was across the country) with my wonderful partner, made new friends, and worked on exciting new projects at a job I love. Living together has brought changes to the way I consume media: fewer old tv shows (requires a higher level of commitment) and more games played on the TV (either via a console or my Steam Link). Current events have also left their mark. We started _The Americans_ once we were settled in DC [FOOT- It was a toss-up between *The Americans*, *Veep*, and *House of Cards*] and gearing up to watch a tense show about Russian agents infiltrating American government strikes a little close to home these days. It's also my first year without a board game section, since that's a hard habit to keep up with while moving a lot and working remotely. What hasn't changed though is how much awesome media there is out there. It's my pleasure to provide a list of what made the biggest impact on me this calendar year.
+Like most years, 2018 was a year of change. I moved twice (once across the country) with my wonderful partner. Living together has brought changes to the way I consume media: there’s a lot less binging old TV shows on my own, and a lot more videogames played on the TV, so my girlfriend can make helpful comments.
 
-If it's your first time, here's the lowdown. This is a list of the best media I experienced for the first time this year. It might not have released this year, but it's new to me. It also might not be the objectively best, but it's what I enjoyed the most. You might have a different opinion and that's great; you can get your own list.
+Current events have also left their mark. We started _The Americans_ once we were settled in DC, [FOOT- It was a toss-up between *The Americans*, *Veep*, and *House of Cards*] and gearing up to watch a tense show about Russian agents infiltrating American government strikes a little close to home these days. This is also my first “favorites” post without a board game section, since they are a hard habit to keep up while moving a lot and working remotely.
+
+What hasn't changed is how much awesome media there is out there. It's my pleasure to produce a list of what made the biggest impact on me this calendar year.
+
+If it's your first time, here's the lowdown. This is a list of the best media I experienced for the first time this year. It might not have been released this year, but it's new to me. It also might not be the objectively best, but it's what I enjoyed the most. You might have a different opinion, and that's great; you can get your own list. Each section will begin with a link to the [Airtable](https://airtable.com/invite/r/7A1YRa26) that I used to track my consumption of that media type. Each table has slightly different columns, but they all use a unified [rating system](/blog/2018/06/05/on-the-rating-of-media/) out of 4 stars for consistency's sake. Check those out if you want to see blurb reviews and everything that didn't make the cut.
 
 I'm known for many things but brevity in writing is not one of them. If you're just curious about my picks, I won't hold it against you. You can [jump to the results](#just-the-list).
 
-For those of you who are still reading, I appreciate it. let's get down to it!
+For those of you who are still reading, let's get down to it!
 
 READMORE
 
@@ -29,51 +33,53 @@ READMORE
 
 ## Videogames
 
-By my count, I played 46 games this year across all platforms. Though I've got a 3DS, I play it fairly sparingly and when I do, a hilarious amount of my time was spent playing _Fire Emblem: Awakening_. It had a lot going for it, but all of my picks were experienced on an iPad. Past that, major changes in behavior were mostly driven by getting a PS4 at the end of 2017. My Playstation [stats page](https://www.playstation.com/en-us/campaigns/2018/wrap-up/?PXP=c63fa5c6ef12195eae2f5a2c302ada74ca914d2271e2bc3ac5aec3082475489f ) tells me I played for just around 500 hours, a quarter of which was on the Kingdom Hearts 1.5 + 2.5 disc. Those were old news though, what's new and good?
+By my count, I played [46 games this year](https://airtable.com/shrtjeL4g3gP53xI2) over a total of ~750 hours. Major changes in behavior were mostly driven by getting a PS4 at the end of 2017, which lead to a lot of time with the Kingdom Hearts 1.5 + 2.5 disc. Those were old news though, what's new and good?
 
-### Home
+### Desktop/Console
 
 <br />
 Winner(s): **God of War** and **Horizon: Zero Dawn**
 
-When I took a step back and looked at my full list, there were really only two choices for my games of the year: _God of War_ and _Horizon: Zero Dawn_. That may feel obvious, as they were both the most widely lauded PS4 exclusives to come out the past couple of years (and rightfully so). I spent a lot of time thinking about which I would pick as my #1 and have chosen to take the cowardly route of "neither". They're both stupendous games in their own right, but each excels in certain areas where the other falters. Playing both of these within a few months of each other [FOOT- HZD in May, GoW in July] allowed me to compile a wordy, nerdy venn-diagram of what sets GoW and HZD apart from each other (and from every other game I played this year).
+When I took a step back and looked at my full list, there were really only two choices for my games of the year: _God of War_ and _Horizon: Zero Dawn_. That may feel obvious, as they were both the most widely lauded PS4 exclusives to come out the past couple of years (and rightfully so). I spent a lot of time thinking about which I would pick as my #1 and have chosen to take the cowardly route of "neither". They're both stupendous games in their own right, but each excels in certain areas where the other falters. Playing both of these within a few months of each other [FOOT- HZD in May, GoW in July] allowed me to compile a wordy, nerdy venn diagram of what sets GoW and HZD apart from each other (and from every other game I played this year).
 
 **The World**
 
-Before these, I hadn't played many (any?) modern open-world games, so I was doubly stunned by HZD's setting; once because it was so beautiful and again because I'd never seen anything with its breadth or detail before. Each region felt perfectly natural; I wasn't in a manufactured world, I was in a real place where there happened to be a videogame taking place. Vertical space is used very well-- there's a lot of topography and you can climb most of it. To that end, the mechanic of paint/discoloration on climbable elements didn't break immersion, which I was impressed by. There's a set of collectibles that involves summiting high points around the map which was one of my favorite ways to spend time in the game. This is one of the only worlds where I've just stopped in awe to slowly pan the camera and admire the scenery.
+Before these, I hadn't played many (any?) modern open-world games, so I was doubly stunned by HZD's setting; once because it was so beautiful, and again because I'd never seen anything with its breadth or detail before. Each region felt perfectly natural: I wasn't in a manufactured world; I was in a real place where there happened to be a videogame taking place. Vertical space is used very well-- there's a lot of topography and you can climb most of it. To that end, the mechanic of paint/discoloration on climbable elements didn't break immersion, which I was impressed by. There's a set of collectibles that involves summiting high points around the map which was one of my favorite ways to spend time in the game. This is one of the only worlds where I've just stopped in awe to slowly pan the camera and admire the scenery.
 
 SCENERY PICTURES
 
 Each of those pictures is a screenshot taken live with the PS4's capture tool.
 
-_God of War_ is also ostensibly open-world, but it's experienced very differently. While in HZD I often felt compelled to wander and explore, GoW's world felt like a series of pretty rooms connected by pretty hallways. It's a gorgeous setting, but it doesn't feel alive in the same way _Horizon_'s does. Pair that with a map that doesn't really help you navigate and the result is me mostly sticking to the linear story quests. There are some areas to explore off the beaten path, but they feel inorganic: pretty dead ends that the devs designed rather than a world I happen to find myself in. All that is to say, GoW is graphically triumphant game despite its detail being allocated to the characters rather than the expanse of the world.
+_God of War_ is also ostensibly open-world, but the player experiences it very differently. While in HZD I often felt compelled to wander and explore, GoW's world felt like a series of pretty rooms connected by pretty hallways. It's a gorgeous setting, but it doesn't feel alive in the same way _Horizon_'s does. Pair that with a map that doesn't really help the player navigate and the result is me mostly sticking to the linear story quests. There are some areas to explore off the beaten path, but they feel inorganic: picturesque dead ends rather than a world I happen to find myself in. All that said, GoW is graphically triumphant game, despite its detail being allocated to the characters rather than the expanse of the world.
 
 **The Story**
 
-Each game sets out with very different storytelling goals. _God of War_ tells a small story. At its core, it is a father and son honoring the final wishes of the most important woman in their lives. Though there are gods and obstacles along the way, it stays true to that goal. There weren't an abundance of side characters, but the few you encounter were portrayed with movie-level acting. The voice, the motion capture, and the delivery are all straight out of Hollywood. Cinematographically, the game is precise; the whole game from opening title to credits rolling is a single unbroken shot. It's impossible to understate the talent Santa Monica Studio was able to capture here. Every interaction, no matter how small, serves the detailed characterization this game perfected. If you've already played the game (or don't care about spoilers), a friend goes into much more detail in [their essay](https://memorylinkgames.wordpress.com/2018/07/12/god-of-war-dialogue/) about it. In contrast to the tightness of the main narrative, the side quests (and in fact, the story objectives themselves) are largely mundane fetch quests. They make sense in context, but going to fetch certain gems or magical items "for uhh... reasons" felt a little underwhelming.
+Each game sets out with very different storytelling goals. _God of War_ tells a small story. At its core, it is a father and son honoring the final wishes of the most important woman in their lives. Though there are gods and obstacles along the way, it stays true to that goal. Cinematographically, the game is precise: the whole game from opening title to credits rolling is a single unbroken shot. In contrast to the tightness of the main narrative, the side quests (and in fact, the story objectives themselves) are largely mundane fetch quests. They make sense in context, but going to fetch certain gems or magical items "for uhh... reasons" felt a little underwhelming.
 
-_Horizon_ is grander in scale: it tells of the world and how we got here. You travel the world, unravel a mystery, and turn the tide in a war between local tribes. There are scores of characters littered throughout the map, each with individual backstories, prejudices, and motivations. Most provide side quests, which had a surprising amount of variation. Though there was a lot of "go to place x and kill the enemies", each had compelling narrative to drive it and typically, some dialogue that affected how the mission played out. I was surprised at how real each minor villager felt. Each was compelling in their own way and I was motivated to help them all [FOOT- unless they needed help with a bunch of flying enemies. Then they were out of luck in the hero department]. There were definitely some cheese moments, but I really enjoyed the scale of the world-building.
+There weren't an abundance of side characters, but the few you encounter were portrayed with movie-level acting. The voice, the motion capture, and the delivery are all straight out of Hollywood. It's impossible to understate the nuance Santa Monica Studio was able to capture here. Every interaction, no matter how small, serves the detailed characterization this game perfectly. If you've already played the game (or don't care about spoilers), my friend Lauren goes into much more detail in [their essay](https://memorylinkgames.wordpress.com/2018/07/12/god-of-war-dialogue/) about it.
 
-Though they took different paths to get there, each game triumphs in its individual style. Neither is definitely better, but GoW is more in line with what society considers "an award winning drama". Both can safely consider narrative a strong point.
+_Horizon: Zero Dawn_ is grander in scale: it tells of the whole world and how we got here. You travel the world, unravel a mystery, and turn the tide in a war to save the world. There are scores of characters littered throughout the map, each with individual backstories, prejudices, and motivations. Most provide side quests, which had a surprising amount of variation. Though there was a lot of "go to this place and kill the enemies", each had compelling narrative to drive it and typically, some dialogue that affected how the mission played out. I was surprised at how real each minor villager felt. Each was compelling in their own way and I was motivated to help them all [FOOT- unless they needed help with a bunch of flying enemies. Then they were out of luck in the hero department]. There were definitely some cheesy moments, but I really enjoyed the scale of the world-building.
+
+Though they took different paths to get there, each game triumphs in its individual style. Neither is definitely better, but GoW is more in line with what society considers "an award winning drama." Both can safely consider narrative a strong suit.
 
 **Combat**
 
-Each game has a lot of fighting and each does certain things really well.
+Each game has a lot of fighting and, as with story, each does certain things really well.
 
 In GoW, the weapon of choice is the brand new Leviathan Axe. Visually, it's a fairly [plain weapon](https://i.imgur.com/Z7sSj3L.png), albeit infused with ice energy. In motion, it feels better than anything else I've ever "held". Santa Monica Studios put a lot of work into making the axe feel powerful and they detail it in this [great video](https://www.youtube.com/watch?v=zpr-EE2In1M). It has a supremely satisfying heft and swing to it. My absolute favorite part of using it is the recall ability. Once thrown (into an enemy, puzzle element, or nearby lake), you can call it back your hand with a _very_ satisfying "zoom" followed by a "thunk".
 
-The enemies you spend your days cleaving are mostly variations of soldier, werewolf, elf, troll, and rock monster. They're cool the first few times you see them, but get repetitive over the course of the game. The combat mechanics themselves are great though. Combos feel good and the skill tree(s) give access to cooler attacks as the game progresses. You feel powerful throughout but are never far from death, which keeps you on your toes (in a good way). There's a lot of depth to which attacks are the most effective and it definitely rewards players who excel at it; there's a very high skill cap.
+The enemies you spend your days cleaving are mostly variations of soldier, werewolf, elf, troll, and rock monster. They're cool the first few times you see them, but get repetitive over the course of the game. The combat mechanics themselves are great though. Combos feel good and the skill trees give access to cooler attacks as the game progresses. You feel powerful throughout but are never far from death, which keeps you on your toes (in a good way). There's a lot of depth to which attacks are the most effective and it definitely rewards players who excel at it; there's a very high skill cap.
 
-Horizon really shines in its enemies. There are 22 species of robot in the base game and they each have their own personality, fighting style, and weaknesses. They're all found naturally in the world, so it's fun to see something that ripped you apart earlier grazing peacefully in the distance. They each react to threats differently and some species are more observant than others. They most tend to travel in herds and different species travel together symbolically. For example, extra-vigilant robots will guard a herd of grazers in exchange for food, a level of detail I was impressed by. I also loved the scale of the bigger monsters- gazing up at some of the bigger offerings really makes you feel like lunch.
+Horizon really shines in its enemies. There are 22 species of robot in the base game and they each have their own personality, fighting style, and weaknesses. They're all found naturally in the world, so it's fun to see something that ripped you apart earlier grazing peacefully in the distance. They each react to threats differently and some species are more observant than others. They mostly travel in herds and different species travel together symbiotically. For example, extra-vigilant robots will guard a herd of grazers in exchange for food, a level of detail I was impressed by. I also loved the scale of the bigger monsters- gazing up at some of the bigger offerings really makes you feel like lunch.
 
-As for weapons, there are a number of options. You always have access to your melee spear and can compliment it with a few versions of slingshot, bow, and net. This sounds like a cool customization in theory, but in practice, I found one bow I liked, put all my good upgrades on it, and stuck with it. Combat itself lacked the depth GoW had, but made up for it in excitement/terror. You're out in the field with wild animals and they won't think twice about ripping you to shreds. You've got tools to fight them, but it's up to you to use those tools effectively. This leads to a lot of organic moments of panicked running, rolling, and shooting that were trilling every time. Even in the late game when I had maxed out skill trees and weapon upgrades, I never felt like I was the most dangerous thing around. I liked that, because it made the fauna feel that much more realistic; you maintain a healthy respect for everything around you. There are also some optional stealth sections where you can kill bandits. This provides welcome variation to otherwise enjoyable monster combat.
+As for weapons, there are a number of options. You always have access to your melee spear and can complement it with a few versions of slingshot, bow, and net. This sounds like cool customization in theory, but in practice, I found one bow I liked, put all my good upgrades on it, and stuck with it. Combat itself lacked the depth GoW had, but made up for it in excitement/terror. You're out in the field with wild animals and they won't think twice about ripping you to shreds. You've got tools to fight them, but it's up to you to use those tools effectively. This leads to a lot of organic moments of panicked running, rolling, and shooting that were thrilling every time. Even in the late game, when I had maxed out skill trees and weapon upgrades, I never felt like I was the most dangerous thing around. I liked that. It made the fauna feel that much more realistic and forced you to maintain a healthy respect for everything around you. There were also some optional stealth sections where you can kill bandits. This provided welcome variation to otherwise enjoyable monster combat.
 
 A now, a rapid-fire list of things that needed improving:
 * Economics in HZD are pretty meaningless for most of the game. I bought the 3 weapons I wanted and never bought anything else expensive again. There are also a few versions of each, but you have access to the best pretty early so the rest don't matter.
-* Flying enemies in HZD, while deferrable, are huge pains in the butt always
+* Flying enemies in HZD, while defeatable, are huge pains in the butt always
 * GoW has some cool bonus areas, but they feel a little tacked on. I'm glad they're there and they provide good end-game challenge, but they were clearly added to flesh out the realm-hopping
 * I appreciated GoW not doing any hand-holding with regards to its collectibles (Odin's ravens) but the thought of wandering aimlessly looking for them made me want to cry
-* Neither game really had bosses, they just had strong versions of regular monsters. This is especially notable for GoW, which comes from a series previously know for its over-the-top fights. That said, its done a lot of work to distance itself from the original trilogy, so this makes a little sense. It doesn't make up for the lack of bosses, though.
+* Neither game really had bosses, they just had strong versions of regular monsters. This is especially notable for GoW, which comes from a series previously know for its over-the-top fights. That said, it's done a lot of work to distance itself from the original trilogy, so this makes a little sense. It doesn't make up for the lack of bosses, though.
 
 Despite their flaws, these were both phenomenal games. They're each well worth your time.
 
@@ -94,6 +100,9 @@ Honorable mentions to:
 
 ### Mobile
 
+Though I've got a 3DS, I play it fairly sparingly and when I do, a hilarious amount of my time was spent playing _Fire Emblem: Awakening_. It had a lot going for it, but all of my picks were experienced on an iPad.
+
+<br />
 Winner: **Gorogoa**:
 
 _Gorogoa_ is a rare combination of art, beauty, and complexity. I've never played anything quite like it. It's based entirely around 4 panels that can be moved between corners. It plays with perspective really well, where moving items in front of one another causes them to interact in inventive ways. I've taken three tries at describing it more specifically here and failed, so I'll let the trailer speak for itself:
@@ -125,7 +134,7 @@ Honorable Mention to:
 
 ## Movies
 
-I saw 74 movies for the first time this year; 39 at home and 35 in the theater. Thanks, ~~Moviepass~~ AMC A-List! [FOOT- I saw 123 total!]
+I saw [74 movies](https://airtable.com/shrzSlNeUQtkN9LPZ) for the first time this year; 39 at home and 35 in the theater. Thanks, ~~Moviepass~~ AMC A-List! [FOOT- I saw 123 total!]
 
 <br />
 Winner(s): **3 Billboards Outside Ebbing Missouri** and **Coco**
@@ -154,7 +163,7 @@ Dishonorable Mention to:
 
 ## Television
 
-I mostly watched new shows this year (outside of _Breaking Bad_, which you've alreayd heard is pretty good), so all I've got is newly aired excellence.
+All told, I finished [25 seasons of TV](https://airtable.com/shryat9XhhhnljGy2) this year. That also includes live shows that started in 2017, so it's a little misleading. I mostly watched new shows this year (outside of _Breaking Bad_, which you've already heard is good), so all I've got is newly aired excellence.
 
 <br />
 Winner: **Barry**
@@ -178,6 +187,9 @@ Honorable mentions to:
 
 ## Books
 
+This year, I read [9 books](https://airtable.com/shruxgGniiL33dyAN). Definitely fewer than I would like, so I've thought about changes in 2019 I can make to get those numbers up. Before we get to that though, let's look at the best things I read this year.
+
+<br />
 Winner: **The Lies of Locke Lamora**
 
 It's no secret - I'm a sucker for heist movies. Scott Lynch's _The Lies of Locke Lamora_ perfects a tried-and-true formula. An ensemble cast, costumes, intrigue, villainous enforcers, twists, and betrayal come together in a supremely satisfying package. Lynch does a great job fleshing out his cast through flashback scenes. He also builds an entire world more naturally than most writers. The gang's plan is well thought out, daring, and believable. My biggest complaint is the total lack of any non-male characters. There are some mentioned and it seems like they'll play a larger role in later books (this will eventually be the first in a 7 book series, though as of time of writing, only the first 3 have been published [FOOT- You would think I'd have learned my lesson to only start long-running fantasy series once the final book has been announced, but here we are again]) (and I've only read the first). That said, please don't let that stop you from picking this up. I'm already late to the party (it was originally published in 2006), but it's never too late to join the fun.
@@ -222,3 +234,5 @@ Dishonorable mention to:
 And there it is. Thanks for reading this far! Inexplicably, putting this list together and sharing it with you all is a highlight of my year. In the coming year, I plan to write about how I collect this data (hint, a _whole_ lot of Zapier and [Airtable](https://airtable.com/invite/r/7A1YRa26)), so stick around if you feel like you might find that interesting.
 
 Until then.
+
+
