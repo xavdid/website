@@ -3,7 +3,7 @@ title: My Favorite Media (2018 Edition)
 fact: 'A hydrogen bomb known as the Tybee Bomb is lost by the US Air Force off the coast of Savannah, Georgia, never to be recovered.'
 fact_year: 1958
 tags: lookback, books, movies, television, videogames, Airtable
-og_img: 'https://i.imgur.com/A0r1KlG.jpg'
+og_img: 'https://i.imgur.com/c7HRtXN.jpg'
 og_desc: A look back at the best and brightest media of 2018
 ---
 
