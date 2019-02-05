@@ -99,7 +99,7 @@ Despite their flaws, these were both phenomenal games. They're each well worth y
 
 Having played a number of [Zachtronics](http://www.zachtronics.com) games, there's a set of tropes that I expect: light story, a thematic solitaire game, and algorithmic puzzles. [_Opus Magnum_](http://www.zachtronics.com/opus-magnum/) acknowledges them, refines them, and excels in every regard. It is the steampunk realization of a visual programming concept that gained popularity with _SpaceChem_. Though the puzzles are the main focus, there's a story that engages without distracting. The music and UI complement the game's themes of science and magic well. More than the code-based games, watching levers and molecules rotate and move is mesmerizing (see below).
 
-GIF
+![](https://i.imgur.com/wUppS60.gif)
 
 While past Zachtronics games paired increasingly complex puzzles with fixed amount of space, OM allows any valid solution, no matter how inefficient. I really like this choose-your-own difficulty approach. It has something for players of all skill levels without excluding anyone; each player can experience exactly as much challenge as they want.
 
