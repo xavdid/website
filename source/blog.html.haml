@@ -14,7 +14,8 @@ pageable: true
               = article.date.strftime('%b %e %Y')
           %ul
             - article.tags.each do |tag|
-              %li= tag
+              %li
+                = link_to(tag, "/blog/tag/#{tag}")
         .post
           %h1.tumblr_title
             = link_to(article.title, article.url)

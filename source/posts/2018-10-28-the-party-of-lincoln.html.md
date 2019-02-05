@@ -17,9 +17,8 @@ Here in the present day, I was watching the Cruz // O’Rourke debate the other 
 
 Listen to the quote here:
 
-<div class="embeded-iframe">
-  <iframe  width="560" height="315" src="https://www.youtube-nocookie.com/embed/efTm9eZ1qvM?rel=0&amp;showinfo=0&amp;start=848" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="video-desktop"></iframe>
-  <iframe  width="325" height="315" src="https://www.youtube-nocookie.com/embed/efTm9eZ1qvM?rel=0&amp;showinfo=0&amp;start=848" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="video-mobile"></iframe>
+<div class="video-responsive">
+  <iframe width="800" height="434" src="https://www.youtube-nocookie.com/embed/efTm9eZ1qvM?rel=0&amp;showinfo=0&amp;start=848" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 It struck me as odd that President Lincoln, a man most famous for _literally abolishing slavery_, would have been a part of a party that today prides itself in being "tough on crime" and incarcerating people of color at the highest rate in the world. Time for a fact check. To start, I looked up the [voting records](https://en.wikipedia.org/wiki/Civil_Rights_Act_of_1964#Vote_totals) from 1964.

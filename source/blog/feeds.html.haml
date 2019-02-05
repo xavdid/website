@@ -13,9 +13,11 @@ header: blog
 
     %ul
       %li
-        = link_to('JSON', '/blog/feed.json')
-      %li
         = link_to('XML', '/blog/feed.xml')
-
+        \- great for RSS readers or
+        = link_to('Zapier', "https://zapier.com/apps/rss/integrations")
+      %li
+        = link_to('JSON', '/blog/feed.json')
+        \- for those still hoping for good JSON feed apps
     %p
       Thanks a bunch!

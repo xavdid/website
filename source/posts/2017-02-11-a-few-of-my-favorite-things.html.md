@@ -25,7 +25,7 @@ READMORE
 
 - [Board Games](#board-games)
 - [Videogames](#videogames)
-  - [PC/Console](#pcconsole)
+  - [PC/Console](#pc-console)
   - [Mobile](#mobile)
 - [Movies](#movies)
 - [Television](#television)

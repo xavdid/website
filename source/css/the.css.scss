@@ -23,6 +23,12 @@ $links: $light-blue;
   font-weight: 300;
 }
 
+@mixin mobile-only {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (min-width: #{$tablet-width}) {
     @content;
@@ -360,6 +366,12 @@ body {
               }
             }
           }
+
+          // .tag {
+          //   background-color: $maize;
+          //   padding: 3px 7px;
+          //   border-radius: 20px; // oval
+          // }
         }
 
         .blog_post {
@@ -455,20 +467,23 @@ body {
               overflow-x: scroll;
             }
 
-            .embeded-iframe {
+            // https://www.ostraining.com/blog/coding/responsive-videos/
+            .video-responsive {
               text-align: center;
-
-              .video-desktop {
-                display: none;
-                @include tablet {
-                  display: initial;
-                }
+              @include mobile-only {
+                overflow: hidden;
+                padding-bottom: 56.25%; // the aspect ratio of the default embed size
+                position: relative;
+                height: 0;
               }
-              .video-mobile {
-                display: initial;
-                @include tablet {
-                  display: none;
-                }
+            }
+            .video-responsive iframe {
+              @include mobile-only {
+                left: 0;
+                top: 0;
+                height: 100%;
+                width: 100%;
+                position: absolute;
               }
             }
 
@@ -502,6 +517,7 @@ body {
 
           li {
             ul {
+              margin: 0;
               list-style-type: circle;
               padding-left: 40px;
             }
