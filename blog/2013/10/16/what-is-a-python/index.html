@@ -13,7 +13,7 @@ What the Hell is a Python? - David Brownman dot com
 <meta content='https://i.imgur.com/zhqbTVt.png' property='og:image'>
 <meta content='A blog post by David Brownman' property='og:description'>
 <meta content='width=device-width' name='viewport'>
-<link href="../../../../../css/the-199d4a72.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot-number.min.css" rel="stylesheet" />
+<link href="../../../../../css/the-1702294c.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot-number.min.css" rel="stylesheet" />
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" defer="defer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot.min.js" defer="defer"></script><script src="../../../../../js/facts-f34b87aa.js" defer="defer"></script>
 <link href="../../../../../favicon.ico" rel="icon" type="image/ico" />
 </head>
@@ -59,6 +59,7 @@ Sundries
 <div class='main clearfix wrapper'>
 <article>
 <div class='blog_post'>
+<a name='top'></a>
 <h1>
 What the Hell is a Python?
 </h1>
@@ -71,7 +72,7 @@ What the Hell is a Python?
 
 <p></p>
 
-<h2>What exactly is programming?</h2>
+<h2 id="what-exactly-is-programming">What exactly is programming?</h2>
 
 <p>It&#39;s simple! Programs are sets of instructions that manipulate <em>variables</em> that are followed explicitly (in order!) by a computer (and without ambiguity). There&#39;s a fun exercise you can do with kids where you have someone try to verbally explain how to make a PB&amp;J to someone who purposefully misunderstands instructions. You end up with an exchange something like this:</p>
 
@@ -81,9 +82,9 @@ What the Hell is a Python?
 
 <p>As you can see, English is ambiguous, which is why computers are so nitpicky about syntax. They&#39;re going to execute the program and they want to make sure they do exactly what you say.</p>
 
-<h2>Let&#39;s get our hands dirty</h2>
+<h2 id="lets-get-our-hands-dirty">Let&#39;s get our hands dirty</h2>
 
-<p>All you need to follow along is access to a Python interpreter. One can be found pre-installed on Mac computers (by typing <code>python</code> into the <code>Terminal</code> application) or online <a href="https://repl.it/languages/python">here</a>. This guide is written for Python 2, which will eventually phase out of usage. You can check your computer&#39;s version by typing <code>python --version</code> (mine currently says 2.7.10).</p>
+<p>All you need to follow along is access to a Python interpreter. One can be found pre-installed on Mac computers (by typing <code>python</code> into the <code>Terminal</code> application) or online <a href="https://repl.it/languages/python" target="_blank" rel="nofollow">here</a>. This guide is written for Python 2, which will eventually phase out of usage. You can check your computer&#39;s version by typing <code>python --version</code> (mine currently says 2.7.10).</p>
 
 <p>In Python, there are a few different <strong>data types</strong>: integer and string are the most common ones. <em>Integers</em> are any whole number, and <em>strings</em> are words. Now let&#39;s apply it.</p>
 
@@ -100,7 +101,7 @@ What the Hell is a Python?
 
 <p>Did you catch that at the end? Python added the two strings together, just like we told it to. The fact that they&#39;re numbers and we might have been expecting 2 as output doesn&#39;t matter to it- we gave it instructions and it followed.</p>
 
-<h2>Boxes on boxes on boxes</h2>
+<h2 id="boxes-on-boxes-on-boxes">Boxes on boxes on boxes</h2>
 
 <p>Programming would be a boring field if all we could do was stick strings of letters together. Luckily, we can store values in <em>things</em>. These can be <strong>variables</strong>, lists, or other things.</p>
 <pre class="highlight plaintext"><code>&gt;&gt;&gt; x&#x000A;Traceback (most recent call last):&#x000A;File "&lt;string&gt;", line 1, in &lt;module&gt;&#x000A;NameError: name 'x' is not defined&#x000A;&gt;&gt;&gt; x = 3&#x000A;&gt;&gt;&gt; x&#x000A;3&#x000A;&gt;&gt;&gt; x+1&#x000A;4&#x000A;&gt;&gt;&gt; x+x&#x000A;6&#x000A;</code></pre>
@@ -119,7 +120,7 @@ What the Hell is a Python?
 
 <p>The <code>...</code> that follows lines ending in a <code>:</code> is there because indentation matters in Python. You&#39;re making a loop, so Python needs to know exactly which instructions to run in that loop. The <code>...</code> lets you know that Python is still taking loop instructions. Additionally, you need to add a space (or two, as long as you&#39;re consistent) before each loop instruction to create the indentation. The command line doesn&#39;t do this for you. To end the loop, just input an empty line. Loops are super helpful, so make sure you understand them!</p>
 
-<h2>Let&#39;s put it all together!</h2>
+<h2 id="lets-put-it-all-together">Let&#39;s put it all together!</h2>
 
 <p>Big, complicated programs are actually just collections of little programs. So, let&#39;s put some simple things that you know how to do together and make something neat!</p>
 
@@ -128,9 +129,9 @@ What the Hell is a Python?
 
 <p>Remember, you&#39;ll need to declare the lists yourself. You&#39;ll also need to use <code>for</code> loops of some sort.</p>
 
-<p>Once you&#39;ve written a solution, click <a href="https://gist.github.com/xavdid/c606cca34aa996b4f20f3ad097ace8f1">here</a> to see if you&#39;re right <sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup>.</p>
+<p>Once you&#39;ve written a solution, click <a href="https://gist.github.com/xavdid/c606cca34aa996b4f20f3ad097ace8f1" target="_blank" rel="nofollow">here</a> to see if you&#39;re right <sup id="fnref2"><a href="#fn2" rel="footnote">2</a></sup>.</p>
 
-<p>That&#39;s all for this installment. There will probably be more to come! If you&#39;ve got any feedback or questions, let me know on Twitter <a href="https://twitter.com/xavdid">@xavdid</a>. If you&#39;re hungry for more, you can check out LearnXinYMinutes&#39; <a href="https://learnxinyminutes.com/docs/python/">python article</a>. Thanks for reading!</p>
+<p>That&#39;s all for this installment. There will probably be more to come! If you&#39;ve got any feedback or questions, let me know on Twitter <a href="https://twitter.com/xavdid" target="_blank" rel="nofollow">@xavdid</a>. If you&#39;re hungry for more, you can check out LearnXinYMinutes&#39; <a href="https://learnxinyminutes.com/docs/python/" target="_blank" rel="nofollow">python article</a>. Thanks for reading!</p>
 
 <div class="footnotes">
 <hr>
@@ -156,7 +157,7 @@ What the Hell is a Python?
 |
 <a href='/blog/feeds'><i class='fa fa-rss-square rss'></i></a>
 |
-<a href="/blog/2013/12/12/the-week-of-code-is">Random Post</a>
+<a href="/blog/2015/09/15/whats-in-a-name">Random Post</a>
 <i class='fa fa-random'></i>
 </p>
 </article>
@@ -182,7 +183,7 @@ On this day
 </aside>
 <script>
   window.onload = function() {
-    $.bigfoot();
+    $.bigfoot({ actionOriginalFN: 'ignore' });
   };
 </script>
 <script>

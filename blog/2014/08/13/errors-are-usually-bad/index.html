@@ -13,7 +13,7 @@ Errors Are Usually Bad! A Cautionary Tale - David Brownman dot com
 <meta content='https://i.imgur.com/zhqbTVt.png' property='og:image'>
 <meta content='A blog post by David Brownman' property='og:description'>
 <meta content='width=device-width' name='viewport'>
-<link href="../../../../../css/the-199d4a72.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot-number.min.css" rel="stylesheet" />
+<link href="../../../../../css/the-1702294c.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot-number.min.css" rel="stylesheet" />
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" defer="defer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot.min.js" defer="defer"></script><script src="../../../../../js/facts-f34b87aa.js" defer="defer"></script>
 <link href="../../../../../favicon.ico" rel="icon" type="image/ico" />
 </head>
@@ -59,17 +59,18 @@ Sundries
 <div class='main clearfix wrapper'>
 <article>
 <div class='blog_post'>
+<a name='top'></a>
 <h1>
 Errors Are Usually Bad! A Cautionary Tale
 </h1>
 <div class='blog_body'>
 <p>The worst part about programming is that the computer does exactly what you tell it to. <em>Exactly</em>.</p>
 
-<p>Here at <a href="https://www.relateiq.com/">RelateIQ</a> I work in <strong>Internal Tools</strong>, or building products for other employees. My most recent project has involved a pythong script moving data out of a database and into the product itself so a bunch of users could be slung through our new Marketo integration and contacted.</p>
+<p>Here at <a href="https://www.relateiq.com/" target="_blank" rel="nofollow">RelateIQ</a> I work in <strong>Internal Tools</strong>, or building products for other employees. My most recent project has involved a pythong script moving data out of a database and into the product itself so a bunch of users could be slung through our new Marketo integration and contacted.</p>
 
 <p></p>
 
-<p>These jobs usually take a couple of hours to run, so we stick them in <a href="https://www.docker.com/">Docker</a> containers and let <a href="https://github.com/airbnb/chronos">Cronos</a> take care of the rest. Because I wanted to make sure that the initial population run actually finished, I put an unusually aggressive <code>try-except</code> block in the code in the hope that it would gloss over any weird corner cases and legacy data. It looked something like this:</p>
+<p>These jobs usually take a couple of hours to run, so we stick them in <a href="https://www.docker.com/" target="_blank" rel="nofollow">Docker</a> containers and let <a href="https://github.com/airbnb/chronos" target="_blank" rel="nofollow">Cronos</a> take care of the rest. Because I wanted to make sure that the initial population run actually finished, I put an unusually aggressive <code>try-except</code> block in the code in the hope that it would gloss over any weird corner cases and legacy data. It looked something like this:</p>
 <pre class="highlight python"><code><span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">users</span><span class="p">:</span>&#x000A;    <span class="k">try</span><span class="p">:</span>&#x000A;        <span class="n">uid</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">user</span><span class="p">[</span><span class="s">'_id'</span><span class="p">])</span>&#x000A;        <span class="k">if</span> <span class="n">uid</span> <span class="ow">in</span> <span class="n">user_hash</span><span class="p">:</span>&#x000A;        <span class="c"># process and save the user object</span>&#x000A;&#x000A;        <span class="k">print</span> <span class="s">"finished </span><span class="si">%</span><span class="s">s"</span> <span class="o">%</span> <span class="n">uid</span>&#x000A;&#x000A;    <span class="k">except</span><span class="p">:</span>&#x000A;        <span class="k">print</span> <span class="s">"error </span><span class="si">%</span><span class="s">s"</span> <span class="o">%</span> <span class="n">uid</span>&#x000A;</code></pre>
 
 <p>And this looked great. It was nigh unstoppable!</p>
@@ -80,9 +81,9 @@ Errors Are Usually Bad! A Cautionary Tale
 <p>And so forth. Great! Now I just need to kill the execution and run my build script and I&#39;ll be on my way. I hit Control+C and watched the interrupt get registered and ignored.</p>
 <pre class="highlight plaintext"><code>^C error 8&#x000A;^C error 9&#x000A;^C error 10&#x000A;^C error 11&#x000A;^C error 12&#x000A;finished 13&#x000A;finished 14&#x000A;...&#x000A;</code></pre>
 
-<p>&quot;That&#39;s interesting!&quot;, I thought with increasing trepidation. Ctrl+C was supposed to be my magic bullet, my ace in the hole for rescuing me from any terminal process that I had tricked myself into. Speaking to the <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">rubber duck</a> on my desk I explained how &quot;It&#39;s weird, because python is clearly <em>seeing</em> the error happen because the message is changing accordingly, so the erro... oh.&quot;</p>
+<p>&quot;That&#39;s interesting!&quot;, I thought with increasing trepidation. Ctrl+C was supposed to be my magic bullet, my ace in the hole for rescuing me from any terminal process that I had tricked myself into. Speaking to the <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging" target="_blank" rel="nofollow">rubber duck</a> on my desk I explained how &quot;It&#39;s weird, because python is clearly <em>seeing</em> the error happen because the message is changing accordingly, so the erro... oh.&quot;</p>
 
-<p>Python was seeing the error, and it was doing exactly what I told it to. When a python script is ordered to stop, it registers a <a href="https://docs.python.org/2/library/exceptions.html#exceptions.KeyboardInterrupt">KeyboardInterrupt</a> and acts accordingly. Unfortunately, that KeyboardInterrupt was being eaten up with anything else that could go wrong and was being ignored.</p>
+<p>Python was seeing the error, and it was doing exactly what I told it to. When a python script is ordered to stop, it registers a <a href="https://docs.python.org/2/library/exceptions.html#exceptions.KeyboardInterrupt" target="_blank" rel="nofollow">KeyboardInterrupt</a> and acts accordingly. Unfortunately, that KeyboardInterrupt was being eaten up with anything else that could go wrong and was being ignored.</p>
 
 <p>A process kill and a quick addendum fixed my dumb problem and the script ran as normal after that. It just goes to show-</p>
 
@@ -97,7 +98,7 @@ Errors Are Usually Bad! A Cautionary Tale
 |
 <a href='/blog/feeds'><i class='fa fa-rss-square rss'></i></a>
 |
-<a href="/blog/2013/10/02/simulations-simulated">Random Post</a>
+<a href="/blog/2018/06/05/on-the-rating-of-media">Random Post</a>
 <i class='fa fa-random'></i>
 </p>
 </article>
@@ -123,7 +124,7 @@ On this day
 </aside>
 <script>
   window.onload = function() {
-    $.bigfoot();
+    $.bigfoot({ actionOriginalFN: 'ignore' });
   };
 </script>
 <script>

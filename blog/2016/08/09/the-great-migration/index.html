@@ -13,7 +13,7 @@ The Great Migration - David Brownman dot com
 <meta content='https://i.imgur.com/zhqbTVt.png' property='og:image'>
 <meta content='A blog post by David Brownman' property='og:description'>
 <meta content='width=device-width' name='viewport'>
-<link href="../../../../../css/the-199d4a72.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot-number.min.css" rel="stylesheet" />
+<link href="../../../../../css/the-1702294c.css" rel="stylesheet" /><link href="../../../../../css/code-5ba1ac12.css" rel="stylesheet" /><link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" /><link href="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot-number.min.css" rel="stylesheet" />
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" defer="defer"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bigfoot/2.1.4/bigfoot.min.js" defer="defer"></script><script src="../../../../../js/facts-f34b87aa.js" defer="defer"></script>
 <link href="../../../../../favicon.ico" rel="icon" type="image/ico" />
 </head>
@@ -59,6 +59,7 @@ Sundries
 <div class='main clearfix wrapper'>
 <article>
 <div class='blog_post'>
+<a name='top'></a>
 <h1>
 The Great Migration
 </h1>
@@ -67,11 +68,11 @@ The Great Migration
 
 <p>For a long time, I had my blog in two places. It actually lived on tumblr, but I mirrored it on the blog section of my site using tumblr&#39;s APIv1. This was accomplished with some jQuery that would trigger on load and populate a <code>&lt;ul&gt;</code> element.</p>
 
-<p>This was <em>fine</em>, but it meant I was maintaining two sets of css and user experience was inconsistent depending on which platform they were reading on. I was already leveraging <a href="https://middlemanapp.com">middleman</a> to generate my static site and found that they have a <a href="https://middlemanapp.com/basics/blogging">blogging</a> extension. Moving all my posts would allow me to check my posts into git and use triple ` notation for code blocks. The only hiccup was that tumblr has no way to export all of your posts, so it was time to dive back into their API. The game was afoot.</p>
+<p>This was <em>fine</em>, but it meant I was maintaining two sets of css and user experience was inconsistent depending on which platform they were reading on. I was already leveraging <a href="https://middlemanapp.com" target="_blank" rel="nofollow">middleman</a> to generate my static site and found that they have a <a href="https://middlemanapp.com/basics/blogging" target="_blank" rel="nofollow">blogging</a> extension. Moving all my posts would allow me to check my posts into git and use triple ` notation for code blocks. The only hiccup was that tumblr has no way to export all of your posts, so it was time to dive back into their API. The game was afoot.</p>
 
 <p></p>
 
-<h2>Extracting from Tumblr</h2>
+<h2 id="extracting-from-tumblr">Extracting from Tumblr</h2>
 
 <p>Tumblr&#39;s APIv1 is all but depreciated at this point, so I went with v2 for my task. Luckily, it&#39;s simple and well documented. I&#39;ll describe here how to use tumblr&#39;s API to extract all of your content from their platform, should you choose to leave. To get all of our files in the right place, we&#39;ll go through a few steps:</p>
 
@@ -82,13 +83,13 @@ The Great Migration
 <li>Convert json to markdown.</li>
 </ol>
 
-<h3>Make an App</h3>
+<h3 id="make-an-app">Make an App</h3>
 
-<p>While anybody could hit a public blog before, v2 requires an API key. To get one, head <a href="https://www.tumblr.com/oauth/apps">here</a> and click <strong>+ Register application</strong>, naming it whatever. Below, you should now see your &quot;OAuth Consumer Key&quot;, known now as your <code>&lt;API_KEY&gt;</code>. You&#39;ll need this in just a sec.</p>
+<p>While anybody could hit a public blog before, v2 requires an API key. To get one, head <a href="https://www.tumblr.com/oauth/apps" target="_blank" rel="nofollow">here</a> and click <strong>+ Register application</strong>, naming it whatever. Below, you should now see your &quot;OAuth Consumer Key&quot;, known now as your <code>&lt;API_KEY&gt;</code>. You&#39;ll need this in just a sec.</p>
 
-<h3>Grab Some Posts</h3>
+<h3 id="grab-some-posts">Grab Some Posts</h3>
 
-<p>You&#39;ll need to hit a url with your new key. I used <code>curl</code> so I could pipe the output into another step or two, but <a href="https://www.getpostman.com/">Postman</a> is a viable alternative. Running the following command in your terminal gives you a json file with info on your 20 most recent posts.</p>
+<p>You&#39;ll need to hit a url with your new key. I used <code>curl</code> so I could pipe the output into another step or two, but <a href="https://www.getpostman.com/" target="_blank" rel="nofollow">Postman</a> is a viable alternative. Running the following command in your terminal gives you a json file with info on your 20 most recent posts.</p>
 <pre class="highlight shell"><code>curl <span class="s1">'https://api.tumblr.com/v2/blog/&lt;BLOG_NAME&gt;.tumblr.com/posts?api_key=&lt;API_KEY&gt;&amp;filter=raw'</span> &gt; some_posts.json&#x000A;</code></pre>
 
 <p>The output is a json document with a ton of info, truncated here like so:</p>
@@ -96,9 +97,9 @@ The Great Migration
 
 <p>There&#39;s a lot of extra data there, so it&#39;s worth cleaning it it up a bit.</p>
 
-<h3>(optional) Cleaning our Data</h3>
+<h3 id="optional-cleaning-our-data">(optional) Cleaning our Data</h3>
 
-<p>The tool for the job is <a href="https://stedolan.github.io/jq/">jq</a> and it parses json into a specified format. We&#39;re going to tack the following line onto our <code>curl</code> command from before:</p>
+<p>The tool for the job is <a href="https://stedolan.github.io/jq/" target="_blank" rel="nofollow">jq</a> and it parses json into a specified format. We&#39;re going to tack the following line onto our <code>curl</code> command from before:</p>
 <pre class="highlight shell"><code>jq <span class="s1">'[.response.posts[] | {body: .body, date: .date, title: .title, slug: .slug}]'</span>&#x000A;</code></pre>
 
 <p>Let&#39;s unpack that command because it&#39;s rather dense.</p>
@@ -118,21 +119,21 @@ The Great Migration
 <p>Two quick notes on the options you can pass to tumblr:</p>
 
 <ul>
-<li><code>filter</code> tells the API how to return your posts. I originally wrote in markdown, so I wanted to specify that I should get it out as well. You can see the full set of filters <a href="https://www.tumblr.com/docs/en/api/v2#posts">here</a>.</li>
+<li><code>filter</code> tells the API how to return your posts. I originally wrote in markdown, so I wanted to specify that I should get it out as well. You can see the full set of filters <a href="https://www.tumblr.com/docs/en/api/v2#posts" target="_blank" rel="nofollow">here</a>.</li>
 <li>the API only returns 20 posts at a time. To get more, add <code>&amp;offset=&lt;NUMBER (probably a multiple of 20)&gt;</code> to your url. Luckily I had around 30, so I only needed to call it twice. Your experience may differ.</li>
 </ul>
 
-<h3>Converting to Markdown</h3>
+<h3 id="converting-to-markdown">Converting to Markdown</h3>
 
-<p>We&#39;ve got this well formatted json, this is the easy part. This ruby script iterates through the posts, adds our <a href="https://middlemanapp.com/basics/frontmatter/">frontmatter</a>, and supplies the filename middleman expects(<code>2016-12-06-this-is-a-post.md</code>).</p>
+<p>We&#39;ve got this well formatted json, this is the easy part. This ruby script iterates through the posts, adds our <a href="https://middlemanapp.com/basics/frontmatter/" target="_blank" rel="nofollow">frontmatter</a>, and supplies the filename middleman expects(<code>2016-12-06-this-is-a-post.md</code>).</p>
 <pre class="highlight ruby"><code><span class="c1"># If you skipped the cleaning step, your keys will be different</span>&#x000A;<span class="nb">require</span> <span class="s1">'json'</span>&#x000A;<span class="nb">require</span> <span class="s1">'time'</span>&#x000A;&#x000A;<span class="k">def</span> <span class="nf">frontmatter</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>&#x000A;  <span class="s2">"---</span><span class="se">\n</span><span class="s2">title: </span><span class="si">#{</span><span class="n">title</span><span class="si">}</span><span class="se">\n</span><span class="s2">tags:</span><span class="se">\n</span><span class="s2">---</span><span class="se">\n\n</span><span class="s2">)"</span>&#x000A;<span class="k">end</span>&#x000A;&#x000A;<span class="n">posts</span> <span class="o">=</span> <span class="kp">nil</span>&#x000A;&#x000A;<span class="no">File</span><span class="p">.</span><span class="nf">open</span><span class="p">(</span><span class="s1">'some_posts.json'</span><span class="p">,</span> <span class="s1">'r'</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span>&#x000A;  <span class="n">posts</span> <span class="o">=</span> <span class="no">JSON</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="n">f</span><span class="p">.</span><span class="nf">read</span><span class="p">,</span> <span class="ss">symbolize_names: </span><span class="kp">true</span><span class="p">)</span>&#x000A;<span class="k">end</span>&#x000A;&#x000A;<span class="n">posts</span><span class="p">.</span><span class="nf">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">post</span><span class="o">|</span>&#x000A;  <span class="c1"># make sure it's the local date</span>&#x000A;  <span class="n">date</span> <span class="o">=</span> <span class="no">Time</span><span class="p">.</span><span class="nf">parse</span><span class="p">(</span><span class="n">post</span><span class="p">[</span><span class="ss">:date</span><span class="p">]).</span><span class="nf">getlocal</span><span class="p">.</span><span class="nf">strftime</span><span class="p">(</span><span class="s1">'%Y-%m-%d'</span><span class="p">).</span><span class="nf">to_s</span>&#x000A;  <span class="n">slug</span> <span class="o">=</span> <span class="n">post</span><span class="p">[</span><span class="ss">:slug</span><span class="p">].</span><span class="nf">split</span><span class="p">(</span><span class="s1">'-'</span><span class="p">).</span><span class="nf">first</span><span class="p">(</span><span class="mi">5</span><span class="p">).</span><span class="nf">join</span><span class="p">(</span><span class="s1">'-'</span><span class="p">)</span> <span class="c1"># shorten those tumblr slugs</span>&#x000A;  <span class="no">File</span><span class="p">.</span><span class="nf">open</span><span class="p">(</span><span class="s2">"</span><span class="si">#{</span><span class="n">date</span><span class="si">}</span><span class="s2">-</span><span class="si">#{</span><span class="n">slug</span><span class="si">}</span><span class="s2">.html.md"</span><span class="p">,</span> <span class="s1">'wb+'</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">f</span><span class="o">|</span>&#x000A;    <span class="n">f</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="n">frontmatter</span><span class="p">(</span><span class="n">post</span><span class="p">[</span><span class="ss">:title</span><span class="p">]))</span>&#x000A;    <span class="c1"># turn smart quotes into regular ones</span>&#x000A;    <span class="n">f</span><span class="p">.</span><span class="nf">write</span><span class="p">(</span><span class="n">post</span><span class="p">[</span><span class="ss">:body</span><span class="p">].</span><span class="nf">gsub</span><span class="p">(</span><span class="sr">/[\u201c\u201d]/</span><span class="p">,</span> <span class="s1">'"'</span><span class="p">))</span>&#x000A;  <span class="k">end</span> <span class="k">if</span> <span class="n">post</span><span class="p">[</span><span class="ss">:body</span><span class="p">]</span> <span class="c1"># ignore posts without bodies</span>&#x000A;<span class="k">end</span>&#x000A;</code></pre>
 <pre class="highlight markdown"><code><span class="nn">---</span>&#x000A;<span class="s">title</span><span class="pi">:</span> <span class="s">I am a Post</span>&#x000A;<span class="s">tags</span><span class="pi">:</span>&#x000A;<span class="nn">---</span>&#x000A;&#x000A;This is the body of the <span class="p">[</span><span class="nv">post</span><span class="p">](</span><span class="sx">https://google.com</span><span class="p">)</span> and so many people will eventually read it&#x000A;...&#x000A;</code></pre>
 
-<h2>That&#39;s All!</h2>
+<h2 id="thats-all">That&#39;s All!</h2>
 
-<p>Boom! The result is a bunch of markdown posts that look a whole lot like <a href="https://github.com/xavdid/xavdid.github.io">this</a>. I checked my new files into git and deployed and now you&#39;re reading this.</p>
+<p>Boom! The result is a bunch of markdown posts that look a whole lot like <a href="https://github.com/xavdid/xavdid.github.io" target="_blank" rel="nofollow">this</a>. I checked my new files into git and deployed and now you&#39;re reading this.</p>
 
-<p>Hopefully this has made the experience of exporting your tumblr archive fairly painless. There&#39;s a lot of options if your tumblr was more varied than my stack of text-only posts, but I bet you can handle it. If you&#39;ve got questions, I&#39;m available on Twitter (<a href="https://www.twitter.com/xavdid">@xavdid</a>). Until next time!</p>
+<p>Hopefully this has made the experience of exporting your tumblr archive fairly painless. There&#39;s a lot of options if your tumblr was more varied than my stack of text-only posts, but I bet you can handle it. If you&#39;ve got questions, I&#39;m available on Twitter (<a href="https://www.twitter.com/xavdid" target="_blank" rel="nofollow">@xavdid</a>). Until next time!</p>
 
 </div>
 </div>
@@ -143,7 +144,7 @@ The Great Migration
 |
 <a href='/blog/feeds'><i class='fa fa-rss-square rss'></i></a>
 |
-<a href="/blog/2013/10/09/habbo-you-tell-me-how">Random Post</a>
+<a href="/blog/2013/09/25/get-into-the-flow">Random Post</a>
 <i class='fa fa-random'></i>
 </p>
 </article>
@@ -169,7 +170,7 @@ On this day
 </aside>
 <script>
   window.onload = function() {
-    $.bigfoot();
+    $.bigfoot({ actionOriginalFN: 'ignore' });
   };
 </script>
 <script>
