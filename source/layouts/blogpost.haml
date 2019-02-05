@@ -3,6 +3,7 @@
   - if is_blog_article?
     %article
       .blog_post
+        %a{name: 'top'}
         %h1
           = current_article.title
 
@@ -47,7 +48,7 @@
 
     :javascript
       window.onload = function() {
-        $.bigfoot();
+        $.bigfoot({ actionOriginalFN: 'ignore' });
       };
 
   = partial 'partials/anchor_links'

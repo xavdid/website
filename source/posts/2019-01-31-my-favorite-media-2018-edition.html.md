@@ -25,9 +25,20 @@ For those of you who are still reading, let's get down to it!
 READMORE
 
 <a name="TOC"></a>
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
+
+
+- [Videogames](#videogames)
+  - [Desktop/Console](#desktopconsole)
+  - [The World](#the-world)
+  - [Mobile](#mobile)
+- [Movies](#movies)
+- [Television](#television)
+- [Books](#books)
+- [Just The List](#just-the-list)
+- [Until Next Time](#until-next-time)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -35,14 +46,14 @@ READMORE
 
 By my count, I played [46 games this year](https://airtable.com/shrtjeL4g3gP53xI2) over a total of ~750 hours. Major changes in behavior were mostly driven by getting a PS4 at the end of 2017, which lead to a lot of time with the Kingdom Hearts 1.5 + 2.5 disc. Those were old news though, what's new and good?
 
-### Desktop/Console
+### Desktop+Console
 
 <br />
 Winner(s): **God of War** and **Horizon: Zero Dawn**
 
 When I took a step back and looked at my full list, there were really only two choices for my games of the year: _God of War_ and _Horizon: Zero Dawn_. That may feel obvious, as they were both the most widely lauded PS4 exclusives to come out the past couple of years (and rightfully so). I spent a lot of time thinking about which I would pick as my #1 and have chosen to take the cowardly route of "neither". They're both stupendous games in their own right, but each excels in certain areas where the other falters. Playing both of these within a few months of each other [FOOT- HZD in May, GoW in July] allowed me to compile a wordy, nerdy venn diagram of what sets GoW and HZD apart from each other (and from every other game I played this year).
 
-**The World**
+### The World
 
 Before these, I hadn't played many (any?) modern open-world games, so I was doubly stunned by HZD's setting; once because it was so beautiful, and again because I'd never seen anything with its breadth or detail before. Each region felt perfectly natural: I wasn't in a manufactured world; I was in a real place where there happened to be a videogame taking place. Vertical space is used very well-- there's a lot of topography and you can climb most of it. To that end, the mechanic of paint/discoloration on climbable elements didn't break immersion, which I was impressed by. There's a set of collectibles that involves summiting high points around the map which was one of my favorite ways to spend time in the game. This is one of the only worlds where I've just stopped in awe to slowly pan the camera and admire the scenery.
 
@@ -179,16 +190,14 @@ Dishonorable Mention to:
 All told, I finished [25 seasons of TV](https://airtable.com/shryat9XhhhnljGy2) this year. That also includes live shows that started in 2017, so it's a little misleading. I mostly watched new shows this year (outside of _Breaking Bad_, which you've already heard is good), so all I've got is newly aired excellence.
 
 <br />
-Winner: **Barry**
-
-> Season 1; returning
+> Winner:  **Barry**
 
 _Barry_ does a really superb job combining two unlike things to great effect; it's the peanut butter & jelly of television. Bill Hader stars as a hitman who wants to leave that violent life behind and strike out as an actor. This is easier said than done. His past life is full of unsavory characters and he finds it increasingly tough to leave it behind. The show strikes an astounding balance between hilarious and dark-as-hell. Meanwhile, the tension escalates beautifully as the FBI investigates suspicious  deaths in the area. Compound that with an increasingly involved acting class and you arrive at the first season of _Barry_. Hader's performance is truly award worthy. His ability to oscillate between ruthless killer and nervous actor is truly a sight to behold -- this performance cements his legacy as as an actor who can carry a show. Stephen Root disappears into his character per usual, and Anthony Carrigan as "NoHo Hank" is a personal favorite. This show began with a (literal) bang and I'm excited to see where it goes from here.
 
 <br />
-Runner-up: Ducktails (2018)
 
-> Season 1; returning
+
+> Runner-up: **Ducktails (2018)**
 
 I've always enjoyed cartoons that appeal to all ages, and _Ducktales_ delivers in spades. The episodes are independent enough to stand on their own and there's an overarching plot that rewards viewers who watch them all. The cast is phenomenal. Though I had never watched much of the original, I was sold on the prospect of a remake based on the cast alone. Particular props to the trio that voice the kids (Pudi, Schwartz, and Moynihan) for bringing so much character and individuality to them. There's also a string of great guest stars (Lin-Manuel Miranda and Jim Rash were personal favorites) that keep everything feeling fresh. The theme song is a total ear worm, even when [sung by the cast](https://www.youtube.com/watch?v=zZek9PFMYOw); learn why [here](https://www.youtube.com/watch?v=2lQVG7Gf7I4). The show seamlessly blends weird slapstick comedy, supernatural monsters, and really heartfelt family moments into an experience that appeals to everyone without catering specifically to anyone.
 

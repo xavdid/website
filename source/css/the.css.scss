@@ -17,6 +17,12 @@ $footer-size: 40px;
 $transition-speed: 0.1s;
 $links: $light-blue;
 
+@mixin listItem {
+  padding-left: 40px;
+  list-style-type: circle;
+  font-weight: 300;
+}
+
 @mixin tablet {
   @media (min-width: #{$tablet-width}) {
     @content;
@@ -301,9 +307,7 @@ body {
 
         .misc {
           ul {
-            padding-left: 40px;
-            list-style-type: circle;
-            font-weight: 300;
+            @include listItem();
           }
         }
 
@@ -400,18 +404,14 @@ body {
             }
 
             ul {
-              list-style-type: circle;
-              // normal ul styles
-              padding-left: 40px;
-              font-weight: 300;
+              @include listItem();
             }
             ol {
               font-weight: 300;
             }
 
             code,
-            pre,
-            blockquote {
+            pre {
               background-color: $code;
               border-radius: 5px;
               // color is overwritten by syntax anyway
@@ -426,20 +426,28 @@ body {
             }
 
             code {
-              // inline code
+              // inline code, and the actual lines in the code block
               padding: 3px;
             }
             pre {
-              // code blocks
+              // code blocks themselves
               padding: 15px;
+              code {
+                padding: 0;
+              }
             }
 
             blockquote {
-              padding: 30px;
-              font-family: courier, helvetica;
-              margin: 10px auto;
-              @include tablet {
-                margin: 20px 40px;
+              margin: 0 auto; // get it on the left wall
+              line-height: 1.4;
+              font-weight: 600;
+              font-size: 1.2em;
+              padding: 1em;
+              font-style: italic;
+              border-left: 5px solid $maize;
+              p {
+                // interior p has a huge margin, for some reason
+                margin: 0;
               }
             }
 

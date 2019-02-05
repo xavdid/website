@@ -1,11 +1,10 @@
 # https://aalvarez.me/posts/custom-markdown-in-middleman/
 
 module MarkdownHelper
+  require "middleman-core/renderers/redcarpet"
 
-  require 'middleman-core/renderers/redcarpet'
-
-  class JRenderer < Middleman::Renderers::MiddlemanRedcarpetHTML
-    def initialize(options={})
+  class MyRenderer < Middleman::Renderers::MiddlemanRedcarpetHTML
+    def initialize(options = {with_toc_data: true})
       super
     end
 
@@ -19,6 +18,15 @@ module MarkdownHelper
         </div>
       )
     end
-  end
 
+    def link(link, title, content)
+      if link && link.include?("http")
+        # external link!
+        %(<a href="#{link}" target="_blank" rel="nofollow">#{content}</a>)
+      else
+        # internal link
+        %(<a href="#{link}">#{content}</a>)
+      end
+    end
+  end
 end
