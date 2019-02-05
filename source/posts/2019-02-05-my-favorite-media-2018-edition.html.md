@@ -7,6 +7,8 @@ og_img: 'https://i.imgur.com/c7HRtXN.jpg'
 og_desc: A look back at the best and brightest media of 2018
 ---
 
+_Everything in this article is certified spoiler-free. Read on with reckless abandon!_
+
 Hello my friends! Here we are again for my [third](/blog/2017/02/11/a-few-of-my-favorite-things/) [annual](/blog/2018/02/21/a-few-more-favorites/) celebration of my favorite media.
 
 Like most years, 2018 was a year of change. I moved twice (once across the country) with my wonderful partner. Living together has brought changes to the way I consume media: there’s a lot less binging old TV shows on my own, and a lot more videogames played on the TV, so my girlfriend can make helpful comments.
