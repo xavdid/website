@@ -11,7 +11,7 @@ gem 'haml', '~> 4.0'
 # markdown processor
 gem 'redcarpet', '~> 3.4'
 # for blog summaries
-gem 'nokogiri', '~> 1.6'
+gem 'nokogiri', '~> 1.10'
 # For feed.xml.builder
 gem "builder", "~> 3.0"
 
