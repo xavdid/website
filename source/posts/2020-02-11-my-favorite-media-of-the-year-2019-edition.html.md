@@ -119,7 +119,7 @@ Part of the fun of this movie for me was how intricate it was. Director Rian Joh
 
 I'm glad that that Rian Johnson had the opportunity to refute the popular maxim, "They don't make 'em like they used to," -- this is as good a murder mystery as there ever was.
 
-![](https://i.imgur.com/IBRLXmX.png)
+![](https://i.imgur.com/qVllPdS.png)
 
 If you've read any of my previous write-ups, it should come as no surprise that a Marvel movie emerges victorious once again. In a year where the conclusions to long-running franchises really dropped the ball, I'm beyond pleased that the Russo Brothers managed to stick this landing with [_Avengers: Endgame_](https://www.justwatch.com/us/movie/avengers-endgame). They took an emotional story that built over 11 years and 22 movies and brought it to a beautiful conclusion. There's an undeniable amount of fan service in this movie (a few choice ensemble poses come to mind), but nothing egregious. I also really appreciated that they didn't spend time introducing anyone - they (rightfully) assume that if you're watching this, you're all caught up. This left them extra time to get to the "good stuff" (much like _Spiderman: Homecoming_ did when they didn't need to kill Uncle Ben again).
 
@@ -260,6 +260,8 @@ return to the [table of contents](#TOC)
 ## That's all, folks!
 
 That'll do it! Thanks a ton for reading this far. I hope 2019 brought you good media and it gets even better in 2020!
+
+_This post was edited expertly and patiently by [Vicky Stein](https://vickystein.media/)._
 
 [^1]: The PS4 was fun in the van, but _very_ power intensive. It also put out a lot of heat, making warn nights nigh unbearable. We had to wait for what we called "PS4 weather", both cold and sunny
 [^2]: Nothing's worse than 80 copies of "oh, these monsters have been attacking our town"
