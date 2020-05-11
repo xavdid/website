@@ -6,7 +6,7 @@ gem 'middleman-livereload', '~> 3.4'
 gem 'middleman-syntax', '~> 2.1'
 gem 'middleman-deploy', '~> 2.0.0.pre.alpha'
 
-gem 'haml', '~> 4.0'
+gem 'haml', '~> 5.0'
 
 # markdown processor
 gem 'redcarpet', '~> 3.4'

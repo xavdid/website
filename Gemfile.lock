@@ -37,7 +37,8 @@ GEM
     fast_blank (1.0.0)
     fastimage (2.1.7)
     ffi (1.12.2)
-    haml (4.0.7)
+    haml (5.0.0)
+      temple (>= 0.8.0)
       tilt
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
@@ -131,6 +132,7 @@ GEM
     sassc (2.3.0)
       ffi (~> 1.9)
     servolux (0.13.0)
+    temple (0.8.2)
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -147,7 +149,7 @@ PLATFORMS
 
 DEPENDENCIES
   builder (~> 3.0)
-  haml (~> 4.0)
+  haml (~> 5.0)
   html-proofer (~> 3.0)
   middleman (~> 4.1)
   middleman-blog (~> 4.0)!
