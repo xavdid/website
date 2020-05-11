@@ -28,5 +28,9 @@ module MarkdownHelper
         %(<a href="#{link}">#{content}</a>)
       end
     end
+
+    def image(link, title, alt_text)
+      %(<div class="imgbox">#{super}</div>)
+    end
   end
 end
