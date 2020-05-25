@@ -1,5 +1,5 @@
 ---
-published: "2020-05-10"
+date: "2020-05-10"
 title: An Ode to Kobo (My Favorite eBook Reader)
 fact: The First Transcontinental Railroad, linking the eastern and western United States, is completed at Promontory Summit, Utah with the golden spike.
 fact_year: 1869
@@ -16,7 +16,7 @@ My tech purchasing journey started, as it usually does, at the [Wirecutter](http
 
 Firstly, kindles can't read `epub` files.[^2] Instead, they deal with Amazon's proprietary `mobi` and `azw` file types. I've amassed a significant collection of DRM-free `epub` books (though publishers like [TOR](https://www.tor.com/), who don't apply DRM to any of their titles) and didn't want to go through the hassle of converting them.[^3] That was strike one.
 
-Secondly, there's no looking past the fact that ads are a huge part of Amazon's business. I don't mind product suggestions when I'm shopping around, but I don't need that for books. I also didn't love how the device's lock screen is an ad (unless you shell out an extra $20 to have something more neutral). It rubbed me the wrong way. Strike two.
+Secondly, there's no looking past the fact that ads are a huge part of Amazon's business. I don't mind product suggestions when I'm shopping around, but I don't need that for books. I also didn't love how the device's lock screen is an ad (unless you shell out an extra \$20 to have something more neutral). It rubbed me the wrong way. Strike two.
 
 Lastly, the tracking. The amount of user tracking that happens on Kindle is [well documented](https://www.theverge.com/2020/1/31/21117217/amazon-kindle-tracking-page-turn-taps-e-reader-privacy-policy-security-whispersync). While it might enable some nifty features, it still skeeved me out. I like to think of my eBook reader as a more convenient book, so I'd prefer it be as "dumb" as possible.[^4] Strike three and it's out of here.
 

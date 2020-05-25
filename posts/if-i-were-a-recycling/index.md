@@ -1,5 +1,5 @@
 ---
-published: "2013-07-09"
+date: "2013-07-09"
 title: If I Were a Recycling Manager, What a Difference I Would Make
 fact: Donkey Kong, a video game created by Nintendo, is released. The game marks the debut of Nintendo's future mascot, Mario.
 fact_year: 1981

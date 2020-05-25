@@ -1,5 +1,5 @@
 ---
-published: "2019-02-04"
+date: "2019-02-04"
 title: teststststs
 fact: so cool
 fact_year: 1234
@@ -13,18 +13,23 @@ go to [here](#here)
 go to [better](#the-best)
 
 # This is a title
+
 ## this is h2
+
 ### this is h3
+
 #### this is h4
+
 ##### this is h5
+
 ###### this is h6
 
 highlighted code block[^1]:
 
 ```js
-const a = 3
-const o = {}
-o.a = a
+const a = 3;
+const o = {};
+o.a = a;
 ```
 
 ## the best
@@ -44,7 +49,6 @@ for i in range(3):
 now, a quote:
 
 > I have a dream that one day even the state of Mississippi, a state sweltering with the heat of injustice, sweltering with the heat of oppression, will be transformed into an oasis of freedom and justice. I have a dream that my four little children will one day live in a nation where they will not be judged by the color of their skin but by the content of their character.
-
 
 and so we have it
 

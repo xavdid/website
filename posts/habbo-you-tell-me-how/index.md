@@ -1,5 +1,5 @@
 ---
-published: "2013-10-09"
+date: "2013-10-09"
 title: Habbo You Tell Me How to Act
 fact: Because of the implementation of the Gregorian calendar, this day does not exist in this year in Italy, Poland, Portugal and Spain.
 fact_year: 1582
@@ -18,7 +18,5 @@ By far the most interesting thing that happened while playing Habbo was that som
 
 Despite simulating real life, Habbo Hotel has its own set of unspoken rules that reflect (but are not the same as) real life ones. They're governed more on feelings and impressions (which is ironic because in a virtual setting social cues are greatly diminished). Nevertheless, rule breakers are still bad people. It's weird how we treat digital life the same as real life (but at the same time, so differently) but it's very interesting all the same.
 
-
 [^1]: That's Jane McGonical (not Minerva) from her book [_Reality is Broken_](http://www.amazon.com/Reality-Is-Broken-Better-Change/dp/0143120611).
-
 [^2]: Of course, this is a virtual kiss. Thinking back, I don't think such actions are even possible, so I'm not entirely sure what he was on about.

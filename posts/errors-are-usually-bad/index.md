@@ -1,5 +1,5 @@
 ---
-published: "2014-08-13"
+date: "2014-08-13"
 title: Errors Are Usually Bad! A Cautionary Tale
 fact: The first episode of the American animated series South Park premiered on Comedy Central.
 fact_year: 1997
@@ -8,7 +8,7 @@ tags: python, RelateIQ, programming
 
 The worst part about programming is that the computer does exactly what you tell it to. _Exactly_.
 
-Here at [RelateIQ](https://www.relateiq.com/) I work in __Internal Tools__, or building products for other employees. My most recent project has involved a pythong script moving data out of a database and into the product itself so a bunch of users could be slung through our new Marketo integration and contacted.
+Here at [RelateIQ](https://www.relateiq.com/) I work in **Internal Tools**, or building products for other employees. My most recent project has involved a pythong script moving data out of a database and into the product itself so a bunch of users could be slung through our new Marketo integration and contacted.
 
 READMORE
 

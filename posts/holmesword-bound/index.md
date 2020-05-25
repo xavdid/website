@@ -1,5 +1,5 @@
 ---
-published: "2016-12-24"
+date: "2016-12-24"
 title: Holmesword Bound
 fact: 'The first performance of "Silent Night" takes place in the church of St. Nikolaus in Oberndorf, Austria.'
 fact_year: 1818

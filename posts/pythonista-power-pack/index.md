@@ -1,5 +1,5 @@
 ---
-published: "2014-12-21"
+date: "2014-12-21"
 title: Pythonista Power Pack
 fact: Arthur Wynne's "word-cross", the first crossword puzzle, is published in the New York World.
 fact_year: 1913
@@ -11,6 +11,7 @@ tags: iOS, python, Dropbox, Pythonista, Workflow
 READMORE
 
 ## Downloading Gists <a name="workflow"></a>
+
 Github [gists](https://gist.github.com/) are a great way to share bits of code into the Github ecosystem without creating an entire repo. The neatest thing is- they still exist as a repo and can handle revisions, forking, and comments. When you're working with Pythonista, it's great to have the ability to quickly copy those snippets into the app. Luckily, the app's creator has created such a [gist](https://gist.github.com/omz/b0644f5ed1d94bd32805).
 
 To further streamline gist downloads, you can use the new [workflow](https://workflow.is/) app and download [this](https://workflow.is/workflows/59bb35df6c074edea6e9e92abd7e1444) workflow. Then, you can just your new share tab in your mobile browser of choice to send the url into that gist and boom!
@@ -22,6 +23,7 @@ Here's the workflow in action:
 [Gfycat link](https://gfycat.com/UnluckyMisguidedHalcyon)(for slow/pause/reverse)
 
 ## Dropbox Sync
+
 For what is probably an apple-imposed restriction, Pythonista doesn't share Editorial's built in Dropbox sync. Fortunately, it's easy enough to fix this with the power of Python. There are a couple of easy steps to follow first.
 
 ### Create an App
@@ -32,7 +34,7 @@ Go to [dropbox.com/developers/apps](https://www.dropbox.com/developers/apps) and
 
 Make sure your settings match mine (Dropbox API app, files+datastores, Yes), give your app a name (this is the default name for your sync folder, but you can change it client-side later), and hit create!
 
-This will bring you to a settings page for your app, on which you __don't__ need to change anything. Leave it open for now and we'll revisit it in a sec.
+This will bring you to a settings page for your app, on which you **don't** need to change anything. Leave it open for now and we'll revisit it in a sec.
 
 ### Download the Dropbox Sync Script
 

@@ -1,5 +1,5 @@
 ---
-published: "2016-08-09"
+date: "2016-08-09"
 title: The Great Migration
 fact: Tivoli Gardens, one of the oldest still intact amusement parks in the world, opens in Copenhagen, Denmark.
 fact_year: 1843
@@ -50,7 +50,7 @@ The output is a json document with a ton of info, truncated here like so:
       "total_posts": 29,
       "posts": 29,
       "url": "http://xavdid.tumblr.com/",
-      "updated": 1442361862,
+      "updated": 1442361862
       // ...
     },
     "posts": [
@@ -81,7 +81,7 @@ The output is a json document with a ton of info, truncated here like so:
                 "background_color": "#FAFAFA",
                 "body_font": "Helvetica Neue",
                 "header_bounds": 0,
-                "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_06.png?_v=c5e9c9bdca5f67be80d91514a36509cc",
+                "header_image": "https://assets.tumblr.com/images/default_header/optica_pattern_06.png?_v=c5e9c9bdca5f67be80d91514a36509cc"
                 // ...
               },
               "share_likes": false,
@@ -91,7 +91,7 @@ The output is a json document with a ton of info, truncated here like so:
             "post": {
               "id": "54609944775"
             },
-            "content_raw": "<p>In the interest of eating as much grilled meat and pie as possible today, there's no new post. \n\nBut, get excited for the next couple of weeks, I have some great stuff written!</p>",
+            "content_raw": "<p>In the interest of eating as much grilled meat and pie as possible today, there's no new post. \n\nBut, get excited for the next couple of weeks, I have some great stuff written!</p>"
             // ...
           }
         ],
@@ -99,7 +99,7 @@ The output is a json document with a ton of info, truncated here like so:
         "can_like": true,
         "can_reblog": true,
         "display_avatar": true
-      },
+      }
       // ...
     ]
   }
@@ -118,9 +118,9 @@ jq '[.response.posts[] | {body: .body, date: .date, title: .title, slug: .slug}]
 
 Let's unpack that command because it's rather dense.
 
-* `.response.posts` grabs the value of the response and posts keys (that is, our array of posts). The `[]` at the end tell jq to iterate over the array (as opposed to using `.response.posts[0]` if we were only concerned with the most recent post).
-* `|` works just like the unix pipe, sending the output of the last command into the next one.
-* `{body: .body, date: .date, title: .title, slug: .slug}` instructs jq to iterate over the array and turn it into an object with the _body_, _date_, _title_, and _slug_ keys, which are really all we're concerned with. the `[]` that wrap the entire command specify that the output should be an array as well.
+- `.response.posts` grabs the value of the response and posts keys (that is, our array of posts). The `[]` at the end tell jq to iterate over the array (as opposed to using `.response.posts[0]` if we were only concerned with the most recent post).
+- `|` works just like the unix pipe, sending the output of the last command into the next one.
+- `{body: .body, date: .date, title: .title, slug: .slug}` instructs jq to iterate over the array and turn it into an object with the _body_, _date_, _title_, and _slug_ keys, which are really all we're concerned with. the `[]` that wrap the entire command specify that the output should be an array as well.
 
 Put it all together and we've got concise json to convert.
 
@@ -149,8 +149,8 @@ This is much nicer:
 
 Two quick notes on the options you can pass to tumblr:
 
-* `filter` tells the API how to return your posts. I originally wrote in markdown, so I wanted to specify that I should get it out as well. You can see the full set of filters [here](https://www.tumblr.com/docs/en/api/v2#posts).
-* the API only returns 20 posts at a time. To get more, add `&offset=<NUMBER (probably a multiple of 20)>` to your url. Luckily I had around 30, so I only needed to call it twice. Your experience may differ.
+- `filter` tells the API how to return your posts. I originally wrote in markdown, so I wanted to specify that I should get it out as well. You can see the full set of filters [here](https://www.tumblr.com/docs/en/api/v2#posts).
+- the API only returns 20 posts at a time. To get more, add `&offset=<NUMBER (probably a multiple of 20)>` to your url. Luckily I had around 30, so I only needed to call it twice. Your experience may differ.
 
 ### Converting to Markdown
 

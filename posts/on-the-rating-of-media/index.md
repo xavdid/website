@@ -1,5 +1,5 @@
 ---
-published: "2018-06-05"
+date: "2018-06-05"
 title: On the Rating of Media
 fact: Houston is incorporated by the Republic of Texas.
 fact_year: 1837

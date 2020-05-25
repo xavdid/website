@@ -1,5 +1,5 @@
 ---
-published: "2014-12-16"
+date: "2014-12-16"
 title: Augmenting Automation on iOS With the Power of Python and Workflow
 fact: Members of the Sons of Liberty disguised as Mohawk Indians dump hundreds of crates of tea into Boston harbor as a protest against the Tea Act.
 fact_year: 1773
@@ -28,7 +28,7 @@ This workflow involves a chain of services, so I'll break them down in order of 
 
 Make an account and add a couple of wishlist items.
 
-### Launch Center Pro ($5) [^1]
+### Launch Center Pro (\$5) [^1]
 
 [Launch Center Pro](http://contrast.co/launch-center-pro/) ([App Store](https://itunes.apple.com/us/app/launch-center-pro/id532016360?mt=8)) is a handy app launcher that lets you trigger lots of other apps. Its real power comes from its ability to execute workflows, which really opens up the jobs you can kick off.
 
@@ -38,9 +38,9 @@ Go ahead and create a Launch Center Connect account so that you can plug into IF
 
 [IFTTT](https://ifttt.com) ([App Store](https://itunes.apple.com/us/app/ifttt/id660944635?mt=8)) is an awesome service that chains together simple sets of instructions from different apps. You do this by activating channels (via OAuth). The one you'll want to start with is the [LCP](https://ifttt.com/launch_center) channel (and your _Connect_ account).
 
-### Pythonista ($7)
+### Pythonista (\$7)
 
-I've written about Pythonista [before](/blog/2014/12/21/pythonista-power-pack) and still have nothing but good things to say about it. $7 seems steep for an app, but when you remember that it's a full python IDE with custom modules for interacting with your iOS device, that doesn't seem so steep anymore.
+I've written about Pythonista [before](/blog/2014/12/21/pythonista-power-pack) and still have nothing but good things to say about it. \$7 seems steep for an app, but when you remember that it's a full python IDE with custom modules for interacting with your iOS device, that doesn't seem so steep anymore.
 
 In terms of setup, you'll want to download [this](https://gist.github.com/xavdid/aad5332bfbfdf857d256) script into Pythonista. It pulls your AppShopper feed, grabs the most recent "price drop" post, and parses the sale info out of it.
 
@@ -62,6 +62,5 @@ If you're curious what Workflow is capable of, check out all of the Macstories [
 
 So, go forth and make awesome things (and let me know how it goes [@xavdid](https://twitter.com/xavdid))!
 
-[^1]: Frustratingly, there are separate launch center apps for iPhone and iPad. But, especially for $1 (on sale, as they are now), it's totally worth it.
-
+[^1]: Frustratingly, there are separate launch center apps for iPhone and iPad. But, especially for \$1 (on sale, as they are now), it's totally worth it.
 [^2]: The reason I specifically pass `Nothing` into the pythonista script is that there's currently a bug where if anything is passed in, the script doesn't run. In theory, the workflow could be edited to pass in the url of the feed.

@@ -1,5 +1,5 @@
 ---
-published: "2014-02-12"
+date: "2014-02-12"
 title: IF Shirt THEN Bounce That Email
 fact: George Gershwin's Rhapsody in Blue received its premiere in a concert titled "An Experiment in Modern Music," in New York, with Gershwin playing the piano.
 fact_year: 1924

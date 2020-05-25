@@ -1,5 +1,5 @@
 ---
-published: "2018-10-28"
+date: "2018-10-28"
 title: The Party of Lincoln
 fact: "In New York Harbor, President Grover Cleveland dedicates the Statue of Liberty. The first ticker tape parade takes place in New York City when office workers spontaneously throw ticker tape into the streets as the statue is dedicated."
 fact_year: 1886

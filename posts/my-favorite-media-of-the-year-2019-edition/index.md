@@ -1,5 +1,5 @@
 ---
-published: "2020-02-11"
+date: "2020-02-11"
 title: My Favorite Media of the Year (2019 Edition)
 fact: 'BBC Television produces the world''s first ever science fiction television programme, an adaptation of a section of the Karel Čapek play R.U.R., that coined the term "robot".'
 fact_year: 1938

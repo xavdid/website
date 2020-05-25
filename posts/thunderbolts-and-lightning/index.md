@@ -1,5 +1,5 @@
 ---
-published: "2018-11-05"
+date: "2018-11-05"
 title: Thunderbolts and Lightning
 fact: George B. Selden is granted the first U.S. patent for an automobile.
 fact_year: 1895
@@ -85,6 +85,4 @@ The big takeaway from all this is that lightning damage isn't limited to what's 
 Lightning. Who knew?
 
 [^1]: Netflix, Amazon Prime Video, etc
-[^2]:
-
-  Remeber, the TV and everything else on the surge protector were totally fine
+[^2]: Remeber, the TV and everything else on the surge protector were totally fine

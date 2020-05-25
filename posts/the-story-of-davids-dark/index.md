@@ -1,6 +1,6 @@
 ---
-published: "2013-07-02"
-title:  The Story of David's Dark Past
+date: "2013-07-02"
+title: The Story of David's Dark Past
 fact: Amelia Earhart and navigator Fred Noonan are last heard from over the Pacific Ocean while attempting to make the first equatorial round-the-world flight.
 fact_year: 1937
 tags: fiction, adventure
@@ -16,7 +16,7 @@ READMORE
 "Listen, that's not important now." was the response he got. "What is, however, is the impending problem down here. A guy named Ike is stirring up trouble, and we need someone to help us out with it."
 "Well, south really isn't in my travel plans but..."
 "Good, well, I've got to run now, duty calls."
-"Wait, no, Dad, I don't think I"... *click*...
+"Wait, no, Dad, I don't think I"... _click_...
 Easy as that, he was roped back into the family business once again, exactly where he didn't want to be. He had hoped Colorado would have been the last of it, but in stark defiance of that hope, he pulled that fateful U-turn towards the land of meat and trucks-a-plenty.
 
 While being part of the business is never easy, days of sleepless driving and plaguing nightmares don't exactly make it easier. The memory of the girl haunted him, and no amount of driving seemed to help that. From her bright eyes to her strong manner, from the time they met until she leaped off the building with "See you in hell!" as a goodbye, she was a beautifully unwelcome plague on his mind. How she had met him and the whirlwind that had followed was naught but a blur to him now. In fact, a lot of things from that time we're a blur. One of the things that comes with sleeplessness, he supposes. He knew plenty about that, as did his friend Nick. Strange times were those spent with Nick... He sighed, as the flashback enveloped him.
@@ -28,7 +28,7 @@ One evening, I was sitting around relaxing, when my phone went off.
 "Hi, yes, this is Marissa, is Tom around?"
 "No, I'm sorry, you must have the wrong number"
 "Hmm. Well, this is definitely the number he gave me... Oh well, thanks anyway."
-*click*
+_click_
 
 I didn't think much of that exchange until the next morning, when Nick showed up at my house, early. He was dressed strangely, I noticed. Shorts (but no shirt), a purple pimp hat, and a towel were all he had on, and he seemed a bit distressed.
 

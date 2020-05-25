@@ -1,5 +1,5 @@
 ---
-published: "2015-09-15"
+date: "2015-09-15"
 title: What's in a Name?
 fact: The HMS Beagle, with Charles Darwin aboard, reaches the Galápagos Islands. The ship lands at Chatham or San Cristobal, the easternmost of the archipelago.
 fact_year: 1835

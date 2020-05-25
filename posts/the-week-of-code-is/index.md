@@ -1,5 +1,5 @@
 ---
-published: "2013-12-12"
+date: "2013-12-12"
 title: The Week of Code is Here!
 fact: Guglielmo Marconi receives the first transatlantic radio signal (the letter "S" [***] in Morse Code), at Signal Hill in St John's, Newfoundland
 fact_year: 1901
