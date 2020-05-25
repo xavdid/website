@@ -11,7 +11,13 @@ posts.forEach((path) => {
   const newDirName = [...slug.slice(0, -1), lastWord].join("-");
 
   const newDirPath = `${__dirname}/posts/${newDirName}`;
+
+  const content = fs.readFileSync(fullPath, "utf-8").split("\n");
+  content.splice(1, 0, `published: "${year}-${month}-${day}"`);
+  // console.log(content.slice(0, 5));
+
   fs.mkdirSync(newDirPath);
 
-  fs.copyFileSync(fullPath, `${newDirPath}/index.md`);
+  // fs.copyFileSync(fullPath, `${newDirPath}/index.md`);
+  fs.writeFileSync(`${newDirPath}/index.md`, content.join("\n"));
 });
