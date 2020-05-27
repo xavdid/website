@@ -1,0 +1,49 @@
+@import "../../node_modules/normalize.css/normalize.css";
+
+// .nav-item {
+//   margin: 0 20px;
+//   background-color: red;
+//   padding: 20px;
+//   // width: 250px;
+//   // height: 100px;
+//   transform: skewX(-36deg);
+//   // background: skyblue;
+// }
+
+$nav-color: #58c;
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  // position: relative;
+  // left: 100px;
+  // top: 100px;
+
+  .navbar-item {
+    float: left;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 40px;
+    position: relative;
+    cursor: pointer;
+    margin-left: -1px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $nav-color;
+      z-index: -1;
+      transform: skew(-38deg);
+      transition: all 0.2s linear;
+    }
+
+    &:hover:after {
+      background-color: darken($nav-color, 20%);
+    }
+  }
+}

@@ -8,7 +8,7 @@ import Seo from "../components/seo";
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: { fields: frontmatter___date }) {
         edges {
           node {
             fields {
@@ -16,6 +16,7 @@ const IndexPage = () => {
             }
             frontmatter {
               title
+              date
             }
           }
         }
@@ -30,7 +31,8 @@ const IndexPage = () => {
         {data.allMarkdownRemark.edges.map(
           ({ node: { fields, frontmatter } }) => (
             <li key={fields.slug}>
-              <Link to={fields.slug}>{frontmatter.title}</Link>
+              <Link to={fields.slug}>{frontmatter.title}</Link> (
+              {frontmatter.date})
             </li>
           )
         )}
