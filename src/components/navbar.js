@@ -1,25 +1,24 @@
 import React from "react";
+import { Link } from "gatsby";
 
 // adapted from https://codepen.io/coderyang/pen/eJXXQg
 
 export default () => (
-  <div
-    style={{
-      display: "flex",
-      justifyContent: "space-around",
-      // alignContent: "space-around",
-      // backgroundColor: "lightblue",
-      width: "100%",
-      height: "100px",
-      zIndex: "-100",
-      borderBottom: "1px solid black",
-    }}
-  >
+  <nav>
+    <h1>David Brownman</h1>
     <ul className="navbar">
-      <li className="navbar-item">Home</li>
-      <li className="navbar-item">Blog</li>
-      <li className="navbar-item">Projects</li>
-      <li className="navbar-item">Sundries</li>
+      <Link to="/">
+        <li className="navbar-item">Home</li>
+      </Link>
+      <Link to="/">
+        <li className="navbar-item">Blog</li>
+      </Link>
+      <Link to="/">
+        <li className="navbar-item">Projects</li>
+      </Link>
+      <Link to="/">
+        <li className="navbar-item">Sundries</li>
+      </Link>
     </ul>
-  </div>
+  </nav>
 );

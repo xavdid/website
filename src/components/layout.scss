@@ -1,49 +1,113 @@
 @import "../../node_modules/normalize.css/normalize.css";
 
-// .nav-item {
-//   margin: 0 20px;
-//   background-color: red;
-//   padding: 20px;
-//   // width: 250px;
-//   // height: 100px;
-//   transform: skewX(-36deg);
-//   // background: skyblue;
-// }
+// VARIABLES
+$tablet-width: 768px;
+$desktop-width: 1124px;
 
-$nav-color: #58c;
+@mixin mobile-only {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
 
-.navbar {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  // position: relative;
-  // left: 100px;
-  // top: 100px;
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
 
-  .navbar-item {
-    float: left;
-    font-weight: bold;
-    color: #fff;
-    padding: 10px 40px;
-    position: relative;
-    cursor: pointer;
-    margin-left: -1px;
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
 
-    &:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: $nav-color;
-      z-index: -1;
-      transform: skew(-38deg);
-      transition: all 0.2s linear;
+$maize: #ffcb05;
+$MBlue: #00274c;
+$orange: #d86018;
+
+$base-blue: #003366;
+
+$nav-item-color: $maize;
+$nav-background: $base-blue;
+
+.border {
+  background: $nav-background;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.25em;
+  z-index: -10;
+  border-right: 0.25em solid $maize;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+nav {
+  display: flex;
+  background-color: #003366;
+
+  h1 {
+    @include mobile-only {
+      min-width: 44%;
     }
+    color: white;
+    margin: auto;
+    margin-left: 10px;
+  }
 
-    &:hover:after {
-      background-color: darken($nav-color, 20%);
+  .navbar {
+    list-style: none;
+    @include mobile-only {
+      margin-right: 0;
+      overflow-x: hidden;
+    }
+    margin: 0 17px 0 auto;
+
+    .navbar-item {
+      @include mobile-only {
+        // width: 75%;
+        margin-top: 1px;
+        text-align: center;
+        padding: 10px 700px 10px 33px;
+      }
+
+      float: left;
+      font-size: 1.3em;
+      color: $MBlue;
+      padding: 10px 33px;
+      position: relative;
+      cursor: pointer;
+      margin-left: 2px;
+      z-index: 4;
+
+      // parallellogram
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $maize;
+        z-index: -1;
+        transform: skew(-38deg);
+        transition: all 0.2s linear;
+      }
+
+      &:hover {
+        transition: all 0.2s linear;
+        color: $nav-item-color;
+      }
+
+      // parallellogram hover
+      &:hover:after {
+        background-color: $nav-background;
+        color: $nav-item-color;
+      }
     }
   }
 }
