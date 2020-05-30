@@ -4,10 +4,14 @@ nav.header {
   display: flex;
   background-color: $base-blue;
 
-  h1 {
+  a {
+    text-decoration: none;
+    margin: auto 0;
     @include mobile-only {
       min-width: 44%;
     }
+  }
+  h1 {
     color: white;
     margin: auto;
     margin-left: 10px;
@@ -55,14 +59,7 @@ nav.header {
         transition: all 0.2s linear;
       }
 
-      &:hover {
-        transition: all 0.2s linear;
-        // color: $nav-item-color;
-        &:after {
-          background-color: #00b2a9;
-        }
-      }
-
+      &:hover,
       &.active {
         color: $nav-item-color;
         &:after {

@@ -7,7 +7,9 @@ import "./navbar.scss";
 
 export default () => (
   <nav className="header">
-    <h1>David Brownman</h1>
+    <Link to="/">
+      <h1>David Brownman</h1>
+    </Link>
     <ul className="navbar">
       <Link to="/" className="navbar-item" activeClassName="active">
         Home

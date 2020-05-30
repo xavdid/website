@@ -8,8 +8,8 @@ import "./layout.scss";
 const Layout = ({ children }) => {
   return (
     <>
-      <LeftBorder />
       <Navbar />
+      <LeftBorder />
       <div
         style={{
           margin: `0 auto`,
