@@ -1,54 +1,8 @@
-@import "../../node_modules/normalize.css/normalize.css";
+@import "../vars.scss";
 
-// VARIABLES
-$tablet-width: 768px;
-$desktop-width: 1124px;
-
-@mixin mobile-only {
-  @media (max-width: #{$tablet-width}) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (min-width: #{$tablet-width}) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (min-width: #{$desktop-width}) {
-    @content;
-  }
-}
-
-$maize: #ffcb05;
-$MBlue: #00274c;
-$orange: #d86018;
-
-$base-blue: #003366;
-
-$nav-item-color: $maize;
-$nav-background: $base-blue;
-
-.border {
-  background: $nav-background;
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 0.25em;
-  z-index: -10;
-  border-right: 0.25em solid $maize;
-}
-
-* {
-  font-family: sans-serif;
-}
-
-nav {
+nav.header {
   display: flex;
-  background-color: #003366;
+  background-color: $base-blue;
 
   h1 {
     @include mobile-only {
@@ -60,7 +14,10 @@ nav {
   }
 
   .navbar {
-    list-style: none;
+    a {
+      text-decoration: none;
+    }
+
     @include mobile-only {
       margin-right: 0;
       overflow-x: hidden;
@@ -100,13 +57,17 @@ nav {
 
       &:hover {
         transition: all 0.2s linear;
-        color: $nav-item-color;
+        // color: $nav-item-color;
+        &:after {
+          background-color: #00b2a9;
+        }
       }
 
-      // parallellogram hover
-      &:hover:after {
-        background-color: $nav-background;
+      &.active {
         color: $nav-item-color;
+        &:after {
+          background-color: $nav-background;
+        }
       }
     }
   }

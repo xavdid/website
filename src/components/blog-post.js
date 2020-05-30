@@ -2,7 +2,7 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 
 // import Bio from "../components/bio";
-import Layout from "../components/layout";
+import Layout from "./Layout";
 import Seo from "../components/seo";
 // import { rhythm, scale } from "../utils/typography";
 
@@ -35,9 +35,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr style={{}} />
       </article>
 
+      <hr />
       <nav>
         <ul
           style={{

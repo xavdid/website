@@ -1,0 +1,17 @@
+@import "../../../node_modules/normalize.css/normalize.css";
+
+@import "../vars.scss";
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  // @media (prefers-color-scheme: dark) {
+  //   color: white; // FIXME: really just for testing dark mode
+  //   background-color: #121212;
+  //   background-image: url("./svgs/circuit-board-dark.svg");
+  // }
+
+  background-image: url("./svgs/circuit-board.svg");
+}

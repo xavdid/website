@@ -1,8 +1,7 @@
 import React from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 
-import Layout from "../components/layout";
-import Image from "../components/image";
+import Layout from "../components/Layout";
 import Seo from "../components/seo";
 
 const IndexPage = () => {
