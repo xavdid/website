@@ -24,6 +24,7 @@ const IndexPage = () => {
             frontmatter {
               title
               date
+              tags
             }
           }
         }
@@ -42,6 +43,13 @@ const IndexPage = () => {
 
   const years = Object.keys(postsByYear).sort((a, b) => b - a);
 
+  // styles
+  const leftBlockStyle = {
+    flex: "0 0 4rem",
+    textAlign: "right",
+    margin: "0rem 1rem 0rem 1.5rem",
+  };
+
   return (
     <Layout>
       <Seo title="Blog" />
@@ -54,28 +62,39 @@ const IndexPage = () => {
           <h2>{year}</h2>
           {/* <ul style={{ listStyleType: "none" }}> */}
           {postsByYear[year].map((post) => (
-            // <li >
-            <h3 key={post.node.fields.slug} style={{ display: "flex" }}>
-              <time
-                dateTime={post.node.frontmatter.date}
-                style={{
-                  flex: "0 0 4rem",
-                  textAlign: "right",
-                  margin: "0rem 1rem 0rem 1.5rem",
-                }}
-              >
-                {new Date(post.node.frontmatter.date).toLocaleString(
-                  undefined,
-                  {
-                    month: "short",
-                    day: "2-digit",
-                  }
-                )}
-              </time>
-              <Link to={post.node.fields.slug}>
-                {post.node.frontmatter.title}
-              </Link>
-            </h3>
+            <div
+              className="post-row"
+              key={post.node.fields.slug}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                paddingTop: "10px",
+              }}
+            >
+              <h3 style={{ display: "flex" }}>
+                <time
+                  dateTime={post.node.frontmatter.date}
+                  style={leftBlockStyle}
+                >
+                  {new Date(post.node.frontmatter.date).toLocaleString(
+                    undefined,
+                    {
+                      month: "short",
+                      day: "2-digit",
+                    }
+                  )}
+                </time>
+                <Link to={post.node.fields.slug}>
+                  {post.node.frontmatter.title}
+                </Link>
+              </h3>
+              <div style={{ display: "flex" }}>
+                <div style={leftBlockStyle} />
+                <span style={{ fontSize: "smaller" }}>
+                  [{post.node.frontmatter.tags}]
+                </span>
+              </div>
+            </div>
           ))}
           {/* </ul> */}
         </section>
