@@ -32,10 +32,15 @@ main {
 
   h3 {
     border-bottom: none;
+    margin: 0;
   }
 
   p.subtitle {
     margin: 0.25rem 0;
     font-size: smaller;
+  }
+
+  ul {
+    list-style-type: circle;
   }
 }

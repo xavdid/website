@@ -46,21 +46,38 @@ const IndexPage = () => {
     <Layout>
       <Seo title="Blog" />
       <h1>Blog</h1>
-      <p className="subtitle">I wrote some things.</p>
+      <p className="subtitle">
+        I don't post often, but I put great effort into everything I write here.
+      </p>
       {years.map((year) => (
         <section key={year}>
           <h2>{year}</h2>
-          <ul style={{ listStyleType: "circle" }}>
-            {postsByYear[year].map((post) => (
-              <li key={post.node.fields.slug}>
-                <h3 style={{ margin: 0 }}>
-                  <Link to={post.node.fields.slug}>
-                    {post.node.frontmatter.title}
-                  </Link>
-                </h3>
-              </li>
-            ))}
-          </ul>
+          {/* <ul style={{ listStyleType: "none" }}> */}
+          {postsByYear[year].map((post) => (
+            // <li >
+            <h3 key={post.node.fields.slug} style={{ display: "flex" }}>
+              <time
+                dateTime={post.node.frontmatter.date}
+                style={{
+                  flex: "0 0 4rem",
+                  textAlign: "right",
+                  margin: "0rem 1rem 0rem 1.5rem",
+                }}
+              >
+                {new Date(post.node.frontmatter.date).toLocaleString(
+                  undefined,
+                  {
+                    month: "short",
+                    day: "2-digit",
+                  }
+                )}
+              </time>
+              <Link to={post.node.fields.slug}>
+                {post.node.frontmatter.title}
+              </Link>
+            </h3>
+          ))}
+          {/* </ul> */}
         </section>
       ))}
     </Layout>
