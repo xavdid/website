@@ -15,3 +15,27 @@ body {
 
   background-image: url("./svgs/circuit-board.svg");
 }
+
+// styles used for all blog posts and pages
+main {
+  h1,
+  h2,
+  h3 {
+    border-bottom: 1px solid black;
+    // @media (prefers-color-scheme: dark) {
+    //   border-bottom: 1px solid white;;
+    // }
+    margin: 1rem 0 0.25rem 0;
+    line-height: 1.5;
+    font-weight: normal;
+  }
+
+  h3 {
+    border-bottom: none;
+  }
+
+  p.subtitle {
+    margin: 0.25rem 0;
+    font-size: smaller;
+  }
+}

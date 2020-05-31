@@ -1,0 +1,29 @@
+@import "../vars.scss";
+
+$border-height: 2px;
+$link-color: #2f65a7;
+
+.body-link {
+  text-decoration: none;
+  color: $link-color;
+  display: inline-block;
+  // border-bottom: $border-height solid darkgrey;
+
+  &::after {
+    content: "";
+    display: block;
+    height: 0.15em;
+    margin-top: -0.15em;
+    width: 0;
+    background: $link-color;
+    transition: width 0.2s;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
+
+  &:visited {
+    color: $link-color;
+  }
+}
