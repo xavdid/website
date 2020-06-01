@@ -3,7 +3,7 @@ date: "2019-02-04"
 title: teststststs
 fact: so cool
 fact_year: 1234
-tags: books, lookback, movies, television, videogames
+tags: [books, lookback, movies, television, videogames]
 published: false
 og_img: "https://i.imgur.com/A0r1KlG.jpg"
 og_desc: A look back at the best and brightest media of 2018

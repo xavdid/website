@@ -3,7 +3,7 @@ date: "2013-10-30"
 title: Take You To the Candy Box
 fact: Orson Welles broadcasts his radio play of H. G. Wells's The War of the Worlds, causing anxiety in some of the audience in the United States.
 fact_year: 1938
-tags: play, videogames
+tags: [play, videogames]
 ---
 
 There's been a recent surge in popularity of a relatively unknown genre of game called the [incremental game](https://www.reddit.com/r/inrementalgames). These games start small and gradually increase some value to incredibly large numbers. The prime example of this is called [_Cookie Clicker_](http://orteil.dashnet.org/cookieclicker). In it, you (unsurprisingly) click the cookie. This affords you currency with which you can buy items that click the cookie for you, increasing your cookies per second. Eventually, you end up with multiple trillions of cookies which help you buy absurdly large items. That's the whole game; start little, get big. New cookie clickers typically have one of two responses: "you just click? This is the dumbest game ever" or "holy crap, I hope I'm not susceptible to carpal tunnel because I'm going to be clicking _a lot_. It's uncommon for a game's core mechanic to be that polarizing, so we're going to take a gander at a precursor of the genre using Church's [Formal Abstract Design Tools](http://www.gamasutra.com/view/feature/131764/formal_abstract_design_tools.php).

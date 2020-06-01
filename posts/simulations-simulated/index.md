@@ -3,7 +3,7 @@ date: "2013-10-02"
 title: Simulations, Simulated
 fact: John Logie Baird performs the first test of a working television system.
 fact_year: 1925
-tags: play, videogames
+tags: [play, videogames]
 ---
 
 People play many sorts of games for many sorts of reasons, but they all share one very important quality: games are pretending to be something else. It doesn't matter if you play _Call of Duty_ or [_The Bible Game_](http://en.wikipedia.org/wiki/The_Bible_Game), the point of the software is to manipulate people or events that aren't real. (p. 427) There are a lot of design choices associated with the creation of games, particularly those that simulate something else explicitly. READMORE [^1] Sometimes this goes smoothly and creates a good playing experience. Other times (like in the case of _ElectroCity_), it goes rather less well.

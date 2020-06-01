@@ -3,7 +3,7 @@ date: "2018-02-21"
 title: A Few More of my Favorite Things
 fact: The first self-propelling steam locomotive makes its outing at the Pen-y-Darren Ironworks in Wales.
 fact_year: 1904
-tags: boardgames, books, lookback, movies, television, videogames
+tags: [boardgames, books, lookback, movies, television, videogames]
 og_img: https://i.imgur.com/NwGZMyR.png
 og_desc: A look back at some of my favorite media in 2017
 ---

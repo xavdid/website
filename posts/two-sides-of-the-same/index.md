@@ -3,7 +3,7 @@ date: "2013-06-13"
 title: Two Sides of the Same Coin
 fact: '"The Long and Winding Road" becomes The Beatles'' last U.S. number one song.'
 fact_year: 1970
-tags: personal, essay
+tags: [personal, essay]
 ---
 
 Good and evil, black and white, light and shadow: the classic dichotomy of our society.

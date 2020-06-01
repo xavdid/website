@@ -4,46 +4,47 @@ nav.header {
   display: flex;
   background-color: $base-blue;
 
-  a {
-    text-decoration: none;
-    margin: auto 0;
-    @include mobile-only {
-      min-width: 44%;
-    }
-  }
   h1 {
     color: white;
     margin: auto;
     margin-left: 10px;
   }
 
+  a {
+    text-decoration: none;
+    margin: auto 0;
+  }
+
   .navbar {
-    a {
-      text-decoration: none;
-    }
+    // needed for keeping title clear
 
     @include mobile-only {
+      padding-inline-start: 4rem;
       margin-right: 0;
       overflow-x: hidden;
     }
     margin: 0 17px 0 auto;
 
     .navbar-item {
+      text-decoration: none;
       @include mobile-only {
-        // width: 75%;
         margin-top: 1px;
         text-align: center;
         padding: 10px 700px 10px 33px;
       }
 
+      text-align: center;
       float: left;
-      font-size: 1.3em;
+      font-size: 1.2rem;
       color: $MBlue;
       padding: 10px 33px;
       position: relative;
       cursor: pointer;
       margin-left: 2px;
       z-index: 4;
+      // items being too short messes up spacing
+      // should be as long as the biggest item, I think
+      min-width: 70px;
 
       // parallellogram
       &:after {
@@ -55,7 +56,7 @@ nav.header {
         bottom: 0;
         background-color: $maize;
         z-index: -1;
-        transform: skew(-38deg);
+        transform: skew(-36deg);
         transition: all 0.2s linear;
       }
 

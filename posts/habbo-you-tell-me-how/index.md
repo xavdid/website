@@ -3,7 +3,7 @@ date: "2013-10-09"
 title: Habbo You Tell Me How to Act
 fact: Because of the implementation of the Gregorian calendar, this day does not exist in this year in Italy, Poland, Portugal and Spain.
 fact_year: 1582
-tags: play, videogames
+tags: [play, videogames]
 ---
 
 Anyone who's played a game with children knows that rules, much like a pirate's code, are mostly "guidelines". However, these games (even when played between children) are not without structure. Instead, children tend to follow unspoken adaptions of rule sets that allow for flexibility and argument. (Hughes p. 509) In a world where all social cues and pretext are dropped (where, like children, we can only judge people from their actions (both vocal and physical)), the rules of conversation and social decorum are totally different, as seen in [Habbo Hotel](http://www.habbo.com). Nevertheless, there's a new set of codes that dictate how interactions should happen and they have some fascinating parallels to real social interaction.

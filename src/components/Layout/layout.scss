@@ -18,6 +18,7 @@ body {
 
 // styles used for all blog posts and pages
 main {
+  font-size: 18px;
   h1,
   h2,
   h3 {
@@ -25,14 +26,23 @@ main {
     // @media (prefers-color-scheme: dark) {
     //   border-bottom: 1px solid white;;
     // }
-    margin: 1rem 0 0.25rem 0;
-    line-height: 1.5;
+    margin: 1.5rem 0 0.25rem 0;
+    // line-height: 1.5;
     font-weight: normal;
   }
 
   h3 {
+    padding-top: 1rem; // makes h3 padding non-symmetrical
     border-bottom: none;
+    font-weight: bold;
     margin: 0;
+    a {
+      line-height: unset;
+    }
+  }
+
+  p {
+    line-height: 1.25;
   }
 
   p.subtitle {

@@ -3,7 +3,7 @@ date: "2013-11-20"
 title: "FTL: A Blend of Narrative and Gameplay"
 fact: Microsoft Windows 1.0 is released.
 fact_year: 1985
-tags: videogames, play
+tags: [videogames, play]
 ---
 
 All right captain, strap in. The mantis boarding party is on its way and our shields can only hold up for so long. Our drone control is damaged and a fire in the medbay is causing issues. _What do we do_?

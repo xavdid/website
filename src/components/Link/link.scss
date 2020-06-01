@@ -6,14 +6,15 @@ $link-color: #2f65a7;
 .body-link {
   text-decoration: none;
   color: $link-color;
+  border-bottom: 1px solid lightgrey;
   display: inline-block; // this is the key to not having a newline after the link
 
   // pulled from https://github.com/YoussefRaafatNasry/portfolYOU/blob/ace3552e67f793a67a7e1598260900fc8b608947/_sass/_blog.scss#L75-L87
   &::after {
     content: "";
     display: block;
-    height: 0.15em;
-    margin-top: -0.15em;
+    height: 0.15rem;
+    margin-top: -0.15rem;
     width: 0;
     background: $link-color;
     // @media (prefers-color-scheme: dark){}

@@ -1,35 +1,28 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
-exports.createPages = async ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage: createGatsbyPage } = actions;
 
   const isProdBuild = process.env.NODE_ENV === "production";
 
-  const blogPost = path.resolve(`./src/components/blog-post.js`);
+  const blogPost = require.resolve(`./src/components/blog-post.js`);
   const result = await graphql(
     `
       {
-        blog: allMarkdownRemark(
+        blog: allMdx(
           sort: { fields: [frontmatter___date], order: DESC }
           filter: { fileAbsolutePath: { regex: "/posts/" } }
         ) {
           edges {
             node {
-              fileAbsolutePath
               fields {
                 slug
-              }
-              frontmatter {
-                title
-                published
               }
             }
           }
         }
-        pages: allMarkdownRemark(
-          filter: { fileAbsolutePath: { regex: "/src/pages/" } }
-        ) {
+        pages: allMdx(filter: { fileAbsolutePath: { regex: "/src/pages/" } }) {
           edges {
             node {
               fields {
@@ -43,7 +36,7 @@ exports.createPages = async ({ graphql, actions }) => {
   );
 
   if (result.errors) {
-    throw result.errors;
+    reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query');
   }
 
   const createPage = (slug, context = {}) => {
@@ -81,14 +74,14 @@ exports.createPages = async ({ graphql, actions }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
 
-  if (node.internal.type === `MarkdownRemark`) {
+  if (node.internal.type === "Mdx") {
     const filePath = createFilePath({ node, getNode });
 
     // since all markdown comes through here, we have to distinguish which files are blog posts vs top-level pages
     const value = path
       .relative(__dirname, node.fileAbsolutePath)
       .startsWith("posts")
-      ? `/blog${filePath}`
+      ? `/blog/post${filePath}`
       : filePath;
 
     createNodeField({

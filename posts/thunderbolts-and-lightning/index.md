@@ -3,7 +3,7 @@ date: "2018-11-05"
 title: Thunderbolts and Lightning
 fact: George B. Selden is granted the first U.S. patent for an automobile.
 fact_year: 1895
-tags: hardware
+tags: [hardware]
 og_img: https://i.imgur.com/nfx8NXh.png
 og_desc: In which a surge protector does not protect as much as is expected
 ---

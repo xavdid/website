@@ -3,7 +3,7 @@ date: "2016-08-19"
 title: Quidditch by the Numbers
 fact: Jules Janssen discovered Helium during a solar eclipse.
 fact_year: 1868
-tags: quidditch, statistics
+tags: [quidditch, statistics]
 ---
 
 Now that the dust has settled from World Cup, my Anonymous Associate and I thought it would be worthwhile to look through the numbers on game length and scoring data from throughout the season and see how impactful the snitch was.

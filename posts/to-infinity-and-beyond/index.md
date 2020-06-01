@@ -3,7 +3,7 @@ date: "2013-06-27"
 title: To Infinity and Beyond
 fact: The first solo circumnavigation of the globe is completed by Joshua Slocum from Briar Island, Nova Scotia.
 fact_year: 1898
-tags: personal, adventure
+tags: [personal, adventure]
 ---
 
 I feel good about the fact that, for the most part, I live my life free of any vices. That is, except for one:

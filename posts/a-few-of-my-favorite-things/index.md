@@ -3,7 +3,7 @@ date: "2017-02-11"
 title: A Few of My Favorite Things
 fact: BBC Television produces the world's first ever science fiction television program, an adaptation of a section of the Karel Čapek play R.U.R., that coined the term "robot".
 fact_year: 1938
-tags: boardgames, books, lookback, movies, television, videogames
+tags: [boardgames, books, lookback, movies, television, videogames]
 og_img: https://i.imgur.com/wPU9lMu.jpg
 og_desc: A lookback at the best (and worst) of media in 2016
 ---
@@ -47,12 +47,12 @@ Winner: **Machi Koro**
 
 I think what cements _[Machi Koro](https://boardgamegeek.com/boardgame/143884/machi-koro)_ as one of my favorite games from this year is that as soon as I finish playing it with a group for the first time, everyone immediately wants a second go. There's not always that level of enthusiasm with new games but the pleasant design and wealth of choices make this a great game to jump into. This is a lighter game that mechanically finds itself between Settlers of Catan and Dominion. You get resources based on everyone's dice rolls, but you have a bit more agency with your luck as you can choose which rolls benefit you based on which cards you buy. There's an expansion that changes which cards are available in the middle (it makes the piles random instead of static) if you find the game isn't varied enough. It also adds some nautical features which can help pad game length. There's a lot of simple tweaks to adjust the game to your group's preference and play style, and the game feels fun no matter which you choose. Again, it's light, but undeniably fun.
 
-<br>
+<br />
 Runner-up: **7 Wonders: Duel**
 
 Living in an 8 person house in college, _7 Wonders_ was a great way to include everyone in a single game. Strictly speaking it's got a 2 player variant but it's shoehorned in and not well-implemented; _[7 Wonders Duel](https://boardgamegeek.com/boardgame/173346/7-wonders-duel)_ is designer Antoine Bauza's rectification of this problem. It's a 2 player standalone game that borrows heavily from the mechanics of the original, but does so with 2 players in mind. Victory comes one of three ways- military or scientific supremacy, or points if all 3 rounds complete. Instead of drafting from a deck, the cards are shuffled and laid out on the table where each player takes turns drawing from the display. Once the cards are dealt, there's very little luck (as both players have access to the same information and cards) which is vital for a 2 player game to be competitive. There's enough control over your actions (and how they affect your opponent) that victories are satisfying and losses are avoidable. There's enough variation in the Wonders and the way the cards are laid out that the game has a ton of replay value. The game is well balanced and has a lot of depth. If you find yourself in a position to play a lot of 2 player games, make sure _7 Wonders: Duel_ is in your collection.
 
-<br>
+<br />
 Honorable Mention: **Tokaido**, for a beautifully spiteful game about a leisurely journey up the Japan's [Eastern Sea Road](https://en.wikipedia.org/wiki/T%C5%8Dkaid%C5%8D_(road)). The components are beautiful and the iconography is clear. Also **Codenames** for being fun as heck and a great party game.
 
 ## Videogames
@@ -63,7 +63,7 @@ These days most of my gaming happens on my home-built PC, but I've also been mak
 
 This has been a weird year for me as far as PC games are concerned. When picking games I tend to prioritize story above most other factors; neither of my picks have much of a story. I've been making a concerted effort to not buy any new games (despite sales) and to instead work on my backlog; both of my picks this year were newly purchased for full price.[^2] Exceptions must be made for excellence, and that's what these games are.
 
-<br>
+<br />
 Winner: **Factorio**
 
 I've always had a thing for [automation](/blog/2014/12/16/augmenting-automation-on-ios/) and when I saw there was a mining game designed around that very concept, I couldn't stay away. I bought _[Factorio](https://www.factorio.com/)_ for my birthday and proceeded to play 35 hours that week (placing it squarely in one of my [most-played](https://steamcommunity.com/id/xavdidtheshadow/games/?tab=all) steam games of all time). After destroying my sleep schedule and finally launching the rocket, I had only scratched the surface of the game. [^3]
@@ -84,7 +84,7 @@ The developers have taken a unique [no sale](https://www.factorio.com/FAQ) stanc
 
 I'd say more, but the enthusiasm on the [subreddit](https://www.reddit.com/r/factorio/) speaks for itself. Plus, I've got a factory to build.
 
-<br>
+<br />
 Runner-up: **The Witness**
 
 At it's surface, _the Witness_ is a game about increasingly complex line puzzles. There's no combat, no story to speak of, and no music. You walk around and draw lines through grids to satisfy unexplained constraints. What makes the game so great?
@@ -109,14 +109,14 @@ Despite this praise, the game isn't perfect. For me, the biggest letdown was the
 
 For your time and money, _The Witness_ does a lot of things right. I'm glad I got it and look forward to circling back around to completed the areas I skipped in the coming months. Until then, I'll keep seeing circles and paths everywhere I look.
 
-<br>
+<br />
 Honorable mention: **Ratchet & Clank: Into the Nexus**, for doing a lot with a little. Despite its fairly short campaign, there's a lot of rewarding exploration do be done to do and I found coming back to *Into the Nexus* long after I needed to.
 
 ### Mobile
 
 Truth be told I don't play a lot of mobile games- none on my phone and a few on my iPad. When I do, I mostly puzzle games or action ones with a "solving' component. I got a 3DS on Black Friday and have been making an effort to play it instead of the iPad.[^4] It's been great so far and I'm looking forward to shifting my focus away from an app store plagued with scummy in-app-purchases. Until then, there are a couple of great games that you can play in short bursts on the go.
 
-<br>
+<br />
 Winner: **Blackbox**
 
 Puzzle games need a premise, whether it's line puzzles or a 9 by 9 grid with digits int it. _[Blackbox](http://blackboxpuzzles.com/)_ is unique in that its premise takes advantage of the thing you think about least of all: your iPhone itself. The game consists of a series of puzzles requiring you to light up a little square. There aren't instructions, strictly speaking, and the answer isn't always clear. The game's design does a great job and instructing you tutorial shows you how the puzzles are explicitly device related.
@@ -129,7 +129,7 @@ One of the intro puzzles is solved with the device's physical buttons. In others
 
 One of the most unique features is being able to chat with the developer once you've completed enough levels. [Ryan](https://twitter.com/warpling) is a really friendly guy and it's been fun picking his brain about the game. He also has a great [writeup](https://medium.com/mobile-growth/how-i-got-10-000-five-star-reviews-in-4-weeks-5246cc4c55c7#.gdrgzid31) about asking for device permissions in a non-invasive way. His app asks for most of the available permissions and it could be really annoying if not done tactfully. Once you complete all of the puzzles, there's not a lot to do until he releases more puzzles. Otherwise, _Blackbox_ has a lot of good going for it.
 
-<br>
+<br />
 Runner-up: **Mini Metro**
 
 Planted squarely between very relaxing and very stressful, _[Mini Metro](http://dinopoloclub.com/minimetro/)_ is a subway map simulator. The goal is simple- to not leave anyone waiting at a station too long. Throughout a game (which lasts up to ~15 minutes), shapes (aka stations) pop up around your map. It starts off easy- there are only circle, square, and triangle stations/riders. You place subway lines between stations in order to best aid your geometrically shaped citizens in getting to their destination. As the game progresses, the shapes get more diverse, forcing your system to become more inter-connected and efficient. The difficulty curve is gentle yet firm, leading to satisfying gameplay as you hustle to keep folks moving.
@@ -138,7 +138,7 @@ Planted squarely between very relaxing and very stressful, _[Mini Metro](http://
 
 The game's graphics provide an undeniable charm and its pleasant music goes a long way toward making you feel relaxed. Though the people and stations are fictional, all of the maps are based on real cities and the layout of rivers/bridges/tunnels is at least semi-realistic. If I were to make one improvement, it would be about the information you have on the system. Being able to see which lines had which shapes would go a long way towards identifying problems before it's too late. Nevertheless, a quick _Mini Metro_ session goes a long way to putting me in a good mood.
 
-<br>
+<br />
 Honorable mention: *[The Guides](https://theguidesapp.com/)*, which plays like a [CTF](https://en.wikipedia.org/wiki/Capture_the_flag#Computer_security) game that requires almost no specific technical knowledge. Each level requires a code word (found by correctly decoding written or visual clues) to progress. There seems to be some sort of cryptic story related to aliens, but even without it the game feels satisfying.
 
 ## Movies
@@ -155,12 +155,12 @@ _Captain America: Civil War_ was basically everything I might want from a [MCU](
 
 _Arrival_ was a breath of fresh air in what can be a stale genre. I'm a sucker for badass lady-scientists (see also: [Contact](<https://en.wikipedia.org/wiki/Contact_(1997_American_film)>)), so this was an easy sell. There was a big focus on linguistics and how words affect our perception. In a modern day where words and speech have become increasingly meaningful and scrutinized, this was especially engaging. It also deals with fear on a national (and international) level, which made it feel especially relevant. There was a good setup, a purposeful build, and a satisfying payoff. I left this movie feeling engaged and satisfied and look forward to watching it again soon.
 
-<br>
+<br />
 Runner-up: **Deadpool**
 
 I almost didn't see this. I was nervous about the character, because I was nearly certain that however he was portrayed he would be annoying and overbearing. I was never more happy to be wrong. In an (arguably over-saturated) field of superhero movies, _Deadpool_ was self aware and managed to balance an emotional story against some absolutely hysterical moments. I was pleased to see them testing including some X-Men in the MCU proper and hope for more. The film's underdog success makes me a little concerned about more studio interference in the sequel, but who says lightning can't strike twice?
 
-<br>
+<br />
 Honorable mention(s):  *Storks* and *Zootopia*, for proving that there's space for a serious (and often meaningful) story while providing jokes that cater to all ages. Lastly *Rogue One*, for a pleasant surprise.
 
 Dishonorable mention: _Kung-Fu Panda 3_, for completing the series' decline from the pinnacle of cinema to a fairly generic children's movie. The per-character in-fight catchphrases were a letdown.
@@ -173,12 +173,12 @@ It's no secret that I watch a lot of TV. I enjoy the long-form stories that are 
 
 As the shows I watch end, I'm always on the lookout for new things to supplement my weekly rotation. My running count had dipped low this season, so I made an effort to pick up something new.
 
-<br>
+<br />
 Winner: **The Good Place**
 
 On the whole, I really like NBC comedies (see: Community, 30 Rock, Scrubs, etc) and they've hit it out of the park again with _The Good Place_. It's been a really fun season slowly growing our knowledge about the characters. Normally I only put things on here I've finished, but having seen everything but the finale so far in 2016, I'm confident I'll still feel this way when the season concludes (_2017 edit: the finale exceeded expectations_). The show is quirky without being overbearing and weaves its characters together well. I like how it approaches the afterlife in a factual, straightforward manner and ruminates on what makes people good (a topic I've thought [a lot]() about). None of the characters are quite as they seems and it's been a delight untangle the lives of the people in _The Good Place_. The show has been a breath of fresh air in am otherwise fairly stale fall lineup.
 
-<br>
+<br />
 Runner-up: **Stranger Things**
 Hopefully by now, you've heard how good this show is. Some of it is hype, but a lot of it is engaging characters, great theme music, and a mysterious organization. The child actors are great and there's a surprising amount of depth in their relationships with their friends and their drive to do what's right. It also feels a bit like *The Goonies* in that it captures the spirit of 1980's America well (so I've heard, I wasn't around for them). Though in some cases it can be dangerous to buy into hype, in this case it's well deserved. Set aside 8 hours and enjoy what *Stranger Things* has to offer.
 
@@ -186,33 +186,33 @@ Hopefully by now, you've heard how good this show is. Some of it is hype, but a 
 
 Thanks to Netflix and other online providers, it's easier than ever to watch old shows that are recommended to me. Hopefully when you're reading this these are all still readily available, as they shouldn't be missed.
 
-<br>
+<br />
 Winner: **Better off Ted**
 This show blew me out of the water. It follows Ted, a well-meaning exec at a fairly evil corporation. The writing is tight and the jokes come fast. They do a great job fleshing out supporting characters and Portia de Rossi nails it as Ted's tone deaf boss. Like many great shows it was taken top soon, but not before it left a lasting impact on comedy. It's 2 short seasons, why don't you give it a go?
 
-<br>
+<br />
 Honorable Mention: *The West Wing* for being equal parts prophetic and wonderful throughout its run. It seems silly to give an award to a 10 year old (and highly decorated) show, so I didn't. Its writing, acting, and political relevance are truly astounding though, so if you haven't watched it yet, do yourself a favor and rectify that.
 
 ## Books
 
 This was the year I really started to get into audio-books (thanks to a few lengthy road trips). Working from home, I don't have a lot of time to listen to them anymore but they really helped transform some long drives. I had a pretty good [reading list](https://airtable.com/shr4iBau1Ewwu5kxB) this year. I've talked about them each briefly at that link, but I wanted to highlight a couple that were really special.
 
-<br>
+<br />
 Winner: **Gone Girl**, by Gillian Flynn
 
 I always make a point to read the book before a movie comes out, and that was my primary motivation for picking up _[Gone Girl](http://gillian-flynn.com/gone-girl/)_. In hindsight, I chose correctly. It's a thriller about the murder of a man's wife. It adheres to a great frame where chapters alternate between their points of view: him in present day (dealing with her murder) and her in her diary, staring from when they met and running forward until her untimely demise.
 
 This book is equal parts thrilling and chilling as we get an insightful dive into the minds of a pair of realistic and engaging characters. Flynn's writing is frank, addressing how people change over time and how they inflict misery on others. It's gripping all the way through and I wholeheartedly recommend it.
 
-<br>
+<br />
 Runner-up: **The Mirage**, by Matt Ruff
 
 Alternate history is a genre I don't read nearly enough of, so I jumped at the chance to read _[The Mirage](http://www.bymattruff.com/my-novels/the-mirage/)_. Written by the author of one of my favorite books of all time (Bad Monkeys, for you trivia buffs), Ruff paints an engaging picture of how the world could have looked given a big "what if". In his version of events, the UAE and the USA switch roles, and Christian fundamentalists bomb the twin Tigris and Euphrates towers. This story follows the aftermath and the political climate therein. The lives of the (FBI equivalent) agents we follow take a turn for the bizarre as artifacts from a "time that wasn't" begin popping up- Bush-era political propaganda and unknown technology. Especially in the current day, _The Mirage_ is well worth your time.
 
-<br>
+<br />
 Honorable Mention: Joel McHale's *Thanks for the Money*. I listened to this as an audiobook and besides being funny, there were some audiobook specific jokes that made it feel special. Also, he calls friends and cast mates and has them introduce chapters over the phone, which was cute. It also becomes surprisingly touching for a largely parodic work.
 
-<br>
+<br />
 Dishonorable mention: *The Adjacent*, for being an un-engaging knock off of *Cloud Atlas* where we bounce between characters, but they're all so dull that it's not worth discovering why or how they're connected.
 
 <!-- extra anchor, see https://github.com/vmg/redcarpet/issues/602 -->

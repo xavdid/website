@@ -10,9 +10,9 @@ export default () => (
     <Link to="/">
       <h1>David Brownman</h1>
     </Link>
-    <ul className="navbar">
+    <div className="navbar">
       <Link to="/" className="navbar-item" activeClassName="active">
-        Home
+        About
       </Link>
       <Link
         to="/blog"
@@ -31,13 +31,13 @@ export default () => (
         Projects
       </Link>
       <Link
-        to="/misc"
+        to="/contact"
         className="navbar-item"
         activeClassName="active"
         partiallyActive
       >
-        Sundries
+        Contact
       </Link>
-    </ul>
+    </div>
   </nav>
 );

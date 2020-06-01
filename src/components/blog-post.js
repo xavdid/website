@@ -1,15 +1,14 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
-
-// import Bio from "../components/bio";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 import Layout from "./Layout";
 import Seo from "../components/seo";
-// import { rhythm, scale } from "../utils/typography";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
-  const post = data.markdownRemark;
+  console.log(data);
+  const post = data.mdx;
   const siteTitle = data.site.siteMetadata.title;
-  const { previous, next } = pageContext;
+  const { previous, next, isBlog } = pageContext;
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -18,40 +17,51 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article>
-        <header>
-          <h1>{post.frontmatter.title}</h1>
-          <p className="subtitle">{post.frontmatter.date}</p>
-        </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        {post.frontmatter.title && (
+          <>
+            <header>
+              <h1>{post.frontmatter.title}</h1>
+              {(post.frontmatter.subtitle || post.frontmatter.date) && (
+                <p className="subtitle">
+                  {post.frontmatter.subtitle || post.frontmatter.date}
+                </p>
+              )}
+            </header>
+          </>
+        )}
+        <MDXRenderer>{post.body}</MDXRenderer>
       </article>
-
-      <hr />
-      <nav>
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
+      {isBlog && (
+        <>
+          <hr />
+          <nav>
+            <ul
+              style={{
+                display: `flex`,
+                flexWrap: `wrap`,
+                justifyContent: `space-between`,
+                listStyle: `none`,
+                padding: 0,
+              }}
+            >
+              <li>
+                {previous && (
+                  <Link to={previous.fields.slug} rel="prev">
+                    ← {previous.frontmatter.title}
+                  </Link>
+                )}
+              </li>
+              <li>
+                {next && (
+                  <Link to={next.fields.slug} rel="next">
+                    {next.frontmatter.title} →
+                  </Link>
+                )}
+              </li>
+            </ul>
+          </nav>
+        </>
+      )}
     </Layout>
   );
 };
@@ -65,12 +75,13 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
-      html
+      body
       frontmatter {
         title
+        subtitle
         date(formatString: "MMMM DD, YYYY")
       }
     }

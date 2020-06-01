@@ -3,7 +3,7 @@ date: "2018-06-05"
 title: On the Rating of Media
 fact: Houston is incorporated by the Republic of Texas.
 fact_year: 1837
-tags: movies, Airtable
+tags: [movies, Airtable]
 og_desc: Learn more about how I rank all of the media I track in a consistent manner
 ---
 

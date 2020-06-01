@@ -9,7 +9,7 @@ import Link from "../components/Link";
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     {
-      posts: allMarkdownRemark(
+      posts: allMdx(
         sort: { fields: [frontmatter___date], order: DESC }
         filter: {
           fileAbsolutePath: { regex: "/posts/" }
@@ -21,6 +21,7 @@ const IndexPage = () => {
             fields {
               slug
             }
+            timeToRead
             frontmatter {
               title
               date
@@ -45,22 +46,20 @@ const IndexPage = () => {
 
   // styles
   const leftBlockStyle = {
-    flex: "0 0 4rem",
+    flex: "0 0 5rem",
     textAlign: "right",
-    margin: "0rem 1rem 0rem 1.5rem",
+    margin: "0rem 1rem",
+    fontWeight: "normal",
   };
 
   return (
     <Layout>
       <Seo title="Blog" />
       <h1>Blog</h1>
-      <p className="subtitle">
-        I don't post often, but I put great effort into everything I write here.
-      </p>
+      <p className="subtitle">{data.posts.edges.length} posts and counting.</p>
       {years.map((year) => (
         <section key={year}>
           <h2>{year}</h2>
-          {/* <ul style={{ listStyleType: "none" }}> */}
           {postsByYear[year].map((post) => (
             <div
               className="post-row"
@@ -88,15 +87,51 @@ const IndexPage = () => {
                   {post.node.frontmatter.title}
                 </Link>
               </h3>
-              <div style={{ display: "flex" }}>
-                <div style={leftBlockStyle} />
+              <div style={{ display: "flex", paddingTop: "10px" }}>
+                <div style={{ ...leftBlockStyle }} />
                 <span style={{ fontSize: "smaller" }}>
-                  [{post.node.frontmatter.tags}]
+                  Phasellus lobortis augue sem, non dictum purus convallis sed.
+                  Mauris aliquet nisi ex.
                 </span>
+              </div>
+              <div style={{ display: "flex", paddingTop: "10px" }}>
+                <div style={{ ...leftBlockStyle }} />
+                {/* <span style={{ fontSize: "smaller" }}> */}
+                {/* <span style={{ paddingRight: "5px" }}>
+                    ~ {post.node.timeToRead} min{" "}
+                  </span> */}
+                {/* [{post.node.frontmatter.tags.join(", ")}] */}
+                <div
+                  style={{
+                    display: "flex",
+                    flexWrap: "wrap",
+                    justifyContent: "space-between",
+                    fontSize: "smaller",
+                  }}
+                >
+                  {post.node.frontmatter.tags
+                    .sort((a, b) =>
+                      a.localeCompare(b, "en", { sensitivity: "base" })
+                    )
+                    .map((tag) => (
+                      <span
+                        key={tag}
+                        style={{
+                          backgroundColor: "lightgreen",
+                          // TODO: fix first child not needing padding. flex?
+                          // margin: "0 0.25rem",
+                          padding: "5px",
+                          borderRadius: "3px",
+                        }}
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                </div>
+                {/* </span> */}
               </div>
             </div>
           ))}
-          {/* </ul> */}
         </section>
       ))}
     </Layout>

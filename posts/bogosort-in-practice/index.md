@@ -3,7 +3,7 @@ date: "2017-09-05"
 title: Bogosort in Practice
 fact: Louis XIV's Superintendent of Finances is arrested in Nantes by D'Artagnan, captain of the king's musketeers.
 fact_year: 1661
-tags: ruby, programming, statistics
+tags: [ruby, programming, statistics]
 og_desc: If you actually implemented Bogosort, how bad could it be?
 ---
 
