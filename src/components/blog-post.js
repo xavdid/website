@@ -7,11 +7,10 @@ import Seo from "../components/seo";
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   console.log(data);
   const post = data.mdx;
-  const siteTitle = data.site.siteMetadata.title;
   const { previous, next, isBlog } = pageContext;
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location}>
       <Seo
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -70,11 +69,6 @@ export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)

@@ -42,7 +42,7 @@ There's never been a better time to have a board game habit.[^1] Sitting around 
 
 Since I took a remote job at [Zapier](https://zapier.com) my group's game sessions aren't as frequent (compared to when we all worked in the same office), but we make sure they still happen. I played a lot of new games this year and a few new ones stuck out from among the crowd.
 
-<br>
+<br />
 Winner: **Machi Koro**
 
 I think what cements _[Machi Koro](https://boardgamegeek.com/boardgame/143884/machi-koro)_ as one of my favorite games from this year is that as soon as I finish playing it with a group for the first time, everyone immediately wants a second go. There's not always that level of enthusiasm with new games but the pleasant design and wealth of choices make this a great game to jump into. This is a lighter game that mechanically finds itself between Settlers of Catan and Dominion. You get resources based on everyone's dice rolls, but you have a bit more agency with your luck as you can choose which rolls benefit you based on which cards you buy. There's an expansion that changes which cards are available in the middle (it makes the piles random instead of static) if you find the game isn't varied enough. It also adds some nautical features which can help pad game length. There's a lot of simple tweaks to adjust the game to your group's preference and play style, and the game feels fun no matter which you choose. Again, it's light, but undeniably fun.

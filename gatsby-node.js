@@ -16,6 +16,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         ) {
           edges {
             node {
+              frontmatter {
+                published
+              }
               fields {
                 slug
               }
@@ -37,6 +40,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   if (result.errors) {
     reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query');
+    return;
   }
 
   const createPage = (slug, context = {}) => {
@@ -66,6 +70,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // create top-level pages
   const pages = result.data.pages.edges;
   pages.forEach((page) => {
+    console.log(page.node);
     createPage(page.node.fields.slug);
   });
 };
