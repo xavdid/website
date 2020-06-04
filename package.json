@@ -71,7 +71,15 @@
     ],
     "rules": {
       "react/prop-types": 0
-    }
+    },
+    "overrides": [
+      {
+        "files": ["*.mdx"],
+        "rules": {
+          "react/jsx-indent": 0
+        }
+      }
+    ]
   },
   "prettier": {}
 }

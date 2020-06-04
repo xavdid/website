@@ -28,6 +28,9 @@ highlighted code block[^1]:
 
 ```js
 const a = 3;
+// if eslint is running here, this should fail
+if (a == 2) {
+}
 const o = {};
 o.a = a;
 ```
