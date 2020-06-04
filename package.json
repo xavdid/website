@@ -62,7 +62,9 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "eslintConfig": {
-    "plugins": ["prettier"],
+    "plugins": [
+      "prettier"
+    ],
     "extends": [
       "standard",
       "standard-react",
@@ -74,7 +76,9 @@
     },
     "overrides": [
       {
-        "files": ["*.mdx"],
+        "files": [
+          "*.mdx"
+        ],
         "rules": {
           "react/jsx-indent": 0
         }
