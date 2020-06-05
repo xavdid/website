@@ -1,8 +1,9 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import Layout from "./Layout";
-import Seo from "../components/seo";
+import Layout from "./layouts/BaseLayout";
+import Seo from "./seo";
+import PageHeader from "./page-header";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   console.log(data);
@@ -17,16 +18,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       />
       <article>
         {post.frontmatter.title && (
-          <>
-            <header>
-              <h1>{post.frontmatter.title}</h1>
-              {(post.frontmatter.subtitle || post.frontmatter.date) && (
-                <p className="subtitle">
-                  {post.frontmatter.subtitle || post.frontmatter.date}
-                </p>
-              )}
-            </header>
-          </>
+          <PageHeader
+            title={post.frontmatter.title}
+            subtitle={post.frontmatter.date}
+          />
         )}
         <MDXRenderer>{post.body}</MDXRenderer>
       </article>

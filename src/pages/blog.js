@@ -1,8 +1,9 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Layout from "../components/Layout";
+import Layout from "../components/layouts/BaseLayout";
 import Seo from "../components/seo";
+import PageHeader from "../components/page-header";
 
 import Link from "../components/Link";
 
@@ -55,8 +56,10 @@ const IndexPage = () => {
   return (
     <Layout>
       <Seo title="Blog" />
-      <h1>Blog</h1>
-      <p className="subtitle">{data.posts.edges.length} posts and counting.</p>
+      <PageHeader
+        title="Blog"
+        subtitle={`${data.posts.edges.length} posts and counting.`}
+      />
       {years.map((year) => (
         <section key={year}>
           <h2>{year}</h2>

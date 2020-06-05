@@ -25,15 +25,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             }
           }
         }
-        pages: allMdx(filter: { fileAbsolutePath: { regex: "/src/pages/" } }) {
-          edges {
-            node {
-              fields {
-                slug
-              }
-            }
-          }
-        }
       }
     `
   );
@@ -42,17 +33,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     reporter.panicOnBuild('🚨  ERROR: Loading "createPages" query');
     return;
   }
-
-  const createPage = (slug, context = {}) => {
-    createGatsbyPage({
-      path: slug,
-      component: blogPost,
-      context: {
-        slug,
-        ...context,
-      },
-    });
-  };
 
   // Create blog posts pages.
   const posts = result.data.blog.edges;
@@ -64,15 +44,25 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node;
     const next = index === 0 ? null : posts[index - 1].node;
 
-    createPage(post.node.fields.slug, { isBlog: true, previous, next });
+    const slug = post.node.fields.slug;
+    createGatsbyPage({
+      path: slug,
+      component: blogPost,
+      context: {
+        slug,
+        previous,
+        next,
+      },
+    });
   });
 
   // create top-level pages
-  const pages = result.data.pages.edges;
-  pages.forEach((page) => {
-    console.log(page.node);
-    createPage(page.node.fields.slug);
-  });
+  // this isn't needed because src/pages already gets created
+  // const pages = result.data.pages.edges;
+  // pages.forEach((page) => {
+  //   console.log(page.node);
+  //   createPage(page.node.fields.slug);
+  // });
 };
 
 // add slugs to pages

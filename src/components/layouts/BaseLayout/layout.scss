@@ -1,6 +1,6 @@
-@import "../../../node_modules/normalize.css/normalize.css";
+@import "../../../../node_modules/normalize.css/normalize.css";
 
-@import "../vars.scss";
+@import "../../vars.scss";
 
 * {
   font-family: sans-serif;
@@ -41,11 +41,16 @@ main {
     }
   }
 
-  p {
+  p,
+  ul {
     line-height: 1.25;
+    font-weight: lighter;
+    li {
+      margin: 0 0 7px 0;
+    }
   }
 
-  p.subtitle {
+  span.subtitle {
     margin: 0.25rem 0;
     font-size: smaller;
   }

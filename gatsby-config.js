@@ -1,9 +1,4 @@
 module.exports = {
-  siteMetadata: {
-    title: `David Brownman (dot) com`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@xavdid`,
-  },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
@@ -33,7 +28,7 @@ module.exports = {
       options: {
         extensions: [`.mdx`, `.md`],
         defaultLayouts: {
-          default: require.resolve("./src/components/blog-post.js"),
+          default: require.resolve("./src/components/layouts/MdxPageLayout"),
         },
       },
     },
