@@ -50,7 +50,7 @@ export default () => (
   <ul style={{ lineHeight: "1.5" }}>
     {links.map(({ href, icon, name, description }) => (
       <li key={href}>
-        <Link to={href}>
+        <Link href={href}>
           <FontAwesomeIcon icon={icon} /> {name}
         </Link>
         , {description}

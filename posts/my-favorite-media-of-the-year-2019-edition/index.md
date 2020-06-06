@@ -146,6 +146,8 @@ _To see the full list and ratings of all the movies I saw for the first time thi
 
 _return to the [table of contents](#TOC)_ ↩️
 
+<a name="television"></a>
+
 ## Television
 
 TV is having a serious renaissance right now. There are so many good things to watch and so little time. Somehow, TV takes a bigger time commitment than anything else on this list. Probably because we both have to be sitting down and ready to watch, whereas the rest of these I can mostly do on my own. In any case, I only watched X seasons of TV this year; here are my favorites.
@@ -250,11 +252,11 @@ _return to the [table of contents](#TOC)_ ↩️
     * Winner
         * [__Red Rising__](https://piercebrownbooks.com/books#redrising) by Pierce Brown
     * Runner-Up
-        * [__The 7½ Deaths of Evelyn Hardcastle__](https://www.goodreads.com/book/show/* 36337550-the-7-deaths-of-evelyn-hardcastle), by Stuart Turton
+        * [__The 7½ Deaths of Evelyn Hardcastle__](https://www.goodreads.com/book/show/36337550-the-7-deaths-of-evelyn-hardcastle), by Stuart Turton
     * Honorable Mentions
-        * [__My Sister the Serial Killer__](https://www.penguinrandomhouse.com/books/588860/* my-sister-the-serial-killer-by-oyinkan-braithwaite/) by Oyinkan Braithwaite
+        * [__My Sister the Serial Killer__](https://www.penguinrandomhouse.com/books/588860/my-sister-the-serial-killer-by-oyinkan-braithwaite/) by Oyinkan Braithwaite
         * [__The Great Train Robbery__](http://www.michaelcrichton.com/the-great-train-robbery/) by Michael Crichton
-        * [__If on a winter's night a traveler__](https://www.goodreads.com/book/show/374233.* If_on_a_Winter_s_Night_a_Traveler) by Italo Calvino
+        * [__If on a winter's night a traveler__](https://www.goodreads.com/book/show/374233.If_on_a_Winter_s_Night_a_Traveler) by Italo Calvino
 
 return to the [table of contents](#TOC)
 

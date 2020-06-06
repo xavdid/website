@@ -12,10 +12,7 @@ const IndexPage = () => {
     {
       posts: allMdx(
         sort: { fields: [frontmatter___date], order: DESC }
-        filter: {
-          fileAbsolutePath: { regex: "/posts/" }
-          frontmatter: { published: { eq: null } }
-        }
+        filter: { fileAbsolutePath: { regex: "/posts/" } }
       ) {
         edges {
           node {
@@ -86,7 +83,7 @@ const IndexPage = () => {
                     }
                   )}
                 </time>
-                <Link to={post.node.fields.slug}>
+                <Link href={post.node.fields.slug}>
                   {post.node.frontmatter.title}
                 </Link>
               </h3>

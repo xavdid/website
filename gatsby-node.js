@@ -6,7 +6,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   const isProdBuild = process.env.NODE_ENV === "production";
 
-  const blogPost = require.resolve(`./src/components/blog-post.js`);
+  const blogPost = require.resolve(`./src/components/layouts/BlogPost`);
   const result = await graphql(
     `
       {
@@ -17,6 +17,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           edges {
             node {
               frontmatter {
+                title
                 published
               }
               fields {
@@ -56,13 +57,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     });
   });
 
-  // create top-level pages
-  // this isn't needed because src/pages already gets created
-  // const pages = result.data.pages.edges;
-  // pages.forEach((page) => {
-  //   console.log(page.node);
-  //   createPage(page.node.fields.slug);
-  // });
+  // everything in src/pages is created automatically
+  // any other folders would need to be handled here.
 };
 
 // add slugs to pages

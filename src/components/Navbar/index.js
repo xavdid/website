@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
+
+import Link from "../Link";
 
 // adapted from https://codepen.io/coderyang/pen/eJXXQg
 
@@ -7,15 +8,15 @@ import "./navbar.scss";
 
 export default () => (
   <nav className="header">
-    <Link to="/">
+    <Link href="/" className="header">
       <h1>David Brownman</h1>
     </Link>
     <div className="navbar">
-      <Link to="/" className="navbar-item" activeClassName="active">
+      <Link href="/" className="navbar-item" activeClassName="active">
         About
       </Link>
       <Link
-        to="/blog"
+        href="/blog"
         className="navbar-item"
         activeClassName="active"
         partiallyActive
@@ -23,7 +24,7 @@ export default () => (
         Blog
       </Link>
       <Link
-        to="/projects"
+        href="/projects"
         className="navbar-item"
         activeClassName="active"
         partiallyActive
@@ -31,7 +32,7 @@ export default () => (
         Projects
       </Link>
       <Link
-        to="/contact"
+        href="/contact"
         className="navbar-item"
         activeClassName="active"
         partiallyActive
