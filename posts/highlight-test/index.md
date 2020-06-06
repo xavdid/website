@@ -12,21 +12,9 @@ og_desc: A look back at the best and brightest media of 2018
 go to [here](#here)
 go to [better](#the-best)
 
-# This is a title
-
-## this is h2
-
-### this is h3
-
-#### this is h4
-
-##### this is h5
-
-###### this is h6
-
 highlighted code block[^1]:
 
-```js
+```js{numberLines: true}
 const a = 3;
 // if eslint is running here, this should fail
 if (a == 2) {
@@ -35,11 +23,47 @@ const o = {};
 o.a = a;
 ```
 
+```js
+/* **********************************************
+     Begin prism-core.js
+********************************************** */
+
+var _self = (typeof window !== 'undefined')
+	? window   // if in browser
+	: (
+		(typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope)
+		? self // if in worker
+		: {}   // if in node js
+	);
+
+/**
+ * Prism: Lightweight, robust, elegant syntax highlighting
+ * MIT license http://www.opensource.org/licenses/mit-license.php/
+ * @author Lea Verou http://lea.verou.me
+ */
+
+var Prism = (function (_self){
+```
+
+- a
+- b
+- c
+- d
+
+cool
+
+1. 2
+2. 3
+3. 4
+4. 5
+5. sir
+6. Three!
+
 ## the best
 
 and now some ~~ruby~~ `python`
 
-```py
+```py {3}
 a = 3
 d = {}
 d['asdf'] = a
@@ -48,6 +72,7 @@ for i in range(3):
 ```
 
 <a name="here" />
+we are here?
 
 now, a quote:
 
@@ -62,7 +87,32 @@ and so we have it
 
     is this code?
     or is this dancer?
+    it's indented!
 
 anyway
 
-[^1]: did we do it?
+# This is a title
+
+Phasellus lobortis augue sem, non dictum purus convallis sed. Mauris aliquet nisi ex. Ut vel eleifend metus. Maecenas luctus lorem hendrerit urna luctus molestie. Praesent id congue eros. Proin convallis tellus vitae elit tempor dapibus. Ut enim lorem, sodales nec libero nec, dignissim blandit massa. Aenean ultricies elit quis nunc vehicula hendrerit.
+
+## this is h2
+
+Phasellus lobortis augue sem, non dictum purus convallis sed. Mauris aliquet nisi ex. Ut vel eleifend metus. Maecenas luctus lorem hendrerit urna luctus molestie. Praesent id congue eros. Proin convallis tellus vitae elit tempor dapibus. Ut enim lorem, sodales nec libero nec, dignissim blandit massa. Aenean ultricies elit quis nunc vehicula hendrerit.
+
+### this is h3
+
+Phasellus lobortis augue sem, non dictum purus convallis sed. Mauris aliquet nisi ex. Ut vel eleifend metus. Maecenas luctus lorem hendrerit urna luctus molestie. Praesent id congue eros. Proin convallis tellus vitae elit tempor dapibus. Ut enim lorem, sodales nec libero nec, dignissim blandit massa. Aenean ultricies elit quis nunc vehicula hendrerit.
+
+#### this is h4
+
+Phasellus lobortis augue sem, non dictum purus convallis sed. Mauris aliquet nisi ex. Ut vel eleifend metus. Maecenas luctus lorem hendrerit urna luctus molestie. Praesent id congue eros. Proin convallis tellus vitae elit tempor dapibus. Ut enim lorem, sodales nec libero nec, dignissim blandit massa. Aenean ultricies elit quis nunc vehicula hendrerit.
+
+##### this is h5
+
+Phasellus lobortis augue sem, non dictum purus convallis sed. Mauris aliquet nisi ex. Ut vel eleifend metus. Maecenas luctus lorem hendrerit urna luctus molestie. Praesent id congue eros. Proin convallis tellus vitae elit tempor dapibus. Ut enim lorem, sodales nec libero nec, dignissim blandit massa. Aenean ultricies elit quis nunc vehicula hendrerit.
+
+###### this is h6
+
+Phasellus lobortis augue sem, non dictum purus convallis sed. Mauris aliquet nisi ex. Ut vel eleifend metus. Maecenas luctus lorem hendrerit urna luctus molestie. Praesent id congue eros. Proin convallis tellus vitae elit tempor dapibus. Ut enim lorem, sodales nec libero nec, dignissim blandit massa. Aenean ultricies elit quis nunc vehicula hendrerit.
+
+[^1]: did we do it? [check this out](https://google.com) neat.

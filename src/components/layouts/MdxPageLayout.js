@@ -5,6 +5,7 @@ import BaseLayout from "./BaseLayout";
 import Seo from "../seo";
 import PageHeader from "../page-header";
 import Link from "../Link";
+import InlineCode from "../InlineCode";
 
 export default ({
   pageContext: { frontmatter = {} } = {},
@@ -19,6 +20,7 @@ export default ({
     <MDXProvider
       components={{
         a: Link,
+        inlineCode: InlineCode,
       }}
     >
       {children}

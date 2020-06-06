@@ -14,7 +14,6 @@ const BlogPostTemplate = ({ data, pageContext }) => {
   const post = data.mdx;
   const { previous, next } = pageContext;
 
-  console.log(previous);
   return (
     <Layout noTitle>
       <Seo

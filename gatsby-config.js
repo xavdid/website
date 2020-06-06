@@ -23,6 +23,7 @@ module.exports = {
         name: `pages-md`,
       },
     },
+    `gatsby-remark-autolink-headers`, // dupe from mdx, needed
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -30,6 +31,15 @@ module.exports = {
         defaultLayouts: {
           default: require.resolve("./src/components/layouts/MdxPageLayout"),
         },
+        gatsbyRemarkPlugins: [
+          `gatsby-remark-autolink-headers`,
+          {
+            resolve: `gatsby-remark-prismjs`,
+            options: {
+              noInlineHighlight: true, // i'll style these elsewhere
+            },
+          },
+        ],
       },
     },
     `gatsby-transformer-sharp`,

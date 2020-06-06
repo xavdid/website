@@ -26,7 +26,7 @@ This post covers my favorite media that I watched / played / read this year. I t
 
 With that context in mind, strap in and let's get to it!
 
-<a name="TOC"></a>
+<h1 id="TOC"></h1>
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->

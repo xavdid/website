@@ -1,0 +1,38 @@
+// // converted from https://gist.github.com/andyferra/2554919
+// table {
+//   padding: 0;
+//   tr {
+//     border-top: 1px solid #efefef;
+//     background-color: white;
+//     margin: 0;
+//     padding: 0;
+//     &:nth-child(2n) {
+//       background-color: #f8f8f8;
+//     }
+//     th {
+//       font-weight: bold;
+//       border: 1px solid #efefef;
+//       text-align: left;
+//       margin: 0;
+//       padding: 6px 13px;
+//       &:first-child {
+//         margin-top: 0;
+//       }
+//       &:last-child {
+//         margin-bottom: 0;
+//       }
+//     }
+//     td {
+//       border: 1px solid #efefef;
+//       text-align: left;
+//       margin: 0;
+//       padding: 6px 13px;
+//       &:first-child {
+//         margin-top: 0;
+//       }
+//       &:last-child {
+//         margin-bottom: 0;
+//       }
+//     }
+//   }
+// }

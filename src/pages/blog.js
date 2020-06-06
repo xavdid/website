@@ -7,7 +7,7 @@ import PageHeader from "../components/page-header";
 
 import Link from "../components/Link";
 
-const IndexPage = () => {
+export default () => {
   const data = useStaticQuery(graphql`
     {
       posts: allMdx(
@@ -137,5 +137,3 @@ const IndexPage = () => {
     </Layout>
   );
 };
-
-export default IndexPage;
