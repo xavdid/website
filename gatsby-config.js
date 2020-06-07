@@ -45,8 +45,6 @@ module.exports = {
               noInlineHighlight: true, // i'll style these elsewhere
             },
           },
-          `gatsby-remark-copy-linked-files`,
-          // `gatsby-remark-images`,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -56,10 +54,17 @@ module.exports = {
               // markdownCaptions: true,
             },
           },
+          {
+            resolve: `gatsby-remark-copy-linked-files`,
+            options: {
+              ignoreFileExtensions: [],
+            },
+          },
           // },
         ],
       },
     },
+    // `gatsby-remark-copy-linked-files`,
     `gatsby-transformer-sharp`,
   ],
 };

@@ -14,3 +14,4 @@ An unorganized list to help me keep this organized
 - the gatsby version is pinned to `2.22.20` to get around [this](https://github.com/carbon-design-system/gatsby-theme-carbon/issues/873)
 - there's really only styles for h1-3, so don't use h4 and down
 - anything that would have dropped in as a cdn tag and included should go in `gatsby-browser`
+- some lines in markdown have `<!-- prettier-ignore -->` because prettier is adding a `\` before regular `$`.

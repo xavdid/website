@@ -58,7 +58,7 @@ end
 
 With our measurement tools in hand, I ran the trials with increasingly long arrays. It's tough to graph numbers that have such a large range (2 element array sorted fairly quickly, large ones... did not), so we used a logarithmic scale. The lines on either side of the dots show the middle 50% of the number of shuffles. As you can see, the number of shuffles scales pretty aggressively with the length of the input.
 
-![](https://i.imgur.com/Tz1cT87.png)
+![](./images/chart-1.png)
 
 | Array Length | Average Number of Shuffles (5k Trials) |
 | ------------ | -------------------------------------- |
@@ -73,7 +73,7 @@ With our measurement tools in hand, I ran the trials with increasingly long arra
 
 Each array length follows a remarkably similar pattern, known as a [negative binomial distribution](https://en.wikipedia.org/wiki/Negative_binomial_distribution) (I am told), meaning the number of shuffles is quite variable. For array length 5, it takes 10^5 shuffles. but it's just as likely for it to take many more tries. This causes the (incredibly) long tail you see out to the right.
 
-![](https://i.imgur.com/QPR1IQ4.png)
+![](./images/chart-2.png)
 
 If you think those numbers are big, it's because they are. Big numbers don't mean anything without context though. To help provide that context, I modified the script to measure the actual clock-on-the-wall time you would spend sorting an array length `n`. Note that the table skips the first few values of `n`, as they were sorted too fast for Ruby to capture (which is a good thing, I guess).
 
@@ -89,6 +89,6 @@ If you think those numbers are big, it's because they are. Big numbers don't mea
 
 These results are... not inspiring. Each element added to the array adds roughly a factor of 10 to how long the script takes to run.[^1] And again, the precious seconds you spend sorting doesn't actually guarantee your array will end up sorted anyway. Unless you're feeling incredibly lucky, I'd stick to something faster and more reliable. Maybe a nice bubble sort.
 
-_Huge thanks to Evan Batzer for his time and expertise with chart creation. You can find out more about him and his work [here](https://ebatzer.github.io/)._
+_Huge thanks to Evan Batzer for his time and expertise with chart creation. You can find out more about him and his work [here](https://www.evanbatzer.com/)._
 
 [^1]: These results were gathered using Ruby `2.4.1` running on an `i7-7820HQ CPU @ 2.90GHz`

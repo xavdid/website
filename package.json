@@ -86,6 +86,9 @@
         ],
         "rules": {
           "react/jsx-indent": 0
+        },
+        "globals": {
+          "YoutubeEmbed": true
         }
       }
     ]

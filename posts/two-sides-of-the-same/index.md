@@ -8,7 +8,7 @@ tags: [personal, essay]
 
 Good and evil, black and white, light and shadow: the classic dichotomy of our society.
 
-We're so obsessed with characterizing ourselves as either one or the other. So much so, in fact, that we disregard people who aren't of our alignment. A virtuous person doesn't make a habit of fraternizing with criminals, and vice versa (assuming for ease of argument that everyone fits into D&D's [9 personality alignments](https://i.imgur.com/ZSr3ATi.jpg)).
+We're so obsessed with characterizing ourselves as either one or the other. So much so, in fact, that we disregard people who aren't of our alignment. A virtuous person doesn't make a habit of fraternizing with criminals, and vice versa (assuming for ease of argument that everyone fits into D&D's [9 personality alignments](./images/alignments.jpg)).
 
 We preoccupy ourselves with what other people think of us. We capitalize on social outlets so that everyone else can know how virtuous we are. If we do bad things, we (usually) don't broadcast it. We operate under the assumption that if we're more staunchly nice or mean, we'll get more rewards appropriate with such a station (be they wealth, power, respect, whatever floats your boat).
 

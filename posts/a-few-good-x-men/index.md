@@ -40,13 +40,13 @@ That's not all you're here for though, is it? You're curious about _why_ this is
 
 **SPOILER WARNING**: To best discuss the details of why my order makes sense, the rest of the post contains major details and character fates of the entire series. If reading that will affect the way you watch the movies, [turn back](#the-order) now.
 
-![](https://i.imgur.com/rXe8law.jpg)
+![](./images/spoilers-stop.jpg)
 
 For everyone else, onward!
 
 ### The Original Timeline
 
-![Some of the original cast](https://i.imgur.com/qSezBoy.jpg)
+![The Original Cast](./images/original-cast.jpg)
 
 Like I said, the series is comprised of two timelines. We'll start in the Original, comprised of _First Class_ and all the other movies before the time travel in _Days of Future Past_ overwrites things.
 
@@ -72,7 +72,7 @@ Flash forward to 2023 and everything sucks. Not in the sorta-fun [Idiocracy](htt
 
 ### The Revised Timeline
 
-![Seriously the best poster](https://i.imgur.com/xXIZa7D.jpg)
+![Maybe my favorite movie poster ever](./images/double-post.jpg)
 
 From the moment Logan arrives in 1973, he's rewriting history. Everything he does, he does with knowledge of the future, meaning all of his actions are inherently different than they were before. In this timeline, he meets Prof. X, Magnteo, Beast, and Quicksilver years before he would have otherwise. They save the day, rewrite history, and everyone goes home happy.
 

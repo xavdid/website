@@ -7,6 +7,8 @@ import PageHeader from "../page-header";
 import Link from "../Link";
 import InlineCode from "../InlineCode";
 
+import YoutubeEmbed from "../YoutubeEmbed";
+
 export default ({
   pageContext: { frontmatter = {} } = {},
   children,
@@ -26,6 +28,7 @@ export default ({
             <table>{props.children}</table>
           </div>
         ),
+        YoutubeEmbed,
       }}
     >
       {children}

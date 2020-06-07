@@ -10,7 +10,7 @@ People play many sorts of games for many sorts of reasons, but they all share on
 
 As with many sim games before it, [_ElectroCity_](http://www.electrocity.co.nz/) instructs the player to manage the development of a small town into (ideally, I think) a bigger one. The game's main mechanic revolves around the cost/benefit of developing plots of land in a certain fashion and making sure you're producing more energy than you consume. For example, you can build a coal mine (cheap, effective, pollutive), but it intrudes on the tranquility of the campground that you built next door. You decide which bothers you more, then continue expansion accordingly. In chapter 27 of Salen/Zimmerman's _Rules of Play_, they describe in depth the markings of a good simulation game and the associated pitfalls.
 
-![I mostly focused on economic development and offsetting my carbon footprint, so my population really never grew](https://i.imgur.com/CNMnf4E.jpg)
+![I mostly focused on economic development and offsetting my carbon footprint, so my population really never grew](./images/screenshot.jpg)
 
 Games are meant to be an abstraction, so the more complicated the game's systems are, the slower the game is to play. [^2] (p. 440) The game does a good job of saying "Ok, click here and in X turns, you'll have a new structure". It's also very clear what stats each structure affects (coal mines are +2 coal but -1 tourism/turn). There's also a goods market that has changing prices for coal and gas each turn (allowing you to profit off of smart purchases).
 

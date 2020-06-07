@@ -22,6 +22,7 @@ export default () => {
             timeToRead
             frontmatter {
               title
+              og_desc
               date
               tags
             }
@@ -90,8 +91,7 @@ export default () => {
               <div style={{ display: "flex", paddingTop: "10px" }}>
                 <div style={{ ...leftBlockStyle }} />
                 <span style={{ fontSize: "smaller" }}>
-                  Phasellus lobortis augue sem, non dictum purus convallis sed.
-                  Mauris aliquet nisi ex.
+                  {post.node.frontmatter.og_desc}
                 </span>
               </div>
               <div style={{ display: "flex", paddingTop: "10px" }}>
@@ -101,7 +101,7 @@ export default () => {
                     ~ {post.node.timeToRead} min{" "}
                   </span> */}
                 {/* [{post.node.frontmatter.tags.join(", ")}] */}
-                <div
+                {/* <div
                   style={{
                     display: "flex",
                     flexWrap: "wrap",
@@ -127,7 +127,7 @@ export default () => {
                         {tag}
                       </span>
                     ))}
-                </div>
+                </div> */}
                 {/* </span> */}
               </div>
             </div>

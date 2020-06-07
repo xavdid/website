@@ -14,7 +14,7 @@ There have been a few versions released recently, mostly notably Guy Ritchie's _
 
 READMORE
 
-![](https://i.imgur.com/NE1x0Nz.jpg)
+![](./images/holmes.jpg)
 
 Adapting Holmes is a tricky thing- he's a well known character and most people have preconceived notions about how he and his compatriots should act and dress. Elementary helps differentiate itself via the bold statement of [gender bending](https://en.wikipedia.org/wiki/Gender_bender) some of the main characters. Most notably, Lucy Liu's Dr _Joan_ Watson provides a breath of fresh air to the time-hallowed duo. Mrs. Hudson's guest appearance finds her to be a drag queen, furthering its goal of a new experience.
 

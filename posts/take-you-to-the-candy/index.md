@@ -12,7 +12,7 @@ READMORE
 
 Before CC was popular, there was a similar game called [_Candy Box_](http://candies.aniwey.net/index.php) which incorporated a similar system of growth and reward but mixed in some RPG elements (such as quests and equipment). CB approaches the FATD of a **story** by having different locations in which you can act: quests through forests and caves, a shop, a frog in the swamp, etc. Unfortunately, there isn't an actual story that connects locations that would usually combine into a story- it's more of "hey, here are some places with distinct connotation, too bad you know know why you're going there". [^1] In fact, before you hit the initial threshold of candies for the shopkeeper to show up, there's not even a semblance of a story, just a counter and some buttons.
 
-![basic UI](https://i.imgur.com/fxwsLtv.jpg)
+![basic UI](./images/basic-ui.jpg)
 
 You're initially allowed to eat the candy or throw it on the ground, but there aren't **perceivable consequences** for these actions. You get some text up on the board, but nothing changes for gameplay. When you throw enough candy on the ground, there's an evolving smiley face (`:|` -> `:(` -> `:'(` -> etc) that tells you _something_ is changing, though it's unclear what. [^2] This makes for a very slow and frustrating start of the game because the only controls the player has (pressing the buttons) doesn't seem to do anything. Later, when you have equipment and can go on quests, you're forced to take a break after every quest. There's a flavor reason ("You're tired after your adventure, you should rest!"), but mechanically, it just slows the game down.
 
@@ -20,7 +20,7 @@ _Candy Box_ shares a lot of similarities with CC save one large difference: ther
 
 The game's **intention** in letting players buy items is for them to get stronger and be able to plan their next quest. But, the random nature of the scrolls (powerups) means that the player usually spends more money than they wanted to get the scroll they were looking for (which isn't satisfying at all).
 
-![full character](https://i.imgur.com/96TmMm9.jpg)
+![full character](./images/full-character.jpg)
 
 Despite an inherently addicting setup, gameplay in _Candy Box_ is largely flawed an unrewarding. Its violation of all 3 of Church's fundamental abstract design tools in addition to creating cognitive dissonance for the player leave a decidedly un-sweet taste in my mouth. [^3]
 

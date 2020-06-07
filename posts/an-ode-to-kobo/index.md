@@ -16,33 +16,28 @@ My tech purchasing journey started, as it usually does, at the [Wirecutter](http
 
 Firstly, kindles can't read `epub` files.[^2] Instead, they deal with Amazon's proprietary `mobi` and `azw` file types. I've amassed a significant collection of DRM-free `epub` books (though publishers like [TOR](https://www.tor.com/), who don't apply DRM to any of their titles) and didn't want to go through the hassle of converting them.[^3] That was strike one.
 
-Secondly, there's no looking past the fact that ads are a huge part of Amazon's business. I don't mind product suggestions when I'm shopping around, but I don't need that for books. I also didn't love how the device's lock screen is an ad (unless you shell out an extra \$20 to have something more neutral). It rubbed me the wrong way. Strike two.
+<!-- prettier-ignore -->
+Secondly, there's no looking past the fact that ads are a huge part of Amazon's business. I don't mind product suggestions when I'm shopping around, but I don't need that for books. I also didn't love how the device's lock screen is an ad (unless you shell out an extra $20 to have something more neutral). It rubbed me the wrong way. Strike two.
 
 Lastly, the tracking. The amount of user tracking that happens on Kindle is [well documented](https://www.theverge.com/2020/1/31/21117217/amazon-kindle-tracking-page-turn-taps-e-reader-privacy-policy-security-whispersync). While it might enable some nifty features, it still skeeved me out. I like to think of my eBook reader as a more convenient book, so I'd prefer it be as "dumb" as possible.[^4] Strike three and it's out of here.
 
 Given a reasonable alternative, I was going to look elsewhere for my e-reader needs. Luckily, Wirecutter had a non-Amazon suggestion.
 
-![](https://i.imgur.com/qf8HD21.jpg)
+![](./images/kobo.jpg)
 
 The **Kobo Clara HD**, on the other hand, ticks all the boxes. It can read my `epub` collection out of the box, no conversion needed. The lock screen is always the cover of the book I'm reading. Based on my reading habits (10-20 minutes per day), the battery lasts at least two months. I also love how customizable the the reading UI is. Besides basic font and sizing options, it lets me choose what info (if any) is shown at the header and footer of the page. One of the options is a pixel-high line at the very bottom of the screen that indicates how far through the book I am. Never in my face, but constantly informative.
 
-![](https://i.imgur.com/j47Q0Ac.jpg)
+![](./images/reading-bar.jpg)
 
 Maybe my favorite feature is blue-light level controls for reading at night (which I almost always am). This sort of thing should be familiar if you've used tools like [f.lux](https://justgetflux.com/) or similar.
 
-<p style="text-align:center">Daytime</p>
+![Daytime](./images/daytime.jpg)
 
-![](https://i.imgur.com/8qTF6Jv.jpg)
+![Nighttime](./images/nighttime.jpg)
 
-<p style="text-align:center">Nighttime</p>
+![There's also a great stats tab that shows the length of each chapter and other helpful stats.](./images/stats.jpg)
 
-![](https://i.imgur.com/ytkPwER.jpg)
-
-<p style="text-align:center">There's also a great stats tab that shows the length of each chapter and other helpful stats.</p>
-
-![](https://i.imgur.com/xc5NqDm.jpg)
-
-Looking up unfamiliar words is breeze via an onboard dictionary, plus [dedicated google and Wikipedia buttons](https://i.imgur.com/AGnkFOr.jpg). I even found out while writing this post that it will handle slight structural issues in files gracefully.[^5]
+Looking up unfamiliar words is breeze via an onboard dictionary, plus dedicated google and Wikipedia buttons. I even found out while writing this post that it will handle slight structural issues in files gracefully.[^5]
 
 Most importantly, I'm in control of the device. It's a tool I use to read books, nothing more. I use it almost entirely offline, and it's totally fine with that. I get on wifi periodically to download library books or do a firmware update, but that's it. I add new books by plugging the Kobo into my computer and using [Calibre](https://calibre-ebook.com/) to transfer files.[^6] I thought having to plug the device in to transfer books would be annoying (that's so iTunes circa 2008), but it hasn't been an issue. Would I use an official Dropbox integration if there was one? Totally. This isn't much of a burden though.
 

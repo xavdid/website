@@ -18,9 +18,9 @@ To further streamline gist downloads, you can use the new [workflow](https://wor
 
 Here's the workflow in action:
 
-![workflow](https://giant.gfycat.com/UnluckyMisguidedHalcyon.gif)
-
-[Gfycat link](https://gfycat.com/UnluckyMisguidedHalcyon)(for slow/pause/reverse)
+<video autoplay muted loop>
+  <source src="./images/UnluckyMisguidedHalcyon.webm" type="video/webm" />
+</video>
 
 ## Dropbox Sync
 
@@ -30,7 +30,7 @@ For what is probably an apple-imposed restriction, Pythonista doesn't share Edit
 
 Go to [dropbox.com/developers/apps](https://www.dropbox.com/developers/apps) and create a new app.
 
-![dropbox app](https://i.imgur.com/vzP82jB.png)
+![dropbox app](./images/dropbox-apps.png)
 
 Make sure your settings match mine (Dropbox API app, files+datastores, Yes), give your app a name (this is the default name for your sync folder, but you can change it client-side later), and hit create!
 

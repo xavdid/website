@@ -42,6 +42,7 @@ READMORE
 Though I love my remote job dearly, without a doubt the biggest downside is the inability to play games in the office. I've got some local friends I meet up with infrequently, but nothing beats a regularly-scheduled Tuesday evening at the office. That said, I've still had time to squeeze in some games and try out some new ones.
 
 <br />
+
 Winner: **Secret Hitler**
 
 In college, I lived in an amazing [house](https://www.google.com/search?ei=KXZYWoj4Ls_OjwOxw4LoAQ&q=the%20burrow%20ann%20arbor&npsic=0&rflfq=1&rlha=0&rllag=42292958,-83707167,3202&tbm=lcl&rldimm=9798493477036629649) with 7 other friends. Our social nature lead to us playing a lot of [The Resistance](<https://en.wikipedia.org/wiki/The_Resistance_(game)>), a simple game that leans heavily on being able to deceive your close friends. For years I considered it my favorite game- it was fast to play, high tension, and lead to really memorable endings. It was my favorite right up until I had the chance to play _Secret Hitler_.
@@ -51,6 +52,7 @@ The game pits two teams against each other: the liberals and the fascists (the l
 The lying, betrayal, and explosive resolution really sell this game for me. It's been an absolute hit at my remote company (when we see each other in person). The components are high quality and travel well. The theme is well-executed, but also easy to rework should it make you uncomfortable. On each level _Secret Hitler_ succeeds.
 
 <br />
+
 Runner-up: **Fugitive**
 
 Ever since I moved in with my SO, I've been looking for straightforward two-player games that I can get to our (card) table. I like asymmetric games, so the [Kickstarter](https://www.kickstarter.com/projects/fowers/fugitive) for _[Fugitive](https://boardgamegeek.com/boardgame/197443/fugitive)_ from [Tim Fowers](https://www.fowers.games/) (who previously made _Burgle Bros_) was a no brainer.
@@ -68,17 +70,19 @@ This was an interesting year for me as far as videogames were concerned. I made 
 In the absence of a stream of new games I wasn't going to play, I turned my eyes towards my oft-neglected Steam backlog. There's a great set of games I had never touched (thanks, Humble Bundle), and I'm glad I had the opportunity to get into them this year.
 
 <br />
+
 Winner: **Talos Principle**
 
 I had seen a lot of talk about*The Talos Principle* and heard it described as "portal-like". That's a fair comparison, but there's a lot more going on here. It's a more serious game. Instead of a snarky computer, you've got an omniscient voice directing you through pristine levels. Similar to _The Witness_ (a favorite game from last year), the game has a lot of exploration and emergent narrative. The biggest (and best) difference is that _The Talos Principle_ actually has a story when it's all said and done. It explains who you are and why you're solving, which provides much needed closure. The story is delivered in a series of text files and audio recordings that you find, which is really cool. It's centered around some event that happened in the past and the role of autonomy/life in robots (which is immediately relevant, given that you play as a robot).
 
-![](https://i.imgur.com/ID0sVGw.jpg)
+![](./images/talos.jpg)
 
 There are distinct named puzzles that involve manipulating an increasingly complex set of objects (fan, cube, etc) to reach your goal (a tetris piece).Though some of the later puzzles are pretty tough (especially when they throw in time manipulation), the game feels rewarding. There's a good sense of progression as the puzzle elements become more connected.
 
 The game looks great and the atmosphere is enjoyable. If you want a solid puzzle experience, look no further than _The Talos Principle_.
 
 <br />
+
 Runner-up: **Else Heart.break()**
 
 _Else Heart.break()_ takes some time to get rolling, but once it does it's a pretty cool experience. The story is largely forgettable, but the standout feature is that there's an entire programming language embedded in the game and every object is "hackable". While a door's default behavior is to take you to what's on the other side, they can be modified to take you anywhere if you know the memory address.
@@ -86,6 +90,7 @@ _Else Heart.break()_ takes some time to get rolling, but once it does it's a pre
 The biggest thing holding this back is the lack of a compelling story (it gets neat towards the end, but it takes ages to get there) and the unused potential. For such a cool idea, the practical uses of the hacking is fairly limited. Maybe that's for accessibility sake (non-programmers can still play this), but it limits what this game could have achieved.
 
 <br />
+
 Honorable mention: **Recettear, an Item Shop's Tale** for cute writing and an original concept and **Little Big Planet** for some truly stylized levels and a "whoa dude" moment on the [large rotating wheel](https://youtu.be/aNRPH3-h6yQ?t=4m24s).
 
 ### Mobile
@@ -93,6 +98,7 @@ Honorable mention: **Recettear, an Item Shop's Tale** for cute writing and an or
 This section is different from the others in two important ways: it's harder to track playtime on mobile games and as far as I can tell, I didn't play a lot of mobile games this year. When I'm on the go and have time to kill I'm usually reading. I play some tablet board games, but not much like my gaming experience home. That isn't to say I don't have anything to recommend, but take it with a grain of salt. I think these are the only two mobile games I played through this year.
 
 <br />
+
 Winner: **Pokémon: Sun**
 
 I've been catching _most of 'em_ since elementary school. I haven't played every single [generation](<https://en.wikipedia.org/wiki/Pok%C3%A9mon_(video_game_series)#Generations>) (I missed the past few), but I'm glad I got back into the series in time for _[Pokémon: Sun](https://www.pokemon-sunmoon.com/en-us/)_. It was the first game I played on my new 3DS (I'm very [patient](https://www.reddit.com/r/patientgamers/)) and it made a statement right away that it was _different_. Most notably, it removed HMs, the unforgettable moves your Pokémon had to know to explore new areas. No longer do I have to base my team on where I'm going to explore. That's right, I get 6 Pokémon, all ready for battle. They also tweaked battle experience distribution it so everyone in your party gets some, meaning no one Pokémon falls too far behind; a welcome boon. The graphics took a big step up and the world felt dynamic and explorable. Not being locked onto a grid helped with that, as did the multitude of biomes and Pokémon available to find.
@@ -102,14 +108,16 @@ Improvements aside, the game wasn't perfect. For a story-focused outing, the sto
 When it came down to it, for all its faults, _Pokémon Sun_ felt new and improved, an impressive feat after 20 years of games.
 
 <br />
+
 Runner-up: **Klocki**
 
 It's a tough balancing act to present a puzzle concept and build on it on a good curve. Impressively, _[Klocki](http://klockigame.com/)_ does just that. The puzzles have clear objectives and the tactile-ness of their presentation feels great. Tiles spin, swap, shift, and rotate performantly and the sound effects pair nicely. It's short and sweet and well worth a few stints-before-bed of your time.
 
-![](https://i.imgur.com/UUwbrP0.png)
+![](./images/klocki.png)
 
 <br />
-Honorable Mention to *[Alto's Adventure](http://altosadventure.com/)*, which has beautiful graphics and music. Gameplay is pretty good and generally non-frustrating for an endless runner. The snowboarding theme is delivered well and its a pleasure to zoom down a mountain in search of llamas.
+
+Honorable Mention to _[Alto's Adventure](http://altosadventure.com/)_, which has beautiful graphics and music. Gameplay is pretty good and generally non-frustrating for an endless runner. The snowboarding theme is delivered well and its a pleasure to zoom down a mountain in search of llamas.
 
 ## Movies
 
@@ -117,7 +125,7 @@ What a year for movies. Of all the sections, I had the most trouble picking the 
 
 Winner(s): **Spider-Man: Homecoming**, **Get Out**
 
-![](https://i.imgur.com/Ab8yfOg.jpg)
+![](./images/spider-man.jpg)
 
 Let's get the biases out of the way- I love Spider-Man and I've enjoyed nearly every modern modern Marvel movie. Even before seeing any trailers, I knew I would enjoy Peter Parker's first solo outing in the MCU. Never in my cautious optimism did I think it would be _this_ good.
 
@@ -125,7 +133,7 @@ I was most impressed by the pacing and balance of humor against drama. Peter Par
 
 This movie excelled on every level and I hope we see more films like this in the MCU.
 
-![](https://i.imgur.com/42djrTL.jpg)
+![](./images/get-out.jpg)
 
 _Get Out_, on the other hand, is outside of my comfort zone. I don't frequently watch horror movies and probably would have skipped this entirely if not for my love for Jordan Peele and how good everyone said this was.
 
@@ -137,6 +145,7 @@ Runner-up: **Hidden Figures**
 I've been making an effort to see more movies by and about people of color. Their experiences can differ so greatly from my own. Plus, I'm a sucker for sure triumphant space movie. This also showed some cool computing history, so it checked a lot of boxes for me.
 
 <br />
+
 Honorable mention for **Logan**, for showing that superhero movies can be so much more that just that; this was a standout drama.
 
 ## Television
@@ -146,11 +155,13 @@ This was the toughest section to write purely because it's unclear what exactly 
 ### Newly Aired
 
 <br />
+
 Winner: **The Guest Book S1**
 
 Having been a frequent visitor of a [small mountain town](https://en.wikipedia.org/wiki/Estes_Park,_Colorado) much like the setting of _The Guest Book_ in my youth, I was excited to see it explored in a comedy. I haven't watched Garcia's other popular show (_My Name is Earl_), but his reputation precedes him and I was excited for limited run. The show is framed around a consistent set of characters (the residents of fictional Mount Trace) and their interactions with the curious cast of folks that rent the vacation cabin each week. What follows is a delightful mix of thing-a-week, blackmail, misunderstandings, and a cute love story. Not needing to develop the weekly characters for more than 15 minutes leads to some really wonderful and light plots (that all interweave well with the local, ongoing plot lines). It's a taste of summer and the first season was an enjoyable run.
 
 <br />
+
 Runner-up: **The Orville S1**
 
 If you had told me the network sci-fi series I would be most excited about when the fall rolled around wasn't the triumphant return of Star Trek (to be honest, I haven't started it yet), but the Seth MacFarlane semi-parody? I don't even like him that much. Well, spoiler, past-me. _The Orville_ hits a really good balance between seriousness and fun. It's got a lot of the same campy humor as TNG (unsurprising, given MacFarlane's history), but with some great plot lines. It took a couple of episodes to get rolling and not every episode was the best, but there were absolutely some standouts. I enjoyed the serial format, where each episode was mostly standalone. I'm excited to see where they take the show when it returns in the fall!
@@ -161,6 +172,7 @@ Honorable mention to **Powerless**, for being a breath of fresh air in the super
 ### Ended
 
 <br />
+
 Winner: **Galavant**
 
 > Will all the singing kill our Nielsen ratings?
@@ -185,11 +197,13 @@ Let me start with this preface: _Mystery Inc_ is super weird. They've made some 
 ## Books
 
 <br />
+
 Winner: **Mistborn 1: The Final Empire**
 
 There is something to be said for reading a thick fantasy paperback in a cabin in the wilderness. Whether its childhood memories or just the whole _vibe_, this is my ideal way to take in a new fantasy series. I won't pretend the environment didn't influence how much I enjoyed the first installment of _[Mistborn](https://brandonsanderson.com/books/mistborn/the-final-empire/)_, but to do so would devalue how great the book actually is. Though the book's size (and that of the huge world that all of Sanderson's novels inhabit) was intimidating, it flies by. The tone strikes a really good balance description an action, so no part of it really drags. The world he paints feels vibrant, the magic well-thought out (an easy thing for a fantasy author to mess up), and the city alive. There's a great sense of scale, both in the seriousness of the plot locally (in the capital city in which it mostly occurs) and how it affects the world around it (that we don't see much of). To my friends that recommended this so heartily: thank you, and I'm sorry it took so long.
 
 <br />
+
 Runner-up: **Artemis**
 
 I really enjoyed Weir's previous book, _The Martian_. My biggest complaints were that it was a little drawn out, repetitive, and mathy (I appreciate explanation, but don't need an entire proof on the subject). _[Artemis](http://www.andyweirauthor.com/books/artemis-hc)_ addressed each of these complaints and wrapped the whole thing in a moon heist. I really enjoyed the way Weir expanded on the day-to-day challenges of living on a moon base and how Earth culture might adapt. Characters were fun, diverse, and expressive. It was paced well with good suspense. Characters were likable and the conclusions was satisfying. Overall, highly recommend.

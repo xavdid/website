@@ -41,7 +41,7 @@ Morning arrived, and I found the breaker box. Power was restored, but the intern
 
 I set out to the electronics store for a universal AC adapter and a backup router. A quick test confirmed that the router itself was dead and the problem wasn't isolated in the power adapter. Frustrating and mysterious, but not the end of the world. It wasn’t until I started unplugging Ethernet cables that the root cause became clear:
 
-![Scorched Ethernet](https://i.imgur.com/NbdRbtg.png)
+![Scorched Ethernet](./images/scorch-mark.png)
 
 It turns out Ethernet cables, when properly motivated, can carry a fair amount of charge. The lightning not only fries whatever box it's in, but it can travel the path of least resistance to everything else. In my case, that path was a series of Ethernet cables and the entrance point was the unprotected modem:
 
@@ -72,9 +72,9 @@ class wall,modem,router,laptop,gaming fried
 
 Despite the surge protector doing its job, a single unprotected entry point left the whole system vulnerable.[^2] Off the bat, I could confirm that the modem and router were hosed. My media laptop wasn’t charging, but I was hoping that was an issue with anything besides the laptop itself (there was a lot of wishful thinking that day). Most troubling of all, my gaming desktop wasn’t turning on.
 
-When there’s something low-level wrong with a Mac laptop (such as not charging at all), the easiest resolution is an [SMC reset](https://support.apple.com/en-us/HT201295). This resets the thing that controls low-level hardware function (such as charging and USB ports). Given that my laptop was still non-responsive, I needed to isolate whether the problem was the battery not taking a charge or the SMC no longer able to route power to the battery. The folks at the Apple store made it clear that the laptop was older than what they would work on, so I was on my own. I used my iFixit tool set (and their handy [guide](https://www.ifixit.com/Guide/MacBook+Pro+15-Inch+Unibody+Mid+2010+Battery+Replacement/3024)) to [open the case up](https://i.imgur.com/KnJgIA0.png). Once I did, it was obvious what the issue was.
+When there’s something low-level wrong with a Mac laptop (such as not charging at all), the easiest resolution is an [SMC reset](https://support.apple.com/en-us/HT201295). This resets the thing that controls low-level hardware function (such as charging and USB ports). Given that my laptop was still non-responsive, I needed to isolate whether the problem was the battery not taking a charge or the SMC no longer able to route power to the battery. The folks at the Apple store made it clear that the laptop was older than what they would work on, so I was on my own. I used my iFixit tool set (and their handy [guide](https://www.ifixit.com/Guide/MacBook+Pro+15-Inch+Unibody+Mid+2010+Battery+Replacement/3024)) to [open the case up](./images/open-case.png). Once I did, it was obvious what the issue was.
 
-![Scorched Case](https://i.imgur.com/MbZmEZ6.png)
+![Scorched Case](./images/scorched-case.png)
 
 See that big black mark in the center? That's a scorch mark on the interior of the case, right under where the Ethernet port is. There’s also some slight discoloration on that corner of the logic board, but it’s hard to tell if it’s always been like that. Either way, the laptop was the third victim. Luckily, I was able to salvage the RAM and (one SATA adapter later) the SSD as well.
 
