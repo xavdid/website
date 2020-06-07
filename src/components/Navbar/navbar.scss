@@ -1,0 +1,72 @@
+@import "../vars.scss";
+
+nav.header {
+  display: flex;
+  background-color: $base-blue;
+
+  h1 {
+    color: white;
+    margin: auto;
+    margin-left: 10px;
+  }
+
+  a {
+    text-decoration: none;
+    margin: auto 0;
+  }
+
+  .navbar {
+    // needed for keeping title clear
+
+    @include mobile-only {
+      padding-inline-start: 4rem;
+      margin-right: 0;
+      overflow-x: hidden;
+    }
+    margin: 0 17px 0 auto;
+
+    .navbar-item {
+      text-decoration: none;
+      @include mobile-only {
+        margin-top: 1px;
+        text-align: center;
+        padding: 10px 700px 10px 33px;
+      }
+
+      text-align: center;
+      float: left;
+      font-size: 1.2rem;
+      color: $MBlue;
+      padding: 10px 33px;
+      position: relative;
+      cursor: pointer;
+      margin-left: 2px;
+      z-index: 4;
+      // items being too short messes up spacing
+      // should be as long as the biggest item, I think
+      min-width: 70px;
+
+      // parallellogram
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: $maize;
+        z-index: -1;
+        transform: skew(-36deg);
+        transition: all 0.2s linear;
+      }
+
+      &:hover,
+      &.active {
+        color: $nav-item-color;
+        &:after {
+          background-color: $nav-background;
+        }
+      }
+    }
+  }
+}

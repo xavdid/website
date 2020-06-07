@@ -1,0 +1,23 @@
+---
+title: Habbo You Tell Me How to Act
+fact: Because of the implementation of the Gregorian calendar, this day does not exist in this year in Italy, Poland, Portugal and Spain.
+fact_year: 1582
+tags: play, videogames
+---
+
+Anyone who's played a game with children knows that rules, much like a pirate's code, are mostly "guidelines". However, these games (even when played between children) are not without structure. Instead, children tend to follow unspoken adaptions of rule sets that allow for flexibility and argument. (Hughes p. 509) In a world where all social cues and pretext are dropped (where, like children, we can only judge people from their actions (both vocal and physical)), the rules of conversation and social decorum are totally different, as seen in [Habbo Hotel](http://www.habbo.com). Nevertheless, there's a new set of codes that dictate how interactions should happen and they have some fascinating parallels to real social interaction.
+
+READMORE
+
+For those unfamiliar, Habbo is basically a forum with a very graphical interface and no (public) logs (as far as I know). When you move from room to room, you literally move to a different room (which is populated with different people and a different theme). You can chat, friend, play games, walk around and engage the environment, etc.
+
+McGonigal [^1] makes great point about how quick we are to assist others in games. If a guy comes up to you on the street asking you to find 5 bones for his dog who desperately needs something to play with, you would immediately dismiss him as a crazy person (even if there was the implication of reward). In a game, that's just a quest, and you should do it as fast as you can! There's a clear disconnect here, but not for the reason you'd think. Your time in a game is just as valuable as it is in the real world (that is, you have to allocate time to tasks and time is a finite resource), but in the real world, you spend most of your time devoted to tasks of your own creation and importance. In games, you feel like an asshole for turning down this woman who just wants you to head into a cave, fight some orcs, and rescue her daughter. In Habbo, I walked into a club, chatted with a group at a table, and helped a guy write a protest poem (simply because he asked). It was basically a quest, but I was helping a real person do a real thing just because he asked. Why would I do that? I had a paper to write and other work to attend to, but here I am sitting in a lab helping some guy from... _somewhere_ complete his poem. Habbo simulates real life with real people in rooms, but the social rules are totally self defined. Rule breakers are ostracised all the same.
+
+By far the most interesting thing that happened while playing Habbo was that some guy (henceforth John) was (apparently) harassing a girl (Amy) about... either dating him or kissing him [^2] or something (I didn't see the interaction itself, just the responses afterwards). Another girl (Susan) stepped in to deter John from talking to Amy any longer and when he left, the Amy thanked Susan. The latter walked off and it was clear neither knew the other beforehand. If this was an exchange in a bar, there wouldn't be much out of the ordinary. However, this was in Habbo, where Amy could have gone to another room (not that bullies should win, but it's easy and generally painless to remove yourself from this situation). At the least, I'm confident that Habbo has a built-in 'mute' or 'report' function that went unused. I found this exchange particularly interesting because though there are no defined rules for social interaction (particularly in a virtual space), the other players could tell John wasn't playing nice and initiated a 'takeover', booting him from the game (that is, their immediate area). (Hughes p. 513)
+
+Despite simulating real life, Habbo Hotel has its own set of unspoken rules that reflect (but are not the same as) real life ones. They're governed more on feelings and impressions (which is ironic because in a virtual setting social cues are greatly diminished). Nevertheless, rule breakers are still bad people. It's weird how we treat digital life the same as real life (but at the same time, so differently) but it's very interesting all the same.
+
+
+[^1]: That's Jane McGonical (not Minerva) from her book [_Reality is Broken_](http://www.amazon.com/Reality-Is-Broken-Better-Change/dp/0143120611).
+
+[^2]: Of course, this is a virtual kiss. Thinking back, I don't think such actions are even possible, so I'm not entirely sure what he was on about.

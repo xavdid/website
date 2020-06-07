@@ -1,0 +1,124 @@
+@import "../../../../node_modules/normalize.css/normalize.css";
+
+@import "../../vars.scss";
+
+@import "./code-highlights.scss";
+@import "./table.scss";
+
+body {
+  font-family: sans-serif;
+  // @media (prefers-color-scheme: dark) {
+  // color: white; // FIXME: really just for testing dark mode
+  // background-color: #121212;
+  // background-image: url("./svgs/circuit-board-dark.svg");
+  // }
+
+  background-image: url("./svgs/circuit-board.svg");
+}
+
+// styles used for all blog posts and pages
+$margin-left-for-anchor: 1rem;
+main {
+  font-size: 18px;
+  h1,
+  h2,
+  h3 {
+    border-bottom: 1px solid black;
+    // @media (prefers-color-scheme: dark) {
+    // border-bottom: 1px solid white;
+    // }
+    margin: 1.5rem 0 0.25rem 0;
+    font-weight: normal;
+    @include mobile-only {
+      // leave space for visible anchor
+      margin-left: $margin-left-for-anchor;
+    }
+
+    a.anchor svg {
+      @include mobile-only {
+        visibility: visible;
+      }
+    }
+  }
+
+  h3 {
+    $h3-padding-top: 1rem;
+    padding-top: $h3-padding-top; // makes h3 padding non-symmetrical
+    border-bottom: none;
+    font-weight: bold;
+    margin: 0;
+    @include mobile-only {
+      // leave space for anchor
+      margin-left: $margin-left-for-anchor;
+    }
+
+    a {
+      line-height: unset;
+      &.anchor.before {
+        // keeps the GH style anchor inline
+        top: $h3-padding-top;
+      }
+    }
+  }
+
+  p,
+  ul,
+  ol {
+    line-height: 1.4;
+    font-weight: lighter;
+    li {
+      margin: 0 0 7px 0;
+    }
+  }
+
+  span.subtitle {
+    margin: 0.25rem 0;
+    font-size: smaller;
+  }
+
+  ul {
+    list-style-type: circle;
+  }
+
+  blockquote {
+    margin: 0 auto; // get it on the left wall
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 1em;
+    font-style: italic;
+    border-left: 5px solid $maize;
+    p {
+      // interior p has a huge margin
+      margin: 0;
+    }
+  }
+  // gifs only
+  img[src$=".gif"],
+  video {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    border: 1px solid $MBlue;
+  }
+
+  img {
+    border: 1px solid $MBlue;
+  }
+  figcaption {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .littlefoot-footnote__button {
+    &:focus {
+      outline: none;
+    }
+  }
+  .littlefoot-footnote__content {
+    line-height: 1.6;
+    a {
+      // links in footnotes had a margin because of a last-child seletor
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "files.exclude": {
+    ".cache": true,
+    "public": true
+  },
+  "standard.enable": false,
+  "eslint.validate": ["mdx"]
+}

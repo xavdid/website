@@ -1,0 +1,30 @@
+$tablet-width: 768px;
+$desktop-width: 1124px;
+
+@mixin mobile-only {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+$maize: #ffcb05;
+$MBlue: #00274c;
+$orange: #d86018;
+
+$base-blue: #003366;
+
+// multi-component configuration
+$nav-item-color: $maize;
+$nav-background: $base-blue;

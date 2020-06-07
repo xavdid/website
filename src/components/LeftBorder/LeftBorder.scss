@@ -1,0 +1,12 @@
+@import "../vars.scss";
+
+.border {
+  background: $nav-background;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.25em;
+  z-index: -10;
+  border-right: 0.15em solid $maize;
+}
