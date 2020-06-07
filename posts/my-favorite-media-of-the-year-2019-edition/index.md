@@ -26,7 +26,7 @@ This post covers my favorite media that I watched / played / read this year. I t
 
 With that context in mind, strap in and let's get to it!
 
-<h1 id="TOC"></h1>
+<h6 id="TOC"></h6>
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -46,17 +46,17 @@ I completed 42 games over 612 hours (down from 46 games in 2018). Starting in Ap
 
 > Winner(s): **CrossCode** (PC) and **Return of the Obra Dinn** (PC)
 
-![](https://i.imgur.com/kV4MkvZ.png)
+![crosscode](./images/crosscode-cover.png)
 
 Most games do some things well. Some games do most things well. CrossCode? [_CrossCode_](https://www.cross-code.com/en/home) excels across the board.
 
 The pixel art graphics are delightful. They feel lovingly nostalgic, but there are enough little flourishes that the game feels suitably modern. The combat and leveling systems are also high points. There's a lot of character customization available and it lets you swap freely, adding a lot of strategic depth to fights. The combat is hard, but fair. There's a big emphasis on dodging and blocking, which means my standard "rush at their face" approach took some refining. The controls are precise and fluid, which is important when dealing with the hectic combat. I played it with both a keyboard+mouse and a Steam controller and both approaches felt great (a rarity in games that require as much precision as this one can).
 
-![](https://i.imgur.com/rCLk1Zp.gif)
+![](./images/crosscode_gameplay-1.gif)
 
 The puzzles were varied and fun. A lot of them were timing based, which took a few tries to perfect. The 4 element system (where you have 4 different types of bullets which each bounce and affect puzzle elements differently) added a ton of complexity and variability to the dungeons. I was impressed; usually games with great combat have decent puzzles (or vice versa). This has greatness in spades. Exploration was another high point. The environments are beautiful and full of nooks and crannies that you can't quite reach. I spent a lot of happy time walking along walls trying to find "how exactly to get up there to find that chest I saw earlier." The world felt large and organic in a really impressive way.
 
-![](https://i.imgur.com/RObNgNy.gif)
+![](./images/crosscode-gameplay-2.gif)
 
 To top it all off, the story is compelling and surprisingly deep. I was curious to see what came next at every stage. Quests were a good mix of exploration and combat and they all had fairly compelling reasoning behind them.[^2] The characters are charming and bring a lot of life to the digital world.
 
@@ -66,11 +66,11 @@ Lastly, I have to applaud the devs for their great demo. It's available both thr
 
 All that is to say, CrossCode is a phenomenal game and is well worth your time.
 
-![](https://i.imgur.com/KritCe7.png)
+![](./images/obra-dinn-cover.png)
 
 Developer Lucas Pope has an odd knack for creating the best games with the most banal descriptions. In [_Return of the Obra Dinn_](https://obradinn.com/), you're an insurance investigator (albeit one tasked with investigating deaths aboard a cursed(?) ship). More than anything else, this is the most superb and challenging detective game I've ever played. While most puzzles/investigatory games sort of have you on rails, _Obra Dinn_ turns you loose on the ship. You explore a series of freeze-frames depicting the exact moment a crewmember died. It's up to you to deduce who everyone is. Unfortunately, not a lot of people on 19th century boats wore nametags.
 
-![](https://i.imgur.com/2AeWmHu.png)
+![](./images/obra-dinn-scene.png)
 
 The game starts straightforward enough, but really forces you to examine scenes and make logical leaps to fill in all the info. It starts pretty easy, but the level of minutia you're expected to notice ramps up dramatically. When I watched the last vignette, I had only filled in half of the crewmembers. The game implied that I had all the info I needed to fill them _all_ in, which meant it was time to comb back through everyone and make some logical leaps. It was _exhilarating_.
 
@@ -78,11 +78,11 @@ It's also worth mentioning how unique the art style is. The pixel graphics flow 
 
 > Runner(s)-Up: **Slay the Spire** (PC, Switch) and **Celeste** (PC)
 
-![](https://i.imgur.com/Aif3sqS.png)
+![](./images/slay-the-spire-cover.png)
 
 Most collectable card games I've played have been competitive and multiplayer. They're fun, but they're designed around always selling new cards over time.[^3] I had recently quit _Hearthstone_ when a friend I hadn't talked to in ages gifted me a copy of [_Slay the Spire_](https://www.megacrit.com/). Playing it was such a breath of fresh air. I love that it's single-player; you're only ever competing against The Spire and your own bad luck. I also really enjoy the huge card variety that, when paired with a randomly selected set of game-changing relics, ensures every run is uniquely new and challenging. I should also mention that while this game is great on Steam, it's _superb_ on the Switch.[^4] I've played it a lot more (and had more success!) while on the go.
 
-![](https://i.imgur.com/jnumras.png)
+![](./images/celeste-cover.png)
 
 When I wrote about the movie _Coco_ in my [2018 post](https://davidbrownman.com/blog/2019/02/05/my-favorite-media-2018-edition/#movies), I praised how its music, environments, and characters work together to further its theme. [_Celeste_](http://www.celestegame.com/) excels in much the same way: the gameplay, characters, and story all come together to be more than the sum of their parts. I found the story about overcoming self-doubt while summiting a mountain engaging and heartfelt. The gameplay was tough, but fair. Throughout the course of my ~7 hours of playtime, I died 1741 times. Throughout that journey, I was a little frustrated, but more at myself at the game; I was failing it, not the other way around. The controls were tight and the mechanics were numerous, but not superfluous. It's a masterfully designed game.
 
@@ -110,7 +110,7 @@ Let's check out my favorite movies of 2019.
 
 > Winner(s): **Knives Out** and **Avengers: Endgame**
 
-![](https://i.imgur.com/rHODh8D.png)
+![](./images/knives-out-cover.png)
 
 There's a lot to praise about this pensive, twisty whodunit. [_Knives Out's_](https://www.justwatch.com/us/movie/knives-out) ensemble cast is chock full of phenomenal performances. Daniel Craig's hammy southern detective absolutely steals the show, but protagonist Ana de Armas was a standout among a stacked slate.
 
@@ -120,7 +120,7 @@ Part of the fun of this movie for me was how intricate it was. Director Rian Joh
 
 I'm glad that that Rian Johnson had the opportunity to refute the popular maxim, "They don't make 'em like they used to," -- this is as good a murder mystery as there ever was.
 
-![](https://i.imgur.com/qVllPdS.png)
+![](./images/avengers-cover.png)
 
 If you've read any of my previous write-ups, it should come as no surprise that a Marvel movie emerges victorious once again. In a year where the conclusions to long-running franchises really dropped the ball, I'm beyond pleased that the Russo Brothers managed to stick this landing with [_Avengers: Endgame_](https://www.justwatch.com/us/movie/avengers-endgame). They took an emotional story that built over 11 years and 22 movies and brought it to a beautiful conclusion. There's an undeniable amount of fan service in this movie (a few choice ensemble poses come to mind), but nothing egregious. I also really appreciated that they didn't spend time introducing anyone - they (rightfully) assume that if you're watching this, you're all caught up. This left them extra time to get to the "good stuff" (much like _Spiderman: Homecoming_ did when they didn't need to kill Uncle Ben again).
 
@@ -130,7 +130,7 @@ Like most movies, it's not flawless.[^7] I got frustrated with some of their wri
 
 > Runner-Up: **The Farewell**
 
-![](https://i.imgur.com/cOU5ALi.png)
+![](./images/the-farewell-cover.png)
 
 [_The Farewell_](https://www.justwatch.com/us/movie/the-farewell-2019) affected me in a way I didn't expect. The family dynamics at play felt so familiar and relatable. Awkwafina was the best part of _Ocean's 8_ and she carried the show here as well. It straddled the line between hilarious and heartfelt in a really impressive way.
 
@@ -154,7 +154,7 @@ TV is having a serious renaissance right now. There are so many good things to w
 
 > Winner: **Tuca & Bertie**
 
-![](https://i.imgur.com/WhYk3Mr.png)
+![](./images/tuca-and-bertie-cover.png)
 
 I was apprehensive about [Tuca & Bertie](https://www.justwatch.com/us/tv-show/tuca-and-bertie) series at first. The opening is sort of crass and the animation style is... eccentric. I'm glad I stuck with it though. Under that colorful veneer, Ali Wong and Tiffany Haddish bring to life such stupendous characters. Haddish's Tuca is sort of a menace, but her heart is in the right place. Wong's Bertie is filled with anxiety and a need to excel, character traits we found particularly relatable. Furthermore, the art style and presentation really grow on you as the season progresses. The season is both heartfelt and hilarious throughout.
 
@@ -162,13 +162,13 @@ What really brought this show to the next level was the distinct character growt
 
 Fun fact: we ended up liking with this so much that I commissioned a friend to draw us and our van as characters from the show as a gift for Vicky (created by the incredible [Meggie Ramm](http://www.meggieramm.com/)):
 
-![](https://i.imgur.com/dwYBUHe.png)
+![](./images/van-art.png)
 
 That this show was canceled after a single season will go down as one of the great TV injustices in the world. It had a lot to offer and I hope its creative team finds success in other places. We may have had too little, but at least we got it at all.
 
 > Runner-Up: **The Mandalorian**
 
-![](https://i.imgur.com/7eDK1sj.png)
+![](./images/mandalorian-cover.png)
 
 [The Mandolorian](https://disneyplusoriginals.disney.com/show/the-mandalorian) struck a few chords with me. First off, it was presented episodically, where each episode was (mostly) standalone. That was refreshing, since a lot of shows aren't structured that way anymore. Secondly, Baby Yoda. Gifs somehow don't do his cuteness justice. Thirdly, I really like the chill-until-it's-not Western vibe the show had. A couple of episodes were almost reminiscent of _Firefly_, which is about as high an honor as I can confer to a show. Visually, it was superb. Multiple times an episode I remarked "whoa, that was a cool shot." The show as a whole has a pretty good arc that it's no hurry to resolve (and I kind of dig that).
 
@@ -193,7 +193,7 @@ This year, I read 15 books (up from 9 in 2018) for a total of ~1,583,841 words. 
 
 > Winner: **Red Rising**
 
-![](https://i.imgur.com/ChWxpz6.png)
+![](./images/red-rising-cover.png)
 
 I had this book inexplicably recommended to me by 3 separate people in the course of a week, so I knew I was in for a treat. Pierce Brown's [_Red Rising_](https://piercebrownbooks.com/books#redrising) builds a world at a breakneck pace and breaks necks at an even faster one. The bulk of the story is Ender's Game meets Game of Thrones, which I took to immediately. Brown's writing style is fairly singular in the way the narration captures and furthers the main character's personality. All authors do that to a degree, but everything about this book felt like it contributed to the theme. It had a huge cast of characters that I occasionally had trouble keeping distinct, but I did eventually get there. This was a quick, delightful read.
 
@@ -201,7 +201,7 @@ At the time of writing (Jan 2020), I've finished the second book in the series a
 
 > Runner-up: **The 7½ Deaths of Evelyn Hardcastle**
 
-![](https://i.imgur.com/RST8c14.png)
+![](./images/hardcase-cover.png)
 
 If you've read my previous posts, you'll know that I'm an absolute sucker for any story that incorporates one or more of: time loops, murder mysteries, and multiple viewpoints to the same series of events. Guess what three plot devices Stuart Turton's [_Evelyn Hardcastle_](https://www.goodreads.com/book/show/36337550-the-7-deaths-of-evelyn-hardcastle) employs? Seriously though, I'm grateful to my sister for recommending this to me. It had great twists and turns. The more I learnt about the different characters, the more complete the picture became. I loved how there was a steady drip of information throughout the story, culminating in a very satisfying "here's what happened" that cleared any pending confusion up. I don't always jump on period pieces, but this one was a delight.
 
@@ -250,13 +250,13 @@ _return to the [table of contents](#TOC)_ ↩️
         * [American Gods](https://www.justwatch.com/us/tv-show/american-gods) (S01)
 * Books
     * Winner
-        * [__Red Rising__](https://piercebrownbooks.com/books#redrising) by Pierce Brown
+        * [_Red Rising_](https://piercebrownbooks.com/books#redrising) by Pierce Brown
     * Runner-Up
-        * [__The 7½ Deaths of Evelyn Hardcastle__](https://www.goodreads.com/book/show/36337550-the-7-deaths-of-evelyn-hardcastle), by Stuart Turton
+        * [_The 7½ Deaths of Evelyn Hardcastle_](https://www.goodreads.com/book/show/36337550-the-7-deaths-of-evelyn-hardcastle), by Stuart Turton
     * Honorable Mentions
-        * [__My Sister the Serial Killer__](https://www.penguinrandomhouse.com/books/588860/my-sister-the-serial-killer-by-oyinkan-braithwaite/) by Oyinkan Braithwaite
-        * [__The Great Train Robbery__](http://www.michaelcrichton.com/the-great-train-robbery/) by Michael Crichton
-        * [__If on a winter's night a traveler__](https://www.goodreads.com/book/show/374233.If_on_a_Winter_s_Night_a_Traveler) by Italo Calvino
+        * [_My Sister the Serial Killer_](https://www.penguinrandomhouse.com/books/588860/my-sister-the-serial-killer-by-oyinkan-braithwaite/) by Oyinkan Braithwaite
+        * [_The Great Train Robbery_](http://www.michaelcrichton.com/the-great-train-robbery/) by Michael Crichton
+        * [_If on a winter's night a traveler_](https://www.goodreads.com/book/show/374233.If_on_a_Winter_s_Night_a_Traveler) by Italo Calvino
 
 return to the [table of contents](#TOC)
 

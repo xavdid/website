@@ -1,6 +1,10 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: "https://xavd.id",
+  },
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -23,6 +27,7 @@ module.exports = {
         name: `pages-md`,
       },
     },
+    `gatsby-remark-images`,
     `gatsby-remark-autolink-headers`, // dupe from mdx, needed
     {
       resolve: `gatsby-plugin-mdx`,
@@ -39,10 +44,21 @@ module.exports = {
               noInlineHighlight: true, // i'll style these elsewhere
             },
           },
+          `gatsby-remark-copy-linked-files`,
+          // `gatsby-remark-images`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // maxWidth: 800
+              linkImagesToOriginal: false,
+              showCaptions: true,
+              markdownCaptions: true,
+            },
+          },
+          // },
         ],
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
   ],
 };

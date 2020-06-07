@@ -10,7 +10,7 @@ import PageHeader from "../page-header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRssSquare } from "@fortawesome/free-solid-svg-icons";
 
-const BlogPostTemplate = ({ data, pageContext }) => {
+const BlogPostTemplate = ({ data, pageContext, location: { pathname } }) => {
   const post = data.mdx;
   const { previous, next } = pageContext;
 
@@ -18,12 +18,17 @@ const BlogPostTemplate = ({ data, pageContext }) => {
     <Layout noTitle>
       <Seo
         title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
+        description={post.frontmatter.og_desc || post.excerpt}
+        meta={{
+          "og:type": `article`,
+          "og:url": `${data.site.siteMetadata.siteUrl}${pathname}`,
+          "article:published_time": post.frontmatter.date,
+        }}
       />
       <article>
         <PageHeader
           title={post.frontmatter.title || "Missing Title"}
-          date={post.frontmatter.date}
+          date={post.frontmatter.human_date}
         />
         <MDXRenderer>{post.body}</MDXRenderer>
       </article>
@@ -69,14 +74,20 @@ export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
     mdx(fields: { slug: { eq: $slug } }) {
-      id
       excerpt(pruneLength: 160)
       body
       frontmatter {
         title
-        subtitle
-        date(formatString: "MMMM DD, YYYY")
+        og_desc
+        og_img
+        human_date: date(formatString: "MMMM DD, YYYY")
+        date
       }
     }
   }

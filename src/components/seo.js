@@ -8,9 +8,21 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-function SEO({ description, meta = [], title }) {
+function SEO({ description, meta = {}, title }) {
   const metaDescription =
     description || `David Brownman's little corner of the internet.`;
+
+  const metaProperties = {
+    description: metaDescription,
+    "og:title": title,
+    "og:description": metaDescription,
+    "og:type": "website",
+    "twitter:card": "summary",
+    "twitter:creator": "@xavdid",
+    "twitter:title": title,
+    "twitter:description": metaDescription,
+    ...meta,
+  };
 
   return (
     <Helmet
@@ -19,40 +31,11 @@ function SEO({ description, meta = [], title }) {
       }}
       title={title}
       titleTemplate="%s | xavd.id"
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: "@xavdid",
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
+      meta={Object.entries(metaProperties).map(([key, value]) => ({
+        property: key,
+        // name: key,
+        content: value,
+      }))}
     />
   );
 }

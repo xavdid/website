@@ -93,6 +93,16 @@ main {
       margin: 0;
     }
   }
+  // gifs only
+  img[src$=".gif"] {
+    display: block;
+    margin: 0 auto;
+  }
+
+  figcaption {
+    text-align: center;
+    padding-top: 10px;
+  }
 
   .littlefoot-footnote__button {
     &:focus {
