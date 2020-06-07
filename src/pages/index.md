@@ -2,7 +2,11 @@
 seo_title: About
 ---
 
-# Welcome to my Corner of the World Wide Web
+# Black Lives Matter
+
+_content will return soon. In the meantime, check out [this blog post](/)_
+
+<!-- # Welcome to my Corner of the World Wide Web
 
 I'm a software developer by trade and I've created this site as a one-stop shop for information pertaining to my personal and professional lives. Apparently they let anyone put websites online these days, so welcome to mine.
 
@@ -28,4 +32,4 @@ I maintain a comprehensive list of everything I play, read, and watch. Partly to
   - [To Watch](https://airtable.com/shrqygVZ287Gh2Y09)
 - Videogames
   - [Finished](https://airtable.com/shrmtcuqU0Y2hSX3G)
-  - [To Play](https://airtable.com/shrULan0u3rkmaniG)
+  - [To Play](https://airtable.com/shrULan0u3rkmaniG) -->
