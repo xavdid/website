@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-# xavdid.github.io
-
-You're looking at the source for my personal website! It's a bunch of markdown and haml that are turned into static html using [middleman](https://middlemanapp.com/).
-
-There's a gemfile and a build script, so you should be able to clone, `bundle install`, and `./build.sh` to see a complete version of the site locally.
-
-To make a new post from an existing markdown file, run `middleman article "TITLE" -p path/to/file`
-=======
 # xavd.id
 
 This site is built with [gatsby](https://www.gatsbyjs.org/)!
@@ -24,4 +15,3 @@ An unorganized list to help me keep this organized
 - there's really only styles for h1-3, so don't use h4 and down
 - anything that would have dropped in as a cdn tag and included should go in `gatsby-browser`
 - some lines in markdown have `<!-- prettier-ignore -->` because prettier is adding a `\` before regular `$`.
->>>>>>> gatsby/master
