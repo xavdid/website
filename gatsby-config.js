@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://xavd.id",
+    defaultOgImg: "https://i.imgur.com/zhqbTVt.png",
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -52,7 +53,7 @@ module.exports = {
               // maxWidth: 800
               linkImagesToOriginal: false,
               showCaptions: true,
-              markdownCaptions: true,
+              // markdownCaptions: true,
             },
           },
           // },

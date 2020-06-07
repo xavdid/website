@@ -21,6 +21,11 @@ export default ({
       components={{
         a: Link,
         inlineCode: InlineCode,
+        table: (props) => (
+          <div className="table-container">
+            <table>{props.children}</table>
+          </div>
+        ),
       }}
     >
       {children}

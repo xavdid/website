@@ -23,6 +23,8 @@ const BlogPostTemplate = ({ data, pageContext, location: { pathname } }) => {
           "og:type": `article`,
           "og:url": `${data.site.siteMetadata.siteUrl}${pathname}`,
           "article:published_time": post.frontmatter.date,
+          "og:image":
+            post.frontmatter.og_img || data.site.siteMetadata.defaultOgImg,
         }}
       />
       <article>
@@ -77,6 +79,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         siteUrl
+        defaultOgImg
       }
     }
     mdx(fields: { slug: { eq: $slug } }) {
