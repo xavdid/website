@@ -1,8 +1,8 @@
 import littlefoot from "littlefoot";
-import "littlefoot/dist/littlefoot.css";
 
+// these need to be `require`s, not es6 imports
+require("littlefoot/dist/littlefoot.css");
 require("prismjs/themes/prism-okaidia.css");
-// require("prismjs/themes/prism.css");
 require("prismjs/plugins/line-numbers/prism-line-numbers.css");
 
 export function onRouteUpdate() {
