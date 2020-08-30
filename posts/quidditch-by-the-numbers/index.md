@@ -10,8 +10,6 @@ Now that the dust has settled from World Cup, my Anonymous Associate and I thoug
 
 Our initial [feeling](https://youtu.be/zNdkrtfZP8I?t=4m13s) was that the snitch was too impactful relative total quaffle points scored. We recently scraped a complete set of games played last season, so we thought we'd put our idea the test.
 
-READMORE
-
 ## The Source
 
 Our dataset originally consisted of all official games played in the 2015-16 USQ season (Nationals included). Right off the bat, we threw out games that were invalid (too short, lacking data, forfeits, and obviously mistyped [^1]). Since we were mainly concerned with how the snitch affected gameplay, we decided to further reduce our dataset by removing games that exceeded the standard quaffle point differential (> 120 points) because the snitch has basically no impact in those games. Lastly, we wanted to focus on regulation, so we ignored the overtime and double-overtime portions of games. Multiple catches in a single game skewed the data we were really concentrating on: _the impact of the snitch on regulation play_.

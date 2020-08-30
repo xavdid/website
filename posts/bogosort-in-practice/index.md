@@ -13,8 +13,6 @@ The searching and sorting of arrays is a popular (and central) topic in computer
 
 When the topic of bad searches come up (at parties or whatever, as it does), a crowd favorite is always the infamous [bogosort](https://en.wikipedia.org/wiki/Bogosort). The idea is simple: take an array, randomize it, and check if it's sorted. If not, repeat! In the best case, you got really lucky and this sort is _very fast_. Most of the time, you're less lucky and this is actively awful. Let's see how this would shake out in practice.
 
-READMORE
-
 The following is a simple implementation of bogosort using Ruby's [#shuffle!](https://ruby-doc.org/core-2.4.0/Array.html#method-i-shuffle-21) method (plus some extra code to track how many shuffles it took before the array was sorted). It also adds the `sorted?` method to arrays, to help us know when we've (eventually) sorted the array.
 
 ```ruby

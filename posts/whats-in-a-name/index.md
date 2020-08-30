@@ -8,8 +8,6 @@ tags: [personal, RelateIQ]
 
 Last May, I finished college and promptly moved out to Palo Alto to join RelateIQ, a "[but we're not a CRM](https://www.youtube.com/watch?v=-ChppfnazzE&feature=youtu.be&t=1m57s)" startup aimed at eventually toppling the giant that is Salesforce. It's worth noting that I didn't know what CRM was nor was I aware what exactly Salesforce's product was, but I was totally sold on the people and the team at RIQ. I felt confident that whatever we went on to do, it would be great.
 
-READMORE
-
 ## Then
 
 Two months after I started, the CEO took all the engineers (probably 35 of us at the time) at announced that we had been acquired by Salesforce.com, our sworn adversary. I was shocked. When I had talked to Adam (our CTO) months before, they assured me that they were a startup through and through and no plans of selling out. They touted the advantages to being owned by a big company- we would have access to their marketing and customer base, which would help us achieve our goal of revolutionizing relationship intelligence years ahead of schedule. Even so, we felt defeated. It was a weird Friday, to say the least.

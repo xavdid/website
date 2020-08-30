@@ -14,8 +14,6 @@ tags: [automation, iOS, Workflow, python, Launch Center Pro]
 
 For instance, we can get a push notification from [AppShopper.com](http://appshopper.com/) when an app we're watching goes on sale. Clicking the notification will trigger some python that tells us the regular and current prices, and on confirmation, send us over to that app in the store.
 
-READMORE
-
 I'll go through each of the apps' setup here, or if you're cool enough that you're hip to them all already, just skip to the [instructions](#instructions) and you'll be on your way!
 
 ## The Nations

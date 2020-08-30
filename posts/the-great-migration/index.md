@@ -12,8 +12,6 @@ For a long time, I had my blog in two places. It actually lived on tumblr, but I
 
 This was _fine_, but it meant I was maintaining two sets of css and user experience was inconsistent depending on which platform they were reading on. I was already leveraging [middleman](https://middlemanapp.com) to generate my static site and found that they have a [blogging](https://middlemanapp.com/basics/blogging) extension. Moving all my posts would allow me to check my posts into git and use triple ` notation for code blocks. The only hiccup was that tumblr has no way to export all of your posts, so it was time to dive back into their API. The game was afoot.
 
-READMORE
-
 ## Extracting from Tumblr
 
 Tumblr's APIv1 is all but depreciated at this point, so I went with v2 for my task. Luckily, it's simple and well documented. I'll describe here how to use tumblr's API to extract all of your content from their platform, should you choose to leave. To get all of our files in the right place, we'll go through a few steps:

@@ -14,8 +14,6 @@ Your address, credit card number, and anything else you have available online is
 
 When you think of a hacker, you might think about [ridiculous scenes](https://www.reddit.com/r/itsaunixsystem/top/?sort=top&t=all) from movies. A shadowy figure's fingers fly over a keyboard in a poorly lit room as green text cascades down their four monitors. The reality of the situation is much more banal; programs run over the course of hours, breaking protected versions of passwords into their plaintext form. Once that's done, a hacker has unfettered access to any accounts they unlocked directly, plus anything else that reused that password. While nothing can keep you _completely_ safe from a dedicated hacker, you can make yourself as tough of a target as possible. To best understand this, let's take a journey through the steps of a typical hack, what makes it dangerous, and steps you can take to mitigate your risk.
 
-READMORE
-
 ## The Anatomy of a Hack
 
 So here I am, a hacker. I'm looking to make a quick buck, so I'm going to spend my afternoon breaking into your account(s) and putting them up for [sale](https://www.theatlantic.com/technology/archive/2016/02/the-black-market-for-netflix-accounts/462321/). Don't take it personally. Unless you're rich and/or famous, I'm probably not targeting you. In fact, I hardly know you exist; you're a line in a file. Rather than focus on specific people, I'm going to target accounts in bulk. I just bought a dump of 400,000 hashes leaked from a (hypothetical) forum hack a few years ago.[^1]

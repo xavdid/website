@@ -10,11 +10,9 @@ All right captain, strap in. The mantis boarding party is on its way and our shi
 
 <!-- readmore has to come before the first footnote -->
 
-READMORE
-
 It's issues like these and more that come up as a new captain aboard the Kestrel[^1] in the indie game [FTL](http://www.ftlgame.com). The player is placed in charge of a ship and its ever-changing roster of inhabitants in an effort to traverse the galaxy and save your home world from the rebel flagship. FTL takes an interesting approach to narrative in that despite all of the levels and scenarios being randomly generated, there's still a continuous story that changes each play through. After each jump, a random scenario happens (which more often than not, involves destroying an enemy ship). There's sometimes an element of player choice (fight, flee, etc) as well. A number of conditions can also be present during the fight to hamper the player. Unlike a lot of games, there aren't specific story elements tied to specific characters because they can die at any time and their names are randomly generated. All the same, they're usually stationed at a single post (pilot, weapons, etc) for a majority of the game, so the player develops an attachment to "Willard, the ace shields guy" without knowing anything about him other than his random name and initial station.
 
-![FTL Guide](https://wordmercenarydotorg.files.wordpress.com/2012/08/ftl-guide-thumb.jpg)
+![](./images/ftl.jpg)
 
 I had one of my housemates (we'll call him Drewbie) play FTL cold, knowing nothing about the game or the genre. [^2] He quickly clicked through story paragraphs so he could "get right into the game stuff", which followed suit with his general attitude of not reading instructions or explanations in other games we play. In stressful situations (of which there are plenty) he reacted quickly and efficiently. But, he was incredibly hard on himself when crew members died (much like when he loses in sports). Generally he handled FTL situations and gameplay a lot like he does when it comes to other aspects of his life. The big surprise came when he refused to play again once he died, which is incredibly uncharacteristic for him. He claimed the overall experience was a little too real and didn't like the crew members getting blown to bits because of his decisions.
 

@@ -18,8 +18,6 @@ Outside of the things that happened in my life, 2019 felt like the year of long-
 
 Anyway.
 
-READMORE
-
 In case it's your first time reading one of these, a brief overview:
 
 This post covers my favorite media that I watched / played / read this year. I tracked everything in a series of [Airtable](https://airtable.com/) databases and graded everything on my [4 point scale](/blog/2018/06/05/on-the-rating-of-media/). To qualify for the list, media had to be new-to-me in calendar 2019. I aim to steer readers towards my favorite stuff, but I skip over obvious things, even if they would have otherwise qualified (such as The West Wing and Breaking Bad; they're great, but you know that already). Everything here is spoiler-free (insofar as I consider something a spoiler, which I'm fairly strict about).

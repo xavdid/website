@@ -1,6 +1,7 @@
 import littlefoot from "littlefoot";
 
 // these need to be `require`s, not es6 imports
+// see: https://github.com/goblindegook/littlefoot/issues/338
 require("littlefoot/dist/littlefoot.css");
 require("prismjs/themes/prism-okaidia.css");
 require("prismjs/plugins/line-numbers/prism-line-numbers.css");

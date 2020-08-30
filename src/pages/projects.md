@@ -1,6 +1,5 @@
 ---
-seo_title: Projects
-title: Black Lives Matter
+title: Projects
 subtitle: Big and Small
 ---
 
@@ -17,4 +16,4 @@ I've spent a lot of time over the years working on code. Some of it has been for
 - no
 - idea -->
 
-_content will return soon. In the meantime, check out [this blog post](/)_
+<!-- If I want to bother with either a json resume or those cool components I liked, it could go here. -->

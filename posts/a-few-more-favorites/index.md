@@ -16,8 +16,6 @@ In my advanced age, I've found myself with the time and inclination to consume a
 
 With that under our belts, let's dive in!
 
-READMORE
-
 <a name="TOC"></a>
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->

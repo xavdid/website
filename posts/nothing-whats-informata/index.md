@@ -8,8 +8,6 @@ tags: [personal, college]
 
 Entering college, I knew I wanted to be in computers (and computer accessories), but I wasn't sure how quite to go about it. CS engineering looked like a good pick, but it was incredibly focused (at the risk of missing out on other subjects). It was good if you wanted to do all CS, all day, no sun, but I wasn't sure that was my dish. I love CS as a subject, but I also have a habit of delving into other subjects and wanting to expand the breadth of my studies.
 
-READMORE
-
 After some awkward concentration fairs, I found the School of Information's undergrad degree: [Informatics](http://informatics.umich.edu) (which was offered through LSA at the time I enrolled- it'll be in SI in the coming years). A customizable collection of classes related to information sciences. It caters to both technical and non-technical people alike and allows students to design a major that's right for them.
 
 This was totally up my alley. It would allow me to primarily situated in CS while still taking classes about UX, technology, games, and the rest of LSA's distribution requirements. The big pitfall was (and still is, to some degree) how to describe this train of study to other people. It looks great on paper, but it's awkward to describe on the fly. I usually mention something like "a frankenstein of CS and Social Psych that lets me uh, program better". That's really not it though.

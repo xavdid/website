@@ -57,6 +57,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-copy-linked-files`,
             options: {
+              // explicitly ignore nothing so that it works for images
               ignoreFileExtensions: [],
             },
           },

@@ -12,8 +12,6 @@ Every year on Christmas Eve, my family found ourselves without any plans. Being 
 
 There have been a few versions released recently, mostly notably Guy Ritchie's _Sherlock Holmes_, BBC's _Sherlock_, and CBS's _Elementary_. Each have their merits and "the best" has been [widely](http://www.telegraph.co.uk/culture/tvandradio/10535503/Sherlock-the-20-greatest-Sherlock-Holmes.html) [discussed](https://nypost.com/2014/01/16/elementary-vs-sherlock-whos-the-better-holmes/), but I wanted to take some time this holiday season to shed some light on what may be my favorite adaptation: season one of _Elementary_.
 
-READMORE
-
 ![](./images/holmes.jpg)
 
 Adapting Holmes is a tricky thing- he's a well known character and most people have preconceived notions about how he and his compatriots should act and dress. Elementary helps differentiate itself via the bold statement of [gender bending](https://en.wikipedia.org/wiki/Gender_bender) some of the main characters. Most notably, Lucy Liu's Dr _Joan_ Watson provides a breath of fresh air to the time-hallowed duo. Mrs. Hudson's guest appearance finds her to be a drag queen, furthering its goal of a new experience.

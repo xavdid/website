@@ -12,8 +12,6 @@ As a culture, we've known this for ages, and we structure our upbringing to acco
 
 Though this is nothing new, the advent of Facebook has revolutionized the way it affects our daily life. Where before we just had a mental list of people we knew, we now have a solid (and permissively public) catalog to browse and utilize. This simple register opens up so many awesome possibilities. Suddenly, we've got a framework to support apps like [Lulu](https://www.onlulu.com/), [Stik](http://www.stik.com/), and more.
 
-READMORE
-
 Lulu is a service in which girls can review male friends so other girls know a bit about the men they're interested in before getting involved. [^1] Of course, it's always been possible to keep such a log, but with this well curated black book, it's easy for your friends to keep track of exactly who you're informed on. This sort of service, while not explicitly necessary, is made possible only by Facebook's convenient scaffolding.
 
 Stik provides a platform to seek out and review local professionals. The catch is that to review someone, you've got to be signed into Facebook. This allows for a connection of our real and online personas and provides validation and credibility to our reviews. It forces accountability for our words, something the internet typically lacks. Without Facebook, it would just be another antonymous Yelp clone.

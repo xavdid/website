@@ -11,8 +11,6 @@ Once I started tracking media in earnest, I found myself in need of a consistent
 
 My biggest gripe is that none of the scores _really_ mean anything; they're good for comparing everything someone has scored, but they each have their problems. A 10 star scale is too wide; what sets a 6 star movie apart from a 7 star movie? The yes/no is informative but has the opposite problem: it doesn't allow for any striation between good and great. A score out of 5 is closer, but it begets my worst enemy: _apathy_. I'm ultimately making these lists to help steer the reader towards the good stuff. If I'm neutral on something, it doesn't provide a definitive signal. Ultimately, none of these scales provided what I needed.
 
-READMORE
-
 The core information I wanted to impart via a glance at a score was "Do I recommend this media to others?". The system needed to account also needed to account for good vs great without having too many levels. I also wanted to avoid any system that would let me pick a neutral rating (like 3 stars out of 5). I've always struggled with indecision, so taking inspiration from [Joel Spolsky](https://www.joelonsoftware.com/2006/10/25/the-guerrilla-guide-to-interviewing-version-30/), a "I think it was good but I didn't love it" was a "no". That approach helped guide me: lack of signal was a bad signal.
 
 With this in mind, I arrived a my definitive **4 Point Rating System**. It's important note that this scale measures _how much I enjoyed the media_, not how objectively good it is. Honestly, media is so subjective and personal that I'm not sure such a measure could exist.

@@ -12,8 +12,6 @@ We're so obsessed with characterizing ourselves as either one or the other. So m
 
 We preoccupy ourselves with what other people think of us. We capitalize on social outlets so that everyone else can know how virtuous we are. If we do bad things, we (usually) don't broadcast it. We operate under the assumption that if we're more staunchly nice or mean, we'll get more rewards appropriate with such a station (be they wealth, power, respect, whatever floats your boat).
 
-READMORE
-
 The funny thing is, each action isn't valued the same way, even if it's the same intensity on opposite sides of the spectrum. Saving a woman from getting hit by a car and hitting her yourself aren't valued the same by society. Value is a funny thing, really.
 
 Think for a moment- what's the difference between a $1 bill and $5? Only the pattern of the ink on the note, yet one is five times as valuable. _Watchmen's_ [Dr. Manhattan](https://en.wikipedia.org/wiki/Doctor_Manhattan) phrases it intriguingly: "A live body and a dead body contain the same number of particles. Structurally, there’s no discernible difference. Life and death are unquantifiable abstracts.", We as a (n American) culture place arbitrary value to all sorts of things from cotton rectangles to the actions of strangers.

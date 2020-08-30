@@ -12,8 +12,6 @@ I feel good about the fact that, for the most part, I live my life free of any v
 
 I'll admit, I've been addict for a while now. Starting in 8th grade, I met a set of friends who loved to explore and experience the wonderful space that is Boulder, CO. My summer was spent surfing from couch to couch (when I got around to sleeping) not being home for days at a time despite being less than a mile from home. Despite being a homebody, summer is a time to be OUT.
 
-READMORE
-
 The most consistent way to get your fix is by traveling, especially to somewhere you've never been (or don't go often). So, I'll often go out of my way to go somewhere new. Luckily, this can be done on a budget in the form of [Geohashing](http://xkcd.com/426/). During the latter part of high school in Houston, most weekends found my partner in crime (the lovely Jenny) and I traipsing off into some rural TX county in search of a point in space. There wouldn't be anything there, nor would we necessarily be able to even reach it (without a boat or helicopter), but that didn't matter. As is repeated all too often- it's not the destination that matters, it's the [journey](http://www.youtube.com/watch?v=ypNgvc6c6Cc).
 
 Speaking of trips, let me tell you about one of my favorites. During spring break my sophomore year of college, I went to visit friends in the Pacific northwest. But, I first had an a cappella competition in DC, so I needed to get creative with my transportation.

@@ -2,23 +2,19 @@
 seo_title: About
 ---
 
-# Black Lives Matter
-
-_content will return soon. In the meantime, check out [this blog post](/)_
-
-<!-- # Welcome to my Corner of the World Wide Web
+# Welcome to my corner of the World Wide Web
 
 I'm a software developer by trade and I've created this site as a one-stop shop for information pertaining to my personal and professional lives. Apparently they let anyone put websites online these days, so welcome to mine.
 
 ### My life right now
 
-I'm a Senior Platform Engineer at [Zapier](https://zapier.com) and am currently working remotely around the US. I live in [a van](https://instagram.com/serenitythevan) with my fiancée (by choice; also on a temporary pandemic hiatus).
+I'm a Senior Platform Engineer at [Zapier](https://zapier.com) and am currently working remotely around the US. Recently, I lived in [a van](https://instagram.com/serenitythevan) with my fiancée (by choice).
 
 ### My experience
 
 If you're interested in a curated list of my best projects, [look no further](/projects). You can also check out my [GitHub profile](https://github.com/xavdid), which is is all of the public code I've ever written.
 
-My main expertise is in `Typescript` & `Javascript`, especially as it pertains to Node.js both on the server or CLI. I've also written a fair amount of `React.js`. Secondarily, I'm pretty handy with Python.
+My main expertise is in `Typescript` and `Javascript`, especially as they pertain to `Node.js` both on the server or CLI. I'm also handy with `Python` and `React.js`.
 
 ### My media lists
 
@@ -32,4 +28,6 @@ I maintain a comprehensive list of everything I play, read, and watch. Partly to
   - [To Watch](https://airtable.com/shrqygVZ287Gh2Y09)
 - Videogames
   - [Finished](https://airtable.com/shrmtcuqU0Y2hSX3G)
-  - [To Play](https://airtable.com/shrULan0u3rkmaniG) -->
+  - [To Play](https://airtable.com/shrULan0u3rkmaniG)
+
+## Black Lives Matter

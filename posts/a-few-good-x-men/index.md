@@ -14,8 +14,6 @@ Spanning multiple reboots, timelines, and source material, Fox's X-Men franchise
 
 As a series, the X-Men movies tell the saga of Wolverine. As the only character (and actor) in every movie, he is the thread that binds them all. Following his journey gives us a fairly straightforward look into how it actually happens.
 
-READMORE
-
 ## The Order
 
 If all you want from this article is the definitive chronological order in which to watch the X-Men movies, look no further:

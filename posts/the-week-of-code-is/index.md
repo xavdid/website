@@ -8,8 +8,6 @@ tags: [tutorial, python, programming]
 
 As you may or may not be aware, [Code.org](https://code.org/learn) is a non-profit that aims to bring computer science education to people of all ages. They put out some great videos like [this](https://www.youtube.com/watch?v=FC5FbmsH4fw) one illustrating how cool computer science is. Their message is one about the future and I think it's something really worth pursuing because at its core, it's a message about how you can change the world.
 
-READMORE
-
 Despite what a lot of people think, Computer Science isn't actually about code. That's like saying painting is all about paint; knowing where to put what color is important, but not nearly as important as knowing which brush to use and the fact that your paint needs to dry first. Code is much the same thing- you need to know your tools, but the real art comes from using those tools in a patterned way. The best thing about it is that anyone can learn to program because it's just setting up some steps in a text editor that the computer follows exactly. In fact, everyone does it in their regular lives on a daily basis.
 
 At its core, CS is all about a systematic approach to solving problems. So, let's do a little exercise. Say you're designing code to run the line at a Starbucks. You make orders while there's a line and you fill them when the line is empty (another big part of CS is simplifying problems). Code for that might look something like this:

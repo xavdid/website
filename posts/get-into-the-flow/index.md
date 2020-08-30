@@ -8,13 +8,11 @@ tags: [play, videogames]
 
 You know a lot of people, probably. Some of them game, some don't, and each has their own reasons for doing so. In Sutton-Smith's chapter _Rhetoric of Self_, he talks about how sometimes "it's not the player that plays the game, but the game which plays the player" (p 181). Thatgamecompany's [_Flow_](http://www.jenovachen.com/flowingames/flowing.htm) demonstrates this by placing the player into a game without instruction or direction and let's the experience… flow off them, if you will.
 
-READMORE
-
 _Flow_ takes place in a wordless expanse of ocean where you control an ever-growing organism as it eats its way through the levels. Because the game starts literally without direction or instructions (as TGC's other games _Journey_ and _Flower_ do), how the player initially approaches the task (that is, "what to do") is a clear reflection of how they approach tasks in life. An added level of difficulty is added because we were playing it on a PS3, so the only way to control the creature was to rotate the controller (which _does_ take some getting used to[^1]). To better get a feel for this, I had multiple housemates play the game. They vary in background and familiarity with videogames and their personalities were apparent with their play styles.
 
 Housemate **A** is an engineer, but he works on group projects often, so he was quick to ask what everyone else in the room thought he should do. Housemate **B** is pre-med and sat quietly getting a feel for the controls before advancing down into the "rabbit hole". Both of these behaviors were imported from other parts in their life and revealed explicitly by the game. The neat thing is that regardless of their background or current workload, they all sat down on the couch to take some time off to play. The things in the game (feeding, not getting eaten, etc) became immediately important to them, even if they didn't quite know what was going on (p 183).
 
-![A partially grown creature in the first section](https://i.imgur.com/xLeeDwF.jpg)
+![A partially grown creature in the first section](./images/flow.jpg)
 
 I think all games would reflect similarly upon their players but _Flow_ is an extra apt example because of its open nature. The players all became lenses through which the game projected itself onto the human condition, and that is _awesome_.
 

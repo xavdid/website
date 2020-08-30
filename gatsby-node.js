@@ -1,4 +1,5 @@
 const path = require(`path`);
+const { shuffle } = require("lodash");
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
@@ -18,10 +19,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             node {
               frontmatter {
                 title
-                published
               }
               fields {
                 slug
+                published
               }
             }
           }
@@ -36,23 +37,30 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   }
 
   // Create blog posts pages.
-  const posts = result.data.blog.edges;
+  const posts = result.data.blog.edges.filter((post) =>
+    // for prod, pretend non-published posts don't exist
+    isProdBuild ? post.node.fields.published : true
+  );
+
+  const randomlyOrderedSlugs = shuffle(
+    posts.map((post) => post.node.fields.slug)
+  );
+
   posts.forEach((post, index) => {
-    if (post.node.frontmatter.published === false && isProdBuild) {
-      return;
-    }
-
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-    const next = index === 0 ? null : posts[index - 1].node;
-
     const slug = post.node.fields.slug;
+    // the random target is the next in the shuffled list (or wraparound if it's the end)
+    // this gives us a complete circuit of posts
+    const randomSlug =
+      randomlyOrderedSlugs[
+        (randomlyOrderedSlugs.indexOf(slug) + 1) % randomlyOrderedSlugs.length
+      ];
+
     createGatsbyPage({
       path: slug,
       component: blogPost,
       context: {
         slug,
-        previous,
-        next,
+        randomSlug,
       },
     });
   });
@@ -79,6 +87,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       name: `slug`,
       node,
       value,
+    });
+
+    // it's hard to query for null values, so flip them here
+    createNodeField({
+      name: `published`,
+      node,
+      value: !node.frontmatter.draft, // missing (or false, I guess) means it's public
     });
   }
 };

@@ -12,8 +12,6 @@ Really though, Python a programming language. It's good for lots of simple tasks
 
 **Remember:** _Learning to code is a lot like riding a bike: you're still a fine person if you can't, but learning to do so will save you a lot of time._
 
-READMORE
-
 ## What exactly is programming?
 
 It's simple! Programs are sets of instructions that manipulate _variables_ that are followed explicitly (in order!) by a computer (and without ambiguity). There's a fun exercise you can do with kids where you have someone try to verbally explain how to make a PB&J to someone who purposefully misunderstands instructions. You end up with an exchange something like this:

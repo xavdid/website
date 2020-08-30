@@ -10,8 +10,6 @@ og_desc: In which a surge protector does not protect as much as is expected
 
 When moving into my new apartment, the outlets and the cable were arranged in such a way that it wasn’t convenient to plug the modem into a power strip. "So what," I thought. "If lightning does strike, worst case I lose my modem and I’ve got an excuse for an upgrade! Plus, how often are there thunderstorms anyway?" I mused, foolishly forgetting that I had lived in weather-less California for years. I didn’t have a great handle on the dangers of lightning, but I was about to.
 
-READMORE
-
 I had a fair amount of hardware wired together. There was the modem and router, plus Ethernet cables going to my gaming PC and an old laptop I used for streaming media.[^1] Here's how everything was connected:
 
 <!--

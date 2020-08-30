@@ -8,8 +8,6 @@ tags: [iOS, python, Dropbox, Pythonista, Workflow]
 
 [Pythonista](http://omz-software.com/pythonista/) is an amazing iOS app that brings the power of a python IDE to your iPhone, complete with an interpreter and a set of custom-made modules for interacting with the phone's ecosystem (contacts, clipboard, [etc](http://omz-software.com/pythonista/docs/ios/)). It's powerful out of the box, but there are some easy improvements that you can make so that development really is a breeze, namely the ability to download public gists and Dropbox syncing. Both are pretty straightforward and require minimal coding expertise (but of course, that doesn't bother you. You're still reading this, after all).
 
-READMORE
-
 ## Downloading Gists <a name="workflow"></a>
 
 Github [gists](https://gist.github.com/) are a great way to share bits of code into the Github ecosystem without creating an entire repo. The neatest thing is- they still exist as a repo and can handle revisions, forking, and comments. When you're working with Pythonista, it's great to have the ability to quickly copy those snippets into the app. Luckily, the app's creator has created such a [gist](https://gist.github.com/omz/b0644f5ed1d94bd32805).

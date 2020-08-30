@@ -8,11 +8,18 @@ import Seo from "../seo";
 import PageHeader from "../page-header";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRssSquare } from "@fortawesome/free-solid-svg-icons";
+import {
+  faRssSquare,
+  faRandom,
+  faArrowLeft,
+} from "@fortawesome/free-solid-svg-icons";
 
-const BlogPostTemplate = ({ data, pageContext, location: { pathname } }) => {
+const BlogPostTemplate = ({
+  data,
+  pageContext: { randomSlug },
+  location: { pathname },
+}) => {
   const post = data.mdx;
-  const { previous, next } = pageContext;
 
   return (
     <Layout noTitle>
@@ -46,13 +53,11 @@ const BlogPostTemplate = ({ data, pageContext, location: { pathname } }) => {
           padding: 0,
         }}
       >
-        {previous && (
-          <div>
-            <Link href={previous.fields.slug} rel="prev">
-              ← {previous.frontmatter.title}
-            </Link>
-          </div>
-        )}
+        <div>
+          <Link href="/blog">
+            <FontAwesomeIcon icon={faArrowLeft} /> All Posts
+          </Link>
+        </div>
 
         <div>
           <Link href="/blog/feed">
@@ -60,13 +65,11 @@ const BlogPostTemplate = ({ data, pageContext, location: { pathname } }) => {
           </Link>
         </div>
 
-        {next && (
-          <div>
-            <Link href={next.fields.slug} rel="next">
-              {next.frontmatter.title} →
-            </Link>
-          </div>
-        )}
+        <div>
+          <Link href={randomSlug} rel="next">
+            Random <FontAwesomeIcon icon={faRandom} />
+          </Link>
+        </div>
       </nav>
     </Layout>
   );

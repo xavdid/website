@@ -101,6 +101,10 @@ main {
     border: 1px solid $MBlue;
   }
 
+  // I pulled this out of the dom, so i'm not sure the classname won't change
+  .gatsby-resp-image-wrapper {
+    margin-bottom: 5px;
+  }
   img {
     border: 1px solid $MBlue;
   }

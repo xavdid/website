@@ -10,8 +10,6 @@ There he stood, in the rain, on his last night in town. Gazing over the city, la
 
 He was troubled as he drove west. That last mission went well, but it seemed all too easy. Between the bevy of midnight car chases and the smattering of (PG Rated, of course) sex scenes, it seemed to clear itself up a little too cleanly. "No matter" he thought to himself. "Best thing to do now is just to keep on with the mission and avoid anything unpla..." And then the phone rang.
 
-READMORE
-
 "Dad?! How did you get this number?" was his startled reaction to the voice on the other end.
 "Listen, that's not important now." was the response he got. "What is, however, is the impending problem down here. A guy named Ike is stirring up trouble, and we need someone to help us out with it."
 "Well, south really isn't in my travel plans but..."

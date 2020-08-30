@@ -10,8 +10,6 @@ og_desc: A brief retelling of my quest to find the best ebook reader.
 
 I was on the fence for a while when it came to ebook readers. First as a physical book holdout, then as a "well, my iPad is good enough". I didn't understand the magic of e-ink screens until I read a whole book using one (courtesy of my very patient girlfriend and a beach vacation). After that, I knew I needed one of my own.
 
-READMORE
-
 My tech purchasing journey started, as it usually does, at the [Wirecutter](https://thewirecutter.com/reviews/amazon-kindle-is-the-best-ebook-reader/). I imagined that I'd get a Kindle, as it's far and away the most popular device. Popular is good - it means there'll be lots of cases and better community support.[^1] But, I had some reservations.
 
 Firstly, kindles can't read `epub` files.[^2] Instead, they deal with Amazon's proprietary `mobi` and `azw` file types. I've amassed a significant collection of DRM-free `epub` books (though publishers like [TOR](https://www.tor.com/), who don't apply DRM to any of their titles) and didn't want to go through the hassle of converting them.[^3] That was strike one.

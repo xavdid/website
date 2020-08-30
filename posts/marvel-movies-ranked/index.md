@@ -16,8 +16,6 @@ While building this list, I watched each movie in order. Movies were judged loos
 
 Without further ado, from worst to best, here's every Marvel Cinematic Universe film (so far).
 
-READMORE
-
 **NOTE: EXTREME SPOILERS** for all (pre-_Infinity War_) Marvel movies follow. Proceed at your own risk!
 
 ![](./images/iron-man-stop.png)

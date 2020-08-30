@@ -15,3 +15,4 @@ An unorganized list to help me keep this organized
 - there's really only styles for h1-3, so don't use h4 and down
 - anything that would have dropped in as a cdn tag and included should go in `gatsby-browser`
 - some lines in markdown have `<!-- prettier-ignore -->` because prettier is adding a `\` before regular `$`.
+- adding `draft: true` to a post's frontmatter hides it from the list and stops the page being built.

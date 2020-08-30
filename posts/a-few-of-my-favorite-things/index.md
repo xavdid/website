@@ -16,8 +16,6 @@ On a personal level, I started getting into tracking what I read, watched, and p
 
 Let's get to it!
 
-READMORE
-
 <a name="toc"></a>
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
