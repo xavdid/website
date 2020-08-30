@@ -17,6 +17,7 @@ export default () => {
         edges {
           node {
             fields {
+              published
               slug
             }
             timeToRead
@@ -34,7 +35,12 @@ export default () => {
 
   // obj of year => [post]
   const postsByYear = data.posts.edges.reduce((result, post) => {
+    if (!post.node.fields.published) {
+      return result;
+    }
+
     const year = post.node.frontmatter.date.slice(0, 4);
+
     return {
       ...result,
       [year]: [...(result[year] || []), post],

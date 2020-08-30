@@ -4,5 +4,8 @@
     "public": true
   },
   "standard.enable": false,
-  "eslint.validate": ["mdx"]
+  "eslint.validate": [
+    "mdx"
+  ],
+  "python.pythonPath": "/usr/local/bin/python"
 }

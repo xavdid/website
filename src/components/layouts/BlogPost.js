@@ -48,7 +48,7 @@ const BlogPostTemplate = ({
         style={{
           display: `flex`,
           flexWrap: `wrap`,
-          justifyContent: `space-between`,
+          justifyContent: `space-evenly`,
           listStyle: `none`,
           padding: 0,
         }}
@@ -66,7 +66,7 @@ const BlogPostTemplate = ({
         </div>
 
         <div>
-          <Link href={randomSlug} rel="next">
+          <Link href={randomSlug}>
             Random <FontAwesomeIcon icon={faRandom} />
           </Link>
         </div>

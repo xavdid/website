@@ -1,5 +1,5 @@
 ---
-seo_title: About
+seo_title: Home
 ---
 
 # Welcome to my corner of the World Wide Web
@@ -14,7 +14,7 @@ I'm a Senior Platform Engineer at [Zapier](https://zapier.com) and am currently 
 
 If you're interested in a curated list of my best projects, [look no further](/projects). You can also check out my [GitHub profile](https://github.com/xavdid), which is is all of the public code I've ever written.
 
-My main expertise is in `Typescript` and `Javascript`, especially as they pertain to `Node.js` both on the server or CLI. I'm also handy with `Python` and `React.js`.
+My main expertise is in `Typescript` and `Javascript`, especially as they pertain to `Node.js` both on the server or CLI. I'm also handy with `Python` and `React.js`. Once upon a time, I wrote a lot of `Ruby`.
 
 ### My media lists
 
@@ -31,3 +31,5 @@ I maintain a comprehensive list of everything I play, read, and watch. Partly to
   - [To Play](https://airtable.com/shrULan0u3rkmaniG)
 
 ## Black Lives Matter
+
+It should go without saying, but doesn't.

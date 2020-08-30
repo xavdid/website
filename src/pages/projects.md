@@ -3,17 +3,65 @@ title: Projects
 subtitle: Big and Small
 ---
 
-<!--
-I've spent a lot of time over the years working on code. Some of it has been for for money, other times for fun. Sometimes it's a larger scale project that gets a formal release, other times it's a rinky-dink script that tickles me in some way. If I think you'll find it interesting, it's catalogued here.
+I've spent a lot of time over the years writing on code. Sometimes for money, other times for fun. Some projects get formal releases and versions, many more don't.
 
-## Notable
+## Greatest Hits
 
-- cool
-- neat
+- [Typed Install](https://github.com/xavdid/typed-install), a CLI utility to smartly install type definitions when installing JS packages. I consider this the most useful public code I've ever written.
+- [Heroku Config](https://github.com/xavdid/heroku-config), a Heroku plugin for managing project for your environment.
+- [epub-wordcount](https://github.com/xavdid/epub-wordcount), a CLI tool for easily estimating the words in an `epub` file.
+<!-- - [Seymour](https://github.com/xavdid/seymour), a custom feed reader for Slack. -->
+- [drafts js editor](https://github.com/xavdid/drafts), a web editor for writing [Drafts](https://getdrafts.com/) workflows while taking advantage of Typescript auto-complete. This project, and subsequent collaboration with Drafts' creator [Greg Pierce](https://twitter.com/agiletortoise), led to a new [scripting documentation site](https://scripting.getdrafts.com/).
+- [This Website](https://github.com/xavdid/xavdid.github.io/)! It's the third major version of my personal site, this time using React.js and Gatsby. <!-- I wrote more about the latest version here -->
+- [refbook](https://github.com/xavdid/refbook), a website that provided automated testing and user registration for the now-defunct International Referee Development Program of quidditch. This was my first large-scale solo project and provided an invaluable start to my career in web development.
+- [Pitch Awesome](https://github.com/xavdid/pitch_awesome) was my one and only iOS app based on an idea given to me by my (then) girlfriend. It was a simple pitch pipe that could store a set of opening notes for songs. It's still on my phone to this day!
 
-## etc.
+### Via a Job
 
-- no
-- idea -->
+- While at [Zapier](https://zapier.com/), I was a primary maintainer of the [Zapier Platform](https://github.com/zapier/zapier-platform), consisting of a CLI, SDK, and JSON Schema. I triaged issues, performed important refactors, and focused on performance optimizations.
+- While at [RelateIQ](https://en.wikipedia.org/wiki/SalesforceIQ), I wrote the [RelateIQ Ruby SDK](https://github.com/xavdid/ruby-sdk). This was during the height of my ruby days while working at RelateIQ, this was a fully tested and documented UX-focused wrapper for reading and writing from their API.
+
+### Closed Source
+
+These projects aren't available publicly, so you'll just have to take my word for it that they were really cool.
+
+- At Zapier, my first big project on the platform team was to re-write the Slack integration to take advantage of their new webhook features. If you used Slack with Zapier anytime after May 2017, you were using my code!
+- I also implemented a version of the public Zapier Developer page. You can see a (mostly working) version of it at the [Wayback Machine](https://web.archive.org/web/20180326060057if_/https://zapier.com/developer/)
+- At RelateIQ, my primary job was "Internal Tools". The best one was a internal admin site built with Sinatra that read from our production Mongo database.
+
+## B-Sides
+
+- [Kerfuffle](https://kerfuffle.herokuapp.com/), a custom web UI to help me randomly pick a show/book/movie.
+- [Will it Play?](https://github.com/xavdid/will-it-play), a CLI tool for checking if a video file is likely to play on a PS4.
+- [Advent of Code solutions](https://github.com/xavdid/adventofcode), for the yearly [Advent of Code](https://adventofcode.com/).
+- [generator-xavdid](https://github.com/xavdid/generator-xavdid), a [Yeoman](https://yeoman.io/) generator for creating Typescript projects. Works for CLIs, frontend, backend, or any combination thereof!
+- [Airtable Grouped Chart](https://github.com/xavdid/airtable-grouped-chart), my award winning (I can't find a link anywhere, but I got a bunch of Airtable credit for this!) custom block for building charts based on grouped properties.
+- I wrote a [simple python script](https://gist.github.com/xavdid/d07ef908fe023f2e1225) on a plane to let a pair of people play [Ultimate Tic-Tac-Toe](https://en.wikipedia.org/wiki/Ultimate_tic-tac-toe).
+
+## Notable Open-Source Contributions, PRs and Issues
+
+There's an exhaustive list of my contributions using [this GitHub search](https://github.com/issues?q=author%3Axavdid+archived%3Afalse+-user%3Axavdid+-user%3Aquidtech+) (must be logged in), but here are the coolest ones:
+
+### PRs
+
+- Added a check for DRM in epub files to the `epub` `npm` package ([julien-c/epub#44](https://github.com/julien-c/epub/pull/44))
+- Wrote Typescript types for the `striptags` package ([ericnorris/striptags#44](https://github.com/ericnorris/striptags/pull/44)) and removed them from `DefinitelyTyped` ([DefinitelyTyped#22040](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/22040))
+- Added the `isSpinning` property to `ora` ([sindresorhus/ora#73](https://github.com/sindresorhus/ora/pull/73))
+- Added `files` property to the `mercury-parser` package, to reduce the size of the shipped code ([postlight/mercury-parser#269](https://github.com/postlight/mercury-parser/pull/269))
+- Swapped some bash install links in docs to `https` ([facebook/react-native#12090](https://github.com/facebook/react-native/pull/12090))
+- Tried to add support for creating new Middleman posts with content pre-filled ([middleman/middleman-blog#337](https://github.com/middleman/middleman-blog/pull/337))
+- In addition to maintaining the `parse-ruby-client` for a time, I added the `keys` operator to ruby Parse queries ([adelevie/parse-ruby-client#148](https://github.com/adelevie/parse-ruby-client/pull/148))
+- Fixed some typos in `botkit`. I honestly love this one, because in hindsight I absolutely misinterpreted their instructions to "Include screenshots and animated GIFs in your pull request whenever possible" ([howdyai/botkit#128](https://github.com/howdyai/botkit/pull/128))
+- Fixed a typo in the Standard Ebooks version of Siddhartha ([standardebooks/siddhartha#3](https://github.com/standardebooks/hermann-hesse_siddhartha_gunther-olesch_anke-dreher_amy-coulter_stefan-langer_semyon-chaichenets/pull/3))
+- Fixed a typo in the Yarn website ([yarnpkg/website#909](https://github.com/yarnpkg/website/pull/909))
+
+### Issues
+
+- VSCode issue about not updating disabled extensions ([microsoft/vscode#22461](https://github.com/microsoft/vscode/issues/22461))
+- VSCode issue encouraging smarter default save paths for new files ([microsoft/vscode#22697](https://github.com/microsoft/vscode/issues/22697))
+- VSCode issue that caused big slowdowns in the integrated terminal when there are a lot of escape characters in output ([microsoft/vscode#24795](https://github.com/microsoft/vscode/issues/24795))
+- Filed an issue about `require`-ing real files within a mocked filesystem, which was fixed, broken, and then finally fixed again ([tschaub/mock-fs#130](https://github.com/tschaub/mock-fs/issues/130))
+
+## Non Technical
 
 <!-- If I want to bother with either a json resume or those cool components I liked, it could go here. -->

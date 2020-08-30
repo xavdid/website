@@ -21,6 +21,7 @@ export default ({
     )}
     <MDXProvider
       components={{
+        // these will be used in place of the generic
         a: Link,
         inlineCode: InlineCode,
         table: (props) => (
@@ -28,6 +29,7 @@ export default ({
             <table>{props.children}</table>
           </div>
         ),
+        // any other components here can be used in all mdx without imports
         YoutubeEmbed,
       }}
     >
