@@ -183,11 +183,12 @@ The second season does a great job expanding on the plot set out by the first. E
 
 Even after months, I still listen to the [soundtrack](https://open.spotify.com/user/1286017453/playlist/4TPdCE51zxM4QA8pzuf1SQ) weekly. There's something about a self-aware musical that just does it for me, and hopefully it'll do it for you too.
 
-<div class="embeded-iframe">
+<div class="embeded-iframe" style="text-align: center;">
   <iframe src="https://open.spotify.com/embed/user/1286017453/playlist/4TPdCE51zxM4QA8pzuf1SQ" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
 </div>
 
 <br />
+
 Runner-up: **Scooby-Doo Mystery Inc**
 
 Let me start with this preface: _Mystery Inc_ is super weird. They've made some interesting character choices, namely Fred's near-sexual level of attraction to traps and how Shaggy and Velma start out dating. The show follows a monster-a-week blueprint, but also has an overreaching ark that ties the whole show together. It rises to a significant scale, especially for something that, on the surface, is a kid's show. There's a lot of jokes aimed at adults that keeps audiences of all ages on their toes. Consider me pleasantly surprised.

@@ -12,7 +12,7 @@ og_desc: A look back at the best and brightest media of 2018
 go to [here](#here)
 go to [better](#the-best)
 
-highlighted code block[^1]:
+highlighted code block with lines[^1]:
 
 ```js{numberLines: true}
 const a = 3;
@@ -22,6 +22,8 @@ if (a == 2) {
 const o = {};
 o.a = a;
 ```
+
+here's some JS:
 
 ```js
 /* **********************************************
@@ -71,6 +73,14 @@ for i in range(3):
     print(i)
 ```
 
+```py {numberLines: true}{3,5}
+a = 3
+d = {}
+d['asdf'] = a
+for i in range(3):
+    print(i)
+```
+
 <a name="here" />
 we are here?
 
@@ -113,11 +123,11 @@ Phasellus lobortis augue sem, non dictum purus convallis sed. Mauris aliquet nis
 
 Phasellus lobortis augue sem, non dictum purus convallis sed. Mauris aliquet nisi ex. Ut vel eleifend metus. Maecenas luctus lorem hendrerit urna luctus molestie. Praesent id congue eros. Proin convallis tellus vitae elit tempor dapibus. Ut enim lorem, sodales nec libero nec, dignissim blandit massa. Aenean ultricies elit quis nunc vehicula hendrerit.
 
-##### this is h5
+##### this is h5 - don't use me
 
 Phasellus lobortis augue sem, non dictum purus convallis sed. Mauris aliquet nisi ex. Ut vel eleifend metus. Maecenas luctus lorem hendrerit urna luctus molestie. Praesent id congue eros. Proin convallis tellus vitae elit tempor dapibus. Ut enim lorem, sodales nec libero nec, dignissim blandit massa. Aenean ultricies elit quis nunc vehicula hendrerit.
 
-###### this is h6
+###### this is h6 - don't use me
 
 Phasellus lobortis augue sem, non dictum purus convallis sed. Mauris aliquet nisi ex. Ut vel eleifend metus. Maecenas luctus lorem hendrerit urna luctus molestie. Praesent id congue eros. Proin convallis tellus vitae elit tempor dapibus. Ut enim lorem, sodales nec libero nec, dignissim blandit massa. Aenean ultricies elit quis nunc vehicula hendrerit.
 

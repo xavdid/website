@@ -22,7 +22,8 @@ main {
   font-size: 18px;
   h1,
   h2,
-  h3 {
+  h3,
+  h4 {
     border-bottom: 1px solid black;
     // @media (prefers-color-scheme: dark) {
     // border-bottom: 1px solid white;
@@ -43,6 +44,7 @@ main {
 
   h3 {
     $h3-padding-top: 1rem;
+
     padding-top: $h3-padding-top; // makes h3 padding non-symmetrical
     border-bottom: none;
     font-weight: bold;
@@ -59,6 +61,10 @@ main {
         top: $h3-padding-top;
       }
     }
+  }
+
+  h4 {
+    border-bottom: none;
   }
 
   p,

@@ -83,10 +83,10 @@ export default () => {
                 paddingTop: "10px",
               }}
             >
-              <h3 style={{ display: "flex" }}>
+              <h3 style={{ display: "flex", marginLeft: 0 }}>
                 <time
                   dateTime={post.node.frontmatter.date}
-                  style={leftBlockStyle}
+                  style={{ ...leftBlockStyle, fontFamily: "monospace" }}
                 >
                   {new Date(post.node.frontmatter.date).toLocaleString(
                     undefined,
