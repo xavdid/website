@@ -60,7 +60,7 @@ const BlogPostTemplate = ({
         </div>
 
         <div>
-          <Link href="/blog/feed">
+          <Link href="/blog/feeds">
             <FontAwesomeIcon icon={faRssSquare} style={{ color: "orange" }} />
           </Link>
         </div>

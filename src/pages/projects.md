@@ -71,6 +71,6 @@ There's an exhaustive list of my contributions using [this GitHub search](https:
 - VSCode issue that caused big slowdowns in the integrated terminal when there are a lot of escape characters in output ([microsoft/vscode#24795](https://github.com/microsoft/vscode/issues/24795))
 - Filed an issue about `require`-ing real files within a mocked filesystem, which was fixed, broken, and then finally fixed again ([tschaub/mock-fs#130](https://github.com/tschaub/mock-fs/issues/130))
 
-## Non Technical
+<!-- ## Non Technical -->
 
 <!-- If I want to bother with either a json resume or those cool components I liked, it could go here. -->

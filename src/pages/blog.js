@@ -64,6 +64,12 @@ export default () => {
         title="Blog"
         subtitle={`${data.posts.edges.length} posts and counting.`}
       />
+
+      <p>
+        If you want to be notified every time I post, head on over to the{" "}
+        <Link href="/blog/feeds">feeds page</Link>.
+      </p>
+
       {years.map((year) => (
         <section key={year}>
           <h2>{year}</h2>
