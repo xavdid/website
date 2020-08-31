@@ -16,3 +16,10 @@ An unorganized list to help me keep this organized
 - anything that would have dropped in as a cdn tag and included should go in `gatsby-browser`
 - some lines in markdown have `<!-- prettier-ignore -->` because prettier is adding a `\` before regular `$`.
 - adding `draft: true` to a post's frontmatter hides it from the list and stops the page from being built.
+- here's a handy bash script that downloads remote images, puts them in `./images`, and copies the filename for pasting:
+
+```sh
+function imgsav () {
+  curl -s $1 > "./images/$2"; printf "./images/$2" | pbcopy;
+}
+```

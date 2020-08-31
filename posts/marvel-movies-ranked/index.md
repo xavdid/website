@@ -62,7 +62,7 @@ These are the films that start to put the pieces together and start cooking with
 
 ### 13. Iron Man
 
-We're getting there! Now, why is a movie typically so well-regarded so far down on the list? Simply, it's _good_. There's nothing awful about it, but RDJ is so good in all of the other movies he's in that this one fails to shine. It also feels surprisingly dated. This was apparently before Marvel put a ton of time designing Stark's fantasy computers. Instead, he's rocking an [LG VX9400](https://i.imgur.com/IzQPQpR.png) which is there to feel futuristic and expensive but now comes off antiquated. He's got a landline phone and makes jokes about MySpace. For all that, Bridges is an awesome villain and there's some good humor as he's building the first suits. Marvel has done worse, but they've certainly done better since.
+We're getting there! Now, why is a movie typically so well-regarded so far down on the list? Simply, it's _good_. There's nothing awful about it, but RDJ is so good in all of the other movies he's in that this one fails to shine. It also feels surprisingly dated. This was apparently before Marvel put a ton of time designing Stark's fantasy computers. Instead, he's rocking an [LG VX9400](./images/future_phone.png) which is there to feel futuristic and expensive but now comes off antiquated. He's got a landline phone and makes jokes about MySpace. For all that, Bridges is an awesome villain and there's some good humor as he's building the first suits. Marvel has done worse, but they've certainly done better since.
 
 ![](./images/avengers-ultron.png)
 
