@@ -15,6 +15,7 @@ import {
   faInstagram,
   faSteam,
   faYoutube,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 const links = [
@@ -42,6 +43,12 @@ const links = [
     icon: faKeybase,
     name: "Keybase",
     description: "which has my public key and other verified webites.",
+  },
+  {
+    href: "https://www.linkedin.com/in/xavdid/",
+    icon: faLinkedin,
+    name: "LinkedIn",
+    description: "for my full detailed work history",
   },
   // non-technical
   {

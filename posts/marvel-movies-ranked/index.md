@@ -134,7 +134,7 @@ On the surface, _Black Panther_ shares a lot in common with _Thor_. It's a self-
 
 The third time really is the charm. We finally got a Spider-Man movie that didn't spend time killing Uncle Ben, instead replacing it with a great sequence about _Civil War_ from Peter's point of view. The action is good, the villain is menacing, and the jokes are there. In fact, I think what impressed me most is how funny the supporting cast of high schoolers is without being annoying or overpowering. They all feel like actual high school students, which adds a lot to the environment. I still think Vulture being his lady friend's dad is a phenomenal reveal and the car ride he takes them on is stress I haven't felt since _Get Out_. _Spider-Man_ is everything a Marvel movie should be and I look forward to what they do with him next.
 
-_I also wrote about **Spider-Man** in my 2017 lookback [here](/blog/2018/02/21/a-few-more-favorites/#movies)_.
+_I also wrote about **Spider-Man** in my 2017 lookback [here](/blog/post/a-few-more-favorites/#movies)_.
 
 ![](./images/cap-civil-war.png)
 
@@ -142,7 +142,7 @@ _I also wrote about **Spider-Man** in my 2017 lookback [here](/blog/2018/02/21/a
 
 Captain America is the poster boy for a series getting better over time. It's no small feat to construct a movie that's both so action packed and so emotionally impactful. Though Zemo is clearly the villain, the writers do an exceptional job painting basically everyone as antagonists at some point. The viewpoints of each side of the Accords are well-presented and justified. The anxiety over seeing "parents" fight and neither side being purely right is tough, but rewarding. The airport fight brings a lot of characters together and is satisfying. Spidey and Ant Man have a chance to be funny without getting in the way, and each sequence feels important. The beats in the last half hour of the movie (Roadie getting injured, Stark putting his friends in jail, the reveal about who killed the Starks) are up there with _Logan_, redefining drama's place in the superhero genre. The climax with Bucky, Cap, and Stark beating the pulp out of each other feels so raw and driven that it's impossible to root for either too heavily. Everything about this movie excels, and that makes it, in my opinion, the single best Marvel movie.
 
-_I also wrote about **Civil War** in my 2016 lookback [here](/blog/2017/02/11/a-few-of-my-favorite-things/#movies)_.
+_I also wrote about **Civil War** in my 2016 lookback [here](/blog/post/a-few-of-my-favorite-things/#movies)_.
 
 ## Onward
 

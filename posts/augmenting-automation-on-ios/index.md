@@ -41,7 +41,7 @@ Go ahead and create a Launch Center Connect account so that you can plug into IF
 ### Pythonista ($7)
 
 <!-- prettier-ignore -->
-I've written about Pythonista [before](/blog/2014/12/21/pythonista-power-pack) and still have nothing but good things to say about it. $7 seems steep for an app, but when you remember that it's a full python IDE with custom modules for interacting with your iOS device, that doesn't seem so steep anymore.
+I've written about Pythonista [before](/blog/post/pythonista-power-pack/) and still have nothing but good things to say about it. $7 seems steep for an app, but when you remember that it's a full python IDE with custom modules for interacting with your iOS device, that doesn't seem so steep anymore.
 
 In terms of setup, you'll want to download [this](https://gist.github.com/xavdid/aad5332bfbfdf857d256) script into Pythonista. It pulls your AppShopper feed, grabs the most recent "price drop" post, and parses the sale info out of it.
 

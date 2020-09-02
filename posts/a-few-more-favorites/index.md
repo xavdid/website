@@ -8,7 +8,7 @@ og_img: https://i.imgur.com/NwGZMyR.png
 og_desc: A look back at some of my favorite media in 2017
 ---
 
-In my advanced age, I've found myself with the time and inclination to consume a lot of media. As part of that, I feel like I have am obligation to share the best things I experienced in the past year with you, the loyal reader. I wrote a similar article [last year](/blog/2017/02/11/a-few-of-my-favorite-things/), but in case this is your first time (welcome!), I'll run through the rules for how media qualifies for the coveted "Davy" award:
+In my advanced age, I've found myself with the time and inclination to consume a lot of media. As part of that, I feel like I have am obligation to share the best things I experienced in the past year with you, the loyal reader. I wrote a similar article [last year](/blog/post/a-few-of-my-favorite-things/), but in case this is your first time (welcome!), I'll run through the rules for how media qualifies for the coveted "Davy" award:
 
 - media qualifies for the list for the calendar year during which I finish it for the first time
 - winners are picked based on what I enjoyed most, not what is objectively "the best". You probably wouldn't rank stuff the same way, but that's okay. This is my list, not yours
@@ -211,7 +211,7 @@ Honorable mention to _Shadow of the Wind_ because it was both good and very diff
 
 ## A Look Back
 
-A year (ish) out from [last year's post](/blog/2017/02/11/a-few-of-my-favorite-things/), here's a quick look back to much I'm enjoying some of the media that was awarded a coveted "Davy" award last year.
+A year (ish) out from [last year's post](/blog/post/a-few-of-my-favorite-things/), here's a quick look back to much I'm enjoying some of the media that was awarded a coveted "Davy" award last year.
 
 _Factorio_ is still awesome. The devs put out a weekly [blog](https://www.factorio.com/blog/) detailing their progress for the week. I follow the game, but have to play it only once in a while, lest I get sucked in and lose all other productivity. _The Witness_ received an iOS port, opening it up to a whole new audience. My SO is a prime example of someone without the inclination to sit down in front of her computer for a long game, but is never without her with. Due to this port, she's been able to play through one of my favorite games from last year. The game looks great on her phone, and the island is a pleasure to explore.
 

@@ -92,7 +92,7 @@ As Jackman has [said](http://comicbook.com/2015/05/07/hugh-jackman-confirms-wolv
 
 #### What about Deadpool?
 
-Technically, _Deadpool_ should fit somewhere. The presence of the mansion and Colossus cement this ([totally delightful](/blog/2017/02/11/a-few-of-my-favorite-things/#movies)) movie as part of the universe. At this point it doesn't have any plot connections to anything, but it's a fun watch. Since the Wade Wilson we saw in _O:W_ was part of the erased Original Timeline, the standalone version can safely coexist.
+Technically, _Deadpool_ should fit somewhere. The presence of the mansion and Colossus cement this ([totally delightful](/blog/post/a-few-of-my-favorite-things/#movies)) movie as part of the universe. At this point it doesn't have any plot connections to anything, but it's a fun watch. Since the Wade Wilson we saw in _O:W_ was part of the erased Original Timeline, the standalone version can safely coexist.
 
 There's no specific date in the movie, but it's clearly in modern day and, the mansion exists. Somewhere around 2016 makes sense. Chronologically, that puts it after _Apocalypse_ but before _Logan_ (which is a 45 year gap). There's a more comprehensive answer about _Deadpool_'s role [here](https://movies.stackexchange.com/a/47739) for the extra curious.
 

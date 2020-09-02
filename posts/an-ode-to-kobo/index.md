@@ -39,7 +39,7 @@ Looking up unfamiliar words is breeze via an onboard dictionary, plus dedicated 
 
 Most importantly, I'm in control of the device. It's a tool I use to read books, nothing more. I use it almost entirely offline, and it's totally fine with that. I get on wifi periodically to download library books or do a firmware update, but that's it. I add new books by plugging the Kobo into my computer and using [Calibre](https://calibre-ebook.com/) to transfer files.[^6] I thought having to plug the device in to transfer books would be annoying (that's so iTunes circa 2008), but it hasn't been an issue. Would I use an official Dropbox integration if there was one? Totally. This isn't much of a burden though.
 
-I've had my Kobo since January 2019 and it's invigorated my lifelong love of reading. It contributed to an [uptick in reading that year](https://davidbrownman.com/blog/2020/02/11/my-favorite-media-of-the-year-2019-edition/#books). It's been a stalwart companion during this quarantine too, let me tell you.
+I've had my Kobo since January 2019 and it's invigorated my lifelong love of reading. It contributed to an [uptick in reading that year](/blog/post/my-favorite-media-of-the-year-2019-edition/#books). It's been a stalwart companion during this quarantine too, let me tell you.
 
 [^1]: If I do run into an issue, it's likely another Kindle owner has has had the same problem and posted about it online
 [^2]: `epub` is open standard for digital books, much like `mp3` is the standard for music

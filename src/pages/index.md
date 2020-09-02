@@ -18,7 +18,7 @@ My main expertise is in `Typescript` and `Javascript`, especially as they pertai
 
 ### My media lists
 
-I maintain a comprehensive list of everything I play, read, and watch. Partly to source info for my [yearly media awards blog post](/blog/post/my-favorite-media-of-the-year-2019-edition/), but also just because it's fun. Each follows my [4-point media rating system](http://localhost:1234/blog/post/on-the-rating-of-media/). Check them out:
+I maintain a comprehensive list of everything I play, read, and watch. Partly to source info for my [yearly media awards blog post](/blog/post/my-favorite-media-of-the-year-2019-edition/), but also just because it's fun. Each follows my [4-point media rating system](/blog/post/on-the-rating-of-media/). Check them out:
 
 - Books
   - [Finished](https://airtable.com/shr4iBau1Ewwu5kxB)
@@ -33,3 +33,5 @@ I maintain a comprehensive list of everything I play, read, and watch. Partly to
 ## Black Lives Matter
 
 It should go without saying, but doesn't.
+
+[Register to vote](https://www.vote.org/) and [take some action](https://blacklivesmatters.carrd.co/).

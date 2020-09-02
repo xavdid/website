@@ -115,7 +115,7 @@ This whole attack might sound far-fetched. Well it turns out, large-scale passwo
 
 Anyway, while nothing is 100% in internet security, you owe it to yourself to become as aggravating a target as possible. If you're interested in reading more, I recommend [decentsecurity.com](https://decentsecurity.com/#/introduction/), this great [security muiltireddit](https://www.reddit.com/user/Kalabaster/m/supasec/), and generally lurking on [Hacker News](https://news.ycombinator.com/).
 
-If you've implemented all these tips (an impressive feat!), feel free to [tweet](https://twitter.com/intent/tweet?hashtags=security&text=I%27ve%20taken%20steps%20to%20make%20my%20online%20life%20more%20secure%20thanks%20to%20@xavdid!%20Learn%20more%20here:%20&url=https://davidbrownman.com/blog/2017/07/05/how-hackers-steal-your-data/) your accomplishment. No cheating!
+If you've implemented all these tips (an impressive feat!), feel free to [tweet](https://twitter.com/intent/tweet?hashtags=security&text=I%27ve%20taken%20steps%20to%20make%20my%20online%20life%20more%20secure%20thanks%20to%20@xavdid!%20Learn%20more%20here:%20&url=https://xavd.id/blog/post/how-hackers-steal-your-data/) your accomplishment. No cheating!
 
 Past that, I appreciate you reading this far. I've done my best to make a fairly technical subject approachable. Definitely reach out with questions, suggestions, or thoughts. Until then, good luck!
 

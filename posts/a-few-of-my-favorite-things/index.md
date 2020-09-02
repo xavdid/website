@@ -68,7 +68,7 @@ This has been a weird year for me as far as PC games are concerned. When picking
 
 Winner: **Factorio**
 
-I've always had a thing for [automation](/blog/2014/12/16/augmenting-automation-on-ios/) and when I saw there was a mining game designed around that very concept, I couldn't stay away. I bought _[Factorio](https://www.factorio.com/)_ for my birthday and proceeded to play 35 hours that week (placing it squarely in one of my [most-played](https://steamcommunity.com/id/xavdidtheshadow/games/?tab=all) steam games of all time). After destroying my sleep schedule and finally launching the rocket, I had only scratched the surface of the game. [^3]
+I've always had a thing for [automation](/blog/post/augmenting-automation-on-ios/) and when I saw there was a mining game designed around that very concept, I couldn't stay away. I bought _[Factorio](https://www.factorio.com/)_ for my birthday and proceeded to play 35 hours that week (placing it squarely in one of my [most-played](https://steamcommunity.com/id/xavdidtheshadow/games/?tab=all) steam games of all time). After destroying my sleep schedule and finally launching the rocket, I had only scratched the surface of the game. [^3]
 
 ![](./images/factorio-1.jpg)
 
