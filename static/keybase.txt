@@ -1,1 +1,68 @@
-very cool crypto
+==================================================================
+https://keybase.io/xavdid
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://xavd.id
+  * I am xavdid (https://keybase.io/xavdid) on keybase.
+  * I have a public key with fingerprint BA72 F26F 7A12 08FD EA39  C3CE 8E6C 0A2E 2B26 98E9
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101981175814a5dc3142a13e6159a14cefd0c08c0520d84dbd04fe43b34c6af553e0a",
+      "fingerprint": "ba72f26f7a1208fdea39c3ce8e6c0a2e2b2698e9",
+      "host": "keybase.io",
+      "key_id": "8e6c0a2e2b2698e9",
+      "kid": "0101981175814a5dc3142a13e6159a14cefd0c08c0520d84dbd04fe43b34c6af553e0a",
+      "uid": "5c0889571fe985bfa195ddd4a4cac119",
+      "username": "xavdid"
+    },
+    "service": {
+      "hostname": "xavd.id",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1599117245,
+  "expire_in": 157680000,
+  "prev": "0bb4792ff90bd472e5e709f8b504f64bcfbf00fef35981bc06240db178c85033",
+  "seqno": 107,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMIgAnicrVJbSBVBGF7LtIROF7CHBB+WKIOTzuzu7OUU2ENIkVE9FCbmMrMzY1t6
+zrrnUnFQMroQ0cWSMrqQSFLZDSnKByvDiJAuVNiNThBIEVEpdIFSmpWCHnpsXob5
+5/u+//t+/r7J46W8LHn+0Cv/zfcfWf29B5KSveJwT1omMbpZjqTlDWzsYrWUxRP2
+BpfKERlAAC0TQgOZUMOIOirUFAxVpkNkYag5jFPgANMBSAHU1CihQONMU4mqOTrm
+CKkMYDksczdaw3zPd6MJIUuwoXBF5waGCjA5ZVi1HNVhJtMdgBWmEEW3TGYJ4rpY
+PGAIcwTHWbEbEzXxsMfs/QP/n30nx+SQgJoWMiBnlokIx9BClFINaw52IAz6JuPM
+j+I6JtCbcIoKWkNYFrWU67BgrEGOv/6LBSAse34sEXNitaK4LpHw4pGAlNjsBaiN
+jNi/+TZxo1QMUDBSzI+7sagcgQLpJNxAUESyRFRFQ2GZbfJcn9lugECGbgJxgj4s
+FUyFEM2wFM4tQKhmKAwxA1jcJEiE1zXicMIB4IyrSAyPOEBXNEAJNEzHREBV5SBR
+fTQmtIEhjOIaIRp3a6I4kfSZ3HDrZlW2lJUn5UwYF6yWlDdp6p+FK+nMHSm8W3/n
+07kdzZHB1mToQQY+nbV2sXKjbGfPauOKoo1clNTu7KJ8+2tp7+cvLx6ml3150nbE
+PS53PVvVGBqqH9w5OAOtWp83EfUv+Z7q6ih5XTit/NiCpP1oeP2uiV7/9ZHzdxqa
+v/2U+CJjdCA0PLRl4VKvpfXaNjC+7d1+qelgR9PlJRn9bFdBzmOrPF3dQ2unXy33
+7qWnktaSOcPPX/UeQvua2ttP9HXOLco+UbrjTKjy6Ls6d0p72/blL58n32fK8les
+PN19We3zThZ0jZadcis6TeV+9cz4ldc3DhbuaSYfB2Zn7NlXq7a2VK5pnLY798Lt
+t5fsiuMfpPCe/L3zLv0CXWND/w==
+=JdM6
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/xavdid
+
+==================================================================

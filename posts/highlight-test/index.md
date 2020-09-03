@@ -65,7 +65,7 @@ cool
 
 and now some ~~ruby~~ `python`
 
-```py {3}
+```py {3,5}
 a = 3
 d = {}
 d['asdf'] = a
@@ -73,10 +73,10 @@ for i in range(3):
     print(i)
 ```
 
-```py {numberLines: true}{3,5}
+```py {1,4}{numberLines: true}
 a = 3
 d = {}
-d['asdf'] = a
+d['asdf'] = [a for a in range(20)]
 for i in range(3):
     print(i)
 ```

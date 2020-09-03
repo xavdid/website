@@ -6,7 +6,10 @@
   border-radius: 3px;
   font-size: 0.9rem;
   @media (prefers-color-scheme: dark) {
-    color: $tBlack;
-    background-color: $tOrange;
+    // color: $tBlack;
+    background-color: unset;
+    // because this is colored by a border in dark mode, it's a little wider than the normal background. so, less padding
+    padding: 2px;
+    border: 1px solid $tOrange;
   }
 }

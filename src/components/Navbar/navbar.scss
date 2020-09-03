@@ -1,18 +1,20 @@
 @import "../vars.scss";
 
+$skew-size: 36deg;
+
 nav.header {
   display: flex;
   background-color: $nav-background;
   @media (prefers-color-scheme: dark) {
     background-color: $nav-dark-background;
-    // border-bottom: 1px solid $nav-dark-item;
-    // padding-bottom: 5px;
   }
 
   h1 {
     color: white;
     @media (prefers-color-scheme: dark) {
-      color: $tOrange;
+      color: $tCyan;
+
+      // outlined name:
       // color: black;
       // -webkit-text-stroke-width: 1px;
       // font-weight: 900;
@@ -28,14 +30,20 @@ nav.header {
   }
 
   .navbar {
-    // needed for keeping title clear
-    // background-color: pink;
-    // transform: skew(-36deg);
+    @include desktop {
+      @media (prefers-color-scheme: dark) {
+        background-color: $nav-dark-item;
+      }
+      transform: skew(-$skew-size);
+      padding-right: 2px;
+    }
+
+    overflow-x: hidden;
     @include mobile-only {
       padding-inline-start: 4rem;
       margin-right: 0;
-      overflow-x: hidden;
     }
+    // 17px puts the last parallelogram right in the corner of the screen
     margin: 0 17px 0 auto;
 
     .navbar-item {
@@ -52,7 +60,7 @@ nav.header {
       color: $MBlue;
 
       @media (prefers-color-scheme: dark) {
-        color: $tOrange;
+        color: $nav-dark-item;
       }
       padding: 10px 33px;
       position: relative;
@@ -62,7 +70,9 @@ nav.header {
       // items being too short messes up spacing
       // should be as long as the biggest item, I think
       min-width: 70px;
-      // transform: skew(36deg);
+      @include desktop {
+        transform: skew($skew-size);
+      }
       // parallellogram
       &:after {
         content: "";
@@ -74,11 +84,9 @@ nav.header {
         background-color: $nav-item;
         @media (prefers-color-scheme: dark) {
           background-color: $nav-dark-background;
-          // outline shadow
-          box-shadow: inset 0px 0px 0px 2px $tCyan;
         }
         z-index: -1;
-        transform: skew(-36deg);
+        transform: skew(-$skew-size);
         transition: all 0.2s linear;
       }
 
@@ -92,7 +100,7 @@ nav.header {
           background-color: $nav-background;
 
           @media (prefers-color-scheme: dark) {
-            background-color: $tOrange;
+            background-color: $nav-dark-item;
           }
         }
       }
