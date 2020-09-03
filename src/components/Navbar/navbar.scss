@@ -2,10 +2,22 @@
 
 nav.header {
   display: flex;
-  background-color: $base-blue;
+  background-color: $nav-background;
+  @media (prefers-color-scheme: dark) {
+    background-color: $nav-dark-background;
+    // border-bottom: 1px solid $nav-dark-item;
+    // padding-bottom: 5px;
+  }
 
   h1 {
     color: white;
+    @media (prefers-color-scheme: dark) {
+      color: $tOrange;
+      // color: black;
+      // -webkit-text-stroke-width: 1px;
+      // font-weight: 900;
+      // -webkit-text-stroke-color: $tOrange;
+    }
     margin: auto;
     margin-left: 10px;
   }
@@ -17,7 +29,8 @@ nav.header {
 
   .navbar {
     // needed for keeping title clear
-
+    // background-color: pink;
+    // transform: skew(-36deg);
     @include mobile-only {
       padding-inline-start: 4rem;
       margin-right: 0;
@@ -37,6 +50,10 @@ nav.header {
       float: left;
       font-size: 1.2rem;
       color: $MBlue;
+
+      @media (prefers-color-scheme: dark) {
+        color: $tOrange;
+      }
       padding: 10px 33px;
       position: relative;
       cursor: pointer;
@@ -45,7 +62,7 @@ nav.header {
       // items being too short messes up spacing
       // should be as long as the biggest item, I think
       min-width: 70px;
-
+      // transform: skew(36deg);
       // parallellogram
       &:after {
         content: "";
@@ -54,7 +71,12 @@ nav.header {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: $maize;
+        background-color: $nav-item;
+        @media (prefers-color-scheme: dark) {
+          background-color: $nav-dark-background;
+          // outline shadow
+          box-shadow: inset 0px 0px 0px 2px $tCyan;
+        }
         z-index: -1;
         transform: skew(-36deg);
         transition: all 0.2s linear;
@@ -62,9 +84,16 @@ nav.header {
 
       &:hover,
       &.active {
-        color: $nav-item-color;
+        color: $nav-item;
+        @media (prefers-color-scheme: dark) {
+          color: $tBlack;
+        }
         &:after {
           background-color: $nav-background;
+
+          @media (prefers-color-scheme: dark) {
+            background-color: $tOrange;
+          }
         }
       }
     }

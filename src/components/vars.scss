@@ -23,8 +23,17 @@ $maize: #ffcb05;
 $MBlue: #00274c;
 $orange: #d86018;
 
-$base-blue: #003366;
-
 // multi-component configuration
-$nav-item-color: $maize;
-$nav-background: $base-blue;
+$nav-item: $maize;
+$nav-background: #003366;
+
+// from https://web.archive.org/web/20180930142654/http://www.colourlovers.com/palette/1406402/Tron_Legacy_2, mostly
+
+// $tOrange: #df740c;
+$tOrange: #eeae24;
+$tCyan: #00eaff;
+$tWhite: #e6ffff;
+$tBlack: #0c141f;
+
+$nav-dark-item: $tOrange;
+$nav-dark-background: $tBlack;

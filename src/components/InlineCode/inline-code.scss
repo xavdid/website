@@ -1,7 +1,12 @@
+@import "../vars.scss";
+
 .inline-code {
   background-color: #dedede;
   padding: 3px;
   border-radius: 3px;
   font-size: 0.9rem;
-  // @media (prefers-color-scheme: dark) {}
+  @media (prefers-color-scheme: dark) {
+    color: $tBlack;
+    background-color: $tOrange;
+  }
 }

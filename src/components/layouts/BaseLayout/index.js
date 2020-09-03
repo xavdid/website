@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../../Navbar";
 import LeftBorder from "../../LeftBorder";
 
-import "./layout.scss";
+import "./base.scss";
 
 const Layout = ({ children }) => {
   return (

@@ -1,12 +1,18 @@
 @import "../vars.scss";
 
 .border {
+  // farthest left
   background: $nav-background;
+  // highlight color
+  border-right: 0.15em solid $nav-item;
+  @media (prefers-color-scheme: dark) {
+    background: $nav-dark-background;
+    border-right: 0.15em solid $nav-dark-item;
+  }
   position: fixed;
   left: 0;
   top: 0;
   bottom: 0;
   width: 0.25em;
   z-index: -10;
-  border-right: 0.15em solid $maize;
 }
