@@ -127,12 +127,34 @@ main {
     &:focus {
       outline: none;
     }
+    @media (prefers-color-scheme: dark) {
+      background-color: $tCyan;
+      color: $tBlack;
+      &:hover {
+        color: $tBlack;
+        background-color: $tWhite;
+      }
+    }
   }
   .littlefoot-footnote__content {
     line-height: 1.6;
     a {
       // links in footnotes had a margin because of a last-child seletor
       margin-bottom: 0;
+    }
+    @media (prefers-color-scheme: dark) {
+      background-color: $tBlack;
+    }
+  }
+
+  .mermaid > svg {
+    width: 100%;
+    // might need to adjust this, the 500px works for thunder chart
+    height: 550px;
+
+    // hard to dynamically style the diagram, can't see it well in dark mode
+    @media (prefers-color-scheme: dark) {
+      background-color: $tWhite;
     }
   }
 }

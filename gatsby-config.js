@@ -40,6 +40,7 @@ module.exports = {
           default: require.resolve("./src/components/layouts/MdxPageLayout"),
         },
         gatsbyRemarkPlugins: [
+          `gatsby-remark-mermaid`,
           `gatsby-remark-autolink-headers`,
           {
             resolve: `gatsby-remark-prismjs`,
