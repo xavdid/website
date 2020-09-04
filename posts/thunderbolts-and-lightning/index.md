@@ -12,8 +12,6 @@ When moving into my new apartment, the outlets and the cable were arranged in su
 
 I had a fair amount of hardware wired together. There was the modem and router, plus Ethernet cables going to my gaming PC and an old laptop I used for streaming media.[^1] Here's how everything was connected:
 
-<!-- <img class="svg" src="https://gist.githubusercontent.com/xavdid/9691c907a61ee538f39d3a33c1f4bd3c/raw/c726af6a29f60e647bee16e33ec49ec5ea695440/start.svg?sanitize=true" /> -->
-
 ```mermaid
 graph TB
 wall[Wall Outlet]
@@ -64,8 +62,6 @@ classDef fried stroke:red,stroke-width:3px;
 class lightning lightning
 class wall,modem,router,laptop,gaming fried
 ```
-
-<!-- <img class="svg" src="https://gist.githubusercontent.com/xavdid/9691c907a61ee538f39d3a33c1f4bd3c/raw/e212c6403cdc577fcc380ad7062f5b524f266e62/end.svg?sanitize=true" /> -->
 
 Despite the surge protector doing its job, a single unprotected entry point left the whole system vulnerable.[^2] Off the bat, I could confirm that the modem and router were hosed. My media laptop wasn’t charging, but I was hoping that was an issue with anything besides the laptop itself (there was a lot of wishful thinking that day). Most troubling of all, my gaming desktop wasn’t turning on.
 
