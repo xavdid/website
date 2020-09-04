@@ -26,8 +26,9 @@
   font-family: monospace;
   // this controls the background of codeblocks
   background-color: $MBlue;
-  border: 1px solid $tCyan;
+  border: 1px solid #fff;
   @media (prefers-color-scheme: dark) {
+    border: 1px solid $tCyan;
     background-color: $tBlack;
   }
   border-radius: 0.3em;

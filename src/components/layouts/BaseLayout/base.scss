@@ -20,6 +20,10 @@ body {
 $margin-left-for-anchor: 1rem;
 main {
   font-size: 18px;
+  @media (prefers-color-scheme: dark) {
+    // affects SVGs so they change color
+    fill: $tWhite;
+  }
 
   h1,
   h2,
