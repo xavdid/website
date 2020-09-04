@@ -23,3 +23,5 @@ function imgsav () {
   curl -s $1 > "./images/$2"; printf "./images/$2" | pbcopy;
 }
 ```
+
+- the favicon was generated at [this link](https://favicon.io/favicon-generator/?t=DB&ff=Covered+By+Your+Grace&fs=110&fc=%23FFCB05&b=rounded&bc=%2300274C)

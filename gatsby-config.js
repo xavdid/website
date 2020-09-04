@@ -6,6 +6,18 @@ module.exports = {
     author: "David Brownman",
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `David Brownman's Website`,
+        short_name: `xavd.id`,
+        start_url: `/`,
+        background_color: `#00274C`,
+        theme_color: `#FFCB05`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-react-helmet`,
@@ -129,5 +141,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
+    // should go towards the end
+    `gatsby-plugin-offline`,
   ],
 };
