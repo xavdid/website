@@ -24,6 +24,12 @@ main {
     // affects SVGs so they change color
     fill: $tWhite;
   }
+  // for some reason, visited links don't apply fill in the same way
+  a:visited > svg {
+    @media (prefers-color-scheme: dark) {
+      fill: $tWhite;
+    }
+  }
 
   h1,
   h2,
@@ -121,10 +127,39 @@ main {
   }
   img {
     border: 1px solid $MBlue;
+    @media (prefers-color-scheme: dark) {
+      border: 1px solid $tCyan;
+    }
   }
   figcaption {
     text-align: center;
     padding-top: 10px;
+  }
+
+  .littlefoot-footnote__wrapper {
+    @media (prefers-color-scheme: dark) {
+      background-color: $tBlack;
+
+      &::before {
+        background-image: linear-gradient(
+          to bottom,
+          $tBlack 50%,
+          rgba(250, 250, 250, 0) 100%
+        ) !important;
+      }
+      &::after {
+        background-image: linear-gradient(
+          to top,
+          $tBlack 50%,
+          rgba(250, 250, 250, 0) 100%
+        ) !important;
+      }
+    }
+  }
+
+  // hide the weird little down arrow
+  .littlefoot-footnote.is-scrollable::after {
+    visibility: hidden;
   }
 
   .littlefoot-footnote__button {
