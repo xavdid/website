@@ -88,13 +88,12 @@ export default () => {
                   dateTime={post.node.frontmatter.date}
                   style={{ ...leftBlockStyle, fontFamily: "monospace" }}
                 >
-                  {new Date(post.node.frontmatter.date).toLocaleString(
-                    undefined,
-                    {
-                      month: "short",
-                      day: "2-digit",
-                    }
-                  )}
+                  {new Date(
+                    `${post.node.frontmatter.date}T00:00:00`
+                  ).toLocaleString(undefined, {
+                    month: "short",
+                    day: "2-digit",
+                  })}
                 </time>
                 <Link href={post.node.fields.slug}>
                   {post.node.frontmatter.title}
