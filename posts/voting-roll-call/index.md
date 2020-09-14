@@ -4,7 +4,7 @@ title: Voting Roll Call
 fact: The British Empire adopts the Gregorian calendar, skipping eleven days (the previous day was September 2).
 fact_year: 1752
 tags: [jq, Airtable, Facebook, politics]
-og_img: ./images/your_voice_matters.jpg
+og_img: https://i.imgur.com/IHPRWUw.jpg
 og_desc: Voting won't solve everything, but it certainly won't make anything worse. These are instructions to help you make sure all your Facebook friends are registered to vote!
 ---
 
