@@ -1,0 +1,49 @@
+#!/usr/bin/env node
+
+const inquirer = require("inquirer");
+const mkdirp = require("mkdirp");
+const { writeFile } = require("fs").promises;
+const clipboardy = require("clipboardy");
+
+// this template might be off by a day because ISOString is UTC
+const tempalte = (title, text = "") =>
+  `
+---
+date: ${new Date().toISOString().slice(0, 10)}
+title: ${title}
+fact: A cool fact from Wikipedia (run the \`date\` command)
+fact_year: 1234
+tags: []
+og_img: https://i.imgur.com/u9IvTRA.jpg
+og_desc: Blah Blah
+---
+
+${text}
+`.trimLeft();
+
+const createPost = async () => {
+  const cb = await clipboardy.read();
+  let title, slug, text;
+  if (cb.trim()[0] === "#") {
+    // we've got markdown with a title! use it
+    const lines = cb.split("\n");
+    title = lines[0].slice(1).trim();
+    text = lines.slice(1).join("\n").trim();
+  }
+
+  ({ title, slug } = await inquirer.prompt([
+    { message: "What will the title be?", name: "title", default: title },
+    {
+      message: "What is the slug (and folder name)?",
+      name: "slug",
+      default: ({ title }) => {
+        return title.split("(")[0].trim().split(" ").join("-").toLowerCase();
+      },
+    },
+  ]));
+
+  await mkdirp(`./posts/${slug}/images`);
+  await writeFile(`./posts/${slug}/index.md`, tempalte(title, text));
+};
+
+createPost().catch((e) => console.log(`Err: ${e}`));

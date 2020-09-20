@@ -36,6 +36,7 @@
     "react-helmet": "^6.0.0"
   },
   "devDependencies": {
+    "clipboardy": "^2.3.0",
     "eslint": "^7.1.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-standard": "^14.1.1",
@@ -47,6 +48,8 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-standard": "^4.0.1",
+    "inquirer": "^7.3.3",
+    "mkdirp": "^1.0.4",
     "prettier": "^2.1.1"
   },
   "keywords": [
@@ -63,7 +66,8 @@
     "prod": "gatsby build && gatsby serve",
     "clean": "gatsby clean",
     "lint": "eslint src posts",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "post": "./bin/new-post"
   },
   "repository": {
     "type": "git",
