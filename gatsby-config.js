@@ -1,8 +1,10 @@
+const siteUrl = "https://xavd.id";
+
 module.exports = {
   siteMetadata: {
     title: "The site formerly known as davidbrownman.com",
-    siteUrl: "https://xavd.id",
-    defaultOgImg: "https://i.imgur.com/zhqbTVt.png",
+    siteUrl,
+    defaultOgImg: `${siteUrl}/og_img.png`,
     author: "David Brownman",
   },
   plugins: [
