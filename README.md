@@ -25,4 +25,8 @@ function imgsav () {
 ```
 
 - the favicon was generated at [this link](https://favicon.io/favicon-generator/?t=DB&ff=Covered+By+Your+Grace&fs=110&fc=%23FFCB05&b=rounded&bc=%2300274C)
+- the `og_img` is from [this site](https://logohub.io/#) using the same settings as the favicon:
+  - font: `Covered by your Grace`
+  - Michigan colors
 - Meramid works out of the box, but I've also been able to embed SVGs from github pages like this: `<img class="svg" src="https://gist.githubusercontent.com/xavdid/9691c907a61ee538f39d3a33c1f4bd3c/raw/c726af6a29f60e647bee16e33ec49ec5ea695440/start.svg?sanitize=true" />`
+- everything in the `static` is served from the root of the site (without any prefix)

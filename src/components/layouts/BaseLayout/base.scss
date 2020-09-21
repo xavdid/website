@@ -31,6 +31,10 @@ main {
     }
   }
 
+  strong{
+    // normalize resets this to "bolder", which is relative to the parent and doesn't work right.
+    font-weight: bold;
+  }
   h1,
   h2,
   h3,

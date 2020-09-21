@@ -5,13 +5,13 @@ const mkdirp = require("mkdirp");
 const { writeFile } = require("fs").promises;
 const clipboardy = require("clipboardy");
 
-// this template might be off by a day because ISOString is UTC
+// this template might be off by a day because toISOString is UTC
 const tempalte = (title, text = "") =>
   `
 ---
-date: ${new Date().toISOString().slice(0, 10)}
+date: "${new Date().toISOString().slice(0, 10)}"
 title: ${title}
-fact: A cool fact from Wikipedia (run the \`date\` command)
+fact: A cool fact from Wikipedia (run the \`fact\` command)
 fact_year: 1234
 tags: []
 og_img: https://i.imgur.com/u9IvTRA.jpg
