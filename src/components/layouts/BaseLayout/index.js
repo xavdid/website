@@ -13,7 +13,8 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 800,
+          // see https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/
+          maxWidth: `80ch`,
           padding: `0 1.0875rem 1.45rem`,
         }}
       >

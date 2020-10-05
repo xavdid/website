@@ -31,7 +31,7 @@ main {
     }
   }
 
-  strong{
+  strong {
     // normalize resets this to "bolder", which is relative to the parent and doesn't work right.
     font-weight: bold;
   }
@@ -85,7 +85,7 @@ main {
   p,
   ul,
   ol {
-    line-height: 1.4;
+    line-height: 1.7;
     font-weight: lighter;
     li {
       margin: 0 0 7px 0;
