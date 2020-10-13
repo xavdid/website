@@ -11,7 +11,7 @@ export default () => (
     <Link href="/" className="header">
       <h1>David Brownman</h1>
     </Link>
-    <div className="navbar">
+    <div className="navbar" data-nosnippet>
       <Link href="/" className="navbar-item" activeClassName="active">
         About
       </Link>
