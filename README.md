@@ -20,7 +20,7 @@ An unorganized list to help me keep this organized
 
 ```sh
 function imgsav () {
-  curl -s $1 > "./images/$2"; printf "./images/$2" | pbcopy;
+  curl -s $(pbpaste) > "./images/$1"; printf "./images/$1" | pbcopy;
 }
 ```
 

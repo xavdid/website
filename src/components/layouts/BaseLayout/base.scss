@@ -123,6 +123,9 @@ main {
     margin: 0 auto;
     max-width: 90%;
     border: 1px solid $MBlue;
+    @media (prefers-color-scheme: dark) {
+      border: 1px solid $tCyan;
+    }
   }
 
   // I pulled this out of the dom, so i'm not sure the classname won't change
@@ -137,7 +140,9 @@ main {
   }
   figcaption {
     text-align: center;
-    padding-top: 10px;
+    font-weight: bolder;
+    padding-top: 5px;
+    font-size: smaller;
   }
 
   .littlefoot-footnote__wrapper {
