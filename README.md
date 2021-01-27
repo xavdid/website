@@ -30,3 +30,9 @@ function imgsav () {
   - Michigan colors
 - Meramid works out of the box, but I've also been able to embed SVGs from github pages like this: `<img class="svg" src="https://gist.githubusercontent.com/xavdid/9691c907a61ee538f39d3a33c1f4bd3c/raw/c726af6a29f60e647bee16e33ec49ec5ea695440/start.svg?sanitize=true" />`
 - everything in the `static` is served from the root of the site (without any prefix)
+
+## Media Posts
+
+- Movie/tv backdrops are on TMDB
+- book covers are at `https://books.google.com/books/content/images/frontcover/<GBID>?fife=w400-h400`
+- game headers are straight from Steam

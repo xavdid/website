@@ -44,7 +44,7 @@ I completed 42 games over 612 hours (down from 46 games in 2018). Starting in Ap
 
 > Winner(s): **CrossCode** (PC) and **Return of the Obra Dinn** (PC)
 
-![crosscode](./images/crosscode-cover.png)
+![](./images/crosscode-cover.png)
 
 Most games do some things well. Some games do most things well. CrossCode? [_CrossCode_](https://www.cross-code.com/en/home) excels across the board.
 

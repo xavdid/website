@@ -64,6 +64,7 @@ main {
     border-bottom: none;
     font-weight: bold;
     margin: 0;
+    font-size: 1.3em;
     @include mobile-only {
       // leave space for anchor
       margin-left: $margin-left-for-anchor;
