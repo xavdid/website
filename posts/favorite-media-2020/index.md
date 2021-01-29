@@ -241,7 +241,7 @@ _return to the [table of contents](#TOC)_ ↩️
 
 ## Updates
 
-A quick list of how my [picks from last year](/blog/post/my-favorite-media-of-the-year-2019-edition/#movies) aged:
+A quick list of how my [picks from last year](/blog/post/my-favorite-media-of-the-year-2019-edition) aged:
 
 - _Red Rising_ trilogy stuck the landing, was great
 - We got _Knives Out_ on iTunes and watched both the director's commentary and the making-of documentary; both are great
