@@ -83,7 +83,10 @@ export default () => {
                 paddingTop: "10px",
               }}
             >
-              <h3 style={{ display: "flex", marginLeft: 0 }}>
+              <h3
+                // don't let the font size here get too big or the dates wrap and it looks bad
+                style={{ display: "flex", marginLeft: 0, fontSize: "1.17em" }}
+              >
                 <time
                   dateTime={post.node.frontmatter.date}
                   style={{ ...leftBlockStyle, fontFamily: "monospace" }}
