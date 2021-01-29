@@ -1,4 +1,5 @@
-# xavd.id
+* [Notes](#notes)
+* [Media Posts](#media-posts)
 
 This site is built with [gatsby](https://www.gatsbyjs.org/)!
 
@@ -24,6 +25,7 @@ function imgsav () {
 }
 ```
 
+- You can insert a markdown img after the above function with the `;img` snippet
 - the favicon was generated at [this link](https://favicon.io/favicon-generator/?t=DB&ff=Covered+By+Your+Grace&fs=110&fc=%23FFCB05&b=rounded&bc=%2300274C)
 - the `og_img` is from [this site](https://logohub.io/#) using the same settings as the favicon:
   - font: `Covered by your Grace`
@@ -36,3 +38,4 @@ function imgsav () {
 - Movie/tv backdrops are on TMDB
 - book covers are at `https://books.google.com/books/content/images/frontcover/<GBID>?fife=w400-h400`
 - game headers are straight from Steam
+- `npx doctoc path/to/folder` will regenerate the TOC, along with the `;toc` snippet.
