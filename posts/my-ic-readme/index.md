@@ -7,7 +7,7 @@ tags: [personal]
 og_desc: A brief overview of how I work as an IC.
 ---
 
-Hello! I'm David, and I'm excited to work with you. This document is meant to help you up to speed with how I work as an Individual Contributor. This document _is not_ a binding contract; it's self-reported guidelines to my working life. It is [updated periodically](https://github.com/xavdid/website/commits/source/posts/my-ic-readme/index.md). The structure of the document is inspired by [Amy Nguyen's _"Working with me"_](https://amy.dev/?p=979) and the other READMEs I've read internally while at Zapier.
+Hello! I'm David, and I'm excited to work with you. This document is meant to help you get up to speed with how I work as an Individual Contributor. This document _is not_ a binding contract; it's self-reported guidelines to my working life. It is [updated periodically](https://github.com/xavdid/website/commits/source/posts/my-ic-readme/index.md). The structure of the document is inspired by [Amy Nguyen's _"Working with me"_](https://amy.dev/?p=979) and the other READMEs I've read internally while at Zapier.
 
 ## About Me
 
