@@ -54,7 +54,7 @@ This section is the "how". Jump to [What Drives Me](#what-drives-me) for some of
 
 - I try to schedule all my meetings in a single block (aka the [Clockwise](https://www.getclockwise.com/) method).
 - I try to keep all my meetings on a single day (or two). At Zapier, I try to only take meetings on Wed & Thurs.
-- I'm will to take meetings any time during my working hours. When possible, I prefer meetings in the afternoon (see [hours](#hours)).
+- I'm willing to take meetings any time during my working hours. When possible, I prefer meetings in the afternoon (see [hours](#hours)).
 - I'm happy to take late-evening meetings for time-zone reasons (greatly preferred to early morning ones).
 - I'm also happy to sit and synchronously Slack with you about a topic - that can sometimes be preferred if we're trading a lot of links
 - I can take meetings up to 1 hour before my normal start time (typically 9am) if it's an important meeting. I have trouble getting up earlier than that and my energy level will be shot the rest of the day.
