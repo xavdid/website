@@ -102,15 +102,17 @@ main {
     list-style-type: circle;
   }
 
+  $blockquote-border-size: 3px;
   blockquote {
     margin: 0 auto; // get it on the left wall
     font-weight: 600;
-    font-size: 1.2em;
-    padding: 1em;
+    font-size: 0.8em;
+    padding: 0.5em;
+    margin-top: 15px;
     font-style: italic;
-    border-left: 5px solid $maize;
+    border-left: $blockquote-border-size solid $maize;
     @media (prefers-color-scheme: dark) {
-      border-left: 5px solid $tOrange;
+      border-left: $blockquote-border-size solid $tOrange;
     }
     p {
       // interior p has a huge margin
@@ -205,5 +207,9 @@ main {
     @media (prefers-color-scheme: dark) {
       background-color: $tWhite;
     }
+  }
+
+  code {
+    font-size: 14px !important;
   }
 }

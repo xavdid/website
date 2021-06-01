@@ -39,3 +39,13 @@ function imgsav () {
 - book covers are at `https://books.google.com/books/content/images/frontcover/<GBID>?fife=w400-h400`
 - game headers are straight from Steam
 - `npx doctoc path/to/folder` will regenerate the TOC, along with the `;toc` snippet.
+
+## MDX
+
+Markdown, but with react components.
+
+### Adding a new custom component:
+
+1. Add a folder in `components` with `index.js` and `component-name.scss`
+2. Add the component to `MdxComponentLayout`
+3. Add the name to the eslint config, so it doesn't yell in the linter
