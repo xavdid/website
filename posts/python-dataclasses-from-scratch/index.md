@@ -419,12 +419,14 @@ def custom_dataclass(cls):
 
 ## Tada!
 
-We've got basic functionality working and our test should now pass, so I think this is a good place to stop. I recommend giving the [actual docs](https://docs.python.org/3.9/library/dataclasses.html#dataclasses.dataclass) a read to familiarize yourself with everything `dataclasses` can do. Thanks for reading!
+We've got basic functionality working and our test should now pass, so I think this is a good place to stop. The actual implementation does a lot more work, but is also much more complex, internally. We didn't have worry about inheritance, for instance. If you're curious to learn more, I've linked a bunch of great resources below. Thanks for reading!
 
 ## Further Resources
 
 - [The complete code](https://github.com/xavdid/custom_dataclass) from this post, including a more extensive test suite.
+- [the Python docs](https://docs.python.org/3.9/library/dataclasses.html#dataclasses.dataclass) for the package, which cover some neat features we didn't touch on here
 - [The original PEP](https://www.python.org/dev/peps/pep-0557/) that proposed dataclasses. It explains a lot of the rationale behind them. It's a very approachable read.
 - [The actual implementation](https://github.com/python/cpython/blob/acac6c71ff370413374c6aca1df808c426e8a30c/Lib/dataclasses.py), which handles many more edge cases and adds more functions. In particular, you should recognize parts of the `_process_class` function and `_get_field`.
+- [This video](https://www.youtube.com/watch?v=T-TwcmT6Rcw) from the author of the `dataclass` package, who talks a lot about the rationale and implementation.
 
 [^1]: Arguments _can_ be specified as positional-only, but this works for everything else.
