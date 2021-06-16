@@ -17,9 +17,43 @@ Hello! I'm David, and I'm excited to work with you. This document is meant to he
 - I go by David, never Dave, Davy, etc. "Brownman" is ok if we're like, on a sports team.
 - I'm not on many sports teams.
 
+## What Drives Me
+
+This section is the "why". Jump to [How I Work](#how-i-work) for some of the "how".
+
+### Helping
+
+My biggest motivation comes from knowing I have helped someone.
+
+In a product org, this typically means talking with the beneficiaries of whatever it is I help make. That could be our company's end-users, internal stakeholders, or strangers who rely on my open source packages. This isn't a strict requirement for my job, but I'm most gratified (and as a result, motivated) when I know how others have benefited from my work. At Zapier, I make a point to hear from our [developers](https://www.youtube.com/watch?v=Vhh_GeBPOhs) via help tickets, [community](https://community.zapier.com/developer-discussion-13), and [StackOverflow](https://stackoverflow.com/users/1825390/xavdid).
+
+For managers, pointing me towards examples where I've had direct, beneficial impact on coworkers can help energize me out of a slump. For coworkers, an occasional DM letting me know that I helped you never fails to make my day.
+
+### Learning
+
+I am the very definition of a "lifelong learner"; I love to learn about the world just for the sake of it. Sometimes, this is even useful for work purposes!
+
+I learn best by _doing_. Being able to try it out for myself will yield much better results than attending a lecture or watching a video. When I read technical books, I'll catalogue new info in [Obsidian](https://obsidian.md/), the app that most closely mirrors how my brain works.
+
+### Teaching
+
+I am energized by teaching; I get a lot of gratification from helping someone understand something new.
+
+Sometimes, this is direct action (like answering [StackOverflow](https://stackoverflow.com/users/1825390/xavdid) questions, pairing, or mentoring; see below). Other times, it's educational documents/guides that I throw into the ether, like my [Advent of Code tutorials](https://github.com/xavdid/advent-of-code/tree/main/solutions/2020/day_1) (which I'm very proud of). Answering questions in Slack is basically tiny teaching, so that's why I enjoy it so much.
+
+### Exploring Technical Interests
+
+I don't usually get to work on projects relating to the topics in this list. When I do, it's a fun bonus! In no particular order:
+
+- Dynamically generating/transforming code
+- Creating CLI tools
+- Learning a new technology or programming language
+- Type systems
+- Organizing and cataloguing data (especially with [Airtable](https://airtable.com/))
+
 ## How I Work
 
-This section is the "how". Jump to [What Drives Me](#what-drives-me) for some of the "why".
+This section is the "how". Jump to [What Drives Me](#what-drives-me) for the "why".
 
 ### Task Management
 
@@ -72,45 +106,11 @@ This section is the "how". Jump to [What Drives Me](#what-drives-me) for some of
 ## Weaknesses
 
 - I tend to program "by feel". If a test reports an off-by-one error, I'll tweak a line and re-run the tests. If that works, great! If it doesn't... I'll try, try again. If that doesn't clear it up, I'll actually read the code and make the correct fix.
-- I'm quick to suggest re-writing existing code, especially if I don't understand it well or think I can modernize it. As my manager/PM, you'll probably need to talk me down from this at least once.
+- I'm quick to suggest re-writing existing code, especially if I don't understand it well or think I can modernize it. As my manager/PM, you'll probably need to talk me down from this occasionally.
 - Because I spend so much time on Slack helping others, my raw code output is often less than that of my peers. This is usually a net win for the team, but is something to take into consideration if we need a lot of code written quickly.
 - I'm optimistic - this serves me well in life, but poorly when estimating how long projects will take.
 - I'm a horrible speller. These days, computers usually cover for me, but they can only get you so far.
-- I sometimes get compulsively distracted by Reddit/Twitter/Slack and need to take a computer break.
-
-## What Drives Me
-
-This section is more of the "why". Jump to [How I Work](#how-i-work) for some of the "how".
-
-### Helping
-
-My biggest motivation comes from knowing I have helped someone.
-
-In a product org, this typically means talking with the beneficiaries of whatever it is I help make. That could be our company's end-users, internal stakeholders, or strangers who rely on my open source packages. This isn't a strict requirement for my job, but I'm most gratified (and as a result, motivated) when I know how others have benefited from my work. At Zapier, I make a point to hear from our [developers](https://www.youtube.com/watch?v=Vhh_GeBPOhs) via help tickets, [community](https://community.zapier.com/developer-discussion-13), and [StackOverflow](https://stackoverflow.com/users/1825390/xavdid).
-
-For managers, pointing me towards examples where I've had direct, beneficial impact on coworkers can help energize me out of a slump. For coworkers, an occasional DM letting me know that I helped you never fails to make my day.
-
-### Learning
-
-I am the very definition of a "lifelong learner"; I love to learn about the world just for the sake of it. Sometimes, this is even useful for work purposes!
-
-I learn best by _doing_. Being able to try it out for myself will yield much better results than attending a lecture or watching a video. When I read technical books, I'll catalogue new info in [Obsidian](https://obsidian.md/), the app that most closely mirrors how my brain works.
-
-### Teaching
-
-I am energized by teaching; I get a lot of gratification from helping someone understand something new.
-
-Sometimes, this is direct action (like answering [StackOverflow](https://stackoverflow.com/users/1825390/xavdid) questions, pairing, or mentoring; see below). Other times, it's educational documents/guides that I throw into the ether, like my [Advent of Code tutorials](https://github.com/xavdid/advent-of-code/tree/main/solutions/2020/day_1) (which I'm very proud of). Answering questions in Slack is basically tiny teaching, so that's why I enjoy it so much.
-
-### Exploring Technical Interests
-
-I don't usually work on projects relating to the topics in this list. When I do, it's a fun bonus! In no particular order:
-
-- Dynamically generating/transforming code
-- Type systems
-- Creating CLI tools
-- Learning a new technology or programming language
-- Organizing and cataloguing data (especially with [Airtable](https://airtable.com/))
+- I sometimes get compulsively distracted by Reddit/Twitter/Slack and get stuck in a loop. Taking a computer break usually fixes it.
 
 ## Outside of Work
 
