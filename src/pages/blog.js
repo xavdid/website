@@ -7,7 +7,7 @@ import PageHeader from "../components/page-header";
 
 import Link from "../components/Link";
 
-export default () => {
+const blogPage = () => {
   const data = useStaticQuery(graphql`
     {
       posts: allMdx(
@@ -151,3 +151,5 @@ export default () => {
     </Layout>
   );
 };
+
+export default blogPage;

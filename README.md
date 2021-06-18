@@ -13,6 +13,7 @@ An unorganized list to help me keep this organized
 - `.md(x)` files can supply a `title` in frontmatter, or just use a `#` tag at the top of the page. If you want a subtitle, you need to supply both the `title` and `subtitle` in frontmatter.
 - For the `SEO` component, later versions of it will be merged into the root value. `title` and `XYZ` are picked up automatically if in frontmatter or you can drop an actual component in the file.
 - ~~the gatsby version is pinned to `2.22.20` to get around [this](https://github.com/carbon-design-system/gatsby-theme-carbon/issues/873)~~
+- the gatsby version is pinned to `~3.6` because of [a bug](https://github.com/gatsbyjs/gatsby/issues/31878) with inline SVGs
 - there's really only styles for h1-h4, so don't use h5 and down
 - anything that would have dropped in as a cdn tag and included should go in `gatsby-browser`
 - some lines in markdown have `<!-- prettier-ignore -->` because prettier is adding a `\` before regular `$`.

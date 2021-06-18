@@ -5,7 +5,7 @@ import Seo from "../components/seo";
 
 import Link from "../components/Link";
 
-export default () => (
+const notFoundPage = () => (
   <Layout>
     <Seo title="404: Not found" />
     <h1>NOT FOUND</h1>
@@ -15,3 +15,5 @@ export default () => (
     </p>
   </Layout>
 );
+
+export default notFoundPage;
