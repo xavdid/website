@@ -36,7 +36,7 @@ These projects aren't available publicly, so you'll just have to take my word fo
 - [Advent of Code solutions](https://github.com/xavdid/adventofcode), for the yearly [Advent of Code](https://adventofcode.com/).
 - [generator-xavdid](https://github.com/xavdid/generator-xavdid), a [Yeoman](https://yeoman.io/) generator for creating Typescript projects. Works for CLIs, frontend, backend, or any combination thereof!
 - [Airtable Grouped Chart](https://github.com/xavdid/airtable-grouped-chart), my award winning (I can't find a link anywhere, but I got a bunch of Airtable credit for this!) custom block for building charts based on grouped properties.
-- [serenity.forsale](https://serenity.forsale), a Gatsby site to sell our converted campervan. The site's source is [on GitHub](https://github.com/xavdid/serenity-for-sale).
+- [serenity.forsale](https://serenity-for-sale.netlify.app/), a Gatsby site to sell our converted campervan. The site's source is [on GitHub](https://github.com/xavdid/serenity-for-sale).
 - [Monkey TS](https://github.com/xavdid/monkey-ts), an implementation of the Monkey programming language written in Typescript. See also: _[Writing an Interpreter in Go](https://interpreterbook.com/)_.
 - [Publists](https://github.com/xavdid/publists), a project I wrote during my 2016 funemployment to easily share [Wunderlists](https://www.wunderlist.com/) (RIP) publicly.
 - [Stack Pro](https://stackpro.herokuapp.com/), a little webapp I wrote as part of a job app for a now-defunct contracting outfit. Notable because as of time of writing, I believe this holds the record for longest-running code without modification. It's not complex, but it's been operating flawlessly since 2015.
