@@ -9,7 +9,7 @@ og_desc: Learn about Python's dataclass module and implement a working version f
 
 > This post assumes a general understanding of common Python structures, but most everything else will be explained.
 
-I've always been fascinated by Python's `dataclasses` module. It provides a wrapper that dynamically adds methods to a class based on its type annotations. Coming from the Typescript world (where type annotations are compiled away), being able to make runtime changes based on type information. was intriguing.
+I've always been fascinated by Python's `dataclasses` module. It provides a wrapper that dynamically adds methods to a class based on its type annotations. Coming from the Typescript world (where type annotations are compiled away), being able to make runtime changes based on type information was intriguing.
 
 After reading through [the surprisingly-approachable implementation](https://github.com/python/cpython/blob/acac6c71ff370413374c6aca1df808c426e8a30c/Lib/dataclasses.py), I thought it would be fun to write about the techniques it uses and walk through a simple implementation. Let's get to it!
 
