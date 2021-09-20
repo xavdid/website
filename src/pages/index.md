@@ -27,7 +27,7 @@ I maintain a comprehensive list of everything I play, read, and watch. Partly to
   - [Finished](https://airtable.com/shrvzcS9igOXIJwPb)
   - [To Watch](https://airtable.com/shrqygVZ287Gh2Y09)
 - Videogames
-  - [Finished](https://airtable.com/shrmtcuqU0Y2hSX3G)
+  - [Finished](https://airtable.com/shrJvjcnh0psf3ha6)
   - [To Play](https://airtable.com/shrULan0u3rkmaniG)
 
 ## Black Lives Matter

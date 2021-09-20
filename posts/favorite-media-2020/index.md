@@ -92,7 +92,7 @@ _Hades is available on [Steam](https://store.steampowered.com/app/1145360/Hades/
 
 ---
 
-_see the full list of games I played during 2020, including ratings and reviews, on [Airtable](https://airtable.com/shriNUdBSKVIKjw3f)_
+_see the full list of games I played during 2020, including ratings and reviews, on [Airtable](https://airtable.com/shr93UGCEDavbe3KX)_
 
 _return to the [table of contents](#TOC)_ ↩️
 
