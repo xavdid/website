@@ -12,7 +12,7 @@ Hello! I'm David, and I'm excited to work with you. This document is meant to he
 ## About Me
 
 - I've been working at tech companies since I graduated from the University of Michigan in 2014.
-- I live in the Bay Area with my fiancée, Vicky.
+- I live in the Bay Area with my wife, Vicky.
 - I make friends quickly and rarely hold grudges.
 - I go by David, never Dave, Davy, etc. "Brownman" is ok if we're like, on a sports team.
 - I'm not on many sports teams.
@@ -122,7 +122,7 @@ This section is the "how". Jump to [What Drives Me](#what-drives-me) for the "wh
   - board games, especially with friends
   - [blogging](/blog), occasionally
 - I've always had an interest in alternative computer input methods. To wit:
-  - I use an [Ergodox-EZ](https://ergodox-ez.com/) as my main keyboard for programming and PC gaming. I love how customizable it is. You can see my full layout [here](https://configure.zsa.io/ergodox-ez/layouts/LMnJ6/latest/0).
+  - I use an [Ergodox-EZ](https://ergodox-ez.com/) as my main keyboard for programming and PC gaming. I love how customizable it is. You can see my full layout (including an interactive tour) [here](https://configure.zsa.io/ergodox-ez/layouts/LMnJ6/latest/0).
   - I've got a [Steam controller](https://en.wikipedia.org/wiki/Steam_Controller) for similar reasons.
 
 ---

@@ -1,0 +1,173 @@
+{
+  "basics": {
+    "name": "David Brownman",
+    "label": "Senior Software Engineer, Tinkerer, Enthusiast",
+    "email": "beamneocube@gmail.com",
+    "url": "https://xavd.id",
+    "summary": "I specialize in crafting exquisite developer experiences, especially on the command line. I have experience both leading and participating in technical product teams. I have also provided formal mentorship to many up-and-coming engineers, to great success.",
+    "location": {
+      "city": "San Mateo",
+      "region": "California"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "xavdid",
+        "url": "https://github.com/xavdid"
+      },
+      {
+        "network": "Stack Overflow",
+        "username": "xavdid",
+        "url": "https://stackoverflow.com/users/1825390/david-brownman"
+      },
+      {
+        "network": "Twitter",
+        "username": "@xavdid",
+        "url": "https://twitter.com/xavdid"
+      },
+      {
+        "network": "Linkedin",
+        "username": "xavdid",
+        "url": "https://www.linkedin.com/in/xavdid"
+      }
+    ]
+  },
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "keywords": ["Typescript", "Python", "Node.js", "...and others"]
+    },
+    {
+      "name": "Frameworks",
+      "keywords": ["Django", "Express", "React", "...and more"]
+    },
+    {
+      "name": "Other Technical Expertise",
+      "keywords": [
+        "Zapier",
+        "Web API Design & Implementation",
+        "Open Source Development",
+        "Technical Documentation",
+        "Automation",
+        "Distributed Systems",
+        "Database Schema Design",
+        "Airtable",
+        "Community Moderation"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "name": "Zapier",
+      "position": "Senior Engineer, Developer Platform",
+      "website": "https://zapier.com",
+      "location": "Remote",
+      "startDate": "2016-09-19",
+      "summary": "One of a small team of 6, I maintained and actively expanded the Zapier Developer platform, which powered nearly all of the 4,000+ Zapier integrations.",
+      "highlights": [
+        "Served Zapier's developers by triaging issues, providing technical support, and turning their feedback into actionable tickets on our end.",
+        "Helped drive the evolution of the Zapier Platorm to support changing product requirements and the future of integration development.",
+        "Provided technical mentorship in the inagural \"Path into Engineering\" cohort.",
+        "Supported the Legacy Web Builder and participated in a years-long effort to convert legacy apps to modern ones. This involved a compatibility layer, migration tooling, automated error rate monitoring, and more.",
+        "Fixed bugs and made improvements to specific integrations, such as Slack.",
+        "Joined Zapier as employee #47; I have been there longer than all but 25 of the current 600 employees.",
+        "Promoted to Senior Engineer Dec. 2019"
+      ]
+    },
+    {
+      "name": "SalesforceIQ",
+      "position": "Software Engineer - Internal Tools",
+      "location": "Palo Alto, CA",
+      "website": "https://salesforceiq.com",
+      "startDate": "2014-05-19",
+      "endDate": "2016-05-18",
+      "summary": "Created internal tools that upped the productivity of other employees, both technical and non-technical. Also worked directly with the CTO to quickly roll out (mostly) pre-alpha and MVPs of new projects.",
+      "highlights": [
+        "Acquired by Salesforce 3 months after joining",
+        "Re-wrote internal information site in the interest of stability and user experience",
+        "Created a full-featured Ruby SDK to access our API",
+        "Architected a testing framework from scratch to provide unit tests for our Zapier integration",
+        "Maintained a set of Ruby and JavaScript-based processes that drove business operations"
+      ]
+    },
+    {
+      "name": "International Referee Development Program",
+      "position": "CTO",
+      "location": "Remote",
+      "startDate": "2014-03-20",
+      "endDate": "2016-11-06",
+      "summary": "Technical lead responsible for the creation and maintenance of the IRDP website.",
+      "highlights": [
+        "Worked closely with the International Quidditch Association to power worldwide referee certification tools",
+        "Internationalized most of the site into 3 languages",
+        "Used Parse to implement backend and authentication and expanded Parse Ruby Gem to fit site needs",
+        "Project was later acquired by the IQA and I transitioned off the project."
+      ]
+    },
+    {
+      "name": "backstitch",
+      "position": "Software Development Intern",
+      "location": "Detroit, MI",
+      "website": "https://backstit.ch",
+      "startDate": "2013-05-15",
+      "endDate": "2013-08-15",
+      "summary": "Full stack web development, focusing on Rails. Creating webpages from mockups, improving data processing for external links, and social media management.",
+      "highlights": [
+        "Learned Ruby/Rails, Javascript, and HAML on the fly to be able to be a productive member of the team",
+        "Aided marketing intern int he production of Google ADWords campaigns, demographic targeting, and UX design"
+      ]
+    },
+    {
+      "name": "Fetchnotes",
+      "position": "Software Engineer Intern",
+      "location": "Ann Arbor, MI",
+      "website": "https://fetchnotes.com",
+      "startDate": "2012-05-15",
+      "endDate": "2012-08-15",
+      "summary": "Backend development on a Python/Tornado stack. Developed on the API and improved object oriented design of storage objects.",
+      "highlights": [
+        "Expanded upon a flexible API to afford access to Mongo objects both internally and (eventually) other developers"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Michigan",
+      "website": "https://umich.edu",
+      "startDate": "2010-09-04",
+      "endDate": "2014-05-02",
+      "area": "Social Computing Informatics",
+      "studyType": "Bachelor of Arts",
+      "summary": "My informatics degree was the better part of the Computer Science curriculum coupled with the breadth of knowledge one gets from a typical Liberal Arts education. See below for a link to a more complete description of my coursework."
+    }
+  ],
+  "projects": [
+    {
+      "name": "The Zapier Developer Platform",
+      "startDate": "2016-09-15",
+      "url": "https://github.com/zapier/zapier-platform",
+      "summary": "I was a core maintainer of this repository, which hosues the CLI, SDK, and Schema that define and power all 4,000+ Zapier integrations."
+    },
+    {
+      "name": "Advent of Code",
+      "startDate": "2017-12-01",
+      "url": "https://github.com/xavdid/advent-of-code/tree/main/solutions",
+      "summary": "Solved a daily programming puzzle and wrote a techincal explainer for the solution."
+    },
+    {
+      "name": "See also: the projects page on my website",
+      "url": "https://xavd.id/projects"
+    }
+  ],
+  "publications": [
+    {
+      "name": "My Individual Contributor README",
+      "website": "https://xavd.id/blog/post/my-ic-readme/",
+      "summary": "A cheat-sheet for how I work and what drives me."
+    },
+    {
+      "name": "More Information About my Degree",
+      "website": "https://xavd.id/blog/post/nothing-whats-informata/"
+    }
+  ]
+}
