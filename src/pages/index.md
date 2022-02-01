@@ -4,17 +4,17 @@ seo_title: Home
 
 # Welcome to my corner of the World Wide Web
 
-I'm a software developer by trade and I've created this site as a one-stop shop for information pertaining to my personal and professional lives. Apparently they let anyone put websites online these days, so welcome to mine.
+I'm a software engineer by trade and I've created this site as a one-stop shop for information pertaining to my personal and professional lives. Apparently they let anyone put websites online these days, so welcome to mine.
 
 ### My life right now
 
-I'm a Senior Platform Engineer at [Zapier](https://zapier.com) and am currently working remotely around the US. Recently, I lived in [a van](https://instagram.com/serenitythevan) with my fiancée (by choice).
+I'm a Senior Engineer on the Developer Platform team at [Zapier](https://zapier.com) and work remotely from my home in San Mateo, CA.
 
 ### My experience
 
 If you're interested in a curated list of my best projects, [look no further](/projects). You can also check out my [GitHub profile](https://github.com/xavdid), which is is all of the public code I've ever written.
 
-My main expertise is in `Typescript` and `Javascript`, especially as they pertain to `Node.js` both on the server or CLI. I'm also handy with `Python` and `React.js`. Once upon a time, I wrote a lot of `Ruby`.
+My main technical expertise is in the `Typescript` / `Javascript` / `Node.js` ecosystem (full stack), but I also write a lot of `Python` & `Django`. Once upon a time, I wrote a lot of `Ruby`. My primary interest areas are superb developer experiences (especially on the `CLI`) and crafting web APIs work, but I've also enjoyed working with `React.js`; I mostly enjoy doing new things. For my formal work history, check out [my resume](/resume).
 
 ### My media lists
 
