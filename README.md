@@ -38,8 +38,9 @@ function imgsav () {
 
 - Movie/tv backdrops are on TMDB
 - book covers are at `https://books.google.com/books/content/images/frontcover/<GBID>?fife=w400-h400`
-- game headers are straight from Steam
-- `npx doctoc path/to/folder` will regenerate the TOC, along with the `;toc` snippet.
+- game headers are straight from Steam (or IGDB for non-steam games)
+- `yarn doctoc path/to/folder` will regenerate the TOC, along with the `;toc` snippet.
+  - for the media post, use `yarn doctoc posts/favorite-media-2021 --maxlevel 2` to get only the headers
 
 ## MDX
 

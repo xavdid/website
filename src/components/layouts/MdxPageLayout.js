@@ -9,6 +9,7 @@ import InlineCode from "../InlineCode";
 
 import YoutubeEmbed from "../YoutubeEmbed";
 import BlockquoteTitle from "../BlockquoteTitle";
+import AirtableLinkAndReturn from "../AirtableLinkAndReturn";
 
 export default ({
   pageContext: { frontmatter = {} } = {},
@@ -33,6 +34,7 @@ export default ({
         // any other components here can be used in all mdx without imports
         YoutubeEmbed,
         BlockquoteTitle,
+        AirtableLinkAndReturn,
       }}
     >
       {children}

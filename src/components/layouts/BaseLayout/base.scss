@@ -81,6 +81,16 @@ main {
 
   h4 {
     border-bottom: none;
+    font-weight: bolder;
+    font-size: 1.1em;
+
+    &::before {
+      content: "› ";
+      color: $MBlue;
+      @media (prefers-color-scheme: dark) {
+        color: $maize;
+      }
+    }
   }
 
   p,
