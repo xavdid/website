@@ -267,7 +267,7 @@ A quick list of how my [picks from last year](/blog/post/my-favorite-media-of-th
   - [13th](http://www.avaduvernay.com/13th)
   - [Enola Holmes](<https://en.wikipedia.org/wiki/Enola_Holmes_(film)>)
   - Honorable Mentions:
-    - [Palm Springs ](<https://en.wikipedia.org/wiki/Palm_Springs_(2020_film)>)
+    - [Palm Springs](<https://en.wikipedia.org/wiki/Palm_Springs_(2020_film)>)
     - [Death to 2020](https://en.wikipedia.org/wiki/Death_to_2020)
     - [The Way I See It](<https://en.wikipedia.org/wiki/The_Way_I_See_It_(film)>)
   - Disonorable Mentions:
