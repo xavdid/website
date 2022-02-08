@@ -82,6 +82,22 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-goatcounter`,
+      options: {
+        // REQUIRED IF USING HOSTED GOATCOUNTER! https://[my_code].goatcounter.com
+        code: "xavdid",
+
+        // ALL following settings are OPTIONAL
+
+        // Set to true to include a gif to count non-JS users
+        pixel: true,
+
+        // Allow requests from local addresses (localhost, 192.168.0.0, etc.)
+        // for testing the integration locally.
+        allowLocal: false,
+      },
+    },
     // `gatsby-remark-copy-linked-files`,
     `gatsby-transformer-sharp`,
     {

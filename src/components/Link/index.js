@@ -13,15 +13,24 @@ export default ({
   <>
     {href &&
       (href.startsWith("/") ? (
+        // internal link
         <Link className={className} to={href} {...props}>
           {children}
         </Link>
       ) : href.startsWith("#") ? (
+        // local anchor
         <a className={className} href={href}>
           {children}
         </a>
       ) : (
-        <a className={className} target="_blank" rel="noreferrer" href={href}>
+        // external link
+        <a
+          className={className}
+          target="_blank"
+          rel="noreferrer"
+          href={href}
+          data-goatcounter-click={`ext-${href}`}
+        >
           {children}
         </a>
       ))}
