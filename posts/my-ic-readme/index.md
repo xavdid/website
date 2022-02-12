@@ -51,6 +51,12 @@ I don't usually get to work on projects relating to the topics in this list. Whe
 - Type systems
 - Organizing and cataloguing data (especially with [Airtable](https://airtable.com/))
 
+### Demotivating Factors
+
+- My work doesn't seem to matter to the company
+- My work or isn't recognized by our users or my peers
+- Meetings are the only way our team can effectively communicate
+
 ## How I Work
 
 This section is the "how". Jump to [What Drives Me](#what-drives-me) for the "why".
