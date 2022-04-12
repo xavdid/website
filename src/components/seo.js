@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-function SEO({ description, meta = {}, title }) {
+function SEO({ description, meta = {}, title, path }) {
   const data = useStaticQuery(graphql`
     {
       site {
@@ -39,9 +39,18 @@ function SEO({ description, meta = {}, title }) {
       titleTemplate="%s | xavd.id"
       meta={Object.entries(metaProperties).map(([key, value]) => ({
         property: key,
-        // name: key,
         content: value,
       }))}
+      link={
+        path
+          ? [
+              {
+                rel: "canonical",
+                href: `${data.site.siteMetadata.siteUrl}${path}`,
+              },
+            ]
+          : []
+      }
     />
   );
 }

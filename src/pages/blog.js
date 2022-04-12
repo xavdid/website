@@ -59,7 +59,7 @@ const blogPage = () => {
 
   return (
     <Layout>
-      <Seo title="Blog" />
+      <Seo title="Blog" path="/blog/" />
       <PageHeader
         title="Blog"
         subtitle={`${data.posts.edges.length} posts and counting.`}
