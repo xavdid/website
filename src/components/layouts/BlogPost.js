@@ -33,6 +33,7 @@ const BlogPostTemplate = ({
           "og:image":
             post.frontmatter.og_img || data.site.siteMetadata.defaultOgImg,
         }}
+        path={pathname}
       />
       <article>
         <PageHeader

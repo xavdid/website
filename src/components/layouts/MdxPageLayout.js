@@ -15,10 +15,10 @@ export default ({
   pageContext: { frontmatter = {} } = {},
   children,
   noTitle,
-  location: { pathname },
+  path,
 }) => (
   <BaseLayout>
-    <Seo title={frontmatter.seo_title || frontmatter.title} path={pathname} />
+    <Seo title={frontmatter.seo_title || frontmatter.title} path={path} />
     {!noTitle && frontmatter.title && (
       <PageHeader title={frontmatter.title} subtitle={frontmatter.subtitle} />
     )}
