@@ -158,9 +158,9 @@ exports.onPostBuild = async ({ graphql }) => {
         id: slug,
         url: path,
         title: frontmatter.title,
-        summary: frontmatter.og_desc,
+        summary: frontmatter.og_desc || "An older blog post",
         content_text: excerpt,
-        date_published: frontmatter.date,
+        date_published: `${frontmatter.date}T17:00:00Z`, // RFC3339, not just ISO
         tags: frontmatter.tags,
       };
     }),
