@@ -120,26 +120,30 @@ module.exports = {
             output: "/blog/feeds/rss.xml",
             title: "The David Brownman Blog",
             description: "A little bit of everything",
-            serialize: ({ query: { site, posts } }) => {
-              return posts.edges.map((edge) => {
-                const path = site.siteMetadata.siteUrl + edge.node.fields.slug;
-                return Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
+            serialize: ({
+              query: {
+                site: {
+                  siteMetadata: { siteUrl },
+                },
+                posts,
+              },
+            }) => {
+              return posts.edges.map(({ node }) => {
+                const path = `${siteUrl}${node.fields.slug}`;
+                return Object.assign({}, node.frontmatter, {
+                  description: node.excerpt,
+                  date: node.frontmatter.date,
                   url: path,
                   guid: path,
-                  categories: edge.node.frontmatter.tags,
+                  categories: node.frontmatter.tags,
                 });
               });
             },
             query: `
               {
                 posts: allMdx(
-                  sort: {fields: [frontmatter___date], order: DESC},
-                  filter: {
-                    fileAbsolutePath: {regex: "/posts/"},
-                    fields: {published: {eq: true}}
-                  }
+                  filter: {fields: {isBlogPost: {eq: true}, published: {eq: true}}}
+                  sort: {fields: frontmatter___date, order: DESC}
                 ) {
                   edges {
                     node {
