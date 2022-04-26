@@ -14,6 +14,7 @@ module.exports = {
         YoutubeEmbed: true,
         BlockquoteTitle: true,
         AirtableLinkAndReturn: true,
+        Spoiler: true,
       },
     },
   ],

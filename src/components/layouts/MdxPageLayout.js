@@ -10,6 +10,7 @@ import InlineCode from "../InlineCode";
 import YoutubeEmbed from "../YoutubeEmbed";
 import BlockquoteTitle from "../BlockquoteTitle";
 import AirtableLinkAndReturn from "../AirtableLinkAndReturn";
+import Spoiler from "../Spoiler";
 
 export default ({
   pageContext: { frontmatter = {} } = {},
@@ -33,9 +34,11 @@ export default ({
           </div>
         ),
         // any other components here can be used in all mdx without imports
+        // also add these in eslintrc
         YoutubeEmbed,
         BlockquoteTitle,
         AirtableLinkAndReturn,
+        Spoiler,
       }}
     >
       {children}

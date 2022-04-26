@@ -1,0 +1,29 @@
+@import "../vars.scss";
+
+.spoiler {
+  cursor: pointer;
+  font-size: inherit;
+  position: relative;
+
+  border-radius: 5px;
+  background-color: $maize;
+  padding: 3px;
+  border: 1px solid $MBlue;
+  color: $MBlue;
+
+  .spoiler-inner {
+    visibility: visible;
+  }
+
+  &--hidden {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    // only applicable when `isHidden` is applied
+    & > .spoiler-inner {
+      visibility: hidden;
+    }
+  }
+}
