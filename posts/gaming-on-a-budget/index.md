@@ -22,7 +22,7 @@ Computers are the best platform for getting a steady stream of free games. Not a
 
 ![](./images/amazon_gaming.png)
 
-**Every month** (on the 1st of the month, or the first weekday if it's a weekend), Amazon Prime members can claim members can claim a 4-6 DRM-free games on [Amazon Gaming](https://gaming.amazon.com/home). Even better, you keep these games if your prime memberships lapses.
+**Every month** (on the 1st weekday of the month), Amazon Prime members can claim members can claim a 4-6 DRM-free games on [Amazon Gaming](https://gaming.amazon.com/home). Even better, you keep these games if your prime memberships lapses.
 
 ![](images/steam.png)
 
