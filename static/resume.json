@@ -59,11 +59,21 @@
   ],
   "work": [
     {
+      "name": "Stripe",
+      "position": "Senior Software Engineer, Sandboxes",
+      "website": "https://stripe.com",
+      "location": "Remote",
+      "startDate": "2022-06-27",
+      "summary": "The sandboxes team is a new team at Stripe that's responsible for the products and features users need to help users gain confidence in their integration. We are responsible for building fully data-isolated environments, which will be the focal point of all integrations.",
+      "highlights": ["TBD"]
+    },
+    {
       "name": "Zapier",
-      "position": "Senior Engineer, Developer Platform",
+      "position": "Senior Software Engineer, Developer Platform",
       "website": "https://zapier.com",
       "location": "Remote",
       "startDate": "2016-09-19",
+      "endDate": "2022-05-31",
       "summary": "One of a team of 6, I maintained and actively expanded the Zapier Developer platform, which powers nearly all of the 4,000+ Zapier integrations.",
       "highlights": [
         "Served Zapier's developers by triaging issues, providing technical support, and turning their feedback into actionable tickets on our end.",
