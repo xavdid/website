@@ -6,7 +6,7 @@ fact_year: 1898
 tags: [personal, engineering]
 og_img: https://i.imgur.com/XKJFKCR.jpeg
 og_desc: Get some advice about job hunting in 2022 and here how my recent job search went.
-published: false
+draft: true # remove to publish
 ---
 
 > Note: this post describes a job search that happened in March/April 2022, before any hiring freezes or industry side effects from economic downturn. Your mileage may vary.

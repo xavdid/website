@@ -16,6 +16,7 @@ fact_year: 1234
 tags: []
 og_img: https://i.imgur.com/u9IvTRA.jpg
 og_desc: Blah Blah
+draft: true # remove to publish
 ---
 
 ${text}
