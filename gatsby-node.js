@@ -40,7 +40,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Create blog posts pages.
   const posts = result.data.blog.edges.filter((post) =>
-    // for prod, pretend non-published posts don't exist
+    // for prod, don't make pages for non-published posts
     isProdBuild ? post.node.fields.published : true
   );
 

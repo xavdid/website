@@ -12,7 +12,10 @@ const blogPage = () => {
     {
       posts: allMdx(
         sort: { fields: [frontmatter___date], order: DESC }
-        filter: { fileAbsolutePath: { regex: "/posts/" } }
+        filter: {
+          fileAbsolutePath: { regex: "/posts/" }
+          frontmatter: { draft: { in: [false, null] } }
+        }
       ) {
         edges {
           node {
@@ -35,10 +38,6 @@ const blogPage = () => {
 
   // obj of year => [post]
   const postsByYear = data.posts.edges.reduce((result, post) => {
-    if (!post.node.fields.published) {
-      return result;
-    }
-
     const year = post.node.frontmatter.date.slice(0, 4);
 
     return {
