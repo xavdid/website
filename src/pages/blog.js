@@ -14,16 +14,15 @@ const blogPage = () => {
         sort: { fields: [frontmatter___date], order: DESC }
         filter: {
           fileAbsolutePath: { regex: "/posts/" }
-          frontmatter: { draft: { in: [false, null] } }
+          fields: { published: { eq: true } }
         }
       ) {
         edges {
           node {
             fields {
-              published
               slug
             }
-            timeToRead
+            # timeToRead
             frontmatter {
               title
               og_desc
