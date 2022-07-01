@@ -91,7 +91,7 @@ From first application to offer signed was 67 days (9.5 weeks). I had it in my h
 
 I couldn't have done it without a network of friends and coworkers who gave me advice during every single step of the process. You know who you are and I appreciate you!
 
-Thanks for reading. Feel free to [reach out](/contact) if you've got questions, comments, or would like a referral somewhere!
+Anyway, thanks for reading this far. Feel free to [reach out](/contact) if you've got questions, comments, or would like a referral somewhere!
 
 [^1]: This was right before the hiring freezes and economic uncertainty of mid-2022. Job hunting during that would have probably changed my math a bit.
 [^2]: Don't be discouraged if you don't know anyone. Consider reaching out to a recruiter on social media and introducing yourself. People are surprisingly willing to refer you to their company, even if they don't know you well (or at all). For instance, the folks at [Blind](https://www.teamblind.com/) are usually willing to give random referrals.
