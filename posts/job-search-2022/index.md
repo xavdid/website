@@ -85,14 +85,16 @@ Afterwards, I was lucky enough to be able to take almost a month off before star
 
 ## In Closing
 
-From first application to offer signed was 67 days (9.5 weeks). Here are my applications by the numbers:
+From first application to offer signed was 67 days (9.5 weeks). I had it in my head that "hot job market" meant "job right away", but that wasn't the case. Especially with larger companies, the process took time. Here's my journey by the numbers:
 
 ![](./images/sankey-2022.png)
 
-Feel free to [reach out](/contact) if you've got questions, comments, or would like a referral somewhere!
+I couldn't have done it without a network of friends and coworkers who gave me advice during every single step of the process. You know who you are and I appreciate you!
+
+Thanks for reading. Feel free to [reach out](/contact) if you've got questions, comments, or would like a referral somewhere!
 
 [^1]: This was right before the hiring freezes and economic uncertainty of mid-2022. Job hunting during that would have probably changed my math a bit.
 [^2]: Don't be discouraged if you don't know anyone. Consider reaching out to a recruiter on social media and introducing yourself. People are surprisingly willing to refer you to their company, even if they don't know you well (or at all). For instance, the folks at [Blind](https://www.teamblind.com/) are usually willing to give random referrals.
 [^3]: I understand bombing a technical portion that catches you off guard, but this was new for me.
-[^4]: If you _do_ really need a job some prep is worth your while. [leetcode](https://leetcode.com/) and [_Cracking the Coding Interview_](https://www.crackingthecodinginterview.com/) are where to start.
+[^4]: If you _do_ really need a job, some prep is worth your while. [leetcode](https://leetcode.com/) and [_Cracking the Coding Interview_](https://www.crackingthecodinginterview.com/) are probably good places to start.
 [^5]: I was frustrated because I did really want to work there, but given the events that caused the pushback, I totally understood.
