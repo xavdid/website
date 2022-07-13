@@ -190,7 +190,7 @@ _Central Park is available on [Apple TV+](https://tv.apple.com/us/show/central-p
 
 ---
 
-_see the full list of TV seasons I watched during 2020, including ratings and reviews, on [Airtable](https://airtable.com/shrl3XScK4dtGDV2z)_
+_see the full list of TV seasons I watched during 2020, including ratings and reviews, on [Airtable](https://airtable.com/shrF83FEq9CbvMYyU)_
 
 _return to the [table of contents](#TOC)_ ↩️
 
