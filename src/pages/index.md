@@ -24,12 +24,14 @@ I maintain a comprehensive list of everything I play, read, and watch. Partly to
 
 - Books
   - [Finished](https://airtable.com/shr4iBau1Ewwu5kxB)
+  - [Now Reading](https://airtable.com/shrrQwvjfpG6Cx7u9)
   - [To Read](https://airtable.com/shrzRTbsZiBhVeugG)
 - Movies
   - [Finished](https://airtable.com/shrvzcS9igOXIJwPb)
   - [To Watch](https://airtable.com/shrqygVZ287Gh2Y09)
 - Videogames
   - [Finished](https://airtable.com/shrJvjcnh0psf3ha6)
+  - [Now Playing](https://airtable.com/shr94odAxC9gbsUkS)
   - [To Play](https://airtable.com/shrULan0u3rkmaniG)
 
 ## Black Lives Matter
