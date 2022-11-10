@@ -33,9 +33,3 @@ I maintain a comprehensive list of everything I play, read, and watch. Partly to
   - [Finished](https://airtable.com/shrJvjcnh0psf3ha6)
   - [Now Playing](https://airtable.com/shr94odAxC9gbsUkS)
   - [To Play](https://airtable.com/shrULan0u3rkmaniG)
-
-## Black Lives Matter
-
-It should go without saying, but doesn't.
-
-[Register to vote](https://www.vote.org/) and [take some action](https://blacklivesmatters.carrd.co/).
