@@ -41,7 +41,7 @@ function SEO({ description, meta = {}, title, path }) {
         property: key,
         content: value,
       }))}
-      link={
+      link={[{ rel: "me", href: "https://mastodon.social/@xavdid" }].concat(
         path
           ? [
               {
@@ -50,7 +50,7 @@ function SEO({ description, meta = {}, title, path }) {
               },
             ]
           : []
-      }
+      )}
     />
   );
 }
