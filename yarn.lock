@@ -7251,10 +7251,10 @@ gatsby-remark-mermaid@^2.1.0:
     mermaid "^8.7.0"
     unist-util-visit "^1.4.0"
 
-gatsby-remark-prismjs@^6.13.0:
-  version "6.13.0"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-6.13.0.tgz#e7d2ebc1ffd7ab5b6c1b271fd25d405bdfc9b7e1"
-  integrity sha512-kTiVqD7GakDxywojzF7eAQYXVkdHZJFK7oM25etMjCVNEmi2O7MqwvCMVTp8b+J/8MHlAtDAnlCfut9Sj4G99w==
+gatsby-remark-prismjs@^6.25.0:
+  version "6.25.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-6.25.0.tgz#62ac49623be52e6d67e8b95bb2de81b953af357c"
+  integrity sha512-O33q0aQjl3X8nVEFboQ0RKtnHLhhb0BU+ErK0D9MA6w4qSDRmDjFIWDY7nrsBP5QR80V1sjbjr4zBAAdOre/dA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     parse-numeric-range "^1.2.0"
