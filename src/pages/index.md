@@ -32,4 +32,4 @@ I maintain a comprehensive list of everything I play, read, and watch. Partly to
 - Videogames
   - [Finished](https://airtable.com/shrJvjcnh0psf3ha6)
   - [Now Playing](https://airtable.com/shr94odAxC9gbsUkS)
-  - [To Play](https://airtable.com/shrULan0u3rkmaniG)
+  - [To Play](https://airtable.com/shrajGTisjQqBwxLf) (and [on-deck](https://airtable.com/shrMB1f0PQcfg1tnM))
