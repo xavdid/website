@@ -10,7 +10,6 @@ import BaseLayout from "./BaseLayout";
 import AirtableLinkAndReturn from "../AirtableLinkAndReturn";
 import BlockquoteTitle from "../BlockquoteTitle";
 import Spoiler from "../Spoiler";
-import TightList from "../TightList";
 import YoutubeEmbed from "../YoutubeEmbed";
 
 export default ({
@@ -40,7 +39,6 @@ export default ({
         BlockquoteTitle,
         AirtableLinkAndReturn,
         Spoiler,
-        TightList,
       }}
     >
       {children}
