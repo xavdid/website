@@ -18,7 +18,7 @@ An unorganized list to help me keep this organized
 - there's really only styles for h1-h4, so don't use h5 and down
 - anything that would have dropped in as a cdn tag and included should go in `gatsby-browser`
 - some lines in markdown have `<!-- prettier-ignore -->` because prettier is adding a `\` before regular `$`.
-- adding `draft: true` to a post's frontmatter hides it from the list and stops the page from being built.
+- adding `draft: true` to a post's frontmatter hides it from the list and stops the page from being built. It's still accessible locally by exact url.
 - here's a handy bash script that downloads remote images, puts them in `./images`, and copies the filename for pasting:
 
 ```sh
