@@ -8,15 +8,9 @@ export default ({ items, verbed, year, link }) => {
       <hr />
       <p style={{ textAlign: "center" }}>
         <em>
-          See the full list of {items} I {verbed} during {year}, including
-          ratings and reviews, on <Link href={link}>Airtable</Link>
+          See all the {items} I {verbed} during {year} (including ratings &
+          reviews) on <Link href={link}>Airtable</Link>.
         </em>
-      </p>
-      <p style={{ textAlign: "center" }}>
-        <em>
-          return to the <Link href="#TOC">table of contents</Link>
-        </em>{" "}
-        ↩️
       </p>
     </>
   );

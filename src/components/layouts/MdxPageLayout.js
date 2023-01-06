@@ -1,16 +1,17 @@
-import React from "react";
 import { MDXProvider } from "@mdx-js/react";
+import React from "react";
 
-import BaseLayout from "./BaseLayout";
-import Seo from "../seo";
-import PageHeader from "../page-header";
-import Link from "../Link";
 import InlineCode from "../InlineCode";
+import Link from "../Link";
+import PageHeader from "../page-header";
+import Seo from "../seo";
+import BaseLayout from "./BaseLayout";
 
-import YoutubeEmbed from "../YoutubeEmbed";
-import BlockquoteTitle from "../BlockquoteTitle";
 import AirtableLinkAndReturn from "../AirtableLinkAndReturn";
+import BlockquoteTitle from "../BlockquoteTitle";
 import Spoiler from "../Spoiler";
+import TightList from "../TightList";
+import YoutubeEmbed from "../YoutubeEmbed";
 
 export default ({
   pageContext: { frontmatter = {} } = {},
@@ -39,6 +40,7 @@ export default ({
         BlockquoteTitle,
         AirtableLinkAndReturn,
         Spoiler,
+        TightList,
       }}
     >
       {children}

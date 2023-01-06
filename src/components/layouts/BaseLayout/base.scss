@@ -185,6 +185,7 @@ main {
   }
 
   .littlefoot-footnote__button {
+    line-height: 1.2; // center numbers in the circle
     &:focus {
       outline: none;
     }
@@ -221,5 +222,12 @@ main {
 
   code {
     font-size: 14px !important;
+  }
+
+  .tight-list {
+    ul,
+    li {
+      line-height: 1.2;
+    }
   }
 }

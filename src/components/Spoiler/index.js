@@ -6,7 +6,7 @@ import "./spoiler.scss";
 const ariaLabelShowText = "To reveal spoiler text click here.";
 const ariaLabelHideText = "To hide spoiler text again click here.";
 
-const Spoiler = ({ text, children }) => {
+const Spoiler = ({ text = "SPOILER", children }) => {
   const [isHidden, setHidden] = useState(true);
 
   const handleClick = (e) => {
@@ -19,7 +19,7 @@ const Spoiler = ({ text, children }) => {
       className={`spoiler ${isHidden ? "spoiler--hidden" : ""}`}
       aria-label={isHidden ? ariaLabelShowText : ariaLabelHideText}
     >
-      {isHidden ? "SPOILER" : <span className="spoiler-inner">{children}</span>}
+      {isHidden ? text : <span className="spoiler-inner">{children}</span>}
     </span>
   );
 };

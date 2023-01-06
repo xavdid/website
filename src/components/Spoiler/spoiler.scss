@@ -13,6 +13,11 @@
 
   .spoiler-inner {
     visibility: visible;
+    .body-link {
+      color: $MBlue;
+      border-bottom: 1px solid $MBlue;
+      line-height: 0.9;
+    }
   }
 
   &--hidden {
