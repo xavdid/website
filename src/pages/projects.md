@@ -63,11 +63,12 @@ There's an exhaustive list of my contributions using [this GitHub search](https:
 
 ### PRs
 
-- Added a check for DRM in epub files to the `epub` `npm` package ([julien-c/epub#44](https://github.com/julien-c/epub/pull/44))
+- Improved performance of the Mastodon iOS Go-based push notification service ([mastodon/webpush-apn-relay#1](https://github.com/mastodon/webpush-apn-relay/pull/1) and [#2](https://github.com/mastodon/webpush-apn-relay/pull/2))
+- Added a check for DRM in epub files to the `epub` package on `npm` ([julien-c/epub#44](https://github.com/julien-c/epub/pull/44))
 - Wrote Typescript types for the `striptags` package ([ericnorris/striptags#44](https://github.com/ericnorris/striptags/pull/44)) and removed them from `DefinitelyTyped` ([DefinitelyTyped#22040](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/22040))
 - Added the `isSpinning` property to `ora` ([sindresorhus/ora#73](https://github.com/sindresorhus/ora/pull/73))
 - Added `files` property to the `mercury-parser` package, to reduce the size of the shipped code ([postlight/mercury-parser#269](https://github.com/postlight/mercury-parser/pull/269))
-- Swapped some bash install links in docs to `https` ([facebook/react-native#12090](https://github.com/facebook/react-native/pull/12090))
+- Swapped some bash install links in docs to `https` in `react-native` ([facebook/react-native#12090](https://github.com/facebook/react-native/pull/12090))
 - Tried to add support for creating new Middleman posts with content pre-filled ([middleman/middleman-blog#337](https://github.com/middleman/middleman-blog/pull/337))
 - In addition to maintaining the `parse-ruby-client` for a time, I added the `keys` operator to ruby Parse queries ([adelevie/parse-ruby-client#148](https://github.com/adelevie/parse-ruby-client/pull/148))
 - Fixed some typos in `botkit`. I honestly love this one, because in hindsight I absolutely misinterpreted their instructions to "Include screenshots and animated GIFs in your pull request whenever possible" ([howdyai/botkit#128](https://github.com/howdyai/botkit/pull/128))
