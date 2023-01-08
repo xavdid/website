@@ -42,6 +42,7 @@ function imgsav () {
 - game headers are straight from Steam (or IGDB for non-steam games)
 - `yarn doctoc path/to/folder` will regenerate the TOC, along with the `;toc` snippet.
   - for the media post, use `yarn doctoc posts/favorite-media-2021 --maxlevel 2` to get only the headers
+- the 2022 header was made on design.ai and used `Bebas Neue` for the big font and `Bungee` for the smaller font.
 
 ## MDX
 
