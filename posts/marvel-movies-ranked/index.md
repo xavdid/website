@@ -6,8 +6,6 @@ fact_year: 1564
 tags: [movies, marvel, Airtable]
 og_img: https://i.imgur.com/okc5zmq.png
 og_desc: Read my personal ranking of all currently-released MCU Movies. You won't believe how many there are! Seriously, they just keep making these things.
-spoilers: All Marvel movies before Infinity War
-spoilers_level: Heavy
 ---
 
 We're fast reaching the climax of the most ambitious film projects ever conceived: 18 movies over the course of 10 years, ranging from "really good" to "I wish they hadn't made this, but here we are". To properly prepare myself for _Infinity War_, I went back and watched the entire canon of MCU movies. It was the perfect opportunity to compile my personal power ranking for all 18 films, which I'm pleased to present to you now.

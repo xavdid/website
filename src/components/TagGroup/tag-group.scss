@@ -1,0 +1,22 @@
+@import "../vars.scss";
+
+.tag-group {
+  #tag-icon {
+    font-size: 1.3em;
+    margin-top: 2px;
+    @include tablet {
+      margin-top: 0;
+    }
+  }
+  .padded-tablet {
+    @include tablet {
+      padding-left: 15px;
+    }
+  }
+  .tag {
+    margin-top: 2px;
+    @include tablet {
+      margin-top: 0;
+    }
+  }
+}

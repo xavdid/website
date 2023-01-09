@@ -1,22 +1,21 @@
 import React from "react";
 
-import Link from "../components/Link";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import {
   faGithub,
-  faNpm,
-  faKeybase,
-  faStackOverflow,
-  faVine,
   faImdb,
-  faKickstarter,
   faInstagram,
-  faSteam,
-  faYoutube,
+  faKeybase,
+  faKickstarter,
   faLinkedin,
+  faNpm,
+  faStackOverflow,
+  faSteam,
+  faVine,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import Link from "../components/Link";
 
 const links = [
   // technical

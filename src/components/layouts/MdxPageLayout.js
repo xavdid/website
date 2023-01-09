@@ -1,16 +1,15 @@
 import { MDXProvider } from "@mdx-js/react";
 import React from "react";
 
+import AirtableLinkAndReturn from "../AirtableLinkAndReturn";
+import BlockquoteTitle from "../BlockquoteTitle";
 import InlineCode from "../InlineCode";
 import Link from "../Link";
 import PageHeader from "../page-header";
 import Seo from "../seo";
-import BaseLayout from "./BaseLayout";
-
-import AirtableLinkAndReturn from "../AirtableLinkAndReturn";
-import BlockquoteTitle from "../BlockquoteTitle";
 import Spoiler from "../Spoiler";
 import YoutubeEmbed from "../YoutubeEmbed";
+import BaseLayout from "./BaseLayout";
 
 export default ({
   pageContext: { frontmatter = {} } = {},

@@ -1,13 +1,24 @@
 import React from "react";
 
-export default ({ title, subtitle, date }) => (
+import { faCalendarAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import TagGroup from "./TagGroup";
+
+export default ({ title, subtitle, date, tags }) => (
   <header>
     <h1 style={{ marginLeft: 0 }}>{title}</h1>
-    {subtitle && <span className="subtitle">{subtitle}</span>}
-    {date && (
-      <span className="subtitle">
-        <time dateTime={date}>{date}</time>
-      </span>
-    )}
+    <div className="subtitle" style={{ display: "flex", flexWrap: "wrap" }}>
+      {subtitle && <span>{subtitle}</span>}
+      {date && (
+        <>
+          <FontAwesomeIcon icon={faCalendarAlt} />{" "}
+          <time style={{ marginLeft: "5px" }} dateTime={date}>
+            {date}
+          </time>
+        </>
+      )}
+      <TagGroup tags={tags} padLeftOnBig />
+    </div>
   </header>
 );

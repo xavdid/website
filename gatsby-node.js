@@ -3,6 +3,8 @@ const { shuffle } = require("lodash");
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const { writeFile } = require("fs/promises");
 
+const { slugify } = require("./src/misc/utils");
+
 // create pages from blog post nodes; add cycle of "random" pointers
 exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage: createGatsbyPage } = actions;
@@ -10,6 +12,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const isProdBuild = process.env.NODE_ENV === "production";
 
   const blogPost = require.resolve(`./src/components/layouts/BlogPost`);
+  const tagPage = require.resolve(`./src/components/layouts/TagPage`);
   const result = await graphql(
     `
       {
@@ -27,6 +30,16 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                 published
               }
             }
+          }
+        }
+        tagData: allMdx(
+          filter: {
+            fields: { isBlogPost: { eq: true }, published: { eq: true } }
+          }
+        ) {
+          tags: group(field: frontmatter___tags) {
+            tag: fieldValue
+            totalCount
           }
         }
       }
@@ -69,6 +82,19 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // everything in src/pages is created automatically
   // any other folders would need to be handled here.
+
+  // create tag pages
+  result.data.tagData.tags.forEach(({ tag }) => {
+    const slug = slugify(tag);
+    createGatsbyPage({
+      path: `/blog/tags/${slug}`,
+      component: tagPage,
+      context: {
+        tag,
+        slug,
+      },
+    });
+  });
 };
 
 // add slugs to pages

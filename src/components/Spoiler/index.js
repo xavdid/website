@@ -1,6 +1,7 @@
 // adapted from https://github.com/dazulu/react-spoiler-tag
 
 import React, { useState } from "react";
+
 import "./spoiler.scss";
 
 const ariaLabelShowText = "To reveal spoiler text click here.";

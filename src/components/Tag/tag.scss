@@ -1,0 +1,14 @@
+@import "../vars.scss";
+
+.tag {
+  padding: 2px 5px;
+  margin: 0 3px;
+  border-radius: 5px;
+
+  color: $maize;
+  background-color: $MBlue;
+  @media (prefers-color-scheme: dark) {
+    color: $MBlue;
+    background-color: $maize;
+  }
+}

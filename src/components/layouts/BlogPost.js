@@ -1,18 +1,18 @@
-import React from "react";
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
+import React from "react";
+
+import {
+  faArrowLeft,
+  faRandom,
+  faRssSquare,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Link from "../Link";
-import Layout from "./MdxPageLayout";
-import Seo from "../seo";
 import PageHeader from "../page-header";
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faRssSquare,
-  faRandom,
-  faArrowLeft,
-} from "@fortawesome/free-solid-svg-icons";
+import Seo from "../seo";
+import Layout from "./MdxPageLayout";
 
 const BlogPostTemplate = ({
   data,
@@ -39,6 +39,7 @@ const BlogPostTemplate = ({
         <PageHeader
           title={post.frontmatter.title || "Missing Title"}
           date={post.frontmatter.human_date}
+          tags={post.frontmatter.tags}
         />
         <MDXRenderer>{post.body}</MDXRenderer>
       </article>
@@ -94,6 +95,7 @@ export const pageQuery = graphql`
         title
         og_desc
         og_img
+        tags
         human_date: date(formatString: "MMMM DD, YYYY")
         date
       }

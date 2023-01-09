@@ -1,6 +1,6 @@
-import React from "react";
 import { Link } from "gatsby";
 import { useGoatCounter } from "gatsby-plugin-goatcounter";
+import React from "react";
 
 import "./link.scss";
 
