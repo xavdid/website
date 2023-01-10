@@ -185,7 +185,11 @@ main {
   }
 
   .littlefoot-footnote__button {
-    line-height: 1.2; // center numbers in the circle
+    // in firefox specifically, the numbers get centered differently in the bubble
+    // this targets only firefix and centers them a smidge
+    @-moz-document url-prefix() {
+      line-height: 1.2; // center numbers in the circle
+    }
     &:focus {
       outline: none;
     }
