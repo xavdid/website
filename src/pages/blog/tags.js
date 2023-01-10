@@ -1,10 +1,11 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 
-import Layout from "../../components/layouts/BaseLayout";
 import Link from "../../components/Link";
 import PageHeader from "../../components/page-header";
 import Seo from "../../components/seo";
+
+import Layout from "../../components/layouts/BaseLayout";
 
 import { slugify } from "../../misc/utils";
 

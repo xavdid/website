@@ -1,14 +1,20 @@
 import { MDXProvider } from "@mdx-js/react";
 import React from "react";
 
+// ordering of these imports is very important
+// if they're out of order, then the CSS loader
+// gets confused and I get tons of hard-to-fix warnings
+
+import PageHeader from "../page-header";
+import Seo from "../seo";
+
 import AirtableLinkAndReturn from "../AirtableLinkAndReturn";
 import BlockquoteTitle from "../BlockquoteTitle";
 import InlineCode from "../InlineCode";
 import Link from "../Link";
-import PageHeader from "../page-header";
-import Seo from "../seo";
 import Spoiler from "../Spoiler";
 import YoutubeEmbed from "../YoutubeEmbed";
+
 import BaseLayout from "./BaseLayout";
 
 export default ({
