@@ -23,8 +23,9 @@ function SEO({ description, meta = {}, title, path }) {
     "og:description": metaDescription,
     "og:type": "website",
 
-    "twitter:card": "summary",
+    "twitter:card": "summary_large_image",
     "twitter:creator": "@xavdid",
+    "twitter:site": "@xavdid",
     "twitter:title": title,
     "twitter:description": metaDescription,
     ...meta,
