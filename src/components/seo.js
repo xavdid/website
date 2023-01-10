@@ -16,18 +16,23 @@ function SEO({ description, meta = {}, title, path }) {
   const metaDescription =
     description || `David Brownman's little corner of the internet.`;
 
+  const pageUrl = `${data.site.siteMetadata.siteUrl}${path}`;
+
   const metaProperties = {
     description: metaDescription,
     "og:title": title,
+    "og:url": pageUrl,
     "og:image": data.site.siteMetadata.defaultOgImg,
     "og:description": metaDescription,
     "og:type": "website",
 
     "twitter:card": "summary_large_image",
+    "twitter:url": pageUrl,
     "twitter:creator": "@xavdid",
     "twitter:site": "@xavdid",
     "twitter:title": title,
     "twitter:description": metaDescription,
+    "twitter:domain": "xavd.id",
     ...meta,
   };
 
@@ -47,7 +52,7 @@ function SEO({ description, meta = {}, title, path }) {
           ? [
               {
                 rel: "canonical",
-                href: `${data.site.siteMetadata.siteUrl}${path}`,
+                href: pageUrl,
               },
             ]
           : []
