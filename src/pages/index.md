@@ -31,5 +31,5 @@ I maintain a comprehensive list of everything I play, read, and watch. Partly to
   - [To Watch](https://airtable.com/shrqygVZ287Gh2Y09)
 - Videogames
   - [Finished](https://airtable.com/shrJvjcnh0psf3ha6)
-  - [Now Playing](https://airtable.com/shr94odAxC9gbsUkS)
-  - [To Play](https://airtable.com/shrajGTisjQqBwxLf) (and [on-deck](https://airtable.com/shrMB1f0PQcfg1tnM))
+  - [Now Playing](https://airtable.com/shr7RxJelD4c6bZTT)
+  - [To Play Next](https://airtable.com/shrajGTisjQqBwxLf) (and [after that](https://airtable.com/shrMB1f0PQcfg1tnM))
