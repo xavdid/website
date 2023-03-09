@@ -13,7 +13,13 @@ require("littlefoot/dist/littlefoot.css");
 require("prismjs/themes/prism-okaidia.css");
 require("prismjs/plugins/line-numbers/prism-line-numbers.css");
 
-export function onRouteUpdate() {
+export function onRouteUpdate({ location, prevLocation }) {
+  // when clicking a local link, the route updates with a new hash, but the page is the same.
+  // so, don't re-add footnote buttons
+  if (location.pathname === (prevLocation ? prevLocation.pathname : null)) {
+    return;
+  }
+
   littlefoot({
     buttonTemplate: `<button
     aria-controls="fncontent:<% id %>"

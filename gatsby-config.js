@@ -88,7 +88,8 @@ module.exports = {
         // REQUIRED IF USING HOSTED GOATCOUNTER! https://[my_code].goatcounter.com
         code: "xavdid",
 
-        // ALL following settings are OPTIONAL
+        // there are many other settings, which I'm not using
+        // see: https://www.gatsbyjs.com/plugins/gatsby-plugin-goatcounter/#how-to-use
 
         // Set to true to include a gif to count non-JS users
         pixel: true,
