@@ -5,22 +5,33 @@ const mkdirp = require("mkdirp");
 const { writeFile } = require("fs").promises;
 const clipboardy = require("clipboardy");
 
+// https://stackoverflow.com/a/53335889/1825390
+const dateToISOLikeButLocal = () => {
+  const date = new Date();
+  const offsetMs = date.getTimezoneOffset() * 60 * 1000;
+  const msLocal = date.getTime() - offsetMs;
+  const dateLocal = new Date(msLocal);
+  const iso = dateLocal.toISOString();
+  const isoLocal = iso.slice(0, 19);
+  return isoLocal;
+};
+
 // this template might be off by a day because toISOString is UTC
 const tempalte = (title, text = "") =>
   `
 ---
-date: "${new Date().toISOString().slice(0, 10)}"
-title: ${title}
-fact: A cool fact from Wikipedia (run the \`fact\` command)
+date: "${dateToISOLikeButLocal().slice(0, 10)}"
+title: "${title}"
+fact: "A cool fact from Wikipedia (run the \`fact\` command)"
 fact_year: 1234
 tags: []
 og_img: https://i.imgur.com/u9IvTRA.jpg
-og_desc: Blah Blah
+og_desc: "Blah Blah"
 draft: true # remove to publish
 ---
 
 ${text}
-`.trimLeft();
+`.trimStart();
 
 const createPost = async () => {
   const cb = await clipboardy.read();
@@ -43,7 +54,7 @@ const createPost = async () => {
     },
   ]));
 
-  await mkdirp(`./posts/${slug}/images`);
+  mkdirp(`./posts/${slug}/images`);
   await writeFile(`./posts/${slug}/index.md`, tempalte(title, text));
 };
 
