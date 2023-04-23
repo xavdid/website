@@ -13,6 +13,7 @@ import BlockquoteTitle from "../BlockquoteTitle";
 import InlineCode from "../InlineCode";
 import Link from "../Link";
 import Spoiler from "../Spoiler";
+import ViewFullSize from "../ViewFullSize";
 import YoutubeEmbed from "../YoutubeEmbed";
 
 import BaseLayout from "./BaseLayout";
@@ -44,6 +45,7 @@ export default ({
         BlockquoteTitle,
         AirtableLinkAndReturn,
         Spoiler,
+        ViewFullSize,
       }}
     >
       {children}
