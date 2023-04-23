@@ -21,7 +21,7 @@ An unorganized list to help me keep this organized
 - adding `draft: true` to a post's frontmatter hides it from the list and stops the page from being built. It's still accessible locally by exact url.
 - here's a handy bash script that downloads remote images, puts them in `./images`, and copies the filename for pasting:
 
-```sh
+```bash
 function imgsav () {
   curl -s $(pbpaste) > "./images/$1"; printf "./images/$1" | pbcopy;
 }

@@ -70,7 +70,7 @@ Whenever there's JSON work to be done, it's `jq` to the rescue! Make sure to [in
 
 You can merge your files using the following one-liner (run from inside the directory where your snippets are):
 
-```sh
+```bash
 jq -s 'map(.alfredsnippet | {name, keyword, text: .snippet})' *.json > ../output.json
 ```
 
@@ -78,7 +78,7 @@ Let's break down what this `jq` filter is doing.
 
 For each Alfred snippet, we need to hoist a few keys out of a sub key. That's straightforward enough:
 
-```sh
+```bash
 cat some_snippet.json | jq '.alfredsnippet | {name, keyword, text: .snippet}'
 ```
 
