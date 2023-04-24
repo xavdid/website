@@ -11,14 +11,14 @@ export default ({ title, subtitle, date, tags }) => (
     <div className="subtitle" style={{ display: "flex", flexWrap: "wrap" }}>
       {subtitle && <span>{subtitle}</span>}
       {date && (
-        <>
+        <div style={{ paddingRight: "15px" }}>
           <FontAwesomeIcon icon={faCalendarAlt} />{" "}
           <time style={{ marginLeft: "5px" }} dateTime={date}>
             {date}
           </time>
-        </>
+        </div>
       )}
-      <TagGroup tags={tags} padLeftOnBig />
+      <TagGroup tags={tags} />
     </div>
   </header>
 );

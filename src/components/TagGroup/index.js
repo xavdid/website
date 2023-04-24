@@ -7,30 +7,23 @@ import Tag from "../Tag";
 
 import "./tag-group.scss";
 
-const TagGroup = ({ tags, padLeftOnBig }) => {
-  return (
-    (tags && tags.length > 0 && tags && (
-      <div
-        className="tag-group"
-        style={{
-          fontSize: "small",
-          display: "flex",
-          flexWrap: "wrap",
-        }}
-      >
-        <FontAwesomeIcon
-          id="tag-icon"
-          className={padLeftOnBig ? "padded-tablet" : ""}
-          icon={faTag}
-        />
+const TagGroup = ({ tags }) =>
+  (tags && tags.length > 0 && tags && (
+    <div
+      className="tag-group"
+      style={{
+        fontSize: "small",
+        display: "flex",
+        flexWrap: "wrap",
+      }}
+    >
+      <FontAwesomeIcon id="tag-icon" icon={faTag} />
 
-        {tags.map((tag) => (
-          <Tag key={tag} name={tag} />
-        ))}
-      </div>
-    )) ||
-    null
-  );
-};
+      {tags.map((tag) => (
+        <Tag key={tag} name={tag} />
+      ))}
+    </div>
+  )) ||
+  null;
 
 export default TagGroup;
