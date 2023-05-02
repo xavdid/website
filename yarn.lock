@@ -7194,16 +7194,16 @@ gatsby-parcel-config@0.16.0:
     "@parcel/transformer-js" "2.6.2"
     "@parcel/transformer-json" "2.6.2"
 
-gatsby-plugin-feed@^4.11.1:
-  version "4.11.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-4.11.1.tgz#857bfe0518c193b337cf3498c2e03314b6b5f0c2"
-  integrity sha512-m2rvycySejPJTrHli05E5SOlOFfDGb1nM/F6hS/Ig2rquVEsbKNUvlK7eLGnZ7DDDAd+0/mDu7viezXN7ebohA==
+gatsby-plugin-feed@^4.25.0:
+  version "4.25.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-feed/-/gatsby-plugin-feed-4.25.0.tgz#f45e01a8c37327b2520e4eb9f2b6191a97947a4d"
+  integrity sha512-9gZxvHtq2lu5pUcXXt0d7L7jpFIJpcmjOb2X8ykzbiHXUYRFvZnmcR95ZdQRKiVy1YawMzv3tt2+pPnBuYxvSw==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@hapi/joi" "^15.1.1"
     common-tags "^1.8.2"
-    fs-extra "^10.0.0"
-    gatsby-plugin-utils "^3.5.1"
+    fs-extra "^10.1.0"
+    gatsby-plugin-utils "^3.19.0"
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
@@ -7357,7 +7357,7 @@ gatsby-plugin-typescript@^4.25.0:
     "@babel/runtime" "^7.15.4"
     babel-plugin-remove-graphql-queries "^4.25.0"
 
-gatsby-plugin-utils@^3.18.0, gatsby-plugin-utils@^3.19.0, gatsby-plugin-utils@^3.5.1:
+gatsby-plugin-utils@^3.18.0, gatsby-plugin-utils@^3.19.0:
   version "3.19.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.19.0.tgz#f464b02cc51dcdc0c0e094b7352ee4bf660126ea"
   integrity sha512-EZtvgHSU5NPbEn6a4cfSpEGCQ09SfwbhoybHTJKj1clop86HSwOCV2iH8RbCc+X6jbdgHaSZsfsl7zG1h7DBUw==
