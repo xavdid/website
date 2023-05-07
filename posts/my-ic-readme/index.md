@@ -25,7 +25,7 @@ This section is the "why". Jump to [How I Work](#how-i-work) for some of the "ho
 
 My biggest motivation comes from knowing I have helped someone.
 
-In a product org, this typically means talking with the beneficiaries of whatever it is I help make. That could be our company's end-users, internal stakeholders, or strangers who rely on my open source packages. This isn't a strict requirement for my job, but I'm most gratified (and as a result, motivated) when I know how others have benefited from my work. At Zapier, I make a point to hear from our [developers](https://www.youtube.com/watch?v=Vhh_GeBPOhs) via help tickets, [community](https://community.zapier.com/developer-discussion-13), and [StackOverflow](https://stackoverflow.com/users/1825390/xavdid).
+In a product org, this typically means talking with the beneficiaries of whatever it is I help make. That could be our company's end-users, internal stakeholders, or strangers who rely on my open source packages. This isn't a strict requirement for my job, but I'm most gratified (and as a result, motivated) when I know how others have benefited from my work. At Zapier, I make a point to hear from our [developers](https://www.youtube.com/watch?v=Vhh_GeBPOhs) via help tickets, [community](https://community.zapier.com/developer-discussion-13), and [StackOverflow](https://stackoverflow.com/search?q=user%3A1825390+%5Bzapier%5D).
 
 For managers, pointing me towards examples where I've had direct, beneficial impact on coworkers can help energize me out of a slump. For coworkers, an occasional DM letting me know that I helped you never fails to make my day.
 

@@ -5,7 +5,7 @@ fact: Sir Horace Walpole coins the word serendipity in a letter to a friend.
 fact_year: 1754
 tags: [lookback, books, movies, television, videogames, Airtable]
 og_img: https://i.imgur.com/BQIYHGL.png
-og_desc: An exploration of my favorite 2020 escapism methods (aka the best things I read and watched this year).
+og_desc: An exploration of my favorite 2020 escapism methods (aka the best things I read, watched, and played this year).
 ---
 
 2020 was an odd year for media consumption, for obvious reasons. While there's a lot to say about the year that was, you don't need that from me.

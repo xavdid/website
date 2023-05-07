@@ -5,7 +5,7 @@ fact: Auguste and Louis Lumière record their first footage using their newly pa
 fact_year: 1895
 tags: [movies]
 og_img: https://i.imgur.com/BGyS1Rq.jpg
-og_desc: The cannonical order in which to watch the X-Men movies
+og_desc: The canonical order in which to watch the X-Men movies
 ---
 
 _Spoiler note: Everything up until the Big Bold Warning is strictly spoiler free!_
