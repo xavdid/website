@@ -23,7 +23,7 @@
     "gatsby-remark-autolink-headers": "^5.25.0",
     "gatsby-remark-copy-linked-files": "^5.25.0",
     "gatsby-remark-images": "^6.11.1",
-    "gatsby-remark-mermaid": "^2.1.0",
+    "gatsby-remark-mermaid": "^4.0.0",
     "gatsby-remark-prismjs": "^6.25.0",
     "gatsby-source-filesystem": "^4.25.0",
     "gatsby-transformer-sharp": "^4.25.0",
