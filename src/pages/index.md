@@ -12,7 +12,7 @@ I'm a Senior Engineer on the Sandboxes team at [Stripe](https://stripe.com) and 
 
 ### My experience
 
-If you're interested in a curated list of my best projects, [look no further](/projects). You can also check out my [GitHub profile](https://github.com/xavdid), which is is all of the public code I've ever written.
+If you're interested in a curated list of my best projects, [look no further](/projects). You can also check out my [GitHub profile](https://github.com/xavdid), which is all of the public code I've ever written.
 
 My main technical expertise is in the `Typescript` / `Javascript` / `Node.js` ecosystem (full stack), but I also write a lot of `Python` & `Django`. Once upon a time, I wrote a lot of `Ruby`. My primary interest areas are superb developer experiences (especially via the `CLI`) and crafting web APIs, but I've also enjoyed working with `React.js`; I mostly enjoy doing new things. I have a proven track record of engineering leadership, mentorship, and technical planning + execution.
 
