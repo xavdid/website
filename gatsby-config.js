@@ -164,7 +164,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-sitemap`,
-    // should go towards the end
-    `gatsby-plugin-offline`,
+    `gatsby-plugin-remove-serviceworker`,
   ],
 };
