@@ -43,7 +43,7 @@ This issue came to a head when I started [Exercism](https://exercism.org)'s [12 
 
 ## How It's Going
 
-Enter: the Universal Test Runner. Press `t` and your tests will be run in any project. See it in action in the [demo repo](https://github.com/xavdid/test-runner-demo/):
+Enter: the [Universal Test Runner](https://github.com/xavdid/universal-test-runner). Press `t` and your tests will be run in any project. See it in action in the [demo repo](https://github.com/xavdid/test-runner-demo/):
 
 ![](images/test-runner-demo.gif)
 
