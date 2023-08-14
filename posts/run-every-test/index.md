@@ -80,9 +80,9 @@ def find_test_command(context):
 
 Best of all, while writing the Universal Test Runner, I could iterate quickly on the project itself because the test runner could run its own tests pretty early in the process.
 
-## Bringing It to the Public
+## A Wider Audience
 
-When I thought the project was ready for actual users, I [posted to the Exercism forum](https://forum.exercism.org/t/introducing-the-universal-test-runner/6228). Reception was warm and Exercism's CEO Jeremy Walker offered to host the codebase in their GitHub org for increased exposure. I loved the idea of my design being available to many more users, so we agreed to reimplement my approach. Instead of a standalone Python project, it would be rewritten in Go and shipped as the `test` command in the Exercim CLI.
+When I thought the project was ready for actual users, I [posted to the Exercism forum](https://forum.exercism.org/t/introducing-the-universal-test-runner/6228). Reception was warm and Exercism's CEO Jeremy Walker offered to host the codebase in their GitHub org for increased exposure. I loved the idea of my design being available to many more users, so I agreed to reimplement my core functionality as a new `test` command in Exercim's Go CLI. It would compliment my standalone project and we could cater the Go version to Exercism's specific needs.
 
 Although the new `test` command needed to support 65+ languages, the Exercism version was smaller in scope than the test runner itself; each language had a single specific way to run its tests. Each language could hardcode its test command instead of guessing the right approach like I did before.
 
