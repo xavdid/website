@@ -3,7 +3,7 @@ date: "2021-04-19"
 title: My Individual Contributor README
 fact: Launch of Salyut 1, the first space station.
 fact_year: 1971
-tags: [personal]
+tags: [engineering, personal]
 og_desc: A brief overview of how I work as an IC.
 ---
 

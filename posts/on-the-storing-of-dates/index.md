@@ -1,9 +1,9 @@
 ---
 date: "2020-11-03"
-title: On the storing of Dates
+title: On the Storing of Dates
 fact: The American Continental Army is disbanded.
 fact_year: 1783
-tags: [programming, Javascript, Airtable]
+tags: [Airtable, JavaScript, programming, Shortcuts]
 og_desc: "In all of my personal record keeping, I use a slightly unusual method of tracking the date. Learn how I do it and what problems it solves"
 ---
 

@@ -3,7 +3,7 @@ date: "2013-10-16"
 title: What the Hell is a Python?
 fact: The Walt Disney Company is founded by Walt Disney and his brother, Roy Disney.
 fact_year: 1923
-tags: [python, tutorial, programming]
+tags: [programming, Python, tutorial]
 ---
 
 It's a large genus of snake found mostly in Africa and the sub-continent of Asia. Wait, that's not important right now.

@@ -3,7 +3,7 @@ date: "2022-11-13"
 title: Mastodon Verification and You
 fact: James Braid first sees a demonstration of animal magnetism by Charles Lafontaine, which leads to his study of the subject he eventually calls hypnotism.
 fact_year: 1841
-tags: [javascript, mastodon]
+tags: [JavaScript, Mastodon]
 og_desc: A brief discussion of verification methods on Mastodon (and their downsides).
 ---
 

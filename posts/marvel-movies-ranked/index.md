@@ -3,7 +3,7 @@ date: "2018-04-26"
 title: David's Definitive Marvel Movies Ranking
 fact: Playwright William Shakespeare is baptized in Stratford-upon-Avon, Warwickshire, England (date of actual birth is unknown).
 fact_year: 1564
-tags: [movies, marvel, Airtable]
+tags: [Airtable, movies, reviews]
 og_img: ./images/og.png
 og_desc: Read my personal ranking of all currently-released MCU Movies. You won't believe how many there are! Seriously, they just keep making these things.
 ---

@@ -3,7 +3,7 @@ date: "2017-07-05"
 title: How Hackers Steal Your Data (and How to Make it Harder for Them)
 fact: The BBC broadcasts its first television news bulletin
 fact_year: 1954
-tags: [security]
+tags: [Reddit, security]
 og_img: ./images/og.png
 og_desc: The ins and outs of password security
 ---

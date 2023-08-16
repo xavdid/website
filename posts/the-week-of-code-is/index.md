@@ -3,7 +3,7 @@ date: "2013-12-12"
 title: The Week of Code is Here!
 fact: Guglielmo Marconi receives the first transatlantic radio signal (the letter "S" [***] in Morse Code), at Signal Hill in St John's, Newfoundland
 fact_year: 1901
-tags: [tutorial, python, programming]
+tags: [programming, Python, tutorial]
 ---
 
 As you may or may not be aware, [Code.org](https://code.org/learn) is a non-profit that aims to bring computer science education to people of all ages. They put out some great videos like [this](https://www.youtube.com/watch?v=FC5FbmsH4fw) one illustrating how cool computer science is. Their message is one about the future and I think it's something really worth pursuing because at its core, it's a message about how you can change the world.
