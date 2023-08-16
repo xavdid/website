@@ -3,7 +3,7 @@ date: "2020-11-22"
 title: My Perfect Task App
 fact: "The Danish astronomer Ole Rømer presents the first quantitative measurements of the speed of light."
 fact_year: 1676
-tags: [productivity, "Things 3"]
+tags: [productivity, Things 3]
 og_desc: I have come to the sad realization that there is no perfect task app. Many are good and some are great, but nothing will ever be perfect. Nevertheless, I spec out my ideal app.
 ---
 
