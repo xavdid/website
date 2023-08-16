@@ -30,8 +30,9 @@ const BlogPostTemplate = ({
           "og:type": `article`,
           "og:url": `${data.site.siteMetadata.siteUrl}${pathname}`,
           "article:published_time": post.frontmatter.date,
-          "og:image":
-            post.frontmatter.og_img || data.site.siteMetadata.defaultOgImg,
+          "og:image": post.frontmatter.og_img
+            ? `${data.site.siteMetadata.siteUrl}${post.frontmatter.og_img.childImageSharp.original.src}`
+            : data.site.siteMetadata.defaultOgImg,
         }}
         path={pathname}
       />
@@ -94,7 +95,15 @@ export const pageQuery = graphql`
       frontmatter {
         title
         og_desc
-        og_img
+        og_img {
+          childImageSharp {
+            original {
+              src
+              height
+              width
+            }
+          }
+        }
         tags
         human_date: date(formatString: "MMMM DD, YYYY")
         date

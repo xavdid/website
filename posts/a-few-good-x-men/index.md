@@ -4,7 +4,7 @@ title: A Few Good X-Men
 fact: Auguste and Louis Lumière record their first footage using their newly patented cinematograph.
 fact_year: 1895
 tags: [movies]
-og_img: https://i.imgur.com/BGyS1Rq.jpg
+og_img: ./images/og.png
 og_desc: The canonical order in which to watch the X-Men movies
 ---
 

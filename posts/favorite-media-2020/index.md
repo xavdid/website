@@ -4,7 +4,7 @@ title: My Favorite Media of 2020
 fact: Sir Horace Walpole coins the word serendipity in a letter to a friend.
 fact_year: 1754
 tags: [lookback, books, movies, television, videogames, Airtable]
-og_img: https://i.imgur.com/BQIYHGL.png
+og_img: ./images/og.png
 og_desc: An exploration of my favorite 2020 escapism methods (aka the best things I read, watched, and played this year).
 ---
 

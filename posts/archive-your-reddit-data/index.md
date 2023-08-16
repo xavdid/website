@@ -4,7 +4,7 @@ title: "Archive Your Reddit Data While You Still Can"
 fact: "In horse racing, Secretariat wins the U.S. Triple Crown."
 fact_year: 1973
 tags: [Reddit, enshittification, SQLite, Python]
-og_img: https://cdn.zappy.app/12a6ffa46dc3e0a21768fe9b0ea9d9d7.png
+og_img: ./images/og.png
 og_desc: "I've written a tool for creating a searchable archive of all your Reddit data."
 ---
 

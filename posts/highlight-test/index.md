@@ -5,7 +5,6 @@ fact: so cool
 fact_year: 1234
 tags: [TEST TAG]
 draft: true
-og_img: "https://i.imgur.com/A0r1KlG.jpg"
 og_desc: A look back at the best and brightest media of 2018
 ---
 

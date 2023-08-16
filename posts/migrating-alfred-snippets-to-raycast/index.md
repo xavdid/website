@@ -4,7 +4,7 @@ title: Migrating Alfred Snippets to Raycast
 fact: US President Lyndon B. Johnson signs the Voting Rights Act of 1965 into law.
 fact_year: 1965
 tags: [jq, Alfred, Raycast]
-og_img: https://i.imgur.com/m0q25Ys.png
+og_img: ./images/og.png
 og_desc: A step-by-step guide for importing your Alfred snippets into Raycast with a little help from the command line.
 ---
 

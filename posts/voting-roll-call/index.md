@@ -4,7 +4,7 @@ title: Voting Roll Call
 fact: The British Empire adopts the Gregorian calendar, skipping eleven days (the previous day was September 2).
 fact_year: 1752
 tags: [jq, Airtable, Facebook, politics]
-og_img: https://i.imgur.com/IHPRWUw.jpg
+og_img: ./images/your_voice_matters.jpg
 og_desc: Voting won't solve everything, but it certainly won't make anything worse. These are instructions to help you make sure all your Facebook friends are registered to vote!
 ---
 
@@ -92,7 +92,6 @@ I've got a template of my setup [on Airtable Universe](https://airtable.com/univ
 Once you've got that ready, paste your friends names into the first column of your sheet. Select `Expand the Table` if it asks. From there, you're off to the races!
 
 When reaching out, I used the following blurb:
-
 
 > Hey there [NAME]! [Some Nice Greeting].
 
