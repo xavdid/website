@@ -4,7 +4,7 @@ title: My 2022 Job Search
 fact: U.S. President Abraham Lincoln grants Yosemite Valley to California for "public use, resort and recreation".
 fact_year: 1864
 tags: [personal, engineering]
-og_img: https://i.imgur.com/XKJFKCR.jpeg
+og_img: ./images/og.jpeg
 og_desc: A recounting of my experience job hunting in 2022 for a Software Engineering position.
 ---
 

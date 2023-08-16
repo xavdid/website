@@ -4,7 +4,7 @@ title: An Ode to Kobo (My Favorite eBook Reader)
 fact: The First Transcontinental Railroad, linking the eastern and western United States, is completed at Promontory Summit, Utah with the golden spike.
 fact_year: 1869
 tags: [kobo, books]
-og_img: https://i.imgur.com/u9IvTRA.jpg
+og_img: ./images/kobo.jpg
 og_desc: A brief retelling of my quest to find the best ebook reader.
 ---
 

@@ -4,7 +4,7 @@ title: Gaming on a Budget
 fact: \"Pluto\" is officially proposed for the name of the newly discovered dwarf planet Pluto by Vesto Slipher in the Lowell Observatory Observation Circular. The name quickly catches on.
 fact_year: 1930
 tags: [videogames]
-og_img: https://i.imgur.com/LWKMv70.png
+og_img: ./images/steam.png
 og_desc: My tips for building a large library of videogames extremely cheaply.
 ---
 

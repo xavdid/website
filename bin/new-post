@@ -25,7 +25,7 @@ title: "${title}"
 fact: "A cool fact from Wikipedia (run the \`fact\` command)"
 fact_year: 1234
 tags: []
-og_img: https://i.imgur.com/u9IvTRA.jpg
+# og_img: ./images/og.png
 og_desc: "Blah Blah"
 draft: true # remove to publish
 ---

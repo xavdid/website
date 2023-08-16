@@ -4,7 +4,7 @@ title: "So You're Traveling to: Boulder, CO"
 fact: "A team of computer manufacturers, users, and university people led by Grace Hopper meets to discuss the creation of a new programming language that would be called COBOL."
 fact_year: 1959
 tags: [travel]
-og_img: https://i.imgur.com/hkuK3Mw.jpg
+og_img: ./images/chautauqua.jpg
 og_desc: David's quick travel guide for a weekend in Boulder.
 ---
 
