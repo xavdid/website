@@ -3,7 +3,7 @@ date: "2020-09-20"
 title: The Mysterious Keka Slider
 fact: Billie Jean King beats Bobby Riggs in the Battle of the Sexes tennis match at the Houston Astrodome.
 fact_year: 1973
-tags: [Keka, compression, macOS]
+tags: [statistics]
 og_desc: A quick dive comparing relative effectiveness different compression speeds and formats.
 ---
 

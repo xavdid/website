@@ -3,7 +3,7 @@ date: "2016-07-08"
 title: Heroku CLI Plugins and You
 fact: Reports are broadcast that a UFO crash landed in Roswell, New Mexico in what became known as the Roswell UFO incident.
 fact_year: 1947
-tags: [Heroku, javascript, tutorial, programming]
+tags: [Heroku, JavaScript, programming, tutorial]
 ---
 
 We as developers are working in a golden age of programming where pushing code has never been easier. My personal favorite place to deploy things is [Heroku](https://heroku.com) because of its customizability, clear (and cheap) pricing structure, and powerful tools.

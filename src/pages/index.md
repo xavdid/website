@@ -20,7 +20,7 @@ For my formal work history, check out [my resume](/resume).
 
 ### My media lists
 
-I maintain a comprehensive list of everything I play, read, and watch. Partly to source info for my [yearly media awards blog post](/blog/tags/lookback), but also just because it's fun. Each follows my [4-point media rating system](/blog/post/on-the-rating-of-media/). Check them out:
+I maintain a comprehensive list of everything I play, read, and watch. Partly to source info for my [yearly media awards blog post](/blog/tags/yearly-review), but also just because it's fun. Each follows my [4-point media rating system](/blog/post/on-the-rating-of-media/). Check them out:
 
 - Books
   - [Finished](https://airtable.com/shr4iBau1Ewwu5kxB)

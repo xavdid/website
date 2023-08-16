@@ -3,7 +3,7 @@ date: "2023-06-09"
 title: "Archive Your Reddit Data While You Still Can"
 fact: "In horse racing, Secretariat wins the U.S. Triple Crown."
 fact_year: 1973
-tags: [Reddit, enshittification, SQLite, Python]
+tags: [CLI Tools, enshittification, Python, projects, Reddit, SQLite]
 og_img: ./images/og.png
 og_desc: "I've written a tool for creating a searchable archive of all your Reddit data."
 ---

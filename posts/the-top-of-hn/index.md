@@ -3,7 +3,7 @@ date: "2023-07-14"
 title: "A Trip to the Top of Hacker News"
 fact: "The Sedition Act of 1798 becomes law in the United States making it a federal crime to write, publish, or utter false or malicious statements about the United States government."
 fact_year: 1798
-tags: [personal, blogging, Reddit]
+tags: [blogging, Mastodon, personal, Reddit]
 og_desc: "A review of metrics and learnings from having my blog post hit the top of Hacker News."
 ---
 
@@ -70,7 +70,7 @@ Anyway, a couple of lessons learned:
 2. You really never know what's going to do numbers, even if you think you do. Also, it'll probably happen at the least opportune time, because of course it will.
 3. Writing a post about a project is better than just posting a link to GitHub. A little story gives you space to explain yourself in a way that a README doesn't.
 
-I don't think anything like this will happen to me again anytime soon (unless my [yearly media reviews](/blog/tags/lookback) REALLY take off), but I _do_ think I’ll write more medium-sized posts when I release projects. It's a good way to kick them off and make it easy to see what I've been cooking up.
+I don't think anything like this will happen to me again anytime soon (unless my [yearly media reviews](/blog/tags/yearly-review) REALLY take off), but I _do_ think I’ll write more medium-sized posts when I release projects. It's a good way to kick them off and make it easy to see what I've been cooking up.
 
 Until next time!
 

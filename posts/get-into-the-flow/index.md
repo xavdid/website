@@ -3,7 +3,7 @@ date: "2013-09-25"
 title: Get Into the Flow
 fact: Publick Occurrences Both Forreign and Domestick, the first newspaper to appear in the Americas, is published for the first and only time.
 fact_year: 1690
-tags: [play, videogames]
+tags: [Technology and Play, videogames]
 ---
 
 You know a lot of people, probably. Some of them game, some don't, and each has their own reasons for doing so. In Sutton-Smith's chapter _Rhetoric of Self_, he talks about how sometimes "it's not the player that plays the game, but the game which plays the player" (p 181). Thatgamecompany's [_Flow_](http://www.jenovachen.com/flowingames/flowing.htm) demonstrates this by placing the player into a game without instruction or direction and let's the experience… flow off them, if you will.

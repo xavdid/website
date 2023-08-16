@@ -14,6 +14,8 @@ import PageHeader from "../page-header";
 import Seo from "../seo";
 import Layout from "./MdxPageLayout";
 
+const technologyAndPlayTag = "Technology and Play";
+
 const BlogPostTemplate = ({
   data,
   pageContext: { randomSlug },
@@ -42,6 +44,19 @@ const BlogPostTemplate = ({
           date={post.frontmatter.human_date}
           tags={post.frontmatter.tags}
         />
+
+        {post.frontmatter.tags.includes(technologyAndPlayTag) && (
+          <blockquote style={{ fontWeight: "lighter" }}>
+            This post was written as an assignment for my{" "}
+            {/* archive link: https://web.archive.org/web/20230814054442/https://lsa.umich.edu/cg/cg_detail.aspx?content=1960COMM408001&termArray=f_13_1960 */}
+            <Link href="https://lsa.umich.edu/cg/cg_detail.aspx?content=1960COMM408001&termArray=f_13_1960">
+              {technologyAndPlayTag}
+            </Link>{" "}
+            class in the fall of 2013. It may include citations for texts we
+            were assigned at the time.
+          </blockquote>
+        )}
+
         <MDXRenderer>{post.body}</MDXRenderer>
       </article>
 

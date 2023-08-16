@@ -3,7 +3,7 @@ date: "2013-07-02"
 title: The Story of David's Dark Past
 fact: Amelia Earhart and navigator Fred Noonan are last heard from over the Pacific Ocean while attempting to make the first equatorial round-the-world flight.
 fact_year: 1937
-tags: [fiction, adventure]
+tags: [adventure, personal, fiction]
 ---
 
 There he stood, in the rain, on his last night in town. Gazing over the city, laid before him like lights on a tree, he fondly remembered the times he spent in residence there. Permanent, it had seemed, but all too fleeting in practice. Experiences of adventure, danger, and love alike flooded his mind, all too soon to be left behind in that small mountain city. But the only way to conquer is to move on, thus he got in the car and drove off.

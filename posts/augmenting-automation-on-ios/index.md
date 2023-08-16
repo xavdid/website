@@ -3,7 +3,7 @@ date: "2014-12-16"
 title: Augmenting Automation on iOS With the Power of Python and Workflow
 fact: Members of the Sons of Liberty disguised as Mohawk Indians dump hundreds of crates of tea into Boston harbor as a protest against the Tea Act.
 fact_year: 1773
-tags: [automation, iOS, Workflow, python, Launch Center Pro]
+tags: [automation, deals, IFTTT, projects, Python, Shortcuts]
 ---
 
 > AppShoppper. Launch Center Pro. IFTTT. Pythonista.
@@ -50,7 +50,7 @@ In terms of setup, you'll want to download [this](https://gist.github.com/xavdid
 Now that we're set to go, let's get to the awesome(r) stuff. Let's start from the top.
 
 1. The lynchpin, of course, is Workflow. You'll want to download [this workflow](https://workflow.is/workflows/80d6f7808169407487abc646303be398) onto any device(s) that you'll want to be triggered. [^2]
-2. IFTTT can hit Launch Center Pro to execute arbitrary URLs on your device. Conveniently, it can trigger workflows via iOS's url-scheme. So, use the following IFTTT recipe to run that workflow you just downloaded. Make sure to change the feed url to your personal wishlist! <br /><a href="https://ifttt.com/view_embed_recipe/232743-check-your-appshopper-feed-for-a-deal-and-send-you-there" target="_blank" rel="noopener" class="embed_recipe embed_recipe-l_57" id="embed_recipe-232743"><img src="https://ifttt.com/recipe_embed_img/232743" alt="IFTTT Recipe: Check your AppShopper feed for a deal and send you there! connects feed to launch-center" width="370px" style="max-width:100%" /></a><script async type="text/javascript" src="//ifttt.com/assets/embed_recipe.js"></script>
+2. IFTTT can hit Launch Center Pro to execute arbitrary URLs on your device. Conveniently, it can trigger workflows via iOS's url-scheme. So, use the following IFTTT recipe to run that workflow you just downloaded. Make sure to change the feed url to your personal wishlist! (note: recipe since deleted; sorry!)
 3. When this recipe runs, you'll be treated to a notification like this: <br />![notification](./images/notification.png)
 4. Upon clicking it, you'll see the workflow run, like so (click to pause, etc): <br /> ![workflow in motion](./images/ios.gif)
 5. That's it! Support app developers by buying their stuff (even on discount)!

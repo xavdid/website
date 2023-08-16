@@ -12,7 +12,9 @@ const Tags = ({ pageContext, data }) => {
   const { tag, slug } = pageContext;
   const { totalCount } = data.tagInfo;
 
-  const tagHeader = `${totalCount} post${totalCount === 1 ? "" : "s"}`;
+  const tagHeader = `${totalCount === 1 ? "is" : "are"} ${totalCount} post${
+    totalCount === 1 ? "" : "s"
+  }`;
 
   return (
     <Layout noTitle>
@@ -24,7 +26,7 @@ const Tags = ({ pageContext, data }) => {
 
       <PageHeader title={`Posts tagged "${tag}"`} />
       <p>
-        There are {tagHeader} in this category. You can also view{" "}
+        There {tagHeader} in this category. You can also view{" "}
         <Link href="/blog/tags">all tags</Link>.
       </p>
       <BlogPostList posts={data.tagInfo} />
