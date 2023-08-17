@@ -19,7 +19,7 @@ I've spent a lot of time over the years writing on code. Sometimes for money, ot
 
 ### Via a Job
 
-- While at [Stripe](https://stripe.com), all of my public open source contributions are available under the [xavdid-stripe](https://github.com/xavdid-stripe) GitHub user.
+- While at [Stripe](https://stripe.com), all of my public open source contributions are available under the [xavdid-stripe](https://github.com/xavdid-stripe) GitHub user. So far, I've made contributions to the Stripe Dashboard, Stripe CLI, and influenced the design of the Stripe SDKs (especially Node.js and Python).
 - While at [Zapier](https://zapier.com/), I was a primary maintainer of the [Zapier Platform](https://github.com/zapier/zapier-platform), consisting of a CLI, SDK, and JSON Schema. I triaged issues, performed important refactors, and focused on performance optimizations.
 - While at [RelateIQ](https://en.wikipedia.org/wiki/SalesforceIQ), I wrote the [RelateIQ Ruby SDK](https://github.com/xavdid/ruby-sdk). This was during the height of my ruby days while working at RelateIQ, this was a fully tested and documented UX-focused wrapper for reading and writing from their API.
 

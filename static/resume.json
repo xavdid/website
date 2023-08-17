@@ -35,11 +35,11 @@
   "skills": [
     {
       "name": "Programming Languages",
-      "keywords": ["Typescript", "Python", "Node.js", "...and others"]
+      "keywords": ["Typescript", "Python", "Node.js", "Go", "...and others"]
     },
     {
       "name": "Frameworks",
-      "keywords": ["Django", "Express", "React", "...and more"]
+      "keywords": ["Django", "Express.js", "React.js", "...and more"]
     },
     {
       "name": "Other Technical Expertise",
@@ -64,8 +64,10 @@
       "website": "https://stripe.com",
       "location": "Remote",
       "startDate": "2022-06-27",
-      "summary": "The sandboxes team is a new team at Stripe that's responsible for the products and features users need to help users gain confidence in their integration. We are responsible for building fully data-isolated environments, which will be the focal point of all integrations.",
-      "highlights": ["TBD"]
+      "summary": "The new Sandboxes team at Stripe is responsible for the products and features users need to help them gain confidence in their integration. We are responsible for building fully data-isolated environments, which will be the focal point of all test integrations.",
+      "highlights": [
+        "Led the project to improve UX of every setting in the Stripe Dashboard."
+      ]
     },
     {
       "name": "Zapier",
