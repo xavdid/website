@@ -1,6 +1,7 @@
 import React from "react";
 
 import {
+  faFlipboard,
   faGithub,
   faHackerNews,
   faImdb,
@@ -59,9 +60,21 @@ const links = [
         description: "for occasional comments",
         color: "#FF4500",
       },
+      {
+        href: "https://www.linkedin.com/in/xavdid/",
+        icon: faLinkedin,
+        name: "LinkedIn",
+        description: "for my full detailed work history",
+        color: "#0A66C2",
+      },
+      {
+        href: "https://www.linkedin.com/in/xavdid/",
+        icon: faFlipboard,
+        name: "Polywork",
+        description: "for highlights from my career",
+      },
     ],
   },
-  // technical
   {
     header: "Technical",
     list: [
@@ -70,6 +83,13 @@ const links = [
         icon: faGithub,
         name: "GitHub",
         description: "where all my code lives",
+      },
+      {
+        href: "https://stackoverflow.com/users/1825390/xavdid",
+        icon: faStackOverflow,
+        name: "StackOverflow",
+        description: "where I ask, edit, and answer programming questions.",
+        color: "#f68a1f",
       },
       {
         href: "https://pypi.org/user/xavdid/",
@@ -84,30 +104,8 @@ const links = [
         description: "where my Javascript packages are released",
         color: "#CB3837",
       },
-      {
-        href: "https://stackoverflow.com/users/1825390/xavdid",
-        icon: faStackOverflow,
-        name: "StackOverflow",
-        description: "where I ask, edit, and answer programming questions.",
-        color: "#f68a1f",
-      },
-      {
-        href: "https://keybase.io/xavdid",
-        icon: faKeybase,
-        name: "Keybase",
-        description: "which has my public key and other verified webites.",
-        color: "#33A0FF",
-      },
-      {
-        href: "https://www.linkedin.com/in/xavdid/",
-        icon: faLinkedin,
-        name: "LinkedIn",
-        description: "for my full detailed work history",
-        color: "#0A66C2",
-      },
     ],
   },
-
   {
     header: "etc.",
     list: [
@@ -116,6 +114,13 @@ const links = [
         icon: faSteam,
         name: "Steam",
         description: "where I can show off my gaming habit.",
+      },
+      {
+        href: "https://keybase.io/xavdid",
+        icon: faKeybase,
+        name: "Keybase",
+        description: "which has my public key and other verified webites.",
+        color: "#33A0FF",
       },
       {
         href: "https://www.instagram.com/xavdid/",
