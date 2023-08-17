@@ -43,6 +43,7 @@ const BlogPostTemplate = ({
           title={post.frontmatter.title || "Missing Title"}
           date={post.frontmatter.human_date}
           tags={post.frontmatter.tags}
+          bestOf={post.frontmatter.best_of}
         />
 
         {post.frontmatter.tags.includes(technologyAndPlayTag) && (
@@ -122,6 +123,7 @@ export const pageQuery = graphql`
         tags
         human_date: date(formatString: "MMMM DD, YYYY")
         date
+        best_of
       }
     }
   }

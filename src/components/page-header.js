@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import TagGroup from "./TagGroup";
 
-export default ({ title, subtitle, date, tags }) => (
+export default ({ title, subtitle, date, tags, bestOf }) => (
   <header>
     <h1 style={{ marginLeft: 0 }}>{title}</h1>
     <div className="subtitle" style={{ display: "flex", flexWrap: "wrap" }}>
@@ -18,6 +18,7 @@ export default ({ title, subtitle, date, tags }) => (
           </time>
         </div>
       )}
+      {bestOf && <span style={{ paddingRight: "15px" }}>⭐ Top post!</span>}
       <TagGroup tags={tags} />
     </div>
   </header>

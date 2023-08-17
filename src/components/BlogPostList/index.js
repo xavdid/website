@@ -53,6 +53,9 @@ const BlogPostList = ({ posts }) => {
                 day: "2-digit",
               })}
             </time>
+            {post.node.frontmatter.best_of && (
+              <span style={{ paddingRight: "5px" }}>⭐</span>
+            )}
             <Link href={post.node.fields.slug}>
               {post.node.frontmatter.title}
             </Link>

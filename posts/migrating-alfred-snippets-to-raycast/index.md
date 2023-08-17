@@ -6,6 +6,7 @@ fact_year: 1965
 tags: [jq, Alfred, Raycast]
 og_img: ./images/og.png
 og_desc: A step-by-step guide for importing your Alfred snippets into Raycast with a little help from the command line.
+best_of: true
 ---
 
 When I was trying out [Raycast](https://www.raycast.com/), the most tedious step was recreating my [Alfred](https://www.alfredapp.com/) snippet library. Luckily, Alfred has an export feature and, with a little word, Raycast can import it! Here's a quick step-by-step.

@@ -1,9 +1,11 @@
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 
+import { faRssSquare, faTag } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BlogPostList from "../components/BlogPostList";
-import Layout from "../components/layouts/BaseLayout";
 import Link from "../components/Link";
+import Layout from "../components/layouts/BaseLayout";
 import PageHeader from "../components/page-header";
 import Seo from "../components/seo";
 
@@ -30,6 +32,7 @@ const blogPage = () => {
               og_desc
               date
               tags
+              best_of
             }
           }
         }
@@ -47,10 +50,13 @@ const blogPage = () => {
 
       <p>
         Posts are shown chronologically; you can also view posts{" "}
-        <Link href="/blog/tags">by tag</Link>.
+        <FontAwesomeIcon icon={faTag} /> <Link href="/blog/tags">by tag</Link>.
+        My best or most popular posts are marked with a ⭐, so those are good
+        places to start.
       </p>
       <p>
-        If you want to be notified every time I post, head on over to the{" "}
+        If you want to be notified every time I post (like via RSS), head to the{" "}
+        <FontAwesomeIcon icon={faRssSquare} style={{ color: "orange" }} />{" "}
         <Link href="/blog/feeds">feeds page</Link>.
       </p>
 

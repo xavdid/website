@@ -6,6 +6,7 @@ fact_year: 1040
 tags: [CLI Tools, Go, Python, Exercism, 12in23, projects]
 og_img: ./images/every-test.jpg
 og_desc: "My journey to create a universal test runner"
+best_of: true
 ---
 
 ![](./images/every-test.jpg)

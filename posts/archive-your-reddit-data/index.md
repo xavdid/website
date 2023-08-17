@@ -6,6 +6,7 @@ fact_year: 1973
 tags: [CLI Tools, enshittification, Python, projects, Reddit, SQLite]
 og_img: ./images/og.png
 og_desc: "I've written a tool for creating a searchable archive of all your Reddit data."
+best_of: true
 ---
 
 _tl;dr: I [wrote a tool](https://github.com/xavdid/reddit-user-to-sqlite/) to make a searchable archive of your Reddit data. I'd suggest downloading and running it before **June 30th, 2023**._

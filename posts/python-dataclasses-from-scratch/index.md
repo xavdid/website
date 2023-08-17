@@ -5,6 +5,7 @@ fact: Gilmore's Garden in New York City is renamed Madison Square Garden by Will
 fact_year: 1879
 tags: [Python, programming, tutorial]
 og_desc: Learn about Python's dataclass module and implement a working version from scratch!
+best_of: true
 ---
 
 > This post assumes a general understanding of common Python structures, but most everything else will be explained.
