@@ -234,4 +234,25 @@ main {
       line-height: 1.2;
     }
   }
+
+  details {
+    margin-bottom: 5px; // so they don't but right up against each other
+    margin-top: 5px; // so they don't but right up against each other
+    summary {
+      cursor: pointer;
+    }
+
+    padding: 7px;
+    border-radius: 5px;
+    background-color: lighten($maize, 5%);
+
+    & > :last-child {
+      margin-bottom: 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      background-color: lighten($MBlue, 1%);
+      // filter: brightness(85%);
+    }
+  }
 }

@@ -17,7 +17,7 @@ const Spoiler = ({ text = "SPOILER", children }) => {
   return (
     <span
       onClick={handleClick}
-      className={`spoiler ${isHidden ? "spoiler--hidden" : ""}`}
+      className={`spoiler${isHidden ? " spoiler--hidden" : ""}`}
       aria-label={isHidden ? ariaLabelShowText : ariaLabelHideText}
     >
       {isHidden ? text : <span className="spoiler-inner">{children}</span>}
