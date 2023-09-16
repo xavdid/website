@@ -1,9 +1,9 @@
 ---
 date: "2023-09-10"
-title: "The Ultimate Afterparty Season 2 Puzzle Guide"
+title: "The Ultimate Afterparty Season 2 Puzzle Hunt Guide"
 fact: "Elias Howe is granted a patent for the sewing machine."
 fact_year: 1846
-tags: [television, puzzles]
+tags: [television, puzzles, Python]
 og_img: ./images/murderboard.png
 og_desc: "A complete, consolidated, spoiler-free, step-by-step guide to every puzzle in The Afterparty's second season."
 ---
@@ -65,7 +65,7 @@ og_desc: "A complete, consolidated, spoiler-free, step-by-step guide to every pu
 
 _The Afterparty_ was one of my [favorite shows of 2022](/blog/post/favorite-media-2022/#the-afterparty). I loved its ensemble cast and genre-bending presentation as it detailed the events of a murderous high school reunion, but its intricate puzzles are what really put it over the top for me. Unbeknownst to us at the time of our first watch-through, each episode had a visual clue as to who _didn't_ commit the murder (each with the pattern `NOT ___`).
 
-For season 2, they dialed it up. This season chronicled the mystery of a murder at the wedding of Grace and Edgar, with a couple of returning cast members and a bunch of kooky new characters. Each episode has two tricky puzzles hidden in the background (or sometimes foreground!), and one of those puzzles leads the solver to yet a third. If you solve _that_ one (the hardest/most involved of the 3), you get a word or short phrase that eventually fed into a meta-puzzle. Truly, the writing/puzzle team outdid themselves.
+For season 2, puzzle creators Dave Shukan and David Kwong dialed it up. This season chronicled the mystery of a murder at the wedding of Grace and Edgar, with a couple of returning cast members and a bunch of kooky new characters. Each episode has two tricky puzzles hidden in the background (or sometimes foreground!), and one of those puzzles leads the solver to yet a third. If you solve _that_ one (the hardest/most involved of the 3), you get a word or short phrase that eventually fed into a meta-puzzle. Truly, they outdid themselves. You can read more about them on [David Kwong's Substack](https://davidkwong.substack.com/i/136609257/the-afterparty-season-puzzle-hunt). His post also includes a link to [all of the puzzle PDFs](https://drive.google.com/file/d/1b07sB1Y133fUNRmkxIFZ29DrHAsVFoEf/view), which can be solved as a standalone puzzle hunt (without any knowledge of the show).
 
 Vicky and I solved most of these on our own, but we also collaborated with the folks on [/r/TheAfterPartyTV](https://old.reddit.com/r/TheAfterPartyTV/) and occasionally turned to them for hints and help. Our personal strengths lent themselves to some of these puzzles and left us a little stumped on others. There were a ton of them! And some were super hard!
 
