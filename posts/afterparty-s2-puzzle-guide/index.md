@@ -65,7 +65,7 @@ og_desc: "A complete, consolidated, spoiler-free, step-by-step guide to every pu
 
 _The Afterparty_ was one of my [favorite shows of 2022](/blog/post/favorite-media-2022/#the-afterparty). I loved its ensemble cast and genre-bending presentation as it detailed the events of a murderous high school reunion, but its intricate puzzles are what really put it over the top for me. Unbeknownst to us at the time of our first watch-through, each episode had a visual clue as to who _didn't_ commit the murder (each with the pattern `NOT ___`).
 
-For season 2, puzzle creators Dave Shukan and David Kwong dialed it up. This season chronicled the mystery of a murder at the wedding of Grace and Edgar, with a couple of returning cast members and a bunch of kooky new characters. Each episode has two tricky puzzles hidden in the background (or sometimes foreground!), and one of those puzzles leads the solver to yet a third. If you solve _that_ one (the hardest/most involved of the 3), you get a word or short phrase that eventually fed into a meta-puzzle. Truly, they outdid themselves. You can read more about them on [David Kwong's Substack](https://davidkwong.substack.com/i/136609257/the-afterparty-season-puzzle-hunt). His post also includes a link to [all of the puzzle PDFs](https://drive.google.com/file/d/1b07sB1Y133fUNRmkxIFZ29DrHAsVFoEf/view), which can be solved as a standalone puzzle hunt (without any knowledge of the show).
+For season 2, puzzle creators [Dave Shukan](https://davespuzzles.com) and [David Kwong](https://www.davidkwongmagic.com/) stepped up their game. This season chronicled the mystery of a murder at the wedding of Grace and Edgar, with a couple of returning cast members and a bunch of kooky new characters. Each episode has two tricky puzzles hidden in the background (or sometimes foreground!), and one of those puzzles leads the solver to yet a third. If you solve _that_ one (the hardest/most involved of the 3), you get a word or short phrase that eventually fed into a meta-puzzle. Truly, they outdid themselves. If you want to jump straight to the hardest puzzles and aren't interested in the show, they've posted [the entire puzzle hunt](https://drive.google.com/file/d/1b07sB1Y133fUNRmkxIFZ29DrHAsVFoEf/view), which can be solved without any knowledge of The Afterparty. But, watching is more fun, so I recommend that.
 
 Vicky and I solved most of these on our own, but we also collaborated with the folks on [/r/TheAfterPartyTV](https://old.reddit.com/r/TheAfterPartyTV/) and occasionally turned to them for hints and help. Our personal strengths lent themselves to some of these puzzles and left us a little stumped on others. There were a ton of them! And some were super hard!
 
@@ -719,7 +719,7 @@ Together, these spell out <Spoiler>`NOT THE DJ`</Spoiler>
 <details>
 <summary>4. Screen w/ puzzle visible</summary>
 
-<!-- manualy HTML because gatsby image processing made the clock really hard to read -->
+<!-- manual HTML because gatsby image processing made the clock really hard to read -->
 <img src="/afterparty/images/ulysses-flower.png" style="max-width: 90%" />
 
 Here's a better look:
@@ -838,7 +838,7 @@ This is <Spoiler>`NOT THE SPITTER</Spoiler>, ruling out <Spoiler>Aniq, who spat 
 <details>
 <summary> 4. Screen w/ puzzle visible</summary>
 
-<!-- manualy HTML because gatsby image processing sucked the color out of the image, which is important -->
+<!-- manual HTML because gatsby image processing sucked the color out of the image, which is important -->
 <img src="/afterparty/images/feng-flower.png" style="max-width: 90%" />
 
 </details>
@@ -1013,6 +1013,37 @@ Those are the intersection points of the answer pairs, which then fit nicely int
 With your letters in place you can use the numbered boxes to read out the final, flowery answer: <Spoiler>`HAPPILY EVER ASTER`</Spoiler>.
 
 </details>
+
+## Episode 10 - Vivian and Zoë
+
+### Vivian and Zoë's Not The...
+
+1. 10 minute time window to see puzzle: <Spoiler>00:00 - 10:00</Spoiler>
+2. Delivery mechanism: <Spoiler>You can normally scan these, but it won't work this time</Spoiler>
+3. What exactly to look at: <Spoiler>The barcode on the box in the closet.</Spoiler>
+
+<details>
+<summary>4. Screen w/ puzzle visible</summary>
+
+<!-- manual HTML because gatsby image processing pulled too much detail out of the image -->
+<img src="/afterparty/images/vivian-and-zoe-not-the.png" style="max-width: 90%" />
+
+</details>
+
+<details>
+<summary>Explanation</summary>
+
+The barcode in the closet is some stretched out letters in disguise. It's hard to read as it goes by, but if you crop and stretch the image, it's a little more clear:
+
+![](images/vivian-and-zoe-not-the-clear.png)
+
+If you squint, it says <Spoiler>`NOT THE WAITER`</Spoiler>.
+
+We absolutely did not catch this one- it was the final episode and the killer was about to be revealed, so we had stopped looking for puzzles. Joke's on us! I believe credit goes to `/u/aleatorial` in [this post](https://www.reddit.com/r/TheAfterPartyTV/comments/16cn5ky/ep_10_not_the/) for finding this.
+
+</details>
+
+There are no flower or registry puzzles in episode 10, so that's it!
 
 ## Conclusion
 
