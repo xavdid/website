@@ -3,9 +3,9 @@
     ".cache": true,
     "public": true
   },
-  "standard.enable": false,
-  "eslint.validate": [
-    "mdx"
-  ],
-  "python.pythonPath": "/usr/local/bin/python"
+  "eslint.validate": ["mdx"],
+  "markdown.copyFiles.destination": {
+    // the trailing slash is important here!
+    "posts/**/*": "${documentDirName}/images/"
+  }
 }
