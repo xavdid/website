@@ -46,6 +46,7 @@ export default ({
         AirtableLinkAndReturn,
         Spoiler,
         ViewFullSize,
+        Link,
       }}
     >
       {children}
