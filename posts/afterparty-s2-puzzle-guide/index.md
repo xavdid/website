@@ -861,7 +861,7 @@ Associate those numbers with their corresponding letter of the alphabet to spell
 
 ### Feng's Registry Puzzle
 
-This may seem very complicated, but it's not quite as bad as it looks. Also, we found two sheets of [this graph paper](/after-party/feng-graph-paper.pdf) extremely useful for putting our answers together.
+This may seem very complicated, but it's not quite as bad as it looks. Also, we found two sheets of [this graph paper](/afterparty/pdfs/feng-grid-paper.pdf) extremely useful for putting our answers together.
 
 1. Walkthrough (part 1): <Spoiler>You need to figure out each clue and guess the flavor name based on all the letters in a column. Start by figuring out all the 7-letter clues (since those go in the grid unambiguously)</Spoiler>.
 2. Walkthrough (part 2): <Spoiler>Once you have enough letters in a column, you can try to unscramble those letters into a baobing flavor (bearing in mind that one is "spicy" and another is 2 words, per the instructions). I'd recommend starting with column 6 because there aren't many letters</Spoiler>.
