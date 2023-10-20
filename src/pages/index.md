@@ -20,6 +20,10 @@ My primary interest areas are superb developer experiences (especially via the `
 
 For my formal work history, check out [my resume](/resume).
 
+### Advent of Code
+
+Since 2020, I've written solutions to all of the [Advent of Code](https://adventofcode.com/). They've got their own showcase here: https://advent-of-code.xavd.id/
+
 ### My media lists
 
 I maintain a comprehensive list of everything I play, read, and watch. Partly to source info for my [yearly media awards blog post](/blog/tags/yearly-review), but also just because it's fun. Each follows my [4-point media rating system](/blog/post/on-the-rating-of-media/). Check them out:
