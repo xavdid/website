@@ -6,8 +6,8 @@ https://www.reddit.com/r/adventofcode/wiki/solution_megathreads
 % python misc/aoc_threads.py 2022 ~/Desktop/aoc.txt
 """
 
-import sys
 import re
+import sys
 
 
 def main():
