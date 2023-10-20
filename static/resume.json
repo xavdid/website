@@ -34,12 +34,12 @@
   },
   "skills": [
     {
-      "name": "Programming Languages",
-      "keywords": ["Typescript", "Python", "Node.js", "Go", "...and others"]
+      "name": "Top Programming Languages",
+      "keywords": ["Typescript", "Python", "Node.js", "Go", "Ruby"]
     },
     {
-      "name": "Frameworks",
-      "keywords": ["Django", "Express.js", "React.js", "...and more"]
+      "name": "Top Frameworks",
+      "keywords": ["Django", "React.js"]
     },
     {
       "name": "Other Technical Expertise",
@@ -66,7 +66,9 @@
       "startDate": "2022-06-27",
       "summary": "The new Sandboxes team at Stripe is responsible for the products and features users need to help them gain confidence in their integration. We are responsible for building fully data-isolated environments, which will be the focal point of all test integrations.",
       "highlights": [
-        "Led the project to improve UX of every setting in the Stripe Dashboard."
+        "Led a project to improve the UX of every setting in the Stripe Dashboard.",
+        "Worked across all layers of Stripe's service-oriented-architecture. Stood up a bridge service that used protobufs to facilitate communication between our Java service and our Ruby monolith.",
+        "Contributed to the company using many languages and frameworks, incluidng Typescript, Ruby, Go, and Java (& Dagger)."
       ]
     },
     {
