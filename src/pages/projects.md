@@ -8,9 +8,9 @@ I've spent a lot of time over the years writing on code. Sometimes for money, ot
 ## Greatest Hits
 
 - [reddit-user-to-sqlite](https://github.com/xavdid/reddit-user-to-sqlite), a CLI tool for archiving data about a Reddit user. Made as part of the [2023 Reddit API Controversy](https://en.wikipedia.org/wiki/2023_Reddit_API_controversy). I wrote [a blog post about it](/blog/post/archive-your-reddit-data/), and it was [covered by Wired](https://www.wired.com/story/how-to-download-your-reddit-data/).
-- My [Advent of Code solutions](https://github.com/xavdid/adventofcode) (and accompanying solution writeups) for the yearly [Advent of Code](https://adventofcode.com/) puzzles.
-- [Universal Test Runner](https://github.com/xavdid/universal-test-runner), for running the unit tests in any repo. <!-- Adapted into the [Exercism](https://exercism.org) [CLI's](https://exercism.org/docs/using/solving-exercises/working-locally) `test` command (PR) -->
-- [Typed Install](https://github.com/xavdid/typed-install), a CLI utility to smartly install type definitions when installing JS packages. I consider this the most useful public code I've ever written.
+- My [Advent of Code solutions](https://github.com/xavdid/adventofcode) (and accompanying [solution writeups](https://advent-of-code.xavd.id/)) for the yearly [Advent of Code](https://adventofcode.com/) puzzles ([more info](http://localhost:1234/blog/post/building-aoc-showcase/))
+- [Universal Test Runner](https://github.com/xavdid/universal-test-runner), for running the unit tests in any repo. Adapted into the [Exercism](https://exercism.org) [CLI's](https://exercism.org/docs/using/solving-exercises/working-locally) `test` command ([PR](https://github.com/exercism/cli/pull/1092)). This is my current favorite project; I [blogged about it](http://localhost:1234/blog/post/run-every-test/)!
+- [Typed Install](https://github.com/xavdid/typed-install), a CLI utility to smartly install type definitions when installing JS packages.
 - [Heroku Config](https://github.com/xavdid/heroku-config), a Heroku plugin for managing project for your environment.
 - [epub-wordcount](https://github.com/xavdid/epub-wordcount), a CLI tool for easily estimating the words in an `epub` file.
 - [Seymour](https://github.com/xavdid/seymour), a custom feed reader for Slack.
