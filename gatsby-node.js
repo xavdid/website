@@ -179,7 +179,7 @@ exports.onPostBuild = async ({ graphql }) => {
     feed_url: `${siteUrl}/${feedLoc}`,
     items: posts.map(({ node: { excerpt, slug, frontmatter } }) => {
       // https://www.jsonfeed.org/version/1.1/#items
-      const path = `${siteUrl}${slug}`;
+      const path = `${siteUrl}/blog/post/${slug}`;
       return {
         id: slug,
         url: path,
