@@ -3,7 +3,7 @@ date: "2023-10-18"
 title: "Building an Advent of Code Solution Showcase"
 fact: "The British Broadcasting Company (later Corporation) is founded by a consortium, to establish a nationwide network of radio transmitters to provide a national broadcasting service."
 fact_year: 1922
-tags: ["Advent of Code", CSS, projects, Python]
+tags: ["Advent of Code", Astro, CSS, projects, Python, Tailwind]
 og_img: ./images/og.png
 og_desc: "Documenting my journey and tech stack selection for building a static site in 2023."
 ---
@@ -14,11 +14,11 @@ This turned out to be a great exercise. Talking through my solution helped me se
 
 Over the last 3 years, I wrote 75 of these solutions. I'd link people to them directly on GitHub, [like this](https://github.com/xavdid/advent-of-code/tree/7a661a36d1cfe03f513937b9ebbee323c07ed27e/solutions/2022/day_01). It was a pretty good system and made it easy to see my published solution, but it lacked any customizability. I was proud enough of my writeups that I wanted to give them more of a showcase. Thus, a new site was born. Check it out:
 
-<p style="text-align: center;">
+<h3 style="text-align: center; padding-bottom: 1rem; padding-top: 0;">
     <b>
         <Link href="https://advent-of-code.xavd.id/">advent-of-code.xavd.id</Link>
     </b>
-</p>
+</h3>
 
 I think it turned out great! Let's talk about what tech I used to build it (and why).
 
