@@ -9,7 +9,7 @@ og_desc: "I tried 12 different new (to me) programming languages during 2023 and
 draft: true # remove to publish
 ---
 
-I stumbled across [Exercism](https://exercism.org) last year and was immediately charmed. It's a website devoted to learning programming languages. It's got a great UI, offers free mentoring (by a human!), and is entirely [open source](https://github.com/exercism/website)!
+I stumbled across [Exercism](https://exercism.org) last year and was immediately charmed. It's a website devoted to learning programming languages. It's got a great UI, offers free mentoring (by a human!), and is entirely [open source](https://github.com/exercism/website).
 
 Last January, they [announced](https://forum.exercism.org/t/the-12in23-challenge/2213) a new program called `12in23`, where they challenged participants to try 12 new programming languages in 2023. Each month would have a theme (such as "Analytical April" or "Object Oriented October") and would highlight specific languages to try. I love learning new things and have become a bit of a (programming) language nerd, so I decided to give it a try. 12 languages, 12 months!
 
@@ -177,11 +177,11 @@ It was fun to try out all the jq features I've never needed for simple data tran
 
 [October](https://exercism.org/blog/object-oriented-october) delved into [object-oriented](https://en.wikipedia.org/wiki/Object-oriented_programming) languages. I've got a soft spot in my heart for OO designs which closely mirror how I visualize programs in my head. I went with [Ruby](https://www.ruby-lang.org/en/), which may sound like an odd choice.
 
-I work at [Stripe](https://stripe.com/), home of the [largest Ruby codebase in the world](https://nitter.net/defrag_fable/status/1584594934006681600). Surely it wouldn't count as an "unfamiliar" language? While that's all true, our Ruby monolith feels very far removed from "standard" Ruby- everything is typechecked with [Sorbet](https://sorbet.org/), there's a _lot_ of code generation, and we do a lot of magic to make everything work together and scale. Though Ruby inside and outside Stripe is ultimately the same language, working at such different scales provides vastly different experiences; I wanted to know what life was like on the outside.
+I work at [Stripe](https://stripe.com/), home of the [largest Ruby codebase in the world](https://nitter.net/defrag_fable/status/1584594934006681600). Surely it wouldn't count as an "unfamiliar" language? While that's all true, our Ruby monolith feels very far removed from "standard" Ruby- everything is typechecked with [Sorbet](https://sorbet.org/), there's a _lot_ of code generation, and we do a lot of magic to make everything work together and scale. Though Ruby inside and outside Stripe is ultimately the same language, working at such different scales provides vastly different experiences; I wanted to know what life was like on the outside (in the years since I'd used Ruby heavily).
 
 Largely, it was good! Ruby itself is great and cites "programmer happiness" as a main goal, which resonated with me. I like how often I can guess the name of stdlib functions I've never used. I like how easy it is to build functional code and how ergonomic and expressive the syntax is.
 
-That said, I was surprised at how far behind Python the developer tooling was. Maybe I've been spoiled, but having type hints in-editor and having extremely fast linting / formatting is more important to me than I realized. For a language that's been as popular as Ruby has, I was surprised how far behind it felt in that regard.[^3] I also got tripped up by the optional parenthesis in function calls, which made passing functions as arguments less obvious.
+That said, I was surprised at how far behind Python the developer tooling was. Maybe I've been spoiled, but having type hints in-editor and having extremely fast linting / formatting is more important to me than I realized. For a language that's been as popular as Ruby has, I was surprised how far behind it felt in that regard.[^3] I also never quite adjusted to the optional parenthesis in function calls, which made passing functions as arguments less obvious.
 
 Ruby's still a great language and I'll keep using it at work, but it doesn't do anything for me that Python doesn't, at least right now.
 
@@ -254,7 +254,7 @@ I enjoyed this language tour more than I expected to. Not only did I learn some 
 
 As for what's next, I think it's learning a lot more Rust. Its importance in the developer tooling landscape is evident at this point and I want to make sure I can read and contribute to the things I rely on.
 
-I don't have an actual deliverable in mind, but I've got the whole [Rust book](https://doc.rust-lang.org/book/) to read, a [Rust for JS devs course](https://rustforjs.dev/) I expensed one year, and many fights with the compiler ahead. I'd like to contribute to at least one open source project (probably [Just](https://github.com/casey/just), a new favorite of mine), but we'll see where the year takes me.
+I don't have an actual deliverable in mind, but I've got the whole [Rust book](https://doc.rust-lang.org/book/) to read, a [Rust for JS devs course](https://rustforjs.dev/) I expensed one year, and an entire Exercism track to complete. I'd like to contribute to at least one open source project (probably [Just](https://github.com/casey/just), a new favorite of mine), but we'll see where the year takes me.
 
 Until then, happy holidays and have a good rest of your 2023!
 
