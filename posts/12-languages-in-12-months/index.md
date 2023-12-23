@@ -237,9 +237,9 @@ The biggest hurdle was the lack of docs and resources. It was hard to even tell 
 
 [December](https://exercism.org/blog/december-diversions) wrapped the year with languages that didn't fit into other categories. Because of double dipping in [March](#mechanical-march), I needed to complete two languages this month.
 
-I started with [Wren](https://wren.io/). Created by [Bob Nystrom](https://journal.stuffwithstuff.com/) of, among other things, [_Crafting Interpreters_](https://craftinginterpreters.com/) fame. I was charmed by its attention to detail, small footprint, and top-down design; everything seems very well thought out. That level of care is evident in the details of variable scoping and privacy rules.
+I started with [Wren](https://wren.io/). Created by [Bob Nystrom](https://journal.stuffwithstuff.com/) of, among other things, [_Crafting Interpreters_](https://craftinginterpreters.com/) fame. I was charmed by its attention to detail, small footprint, and top-down design; everything seems very well thought out. That level of care is evident in the details of variable scoping and privacy rules. Its compiler is small and [heavily commented](https://github.com/wren-lang/wren/blob/93dac9132773c5bc0bbe92df5ccbff14da9d25a6/src/vm/wren_value.h#L486-L541), so it's a great learning resource if you're into language implementations.
 
-It's a little rough around the edges and seems to be mostly abandoned, but I think that's fine for a toy language. No one is coming into this expecting production readiness and there's certainly space in the world for languages like that.
+Wren is a little rough around the edges and seems to be mostly abandoned, but I think that's fine for a toy language. No one is coming into this expecting production readiness. There's certainly space in the world for non-production languages.
 
 ### Also: Lua
 
