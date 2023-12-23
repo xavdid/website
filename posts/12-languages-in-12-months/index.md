@@ -172,6 +172,8 @@ end
 
 It was fun to try out all the jq features I've never needed for simple data transformations. While the tooling here was lacking somewhat (no editor integration, etc), a deeper understanding of the breadth of jq's functionality was valuable.
 
+_edit_: DJ Adams on Mastodon [brought to my attention](https://hachyderm.io/@qmacro/111628657965985179) the [jq-lsp](https://github.com/wader/jq-lsp) project and its corresponding [VSCode plugin](https://github.com/wader/vscode-jq). I missed the boat on it this time, but I'll check it out in the future.
+
 ## Object Oriented October
 
 [October](https://exercism.org/blog/object-oriented-october) delved into [object-oriented](https://en.wikipedia.org/wiki/Object-oriented_programming) languages. I've got a soft spot in my heart for OO designs, which closely mirror how I visualize programs in my head. I went with [Ruby](https://www.ruby-lang.org/en/), which may sound like an odd choice.
