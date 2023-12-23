@@ -24,18 +24,18 @@ For my formal work history, check out [my resume](/resume).
 
 Since 2020, I've written solutions to all of the [Advent of Code](https://adventofcode.com/). They've got their own showcase here: https://advent-of-code.xavd.id/
 
-### My media lists
+### david.reviews
 
-I maintain a comprehensive list of everything I play, read, and watch. Partly to source info for my [yearly media awards blog post](/blog/tags/yearly-review), but also just because it's fun. Each follows my [4-point media rating system](/blog/post/on-the-rating-of-media/). Check them out:
+I maintain a comprehensive list of everything I play, read, and watch. Partly to source info for my [yearly media awards blog post](/blog/tags/yearly-review), but also just because it's fun.
+
+You can see what I'm currently enjoying on the homepage of [david.reviews](https://david.reviews/). There's also reviews for each category and (on Airtable) my ever-growing "To X" lists:
 
 - Books
-  - [Finished](https://airtable.com/shr4iBau1Ewwu5kxB)
-  - [Now Reading](https://airtable.com/shrrQwvjfpG6Cx7u9)
+  - [david.reviews/books](https://david.reviews/books/)
   - [To Read](https://airtable.com/shrzRTbsZiBhVeugG)
 - Movies
-  - [Finished](https://airtable.com/shrvzcS9igOXIJwPb)
+  - [david.reviews/movies](https://david.reviews/movies/)
   - [To Watch](https://airtable.com/shrqygVZ287Gh2Y09)
 - Videogames
-  - [Finished](https://airtable.com/shrJvjcnh0psf3ha6)
-  - [Now Playing](https://airtable.com/shr7RxJelD4c6bZTT)
+  - [david.reviews/games](hhttps://david.reviews/games/)
   - [To Play Next](https://airtable.com/shrajGTisjQqBwxLf) (and [after that](https://airtable.com/shrMB1f0PQcfg1tnM))

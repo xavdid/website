@@ -8,8 +8,8 @@ I've spent a lot of time over the years writing on code. Sometimes for money, ot
 ## Greatest Hits
 
 - [reddit-user-to-sqlite](https://github.com/xavdid/reddit-user-to-sqlite), a CLI tool for archiving data about a Reddit user. Made as part of the [2023 Reddit API Controversy](https://en.wikipedia.org/wiki/2023_Reddit_API_controversy). I wrote [a blog post about it](/blog/post/archive-your-reddit-data/), and it was [covered by Wired](https://www.wired.com/story/how-to-download-your-reddit-data/).
-- My [Advent of Code solutions](https://github.com/xavdid/adventofcode) (and accompanying [solution writeups](https://advent-of-code.xavd.id/)) for the yearly [Advent of Code](https://adventofcode.com/) puzzles ([more info](http://localhost:1234/blog/post/building-aoc-showcase/))
-- [Universal Test Runner](https://github.com/xavdid/universal-test-runner), for running the unit tests in any repo. Adapted into the [Exercism](https://exercism.org) [CLI's](https://exercism.org/docs/using/solving-exercises/working-locally) `test` command ([PR](https://github.com/exercism/cli/pull/1092)). This is my current favorite project; I [blogged about it](http://localhost:1234/blog/post/run-every-test/)!
+- My [Advent of Code solutions](https://github.com/xavdid/advent-of-code) (and accompanying [solution writeups](https://advent-of-code.xavd.id/)) for the yearly [Advent of Code](https://adventofcode.com/) puzzles ([more info](/blog/post/building-aoc-showcase/))
+- [Universal Test Runner](https://github.com/xavdid/universal-test-runner), for running the unit tests in any repo. Adapted into the [Exercism](https://exercism.org) [CLI's](https://exercism.org/docs/using/solving-exercises/working-locally) `test` command ([PR](https://github.com/exercism/cli/pull/1092)). This is my current favorite project; I [blogged about it](/blog/post/run-every-test/)!
 - [Typed Install](https://github.com/xavdid/typed-install), a CLI utility to smartly install type definitions when installing JS packages.
 - [Heroku Config](https://github.com/xavdid/heroku-config), a Heroku plugin for managing project for your environment.
 - [epub-wordcount](https://github.com/xavdid/epub-wordcount), a CLI tool for easily estimating the words in an `epub` file.
@@ -19,7 +19,7 @@ I've spent a lot of time over the years writing on code. Sometimes for money, ot
 
 ### Via a Job
 
-- While at [Stripe](https://stripe.com), all of my public open source contributions are available under the [xavdid-stripe](https://github.com/xavdid-stripe) GitHub user. So far, I've made contributions to the Stripe Dashboard, Stripe CLI, and influenced the design of the Stripe SDKs (especially Node.js and Python).
+- While at [Stripe](https://stripe.com), all of my public open source contributions are available under the [xavdid-stripe](https://github.com/xavdid-stripe) GitHub user. So far, I've made contributions to the Stripe CLI and influenced the design of the Stripe SDKs (especially Node.js and Python).
 - While at [Zapier](https://zapier.com/), I was a primary maintainer of the [Zapier Platform](https://github.com/zapier/zapier-platform), consisting of a CLI, SDK, and JSON Schema. I triaged issues, performed important refactors, and focused on performance optimizations.
 - While at [RelateIQ](https://en.wikipedia.org/wiki/SalesforceIQ), I wrote the [RelateIQ Ruby SDK](https://github.com/xavdid/ruby-sdk). This was during the height of my ruby days while working at RelateIQ, this was a fully tested and documented UX-focused wrapper for reading and writing from their API.
 
@@ -67,7 +67,7 @@ There's an exhaustive list of my contributions using [this GitHub search](https:
 
 ### PRs
 
-- Improved performance of the Mastodon iOS Go-based push notification service ([mastodon/webpush-apn-relay#1](https://github.com/mastodon/webpush-apn-relay/pull/1) and [#2](https://github.com/mastodon/webpush-apn-relay/pull/2))
+- Improved performance of the Mastodon iOS app's Go-based push notification service ([mastodon/webpush-apn-relay#1](https://github.com/mastodon/webpush-apn-relay/pull/1) and [#2](https://github.com/mastodon/webpush-apn-relay/pull/2))
 - Fixed [multiple typos and consistency issues](https://github.com/LearningTypeScript/projects/pulls?q=author%3Axavdid) to the projects for the Learning Typescript book
 - Added a check for DRM in epub files to the `epub` package on `npm` ([julien-c/epub#44](https://github.com/julien-c/epub/pull/44))
 - Wrote Typescript types for the `striptags` package ([ericnorris/striptags#44](https://github.com/ericnorris/striptags/pull/44)) and removed them from `DefinitelyTyped` ([DefinitelyTyped#22040](https://github.com/DefinitelyTyped/DefinitelyTyped/pull/22040))
