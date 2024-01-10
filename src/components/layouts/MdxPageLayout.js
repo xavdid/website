@@ -12,6 +12,7 @@ import AirtableLinkAndReturn from "../AirtableLinkAndReturn";
 import BlockquoteTitle from "../BlockquoteTitle";
 import InlineCode from "../InlineCode";
 import Link from "../Link";
+import MediaYearLink from "../MediaYearLink";
 import Spoiler from "../Spoiler";
 import ViewFullSize from "../ViewFullSize";
 import YoutubeEmbed from "../YoutubeEmbed";
@@ -44,6 +45,7 @@ export default ({
         YoutubeEmbed,
         BlockquoteTitle,
         AirtableLinkAndReturn,
+        MediaYearLink,
         Spoiler,
         ViewFullSize,
         Link,
