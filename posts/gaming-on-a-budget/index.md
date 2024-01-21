@@ -53,7 +53,7 @@ Additionally, for **PlayStation** owners, PS+ is a great value. For a low monthl
 
 Speaking of Black Friday, that's the best time of the year to get big savings on physical games. Places like GameStop and Best Buy have huge sales throughout that weekend. It's definitely the best time to stock up on discs.
 
-Finally, there are great deals subreddits for each console. I've collected them, along with `/r/gamedeals` above, into this [helpful multireddit](https://old.reddit.com/user/xavdidtheshadow/m/deals/), if that's your thing.
+Finally, there are great deals subreddits for each console. I've collected them, along with `/r/gamedeals` above, into this [helpful multireddit](https://old.reddit.com/user/xavdid/m/deals/), if that's your thing.
 
 ## Subscription Services
 
