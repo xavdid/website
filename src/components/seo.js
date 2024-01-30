@@ -43,10 +43,15 @@ function SEO({ description, meta = {}, title, path }) {
       }}
       title={title}
       titleTemplate="%s | xavd.id"
-      meta={Object.entries(metaProperties).map(([key, value]) => ({
-        property: key,
-        content: value,
-      }))}
+      meta={[
+        ...Object.entries(metaProperties).map(([key, value]) => ({
+          property: key,
+          content: value,
+        })),
+        // https://github.com/darkreader/darkreader/issues/11604#issuecomment-1915815103
+        // https://github.com/darkreader/darkreader/blob/main/CONTRIBUTING.md#disabling-dark-reader-on-your-site
+        { name: "darkreader-lock" },
+      ]}
       link={[{ rel: "me", href: "https://mastodon.social/@xavdid" }].concat(
         path
           ? [
