@@ -77,8 +77,6 @@ This section is the "how". Jump to [What Drives Me](#what-drives-me) for the "wh
 - My Slack status is almost always descriptive and up-to-date. Reading it will help you know when I'll reply to your message, be it: soon, later, tomorrow, next week, or eventually.
 - Slack is almost always open on my computer and I check it frequently during my work hours.
 - I'm a Slack completionist: I read 100% of the new messages in each channel I'm in. You can `@ mention` if I should see a message _now_, but don't need to if it's not time-sensitive and in a channel I'm already in.
-<!-- - I _don't_ have work Slack on my phone. If I'm not at my computer and "in the office", I won't see your message until I'm back.
-- I _do_ have work email on my phone. I don't get push notifications, but check it periodically. That's a good way to reach me if something is urgent and I won't be back at Slack for a while. -->
 - Stripes: I have a work phone, but only carry it when I'm on-call or at an onsite. Personal email / phone is the only way to reach out of work hours (and only in emergencies, please).
 
 ### Hours
@@ -96,7 +94,6 @@ This section is the "how". Jump to [What Drives Me](#what-drives-me) for the "wh
 - I try to schedule all my meetings in a single block (aka the [Clockwise](https://www.getclockwise.com/) method).
 - I try to keep all my meetings on a single day (or two). At Zapier, I tried to only take meetings on Wed & Thurs.
 - I'm willing to take meetings any time during my working hours. When possible, I prefer meetings in the afternoon (see [hours](#hours)).
-<!-- - I'm generally willing to take late-evening meetings for time-zone reasons (greatly preferred to early morning ones) -->
 - I'm also happy to sit and synchronously Slack with you about a topic - that can sometimes be preferred if we're trading a lot of links
 - I can take meetings up to 1 hour before my normal start time (typically 9am) if it's an important meeting. I have trouble getting up earlier than that and my energy level will be shot the rest of the day.
 
