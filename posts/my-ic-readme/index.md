@@ -7,7 +7,7 @@ tags: [engineering, personal, Things 3]
 og_desc: A brief overview of how I work as an IC.
 ---
 
-Hello! I'm David, and I'm excited to work with you. This document is meant to help you get up to speed with how I work as an Individual Contributor. This document _is not_ a binding contract; it's self-reported guidelines to my working life. It is [updated periodically](https://github.com/xavdid/website/commits/source/posts/my-ic-readme/index.md). The structure of the document is inspired by [Amy Nguyen's _"Working with me"_](https://amy.dev/?p=979) and the other READMEs I've read internally while at Zapier.
+Hello! I'm David, and I'm excited to work with you. This document is meant to help you get up to speed with how I work as an Individual Contributor. This document _is not_ a binding contract; it's self-reported guidelines to my working life. It is [updated periodically](https://github.com/xavdid/website/commits/source/posts/my-ic-readme/index.md). The structure of the document is inspired by [Amy Nguyen's _"Working with me"_](https://amy.dev/?p=979) and the other READMEs I read internally while at Zapier.
 
 ## About Me
 
@@ -25,7 +25,7 @@ This section is the "why". Jump to [How I Work](#how-i-work) for some of the "ho
 
 My biggest motivation comes from knowing I have helped someone.
 
-In a product org, this typically means talking with the beneficiaries of whatever it is I help make. That could be our company's end-users, internal stakeholders, or strangers who rely on my open source packages. This isn't a strict requirement for my job, but I'm most gratified (and as a result, motivated) when I know how others have benefited from my work. At Zapier, I make a point to hear from our [developers](https://www.youtube.com/watch?v=Vhh_GeBPOhs) via help tickets, [community](https://community.zapier.com/developer-discussion-13), and [StackOverflow](https://stackoverflow.com/search?q=user%3A1825390+%5Bzapier%5D).
+In a product org, this typically means talking with the beneficiaries of whatever it is I help make. That could be our company's end-users, internal stakeholders, or strangers who rely on my open source packages. This isn't a strict requirement for my job, but I'm most gratified (and as a result, motivated) when I know how others have benefited from my work. At Zapier, I made a point to hear from our [developers](https://www.youtube.com/watch?v=Vhh_GeBPOhs) via help tickets, [GitHub issues](https://github.com/zapier/zapier-platform/issues?q=mentions%3Axavdid+), and [StackOverflow](https://stackoverflow.com/search?q=user%3A1825390+%5Bzapier%5D).
 
 For managers, pointing me towards examples where I've had direct, beneficial impact on coworkers can help energize me out of a slump. For coworkers, an occasional DM letting me know that I helped you never fails to make my day.
 
@@ -33,13 +33,13 @@ For managers, pointing me towards examples where I've had direct, beneficial imp
 
 I am the very definition of a "lifelong learner"; I love to learn about the world just for the sake of it. Sometimes, this is even useful for work purposes!
 
-I learn best by _doing_. Being able to try it out for myself will yield much better results than attending a lecture or watching a video. When I read technical books, I'll catalogue new info in [Obsidian](https://obsidian.md/), the app that most closely mirrors how my brain works.
+I learn best by _doing_. Being able to try it out for myself will yield much better results than attending a lecture or watching a video. When I read technical books, I'll catalogue new info in [Obsidian](https://obsidian.md/), the app that most closely mirrors [how my brain works](/blog/post/how-i-obsidian/).
 
 ### Teaching
 
-I am energized by teaching; I get a lot of gratification from helping someone understand something new.
+I am energized by teaching, especially if I help someone understand something new.
 
-Sometimes, this is direct action (like answering [StackOverflow](https://stackoverflow.com/users/1825390/xavdid) questions, pairing, or mentoring; see below). Other times, it's educational documents/guides that I throw into the ether, like my [Advent of Code tutorials](https://github.com/xavdid/advent-of-code/tree/main/solutions/2020/day_1) (which I'm very proud of). Answering questions in Slack is basically tiny teaching, so that's why I enjoy it so much.
+Sometimes, this is direct action (like answering [StackOverflow](https://stackoverflow.com/users/1825390/xavdid) questions, pairing, or mentoring; see below). Other times, it's educational documents/guides that I throw into the ether, like my [Advent of Code tutorials](https://advent-of-code.xavd.id/) (which I'm very proud of). Answering questions in Slack is basically tiny teaching, so that's why I enjoy it so much.
 
 ### Exploring Technical Interests
 
@@ -68,6 +68,7 @@ This section is the "how". Jump to [What Drives Me](#what-drives-me) for the "wh
   - This will likely be a minor bug that I've been meaning to fix.
   - My doing this _could_ be considered a "feature"; I can fix a lot of things this way.
   - If you'd rather I not do this, help me make sure I always have a "next thing" to work on.
+  - To that end, having clear short- and long-term team priorities is helpful for me.
 - I'm great at setting task and follow-up reminders in Slack and [Things 3](https://culturedcode.com/things/), my todo [app of choice](/blog/post/my-perfect-task-app/). If I don't write it down, I will probably forget about it.
 - I'm decent at breaking down complex tasks into Jira tickets. I'm improving on giving each sub-ticket enough info to stand on its own.
 
@@ -75,27 +76,27 @@ This section is the "how". Jump to [What Drives Me](#what-drives-me) for the "wh
 
 - My Slack status is almost always descriptive and up-to-date. Reading it will help you know when I'll reply to your message, be it: soon, later, tomorrow, next week, or eventually.
 - Slack is almost always open on my computer and I check it frequently during my work hours.
-- I'm a Slack completionist: I read 100% of the new messages in each channel I'm in. You can `@ mention` if I should see a message _now_, but don't need to if it's not time-sensitive.
-- I _don't_ have work Slack on my phone. If I'm not at my computer and "in the office", I won't see your message until I'm back.
-- I _do_ have work email on my phone. I don't get push notifications, but check it periodically. That's a good way to reach me if something is urgent and I won't be back at Slack for a while.
+- I'm a Slack completionist: I read 100% of the new messages in each channel I'm in. You can `@ mention` if I should see a message _now_, but don't need to if it's not time-sensitive and in a channel I'm already in.
+<!-- - I _don't_ have work Slack on my phone. If I'm not at my computer and "in the office", I won't see your message until I'm back.
+- I _do_ have work email on my phone. I don't get push notifications, but check it periodically. That's a good way to reach me if something is urgent and I won't be back at Slack for a while. -->
+- Stripes: I have a work phone, but only carry it when I'm on-call or at an onsite. Personal email / phone is the only way to reach out of work hours (and only in emergencies, please).
 
 ### Hours
 
 - I usually work in US Pacific time.
-- I'm _normally_ online by 10:30am. I'll take a short lunch around 1pm.
-- Try as I might, I'm just not a morning person;
+- I'll be awake by 9:30am and online by 10am. I'll start lunch between noon and 1pm (depending on my meeting schedule).
+- Try as I might, I'm just not a morning person.
 - My best focus time is pre-lunch or late at night.
 - My best time for meetings is in the early afternoon.
 - My energy flags around 4pm and I'll try to take an exercise / sun break.
 - Depending on my workout schedule, I'll wrap up my work for the day either pre-dinner or in the late evening (~10pm).
-- As my manager, you can feel free to remind me that I like working out if I seem to be skipping a lot. I am always happier after a lift, but sometimes I forget that.
 
 ### Meetings
 
 - I try to schedule all my meetings in a single block (aka the [Clockwise](https://www.getclockwise.com/) method).
-- I try to keep all my meetings on a single day (or two). At Zapier, I try to only take meetings on Wed & Thurs.
+- I try to keep all my meetings on a single day (or two). At Zapier, I tried to only take meetings on Wed & Thurs.
 - I'm willing to take meetings any time during my working hours. When possible, I prefer meetings in the afternoon (see [hours](#hours)).
-- I'm happy to take late-evening meetings for time-zone reasons (greatly preferred to early morning ones).
+<!-- - I'm generally willing to take late-evening meetings for time-zone reasons (greatly preferred to early morning ones) -->
 - I'm also happy to sit and synchronously Slack with you about a topic - that can sometimes be preferred if we're trading a lot of links
 - I can take meetings up to 1 hour before my normal start time (typically 9am) if it's an important meeting. I have trouble getting up earlier than that and my energy level will be shot the rest of the day.
 
@@ -116,7 +117,7 @@ This section is the "how". Jump to [What Drives Me](#what-drives-me) for the "wh
 - Because I spend so much time on Slack helping others, my raw code output is often less than that of my peers. This is usually a net win for the team, but is something to take into consideration if we need a lot of code written quickly.
 - I'm optimistic - this serves me well in life, but poorly when estimating how long projects will take.
 - I'm a horrible speller. These days, computers usually cover for me, but they can only get you so far.
-- I sometimes get compulsively distracted by Reddit/Twitter/Slack and get stuck in a loop. Taking a computer break usually fixes it.
+- I sometimes get compulsively distracted by Reddit/Masto/Slack and get stuck in a loop. Taking a computer break usually fixes it.
 
 ## Outside of Work
 
