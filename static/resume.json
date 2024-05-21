@@ -35,7 +35,7 @@
   "skills": [
     {
       "name": "Top Programming Languages",
-      "keywords": ["Typescript", "Python", "Node.js", "Go", "Ruby"]
+      "keywords": ["Typescript", "Python", "Rust", "Ruby", "Go"]
     },
     {
       "name": "Top Frameworks",
@@ -60,15 +60,15 @@
   "work": [
     {
       "name": "Stripe",
-      "position": "Senior Software Engineer, Sandboxes",
+      "position": "Senior Software Engineer, SDKs",
       "website": "https://stripe.com",
       "location": "Remote",
       "startDate": "2022-06-27",
-      "summary": "The new Sandboxes team at Stripe is responsible for the products and features users need to help them gain confidence in their integration. We are responsible for building fully data-isolated environments, which will be the focal point of all test integrations.",
+      "summary": "I lead the SDKs team. We're responsible for maintaing idomatic packages in seven different languages that provide superb developer experience when integrating with Stripe. We work closely with developers to ensure we're serving their needs.",
       "highlights": [
+        "From June 2022 to May 2024 I was on the Sandboxes team, where I shipped a brand new isolated testing experience to all dashboard users. I also:",
         "Led a project to improve the UX of every setting in the Stripe Dashboard.",
-        "Worked across all layers of Stripe's service-oriented-architecture. Stood up a bridge service that used protobufs to facilitate communication between our Java service and our Ruby monolith.",
-        "Contributed to the company using many languages and frameworks, incluidng Typescript, Ruby, Go, and Java (& Dagger)."
+        "Worked across all layers of Stripe's service-oriented-architecture. Stood up a bridge service that used protobufs to facilitate communication between our Java service and our Ruby monolith."
       ]
     },
     {
@@ -159,15 +159,13 @@
   ],
   "projects": [
     {
-      "name": "The Zapier Developer Platform",
-      "startDate": "2016-09-15",
-      "url": "https://github.com/zapier/zapier-platform",
-      "summary": "I was a core maintainer of this mono-repo, which houses the CLI, SDK, and Schema that define and power all 4,000+ Zapier integrations."
+      "name": "david.reviews",
+      "url": "https://david.reviews/",
+      "summary": "An automated media review site powered by Airtable."
     },
     {
       "name": "Advent of Code",
-      "startDate": "2017-12-01",
-      "url": "https://github.com/xavdid/advent-of-code/tree/main/solutions",
+      "url": "https://advent-of-code.xavd.id/",
       "summary": "Solved a increasingly-difficult series of programming tasks. Each day, I wrote a detailed explanation of how/why my solution worked in an effort to each computer science concepts to others."
     },
     {
