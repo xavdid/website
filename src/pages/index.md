@@ -37,5 +37,5 @@ You can see what I'm currently enjoying on the homepage of [david.reviews](https
   - [david.reviews/movies](https://david.reviews/movies/)
   - [To Watch](https://airtable.com/shrqygVZ287Gh2Y09)
 - Videogames
-  - [david.reviews/games](hhttps://david.reviews/games/)
+  - [david.reviews/games](https://david.reviews/games/)
   - [To Play Next](https://airtable.com/shrajGTisjQqBwxLf) (and [after that](https://airtable.com/shrMB1f0PQcfg1tnM))
