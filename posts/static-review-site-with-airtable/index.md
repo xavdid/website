@@ -3,7 +3,7 @@ date: "2023-11-29"
 title: "Creating a Static Media Review Site Backed by Airtable"
 fact: "Atari releases Pong, the first commercially successful video game."
 fact_year: 1972
-tags: [Airtable, Astro, projects, Tailwind, TypeScript, Zapier]
+tags: [Airtable, Astro, CSS, projects, Tailwind, TypeScript, Zapier]
 og_img: ./images/og.png
 og_desc: "My experience building a static site backed by an Airtable database, including some fairly complex TypeScript."
 ---

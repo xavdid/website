@@ -3,7 +3,7 @@ date: "2021-05-31"
 title: Python Dataclasses from Scratch
 fact: Gilmore's Garden in New York City is renamed Madison Square Garden by William Henry Vanderbilt and is opened to the public at 26th Street and Madison Avenue.
 fact_year: 1879
-tags: [Python, programming, tutorial]
+tags: [Python, programming, tutorial, TypeScript]
 og_desc: Learn about Python's dataclass module and implement a working version from scratch!
 best_of: true
 ---

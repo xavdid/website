@@ -3,7 +3,7 @@ date: "2023-12-22"
 title: "12 Languages in 12 Months"
 fact: "The first test flight of the SR-71 (Blackbird) takes place at Air Force Plant 42 in Palmdale, California, United States."
 fact_year: 1964
-tags: [12in23, Elixir, Exercism, Go, jq, Lua, Ruby, Rust, Wasm]
+tags: [12in23, Elixir, Exercism, Go, jq, just, Lua, Ruby, Rust, Wasm]
 og_img: ./images/languages.png
 og_desc: "I tried 12 different new (to me) programming languages during 2023 and I share my thoughts on the pros and cons of each."
 ---

@@ -3,7 +3,7 @@ date: "2022-06-30"
 title: My 2022 Job Search
 fact: U.S. President Abraham Lincoln grants Yosemite Valley to California for "public use, resort and recreation".
 fact_year: 1864
-tags: [personal, engineering]
+tags: [personal, engineering, "Advent of Code"]
 og_img: ./images/og.jpeg
 og_desc: A recounting of my experience job hunting in 2022 for a Software Engineering position.
 ---
@@ -65,7 +65,7 @@ The recruiter screens were straightforward. They're just conversations, where th
 
 I've always had a beef with how we as an industry conduct technical interviews. This time around, I got it into my head (rightly or otherwise) that the company for me would have an interview that actually tested relevant job skills. It should happen in an actual coding environment, not on a white board. It should test relevant skills (being able to write code) without being esoteric (implementing algorithms I haven't thought about since college).
 
-I know that I can successfully do the job of Software Engineering, so any interview worth its salt should see that without me having to do extra prep. I'm also fortunate that years of [solving](https://github.com/xavdid/advent-of-code/tree/main/solutions) [Advent of Code](https://adventofcode.com/) has kept me pretty sharp at quickly grokking coding prompts. Being in a position such that I could afford to fail interviews (I didn't _need_ a new job), I decided not to prep for my interviews at all.[^4]
+I know that I can successfully do the job of Software Engineering, so any interview worth its salt should see that without me having to do extra prep. I'm also fortunate that years of [solving](https://advent-of-code.xavd.id/) [Advent of Code](https://adventofcode.com/) has kept me pretty sharp at quickly grokking coding prompts. Being in a position such that I could afford to fail interviews (I didn't _need_ a new job), I decided not to prep for my interviews at all.[^4]
 
 Luckily, this panned out for me. Stripe has an impressive technical interview process that tests the right things. The prompts really did feel like distillations of actual work tasks rather than contrived puzzles. I made HTTP requests, handled JSON responses, transformed data, looked for a bug in an existing codebase, and talked about system design.
 

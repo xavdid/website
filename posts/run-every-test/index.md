@@ -3,7 +3,7 @@ date: "2023-08-14"
 title: "Climb Every Mountain, Run Every Test"
 fact: "King Duncan I is killed in battle against his first cousin and rival Macbeth. The latter succeeds him as King of Scotland."
 fact_year: 1040
-tags: [CLI Tools, Go, Python, Exercism, 12in23, projects]
+tags: [CLI Tools, Go, Python, Exercism, 12in23, projects, just]
 og_img: ./images/every-test.jpg
 og_desc: "My journey to create a universal test runner"
 best_of: true

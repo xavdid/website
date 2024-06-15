@@ -3,7 +3,7 @@ date: "2023-04-23"
 title: "How I Obsidian"
 fact: 'The first YouTube video, titled "Me at the zoo", was published by co-founder Jawed Karim.'
 fact_year: 2005
-tags: [Obsidian]
+tags: [Obsidian, "Advent of Code", CSS]
 og_img: ./images/learning-typescript.png
 og_desc: A tour of my Obsidian setup, describing in detail how I use Obsidian for custom technical documentation.
 ---
