@@ -66,7 +66,7 @@ const BlogPostList = ({ posts }) => {
               {post.node.frontmatter.og_desc}
             </span>
           </div>
-          <div style={{ display: "flex", paddingTop: "" }}>
+          <div style={{ display: "flex", paddingTop: "5px" }}>
             <div style={{ ...leftBlockStyle }} />
             <TagGroup tags={post.node.frontmatter.tags} />
           </div>
