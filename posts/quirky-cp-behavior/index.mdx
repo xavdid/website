@@ -1,0 +1,29 @@
+---
+date: "2024-06-14"
+title: "Quirky Behavior of the `cp` Command"
+fact: "Charles Babbage proposes a difference engine in a paper to the Royal Astronomical Society"
+fact_year: 1822
+tags: [just, programming, TIL]
+og_desc: "Copying a file to a folder is not always as simple as it seems."
+---
+
+I was writing a [just](https://github.com/casey/just) script where I wanted to move a compiled result to a folder. That's easy enough:
+
+```sh
+cp some-file ~/bin
+```
+
+This works great when the `~/bin` folder exists, which it did while I was writing this script.
+
+But then I ran it on a second computer, where I hadn't created that folder yet. Instead, it created a file called `bin` in my home directory. This sort of makes sense; `cp some-file ~/some-new-file` is exactly what I'd run to create a new file in that directory. But in this case, I always want my file to land in a directory of that name, never to create a new file.
+
+Luckily, `cp` has a provision for this: **end your destination path in a trailing slash** and it will always interpret that as a directory. If it doesn't exist, the command will error out rather than create a file named for a directory.
+
+Here's how `cp some-file TARGET` acts in each case:
+
+| Target   | Folder Exists                  | Folder Missing                        |
+| -------- | ------------------------------ | ------------------------------------- |
+| `~/bin`  | `some-file` created in `~/bin` | file `bin` created in `~`             |
+| `~/bin/` | `some-file` created in `~/bin` | ERR: directory `~/bin` does not exist |
+
+I'm not sure if this is common knowledge, but it had never occurred to me until now. It made for an [easy fix](https://github.com/xavdid/truncated-directory/commit/8b906720d5692b072ac46872861807cde7419a1f) and a nice lesson learned!
