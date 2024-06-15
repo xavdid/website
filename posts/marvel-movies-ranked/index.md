@@ -150,8 +150,8 @@ If you want to play with some of this data, look no farther than [this airtable]
 
 Anyway, that's all I've got today. Thanks for reading and go enjoy the movie!
 
-_Big thanks to [/u/Ragerodracir](https://www.reddit.com/r/marvelstudios/comments/8b639o/all_18_title_cards_as_they_appear_in_the_movies/) on Reddit for collecting all of the title card images and the inimitable [Vicky](https://vickystein.media/) for editing this post, watching all these movies with me, and generally putting up with me._
+_Big thanks to [/u/Ragerodracir](https://old.reddit.com/r/marvelstudios/comments/8b639o/all_18_title_cards_as_they_appear_in_the_movies/) on Reddit for collecting all of the title card images and the inimitable [Vicky](https://vickystein.media/) for editing this post, watching all these movies with me, and generally putting up with me._
 
 [^1]: AKA insertion sort
 [^2]: just acting, no action
-[^3]: _Avengers_ director Joss Whedon always kills someone in his films. Why does he kill the ones we love the most? Maybe it's because [we love stupid people](https://www.reddit.com/r/IAmA/comments/s2uh1/i_am_joss_whedon_ama/c4ani27/?context=3)
+[^3]: _Avengers_ director Joss Whedon always kills someone in his films. Why does he kill the ones we love the most? Maybe it's because [we love stupid people](https://old.reddit.com/r/IAmA/comments/s2uh1/i_am_joss_whedon_ama/c4ani27/?context=3)

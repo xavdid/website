@@ -1039,7 +1039,7 @@ The barcode in the closet is some stretched out letters in disguise. It's hard t
 
 If you squint, it says <Spoiler>`NOT THE WAITER`</Spoiler>.
 
-We absolutely did not catch this one- it was the final episode and the killer was about to be revealed, so we had stopped looking for puzzles. Joke's on us! I believe credit goes to `/u/aleatorial` in [this post](https://www.reddit.com/r/TheAfterPartyTV/comments/16cn5ky/ep_10_not_the/) for finding this.
+We absolutely did not catch this one- it was the final episode and the killer was about to be revealed, so we had stopped looking for puzzles. Joke's on us! I believe credit goes to `/u/aleatorial` in [this post](https://old.reddit.com/r/TheAfterPartyTV/comments/16cn5ky/ep_10_not_the/) for finding this.
 
 </details>
 

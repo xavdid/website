@@ -75,7 +75,7 @@ I've always had a thing for [automation](/blog/post/augmenting-automation-on-ios
 
 In _Factorio_, you play the role of a space traveler stranded on a hostile planet. Your ultimate goal is to build a rocket and escape. You start from scratch, mining coal by hand to power your single drill. Manual labor sucks though, so you build some belts and an inserter to make your coal self-sustaining. Before you know it, you've constructed a complex automated system that ensures resources will continue to flow through your factory. Along the way you'll produce science packs that fuel your research. As you progress down the tech tree, you'll unlock military armaments, automation tools, and the technology necessary to build a rocket.
 
-What impressed me most about this game was the number of ways the player has to automate their factory. There are chests that can offer or request supplies, a full [Turing complete](https://www.reddit.com/r/factorio/comments/43giwy/i_made_a_programmable_turingcomplete_computer_in/) system of wires and number-counters, and a programmable train system. The [guide](http://guide.factorio.com/07-automation.html) goes into more detail if you're interested, but suffice it to say that the sky really is the limit.
+What impressed me most about this game was the number of ways the player has to automate their factory. There are chests that can offer or request supplies, a full [Turing complete](https://old.reddit.com/r/factorio/comments/43giwy/i_made_a_programmable_turingcomplete_computer_in/) system of wires and number-counters, and a programmable train system. The [guide](http://guide.factorio.com/07-automation.html) goes into more detail if you're interested, but suffice it to say that the sky really is the limit.
 
 Much like programming, there are many paths to success when building a factory, some better than others. During play, most of your time is spent iterating and improving your existing designs. The road to perfection is paved by "just 5 more minutes, I want to fix one thing". There's an addictive quality to perfection and this game is the dealer. It entices you with a series of small improvements and asks only for your entire day in return.
 
@@ -86,7 +86,7 @@ Multi-player mode and headless servers mean that you can collaborate with friend
 <!-- prettier-ignore -->
 The developers have taken a unique [no sale](https://www.factorio.com/FAQ) stance on their pricing. Though I was initially annoyed, their choice to give both a Steam key and a DRM download is generous. Continuous active development (nuclear power coming soon!) and support illustrate a clear love of the game and its community. Let me reassure you that this game is indeed worth the Jackson ($20, or local equivalent) it'll cost you. My only complaint is the game's sparse soundtrack. To combat it, I've been working on a [playlist](https://open.spotify.com/user/1286017453/playlist/51csweJzekf7uSFkWgeb5b) that fits the game nicely. Past that, any gripes I've got can be solved through mods.
 
-I'd say more, but the enthusiasm on the [subreddit](https://www.reddit.com/r/factorio/) speaks for itself. Plus, I've got a factory to build.
+I'd say more, but the enthusiasm on the [subreddit](https://old.reddit.com/r/factorio/) speaks for itself. Plus, I've got a factory to build.
 
 <br />
 
@@ -104,7 +104,7 @@ In addition to its meticulous environment design, the pedagogy of the puzzles sh
 
 > The Witness is the only game I've ever played that bottled that sense of discovery, that made me feel it over and over again. More than anything, it's a game about language. ... [I]nstead of finding items that let you solve puzzles, you find knowledge that does the same. He took the inventory away from a screen in the game and put it in the player's head, and he does it all without using any English. He creates a new language and teaches it to you.
 
-- /u/Teuthex ([source](https://www.reddit.com/r/Games/comments/5jxpek/the_witness_end_of_2016_discussions/dbjqjx2/))
+- /u/Teuthex ([source](https://old.reddit.com/r/Games/comments/5jxpek/the_witness_end_of_2016_discussions/dbjqjx2/))
 
 _The Witness_ is unique in the [metroidvania](https://en.wikipedia.org/wiki/Metroidvania) genre. There's no enforced order to solving the puzzles in the 10(ish) areas of the island. Your travel is limited only by the sorts of puzzles you're able to solve. This mechanic results in very rewarding exploratory opportunities as the benefits of your gained knowledge are immediate and obvious. This tight feedback loop is similarly rewarding when solving puzzles as the unfulfilled elements flash red and you're immediately given a chance to try again.
 
@@ -257,7 +257,7 @@ And there you have it! If you took the time to read all the way down here, I'd l
 If you feel so inclined, I'd love to hear what you thought of my picks or what some of your own were. Past that, let me know if you've got a recent favorite and I'll see you in 2017!
 
 [^1]: Or the worst time, as far as my wallet is concerned. Maybe I should try cocaine instead, save a few bucks
-[^2]: This is especially rare because of the prevalence of sales for PC games. I'm a very [patient gamer](https://www.reddit.com/r/patientgamers) and am reticent to buy games at full price
+[^2]: This is especially rare because of the prevalence of sales for PC games. I'm a very [patient gamer](https://old.reddit.com/r/patientgamers) and am reticent to buy games at full price
 [^3]: Talking to other engineering friends who have played this game, everyone had a remarkably identical experience. At the end of the week they either beat the game or were forcibly cut off by their SO
 [^4]: _Pokémon Sun_ has been awesome, but it won't be eligible until next year's list at the earliest.
 [^5]: At the top, it faces stiff competition from _The Avengers_, _The Dark Knight_, _Iron Man_, and _Deadpool_, but at this point I'm pretty sure it takes the cake.

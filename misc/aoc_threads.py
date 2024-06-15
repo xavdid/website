@@ -1,7 +1,7 @@
 """
 A script to read the Advent of Code threads
 Takes as input the path to a text file with the markdown source from
-https://www.reddit.com/r/adventofcode/wiki/solution_megathreads
+https://old.reddit.com/r/adventofcode/wiki/solution_megathreads
 
 % python misc/aoc_threads.py 2022 ~/Desktop/aoc.txt
 """
