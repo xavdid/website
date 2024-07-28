@@ -27,7 +27,7 @@ I've spent a lot of time over the years writing on code. Sometimes for money, ot
 
 These projects aren't available publicly, so you'll just have to take my word for it that they were really cool.
 
-- At Stripe, I work primarily on the Stripe Dashboard and some of our backend tooling. You've likely seen my work if you've tried to change a setting while in Test Mode.
+- At Stripe, I made contributions to the Stripe [Dashboard](https://support.stripe.com/topics/dashboard) and some of our backend tooling. You've likely seen my work if you've tried to change a setting while in [Test Mode](https://docs.stripe.com/test-mode#test-mode) or created a sandbox.
 - At Zapier, my first big project on the platform team was to re-write the Slack integration to take advantage of their new webhook features. If you used Slack with Zapier anytime after May 2017, you were using my code!
 - I also implemented a version of the public Zapier Developer page. You can see a (mostly working) version of it at the [Wayback Machine](https://web.archive.org/web/20180326060057if_/https://zapier.com/developer/)
 - At RelateIQ, my primary job was "Internal Tools". The best one was a internal admin site built with Sinatra that read from our production Mongo database.

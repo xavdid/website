@@ -5,6 +5,7 @@
   padding: 3px;
   border-radius: 3px;
   font-size: 0.9rem;
+  white-space: nowrap;
   @media (prefers-color-scheme: dark) {
     // color: $tBlack;
     background-color: unset;
