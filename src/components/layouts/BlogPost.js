@@ -41,7 +41,7 @@ const BlogPostTemplate = ({
       <article>
         <PageHeader
           title={post.frontmatter.title || "Missing Title"}
-          date={post.frontmatter.human_date}
+          date={post.frontmatter.date}
           tags={post.frontmatter.tags}
           bestOf={post.frontmatter.best_of}
         />
