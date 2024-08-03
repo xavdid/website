@@ -145,6 +145,9 @@ main {
   .gatsby-resp-image-wrapper {
     margin-bottom: 5px;
   }
+  p:has(> img) {
+    text-align: center;
+  }
   img {
     border: 1px solid $MBlue;
     @media (prefers-color-scheme: dark) {
