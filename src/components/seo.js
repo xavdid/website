@@ -51,6 +51,7 @@ function SEO({ description, meta = {}, title, path }) {
         // https://github.com/darkreader/darkreader/issues/11604#issuecomment-1915815103
         // https://github.com/darkreader/darkreader/blob/main/CONTRIBUTING.md#disabling-dark-reader-on-your-site
         { name: "darkreader-lock" },
+        { name: "fediverse:creator", content: "@xavdid@mastodon.social" },
       ]}
       link={[{ rel: "me", href: "https://mastodon.social/@xavdid" }].concat(
         path
