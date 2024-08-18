@@ -55,6 +55,8 @@ og_desc: "A complete, consolidated, spoiler-free, step-by-step guide to every pu
   - [Isabel's Not The...](#isabels-not-the)
   - [Isabel's Flower](#isabels-flower)
   - [Isabel's Registry Puzzle](#isabels-registry-puzzle)
+- [Episode 10 - Vivian and Zoë](#episode-10---vivian-and-zoë)
+  - [Vivian and Zoë's Not The...](#vivian-and-zoës-not-the)
 - [Conclusion](#conclusion)
 
 </details>
