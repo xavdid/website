@@ -39,6 +39,7 @@ const BlogPostList = ({ posts }) => {
           }}
         >
           <h3
+            className="no-before"
             // don't let the font size here get too big or the dates wrap and it looks bad
             style={{ display: "flex", marginLeft: 0, fontSize: "1.17em" }}
           >

@@ -60,7 +60,7 @@ main {
   h3 {
     $h3-padding-top: 1.5rem;
 
-    &::before {
+    &:not(.no-before)::before {
       content: "› ";
       color: $MBlue;
       @media (prefers-color-scheme: dark) {
