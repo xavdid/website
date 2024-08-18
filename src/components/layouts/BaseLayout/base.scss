@@ -58,7 +58,15 @@ main {
   }
 
   h3 {
-    $h3-padding-top: 1rem;
+    $h3-padding-top: 1.5rem;
+
+    &::before {
+      content: "› ";
+      color: $MBlue;
+      @media (prefers-color-scheme: dark) {
+        color: $maize;
+      }
+    }
 
     padding-top: $h3-padding-top; // makes h3 padding non-symmetrical
     border-bottom: none;
@@ -81,16 +89,24 @@ main {
 
   h4 {
     border-bottom: none;
-    font-weight: bolder;
+    font-weight: lighter;
     font-size: 1.1em;
 
     &::before {
-      content: "› ";
+      content: "›› ";
       color: $MBlue;
       @media (prefers-color-scheme: dark) {
         color: $maize;
       }
     }
+    // I like this a lot but the sizing is impossible?
+    // &::after {
+    //   content: " ──────────────────────── ";
+    //   color: $MBlue;
+    //   @media (prefers-color-scheme: dark) {
+    //     color: $maize;
+    //   }
+    // }
   }
 
   p,
@@ -229,6 +245,10 @@ main {
 
   code {
     font-size: 14px !important;
+
+    &.language-md {
+      white-space: pre-wrap;
+    }
   }
 
   .tight-list {
