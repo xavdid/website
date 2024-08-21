@@ -5,6 +5,7 @@ fact: "The Nineteenth Amendment to the United States Constitution is ratified, g
 fact_year: 1920
 tags: [programming]
 og_desc: "Tips and tricks to write a changelog worth reading."
+best_of: true
 ---
 
 Like [your versioning scheme](/blog/post/versioning-as-communication/), your changelog is a vital and oft-overlooked method of communication to your users. Unfortunately, **it's easy to write a changelog, but hard to write a great one.**
