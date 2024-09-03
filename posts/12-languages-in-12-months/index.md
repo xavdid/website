@@ -32,7 +32,7 @@ When January started, the Exercism team were still in the process of choosing mo
 
 Go is an interesting language. Its strict compiler means that Your Program Will Be Correct and you don't move an inch until it thinks you're safe to so do.[^1] Its verbose approach to error handling means you're never surprised (at the cost of writing `if err != nil { return err }` so _so_ many times). It does a good job making hard things easy (such as parallelism via channels) but also makes some easy things hard (string manipulation). It's got a robust standard library, meaning you can get most tasks done without 3rd party modules. I like how much of the ecosystem (formatting, installing, building, etc) is first-party and built into the `go` command. The language has [its detractors](https://fasterthanli.me/articles/lies-we-tell-ourselves-to-keep-using-golang), but I think it largely succeeds at its goals of correctness and maintainability.
 
-I didn't enjoy using it so much that I'll reach for it as a first choice, but it's great tool to have in my toolbelt for performance-sensitive programs, like showing [the nested path](https://github.com/xavdid/dotfiles/blob/e82786eb835390a67ac890753472dea637fb85ac/bin/bin_source/truncated_git_path.go) in my shell prompt.
+I didn't enjoy using it so much that I'll reach for it as a first choice, but it's great tool to have in my toolbelt for performance-sensitive programs, like showing [the nested path](https://github.com/xavdid/dotfiles/blob/5e4e8e1f8ccf1d756cbf0c76b1008e6cd8275e08/bin/bin_source/truncated_git_path.go) in my shell prompt.
 
 ## Functional February
 
@@ -120,7 +120,7 @@ I don't see myself ever using Clojure for anything when there are alternatives a
 
 ## Side Quest: The Universal Test Runner!
 
-For years, I've used [a little bash function](https://github.com/xavdid/dotfiles/blob/6bd5f56b1f9ad2dcef9f8b72413d30779b378aef/node/aliases.zsh#L45-L73) to run the unit tests in my current directory. As I was working in all of these new languages, I found myself adding lines to it for convenience; remembering to run `t` was much easier than relearning the language-specific test command over and over.
+For years, I've used [a little bash function](https://github.com/xavdid/dotfiles/blob/f58a90b1c76480d4e1e20ae25ec01d469952345d/node/aliases.zsh#L45-L73) to run the unit tests in my current directory. As I was working in all of these new languages, I found myself adding lines to it for convenience; remembering to run `t` was much easier than relearning the language-specific test command over and over.
 
 As the logic required outgrew my comfort level with bash, I took some time in June and spun the project off into its own thing: the [Universal Test Runner](https://github.com/xavdid/universal-test-runner).
 

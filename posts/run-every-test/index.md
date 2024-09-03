@@ -17,7 +17,7 @@ It's not as if retyping test commands for different languages is a make-or-break
 
 ## How It Started
 
-My first approach to a universal test runner was [a little bash function](https://github.com/xavdid/dotfiles/blob/6bd5f56b1f9ad2dcef9f8b72413d30779b378aef/node/aliases.zsh#L45-L73) I wrote years ago. It tries to run the correct test command based on the files in my current directory:
+My first approach to a universal test runner was [a little bash function](https://github.com/xavdid/dotfiles/blob/f58a90b1c76480d4e1e20ae25ec01d469952345d/node/aliases.zsh#L45-L73) I wrote years ago. It tries to run the correct test command based on the files in my current directory:
 
 ```shell
 function t() {
