@@ -8,7 +8,7 @@ I'm a software engineer by trade and I've created this site as a one-stop shop f
 
 ### My life right now
 
-I'm a Senior Engineer on the [SDKs](https://docs.stripe.com/libraries#server-side-libraries) team at [Stripe](https://stripe.com) and work remotely from my home in San Mateo, CA. Before that, I was on the [Sandboxes](https://docs.stripe.com/sandboxes) team.
+I'm the Tech Lead on the [SDKs](https://docs.stripe.com/libraries#server-side-libraries) team at [Stripe](https://stripe.com) and work remotely from my home in San Mateo, CA. Before that, I was on the Stripe's [Sandboxes](https://docs.stripe.com/sandboxes) team.
 
 ### My experience
 
