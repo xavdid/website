@@ -1,7 +1,6 @@
 import React from "react";
 
 import {
-  faFlipboard,
   faGithub,
   faHackerNews,
   faImdb,
@@ -66,12 +65,6 @@ const links = [
         name: "LinkedIn",
         description: "for my full detailed work history",
         color: "#0A66C2",
-      },
-      {
-        href: "https://www.linkedin.com/in/xavdid/",
-        icon: faFlipboard,
-        name: "Polywork",
-        description: "for highlights from my career",
       },
     ],
   },
