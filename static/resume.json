@@ -2,7 +2,7 @@
   "basics": {
     "name": "David Brownman",
     "label": "Senior Software Engineer, Tinkerer, Enthusiast",
-    "email": "beamneocube@gmail.com",
+    "email": "work@xavd.id",
     "url": "https://xavd.id",
     "summary": "I specialize in crafting exquisite developer experiences, especially on the command line. I have experience both leading and participating in technical product teams. I have also provided formal mentorship to many up-and-coming engineers who went on to be valuable members of our team.",
     "location": {
@@ -19,11 +19,6 @@
         "network": "Stack Overflow",
         "username": "xavdid",
         "url": "https://stackoverflow.com/users/1825390/david-brownman"
-      },
-      {
-        "network": "Twitter",
-        "username": "@xavdid",
-        "url": "https://twitter.com/xavdid"
       },
       {
         "network": "Linkedin",
