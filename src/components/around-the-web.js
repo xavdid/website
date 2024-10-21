@@ -14,7 +14,7 @@ import {
   faReddit,
   faStackOverflow,
   faSteam,
-  faVine,
+  // faVine,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -144,14 +144,14 @@ const links = [
         description: "to collect my numerous professional acting credits.",
         color: "#F5C518",
       },
-      {
-        href: "https://vine.co/u/923740547368235008",
-        icon: faVine,
-        name: "Vine",
-        description:
-          "a defunct collection of discretized snippets of 6 second awesomeness.",
-        color: "#00b488",
-      },
+      // {
+      //   href: "https://vine.co/u/923740547368235008",
+      //   icon: faVine,
+      //   name: "Vine",
+      //   description:
+      //     "a defunct collection of discretized snippets of 6 second awesomeness.",
+      //   color: "#00b488",
+      // },
     ],
   },
 ];
