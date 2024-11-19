@@ -7,6 +7,8 @@ tags: [movies, Airtable, reviews]
 og_desc: Learn more about how I rank all of the media I track in a consistent manner
 ---
 
+> Update `2024-11-18`: I've written an updated version of this on my [dedicated review site](https://david.reviews/rating/games/), but I'll leave this here for posterity.
+
 Once I started tracking media in earnest, I found myself in need of a consistent way to rate what I had watched and played. There are a lot of different ways to rate something, such a 10 star scale, a score out out of five, or a simple thumbs up/down.
 
 My biggest gripe is that none of the scores _really_ mean anything; they're good for comparing everything someone has scored, but they each have their problems. A 10 star scale is too wide; what sets a 6 star movie apart from a 7 star movie? The yes/no is informative but has the opposite problem: it doesn't allow for any striation between good and great. A score out of 5 is closer, but it begets my worst enemy: _apathy_. I'm ultimately making these lists to help steer the reader towards the good stuff. If I'm neutral on something, it doesn't provide a definitive signal. Ultimately, none of these scales provided what I needed.
