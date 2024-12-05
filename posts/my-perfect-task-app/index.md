@@ -63,9 +63,9 @@ Of all features listed in this post, this one is the farthest from being commonp
 
 I often find myself needing to represent blocking relationships between tasks. My ideal app would exclude tasks with incomplete blockers from the "available tasks" view (just like tasks with start dates in the future). The task dependency graph could take any shape, but cycles wouldn't be allowed. For example, it's invalid for `A` to be blocked by `B` which is blocked by `A`. It would also be an error to complete a task that has incomplete blockers (instead, mark blockers as complete or sever the relationships between tasks). There would also be a graph view to easily visualize a task tree.
 
-Having this feature really is my white whale. I've thought about it so much that I've created an [open-source toy implementation](https://github.com/xavdid/tasks) for the system I've described. It should work as a jumping off point for any devs interested in adding dependent tasks to their app.
+Having this feature really is my white whale. I've thought about it so much that I've created an [open-source toy implementation](https://github.com/xavdid/dependent-tasks) for the system I've described. It should work as a jumping off point for any devs interested in adding dependent tasks to their app.
 
-The best (and maybe only) commercial version of this feature is [Task Heat](https://eyen.fr/). It's got a good UI for showing the flow of a project and all of the logic you'd expect is present.
+The best (and maybe only) commercial version of this feature is [Task Heat](https://eyen.fr/taskheat/). It's got a good UI for showing the flow of a project and all of the logic you'd expect is present.
 
 You can easy create blocking associations between tasks by dragging an arrow:
 
