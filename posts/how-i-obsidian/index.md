@@ -153,7 +153,7 @@ The **Command Palette** (and by extension, the **Quick Switcher**) are invaluabl
 
 These are the 3rd party plugins I use, sorted roughly in order of importance:
 
-- [Folder Note](https://github.com/aidenlx/alx-folder-note), for abstracting the ability to have a folder that is also a note. For example, `Technical/Python` exists as a descriptive note, but `Technical/Python/Dataclass` exists too.
+- [Folder Note](https://github.com/LostPaul/obsidian-folder-notes), for abstracting the ability to have a folder that is also a note. For example, `Technical/Python` exists as a descriptive note, but `Technical/Python/Dataclass` exists too.
 - [Pipe Tricks](https://github.com/marcusolsson/obsidian-pipe-tricks), which helps make notes with complex titles bearable to read. Unmaintained, so I may fork it at some point so I can have it do exactly what I need.
 - [Waypoint](https://github.com/IdreesInc/Waypoint), for auto-generating links to all sub-notes (effectively showing folder hierarchy in the graphs). Pairs well with Folder Notes.
 - [Editor Syntax Highlighting](https://github.com/deathau/cm-editor-syntax-highlight-obsidian), for performing syntax highlighting outside of reading mode.
