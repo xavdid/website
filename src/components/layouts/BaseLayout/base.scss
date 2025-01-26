@@ -117,6 +117,11 @@ main {
     li {
       margin: 0 0 7px 0;
     }
+
+    em {
+      // letters slope to the right, so the spacing after italicized words is a little too small.
+      padding-right: 2px;
+    }
   }
 
   .subtitle {

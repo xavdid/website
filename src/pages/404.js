@@ -10,7 +10,7 @@ const notFoundPage = () => (
     <h1>NOT FOUND</h1>
     <p>
       There might be easter eggs to find... but this isn&apos;t one of them.{" "}
-      <Link href="/">Head Home.</Link>
+      <Link href="/">Head home.</Link>
     </p>
   </Layout>
 );
