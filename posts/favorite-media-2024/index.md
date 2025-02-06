@@ -5,7 +5,7 @@ fact: "The Rocky Mountain National Park is established by an act of the U.S. Con
 fact_year: 1915
 tags: [books, movies, television, videogames, Yearly Review]
 og_img: ./images/og.jpg
-og_desc: "David's 9th annual roundup of his favorite things he played, watched, and read this year."
+og_desc: "My 9th annual roundup of my favorite things I played, watched, and read last year."
 ---
 
 ![](./images/og.jpg)

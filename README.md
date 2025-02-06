@@ -43,6 +43,21 @@ function imgsav () {
 - `yarn doctoc path/to/folder` will regenerate the TOC, along with the `;toc` snippet.
   - for the media post, use `yarn doctoc posts/favorite-media-2021 --maxlevel 2` to get only the headers
 - the 2022 header was made on design.ai and used `Bebas Neue` for the big font and `Bungee` for the smaller font.
+- Here's a rough checklist to get everything published:
+  1. Write outline
+  2. Talk to Karen about image- start it early!
+  3. Flesh each section out. Don't focus on mechanics! Talk about what made a thing special
+  4. Add placeholders for availability, images, and trailers
+  5. Copy into google doc
+  6. Edit
+  7. Paste back to drafts to replace footnotes
+  8. Export for site
+  9. Add images
+  10. Link to as official of a page as possible for everything. Book publishers have one. Most games do too
+  11. In airtable, add award levels and anchors
+  12. Add url of post to award years. Once that's done, the next site build will show award emoji
+  13. Create Steam list with winning games. It'll be public by default, so do this at the end. Link it in post.
+  14. Push both sites. You're live!
 
 ## MDX
 
