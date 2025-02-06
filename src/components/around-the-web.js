@@ -1,6 +1,7 @@
 import React from "react";
 
 import {
+  faBluesky,
   faGithub,
   faHackerNews,
   faImdb,
@@ -34,16 +35,23 @@ const links = [
         color: "#6364FF",
       },
       {
+        href: "https://bsky.app/profile/xavd.id",
+        icon: faBluesky,
+        name: "Bluesky",
+        description: "another account I also have",
+        color: "#3D87E4",
+      },
+      {
         href: "https://lobste.rs/u/xavdid",
         icon: "🦞",
         name: "Lobste.rs",
-        description: "where I'm still learning what's up",
+        description: "where I'm I can actually comment and get heard",
       },
       {
         href: "https://tildes.net/user/xavdid",
         icon: "~",
         name: "Tildes.net",
-        description: "for something like Reddit, but not quite",
+        description: "for something like Reddit, but better",
       },
       {
         href: "https://news.ycombinator.com/user?id=xavdid",
@@ -81,7 +89,7 @@ const links = [
         href: "https://stackoverflow.com/users/1825390/xavdid",
         icon: faStackOverflow,
         name: "StackOverflow",
-        description: "where I ask, edit, and answer programming questions.",
+        description: "where I ask, edit, and answer programming questions",
         color: "#f68a1f",
       },
       {
@@ -103,7 +111,7 @@ const links = [
     header: "etc.",
     list: [
       {
-        href: "https://steamcommunity.com/id/xavdidtheshadow/",
+        href: "https://steamcommunity.com/id/xavdid/",
         icon: faSteam,
         name: "Steam",
         description: "where I can show off my gaming habit.",
@@ -123,7 +131,7 @@ const links = [
         color: "#E4405F",
       },
       {
-        href: "https://www.youtube.com/user/Xavdidtheshadow/videos",
+        href: "https://www.youtube.com/@xavdid",
         icon: faYoutube,
         name: "YouTube",
         description: "full of a truly eclectic collection of moving pictures.",

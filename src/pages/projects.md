@@ -7,6 +7,7 @@ I've spent a lot of time over the years writing on code. Sometimes for money, ot
 
 ## Greatest Hits
 
+- [david.reivews](https://github.com/xavdid/david.reviews) ([site](https://david.reviews/)), a full featured media review site backed by Airtable I've run since 2023. I wrote about it [in more detail](/blog/post/static-review-site-with-airtable/) if you're curious about the internals!
 - [reddit-user-to-sqlite](https://github.com/xavdid/reddit-user-to-sqlite), a CLI tool for archiving data about a Reddit user. Made as part of the [2023 Reddit API Controversy](https://en.wikipedia.org/wiki/2023_Reddit_API_controversy). I wrote [a blog post about it](/blog/post/archive-your-reddit-data/), and it was [covered by Wired](https://www.wired.com/story/how-to-download-your-reddit-data/).
 - My [Advent of Code solutions](https://github.com/xavdid/advent-of-code) (and accompanying [solution writeups](https://advent-of-code.xavd.id/)) for the yearly [Advent of Code](https://adventofcode.com/) puzzles ([more info](/blog/post/building-aoc-showcase/))
 - [Universal Test Runner](https://github.com/xavdid/universal-test-runner), for running the unit tests in any repo. Adapted into the [Exercism](https://exercism.org) [CLI's](https://exercism.org/docs/using/solving-exercises/working-locally) `test` command ([PR](https://github.com/exercism/cli/pull/1092)). This is my current favorite project; I [blogged about it](/blog/post/run-every-test/)!
@@ -19,7 +20,7 @@ I've spent a lot of time over the years writing on code. Sometimes for money, ot
 
 ### Via a Job
 
-- While at [Stripe](https://stripe.com), all of my public open source contributions are available under the [xavdid-stripe](https://github.com/xavdid-stripe) GitHub user. So far, I've made contributions to the Stripe CLI and influenced the design of the Stripe SDKs (especially Node.js and Python).
+- While at [Stripe](https://stripe.com), all of my public open source contributions are available under the [xavdid-stripe](https://github.com/xavdid-stripe) GitHub user. I've made contributions to all 7 of the SDKs (Python, Node, Ruby, PHP, Java Dotnet, and Go), plus lead a number of design-level improvements to Stripe's developer tooling. I also worked on the Stripe CLI and some of the docs tooling.
 - While at [Zapier](https://zapier.com/), I was a primary maintainer of the [Zapier Platform](https://github.com/zapier/zapier-platform), consisting of a CLI, SDK, and JSON Schema. I triaged issues, performed important refactors, and focused on performance optimizations.
 - While at [RelateIQ](https://en.wikipedia.org/wiki/SalesforceIQ), I wrote the [RelateIQ Ruby SDK](https://github.com/xavdid/ruby-sdk). This was during the height of my ruby days while working at RelateIQ, this was a fully tested and documented UX-focused wrapper for reading and writing from their API.
 
