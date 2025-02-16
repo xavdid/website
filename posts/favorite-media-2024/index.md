@@ -281,6 +281,7 @@ _[Blue Eye Samurai](https://www.netflix.com/title/81144203) is available on Netf
 
 ### Honorable Mention(s)
 
+- [Scott Pilgrim Takes Off](https://www.justwatch.com/us/tv-show/scott-pilgrim-the-anime), for being a delightful love letter to the original comics & movie. It's a semi-sequel-sort-of that hits all the right notes. It's also wild that they got the entire movie cast back, since it's my go to example when talking mentioning "I can't believe they got all those people in one movie together".
 - _[The Bear](https://www.justwatch.com/us/tv-show/the-bear) S2, episodes 6 & 7_, for being 60 straight minutes of pure, uncut family stress followed by a beautiful moment of growth for a character you weren't sure had it in them. The show had its ups and downs, but this pair of episodes will go down in television history as an all-time experience.
 - _[Dark Matter](https://tv.apple.com/us/show/dark-matter/umc.cmc.4luj45vtqpmjsvb6sc2675oeg)_, for being a chilling adaptation of one of my favorite books from [2020](/blog/post/favorite-media-2020/#dark-matter). The book's author ([Blake Crouch](https://david.reviews/books/authors/blake-crouch/), frequently mentioned in these awards) wrote the adaptation too, so it's no surprise it was great.
 - _[Star Trek: Lower Decks](https://www.justwatch.com/us/tv-show/star-trek-lower-decks)_, for sticking the landing after 5 great seasons. Its characters grew and the writers weren't afraid to enact lasting change upon them!
@@ -387,11 +388,12 @@ _Tomorrow, and Tomorrow, and Tomorrow_ is Gabrielle Zevin's touching story about
   - [Shrinking](https://tv.apple.com/us/show/shrinking/umc.cmc.apzybj6eqf6pzccd97kev7bs)
   - Runner(s) Up:
     - [A Man on the Inside](https://www.netflix.com/title/81677257)
-  - [Blue Eye Samurai](https://www.netflix.com/title/81144203)
+    - [Blue Eye Samurai](https://www.netflix.com/title/81144203)
   - Honorable Mention(s):
+    - [Scott Pilgrim Takes Off](https://www.justwatch.com/us/tv-show/scott-pilgrim-the-anime)
     - [The Bear](https://www.justwatch.com/us/tv-show/the-bear) S2, episodes 6 & 7
-  - [Dark Matter](https://tv.apple.com/us/show/dark-matter/umc.cmc.4luj45vtqpmjsvb6sc2675oeg)
-  - [Star Trek: Lower Decks](https://www.justwatch.com/us/tv-show/star-trek-lower-decks)
+    - [Dark Matter](https://tv.apple.com/us/show/dark-matter/umc.cmc.4luj45vtqpmjsvb6sc2675oeg)
+    - [Star Trek: Lower Decks](https://www.justwatch.com/us/tv-show/star-trek-lower-decks)
 - Books
   - [Death's End](https://us.macmillan.com/books/9780765386632/deathsend/) by Cixin Liu
   - [First Lie Wins](https://ashleyelston.com/books/first-lie-wins/) by Ashley Elston
