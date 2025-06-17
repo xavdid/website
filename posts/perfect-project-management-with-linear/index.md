@@ -3,7 +3,7 @@ date: "2023-10-27"
 title: "Perfect Project Management with Linear"
 fact: "The first underground New York City Subway line opens, later designated as the IRT Broadway–Seventh Avenue Line."
 fact_year: 1904
-tags: ["Advent of Code", Linear, productivity, Python, "Things 3"]
+tags: ["Advent of Code", Linear, productivity, Python, "Things 3", Zapier]
 og_desc: "Building my perfect project management workflow with Linear and Python"
 ---
 

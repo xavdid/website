@@ -30,7 +30,7 @@
   "skills": [
     {
       "name": "Top Programming Languages",
-      "keywords": ["Typescript", "Python", "Rust", "Ruby", "Go"]
+      "keywords": ["Typescript", "Python", "Ruby", "Go", "Rust"]
     },
     {
       "name": "Top Frameworks",
