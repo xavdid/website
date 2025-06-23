@@ -9,19 +9,21 @@ og_desc: "I don't back up my laptop; here's what I do instead."
 
 I don't back up my laptop. Not via [Time Machine](https://support.apple.com/en-us/104984), nor via [Backblaze](https://www.backblaze.com/). Some of my files _only_ exist on my machine. Don't worry, it's not as bad as it sounds.
 
-Ever since I've had a decent set of [dotfiles](https://github.com/xavdid/dotfiles), I've treated my laptops as ephemeral. Not disposable; I keep my hardware a long time. Just that I just assume my laptop could get [struck by lightning](/blog/post/thunderbolts-and-lightning/) at any moment. But, I've always found maintaining full backups the "right" way to be more trouble than it's worth. Instead, I put together a strategy tailored to my needs. I considered:
+Ever since I've had a decent set of [dotfiles](https://github.com/xavdid/dotfiles), I've treated my laptops as ephemeral. Not disposable; I keep my hardware a long time. Just that I just assume my laptop could get [struck by lightning](/blog/post/thunderbolts-and-lightning/) at any moment.
+
+I've always found maintaining full backups the "right" way to be more trouble than it's worth. Backup programs can be resource hogs, you need a big external drive, and external backups can be expensive.
+
+Instead, I wanted to set up a system to back up _only_ the things I cared about as easily as possible. I considered:
 
 - what data I cared about
 - where it lived
 - and what would have to happen for me to lose access to it
 
-Because everyone's answers above are different, there's not a one-size-fits-all solution for keeping your digital data safe. There will always be tradeoffs between effort, price, retrieval speed, and more.
-
-So instead of telling you how you _should_ do it (again, impossible!) I'll talk through my process and hopefully help you form one of your own.
+Those questions answered, I designed a simple yet robust backup solution for myself. My approach won't work for everyone (or maybe anyone) but hearing about my thought process may help you build a solution of your own.
 
 ## First, the clouds
 
-My most important digital data lives across the clouds of the tech giants.[^1] I care about five main categories: TKTK match this list against the actual outline
+My most important digital data lives across the clouds of the tech giants.[^1] I care about five main categories:
 
 1. All of my **code** projects live on Microsoft's GitHub
 2. **Email** records & receipts are in Google's Gmail
@@ -114,6 +116,12 @@ Careful readers will notice that each of the above steps ends in Dropbox, which 
 
 To back up the backups, I prepare a flash drive each calendar quarter. It's got an [encrypted disk image](https://support.apple.com/guide/disk-utility/create-a-disk-image-dskutl11888/mac) with everything I'd need to restart if I lost every computer and account all at once (a vanishingly unlikely occurrence in the first place).
 
+Because it's my emergency last-resort case, everything about this drive is designed for maximum compatibility:
+
+- [The drive](https://www.amazon.com/dp/B07YYJRXQR) supports both USB A & C, so I'll be able to use it regardless of what hardware I have available
+- The disk image is formatted as `ExFAT` so it'll work on any operating system
+- The password is stored in my 1Password and is lengthy but memorable. I manually type it when updating the drive so I know I've got it memorized (in case I don't have 1P access later)
+
 On that drive is:
 
 - the latest version of each of the zips mentioned above (plus a few more, like [Things3](https://culturedcode.com/things/) and [BGStats](https://www.bgstatsapp.com/))
@@ -126,7 +134,7 @@ In either case, retrieved backup data would be a few months stale, but it would 
 
 ## What works for me
 
-Everything I described above is what works for me based on the data I care the most about. It's a good balance of convenience and reliability, ensuring it's basically impossible to totally lose something. All it costs is running a few CLI commands on a schedule and $45 worth of [USB A+C flash drives](https://www.amazon.com/dp/B07YYJRXQR).
+Everything I described above is what works for me based on the data I care the most about. It's a good balance of convenience and reliability, ensuring it's basically impossible to totally lose something. All it costs is running a few CLI commands on a schedule and $45 worth of flash drives.
 
 With this system in place, all of the following would need to happen simultaneously before I'd permanently lose any data:
 
@@ -138,7 +146,7 @@ So I feel pretty good about my odds of not losing things.
 
 ## What works for you?
 
-Your plan may look like mine (but probably doesn't). All that matters is that you have _a_ plan. Yours might be as simple as a paid backup service or ([Wirecutter](https://www.nytimes.com/wirecutter/reviews/best-online-backup-service/) recommends a few) or the software that comes with your OS.
+Your plan may look like mine (but probably doesn't). There will always be tradeoffs between effort, price, retrieval speed, and robustness, so do what makes sense for you. Really, all that matters is that you have _a_ plan. Your plan might be as simple as a paid backup service ([Wirecutter](https://www.nytimes.com/wirecutter/reviews/best-online-backup-service/) recommends a few) or the software that comes with your OS.
 
 To start forming your backup strategy:
 
