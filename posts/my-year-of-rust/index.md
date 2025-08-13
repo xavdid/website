@@ -1,0 +1,281 @@
+---
+date: "2025-08-13"
+title: "My Year of Rust"
+fact: "Isaac Singer is granted a patent for his sewing machine"
+fact_year: 1851
+tags: [programming, Rust]
+og_desc: "david.reviews: Rust! It's neat, but not without its warts."
+---
+
+Back in 2023, I tried [12 languages in 12 months](/blog/post/12-languages-in-12-months/). At the end of the post, I mentioned Rust was the language that had most jumped out to me and I was going to spend more time using it in 2024. As you can guess by the title of this post, I followed through! Throughout 2024, I used Rust for:
+
+- quickly [truncating the directory](https://github.com/xavdid/truncated-directory) in my shell prompt
+- fixing a bug in [mise](https://mise.jdx.dev/) ([jdx/mise#2532](https://github.com/jdx/mise/pull/2532))
+- writing a [a teeny compiler](https://github.com/xavdid/teeny-tiny-compiler-rs)
+- [backdating my Exercism repo](https://github.com/xavdid/exercism/tree/main/_meta/repo-builder) ([blog post](https://xavd.id/blog/post/backdating-my-exercism-repo/))
+- the 2024 iteration of [Coding Quest](https://codingquest.io/) ([my solutions](https://github.com/xavdid/coding-quest-rs))
+- doing the [Rustlings](https://rustlings.rust-lang.org/)
+- tons of [Exercism exercises](https://exercism.org/profiles/xavdid/solutions?track_slug=rust)
+
+That's not a _ton_ of projects, but I feel like it put me squarely in the "not just tutorials" realm. Let's see how it did!
+
+## What I liked
+
+### The compiler errors walk the walk
+
+Rust is notorious for the difficulty of working with its [borrow checker](https://doc.rust-lang.org/1.8.0/book/references-and-borrowing.html) (responsible for ensuring all memory is accessed safely; Rust's key selling point). I hit issues with this basically nonstop, but the compiler errors did a great job telling me exactly how to move forward:
+
+```rust
+// takes ownership of its argument
+fn take(s: String) {
+    println!("{}", s);
+}
+
+fn main() {
+    let s = String::from("Hello, world!");
+    take(s);
+    take(s); // err
+}
+```
+
+gives:
+
+```
+error[E0382]: use of moved value: `s`
+  --> src/main.rs:67:10
+   |
+64 |     let s = String::from("Hello, world!");
+   |         - move occurs because `s` has type `String`, which does not implement the `Copy` trait
+65 |
+66 |     take(s);
+   |          - value moved here
+67 |     take(s);
+   |          ^ value used here after move
+   |
+note: consider changing this parameter type in function `take` to borrow instead if owning the value isn't necessary
+  --> src/main.rs:29:12
+   |
+29 | fn take(s: String) {
+   |    ----    ^^^^^^ this parameter takes ownership of the value
+   |    |
+   |    in this function
+help: consider cloning the value if the performance cost is acceptable
+   |
+66 |     take(s.clone());
+   |           ++++++++
+
+For more information about this error, try `rustc --explain E0382`.
+```
+
+There's some jargon in there, but this message goes a long way towards helping me fix issues in my code. Error messages like these made the process of getting comfortable with the language _much_ smoother.
+
+I hope other languages steal this approach. Python has [made some improvements](https://peps.python.org/pep-0657/) in error messaging, but I think it could do more to actually explain the errors.
+
+### Pattern matching is powerful
+
+Ever since pattern matching [came to Python](https://peps.python.org/pep-0636/) I've been itching for something useful to do with it. Now that I've seen all the ways Rust can leverage it for basic tasks, I'm a convert; it's easy to see why it's a popular pattern.
+
+It allows you to be super explicit about what states you're expecting and how you're handling them. I loved being able to mix multiple values, conditionals, and types. Here's code to check paired brackets, which was easy to grok even a year after writing it:
+
+```rust
+fn brackets_are_balanced(string: &str) -> bool {
+    let mut stack: Vec<char> = Vec::new();
+
+    for c in string.chars() {
+        match c {
+            '[' | '{' | '(' => stack.push(c),
+            ']' | '}' | ')' if other(c) == *stack.last().unwrap_or(&'x') => {
+                stack.pop().unwrap();
+            }
+            ']' | '}' | ')' => return false,
+            _ => {}
+        };
+    }
+    stack.is_empty()
+}
+```
+
+I'm sure you can do clarity crimes with it, but it was probably my favorite Rust feature.
+
+### Enums felt great
+
+Rust has a robust enums built into the language. They pair especially well with pattern matching, but are useful for passing around and storing data, too. Careful shaping of state made my programs easier to reason about and helped make invalid states [unrepresentable](https://geeklaunch.io/blog/make-invalid-states-unrepresentable/). I loved how descriptive enums let you make your error cases:
+
+```rust
+enum Error {
+    InvalidInputBase,
+    InvalidOutputBase,
+    InvalidDigit(u32),
+}
+
+fn some_operation() -> Result<u32, Error> {
+    // ...
+}
+
+fn main() {
+    match some_operation() {
+        Ok(v) => println!("got: {v}"),
+        Err(e) => match e {
+            Error::InvalidInputBase => todo!("implement me"),
+            Error::InvalidOutputBase => todo!("implement me"),
+            Error::InvalidDigit(bad_digit) => println!("got bad digit: {bad_digit}"),
+        },
+    }
+}
+```
+
+Sure, most languages let you define custom error classes and properties. But all it took was a 3-line enum and users can handle every outcome of this function in a low-overhead way without reading a bunch of docs.
+
+Speaking of, the built-in exhaustiveness checking was great. Most languages require you to manually throw an error in the final `else` branch of a big match statement for unknown states, but I liked moving that work to the compiler instead.
+
+### Doctests are neat
+
+Every public Rust function has a toy example in its docstring to demonstrate how the function works. For instance, [Option.unwrap_or](https://doc.rust-lang.org/stable/core/option/enum.Option.html#method.unwrap_or):
+
+```rust
+assert_eq!(Some("car").unwrap_or("bike"), "car");
+assert_eq!(None.unwrap_or("bike"), "bike");
+```
+
+I loved these as a concept, but I was concerned about how they ensured these little docs were accurate when the code changed over time.
+
+I needn't have worried - Cargo can run all these snippets (which are [doctests](https://doc.rust-lang.org/rustdoc/write-documentation/documentation-tests.html)) to ensure they actually do what they say they will. It's a clever little improvement that makes the whole ecosystem more reliable.
+
+And TIL, the same thing is available in the [Python stdlib](https://docs.python.org/3/library/doctest.html)! I wish it was more widely used.
+
+### `.collect()` is awesome magic
+
+Idiomatic Rust leans heavily on iterator methods like `.map()` & `.filter()` and their associated helper methods (`.take()`, `.skip()`, etc). They're billed as "zero cost abstractions", meaning they compile down to an equivalent `for` loop without any performance hit.
+
+That's very cool, but the thing that _really_ blew my mind about iterators was the [`.collect()`](https://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect) method. The docs sort of undersell its power when summarizing its behavior:
+
+> Transforms an iterator into a collection.
+
+Given any iterator and the type annotation for any container, the compiler _just make it work_.
+
+Because the compiler can see all your code at once, getting different result types is as simple as changing the type declaration. I never had to look up "how to create VecDeque rust" because it just popped out of `.collect()`:
+
+```rust
+let a = [1, 2, 3];
+let doubled: Vec<_>           = a.iter().map(|x| x * 2).collect();
+let doubledDeque: VecDeque<_> = a.iter().map(|x| x * 2).collect();
+```
+
+I especially loved using `.collect()` at function boundaries:
+
+```rust
+fn double(nums: &[u32]) -> Vec<u32> {
+    nums.iter().map(|x| x * 2).collect()
+}
+```
+
+If I ever wanted to change `double` to return a `VecDeque` instead, I only needed to edit the function signature; no actual code changes needed!
+
+Being able to say "this is what I want, just make it work" was a consistently delightful touch. The more the compiler can think about instead of me, the better.
+
+### Traits were powerful and easy to reason about
+
+Much like interfaces in other languages, traits are powerful mechanisms for writing functions that work on a variety of data types. It's easy to write constraints that require combinations of functions and easy to mass-implement a trait for structs that already conform to a specific trait.
+
+Traits also power a lot of the compiler magic that I've praised so highly above. For instance, any struct that implements the `FromIterator` trait can be used as a target for `.collect()` above. This interoperability means it's easy to integrate your code and 3rd party code: you implement their traits (or add your traits to their structs) and you're off to the races.
+
+Overall, they're a fairly concept but can be used for powerful results!
+
+### Error handling made easy
+
+I liked Rust's approached to very explicit error tracking without devolving into Go's `if err; return err` soup. It's standard for functions that can fail to return a `Result` enum, meaning you have everything you need for error handling with existing language structures.
+
+As a bonus, the `?` operator streamlines functions that return `Result`s (or `Option`s) so you don't have to do much intermediate error handling:
+
+```rust
+enum MathError {
+    DivisionByZero,
+    NegativeSquareRoot,
+}
+
+type MathResult = Result<f64, MathError>;
+
+fn div(x: f64, y: f64) -> MathResult {
+    if y == 0.0 {
+        Err(MathError::DivisionByZero)
+    } else {
+        Ok(x / y)
+    }
+}
+
+fn sqrt(x: f64) -> MathResult {
+    if x < 0.0 {
+        Err(MathError::NegativeSquareRoot)
+    } else {
+        Ok(x.sqrt())
+    }
+}
+
+fn is_cool_number() -> MathResult {
+    // it's so clean in here!
+    let a = div(192.0, 3.0)?;
+    let b = sqrt(a)?;
+    let c = b / 2.0;
+
+    return Ok(c);
+}
+```
+
+Getting all your types to play nicely requires a bit of foresight (and potentially a careful trait application) but you can write pretty clean code as a result.
+
+### `cargo` is as good as they say
+
+Rust's [`cargo`](https://doc.rust-lang.org/cargo/) CLI is considered the gold standard for language tooling. It handles everything from installing dependencies, running tests, linting, formatting, compiling, and packaging your code for distribution.
+
+Having one [obvious way](https://peps.python.org/pep-0020/) to do things pays huge dividends for the ecosystem. Plus it makes it easier to welcome newcomers, since there's just the one thing to learn. Python's [`uv`](https://docs.astral.sh/uv/) has been compared favorably to `cargo` and it's easy to see why.
+
+## What Was Lacking
+
+### I always had the wrong type
+
+I'm not sure if I was holding it wrong or what, but I somehow always had a `usize` when I wanted a `u8`, a `u8` when a function called for a `u32` and a `u32` as soon as `usize` was needed. There's probably method to this madness, but it felt like the stdlib functions didn't play nicely together.
+
+Similarly, I understood why there's both `String` and `&str`, but I spent an awful lot of time switching my data between the two. Despite [great articles](https://steveklabnik.com/writing/when-should-i-use-string-vs-str/) talking about which I should use and when, it was annoying to have the wrong thing seemingly every time.
+
+I get why these different types exist and if you're interested in ruthlessly minimizing your memory usage, they're probably a useful thing to have. But in practice, I never cared which I had and just wanted basic operations to work.
+
+### The small standard library hurt
+
+Rustaceans often brag about the large, vibrant 3rd party ecosystem. And they should, it's awesome! But it's frustrating to have to go to it for so many things. If I want to write a Rust program that can read a `csv` file, there are [tons of libraries](https://crates.io/search?q=csv&sort=relevance) for that. Now instead of solving my actual problem I'm spending time evaluating 6 packages on their speed, API, maintenance level, etc.
+
+Since using Rust, I've really come to appreciate Python's batteries-included approach. It's [not perfect](https://pyfound.blogspot.com/2019/05/amber-brown-batteries-included-but.html), but it provides a great baseline of many tools for many users. I know everything in the stdlib works, is widely tested, and is well maintained (or marked as deprecated). If a stdlib package doesn't meet your needs, there's probably an alternative in the 3rd party ecosystem. It's just nice you don't have to _start_ there.
+
+Go & Python do a good job here, as do many of the new JS runtimes ([Deno](https://deno.com/), [Bun](https://bun.sh/)). I think Rust would benefit from publicizing a pseudo-stdlib of "the 10 packages most projects will need". It sort of exists as [blessed.rs](https://blessed.rs/crates), but even that's a big list.
+
+### What's up with that hash API?
+
+In the Python world, you use `dict`s for all sorts of things. They're dead simple: read key, write key, `.get(key)` in case it doesn't exist. Rust can do some of that, but there's a whole [Entry API](https://doc.rust-lang.org/std/collections/hash_map/enum.Entry.html) that helps access keys that may or may not be present. I found the whole thing unintuitive, especially when tracking control flow:
+
+```rust
+_grades
+  .entry(grade)
+  .and_modify(|v| v.push(s))
+  .or_insert(vec![String::from(student)]);
+```
+
+While the iterators described above execute each function top to bottom, this jumps around depending on if the key was present. Interestingly, the [Rust book](https://rust-book.cs.brown.edu/ch08-03-hash-maps.html#creating-a-new-hash-map) mentions:
+
+> Of our three common collections, [HashMap] is the least often used
+
+I wonder if that would be different with a better API here. I was still plenty productive in Rust, but this felt like an unnecessary sore spot.
+
+### The compiler made me care about dumb things
+
+When writing in most languages, once I've figured out how a function should be implemented, I write it out and it mostly works. With Rust, I'd write the function body and then I'd start hacking away at minor compiler errors until it was satisfied. These weren't logical issues, but nits that I didn't care about (like having the [wrong number type](#i-always-had-the-wrong-type)). It was annoying having to convince the compiler to build code I already knew would work.
+
+Now I get it- being really specific about everything is Rust's secret sauce for its extreme speed. But part of what I want a compiler to do is sweat the small things for me. Rust felt like it kept needing to bother me about little things. I'm sure this would get better if I was even more fluent, but it was a constant source of mental drain while I was writing code. With such a fun language otherwise, these little papercuts really stood out.
+
+In the end, you're forced to accept a sort of Faustian bargain: your code will be sort of laborious to write, but but stable and fast for the rest of its life. You might have to structure things in unintuitive ways and will have to constantly convert between really similar string types. But it'll go vroom when you're done!
+
+## So where does that leave us?
+
+Rust, like all languages, is just a tool. It won't always be the right tool for the job, but knowing how and when to reach for it is powerful. A keen understanding of [how good](https://evanhahn.com/how-i-build-software-quickly/#how-good-should-this-be) a project should be will help determine if the higher up-front cost of using Rust makes sense.
+
+Despite my gripes above, there's a lot to like about Rust. It's got great tooling, good ergonomics, and a modern approach to language design that, for the most part, makes it fun to write. That writing process may be slow, and there's a lot you have to keep straight in your head to appease the compiler. But get everything working and you're rewarded with extreme performance and memory safety. Depending on your use case, this is a worthwhile tradeoff.
+
+As for my future with Rust, I expect I'll see it again. It seems especially well suited to certain project types I tend to gravitate towards, like CLIs. And at this point, Rust is hard to ignore in the my chosen field of [developer tooling](https://docs.stripe.com/sdks#server-side-libraries). If the [recent](https://oxc.rs/) [trend](https://devblogs.microsoft.com/typescript/typescript-native-port/) of [writing](https://biomejs.dev/) [tools](https://mise.jdx.dev/) [in](https://swc.rs/) [faster](https://astral.sh/ruff) [languages](https://github.com/pydantic/pydantic-core) continues, being productive in those languages will be valuable. I'm glad I've already put the time in to learn enough Rust to be dangerous and am looking forward to the next time this particular skill is called for!
