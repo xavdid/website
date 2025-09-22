@@ -70,7 +70,6 @@
     "clean": "gatsby clean",
     "lint": "eslint src posts",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "post": "./bin/new-post",
     "resume": "resumed static/resume.json -o static/resume/index.html"
   },
   "repository": {
