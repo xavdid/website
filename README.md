@@ -1,71 +1,62 @@
-- [Notes](#notes)
-- [Media Posts](#media-posts)
+# Astro Starter Kit: Blog
 
-This site is built with [gatsby](https://www.gatsbyjs.org/)!
-
-## Notes
-
-An unorganized list to help me keep this organized
-
-- Everything in `src/posts` is built into a page automatically, nothing extra needed
-- All the blog posts are made into pages by `js` code in `gatsby-node.js`
-- `.md(x)` files in the `pages` folder can have optional frontmatter that's available to `MdxPageLayout` via `props.pageContext.frontmatter`.
-- `.md(x)` files can supply a `title` in frontmatter, or just use a `#` tag at the top of the page. If you want a subtitle, you need to supply both the `title` and `subtitle` in frontmatter.
-- For the `SEO` component, later versions of it will be merged into the root value. `title` and `XYZ` are picked up automatically if in frontmatter or you can drop an actual component in the file.
-- ~~the gatsby version is pinned to `2.22.20` to get around [this](https://github.com/carbon-design-system/gatsby-theme-carbon/issues/873)~~
-- ~~the gatsby version is pinned to `~3.6` because of [a bug](https://github.com/gatsbyjs/gatsby/issues/31878) with inline SVGs~~
-- ~~the gatsby version is pinned to `4.7.2` because of [a bug](https://github.com/gatsbyjs/gatsby/issues/35055) preventing builds on netlify~~
-- there's really only styles for h1-h4, so don't use h5 and down
-- anything that would have dropped in as a cdn tag and included should go in `gatsby-browser`
-- some lines in markdown have `<!-- prettier-ignore -->` because prettier is adding a `\` before regular `$`.
-- adding `draft: true` to a post's frontmatter hides it from the list and stops the page from being built. It's still accessible locally by exact url.
-- here's a handy bash script that downloads remote images, puts them in `./images`, and copies the filename for pasting:
-
-```bash
-function imgsav () {
-  curl -s $(pbpaste) > "./images/$1"; printf "./images/$1" | pbcopy;
-}
+```sh
+npm create astro@latest -- --template blog
 ```
 
-- You can insert a markdown img after the above function with the `;img` snippet
-- the favicon was generated at [this link](https://favicon.io/favicon-generator/?t=DB&ff=Covered+By+Your+Grace&fs=110&fc=%23FFCB05&b=rounded&bc=%2300274C)
-- the `og_img` is from [this site](https://logohub.io/#) using the same settings as the favicon:
-  - font: `Covered by your Grace`
-  - Michigan colors
-- Meramid works out of the box, but I've also been able to embed SVGs from github pages like this: `<img class="svg" src="https://gist.githubusercontent.com/xavdid/9691c907a61ee538f39d3a33c1f4bd3c/raw/c726af6a29f60e647bee16e33ec49ec5ea695440/start.svg?sanitize=true" />`
-- everything in the `static` is served from the root of the site (without any prefix)
-- the transparent SVGs came from https://www.transparenttextures.com/
+> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
 
-## Media Posts
+Features:
 
-- Movie/tv backdrops are on TMDB
-- book covers are at `https://books.google.com/books/content/images/frontcover/<GBID>?fife=w400-h400`
-- game headers are straight from Steam (or IGDB for non-steam games)
-- `yarn doctoc path/to/folder` will regenerate the TOC, along with the `;toc` snippet.
-  - for the media post, use `yarn doctoc posts/favorite-media-2021 --maxlevel 2` to get only the headers
-- the 2022 header was made on design.ai and used `Bebas Neue` for the big font and `Bungee` for the smaller font.
-- Here's a rough checklist to get everything published:
-  1. Write outline
-  2. Talk to Karen about image- start it early!
-  3. Flesh each section out. Don't focus on mechanics! Talk about what made a thing special
-  4. Add placeholders for availability, images, and trailers
-  5. Copy into google doc
-  6. Edit
-  7. Paste back to drafts to replace footnotes
-  8. Export for site
-  9. Add images
-  10. Link to as official of a page as possible for everything. Book publishers have one. Most games do too
-  11. In airtable, add award levels and anchors
-  12. Add url of post to award years. Once that's done, the next site build will show award emoji
-  13. Create Steam list with winning games. It'll be public by default, so do this at the end. Link it in post.
-  14. Push both sites. You're live!
+- ✅ Minimal styling (make it your own!)
+- ✅ 100/100 Lighthouse performance
+- ✅ SEO-friendly with canonical URLs and OpenGraph data
+- ✅ Sitemap support
+- ✅ RSS Feed support
+- ✅ Markdown & MDX support
 
-## MDX
+## 🚀 Project Structure
 
-Markdown, but with react components.
+Inside of your Astro project, you'll see the following folders and files:
 
-### Adding a new custom component:
+```text
+├── public/
+├── src/
+│   ├── components/
+│   ├── content/
+│   ├── layouts/
+│   └── pages/
+├── astro.config.mjs
+├── README.md
+├── package.json
+└── tsconfig.json
+```
 
-1. Add a folder in `components` with `index.js` and `component-name.scss`
-2. Add the component to `MdxComponentLayout`
-3. Add the name to the eslint config, so it doesn't yell in the linter
+Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+
+There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+
+The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+
+Any static assets, like images, can be placed in the `public/` directory.
+
+## 🧞 Commands
+
+All commands are run from the root of the project, from a terminal:
+
+| Command                   | Action                                           |
+| :------------------------ | :----------------------------------------------- |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
+| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm run astro -- --help` | Get help using the Astro CLI                     |
+
+## 👀 Want to learn more?
+
+Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## Credit
+
+This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).

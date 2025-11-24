@@ -1,0 +1,178 @@
+---
+date: "2024-10-19"
+title: "A Guide to CA's Props and San Mateo's Measure T"
+fact: "Ray Bradbury's Fahrenheit 451 is published"
+fact_year: 1953
+tags: [politics]
+og_desc: "A quick overview of what's on California's ballot in November 2024"
+---
+
+The 2024 election is fast approaching and once again, there's a lot to vote on. Most of your choices will have a `(D)` or an `(R)` next to them and nothing I say here will change your mind.
+
+But California's props are a little less partisan and harder to navigate. Most of them sound reasonable on the surface, but they're basically written to be confusing. I've always found voter guides to be a useful way to navigate elections, so I've taken the time to read about each prop and summarize them for you.
+
+Each prop below is marked with a ✅ or ❌ based on whether or not I'll be voting for or against them. Let's dive in!
+
+<details>
+<summary>Table of Contents</summary>
+
+- [Propositions](#propositions)
+  - [✅ Prop 2](#-prop-2)
+  - [✅ Prop 3](#-prop-3)
+  - [✅ Prop 4](#-prop-4)
+  - [✅ Prop 5](#-prop-5)
+  - [✅ Prop 6](#-prop-6)
+  - [✅ Prop 32](#-prop-32)
+  - [❌ Prop 33](#-prop-33)
+  - [❌ Prop 34](#-prop-34)
+  - [❌? Prop 35](#-prop-35)
+  - [❌ Prop 36](#-prop-36)
+- [✅ San Mateo's Measure T](#-san-mateos-measure-t)
+
+</details>
+
+## Propositions
+
+California's props allow a simple majority of voters (50% + 1) to put language directly into the CA constitution. It takes power out of the hands of elected legislators, which can be good or bad depending on what you think of them. Because they're (relatively) easy to add and hard to remove, my general rule is "vote no unless you have a compelling reason otherwise".
+
+### ✅ Prop 2
+
+Prop 2 provides money to schools for facility repairs. Because of 1978's infamous [Prop 13](https://en.wikipedia.org/wiki/1978_California_Proposition_13), tax bases that fund schools haven't kept up the way they should. The bond from this prop would provide money to schools with a portion of it especially earmarked for those in rural areas.
+
+Broadly I think education is always worth spending on. There's also state-level bipartisan support on this on, so it gets the thumbs up from me.
+
+➡️ [read more on Cal Matters](https://calmatters.org/california-voter-guide-2024/propositions/prop-2-school-bond/)
+
+### ✅ Prop 3
+
+Prop 3 reaffirms the sanctity of same-sex marriage in the state constitution. It's mostly a non-issue except that 2008's [Prop 8](https://en.wikipedia.org/wiki/2008_California_Proposition_8), which only recognized marriage between and man and a woman, is still on the books. Though it was [invalidated](https://en.wikipedia.org/wiki/Hollingsworth_v._Perry) by the Supreme Court in 2013, the language is still present. With the current state of the court, there's concern that if they weaken federal protections of same-sex marriage, state laws could come back into effect. Therefore, proponents want to get this language stricken once and for all.
+
+As you can imagine, this one is an obvious yes.
+
+➡️ [read more on Cal Matters](https://calmatters.org/california-voter-guide-2024/propositions/prop-3-same-sex-marriage/)
+
+### ✅ Prop 4
+
+Prop 4 is another bond (like [Prop 2](#-prop-2) above) earmarked specifically for climate-change related spending. Nearly $2B of it goes to drinking water improvements and overall, it prioritizes vulnerable communities. There are also provisions for wildfire protections, all of which are good uses of money, especially in our state.
+
+As with all spending-related props, one wonders if this is the best method of budgeting. But, the restricted use of the funds make me hopeful it will be allocated well. There's more of a bipartisan split on this one, so you can follow your heart.
+
+Though I'm mostly against props, I'm a tentative yes on this one.
+
+➡️ [read more on Cal Matters](https://calmatters.org/california-voter-guide-2024/propositions/prop-4-climate-bond/)
+
+### ✅ Prop 5
+
+Prop 5 lowers the percentage of votes needed for a city to borrow money, from 66% down to 55%. Local borrowing measures have been notoriously hard to pass because of the high voter requirement. Fiscal conservatives argue this is a good thing, requiring strong local support before saddling residents with 30-40 years of debt. But, these high requirements also mean key local funding doesn't usually happen, which hurts everyone. 55% of voters still seems like plenty high of a bar to me. Lowering this particular bar prevents a vocal minority from overruling their neighbors, which I'm generally on board with.
+
+CalMatters also mentions in one of their blurbs that:
+
+> Critics also call this measure just the latest attempt by Democratic lawmakers to undo the taxpayer protections that California voters embedded into the state constitution with Proposition 13.
+
+Which, as a homeowner, heck yeah; I'm sold.
+
+➡️ [read more on Cal Matters](https://calmatters.org/california-voter-guide-2024/propositions/prop-5-vote-threshold/)
+
+### ✅ Prop 6
+
+Prop 6 outlaws forced labor in state prisons. Inmates will still be able to engage in voluntary work assignments and get paid in cash (though still under minimum wage) or time off their sentence.
+
+You might think "forced prison labor sounds a lot like slavery, isn't that illegal?". If so, you also might be surprised to learn that the [13th amendment](https://en.wikipedia.org/wiki/Thirteenth_Amendment_to_the_United_States_Constitution), ratified in 1865, _specifically allows_ slavery as "a punishment for crime". For the extra curious, 13th is a stellar documentary and is available in its entirety for [free on YouTube](https://www.youtube.com/watch?v=krfcq5pF8u8).
+
+Even with this prop, prison labor is a dicey subject. Inmates get paid far less than minimum wage to do menial and/or dangerous jobs. This doesn't solve all of those problems, but it's a step in the right direction.
+
+Another easy yes from me.
+
+➡️ [read more on Cal Matters](https://calmatters.org/california-voter-guide-2024/propositions/prop-6-involuntary-servitude/)
+
+### ✅ Prop 32
+
+This is a pretty cut-and-dry minimum wage hike, up to $18 / hour (up from $16). More interestingly, it'll peg to the minimum wage to inflation starting in 2027, which feels like a welcome change.
+
+California's an expensive place to live and making sure that everyone, regardless of job, has enough to support themselves is on all of us. Critics say it will raise costs in restaurants and hurt small businesses. But if they can only get by now by underpaying their employees, then maybe they shouldn't be in business.
+
+Anyway, I'm a yes here as well.
+
+➡️ [read more on Cal Matters](https://calmatters.org/california-voter-guide-2024/propositions/prop-32-minimum-wage/)
+
+### ❌ Prop 33
+
+All right, now we're getting into the spicy ones!
+
+As of today, the [Costa–Hawkins Act](<https://en.wikipedia.org/wiki/Costa%E2%80%93Hawkins_Rental_Housing_Act#Studies_on_effects_of_California_Rent_Control_(not_limited_to_Costa-Hawkins)>) of 1995 prohibits cities adding rent control to single-family homes, condos, and anything built in the past 15 years. Prop 33 would remove those restrictions, allowing cities to pass rent control on any buildings.
+
+Rent control itself is fairly divisive. It's a great tool for keeping people housed over long periods of time, which directly prevents homelessness. But strict rent controls (especially on new construction) disincentives building by limiting financial return. Without new housing being built, housing supply won't increase and prices won't ever come down. Luckily, rent control isn't the only way to control housing costs. In 2019, the state passed [AB1482](https://caanet.org/topics/ab-1482/) which limits rent increases to 5% year-over-year and some cities (like SF) have imposed even more stringent restrictions.
+
+Support for this prop is very split. It's the brainchild of millionaire [Michael Weinstein](https://www.aidshealth.org/about/leadership/michael-weinstein/), president of the AIDS Healthcare Foundation, who has been trying to get it passed for years. It's also supported by a number of vocational associations and tenants rights groups who are seeking relief from high rent costs.
+
+On the other side you've got exactly who you'd expect to oppose this: rental housing associations, corporate landlords, and the CA Republican party. **But**, joining them in opposition are [every](https://www.sfchronicle.com/opinion/editorials/article/prop-33-rent-control-19745456.php) [major](https://www.mercurynews.com/2024/08/02/editorial-voters-should-reject-rent-control-and-revenge-of-the-landlords/) [newspaper](https://www.sacbee.com/opinion/election-endorsements/article292204700.html) in the [state](https://www.latimes.com/opinion/story/2024-10-11/no-on-proposition-33-rent-control-housing-shortage-worse) and both of [CA YIMBY](https://cayimby.org/blog/ahf-rent-control-measure-analysis/) and [Peninsula For Everyone](https://peninsulaforeveryone.org/endorsements/2024-general-election/#No%20on%20Prop%2033-2). Their argument is that by imposing strict rent controls on all new construction, anti-development cities will curtail _all_ new building by making it economically unfeasible. If you think that "build more" is the way out of the housing crisis, then passage of this prop will be in direct opposition to that goal.
+
+On the one hand, we can all agree that the [rent is too damn high](https://en.wikipedia.org/wiki/Rent_Is_Too_Damn_High_Party). On the other, Prop 33 does more harm than good (despite what it says on the tin). Given that, (and the opposition by key YIMBY groups) I'm against it.
+
+➡️ [read more on Cal Matters](https://calmatters.org/california-voter-guide-2024/propositions/prop-33-rent-control/)
+
+### ❌ Prop 34
+
+Prop 34 requires healthcare providers to use money from selling federally-discounted drugs on patient care. Seems reasonable enough on paper.
+
+But, the prop only applies to healthcare providers who spend more than $100M on non-care expenses _and_ who operate apartment buildings that have accumulated more than 500 health violations this decade.
+
+If that sounds oddly specific, it's because this law is designed to apply to exactly 1 organization: The AIDS Healthcare Foundation. It's funded by the California Apartment Association in direct retaliation for Weinstein's support of [Prop 33](#-prop-33).
+
+Even if this _is_ a rule that should be passed, this vindictive proposition isn't the way. NEXT!
+
+➡️ [read more on Cal Matters](https://calmatters.org/california-voter-guide-2024/propositions/prop-34-patient-spending/)
+
+### ❌? Prop 35
+
+The state runs Medi-Cal, its insurance plan for low-income residents. It's funded in part by money out of the state budget and the rest from a tax levied on private healthcare plans. That tax is set to expire at the end of 2026. Prop 35 makes the tax permanent.
+
+This is a tricky one. Because the amount that Medi-Cal pays to medical professionals has stayed static for so long, many healthcare services don't accept Medi-Cal patients unless they have to. By using money from this tax to increase those payments, the state can ensure everyone gets the care they need. On the other hand, dictating the state allocates its tax revenue limits the way legislators can respond to changing needs over time.
+
+If it doesn't pass, then Medi-Cal will rely more on discretionary spending from the state. While this is plentiful in good years, it's slim during the bad years, causing the whole system to suffer. By earmarking the money for healthcare specifically, the prop should provide a more stable flow of funds.
+
+The prop has bipartisan support, as well as funding from a number of large medical organizations (Planned Parenthood Affiliates of California, California Hospital Association, California Dental Association, etc). Newsom himself opposes the bill (citing more limited ability to balance future budgets) along with many of the major state newspapers.
+
+If you're interested in reading more, [CalMatters](https://calmatters.org/health/2024/07/medi-cal-mco-tax-initiative/) and the [SF Chronicle](https://www.sfchronicle.com/opinion/editorials/article/endorsement-california-proposition-35-medical-19758410.php) both have good, more detailed explanations of the prop.
+
+I'm on the fence for Prop 35 and am currently leaning "no" (a good default for confusing props). But there aren't clear answers here, so follow your heart.
+
+➡️ [read more on Cal Matters](https://calmatters.org/california-voter-guide-2024/propositions/prop-35-health-care-tax/)
+
+### ❌ Prop 36
+
+Prop 36 is a classic "tough on crime" prop. It makes some current misdemeanors, like theft and drug use, back into felonies (undoing part of 2014's [Prop 47](<https://ballotpedia.org/California_Proposition_47,_Reduced_Penalties_for_Some_Crimes_Initiative_(2014)>)). It was created in direct response to a reported increase in retail theft and homelessness over the past 10 years.
+
+It's supported by exactly who you'd expect - the CA Republican party, District Attorneys, and Walmart, among others. On the other side are state Dems, the ACLU, and the Alliance for Safety and Justice.
+
+For me, it's all about whether harsher punishments prevent crime; time and again they've been shown not to. Bills like this only increase the suffering of everyone involved without providing any measurable benefit. Prop 36 will do more harm than good.
+
+As an opponent of the prison industrial system, I'm a solid no on this one.
+
+➡️ [read more on Cal Matters](https://calmatters.org/california-voter-guide-2024/propositions/prop-36-crime-penalties/)
+
+## ✅ San Mateo's Measure T
+
+Lastly, if you're also San Mateo resident, you'll have the chance to vote on [Measure T](https://www.cityofsanmateo.org/4804/November-2024-Ballot-Measure). There's a lot of [literal fearmongering](https://mastodon.social/@xavdid/113326801600896857) about what this measure means for our city, so let's break it down.
+
+In 2020, the voters of San Mateo passed Measure Y, limiting the height and density of residential buildings within the city limits. It passed by an narrow margin: with 45,000 votes cast, Y was passed by [just 42 votes](<https://ballotpedia.org/San_Mateo,_California,_Measure_Y,_Building_Regulations_General_Plan_Amendment_(November_2020)>).
+
+Measure T allows the city to raise these limits in 10 key areas, mostly concentrated downtown and along El Camino. The full text of the measure is as follows:
+
+> Shall the measure to allow for additional affordable housing for low-and middle-income residents and meet State housing requirements (without raising taxes) while enhancing parks and open space, allowing existing residential neighborhoods to stay low density, and reducing traffic impacts, while allowing future housing to be concentrated primarily downtown along the El Camino corridor and near Caltrain stations where it is close to transit, jobs, infrastructure, and services be adopted?
+
+San Mateo is an extremely expensive place to live and allowing the city to build denser housing, especially along transit corridors, is to the benefit of us all. More housing supply will help reduce costs.
+
+Ultimately, people will move to San Mateo whether or not we pass this measure. But, allowing the city to grow to properly accommodate them is in our best interests. Without this, an influx of new residents will just strain the city's housing supply more than it does.
+
+Opponents of this measure insist it will ruin the city and send taxes sky high, neither of which are close to true. Like the text of the measure says, there are _no_ tax implications in Measure T. In fact, if we can develop housing in accordance with the city's [general plan](https://www.cityofsanmateo.org/1537/General-Plan), an increased housing supply may even reduce taxes in the long run if we can flatten out property values.
+
+And, let the record show - I own a home in one of these increased-density zones. I'm not just for it because it'll be in someone else's backyard. I'm for it because I want to see San Mateo grown in a healthy and sustainable way.
+
+So remember: ✅ **Yes on T**!
+
+For more information:
+
+- https://www.greenbelt.org/blog/yes-measure-t-san-mateo/
+- https://www.sensiblesanmateo.com/
+- https://sfstandard.com/2024/05/28/san-mateo-housing-element-meets-yimby-challenge/
