@@ -1,5 +1,6 @@
 ---
 seo_title: Home
+layout: "../components/layouts/BaseLayout/index.astro"
 ---
 
 # Welcome to my corner of the World Wide Web

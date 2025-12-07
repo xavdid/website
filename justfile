@@ -3,7 +3,7 @@ _default:
 
 # run the dev server
 @dev:
-	yarn dev
+	npx astro dev
 
 # create a new blog post
 post:
