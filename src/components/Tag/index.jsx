@@ -1,7 +1,5 @@
-import { Link } from "gatsby";
-import React from "react";
-
-import { slugify } from "../../misc/utils";
+import slugify from "@sindresorhus/slugify";
+import Link from "../Link/index.astro";
 
 import "./tag.scss";
 

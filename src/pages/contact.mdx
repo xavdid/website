@@ -1,7 +1,12 @@
 ---
 title: Drop Me a Line
 seo_title: Contact
+layout: "../components/layouts/BaseLayout/index.astro"
 ---
+
+{/* could make this generic and not have to redo it for every page but it's fine for now */}
+import Link from "../components/Link/index.astro";
+export const components = { a: Link };
 
 import AroundTheWeb from "../components/around-the-web";
 
@@ -9,6 +14,6 @@ The best way to reach me is via **email**: [hello@xavd.id](mailto:hello@xavd.id)
 
 Otherwise, I'm active(ish) on Mastodon as [@xavdid@mastodon.social](https://mastodon.social/@xavdid) and Bluesky as [@xavd.id](https://bsky.app/profile/xavd.id) so drop me a line!
 
-## Around The Web
+{/* ## Around The Web */}
 
-<AroundTheWeb />
+{/* <AroundTheWeb /> */}

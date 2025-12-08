@@ -1,5 +1,3 @@
-import React from "react";
-
 import {
   faBluesky,
   faGithub,
@@ -20,7 +18,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Link from "../components/Link";
+import Link from "../components/Link/index.astro";
 
 // this has a lot of colors: https://simpleicons.org/
 const links = [
@@ -173,6 +171,7 @@ const ListOfLinks = ({ list }) => {
             <span style={{ paddingRight: "5px" }}>{icon}</span>
           ) : (
             <FontAwesomeIcon
+              class="asdf"
               icon={icon}
               color={color}
               style={{ paddingRight: "5px" }}

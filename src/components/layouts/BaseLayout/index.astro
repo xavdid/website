@@ -2,12 +2,9 @@
 import LeftBorder from "../../LeftBorder/index.astro";
 import Navbar from "../../Navbar/index.astro";
 
-type Props = {
-  title: string;
-  subtitle?: string;
-};
-
-const { title, subtitle } = Astro.props;
+const {
+  frontmatter: { title, subtitle },
+} = Astro.props;
 ---
 
 <!doctype html>
