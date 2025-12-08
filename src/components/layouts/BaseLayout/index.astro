@@ -2,18 +2,71 @@
 import LeftBorder from "../../LeftBorder/index.astro";
 import Navbar from "../../Navbar/index.astro";
 
-import "./base.scss";
+type Props = {
+  title: string;
+  subtitle?: string;
+};
+
+const { title, subtitle } = Astro.props;
 ---
 
-<Navbar />
-<LeftBorder />
-<div
-  style={{
-    margin: `0 auto`,
-    // see https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/
-    maxWidth: `80ch`,
-    padding: `0 1.0875rem 1.45rem`,
-  }}
->
-  <main><slot /></main>
-</div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- generated from https://realfavicongenerator.net/ -->
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#603cba" />
+    <meta name="theme-color" content="#00274c" /> -->
+    <!-- end generated -->
+    <link rel="me" href="https://mastodon.social/@xavdid" />
+    <meta name="fediverse:creator" content="@xavdid@mastodon.social" />
+    <!-- TODO: advertise the feeds -->
+    <!-- {
+      feedTypes.map((type) => (
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title={`david.reviews: ${type}`}
+          href={`/feeds/${type}.xml`}
+        />
+      ))
+    } -->
+
+    <meta name="generator" content={Astro.generator} />
+    <!-- <meta name="revision" content={getGitSha()} /> -->
+    <script
+      is:inline
+      data-goatcounter="https://xavdid.goatcounter.com/count"
+      async
+      src="https://gc.zgo.at/count.js"></script>
+
+    <style lang="scss" is:global>
+      @use "./base.scss";
+    </style>
+
+    <!-- <SEO {...groupedSeo} /> -->
+  </head>
+  <body>
+    <Navbar />
+    <LeftBorder />
+    <main
+      style={{
+        margin: `0 auto`,
+        // see https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/
+        maxWidth: `80ch`,
+        padding: `0 1.0875rem 1.45rem`,
+      }}
+    >
+      {title && <h1 style={{ marginLeft: 0 }}>{title}</h1>}
+      <slot />
+    </main>
+  </body>
+</html>

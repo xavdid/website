@@ -1,7 +1,12 @@
 ---
 title: Projects
 subtitle: Big and Small
+layout: "../components/layouts/BaseLayout/index.astro"
 ---
+
+import Link from "../components/Link/index.astro";
+// could make this generic and not have to redo it for every page but it's fine for now
+export const components = { a: Link };
 
 I've spent a lot of time over the years writing on code. Sometimes for money, other times for fun. Some projects get formal releases and versions, many more don't.
 
@@ -16,7 +21,7 @@ I've spent a lot of time over the years writing on code. Sometimes for money, ot
 - [epub-wordcount](https://github.com/xavdid/epub-wordcount), a CLI tool for easily estimating the words in an `epub` file.
 - [Seymour](https://github.com/xavdid/seymour), a custom feed reader for Slack.
 - [Drafts JS Editor](https://davidbrownman.com/drafts), a web editor for writing [Drafts](https://getdrafts.com/) workflows while taking advantage of Typescript auto-complete. This project, and subsequent collaboration with Drafts' creator [Greg Pierce](https://twitter.com/agiletortoise), led to a new [scripting documentation site](https://scripting.getdrafts.com/).
-- [This Website](https://github.com/xavdid/xavdid.github.io/)! It's the third major version of my personal site, this time using React.js and Gatsby. <!-- I wrote more about the latest version here -->
+- [This Website](https://github.com/xavdid/xavdid.github.io/)! It's the third major version of my personal site, this time using React.js and Gatsby.
 
 ### Via a Job
 
@@ -35,7 +40,7 @@ These projects aren't available publicly, so you'll just have to take my word fo
 
 ## B-Sides
 
-<!-- - [Kerfuffle](https://kerfuffle.herokuapp.com/), a custom web UI to help me randomly pick a show/book/movie. It's gone through a few major iterations and technology changes. Version 1 used Angular 1! -->
+{/* [Kerfuffle](https://kerfuffle.herokuapp.com/), a custom web UI to help me randomly pick a show/book/movie. It's gone through a few major iterations and technology changes. Version 1 used Angular 1! */}
 
 - [Will it Play?](https://github.com/xavdid/will-it-play), a CLI tool for checking if a video file is likely to play on a PS4 (and PS5).
 - [JSON Requests](https://github.com/xavdid/json-requests), an extremely barebones HTTP request library for Typescript.
@@ -46,7 +51,7 @@ These projects aren't available publicly, so you'll just have to take my word fo
 - [Monkey TS](https://github.com/xavdid/monkey-ts), an implementation of the Monkey programming language written in Typescript. See also: _[Writing an Interpreter in Go](https://interpreterbook.com/)_.
 - [Publists](https://github.com/xavdid/publists), a project I wrote during my 2016 funemployment to easily share [Wunderlists](https://www.wunderlist.com/) (RIP) publicly.
 - [Pitch Awesome](https://github.com/xavdid/pitch_awesome) was my one and only iOS app based on an idea given to me by my (then) girlfriend. It was a simple pitch pipe that could store a set of opening notes for songs. It's still on my phone to this day!
-<!-- - [Stack Pro](https://stackpro.herokuapp.com/), a little webapp I wrote as part of a job app for a now-defunct contracting outfit. Notable because as of time of writing, I believe this holds the record for longest-running code without modification. It's not complex, but it's been operating flawlessly since 2015. -->
+  {/* - [Stack Pro](https://stackpro.herokuapp.com/), a little webapp I wrote as part of a job app for a now-defunct contracting outfit. Notable because as of time of writing, I believe this holds the record for longest-running code without modification. It's not complex, but it's been operating flawlessly since 2015. */}
 - [Monopoly Tracker](https://davidbrownman.com/monopoly/), a static site that lets users track which Safeway Monopoly tickets they've picked up. Spoiler: you never win.
 - [Band Groups](https://github.com/xavdid/bgroups), a simple static page I wrote for a friend to easily sort a large list of students into groups.
 - [Dead Simple](https://github.com/xavdid/dead_simple), a proof of concept for a totally ephemeral, anonymous chat with web sockets.
@@ -88,6 +93,6 @@ There's an exhaustive list of my contributions using [this GitHub search](https:
 - VSCode issue that caused big slowdowns in the integrated terminal when there are a lot of escape characters in output ([microsoft/vscode#24795](https://github.com/microsoft/vscode/issues/24795))
 - Filed an issue about `require`-ing real files within a mocked filesystem, which was fixed, broken, and then finally fixed again ([tschaub/mock-fs#130](https://github.com/tschaub/mock-fs/issues/130))
 
-<!-- ## Non Technical -->
+{/* ## Non Technical */}
 
-<!-- If I want to bother with either a json resume or those cool components I liked, it could go here. -->
+{/* If I want to bother with either a json resume or those cool components I liked, it could go here. */}

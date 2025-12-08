@@ -8,9 +8,10 @@ import "./link.scss";
 type Props = {
   href: string;
   className?: string;
+  active?: boolean;
 };
 
-const { href, className } = Astro.props;
+const { href, className = "body-link", active } = Astro.props;
 
 // onClick={() => {
 //     // log the event manually, but don't preventDefault()
@@ -23,6 +24,12 @@ const { href, className } = Astro.props;
 // probably should just copy review's omnilink
 ---
 
-<a class={className} target="_blank" rel="noreferrer" href={href}>
-  <slot />
-</a>
+<a
+  class:list={[className, active && "active"]}
+  href={href}
+  {...href.startsWith("/")
+    ? {}
+    : {
+        target: "_blank",
+      }}><slot /></a
+>

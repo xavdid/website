@@ -1,0 +1,64 @@
+---
+// this is used for non-blog pages? md pages use this as a layout and we can render the content
+
+// ordering of these imports is very important
+// if they're out of order, then the CSS loader
+// gets confused and I get tons of hard-to-fix warnings
+
+import PageHeader from "../page-header";
+import Seo from "../seo";
+
+import AirtableLinkAndReturn from "../AirtableLinkAndReturn";
+import BlockquoteTitle from "../BlockquoteTitle";
+import InlineCode from "../InlineCode";
+import Link from "../Link/index.astro";
+import MediaYearLink from "../MediaYearLink";
+import Spoiler from "../Spoiler";
+import ViewFullSize from "../ViewFullSize";
+import YoutubeEmbed from "../YoutubeEmbed";
+
+import BaseLayout from "./BaseLayout/index.astro";
+// export default ({
+//   pageContext: { frontmatter = {} } = {},
+//   children,
+//   noTitle,
+//   path,
+// }) => (
+
+const { compiledContent } = Astro.props;
+const Content = await compiledContent();
+console.log(Content);
+---
+
+<BaseLayout>
+  <!-- <Seo title={frontmatter.seo_title || frontmatter.title} path={path} /> -->
+  <!-- {
+    !noTitle && frontmatter.title && (
+      <PageHeader title={frontmatter.title} subtitle={frontmatter.subtitle} />
+    )
+  } -->
+
+  <Content
+    components={{
+      // these will be used in place of the generic
+      // a: Link,
+      // inlineCode: InlineCode,
+      // table: (props) => (
+      //   <div class="table-container">
+      //     <table>{props.children}</table>
+      //   </div>
+      // ),
+      // any other components here can be used in all mdx without imports
+      // also add these in eslintrc
+      // YoutubeEmbed,
+      // BlockquoteTitle,
+      // AirtableLinkAndReturn,
+      // MediaYearLink,
+      // Spoiler,
+      // ViewFullSize,
+      // Link,
+    }}
+  >
+    <!-- <slot /> -->
+  </Content>
+</BaseLayout>
