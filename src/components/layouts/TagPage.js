@@ -1,5 +1,4 @@
 import { graphql } from "gatsby";
-import React from "react";
 
 // Components
 import BlogPostList from "../BlogPostList";

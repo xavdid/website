@@ -1,6 +1,5 @@
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import React from "react";
 
 import {
   faArrowLeft,

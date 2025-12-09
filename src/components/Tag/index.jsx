@@ -7,9 +7,9 @@ import "./tag.scss";
  * nice little rounded link tag
  */
 const Tag = ({ name }) => (
-  <Link className="tag" to={`/blog/tags/${slugify(name)}`}>
+  <a className="tag" href={`/blog/tags/${slugify(name)}`}>
     {name}
-  </Link>
+  </a>
 );
 
 export default Tag;

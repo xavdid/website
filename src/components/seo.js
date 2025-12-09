@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby";
-import React from "react";
+
 import { Helmet } from "react-helmet";
 
 function SEO({ description, meta = {}, title, path }) {
@@ -61,7 +61,7 @@ function SEO({ description, meta = {}, title, path }) {
                 href: pageUrl,
               },
             ]
-          : []
+          : [],
       )}
     />
   );

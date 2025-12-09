@@ -1,5 +1,3 @@
-import React from "react";
-
 import "./inline-code.scss";
 
 export default ({ children }) => (

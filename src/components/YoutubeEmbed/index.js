@@ -1,4 +1,3 @@
-import React from "react";
 import { stringify } from "querystring";
 
 export default ({ youtubeId, params = {} }) => {
@@ -21,7 +20,7 @@ export default ({ youtubeId, params = {} }) => {
           height: "100%",
         }}
         src={`https://www.youtube-nocookie.com/embed/${youtubeId}?${stringify(
-          params
+          params,
         )}`}
         frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

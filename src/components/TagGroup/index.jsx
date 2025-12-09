@@ -1,5 +1,3 @@
-import React from "react";
-
 import { faTag } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -17,7 +15,7 @@ const TagGroup = ({ tags }) =>
         flexWrap: "wrap",
       }}
     >
-      <FontAwesomeIcon id="tag-icon" icon={faTag} />
+      {/* <FontAwesomeIcon id="tag-icon" icon={faTag} /> */}
 
       {tags.map((tag) => (
         <Tag key={tag} name={tag} />

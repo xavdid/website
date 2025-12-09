@@ -1,7 +1,7 @@
 ---
 import { faRssSquare, faTag } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import BlogPostList from "../components/BlogPostList";
+import BlogPostList from "../components/BlogPostList/index.astro";
 import Link from "../components/Link/index.astro";
 import Layout from "../components/layouts/BaseLayout/index.astro";
 import PageHeader from "../components/page-header.jsx";
@@ -42,13 +42,13 @@ import { getCollection, getEntry } from "astro:content";
 const posts = await getCollection("blog");
 ---
 
-<Layout frontmatter={{ title: "asdf" }}>
+<Layout frontmatter={{}}>
   <!-- <Seo title="Blog" path="/blog/" /> -->
   <PageHeader title="Blog" subtitle={`${posts.length} posts and counting.`} />
 
   <p>
     Posts are shown chronologically; you can also view posts{" "}
-    <FontAwesomeIcon icon={faTag} />
+    <FontAwesomeIcon icon={faTag} style={{ height: "1em" }} />
     <Link href="/blog/tags">by tag</Link>. My best or most popular posts are
     marked with a ⭐, so those are good places to start.
   </p>
@@ -56,9 +56,12 @@ const posts = await getCollection("blog");
     If you want to be notified every time I post (like via RSS), head to the{
       " "
     }
-    <FontAwesomeIcon icon={faRssSquare} style={{ color: "orange" }} />{" "}
+    <FontAwesomeIcon
+      icon={faRssSquare}
+      style={{ color: "orange", height: "1em" }}
+    />{" "}
     <Link href="/blog/feeds">feeds page</Link>.
   </p>
 
-  <!-- <BlogPostList posts={data.posts} /> -->
+  <BlogPostList posts={posts} />
 </Layout>
