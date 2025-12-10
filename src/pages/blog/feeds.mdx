@@ -1,6 +1,11 @@
 ---
 title: Blog Feeds
+layout: "../../components/layouts/BaseLayout/index.astro"
 ---
+
+import Link from "../../components/Link/index.astro";
+// could make this generic and not have to redo it for every page but it's fine for now
+export const components = { a: Link };
 
 In case you'd like to be notified every time I post something I write, this site provides the following feed formats:
 
