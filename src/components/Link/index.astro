@@ -27,7 +27,7 @@ const { href, className = "body-link", active } = Astro.props;
 <a
   class:list={[className, active && "active"]}
   href={href}
-  {...href.startsWith("/")
+  {...href.startsWith("/") || href.startsWith("#")
     ? {}
     : {
         target: "_blank",

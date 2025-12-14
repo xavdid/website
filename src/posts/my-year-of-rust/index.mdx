@@ -42,7 +42,7 @@ gives:
 
 ```
 error[E0382]: use of moved value: `s`
-  --> src/main.rs:67:10
+  */} src/main.rs:67:10
    |
 64 |     let s = String::from("Hello, world!");
    |         - move occurs because `s` has type `String`, which does not implement the `Copy` trait
@@ -53,7 +53,7 @@ error[E0382]: use of moved value: `s`
    |          ^ value used here after move
    |
 note: consider changing this parameter type in function `take` to borrow instead if owning the value isn't necessary
-  --> src/main.rs:29:12
+  */} src/main.rs:29:12
    |
 29 | fn take(s: String) {
    |    ----    ^^^^^^ this parameter takes ownership of the value

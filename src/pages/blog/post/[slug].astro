@@ -7,7 +7,7 @@ import AirtableLinkAndReturn from "../../../components/AirtableLinkAndReturn/ind
 import InlineCode from "../../../components/InlineCode/index.astro";
 import Link from "../../../components/Link/index.astro";
 import MDXTable from "../../../components/MDXTable.astro";
-// import MediaYearLink from "../../../components/MediaYearLink/index.jsx";
+import MediaYearLink from "../../../components/MediaYearLink.astro";
 import Spoiler from "../../../components/Spoiler/index.jsx";
 // import ViewFullSize from "../../../components/ViewFullSize/index.jsx";
 import YoutubeEmbed from "../../../components/YoutubeEmbed/index.astro";
@@ -37,8 +37,7 @@ const { Content } = await render(post);
       YoutubeEmbed,
       // BlockquoteTitle,
       AirtableLinkAndReturn,
-      // MediaYearLink,
-      Spoiler,
+      MediaYearLink,
       // ViewFullSize,
       Link,
     }}

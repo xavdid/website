@@ -173,6 +173,12 @@ main {
     @media (prefers-color-scheme: dark) {
       border: 1px solid $tCyan;
     }
+    // make sure images aren't too big
+    max-width: 100%;
+    @include tablet {
+      max-width: 95%;
+    }
+    height: auto;
   }
   figcaption {
     text-align: center;
