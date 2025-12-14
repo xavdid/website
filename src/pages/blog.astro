@@ -7,7 +7,7 @@ import Layout from "../components/layouts/BaseLayout/index.astro";
 import PageHeader from "../components/page-header.jsx";
 import Seo from "../components/seo";
 
-import { getCollection, getEntry } from "astro:content";
+import { getCollection } from "astro:content";
 
 // const data = useStaticQuery(graphql`
 //   {
@@ -40,6 +40,7 @@ import { getCollection, getEntry } from "astro:content";
 // `);
 
 const posts = await getCollection("blog");
+const SVGStyle = { height: "1em", verticalAlign: "-.125em" };
 ---
 
 <Layout frontmatter={{}}>
@@ -48,7 +49,7 @@ const posts = await getCollection("blog");
 
   <p>
     Posts are shown chronologically; you can also view posts{" "}
-    <FontAwesomeIcon icon={faTag} style={{ height: "1em" }} />
+    <FontAwesomeIcon icon={faTag} style={SVGStyle} />
     <Link href="/blog/tags">by tag</Link>. My best or most popular posts are
     marked with a ⭐, so those are good places to start.
   </p>
@@ -58,7 +59,7 @@ const posts = await getCollection("blog");
     }
     <FontAwesomeIcon
       icon={faRssSquare}
-      style={{ color: "orange", height: "1em" }}
+      style={{ color: "orange", ...SVGStyle }}
     />{" "}
     <Link href="/blog/feeds">feeds page</Link>.
   </p>

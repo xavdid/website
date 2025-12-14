@@ -1,6 +1,7 @@
 @import "../vars.scss";
 
-.inline-code {
+// don't apply to code inside code fences
+:not(pre) > .inline-code {
   background-color: #dedede;
   padding: 3px;
   border-radius: 3px;

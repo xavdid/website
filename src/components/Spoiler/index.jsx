@@ -1,6 +1,6 @@
 // adapted from https://github.com/dazulu/react-spoiler-tag
 
-import React, { useState } from "react";
+import { useState } from "react";
 
 import "./spoiler.scss";
 
@@ -11,6 +11,7 @@ const Spoiler = ({ text = "SPOILER", children }) => {
   const [isHidden, setHidden] = useState(true);
 
   const handleClick = (e) => {
+    console.log("swapping?");
     setHidden(!isHidden);
   };
 

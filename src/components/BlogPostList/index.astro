@@ -2,6 +2,7 @@
 import type { CollectionEntry } from "astro:content";
 import Link from "../Link/index.astro";
 import TagGroup from "../TagGroup";
+import { sortableDateValue } from "../../util";
 
 type Props = {
   posts: CollectionEntry<"blog">[];
@@ -9,17 +10,18 @@ type Props = {
 
 const { posts } = Astro.props;
 
-const postsByYear = posts.reduce<Record<string, CollectionEntry<"blog">[]>>(
-  (result, post) => {
+const postsByYear = posts
+  .toSorted(
+    (a, b) => sortableDateValue(b.data.date) - sortableDateValue(a.data.date),
+  )
+  .reduce<Record<string, CollectionEntry<"blog">[]>>((result, post) => {
     const year = post.data.date.slice(0, 4);
 
     return {
       ...result,
       [year]: [...(result[year] || []), post],
     };
-  },
-  {},
-);
+  }, {});
 
 const years = Object.keys(postsByYear).sort((a, b) => b - a);
 
@@ -66,7 +68,7 @@ const leftBlockStyle = {
               {post.data.best_of && (
                 <span style={{ paddingRight: "5px" }}>⭐</span>
               )}
-              <Link href={post.id}>{post.data.title}</Link>
+              <Link href={`/blog/post/${post.id}`}>{post.data.title}</Link>
             </h3>
             <div style={{ display: "flex", paddingTop: "10px" }}>
               <div style={{ ...leftBlockStyle }} />

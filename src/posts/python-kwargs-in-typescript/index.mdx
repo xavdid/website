@@ -23,7 +23,7 @@ const greet = (
   name: string,
   prefix = "Hello",
   ending = ".",
-  extraNames: string[] | undefined = undefined
+  extraNames: string[] | undefined = undefined,
 ) =>
   `${prefix}, ${name}${
     extraNames?.length ? `, ${extraNames.join(", ")}` : ""
@@ -74,7 +74,7 @@ const greet = (
     prefix = "Hello",
     ending = ".",
     extraNames, // implicitly `undefined`
-  }: { prefix?: string; ending?: string; extraNames?: string[] } = {}
+  }: { prefix?: string; ending?: string; extraNames?: string[] } = {},
 ) =>
   `${prefix}, ${name}${
     extraNames?.length ? `, ${extraNames.join(", ")}` : ""
