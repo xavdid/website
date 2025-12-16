@@ -3,13 +3,12 @@ import { getCollection, render } from "astro:content";
 import BaseLayout from "../../../components/layouts/BaseLayout/index.astro";
 
 import AirtableLinkAndReturn from "../../../components/AirtableLinkAndReturn/index.astro";
-// import BlockquoteTitle from "../../../components/BlockquoteTitle/index.jsx";
+import BlockquoteTitle from "../../../components/BlockquoteTitle/index.astro";
 import InlineCode from "../../../components/InlineCode/index.astro";
 import Link from "../../../components/Link/index.astro";
 import MDXTable from "../../../components/MDXTable.astro";
 import MediaYearLink from "../../../components/MediaYearLink.astro";
-import Spoiler from "../../../components/Spoiler/index.jsx";
-// import ViewFullSize from "../../../components/ViewFullSize/index.jsx";
+import ViewFullSize from "../../../components/ViewFullSize/index.astro";
 import YoutubeEmbed from "../../../components/YoutubeEmbed/index.astro";
 
 export async function getStaticPaths() {
@@ -25,21 +24,30 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 ---
 
-<BaseLayout>
-  <Content
-    components={{
-      // these will be used in place of the generic
-      a: Link,
-      code: InlineCode,
-      table: MDXTable,
-      // any other components here can be used in all mdx without imports
-      // also add these in eslintrc
-      YoutubeEmbed,
-      // BlockquoteTitle,
-      AirtableLinkAndReturn,
-      MediaYearLink,
-      // ViewFullSize,
-      Link,
-    }}
-  />
+<BaseLayout
+  pageHeader={{
+    title: post.data.title,
+    date: post.data.date,
+    tags: post.data.tags,
+  }}
+>
+  <article>
+    {"asdf"}
+    <Content
+      components={{
+        // these will be used in place of the generic
+        a: Link,
+        code: InlineCode,
+        table: MDXTable,
+        // any other components here can be used in all mdx without imports
+        // also add these in eslintrc
+        YoutubeEmbed,
+        BlockquoteTitle,
+        AirtableLinkAndReturn,
+        MediaYearLink,
+        ViewFullSize,
+        Link,
+      }}
+    />
+  </article>
 </BaseLayout>

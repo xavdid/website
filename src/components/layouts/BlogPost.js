@@ -48,8 +48,8 @@ const BlogPostTemplate = ({
         {post.frontmatter.tags.includes(technologyAndPlayTag) && (
           <blockquote style={{ fontWeight: "lighter" }}>
             This post was written as an assignment for my{" "}
-            {/* archive link: https://web.archive.org/web/20230814054442/https://lsa.umich.edu/cg/cg_detail.aspx?content=1960COMM408001&termArray=f_13_1960 */}
-            <Link href="https://lsa.umich.edu/cg/cg_detail.aspx?content=1960COMM408001&termArray=f_13_1960">
+            {/* original, needs login: https://lsa.umich.edu/cg/cg_detail.aspx?content=1960COMM408001&termArray=f_13_1960 */}
+            <Link href="https://web.archive.org/web/20230814054442/https://lsa.umich.edu/cg/cg_detail.aspx?content=1960COMM408001&termArray=f_13_1960">
               {technologyAndPlayTag}
             </Link>{" "}
             class in the fall of 2013. It may include citations for texts we

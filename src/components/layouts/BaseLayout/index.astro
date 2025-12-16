@@ -1,8 +1,20 @@
 ---
 import LeftBorder from "../../LeftBorder/index.astro";
 import Navbar from "../../Navbar/index.astro";
+import PageHeader from "../../page-header.astro";
 
-const { frontmatter: { title, subtitle } = {} } = Astro.props;
+type Props = {
+  pageHeader: {
+    title: string;
+    subtitle?: string;
+    tags?: string[];
+    date?: string;
+  };
+};
+
+const {
+  pageHeader: { title, subtitle, tags, date },
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -65,7 +77,7 @@ const { frontmatter: { title, subtitle } = {} } = Astro.props;
         padding: `0 1.0875rem 1.45rem`,
       }}
     >
-      {title && <h1 style={{ marginLeft: 0 }}>{title}</h1>}
+      <PageHeader title={title} subtitle={subtitle} date={date} tags={tags} />
       <slot />
     </main>
   </body>
