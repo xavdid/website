@@ -9,9 +9,13 @@ type Props = {
   href: string;
   className?: string;
   active?: boolean;
+  /**
+   * passed by rehype when styling anchors
+   */
+  isHeading?: true;
 };
 
-const { href, className = "body-link", active } = Astro.props;
+const { href, className = "body-link", active, isHeading } = Astro.props;
 
 // onClick={() => {
 //     // log the event manually, but don't preventDefault()
@@ -20,12 +24,10 @@ const { href, className = "body-link", active } = Astro.props;
 //       event: true,
 //     });
 //   }}
-
-// probably should just copy review's omnilink
 ---
 
 <a
-  class:list={[className, active && "active"]}
+  class:list={[isHeading ? "markdown-header" : className, active && "active"]}
   href={href}
   {...href.startsWith("/") || href.startsWith("#")
     ? {}

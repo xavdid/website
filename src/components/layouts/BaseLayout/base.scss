@@ -44,14 +44,14 @@ main {
     }
     margin: 1.5rem 0 0.25rem 0;
     font-weight: normal;
-    @include mobile-only {
-      // leave space for visible anchor
-      margin-left: $margin-left-for-anchor;
-    }
 
-    a.anchor svg {
-      @include mobile-only {
-        visibility: visible;
+    // make anchor links in blog posts look like normal text
+    a.markdown-header {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover::after {
+        content: " #";
       }
     }
   }
@@ -72,18 +72,6 @@ main {
     font-weight: bold;
     margin: 0;
     font-size: 1.3em;
-    @include mobile-only {
-      // leave space for anchor
-      margin-left: $margin-left-for-anchor;
-    }
-
-    a {
-      line-height: unset;
-      &.anchor.before {
-        // keeps the GH style anchor inline
-        top: $h3-padding-top;
-      }
-    }
   }
 
   h4 {
@@ -161,10 +149,6 @@ main {
     }
   }
 
-  // I pulled this out of the dom, so i'm not sure the classname won't change
-  .gatsby-resp-image-wrapper {
-    margin-bottom: 5px;
-  }
   p:has(> img) {
     text-align: center;
   }
