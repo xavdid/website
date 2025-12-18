@@ -171,61 +171,6 @@ main {
     font-size: smaller;
   }
 
-  .littlefoot-footnote__wrapper {
-    @media (prefers-color-scheme: dark) {
-      background-color: $tBlack;
-
-      &::before {
-        background-image: linear-gradient(
-          to bottom,
-          $tBlack 50%,
-          rgba(250, 250, 250, 0) 100%
-        ) !important;
-      }
-      &::after {
-        background-image: linear-gradient(
-          to top,
-          $tBlack 50%,
-          rgba(250, 250, 250, 0) 100%
-        ) !important;
-      }
-    }
-  }
-
-  // hide the weird little down arrow
-  .littlefoot-footnote.is-scrollable::after {
-    visibility: hidden;
-  }
-
-  .littlefoot-footnote__button {
-    // in firefox specifically, the numbers get centered differently in the bubble
-    // this targets only firefix and centers them a smidge
-    @-moz-document url-prefix() {
-      line-height: 1.2; // center numbers in the circle
-    }
-    &:focus {
-      outline: none;
-    }
-    @media (prefers-color-scheme: dark) {
-      background-color: $tCyan;
-      color: $tBlack;
-      &:hover {
-        color: $tBlack;
-        background-color: $tWhite;
-      }
-    }
-  }
-  .littlefoot-footnote__content {
-    line-height: 1.6;
-    a {
-      // links in footnotes had a margin because of a last-child seletor
-      margin-bottom: 0;
-    }
-    @media (prefers-color-scheme: dark) {
-      background-color: $tBlack;
-    }
-  }
-
   .mermaid > svg {
     width: 100%;
     // might need to adjust this, the 500px works for thunder chart
