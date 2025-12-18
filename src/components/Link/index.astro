@@ -1,8 +1,4 @@
 ---
-// import { Link } from "gatsby";
-// import { useGoatCounter } from "gatsby-plugin-goatcounter";
-//
-
 import "./link.scss";
 
 type Props = {
@@ -13,9 +9,21 @@ type Props = {
    * passed by rehype when styling anchors
    */
   isHeading?: true;
+  // provided by the footnote generator
+  class?: string;
+  "aria-label"?: string;
+  id?: string;
 };
 
-const { href, className = "body-link", active, isHeading } = Astro.props;
+const {
+  href,
+  className = "body-link",
+  active,
+  isHeading,
+  class: generatedClassName,
+  id,
+} = Astro.props;
+const ariaLabel = Astro.props["aria-label"];
 
 // onClick={() => {
 //     // log the event manually, but don't preventDefault()
@@ -27,8 +35,14 @@ const { href, className = "body-link", active, isHeading } = Astro.props;
 ---
 
 <a
-  class:list={[isHeading ? "markdown-header" : className, active && "active"]}
+  class:list={[
+    isHeading ? "markdown-header" : className,
+    active && "active",
+    generatedClassName,
+  ]}
+  id={id}
   href={href}
+  aria-label={ariaLabel}
   {...href.startsWith("/") || href.startsWith("#")
     ? {}
     : {
