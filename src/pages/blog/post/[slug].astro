@@ -1,27 +1,45 @@
 ---
 import { getCollection, render } from "astro:content";
-import BaseLayout from "../../../components/layouts/BaseLayout/index.astro";
+import { ArrowLeft, Rss, Shuffle } from "@lucide/astro";
 
 import AirtableLinkAndReturn from "../../../components/AirtableLinkAndReturn/index.astro";
 import BlockquoteTitle from "../../../components/BlockquoteTitle/index.astro";
 import InlineCode from "../../../components/InlineCode/index.astro";
+import BaseLayout from "../../../components/layouts/BaseLayout/index.astro";
 import Link from "../../../components/Link/index.astro";
 import MDXTable from "../../../components/MDXTable.astro";
 import MediaYearLink from "../../../components/MediaYearLink.astro";
 import ViewFullSize from "../../../components/ViewFullSize/index.astro";
 import YoutubeEmbed from "../../../components/YoutubeEmbed/index.astro";
 
+const technologyAndPlayTag = "Technology and Play";
+
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
+  const numPosts = posts.length;
+
+  // a linear path through all the posts
+  // rebuilt every time the site builds, which is random enough
+  let shuffled = Object.fromEntries(
+    posts
+      .map((value) => ({ value, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(({ value }, idx, shuffledPosts) => [
+        value.id,
+        shuffledPosts[(idx + 1) % numPosts].value.id,
+      ]),
+  );
 
   return posts.map((post) => ({
     params: { slug: post.id },
-    props: { post },
+    props: { post, randomDest: shuffled[post.id] },
   }));
 }
-// 2. For your template, you can get the entry directly from the prop
-const { post } = Astro.props;
+
+const { post, randomDest } = Astro.props;
 const { Content } = await render(post);
+
+const SVGStyle = { height: "1em", width: "1em", verticalAlign: "-0.2em" };
 ---
 
 <BaseLayout
@@ -32,7 +50,19 @@ const { Content } = await render(post);
   }}
 >
   <article>
-    {"asdf"}
+    {
+      post.data.tags.includes(technologyAndPlayTag) && (
+        <blockquote style={{ fontWeight: "lighter" }}>
+          This post was written as an assignment for my{" "}
+          {/* original, needs login: https://lsa.umich.edu/cg/cg_detail.aspx?content=1960COMM408001&termArray=f_13_1960 */}
+          <Link href="https://web.archive.org/web/20230814054442/https://lsa.umich.edu/cg/cg_detail.aspx?content=1960COMM408001&termArray=f_13_1960">
+            {technologyAndPlayTag}
+          </Link>{" "}
+          class in the fall of 2013. It may include citations for texts we were
+          assigned at the time.
+        </blockquote>
+      )
+    }
     <Content
       components={{
         // these will be used in place of the generic
@@ -50,4 +80,40 @@ const { Content } = await render(post);
       }}
     />
   </article>
+
+  <hr />
+
+  <nav
+    style={{
+      display: `flex`,
+      flexWrap: `wrap`,
+      justifyContent: `space-evenly`,
+      listStyle: `none`,
+      padding: 0,
+    }}
+  >
+    <div>
+      <Link href="/blog">
+        <ArrowLeft style={SVGStyle} /> All Posts
+      </Link>
+    </div>
+
+    <div>
+      <Rss
+        style={{
+          ...SVGStyle,
+          border: "1px solid orange",
+          borderRadius: "3px",
+          backgroundColor: "orange",
+        }}
+      />{" "}
+      <Link href="/blog/feeds">Subscribe</Link>
+    </div>
+
+    <div>
+      <Link href={`/blog/post/${randomDest}`}>
+        Random <Shuffle style={SVGStyle} />
+      </Link>
+    </div>
+  </nav>
 </BaseLayout>

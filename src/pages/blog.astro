@@ -2,7 +2,6 @@
 import BlogPostList from "../components/BlogPostList/index.astro";
 import Link from "../components/Link/index.astro";
 import Layout from "../components/layouts/BaseLayout/index.astro";
-import PageHeader from "../components/page-header.jsx";
 import Seo from "../components/seo";
 import { Rss, Tag } from "@lucide/astro";
 
@@ -61,11 +60,10 @@ const SVGStyle = { height: "1em", width: "1em", verticalAlign: "-0.2em" };
     }
     <Rss
       style={{
-        // color: "orange",
+        ...SVGStyle,
         border: "1px solid orange",
         borderRadius: "3px",
         backgroundColor: "orange",
-        ...SVGStyle,
       }}
     />
     <Link href="/blog/feeds">feeds page</Link>.
