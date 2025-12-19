@@ -18,7 +18,9 @@ const postsByYear = posts.reduce<Record<string, CollectionEntry<"blog">[]>>(
   {},
 );
 
-const years = Object.keys(postsByYear).sort((a, b) => b - a);
+const years = Object.keys(postsByYear).sort(
+  (a, b) => parseInt(b) - parseInt(a),
+);
 
 // styles
 const leftBlockStyle = {

@@ -15,6 +15,7 @@ module.exports = {
         BlockquoteTitle: true,
         AirtableLinkAndReturn: true,
         Spoiler: true,
+        Link: true,
         MediaYearLink: true,
       },
     },

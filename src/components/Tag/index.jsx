@@ -1,5 +1,4 @@
 import slugify from "@sindresorhus/slugify";
-import Link from "../Link/index.astro";
 
 import "./tag.scss";
 

@@ -10,8 +10,7 @@ const ariaLabelHideText = "To hide spoiler text again click here.";
 const Spoiler = ({ text = "SPOILER", children }) => {
   const [isHidden, setHidden] = useState(true);
 
-  const handleClick = (e) => {
-    console.log("swapping?");
+  const handleClick = () => {
     setHidden(!isHidden);
   };
 

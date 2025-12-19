@@ -1,7 +1,6 @@
 ---
 import { Rss, Tag } from "@lucide/astro";
 
-import Seo from "../components/seo";
 import BlogPostList from "../components/BlogPostList/index.astro";
 import Link from "../components/Link/index.astro";
 import Layout from "../components/layouts/BaseLayout/index.astro";
@@ -12,13 +11,14 @@ const SVGStyle = { height: "1em", width: "1em", verticalAlign: "-0.2em" };
 ---
 
 <Layout
+  tabTitle="Blog"
+  pageDescription="All posts"
+  seoDescription={`All ${posts.length} that David's written.`}
   pageHeader={{
     title: "Blog",
     subtitle: `${posts.length} posts and counting.`,
   }}
 >
-  {/* <Seo title="Blog" path="/blog/" /> */}
-
   <p>
     Posts are shown chronologically; you can also view posts{" "}
     <Tag style={SVGStyle} /><Link href="/blog/tags">by tag</Link>. My best or

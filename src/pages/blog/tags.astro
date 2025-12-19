@@ -2,12 +2,11 @@
 // import { graphql, useStaticQuery } from "gatsby";
 
 import Link from "../../components/Link/index.astro";
-import PageHeader from "../../components/page-header";
-import Seo from "../../components/seo";
+import PageHeader from "../../components/page-header.astro";
 
 import Layout from "../../components/layouts/BaseLayout/index.astro";
 
-import { getCollection, getEntry } from "astro:content";
+import { getCollection } from "astro:content";
 import slugify from "@sindresorhus/slugify";
 
 const posts = await getCollection("blog");
@@ -29,14 +28,12 @@ const tags = Object.values(
     return b.num - a.num;
   }
 
-  //     // https://stackoverflow.com/questions/8996963/how-to-perform-case-insensitive-sorting-array-of-string-in-javascript#comment38960219_9645447
+  // https://stackoverflow.com/questions/8996963/how-to-perform-case-insensitive-sorting-array-of-string-in-javascript#comment38960219_9645447
   return a.slug.localeCompare(b.slug, "en", { sensitivity: "base" });
 });
 ---
 
-<Layout frontmatter={{}}>
-  {/* <Seo title="Posts by Tag" path="/tags/" /> */}
-
+<Layout pageHeader={{ title: "Tags" }} tabTitle="All Tags">
   <PageHeader title="Tags" />
   <p>I've written on {tags.length} different topics.</p>
 

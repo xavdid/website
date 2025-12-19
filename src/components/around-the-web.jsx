@@ -1,22 +1,22 @@
-import {
-  faBluesky,
-  faGithub,
-  faHackerNews,
-  faImdb,
-  faInstagram,
-  faKeybase,
-  faKickstarter,
-  faLinkedin,
-  faMastodon,
-  faNpm,
-  faPython,
-  faReddit,
-  faStackOverflow,
-  faSteam,
-  // faVine,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faBluesky,
+//   faGithub,
+//   faHackerNews,
+//   faImdb,
+//   faInstagram,
+//   faKeybase,
+//   faKickstarter,
+//   faLinkedin,
+//   faMastodon,
+//   faNpm,
+//   faPython,
+//   faReddit,
+//   faStackOverflow,
+//   faSteam,
+//   // faVine,
+//   faYoutube,
+// } from "@fortawesome/free-brands-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import Link from "../components/Link/index.astro";
 

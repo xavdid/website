@@ -37,3 +37,12 @@ export const getPublishedPosts = async (): Promise<
     .toSorted(
       (a, b) => sortableDateValue(b.data.date) - sortableDateValue(a.data.date),
     );
+
+export type ImageInfo = {
+  url: string;
+  height: number;
+  width: number;
+  // https://en.wikipedia.org/wiki/Media_type#Common_examples
+  // pulled from the way astro loads images
+  type: "png" | "jpg" | "jpeg" | "tiff" | "webp" | "gif" | "svg" | "avif";
+};
