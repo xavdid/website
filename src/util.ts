@@ -1,3 +1,5 @@
+import { type CollectionEntry, getCollection } from "astro:content";
+
 /**
  * takes an nullable date value and returns its unix timestamp - perfect for sorting!
  */
@@ -12,3 +14,26 @@ export const sortDateDescending = (
   b: { dateFinished: string },
 ): number =>
   sortableDateValue(b.dateFinished) - sortableDateValue(a.dateFinished);
+
+export const postPermalink = (slug: string): string => `/blog/post/${slug}/`;
+
+// https://docs.astro.build/en/guides/environment-variables/#default-environment-variables
+export const isProdBuild = import.meta.env.PROD;
+
+// https://docs.astro.build/en/guides/content-collections/#filtering-collection-queries
+// everything in dev, published only in prod
+export const getPublishedPosts = async (): Promise<
+  Array<CollectionEntry<"blog"> & { permalink: string }>
+> =>
+  (
+    await getCollection("blog", ({ data: { date } }) =>
+      isProdBuild ? date : true,
+    )
+  )
+    .map((article) => ({
+      ...article,
+      permalink: postPermalink(article.id),
+    }))
+    .toSorted(
+      (a, b) => sortableDateValue(b.data.date) - sortableDateValue(a.data.date),
+    );
