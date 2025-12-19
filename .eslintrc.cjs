@@ -17,6 +17,7 @@ module.exports = {
         Spoiler: true,
         Link: true,
         MediaYearLink: true,
+        ViewFullSize: true,
       },
     },
   ],

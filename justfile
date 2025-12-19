@@ -33,3 +33,9 @@ typecheck:
     astro check
     # so we do this instead
     tsc --noEmit
+
+# do a production build
+[no-exit-message]
+build: typecheck lint-check
+    just --version
+    astro build
