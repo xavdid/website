@@ -1,5 +1,5 @@
 ---
-date: "2020-11-03"
+datePublished: "2020-11-03"
 title: On the Storing of Dates
 fact: The American Continental Army is disbanded.
 fact_year: 1783
@@ -31,7 +31,7 @@ const paddedNumber = (n) => `0${n}`.slice(-2);
 
 const dateStr = `${now.getFullYear()}-${paddedNumber(
   // js months are the worst and are the only thing here that is 0-indexed
-  now.getMonth() + 1
+  now.getMonth() + 1,
 )}-${paddedNumber(now.getDate())}`;
 ```
 
@@ -48,5 +48,7 @@ Ironically, I _do_ use the Airtable `Date` field since without it I don't get th
 I predict my system to continue working really well for my use case until we start needing intergalactic `StarDates`, at which point society is _screwed_.
 
 [^1]: There are some edge cases here if I pull an all-nighter or am on a long, international flight, but I won't bore you with those here
+
 [^2]: Obviously I _experience_ time zones, but since this string captures all the time I'm awake on a given day, it doesn't matter how many hours that encompasses
+
 [^3]: I do exist _somewhere_ after all

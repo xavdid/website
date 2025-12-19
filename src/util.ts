@@ -26,8 +26,8 @@ export const getPublishedPosts = async (): Promise<
   Array<CollectionEntry<"blog"> & { permalink: string }>
 > =>
   (
-    await getCollection("blog", ({ data: { date } }) =>
-      isProdBuild ? date : true,
+    await getCollection("blog", ({ data: { datePublished } }) =>
+      isProdBuild ? datePublished : true,
     )
   )
     .map((article) => ({
@@ -35,7 +35,9 @@ export const getPublishedPosts = async (): Promise<
       permalink: postPermalink(article.id),
     }))
     .toSorted(
-      (a, b) => sortableDateValue(b.data.date) - sortableDateValue(a.data.date),
+      (a, b) =>
+        sortableDateValue(b.data.datePublished) -
+        sortableDateValue(a.data.datePublished),
     );
 
 export type ImageInfo = {

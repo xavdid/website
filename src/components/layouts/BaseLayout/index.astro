@@ -125,19 +125,13 @@ const metaProperties: SEOProps = {
     {/* end generated */}
     <link rel="me" href="https://mastodon.social/@xavdid" />
     <meta name="fediverse:creator" content="@xavdid@mastodon.social" />
-    {/* TODO: advertise the feeds */}
-    {
-      /* {
-        feedTypes.map((type) => (
-          <link
-          rel="alternate"
-          type="application/rss+xml"
-          title={`david.reviews: ${type}`}
-          href={`/feeds/${type}.xml`}
-          />
-          ))
-          } */
-    }
+
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="The David Brownman Blog"
+      href="/blog/feeds/rss.xml"
+    />
 
     <meta name="generator" content={Astro.generator} />
     {/* <meta name="revision" content={getGitSha()} /> */}
