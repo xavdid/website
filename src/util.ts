@@ -48,3 +48,14 @@ export type ImageInfo = {
   // pulled from the way astro loads images
   type: "png" | "jpg" | "jpeg" | "tiff" | "webp" | "gif" | "svg" | "avif";
 };
+
+/**
+ * simple funciton to normalize tag names for urls
+ */
+export const slugify = (tag: string) =>
+  tag
+    // strip out non-ascii characters
+    // .replace(/[^A-z0-9_\- ]/g, "")
+    .split(" ")
+    .join("-")
+    .toLowerCase();

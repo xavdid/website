@@ -15,7 +15,6 @@
     "@astrojs/rss": "^4.0.14",
     "@astrojs/sitemap": "^3.6.0",
     "@lucide/astro": "^0.561.0",
-    "@sindresorhus/slugify": "^3.0.0",
     "@types/react": "^19.2.6",
     "@types/react-dom": "^19.2.3",
     "astro": "^5.16.0",

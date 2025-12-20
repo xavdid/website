@@ -1,5 +1,4 @@
-import slugify from "@sindresorhus/slugify";
-
+import { slugify } from "../../util";
 import "./tag.scss";
 
 /**

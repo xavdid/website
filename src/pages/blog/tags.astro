@@ -7,7 +7,9 @@ import PageHeader from "../../components/page-header.astro";
 import Layout from "../../components/layouts/BaseLayout/index.astro";
 
 import { getCollection } from "astro:content";
-import slugify from "@sindresorhus/slugify";
+
+import "../../components/layouts/BaseLayout/table.scss";
+import { slugify } from "../../util";
 
 const posts = await getCollection("blog");
 
@@ -34,7 +36,6 @@ const tags = Object.values(
 ---
 
 <Layout pageHeader={{ title: "Tags" }} tabTitle="All Tags">
-  <PageHeader title="Tags" />
   <p>I've written on {tags.length} different topics.</p>
 
   <div class="table-container">

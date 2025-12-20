@@ -4,7 +4,15 @@ import Link from "../Link/index.astro";
 import TagGroup from "../TagGroup/index.astro";
 import { getPublishedPosts } from "../../util";
 
-const posts = await getPublishedPosts();
+type Props = {
+  filterToTag?: string;
+};
+
+let posts = await getPublishedPosts();
+const { filterToTag } = Astro.props;
+if (filterToTag) {
+  posts = posts.filter((p) => p.data.tags.includes(filterToTag));
+}
 
 const postsByYear = posts.reduce<Record<string, CollectionEntry<"blog">[]>>(
   (result, post) => {
