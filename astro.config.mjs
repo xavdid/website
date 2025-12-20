@@ -32,7 +32,7 @@ export default defineConfig({
     expressiveCode({
       frames: false,
       styleOverrides: {
-        borderColor: "#00eaff",
+        // borderColor: "#00eaff",
         borderWidth: "1px",
         codeLineHeight: "1.4",
       },
