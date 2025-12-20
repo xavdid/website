@@ -145,7 +145,7 @@ This works in theory, but there's a bug: how do we differentiate between a value
 
 Situations like this are exactly what [sentinel objects](https://python-patterns.guide/python/sentinel-object/#sentinel-objects) are for! Because Python can create globally unique objects, we can always determine if we're seeing a pre-defined object. Here's the updated code:
 
-```py{1,6,8-10,15-16}
+```py {1,6,8-10,15-16}
 MISSING = object()
 
 class Field:
@@ -167,7 +167,7 @@ def get_fields(cis):
 
 One last thing! These default values will eventually be plugged into a function. As such, we don't want to allow users to pass in mutable defaults (because they get reused across calls). Our `get_fields` is the perfect place for that check:
 
-```py{5-8}
+```py {5-8}
 def get_fields(cis):
     ...
     for name, type_ in annotations.items():
@@ -182,7 +182,7 @@ def get_fields(cis):
 
 Now we've got an ordered array of `Field` objects, which hold all the details we'll need to build the text of the `__init__` function. Let's add a call in our main function and move on:
 
-```py{3}
+```py {3}
 def custom_dataclass(cls):
     ...
     fields = get_fields(cls)
@@ -205,7 +205,7 @@ We also basically know what should replace the `???`. For each field, we need:
 
 By adding a method to our `Field` class, this can be done fairly cleanly:
 
-```py{3-5}
+```py {3-5}
 class Field:
     ...
     @property
@@ -225,7 +225,7 @@ Because we can reliably stringify variable names, we should use variables in pla
 
 To ensure we have consistent variable names, we should add some helpers to our `Field` class. We can then tweak our our `init_arg` function to call them and we're good to go!
 
-```py{5,7-9,11-13}
+```py {5,7-9,11-13}
 class Field:
     ...
     @property
@@ -253,7 +253,7 @@ def custom_dataclass(cls):
 
 The last thing in this section is the body of the function. For each property, we need to assign it to `self`. Let's add one more helper method:
 
-```py{3-5, 9}
+```py {3-5, 9}
 class Field:
     ...
     @property
@@ -293,7 +293,7 @@ We want to use that same logic to write a `wrapper` function for our dataclass. 
 
 When we call this `wrapper`, we'll need to use the actual values (`int`, `3`, etc). Those currently live in our `fields` list, but there's a better way to store them. Since the types will be eventually referenced by their `type_name`, we can store them that way in a `dict`:
 
-```py{3-7}
+```py {3-7}
 def custom_dataclass(cls):
     ...
     locals_ = {}
@@ -317,7 +317,7 @@ Now we have al our types an defaults in one place. Even better, they're stored u
 
 All that remains is to generate the wrapper string that returns the `__init__` string we made before:
 
-```py{3-8}
+```py {3-8}
 def custom_dataclass(cls):
     ...
     wrapper_fn = "\n".join([
@@ -354,7 +354,7 @@ Just like its name suggests, the function `exec`utes code. There's a slight hitc
 
 It goes the same place that any Python declarations go: into the `✨namespace✨`. Whenever a piece of Python code runs, it maintains a `dict` of all the variables that have been declared. Each function (including the root `__main__`) maintains its own list. That why you can repeat variable names in separate functions without them overwriting each other. In addition to a string, the `exec` function can take a `dict` that it'll use as a namespace (and modify as needed):
 
-```py{3-5}
+```py {3-5}
 def custom_dataclass(cls):
     ...
     namespace = {}
@@ -364,7 +364,7 @@ def custom_dataclass(cls):
 
 That `0x...` is a memory address, where Python has stored our newly created function. Now all that's left is to call it:
 
-```py{5}
+```py {5}
 def custom_dataclass(cls):
     ...
     namespace = {}
@@ -376,7 +376,7 @@ def custom_dataclass(cls):
 
 Despite being an error, that exactly what we want to see! We're (correctly) being told that we haven't provided the args our function expects. Luckily, we've already got the arguments in `locals_`. Because Python lets us use a dictionary for function args [^1] , we can call `wrapper` with our `locals_` dictionary:
 
-```py{3}
+```py {3}
 def custom_dataclass(cls):
     ...
     init_fn = namespace["wrapper"](**locals_)
@@ -387,7 +387,7 @@ def custom_dataclass(cls):
 
 The final step is also the easiest. Now that we've got a live function, we addd it to the class and return the whole thing. Our entire function (after a little re-organizing) is as follows:
 
-```py{26}
+```py {26}
 def custom_dataclass(cls):
     fields = get_fields(cls)
     locals_ = {}
