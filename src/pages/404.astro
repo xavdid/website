@@ -1,0 +1,17 @@
+---
+import Layout from "../components/layouts/BaseLayout/index.astro";
+import Link from "../components/Link/index.astro";
+---
+
+const notFoundPage = () => (
+<Layout
+  tabTitle="404"
+  pageHeader={{
+    title: "NOT FOUND",
+  }}
+>
+  <p>
+    There might be easter eggs to find... but this isn't one of them.{" "}
+    <Link href="/">Head home.</Link>
+  </p>
+</Layout>
