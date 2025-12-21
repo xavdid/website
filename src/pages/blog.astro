@@ -1,16 +1,16 @@
 ---
 import { Rss, Tag } from "@lucide/astro";
 
-import BlogPostList from "../components/BlogPostList/index.astro";
-import Link from "../components/Link/index.astro";
-import Layout from "../components/layouts/BaseLayout/index.astro";
+import BlogPostList from "../components/BlogPostList.astro";
+import Link from "../components/Link.astro";
+import BaseLayout from "../layouts/BaseLayout/index.astro";
 import { getPublishedPosts } from "../util";
 
 const posts = await getPublishedPosts();
 const SVGStyle = { height: "1em", width: "1em", verticalAlign: "-0.2em" };
 ---
 
-<Layout
+<BaseLayout
   tabTitle="Blog"
   pageDescription="All posts"
   seoDescription={`All ${posts.length} that David's written.`}
@@ -38,4 +38,4 @@ const SVGStyle = { height: "1em", width: "1em", verticalAlign: "-0.2em" };
   </p>
 
   <BlogPostList />
-</Layout>
+</BaseLayout>

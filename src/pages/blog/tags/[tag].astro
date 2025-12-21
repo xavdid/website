@@ -1,9 +1,9 @@
 ---
 import { getCollection } from "astro:content";
-import Layout from "../../../components/layouts/BaseLayout/index.astro";
-import Link from "../../../components/Link/index.astro";
+import BaseLayout from "../../../layouts/BaseLayout/index.astro";
+import Link from "../../../components/Link.astro";
 import { getPublishedPosts, slugify } from "../../../util";
-import BlogPostList from "../../../components/BlogPostList/index.astro";
+import BlogPostList from "../../../components/BlogPostList.astro";
 
 type Props = {
   original: string;
@@ -40,7 +40,7 @@ const tagHeader = `${totalCount === 1 ? "is" : "are"} ${totalCount} post${
 }`;
 ---
 
-<Layout
+<BaseLayout
   tabTitle={`Posts tagged ${tag}`}
   pageDescription={`Here are all the posts I've wrtten about ${tag}`}
   pageHeader={{
@@ -52,4 +52,4 @@ const tagHeader = `${totalCount === 1 ? "is" : "are"} ${totalCount} post${
     <Link href="/blog/tags">all tags</Link>.
   </p>
   <BlogPostList filterToTag={original} />
-</Layout>
+</BaseLayout>

@@ -18,7 +18,7 @@
 // } from "@fortawesome/free-brands-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import Link from "../components/Link/index.astro";
+import Link from "../components/Link.astro";
 
 // this has a lot of colors: https://simpleicons.org/
 const links = [

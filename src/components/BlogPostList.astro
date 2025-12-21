@@ -1,8 +1,8 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import Link from "../Link/index.astro";
-import TagGroup from "../TagGroup/index.astro";
-import { getPublishedPosts } from "../../util";
+import Link from "./Link.astro";
+import TagGroup from "./TagGroup.astro";
+import { getPublishedPosts } from "../util";
 
 type Props = {
   filterToTag?: string;

@@ -1,7 +1,5 @@
 ---
-import Link from "../Link/index.astro";
-
-import "./view_full_size.scss";
+import Link from "./Link.astro";
 
 type Props = {
   href: string;
@@ -10,7 +8,13 @@ type Props = {
 const { href } = Astro.props;
 ---
 
-<p class="full-size-link">
+<p
+  style={{
+    textAlign: "center",
+    marginTop: "-20px",
+    fontSize: "smaller",
+  }}
+>
   <Link href={href}>
     <em>view full size</em>
   </Link>

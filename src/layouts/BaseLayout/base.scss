@@ -1,8 +1,6 @@
-@import "../../../../node_modules/normalize.css/normalize.css";
+@import "../../../node_modules/normalize.css/normalize.css";
 
-@import "../../vars.scss";
-
-@import "./code-highlights.scss";
+@import "../../components/vars.scss";
 
 body {
   font-family: sans-serif;
@@ -194,6 +192,15 @@ main {
     ul,
     li {
       line-height: 1.2;
+    }
+  }
+
+  .expressive-code {
+    pre {
+      border: 1px solid $maize !important;
+      @media (prefers-color-scheme: dark) {
+        border: 1px solid $tCyan !important;
+      }
     }
   }
 

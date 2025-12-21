@@ -1,14 +1,13 @@
 ---
 // import { graphql, useStaticQuery } from "gatsby";
 
-import Link from "../../components/Link/index.astro";
-import PageHeader from "../../components/page-header.astro";
+import Link from "../../components/Link.astro";
 
-import Layout from "../../components/layouts/BaseLayout/index.astro";
+import BaseLayout from "../../layouts/BaseLayout/index.astro";
 
 import { getCollection } from "astro:content";
 
-import "../../components/layouts/BaseLayout/table.scss";
+import "../../layouts/BaseLayout/table.scss";
 import { slugify } from "../../util";
 
 const posts = await getCollection("blog");
@@ -35,7 +34,7 @@ const tags = Object.values(
 });
 ---
 
-<Layout pageHeader={{ title: "Tags" }} tabTitle="All Tags">
+<BaseLayout pageHeader={{ title: "Tags" }} tabTitle="All Tags">
   <p>I've written on {tags.length} different topics.</p>
 
   <div class="table-container">
@@ -62,4 +61,4 @@ const tags = Object.values(
       </tbody>
     </table>
   </div>
-</Layout>
+</BaseLayout>

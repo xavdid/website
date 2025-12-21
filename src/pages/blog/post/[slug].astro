@@ -1,17 +1,11 @@
 ---
-import { getCollection, render } from "astro:content";
 import { ArrowLeft, Rss, Shuffle } from "@lucide/astro";
+import { getCollection, render } from "astro:content";
 
-import AirtableLinkAndReturn from "../../../components/AirtableLinkAndReturn/index.astro";
-import BlockquoteTitle from "../../../components/BlockquoteTitle/index.astro";
-import InlineCode from "../../../components/InlineCode/index.astro";
-import BaseLayout from "../../../components/layouts/BaseLayout/index.astro";
-import Link from "../../../components/Link/index.astro";
-import MDXTable from "../../../components/MDXTable.astro";
-import MediaYearLink from "../../../components/MediaYearLink.astro";
-import ViewFullSize from "../../../components/ViewFullSize/index.astro";
-import YoutubeEmbed from "../../../components/YoutubeEmbed/index.astro";
 import Config from "../../../../astro.config.mjs";
+import Link from "../../../components/Link.astro";
+import RenderedToMarkdown from "../../../components/RenderedToMarkdown.astro";
+import BaseLayout from "../../../layouts/BaseLayout/index.astro";
 import type { ImageInfo } from "../../../util";
 
 const technologyAndPlayTag = "Technology and Play";
@@ -90,22 +84,7 @@ const SVGStyle = { height: "1em", width: "1em", verticalAlign: "-0.2em" };
         </blockquote>
       )
     }
-    <Content
-      components={{
-        // these will be used in place of the generic
-        a: Link,
-        code: InlineCode,
-        table: MDXTable,
-        // any other components here can be used in all mdx without imports
-        // also add these in eslintrc
-        YoutubeEmbed,
-        BlockquoteTitle,
-        AirtableLinkAndReturn,
-        MediaYearLink,
-        ViewFullSize,
-        Link,
-      }}
-    />
+    <RenderedToMarkdown renderable={post} />
   </article>
 
   <hr />

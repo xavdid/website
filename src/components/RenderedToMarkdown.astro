@@ -1,0 +1,35 @@
+---
+import { render } from "astro:content";
+import Link from "./Link.astro";
+import InlineCode from "./InlineCode.astro";
+import MDXTable from "./MDXTable.astro";
+import YoutubeEmbed from "./YoutubeEmbed.astro";
+import BlockquoteTitle from "./BlockquoteTitle.astro";
+import AirtableLinkAndReturn from "./AirtableLinkAndReturn.astro";
+import MediaYearLink from "./MediaYearLink.astro";
+import ViewFullSize from "./ViewFullSize.astro";
+
+type Props = {
+  renderable: Parameters<typeof render>[0];
+};
+
+const { renderable } = Astro.props;
+const { Content } = await render(renderable);
+---
+
+<Content
+  components={{
+    // these will be used in place of the generic
+    a: Link,
+    code: InlineCode,
+    table: MDXTable,
+    // any other components here can be used in all mdx without imports
+    // also add these in eslintrc
+    YoutubeEmbed,
+    BlockquoteTitle,
+    AirtableLinkAndReturn,
+    MediaYearLink,
+    ViewFullSize,
+    Link,
+  }}
+/>

@@ -1,12 +1,11 @@
 ---
 import { SEO, type Props as SEOProps } from "astro-seo";
 
-import LeftBorder from "../../LeftBorder/index.astro";
-import Navbar from "../../Navbar/index.astro";
-import PageHeader from "../../page-header.astro";
-import type { ImageInfo } from "../../../util";
-
-import Config from "../../../../astro.config.mjs";
+import LeftBorder from "../../components/LeftBorder.astro";
+import Navbar from "../../components/Navbar/index.astro";
+import PageHeader from "../../components/PageHeader.astro";
+import Config from "../../../astro.config.mjs";
+import type { ImageInfo } from "../../util";
 
 type Props = {
   /**
