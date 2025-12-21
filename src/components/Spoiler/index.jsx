@@ -1,6 +1,6 @@
 // adapted from https://github.com/dazulu/react-spoiler-tag
 
-import { useState } from "react";
+import { useState } from "preact/hooks";
 
 import "./spoiler.scss";
 
