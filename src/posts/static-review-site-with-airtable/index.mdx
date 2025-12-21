@@ -13,9 +13,9 @@ Since 2017, I've used [Airtable](https://airtable.com/) to write micro reviews o
 My broad experience means friends often come to me for further recommendations. I've always been able to link to all my reviews in Airtable, but its shared views are far from perfect.[^1] There wasn't going to be a perfect solution until I built one myself... so I did. Introducing:
 
 <h3 style="text-align: center; padding-bottom: 1rem; padding-top: 0;">
-	<b>
-    	<Link href="https://david.reviews/">david.reviews</Link>
-	</b>
+  <b>
+    <Link href="https://david.reviews/">david.reviews</Link>
+  </b>
 </h3>
 
 This project began, as many do, with a domain name that was too good to pass up. It was my [second static site project](/blog/post/building-aoc-showcase/) in as many months and, like before, I wanted to talk through the process and tooling.
@@ -183,11 +183,11 @@ Now that we have typed everything from Airtable to application code, we can writ
 ```ts
 const loadObjectsInMap = async <RecordType, MaterializedType>(
   schema: AirtableBase,
-  materializer: (row: RecordType) => MaterializedType
+  materializer: (row: RecordType) => MaterializedType,
 ): Promise<Record<string, MaterializedType>> => {
   const records = await loadRecords(schema);
   return Object.fromEntries(
-    records.map((record) => [record.recordId, materializer(record)])
+    records.map((record) => [record.recordId, materializer(record)]),
   );
 };
 ```
@@ -253,7 +253,7 @@ Actually resolving the foreign keys is the job of the second loader function. Wh
 const loadListedObjects = async <
   RecordType,
   MaterializedType,
-  ForeignKeys extends keyof MaterializedType
+  ForeignKeys extends keyof MaterializedType,
 >(
   schema: AirtableBase,
   materializer: (row: RecordType) => Omit<MaterializedType, ForeignKeys>,
@@ -262,7 +262,7 @@ const loadListedObjects = async <
     foreignItems: Record<string, MaterializedType[ForeignKeys]>;
     keyGrabber: (row: RecordType) => string[];
     condense?: boolean;
-  }>
+  }>,
 ): Promise<MaterializedType[]> => {
   // ...
 };
@@ -388,4 +388,5 @@ I've still got some plans for "someday" features, but for now I'm looking forwar
 I think that's everything! I had a blast making this site and am looking forward to these micro-reviews finding a wider audience. Thanks for reading!
 
 [^1]: For instance, filtering doesn't work on mobile
+
 [^2]: Namely, not having the "all movies" view be the default. Start with the most recent N and load more on request

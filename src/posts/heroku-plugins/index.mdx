@@ -166,7 +166,7 @@ module.exports = {
     co.wrap(function* (context, heroku) {
       let data = yield heroku.get("/<AUTH_REQUIRED_ROUTE>");
       cli.debug(data);
-    })
+    }),
   ),
 };
 ```
@@ -210,5 +210,7 @@ That's should get you on your way. Hope you've enjoyed wetting your whiskers wit
 _Full disclosure: Heroku is owned by the same company (Salesforce) that I was formerly employed by. That being said, I used and enjoyed their services long before I was a SFDC employee and the time I put into this was my own._
 
 [^1]: Near as I can tell, a `topic` object has only the `name` and `description` keys, the latter of which is what pops up in the index when `heroku help` is run.
+
 [^2]: the `help` flag is similar, but provides a longer description. It shows up when you run `heroku help <TOPIC>:<COMMAND>`
+
 [^3]: You can provide any integer as the error code. Conventionally, `0` means success and anything else (most commonly `1`) means there was an error. If you want your command to play nicely in a scripting environment, `1` is a great choice regardless of the content of the error

@@ -1,0 +1,39 @@
+---
+// this is for static pages, like /about, /contact, or any other slash pages I might write.
+
+import { getCollection, render } from "astro:content";
+import BaseLayout from "../components/layouts/BaseLayout/index.astro";
+import Link from "../components/Link/index.astro";
+import InlineCode from "../components/InlineCode/index.astro";
+
+export async function getStaticPaths() {
+  const pages = await getCollection("pages");
+
+  return pages.map((page) => ({
+    params: { slug: page.id === "index" ? "/" : page.id },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+
+const {
+  data: { tab_title, title, subtitle },
+} = page;
+const { Content } = await render(page);
+---
+
+<BaseLayout
+  tabTitle={tab_title ?? title}
+  pageHeader={{
+    title,
+    subtitle,
+  }}
+>
+  <Content
+    components={{
+      a: Link,
+      code: InlineCode,
+    }}
+  />
+</BaseLayout>
