@@ -16,7 +16,10 @@ if (filterToTag) {
 
 const postsByYear = posts.reduce<Record<string, CollectionEntry<"blog">[]>>(
   (result, post) => {
-    const year = post.data.datePublished!.slice(0, 4);
+    const year = (post.data.datePublished ?? new Date().toISOString()).slice(
+      0,
+      4,
+    );
 
     return {
       ...result,
@@ -62,13 +65,12 @@ const leftBlockStyle = {
                 datetime={post.data.datePublished}
                 style={{ ...leftBlockStyle, fontFamily: "monospace" }}
               >
-                {new Date(`${post.data.datePublished}T00:00:00`).toLocaleString(
-                  undefined,
-                  {
-                    month: "short",
-                    day: "2-digit",
-                  },
-                )}
+                {new Date(
+                  `${post.data.datePublished ?? new Date().toISOString().slice(0, 10)}T00:00:00`,
+                ).toLocaleString(undefined, {
+                  month: "short",
+                  day: "2-digit",
+                })}
               </time>
               {post.data.best_of && (
                 <span style={{ paddingRight: "5px" }}>⭐</span>
