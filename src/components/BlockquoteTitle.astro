@@ -1,0 +1,26 @@
+---
+/**
+ * A legacy component that replicates how blockquotes used to be styled on the site
+ */
+---
+
+<style lang="scss">
+  @import "./vars.scss";
+
+  .blockquote-title {
+    margin: 0 auto; // get it on the left wall
+    font-size: 1.2em;
+    padding: 1em;
+    margin-top: 20px;
+    font-style: italic;
+    border-left: 5px solid $maize;
+    @media (prefers-color-scheme: dark) {
+      border-left: 5px solid $tOrange;
+    }
+    p {
+      // interior p has a huge margin
+      margin: 0;
+    }
+  }
+</style>
+<div class="blockquote-title"><slot /></div>

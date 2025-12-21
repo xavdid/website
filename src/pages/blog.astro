@@ -1,0 +1,41 @@
+---
+import { Rss, Tag } from "@lucide/astro";
+
+import BlogPostList from "../components/BlogPostList.astro";
+import Link from "../components/Link.astro";
+import BaseLayout from "../layouts/BaseLayout/index.astro";
+import { getPublishedPosts } from "../util";
+
+const posts = await getPublishedPosts();
+const SVGStyle = { height: "1em", width: "1em", verticalAlign: "-0.2em" };
+---
+
+<BaseLayout
+  tabTitle="Blog"
+  pageDescription="All posts"
+  seoDescription={`All ${posts.length} that David's written.`}
+  pageHeader={{
+    title: "Blog",
+    subtitle: `${posts.length} posts and counting.`,
+  }}
+>
+  <p>
+    Posts are shown chronologically; you can also view posts{" "}
+    <Tag style={SVGStyle} /><Link href="/blog/tags">by tag</Link>. My best or
+    most popular posts are marked with a ⭐, so those are good places to start.
+  </p>
+  <p>
+    If you want to be notified every time I post, head to the{" "}
+    <Rss
+      style={{
+        ...SVGStyle,
+        border: "1px solid orange",
+        borderRadius: "3px",
+        backgroundColor: "orange",
+      }}
+    />
+    <Link href="/blog/feeds/rss.xml">RSS Feed</Link> and subscribe!
+  </p>
+
+  <BlogPostList />
+</BaseLayout>

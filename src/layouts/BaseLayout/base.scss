@@ -1,0 +1,227 @@
+@import "../../../node_modules/normalize.css/normalize.css";
+
+@import "../../components/vars.scss";
+
+body {
+  font-family: sans-serif;
+  @media (prefers-color-scheme: dark) {
+    color: $tWhite;
+    background-color: $tBlack;
+    background-image: url("./svgs/circuit-board-dark.svg");
+  }
+
+  background-image: url("./svgs/circuit-board.svg");
+}
+
+// styles used for all blog posts and pages
+$margin-left-for-anchor: 1rem;
+main {
+  font-size: 18px;
+  @media (prefers-color-scheme: dark) {
+    // affects SVGs so they change color
+    fill: $tWhite;
+  }
+  // for some reason, visited links don't apply fill in the same way
+  a:visited > svg {
+    @media (prefers-color-scheme: dark) {
+      fill: $tWhite;
+    }
+  }
+
+  strong {
+    // normalize resets this to "bolder", which is relative to the parent and doesn't work right.
+    font-weight: bold;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    border-bottom: 1px solid black;
+    @media (prefers-color-scheme: dark) {
+      border-bottom: 1px solid $tOrange;
+    }
+    margin: 1.5rem 0 0.25rem 0;
+    font-weight: normal;
+
+    // make anchor links in blog posts look like normal text
+    a.markdown-header {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover::after {
+        content: " #";
+      }
+    }
+  }
+
+  h3 {
+    $h3-padding-top: 1.5rem;
+
+    &:not(.no-before)::before {
+      content: "› ";
+      color: $MBlue;
+      @media (prefers-color-scheme: dark) {
+        color: $maize;
+      }
+    }
+
+    padding-top: $h3-padding-top; // makes h3 padding non-symmetrical
+    border-bottom: none;
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.3em;
+  }
+
+  h4 {
+    border-bottom: none;
+    font-weight: lighter;
+    font-size: 1.1em;
+
+    &::before {
+      content: "›› ";
+      color: $MBlue;
+      @media (prefers-color-scheme: dark) {
+        color: $maize;
+      }
+    }
+    // I like this a lot but the sizing is impossible?
+    // &::after {
+    //   content: " ──────────────────────── ";
+    //   color: $MBlue;
+    //   @media (prefers-color-scheme: dark) {
+    //     color: $maize;
+    //   }
+    // }
+  }
+
+  p,
+  ul,
+  ol {
+    line-height: 1.7;
+    font-weight: lighter;
+    li {
+      margin: 0 0 7px 0;
+    }
+
+    em {
+      // letters slope to the right, so the spacing after italicized words is a little too small.
+      padding-right: 2px;
+    }
+  }
+
+  .subtitle {
+    margin: 0.25rem 0;
+    font-size: smaller;
+  }
+
+  ul {
+    list-style-type: circle;
+  }
+
+  $blockquote-border-size: 4px;
+  blockquote {
+    margin: 0 auto; // get it on the left wall
+    font-weight: 600;
+    font-size: 0.9em;
+    padding: 0.5em;
+    margin-top: 15px;
+    font-style: italic;
+    border-left: $blockquote-border-size solid $maize;
+    @media (prefers-color-scheme: dark) {
+      border-left: $blockquote-border-size solid $tOrange;
+    }
+    p {
+      // interior p has a huge margin
+      margin: 0;
+    }
+  }
+  // gifs only
+  img[src$=".gif"],
+  video {
+    display: block;
+    margin: 0 auto;
+    max-width: 90%;
+    border: 1px solid $MBlue;
+    @media (prefers-color-scheme: dark) {
+      border: 1px solid $tCyan;
+    }
+  }
+
+  p:has(> img) {
+    text-align: center;
+  }
+  img {
+    border: 1px solid $MBlue;
+    @media (prefers-color-scheme: dark) {
+      border: 1px solid $tCyan;
+    }
+    // make sure images aren't too big
+    max-width: 100%;
+    @include tablet {
+      max-width: 95%;
+    }
+    height: auto;
+  }
+  figcaption {
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 5px;
+    font-size: smaller;
+  }
+
+  .mermaid > svg {
+    width: 100%;
+    // might need to adjust this, the 500px works for thunder chart
+    height: 550px;
+
+    // hard to dynamically style the diagram, can't see it well in dark mode
+    @media (prefers-color-scheme: dark) {
+      background-color: $tWhite;
+    }
+  }
+
+  // code {
+  //   font-size: 14px !important;
+
+  //   &.language-md {
+  //     white-space: pre-wrap;
+  //   }
+  // }
+
+  .tight-list {
+    ul,
+    li {
+      line-height: 1.2;
+    }
+  }
+
+  .expressive-code {
+    pre {
+      border: 1px solid $maize !important;
+      @media (prefers-color-scheme: dark) {
+        border: 1px solid $tCyan !important;
+      }
+    }
+  }
+
+  details {
+    margin-bottom: 5px; // so they don't but right up against each other
+    margin-top: 5px; // so they don't but right up against each other
+    summary {
+      cursor: pointer;
+    }
+
+    padding: 7px;
+    border-radius: 5px;
+    background-color: lighten($maize, 5%);
+
+    & > :last-child {
+      margin-bottom: 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      background-color: lighten($MBlue, 1%);
+      // filter: brightness(85%);
+    }
+  }
+}

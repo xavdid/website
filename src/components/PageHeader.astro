@@ -1,0 +1,32 @@
+---
+import { CalendarDays } from "@lucide/astro";
+
+import TagGroup from "./TagGroup.astro";
+
+type Props = {
+  title: string;
+  subtitle?: string;
+  date?: string;
+  tags?: string[];
+  bestOf?: boolean;
+};
+
+const { title, subtitle, date, tags, bestOf } = Astro.props;
+---
+
+<h1 style={{ marginLeft: 0 }}>{title}</h1>
+<div class="subtitle" style={{ display: "flex", flexWrap: "wrap" }}>
+  {subtitle && <span>{subtitle}</span>}
+  {
+    date && (
+      <div style={{ paddingRight: "15px" }}>
+        <CalendarDays
+          style={{ height: "1em", width: "1em", verticalAlign: "-2px" }}
+        />{" "}
+        <time datetime={date}>{date}</time>
+      </div>
+    )
+  }
+  {bestOf && <span style={{ paddingRight: "15px" }}>⭐ Top post!</span>}
+  <TagGroup tags={tags} />
+</div>

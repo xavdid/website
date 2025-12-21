@@ -1,0 +1,91 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Link from "./Link.astro";
+import TagGroup from "./TagGroup.astro";
+import { getPublishedPosts } from "../util";
+
+type Props = {
+  filterToTag?: string;
+};
+
+let posts = await getPublishedPosts();
+const { filterToTag } = Astro.props;
+if (filterToTag) {
+  posts = posts.filter((p) => p.data.tags.includes(filterToTag));
+}
+
+const postsByYear = posts.reduce<Record<string, CollectionEntry<"blog">[]>>(
+  (result, post) => {
+    const year = post.data.datePublished!.slice(0, 4);
+
+    return {
+      ...result,
+      [year]: [...(result[year] || []), post],
+    };
+  },
+  {},
+);
+
+const years = Object.keys(postsByYear).sort(
+  (a, b) => parseInt(b) - parseInt(a),
+);
+
+// styles
+const leftBlockStyle = {
+  flex: "0 0 5rem",
+  textAlign: "right",
+  margin: "0rem 1rem",
+  fontWeight: "normal",
+};
+---
+
+<>
+  {
+    years.map((year) => (
+      <section>
+        <h2>{year}</h2>
+        {postsByYear[year].map((post) => (
+          <div
+            class="post-row"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              paddingTop: "10px",
+            }}
+          >
+            {/* don't let the font size here get too big or the dates wrap and it looks bad */}
+            <h3
+              class="no-before"
+              style={{ display: "flex", marginLeft: 0, fontSize: "1.17em" }}
+            >
+              <time
+                datetime={post.data.datePublished}
+                style={{ ...leftBlockStyle, fontFamily: "monospace" }}
+              >
+                {new Date(`${post.data.datePublished}T00:00:00`).toLocaleString(
+                  undefined,
+                  {
+                    month: "short",
+                    day: "2-digit",
+                  },
+                )}
+              </time>
+              {post.data.best_of && (
+                <span style={{ paddingRight: "5px" }}>⭐</span>
+              )}
+              <Link href={`/blog/post/${post.id}`}>{post.data.title}</Link>
+            </h3>
+            <div style={{ display: "flex", paddingTop: "10px" }}>
+              <div style={{ ...leftBlockStyle }} />
+              <span style={{ fontSize: "smaller" }}>{post.data.og_desc}</span>
+            </div>
+            <div style={{ display: "flex", paddingTop: "5px" }}>
+              <div style={{ ...leftBlockStyle }} />
+              <TagGroup tags={post.data.tags} />
+            </div>
+          </div>
+        ))}
+      </section>
+    ))
+  }
+</>

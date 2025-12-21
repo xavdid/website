@@ -1,0 +1,169 @@
+---
+import { SEO, type Props as SEOProps } from "astro-seo";
+
+import LeftBorder from "../../components/LeftBorder.astro";
+import Navbar from "../../components/Navbar/index.astro";
+import PageHeader from "../../components/PageHeader.astro";
+import Config from "../../../astro.config.mjs";
+import type { ImageInfo } from "../../util";
+
+type Props = {
+  /**
+   * shown in the tab; ` | david.reviews` is appended
+   */
+  tabTitle: string;
+  /**
+   * summarizes the page for search engines. TODO: require this on content pages
+   */
+  pageDescription?: string;
+  /**
+   * shown in the OG embed;
+   */
+  seoTitle?: string;
+  /**
+   * shown as the OG description;
+   */
+  seoDescription?: `${string}.`;
+  /**
+   * image to replace the default share picture
+   */
+  ogImg?: ImageInfo;
+
+  /**
+   * Populates the main H1 at the top of each page
+   */
+  pageHeader: {
+    title: string;
+    subtitle?: string;
+    tags?: string[];
+    date?: string;
+  };
+};
+
+const OG_IMG_URL = "https://xavd.id/og_img.png";
+
+const defaultOgImg: ImageInfo = {
+  url: OG_IMG_URL,
+  height: 628,
+  width: 1200,
+  type: "png",
+};
+
+const {
+  tabTitle,
+  pageDescription = "David Brownman's little corner of the internet.",
+  seoTitle,
+  seoDescription,
+  ogImg = defaultOgImg,
+  pageHeader: { title, subtitle, tags, date: publishedOn },
+} = Astro.props;
+
+const metaProperties: SEOProps = {
+  title: tabTitle,
+  titleTemplate: "%s | xavd.id",
+  description: pageDescription,
+  openGraph: {
+    basic: {
+      title: seoTitle ?? tabTitle,
+      type: publishedOn ? "article" : "website",
+      image: ogImg.url.startsWith("/")
+        ? `${Config.site}/${ogImg.url}`
+        : ogImg.url,
+    },
+    optional: {
+      siteName: "xavd.id",
+      description: seoDescription ?? pageDescription,
+    },
+    image: {
+      type: `image/${ogImg.type}`,
+      width: ogImg.width,
+      height: ogImg.height,
+      alt:
+        ogImg.url === OG_IMG_URL
+          ? "A generic splash image with the initials DB in maize and blue"
+          : `An article-specific share image.`,
+    },
+    article: publishedOn
+      ? {
+          publishedTime: publishedOn,
+          authors: ["David Brownman"],
+        }
+      : undefined,
+  },
+  // I didn't want to add any twitter tags, but this is what gives nice images (instead of tiny thumbnails) on discord
+  // see: https://www.reddit.com/r/discordapp/comments/82p8i6/a_basic_tutorial_on_how_to_get_the_most_out_of/
+  // or: https://stackoverflow.com/questions/69025891/open-graph-data-does-not-display-on-discord
+  twitter: {
+    card: "summary_large_image",
+  },
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    {/* generated from https://realfavicongenerator.net/ */}
+    <link
+      rel="icon"
+      type="image/png"
+      href="/icon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="/icon/favicon.svg" />
+    <link rel="shortcut icon" href="/icon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/icon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/icon/site.webmanifest" />
+
+    {/* end generated */}
+    <link rel="me" href="https://mastodon.social/@xavdid" />
+    <meta name="fediverse:creator" content="@xavdid@mastodon.social" />
+
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="The David Brownman Blog"
+      href="/blog/feeds/rss.xml"
+    />
+
+    <meta name="generator" content={Astro.generator} />
+    {/* <meta name="revision" content={getGitSha()} /> */}
+    <script
+      is:inline
+      data-goatcounter="https://xavdid.goatcounter.com/count"
+      async
+      src="https://gc.zgo.at/count.js"></script>
+
+    <SEO {...metaProperties} />
+    <style lang="scss" is:global>
+      @use "./base.scss";
+    </style>
+  </head>
+  <body>
+    <Navbar />
+    <LeftBorder />
+    <main
+      style={{
+        margin: `0 auto`,
+        // see https://www.smashingmagazine.com/2014/09/balancing-line-length-font-size-responsive-web-design/
+        // matches the width of the gatsby version because of structuring the page a little differently
+        maxWidth: `71ch`,
+        padding: `0 1.0875rem 1.45rem`,
+      }}
+    >
+      <PageHeader
+        title={title}
+        subtitle={subtitle}
+        date={publishedOn}
+        tags={tags}
+      />
+      <slot />
+    </main>
+  </body>
+</html>

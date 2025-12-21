@@ -1,0 +1,125 @@
+---
+import { ArrowLeft, Rss, Shuffle } from "@lucide/astro";
+import { getCollection, render } from "astro:content";
+
+import Config from "../../../../astro.config.mjs";
+import Link from "../../../components/Link.astro";
+import RenderedToMarkdown from "../../../components/RenderedToMarkdown.astro";
+import BaseLayout from "../../../layouts/BaseLayout/index.astro";
+import type { ImageInfo } from "../../../util";
+
+const technologyAndPlayTag = "Technology and Play";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  const numPosts = posts.length;
+
+  // a linear path through all the posts
+  // rebuilt every time the site builds, which is random enough
+  // https://stackoverflow.com/a/46545530/1825390
+  let shuffled = Object.fromEntries(
+    posts
+      .map((value) => ({ value, sort: Math.random() }))
+      .sort((a, b) => a.sort - b.sort)
+      .map(({ value }, idx, shuffledPosts) => [
+        value.id,
+        shuffledPosts[(idx + 1) % numPosts].value.id,
+      ]),
+  );
+
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post, randomDest: shuffled[post.id] },
+  }));
+}
+
+const { post, randomDest } = Astro.props;
+const { Content } = await render(post);
+
+const frontmatter = post.data;
+let ogImg: ImageInfo | undefined;
+
+// these are used in link building below, so assert assumptions here
+if (Config.site?.endsWith("/")) {
+  throw new Error("config.site should not end with a slash!");
+}
+
+if (!Config.site?.startsWith("https://")) {
+  throw new Error("config.site should start with https://");
+}
+
+if (frontmatter.og_img) {
+  ogImg = {
+    url: `${Config.site}${frontmatter.og_img.src}`,
+    width: frontmatter.og_img.width,
+    height: frontmatter.og_img.height,
+    type: frontmatter.og_img.format,
+  };
+}
+
+const SVGStyle = { height: "1em", width: "1em", verticalAlign: "-0.2em" };
+---
+
+<BaseLayout
+  tabTitle={post.data.title}
+  pageDescription={post.data.og_desc ?? "A blog post by David."}
+  ogImg={ogImg}
+  pageHeader={{
+    title: post.data.title,
+    date: post.data.datePublished,
+    tags: post.data.tags,
+  }}
+>
+  <article>
+    {
+      post.data.tags.includes(technologyAndPlayTag) && (
+        <blockquote style={{ fontWeight: "lighter" }}>
+          This post was written as an assignment for my{" "}
+          {/* original, needs login: https://lsa.umich.edu/cg/cg_detail.aspx?content=1960COMM408001&termArray=f_13_1960 */}
+          <Link href="https://web.archive.org/web/20230814054442/https://lsa.umich.edu/cg/cg_detail.aspx?content=1960COMM408001&termArray=f_13_1960">
+            {technologyAndPlayTag}
+          </Link>{" "}
+          class in the fall of 2013. It may include citations for texts we were
+          assigned at the time.
+        </blockquote>
+      )
+    }
+    <RenderedToMarkdown renderable={post} />
+  </article>
+
+  <hr />
+
+  <nav
+    style={{
+      display: `flex`,
+      flexWrap: `wrap`,
+      justifyContent: `space-evenly`,
+      listStyle: `none`,
+      padding: 0,
+    }}
+  >
+    <div>
+      <Link href="/blog">
+        <ArrowLeft style={SVGStyle} /> All Posts
+      </Link>
+    </div>
+
+    <div>
+      <Rss
+        style={{
+          ...SVGStyle,
+          border: "1px solid orange",
+          borderRadius: "3px",
+          backgroundColor: "orange",
+        }}
+      />{" "}
+      <Link href="/blog/feeds">Subscribe</Link>
+    </div>
+
+    <div>
+      <Link href={`/blog/post/${randomDest}`}>
+        Random <Shuffle style={SVGStyle} />
+      </Link>
+    </div>
+  </nav>
+</BaseLayout>

@@ -1,0 +1,21 @@
+---
+import Link from "./Link.astro";
+
+type Props = {
+  href: string;
+};
+
+const { href } = Astro.props;
+---
+
+<p
+  style={{
+    textAlign: "center",
+    marginTop: "-20px",
+    fontSize: "smaller",
+  }}
+>
+  <Link href={href}>
+    <em>view full size</em>
+  </Link>
+</p>
