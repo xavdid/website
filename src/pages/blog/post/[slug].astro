@@ -1,17 +1,16 @@
 ---
 import { ArrowLeft, Rss, Shuffle } from "@lucide/astro";
-import { getCollection, render } from "astro:content";
 
 import Config from "../../../../astro.config.mjs";
 import Link from "../../../components/Link.astro";
 import RenderedToMarkdown from "../../../components/RenderedToMarkdown.astro";
 import BaseLayout from "../../../layouts/BaseLayout/index.astro";
-import type { ImageInfo } from "../../../util";
+import { getPublishedPosts, type ImageInfo } from "../../../util";
 
 const technologyAndPlayTag = "Technology and Play";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog");
+  const posts = await getPublishedPosts();
   const numPosts = posts.length;
 
   // a linear path through all the posts

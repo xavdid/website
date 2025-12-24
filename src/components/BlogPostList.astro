@@ -14,20 +14,18 @@ if (filterToTag) {
   posts = posts.filter((p) => p.data.tags.includes(filterToTag));
 }
 
-const postsByYear = posts.reduce<Record<string, CollectionEntry<"blog">[]>>(
-  (result, post) => {
-    const year = (post.data.datePublished ?? new Date().toISOString()).slice(
-      0,
-      4,
-    );
+const drafts = posts.filter((p) => !p.data.datePublished);
+
+const postsByYear = posts
+  .filter((p) => p.data.datePublished)
+  .reduce<Record<string, CollectionEntry<"blog">[]>>((result, post) => {
+    const year = post.data.datePublished!.slice(0, 4);
 
     return {
       ...result,
       [year]: [...(result[year] || []), post],
     };
-  },
-  {},
-);
+  }, {});
 
 const years = Object.keys(postsByYear).sort(
   (a, b) => parseInt(b) - parseInt(a),
@@ -43,6 +41,20 @@ const leftBlockStyle = {
 ---
 
 <>
+  {
+    drafts.length && (
+      <>
+        <h2>Drafts</h2>
+        <ul>
+          {drafts.map((d) => (
+            <li>
+              <Link href={d.permalink}>{d.data.title}</Link> ({d.id})
+            </li>
+          ))}
+        </ul>
+      </>
+    )
+  }
   {
     years.map((year) => (
       <section>
@@ -65,12 +77,13 @@ const leftBlockStyle = {
                 datetime={post.data.datePublished}
                 style={{ ...leftBlockStyle, fontFamily: "monospace" }}
               >
-                {new Date(
-                  `${post.data.datePublished ?? new Date().toISOString().slice(0, 10)}T00:00:00`,
-                ).toLocaleString(undefined, {
-                  month: "short",
-                  day: "2-digit",
-                })}
+                {new Date(`${post.data.datePublished}T00:00:00`).toLocaleString(
+                  undefined,
+                  {
+                    month: "short",
+                    day: "2-digit",
+                  },
+                )}
               </time>
               {post.data.best_of && (
                 <span style={{ paddingRight: "5px" }}>⭐</span>
