@@ -11,8 +11,9 @@ _default:
 	npx astro dev
 
 # create a new blog post
-post:
-	./bin/new-post
+post slug:
+    mkdir -p "src/posts/{{ slug }}"
+    cp misc/post-template.mdx.tmpl "src/posts/{{ slug }}/index.mdx"
 
 # run syle checks
 [no-exit-message]
