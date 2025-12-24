@@ -1,6 +1,6 @@
 module.exports = {
   plugins: ["prettier"],
-  extends: ["standard", "standard-react", "plugin:mdx/recommended", "prettier"],
+  extends: ["standard", "preact", "plugin:mdx/recommended", "prettier"],
   rules: {
     "react/prop-types": 0,
   },
