@@ -9,10 +9,10 @@ const blog = defineCollection({
         datePublished: z.string().date().optional(),
         title: z.string(),
         fact: z.string(),
-        fact_year: z.number(),
+        factYear: z.number(),
         tags: z.array(z.string()).default([]),
-        og_img: image().optional(),
-        og_desc: z.string().optional(),
+        ogImg: image().optional(),
+        ogDesc: z.string().optional(),
         best_of: z.boolean().default(false),
       })
       .strict(),

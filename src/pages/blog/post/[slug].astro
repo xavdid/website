@@ -46,12 +46,12 @@ if (!Config.site?.startsWith("https://")) {
   throw new Error("config.site should start with https://");
 }
 
-if (frontmatter.og_img) {
+if (frontmatter.ogImg) {
   ogImg = {
-    url: `${Config.site}${frontmatter.og_img.src}`,
-    width: frontmatter.og_img.width,
-    height: frontmatter.og_img.height,
-    type: frontmatter.og_img.format,
+    url: `${Config.site}${frontmatter.ogImg.src}`,
+    width: frontmatter.ogImg.width,
+    height: frontmatter.ogImg.height,
+    type: frontmatter.ogImg.format,
   };
 }
 
@@ -60,7 +60,7 @@ const SVGStyle = { height: "1em", width: "1em", verticalAlign: "-0.2em" };
 
 <BaseLayout
   tabTitle={post.data.title}
-  pageDescription={post.data.og_desc ?? "A blog post by David."}
+  pageDescription={post.data.ogDesc ?? "A blog post by David."}
   ogImg={ogImg}
   pageHeader={{
     title: post.data.title,

@@ -14,7 +14,7 @@ export const GET: APIRoute = async (context) => {
       pubDate: post.data.datePublished
         ? new Date(post.data.datePublished)
         : new Date(),
-      description: `${post.data.og_desc}<br /><br /><a href=${`https://xavd.id/blog/post/${post.id}/`}>Read the whole thing</a>.`,
+      description: `${post.data.ogDesc}<br /><br /><a href=${`https://xavd.id/blog/post/${post.id}/`}>Read the whole thing</a>.`,
       link: `/blog/post/${post.id}/`,
     })),
   });
