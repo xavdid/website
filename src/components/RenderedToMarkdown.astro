@@ -8,6 +8,7 @@ import BlockquoteTitle from "./BlockquoteTitle.astro";
 import AirtableLinkAndReturn from "./AirtableLinkAndReturn.astro";
 import MediaYearLink from "./MediaYearLink.astro";
 import ViewFullSize from "./ViewFullSize.astro";
+import FinishWhatWeStarted from "./FinishWhatWeStarted.astro";
 
 type Props = {
   renderable: Parameters<typeof render>[0];
@@ -31,5 +32,6 @@ const { Content } = await render(renderable);
     MediaYearLink,
     ViewFullSize,
     Link,
+    FinishWhatWeStarted,
   }}
 />

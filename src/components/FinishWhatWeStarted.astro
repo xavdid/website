@@ -1,0 +1,65 @@
+---
+import { getPublishedPosts } from "../util";
+import Link from "./Link.astro";
+
+// a compoentn that links to 5 blog posts, including which one you're coming from
+
+const slugs = [
+  "backpack-quest",
+  "finishing-what-we-started",
+  "first-day-of-the-rest-of-your-life",
+  "12-games-for-2-players",
+  "another-site-rewrite",
+] as const;
+
+type Props = {
+  current: (typeof slugs)[number];
+  // we don't pad in the first post, since it's in the middle of some <p>s already
+  padTop?: boolean;
+};
+const { current, padTop = true } = Astro.props;
+
+const posts = (await getPublishedPosts())
+  .filter((p) => slugs.some((s) => p.id === s))
+  .toReversed(); // oldest first
+---
+
+<style lang="scss">
+  @import "./vars.scss";
+
+  div {
+    border: 1px dashed $MBlue;
+    @media (prefers-color-scheme: dark) {
+      border: 1px dashed $maize;
+    }
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 3px;
+    @include tablet {
+      width: 75%;
+      margin: auto;
+    }
+  }
+</style>
+<div style={{ marginTop: padTop ? "20px" : undefined }}>
+  <p>
+    This post is part of a series detailing our 2025 yearly theme: <strong
+      >Finishing What We Started</strong
+    >. They're best read in order, but each post stands on its own.
+  </p>
+  <ol>
+    {
+      posts.map((p) => (
+        <li>
+          {p.id === current ? (
+            <b>
+              <strong>{p.data.title}</strong> {"<"}-- you are here
+            </b>
+          ) : (
+            <Link href={p.permalink}>{p.data.title}</Link>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</div>

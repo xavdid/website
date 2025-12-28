@@ -42,7 +42,7 @@ const leftBlockStyle = {
 
 <>
   {
-    drafts.length && (
+    drafts.length ? (
       <>
         <h2>Drafts</h2>
         <ul>
@@ -53,7 +53,7 @@ const leftBlockStyle = {
           ))}
         </ul>
       </>
-    )
+    ) : null
   }
   {
     years.map((year) => (

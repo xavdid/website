@@ -7,8 +7,12 @@ _default:
 	just --list
 
 # run the dev server
-@dev:
-	npx astro dev
+dev:
+	astro dev
+
+# run the dev server
+preview: build
+	astro preview
 
 # create a new blog post
 post slug:

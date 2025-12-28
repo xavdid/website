@@ -18,6 +18,7 @@ module.exports = {
         Link: true,
         MediaYearLink: true,
         ViewFullSize: true,
+        FinishWhatWeStarted: true,
       },
     },
   ],
