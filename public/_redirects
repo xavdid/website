@@ -1,3 +1,7 @@
+# misc redirects
+# can act as my own little link shortener, sorta
+/stripe https://gist.github.com/xavdid/0595aaf98f78bd2defe02915586efb0e
+
 # advent of code redirects
 # Use `misc/aoc_threads.py` to generate the below
 
