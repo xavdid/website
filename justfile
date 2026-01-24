@@ -39,6 +39,7 @@ typecheck:
     # so we do this instead
     tsc --noEmit
 
+# all the pre-build checks
 ci: typecheck lint-check
 
 # do a production build
