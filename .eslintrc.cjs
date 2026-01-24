@@ -21,6 +21,7 @@ module.exports = {
         MediaYearLink: true,
         ViewFullSize: true,
         FinishWhatWeStarted: true,
+        BigLink: true,
       },
     },
   ],
