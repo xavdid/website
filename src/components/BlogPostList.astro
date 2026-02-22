@@ -28,7 +28,7 @@ const postsByYear = posts
   }, {});
 
 const years = Object.keys(postsByYear).sort(
-  (a, b) => parseInt(b) - parseInt(a),
+  (a, b) => parseInt(b, 10) - parseInt(a, 10),
 );
 
 // styles

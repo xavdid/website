@@ -2,9 +2,8 @@
   "files.exclude": {
     ".cache": true
   },
-  "eslint.validate": ["mdx"],
   "markdown.copyFiles.destination": {
     // the trailing slash is important here!
-    "posts/**/*": "${documentDirName}/images/"
+    "src/posts/**/*": "${documentDirName}/images/"
   }
 }

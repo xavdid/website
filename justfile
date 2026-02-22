@@ -1,7 +1,7 @@
 set quiet
 
 # make installed binaries available at the top level
-export PATH := "./node_modules/.bin:" + env_var('PATH')
+export PATH := "./node_modules/.bin:" + env('PATH')
 
 _default:
 	just --list

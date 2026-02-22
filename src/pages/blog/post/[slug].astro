@@ -1,5 +1,7 @@
 ---
-import { ArrowLeft, Rss, Shuffle } from "@lucide/astro";
+import ArrowLeft from "@lucide/astro/icons/arrow-left";
+import Rss from "@lucide/astro/icons/rss";
+import Shuffle from "@lucide/astro/icons/shuffle";
 
 import Config from "../../../../astro.config.mjs";
 import Link from "../../../components/Link.astro";
@@ -16,7 +18,7 @@ export async function getStaticPaths() {
   // a linear path through all the posts
   // rebuilt every time the site builds, which is random enough
   // https://stackoverflow.com/a/46545530/1825390
-  let shuffled = Object.fromEntries(
+  const shuffled = Object.fromEntries(
     posts
       .map((value) => ({ value, sort: Math.random() }))
       .sort((a, b) => a.sort - b.sort)
