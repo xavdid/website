@@ -2,6 +2,13 @@
 
 @import "../../components/vars.scss";
 
+html {
+  scrollbar-color: $MBlue white;
+  @media (prefers-color-scheme: dark) {
+    scrollbar-color: $maize $tBlack;
+  }
+}
+
 body {
   font-family: sans-serif;
   @media (prefers-color-scheme: dark) {
