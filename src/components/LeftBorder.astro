@@ -6,6 +6,13 @@
   @import "./vars.scss";
 
   .border {
+    // doesn't look good on mobile with liquid glass, unfortunately
+    // since my page now ends before the bottom of the screen so it cuts off weird
+    display: none;
+    @include desktop {
+      display: inherit;
+    }
+
     // farthest left
     background: $nav-background;
     // highlight color
