@@ -7,8 +7,8 @@ _default:
 	just --list
 
 # run the dev server
-dev:
-	astro dev
+dev *args:
+	astro dev {{ args }}
 
 # run the dev server
 preview: build
