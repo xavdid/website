@@ -18,6 +18,7 @@ const blog = defineCollection({
       .strict(),
 });
 
+// these are rendered in `src/pages/[...slug].astro`
 const pages = defineCollection({
   loader: glob({ base: "./src/staticPages", pattern: "**/*.mdx" }),
   schema: () =>
