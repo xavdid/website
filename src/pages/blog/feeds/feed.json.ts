@@ -1,5 +1,4 @@
 import type { APIRoute } from "astro";
-import Config from "../../../../astro.config.mjs";
 import { getPublishedPosts } from "../../../util";
 
 export const GET: APIRoute = async () => {
@@ -8,8 +7,8 @@ export const GET: APIRoute = async () => {
   const feed = {
     version: "https://jsonfeed.org/version/1.1",
     title: "The David Brownman Blog",
-    home_page_url: `${Config.site}/blog`,
-    feed_url: `${Config.site}/blog/feeds/feed.json`,
+    home_page_url: `${import.meta.env.SITE}/blog`,
+    feed_url: `${import.meta.env.SITE}/blog/feeds/feed.json`,
     items: posts.map(
       ({
         id,
@@ -19,7 +18,7 @@ export const GET: APIRoute = async () => {
       }) => ({
         // https://www.jsonfeed.org/version/1.1/#items
         id,
-        url: `${Config.site}/${permalink}`,
+        url: `${import.meta.env.SITE}${permalink}`,
         title,
         summary: ogDesc || "An older blog post",
         content_text: body?.slice(0, 100) + "...",

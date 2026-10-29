@@ -4,7 +4,6 @@ import { SEO, type Props as SEOProps } from "astro-seo";
 import LeftBorder from "../../components/LeftBorder.astro";
 import Navbar from "../../components/Navbar/index.astro";
 import PageHeader from "../../components/PageHeader.astro";
-import Config from "../../../astro.config.mjs";
 import type { ImageInfo } from "../../util";
 
 type Props = {
@@ -67,7 +66,7 @@ const metaProperties: SEOProps = {
       title: seoTitle ?? tabTitle,
       type: publishedOn ? "article" : "website",
       image: ogImg.url.startsWith("/")
-        ? `${Config.site}/${ogImg.url}`
+        ? `${import.meta.env.SITE}/${ogImg.url}`
         : ogImg.url,
     },
     optional: {
@@ -143,7 +142,8 @@ const metaProperties: SEOProps = {
       is:inline
       data-goatcounter="https://xavdid.goatcounter.com/count"
       async
-      src="https://gc.zgo.at/count.js"></script>
+      src="https://gc.zgo.at/count.js"
+    ></script>
 
     <SEO {...metaProperties} />
     <style lang="scss" is:global>

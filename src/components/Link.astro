@@ -88,9 +88,11 @@ const ariaLabel = Astro.props["aria-label"];
   id={id}
   href={href}
   aria-label={ariaLabel}
-  {...href.startsWith("/") || href.startsWith("#")
+  {...(href.startsWith("/") || href.startsWith("#")
     ? {}
     : {
         target: "_blank",
-      }}><slot /></a
+      })}
 >
+  <slot />
+</a>

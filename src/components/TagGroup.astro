@@ -10,20 +10,18 @@ type Props = {
 const { tags } = Astro.props;
 ---
 
-{
-  tags && tags.length > 0 ? (
-    <div
-      class="tag-group"
-      style={{
-        fontSize: "small",
-        display: "flex",
-        flexWrap: "wrap",
-      }}
-    >
-      <TagIcon style={{ height: "1.4em", width: "1.4em" }} />
-      {tags.map((tag) => (
-        <Tag name={tag} />
-      ))}
-    </div>
-  ) : null
-}
+{tags && tags.length > 0 ? (
+  <div
+    class="tag-group"
+    style={{
+      fontSize: "small",
+      display: "flex",
+      flexWrap: "wrap",
+    }}
+  >
+    <TagIcon style={{ height: "1.4em", width: "1.4em" }} />
+    {tags.map((tag) => (
+      <Tag name={tag} />
+    ))}
+  </div>
+) : null}

@@ -10,9 +10,10 @@ import MediaYearLink from "./MediaYearLink.astro";
 import ViewFullSize from "./ViewFullSize.astro";
 import FinishWhatWeStarted from "./FinishWhatWeStarted.astro";
 import BigLink from "./BigLink.astro";
+import type { CollectionEntry } from "astro:content";
 
 type Props = {
-  renderable: Parameters<typeof render>[0];
+  renderable: CollectionEntry<"pages"> | CollectionEntry<"blog">;
 };
 
 const { renderable } = Astro.props;

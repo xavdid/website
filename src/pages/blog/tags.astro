@@ -47,17 +47,15 @@ const tags = Object.values(
         </tr>
       </thead>
       <tbody>
-        {
-          tags.map(({ name, slug, num }) => (
-            <tr>
-              <td>{name}</td>
-              <td>
-                <Link href={`/blog/tags/${slug}`}>see posts</Link>
-              </td>
-              <td> {num}</td>
-            </tr>
-          ))
-        }
+        {tags.map(({ name, slug, num }) => (
+          <tr>
+            <td>{name}</td>
+            <td>
+              <Link href={`/blog/tags/${slug}`}>see posts</Link>
+            </td>
+            <td> {num}</td>
+          </tr>
+        ))}
       </tbody>
     </table>
   </div>

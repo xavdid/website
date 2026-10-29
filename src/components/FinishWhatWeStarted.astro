@@ -43,23 +43,21 @@ const posts = (await getPublishedPosts())
 </style>
 <div style={{ marginTop: padTop ? "20px" : undefined }}>
   <p>
-    This post is part of a series detailing our 2025 yearly theme: <strong
-      >Finishing What We Started</strong
-    >. They're best read in order, but each post stands on its own.
+    This post is part of a series detailing our 2025 yearly theme:{" "}
+    <strong>Finishing What We Started</strong>. They're best read in order, but
+    each post stands on its own.
   </p>
   <ol>
-    {
-      posts.map((p) => (
-        <li>
-          {p.id === current ? (
-            <b>
-              <strong>{p.data.title}</strong> {"<"}-- you are here
-            </b>
-          ) : (
-            <Link href={p.permalink}>{p.data.title}</Link>
-          )}
-        </li>
-      ))
-    }
+    {posts.map((p) => (
+      <li>
+        {p.id === current ? (
+          <b>
+            <strong>{p.data.title}</strong> {"<"}-- you are here
+          </b>
+        ) : (
+          <Link href={p.permalink}>{p.data.title}</Link>
+        )}
+      </li>
+    ))}
   </ol>
 </div>
