@@ -1,23 +1,24 @@
+@use "sass:color";
+@use "../../components/vars.scss";
+
 @import "../../../node_modules/normalize.css/normalize.css";
 
-@import "../../components/vars.scss";
-
 html {
-  scrollbar-color: $MBlue white;
+  scrollbar-color: vars.$MBlue white;
   @media (prefers-color-scheme: dark) {
-    scrollbar-color: $maize $tBlack;
+    scrollbar-color: vars.$maize vars.$tBlack;
   }
 }
 
 body {
   font-family: sans-serif;
+  // the light version has to appear first
+  background-image: url("./svgs/circuit-board.svg");
   @media (prefers-color-scheme: dark) {
-    color: $tWhite;
-    background-color: $tBlack;
+    color: vars.$tWhite;
+    background-color: vars.$tBlack;
     background-image: url("./svgs/circuit-board-dark.svg");
   }
-
-  background-image: url("./svgs/circuit-board.svg");
 }
 
 // styles used for all blog posts and pages
@@ -26,12 +27,12 @@ main {
   font-size: 18px;
   @media (prefers-color-scheme: dark) {
     // affects SVGs so they change color
-    fill: $tWhite;
+    fill: vars.$tWhite;
   }
   // for some reason, visited links don't apply fill in the same way
   a:visited > svg {
     @media (prefers-color-scheme: dark) {
-      fill: $tWhite;
+      fill: vars.$tWhite;
     }
   }
 
@@ -45,7 +46,7 @@ main {
   h4 {
     border-bottom: 1px solid black;
     @media (prefers-color-scheme: dark) {
-      border-bottom: 1px solid $tOrange;
+      border-bottom: 1px solid vars.$tOrange;
     }
     margin: 1.5rem 0 0.25rem 0;
     font-weight: normal;
@@ -66,9 +67,9 @@ main {
 
     &:not(.no-before)::before {
       content: "› ";
-      color: $MBlue;
+      color: vars.$MBlue;
       @media (prefers-color-scheme: dark) {
-        color: $maize;
+        color: vars.$maize;
       }
     }
 
@@ -86,9 +87,9 @@ main {
 
     &::before {
       content: "›› ";
-      color: $MBlue;
+      color: vars.$MBlue;
       @media (prefers-color-scheme: dark) {
-        color: $maize;
+        color: vars.$maize;
       }
     }
     // I like this a lot but the sizing is impossible?
@@ -133,9 +134,9 @@ main {
     padding: 0.5em;
     margin-top: 15px;
     font-style: italic;
-    border-left: $blockquote-border-size solid $maize;
+    border-left: $blockquote-border-size solid vars.$maize;
     @media (prefers-color-scheme: dark) {
-      border-left: $blockquote-border-size solid $tOrange;
+      border-left: $blockquote-border-size solid vars.$tOrange;
     }
     p {
       // interior p has a huge margin
@@ -148,9 +149,9 @@ main {
     display: block;
     margin: 0 auto;
     max-width: 90%;
-    border: 1px solid $MBlue;
+    border: 1px solid vars.$MBlue;
     @media (prefers-color-scheme: dark) {
-      border: 1px solid $tCyan;
+      border: 1px solid vars.$tCyan;
     }
   }
 
@@ -158,13 +159,13 @@ main {
     text-align: center;
   }
   img {
-    border: 1px solid $MBlue;
+    border: 1px solid vars.$MBlue;
     @media (prefers-color-scheme: dark) {
-      border: 1px solid $tCyan;
+      border: 1px solid vars.$tCyan;
     }
     // make sure images aren't too big
     max-width: 100%;
-    @include tablet {
+    @include vars.tablet {
       max-width: 95%;
     }
     height: auto;
@@ -183,7 +184,7 @@ main {
 
     // hard to dynamically style the diagram, can't see it well in dark mode
     @media (prefers-color-scheme: dark) {
-      background-color: $tWhite;
+      background-color: vars.$tWhite;
     }
   }
 
@@ -204,9 +205,9 @@ main {
 
   .expressive-code {
     pre {
-      border: 1px solid $maize !important;
+      border: 1px solid vars.$maize !important;
       @media (prefers-color-scheme: dark) {
-        border: 1px solid $tCyan !important;
+        border: 1px solid vars.$tCyan !important;
       }
     }
   }
@@ -220,14 +221,14 @@ main {
 
     padding: 7px;
     border-radius: 5px;
-    background-color: lighten($maize, 5%);
+    background-color: color.adjust(vars.$maize, $lightness: 5%);
 
     & > :last-child {
       margin-bottom: 0;
     }
 
     @media (prefers-color-scheme: dark) {
-      background-color: lighten($MBlue, 1%);
+      background-color: color.adjust(vars.$MBlue, $lightness: 1%);
       // filter: brightness(85%);
     }
   }
