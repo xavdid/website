@@ -3,7 +3,7 @@
 
 <!-- global because it gets applied outside this component? even tough this is the component that renders everything? styles turned off when I pulled it though -->
 <style lang="scss" is:global>
-  @import "./vars.scss";
+  @use "vars.scss";
 
   // don't apply to code inside code fences
   :not(pre) > .inline-code {
@@ -13,11 +13,11 @@
     font-size: 0.9rem;
     white-space: nowrap;
     @media (prefers-color-scheme: dark) {
-      // color: $tBlack;
+      // color: vars.$tBlack;
       background-color: unset;
       // because this is colored by a border in dark mode, it's a little wider than the normal background. so, less padding
       padding: 2px;
-      border: 1px solid $tOrange;
+      border: 1px solid vars.$tOrange;
     }
   }
 </style>

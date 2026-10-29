@@ -1,4 +1,5 @@
-@import "../../components/vars.scss";
+@use "sass:color";
+@use "../../components/vars.scss";
 
 // converted from https://gist.github.com/andyferra/2554919
 .table-container {
@@ -7,7 +8,7 @@
   --border-color: #cccccc;
 
   @media (prefers-color-scheme: dark) {
-    --border-color: #{$tCyan};
+    --border-color: #{vars.$tCyan};
   }
 
   table {
@@ -18,14 +19,14 @@
       border-top: 1px solid var(--border-color);
       background-color: white;
       @media (prefers-color-scheme: dark) {
-        background-color: $tBlack;
+        background-color: vars.$tBlack;
       }
       margin: 0;
       padding: 0;
       &:nth-child(2n) {
         background-color: #f8f8f8;
         @media (prefers-color-scheme: dark) {
-          background-color: lighten($color: $tBlack, $amount: 7%);
+          background-color: color.adjust($color: vars.$tBlack, $lightness: 7%);
         }
       }
       th {

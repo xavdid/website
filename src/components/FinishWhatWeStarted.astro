@@ -25,17 +25,17 @@ const posts = (await getPublishedPosts())
 ---
 
 <style lang="scss">
-  @import "./vars.scss";
+  @use "vars.scss";
 
   div {
-    border: 1px dashed $MBlue;
+    border: 1px dashed vars.$MBlue;
     @media (prefers-color-scheme: dark) {
-      border: 1px dashed $maize;
+      border: 1px dashed vars.$maize;
     }
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 3px;
-    @include tablet {
+    @include vars.tablet {
       width: 75%;
       margin: auto;
     }

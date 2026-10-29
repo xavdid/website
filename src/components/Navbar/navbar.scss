@@ -1,18 +1,18 @@
-@import "../vars.scss";
+@use "../vars.scss";
 
 $skew-size: 36deg;
 
 nav.header {
   display: flex;
-  background-color: $nav-background;
+  background-color: vars.$nav-background;
   @media (prefers-color-scheme: dark) {
-    background-color: $nav-dark-background;
+    background-color: vars.$nav-dark-background;
   }
 
   h1 {
     color: white;
     @media (prefers-color-scheme: dark) {
-      color: $tCyan;
+      color: vars.$tCyan;
 
       // outlined name:
       // color: black;
@@ -30,16 +30,16 @@ nav.header {
   }
 
   .navbar {
-    @include desktop {
+    @include vars.desktop {
       @media (prefers-color-scheme: dark) {
-        background-color: $nav-dark-item;
+        background-color: vars.$nav-dark-item;
       }
       transform: skew(-$skew-size);
       padding-right: 2px;
     }
 
     overflow-x: hidden;
-    @include mobile-only {
+    @include vars.mobile-only {
       padding-inline-start: 4rem;
       margin-right: 0;
     }
@@ -48,7 +48,7 @@ nav.header {
 
     .navbar-item {
       text-decoration: none;
-      @include mobile-only {
+      @include vars.mobile-only {
         margin-top: 1px;
         text-align: center;
         padding: 10px 700px 10px 33px;
@@ -57,10 +57,10 @@ nav.header {
       text-align: center;
       float: left;
       font-size: 1.2rem;
-      color: $MBlue;
+      color: vars.$MBlue;
 
       @media (prefers-color-scheme: dark) {
-        color: $nav-dark-item;
+        color: vars.$nav-dark-item;
       }
       padding: 10px 33px;
       position: relative;
@@ -70,7 +70,7 @@ nav.header {
       // items being too short messes up spacing
       // should be as long as the biggest item, I think
       min-width: 70px;
-      @include desktop {
+      @include vars.desktop {
         transform: skew($skew-size);
       }
       // parallellogram
@@ -81,9 +81,9 @@ nav.header {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: $nav-item;
+        background-color: vars.$nav-item;
         @media (prefers-color-scheme: dark) {
-          background-color: $nav-dark-background;
+          background-color: vars.$nav-dark-background;
         }
         z-index: -1;
         transform: skew(-$skew-size);
@@ -92,15 +92,15 @@ nav.header {
 
       &:hover,
       &.active {
-        color: $nav-item;
+        color: vars.$nav-item;
         @media (prefers-color-scheme: dark) {
-          color: $tBlack;
+          color: vars.$tBlack;
         }
         &:after {
-          background-color: $nav-background;
+          background-color: vars.$nav-background;
 
           @media (prefers-color-scheme: dark) {
-            background-color: $nav-dark-item;
+            background-color: vars.$nav-dark-item;
           }
         }
       }

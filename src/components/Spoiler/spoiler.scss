@@ -1,4 +1,4 @@
-@import "../vars.scss";
+@use "../vars.scss";
 
 .spoiler {
   cursor: pointer;
@@ -6,16 +6,16 @@
   position: relative;
 
   border-radius: 5px;
-  background-color: $maize;
+  background-color: vars.$maize;
   padding: 3px;
-  border: 1px solid $MBlue;
-  color: $MBlue;
+  border: 1px solid vars.$MBlue;
+  color: vars.$MBlue;
 
   .spoiler-inner {
     visibility: visible;
     .body-link {
-      color: $MBlue;
-      border-bottom: 1px solid $MBlue;
+      color: vars.$MBlue;
+      border-bottom: 1px solid vars.$MBlue;
       line-height: 0.9;
     }
   }

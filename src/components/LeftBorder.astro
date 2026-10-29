@@ -2,23 +2,23 @@
 ---
 
 <style lang="scss" is:global>
-  @import "./vars.scss";
+  @use "vars.scss";
 
   .border {
     // doesn't look good on mobile with liquid glass, unfortunately
     // since my page now ends before the bottom of the screen so it cuts off weird
     display: none;
-    @include desktop {
+    @include vars.desktop {
       display: inherit;
     }
 
     // farthest left
-    background: $nav-background;
+    background: vars.$nav-background;
     // highlight color
-    border-right: 0.15em solid $nav-item;
+    border-right: 0.15em solid vars.$nav-item;
     @media (prefers-color-scheme: dark) {
-      background: $nav-dark-background;
-      border-right: 0.15em solid $nav-dark-item;
+      background: vars.$nav-dark-background;
+      border-right: 0.15em solid vars.$nav-dark-item;
     }
     position: fixed;
     left: 0;

@@ -35,11 +35,11 @@ const ariaLabel = Astro.props["aria-label"];
 ---
 
 <style lang="scss">
-  @import "./vars.scss";
+  @use "vars.scss";
 
   $border-height: 2px;
   $link-color: #2f65a7;
-  $dark-link-color: $tCyan;
+  $dark-link-color: vars.$tCyan;
 
   .body-link {
     text-decoration: none;
@@ -48,7 +48,7 @@ const ariaLabel = Astro.props["aria-label"];
     border-bottom: 1px solid lightgray;
     @media (prefers-color-scheme: dark) {
       color: $dark-link-color;
-      border-bottom: 1px solid $tOrange;
+      border-bottom: 1px solid vars.$tOrange;
     }
     display: inline-block; // this is the key to not having a newline after the link
 
@@ -61,7 +61,7 @@ const ariaLabel = Astro.props["aria-label"];
       width: 0;
       background: $link-color;
       @media (prefers-color-scheme: dark) {
-        background: $tOrange;
+        background: vars.$tOrange;
       }
       transition: width 0.2s;
     }
